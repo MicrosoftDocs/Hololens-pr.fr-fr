@@ -1,0 +1,298 @@
+---
+title: Questions fréquemment posées relatives à HoloLens et aux hologrammes
+description: Avez-vous une petite question concernant HoloLens ou la communication avec des hologrammes?  Cet article vous fournit une réponse rapide et des ressources supplémentaires.
+keywords: hololens, FAQ, problème connu, aide
+ms.prod: hololens
+ms.sitesec: library
+author: Teresa-Motiv
+ms.author: v-tea
+ms.topic: article
+audience: ITPro
+ms.localizationpriority: medium
+ms.date: 02/27/2020
+ms.reviewer: ''
+ms.custom:
+- CI 114606
+- CSSTroubleshooting
+manager: jarrettr
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
+ms.openlocfilehash: cb9234556d0b5c654747e0f404d1d10d8a2cd539
+ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10828154"
+---
+# <span data-ttu-id="d2148-105">Questions fréquemment posées relatives à HoloLens et aux hologrammes</span><span class="sxs-lookup"><span data-stu-id="d2148-105">Frequently asked questions about HoloLens devices and holograms</span></span>
+
+<span data-ttu-id="d2148-106">Cet article fournit des réponses aux questions que vous pouvez vous poser à propos de l’utilisation de HoloLens, y compris le placement d’hologrammes, l’utilisation d’espaces, etc.</span><span class="sxs-lookup"><span data-stu-id="d2148-106">This article answers some questions that you may have about how to use HoloLens, including how to place holograms, work with spaces, and more.</span></span>
+
+<span data-ttu-id="d2148-107">Lorsque vous rencontrez des problèmes, assurez-vous que HoloLens est [de l’application HoloLens est chargée](https://support.microsoft.com/help/12627/hololens-charge-your-hololens).</span><span class="sxs-lookup"><span data-stu-id="d2148-107">Any time that you have problems, make sure that HoloLens is [charged up](https://support.microsoft.com/help/12627/hololens-charge-your-hololens).</span></span> <span data-ttu-id="d2148-108">Essayez de la [redémarrer](hololens-restart-recover.md) pour voir si cela résout votre problème.</span><span class="sxs-lookup"><span data-stu-id="d2148-108">Try [restarting it](hololens-restart-recover.md) to see whether that fixes things.</span></span> <span data-ttu-id="d2148-109">Veuillez utiliser l’application Commentaires pour nous envoyer des informations sur le problème.</span><span class="sxs-lookup"><span data-stu-id="d2148-109">And please use the Feedback app to send us information about the issue.</span></span> <span data-ttu-id="d2148-110">Vous trouverez l’application Commentaires sur le [**menu** Démarrer](holographic-home.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-110">You'll find the Feedback app on the [**Start** menu](holographic-home.md).</span></span>
+
+<span data-ttu-id="d2148-111">Pour obtenir des conseils sur la façon de porter votre HoloLens, consultez les [Questions fréquemment posées concernant l'ajustement et le confort de HoloLens (1èregénération)](hololens1-fit-comfort-faq.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-111">For tips about hwo to wear your HoloLens, see [HoloLens (1st gen) fit and comfort frequently asked questions](hololens1-fit-comfort-faq.md).</span></span>
+
+<span data-ttu-id="d2148-112">Cet article aborde les questions et problèmes ci-après:</span><span class="sxs-lookup"><span data-stu-id="d2148-112">This article addresses the following questions and issues:</span></span>
+<a id="list"></a>
+
+- [<span data-ttu-id="d2148-113">Mes hologrammes ne s’affichent pas correctement ou se déplacent</span><span class="sxs-lookup"><span data-stu-id="d2148-113">My holograms don't look right or are moving around</span></span>](#my-holograms-dont-look-right-or-are-moving-around)
+- [<span data-ttu-id="d2148-114">Un message s'affiche et m'indique «Recherche de votre espace»</span><span class="sxs-lookup"><span data-stu-id="d2148-114">I see a message that says "Finding your space"</span></span>](#i-see-a-message-that-says-finding-your-space)
+- [<span data-ttu-id="d2148-115">Les hologrammes prévus ne s'affichent pas dans mon espace</span><span class="sxs-lookup"><span data-stu-id="d2148-115">I'm not seeing the holograms that I expect to see in my space</span></span>](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
+- [<span data-ttu-id="d2148-116">Je ne peux pas placer d’hologrammes aux emplacements souhaités</span><span class="sxs-lookup"><span data-stu-id="d2148-116">I can't place holograms where I want to</span></span>](#i-cant-place-holograms-where-i-want-to)
+- [<span data-ttu-id="d2148-117">Les hologrammes disparaissent ou sont contenus dans d’autres hologrammes ou objets</span><span class="sxs-lookup"><span data-stu-id="d2148-117">Holograms disappear or are encased in other holograms or objects</span></span>](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
+- [<span data-ttu-id="d2148-118">Je peux voir des hologrammes situés de l’autre côté d’un mur</span><span class="sxs-lookup"><span data-stu-id="d2148-118">I can see holograms that are on the other side of a wall</span></span>](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
+- [<span data-ttu-id="d2148-119">Lorsque je place un hologramme sur un mur, il semble flotter</span><span class="sxs-lookup"><span data-stu-id="d2148-119">When I place a hologram on a wall, the hologram seems to float</span></span>](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
+- [<span data-ttu-id="d2148-120">Les applications semblent trop proches de moi lorsque j’essaie de les déplacer</span><span class="sxs-lookup"><span data-stu-id="d2148-120">Apps appear too close to me when I'm trying to move them</span></span>](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
+- [<span data-ttu-id="d2148-121">Je reçois un message d’erreur mentionnant un espace disque insuffisant</span><span class="sxs-lookup"><span data-stu-id="d2148-121">I'm getting a low disk space error</span></span>](#im-getting-a-low-disk-space-error)
+- [<span data-ttu-id="d2148-122">HoloLens ne répond pas à mes mouvements</span><span class="sxs-lookup"><span data-stu-id="d2148-122">HoloLens doesn't respond to my gestures</span></span>](#hololens-doesnt-respond-to-my-gestures)
+- [<span data-ttu-id="d2148-123">HoloLens ne répond pas à ma voix</span><span class="sxs-lookup"><span data-stu-id="d2148-123">HoloLens doesn't respond to my voice</span></span>](#hololens-doesnt-respond-to-my-voice)
+- [<span data-ttu-id="d2148-124">Je rencontre des problèmes de jumelage ou d’utilisation d’un appareil Bluetooth</span><span class="sxs-lookup"><span data-stu-id="d2148-124">I'm having problems pairing or using a Bluetooth device</span></span>](#im-having-problems-pairing-or-using-a-bluetooth-device)
+- [<span data-ttu-id="d2148-125">Les paramètres HoloLens répertorie les appareils comme disponibles, mais ceux-ci ne fonctionnent pas</span><span class="sxs-lookup"><span data-stu-id="d2148-125">HoloLens Settings lists devices as available, but the devices don't work</span></span>](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
+- [<span data-ttu-id="d2148-126">Je rencontre des problèmes lors de l’utilisation du dispositif de clic HoloLens</span><span class="sxs-lookup"><span data-stu-id="d2148-126">I'm having problems using the HoloLens clicker</span></span>](#im-having-problems-using-the-hololens-clicker)
+- [<span data-ttu-id="d2148-127">Je ne peux pas me connecter au Wi-Fi.</span><span class="sxs-lookup"><span data-stu-id="d2148-127">I can't connect to Wi-Fi</span></span>](#i-cant-connect-to-wi-fi)
+- [<span data-ttu-id="d2148-128">Mon HoloLens ne fonctionne pas correctement, ne répond pas ou ne démarre pas</span><span class="sxs-lookup"><span data-stu-id="d2148-128">My HoloLens isn't running well, is unresponsive, or won't start</span></span>](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
+- [<span data-ttu-id="d2148-129">Je ne peux pas me connecter à un appareil HoloLens, car il a déjà été configuré pour une autre personne</span><span class="sxs-lookup"><span data-stu-id="d2148-129">I can't sign in to a HoloLens device because it was previously set up for someone else</span></span>](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
+- [<span data-ttu-id="d2148-130">Questions sur la gestion d'appareils HoloLens</span><span class="sxs-lookup"><span data-stu-id="d2148-130">Questions about managing HoloLens devices</span></span>](#questions-about-managing-hololens-devices)
+- [<span data-ttu-id="d2148-131">Questions sur la sécurisation d'appareils HoloLens</span><span class="sxs-lookup"><span data-stu-id="d2148-131">Questions about securing HoloLens devices</span></span>](#questions-about-securing-hololens-devices)
+- [<span data-ttu-id="d2148-132">Comment faire pour supprimer tous les espaces?</span><span class="sxs-lookup"><span data-stu-id="d2148-132">How do I delete all spaces?</span></span>](#how-do-i-delete-all-spaces)
+- [<span data-ttu-id="d2148-133">Je ne peux pas trouver ou utiliser le clavier pour faire une saisie dans l’émulateur HoloLens2</span><span class="sxs-lookup"><span data-stu-id="d2148-133">I cannot find or use the keyboard to type in the HoloLens 2 Emulator</span></span>](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
+
+## <span data-ttu-id="d2148-134">Mes hologrammes ne s’affichent pas correctement ou se déplacent</span><span class="sxs-lookup"><span data-stu-id="d2148-134">My holograms don't look right or are moving around</span></span>
+
+<span data-ttu-id="d2148-135">Si vos hologrammes ne s’affichent pas correctement (par exemple, s’ils sont instables ou tremblants, ou si vous voyez des carrés noirs au-dessus), essayez l’une des solutions suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-135">If your holograms don't look right (for example, they're jittery or shaky, or you see black patches on top of them), try one of these fixes:</span></span>
+
+- <span data-ttu-id="d2148-136">[Nettoyez votre visière d'appareil](hololens1-hardware.md#care-and-cleaning) et vérifiez que rien n'obstrue les capteurs.</span><span class="sxs-lookup"><span data-stu-id="d2148-136">[Clean your device visor](hololens1-hardware.md#care-and-cleaning) and make sure nothing is blocking the sensors.</span></span>
+- <span data-ttu-id="d2148-137">Veillez à vous trouver dans une salle bien éclairée n'ayant pas trop de lumière directe.</span><span class="sxs-lookup"><span data-stu-id="d2148-137">Make sure that you're in a well-lit room that does not have a lot of direct sunlight.</span></span>
+- <span data-ttu-id="d2148-138">Essayez de marcher et de regarder votre cadre pour qu'il soit analysé de façon plus efficace par HoloLens.</span><span class="sxs-lookup"><span data-stu-id="d2148-138">Try walking around and gazing at your surroundings so that HoloLens can scan them more completely.</span></span>
+- <span data-ttu-id="d2148-139">Si vous avez placé un grand nombre d’hologrammes, essayez d'en supprimer.</span><span class="sxs-lookup"><span data-stu-id="d2148-139">If you've placed a lot of holograms, try removing some.</span></span>
+
+<span data-ttu-id="d2148-140">Si vous avez encore des problèmes, essayez d’exécuter l’application d’étalonnage.</span><span class="sxs-lookup"><span data-stu-id="d2148-140">If you're still having problems, trying running the Calibration app.</span></span> <span data-ttu-id="d2148-141">Cette application étalonne votre HoloLens pour vous pour vous permettre de garder vos hologrammes dans un état parfait.</span><span class="sxs-lookup"><span data-stu-id="d2148-141">This app calibrates your HoloLens just for you to help keep your holograms looking their best.</span></span> <span data-ttu-id="d2148-142">Pour réaliser cela, accédez à **Paramètres** > **Système** > **Utilitaires**.</span><span class="sxs-lookup"><span data-stu-id="d2148-142">To do this, go to **Settings** > **System** > **Utilities**.</span></span> <span data-ttu-id="d2148-143">Sous **Étalonnage**, sélectionnez **Ouvrir l'étalonnage**.</span><span class="sxs-lookup"><span data-stu-id="d2148-143">Under **Calibration**, select **Open Calibration**.</span></span>
+
+[<span data-ttu-id="d2148-144">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-144">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-145">Un message s'affiche et m'indique «Recherche de votre espace»</span><span class="sxs-lookup"><span data-stu-id="d2148-145">I see a message that says "Finding your space"</span></span>
+
+<span data-ttu-id="d2148-146">Lorsque HoloLens est en cours d’apprentissage ou de chargement d’un espace, un message court indiquant «Recherche de votre espace» peut s’afficher.</span><span class="sxs-lookup"><span data-stu-id="d2148-146">When HoloLens is learning or loading a space, you may see a brief message that says "Finding your space."</span></span> <span data-ttu-id="d2148-147">Si ce message s’affiche pendant plusieurs secondes, vous verrez un autre message dans le menu Démarrer indiquant «Nous sommes toujours à la recherche de votre espace».</span><span class="sxs-lookup"><span data-stu-id="d2148-147">If this message displays for more than a few seconds, you'll see another message under the Start menu that says "Still looking for your space."</span></span>
+
+<span data-ttu-id="d2148-148">Ces messages indiquent que HoloLens rencontre des difficultés pour le mappage de votre espace.</span><span class="sxs-lookup"><span data-stu-id="d2148-148">These messages mean that HoloLens is having trouble mapping your space.</span></span> <span data-ttu-id="d2148-149">Lorsque cela se produit, vous pouvez ouvrir des applications, mais vous ne pouvez pas placer d’hologrammes dans votre environnement.</span><span class="sxs-lookup"><span data-stu-id="d2148-149">When this happens, you can open apps, but you can't place holograms in your environment.</span></span>
+
+<span data-ttu-id="d2148-150">Si ces messages apparaissent régulièrement, essayez l’une des solutions suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-150">If you see these messages often, try one or more of the following fixes:</span></span>
+
+- <span data-ttu-id="d2148-151">Veillez à vous trouver dans une salle bien éclairée n'ayant pas trop de lumière directe.</span><span class="sxs-lookup"><span data-stu-id="d2148-151">Make sure that you're in a well-lit room that does not have a lot of direct sunlight.</span></span>
+- <span data-ttu-id="d2148-152">Veillez à ce que votre visière d'appareil soit propre.</span><span class="sxs-lookup"><span data-stu-id="d2148-152">Make sure that your device visor is clean.</span></span> <span data-ttu-id="d2148-153">[Découvrir comment nettoyer votre visière](hololens1-hardware.md#care-and-cleaning).</span><span class="sxs-lookup"><span data-stu-id="d2148-153">[Learn how to clean your visor](hololens1-hardware.md#care-and-cleaning).</span></span>
+- <span data-ttu-id="d2148-154">Veillez à avoir un signal Wi-Fi fort.</span><span class="sxs-lookup"><span data-stu-id="d2148-154">Make sure that you have a strong Wi-Fi signal.</span></span> <span data-ttu-id="d2148-155">Si vous entrez dans un nouvel environnement sans signal Wi-Fi ou disposant d’un signal Wi-Fi faible, HoloLens est incapable de trouver votre espace.</span><span class="sxs-lookup"><span data-stu-id="d2148-155">If you enter a new environment that has no Wi-Fi or a weak Wi-Fi signal, HoloLens won't be able find your space.</span></span> <span data-ttu-id="d2148-156">Vérifiez votre connexion Wi-Fi en accédant à **Settings** > **Réseau &amp; Internet** > **en Wi-Fi**.</span><span class="sxs-lookup"><span data-stu-id="d2148-156">Check your Wi-Fi connection by going to **Settings** > **Network &amp; Internet** > **Wi-Fi**.</span></span>
+- <span data-ttu-id="d2148-157">Déplacez-vous plus lentement.</span><span class="sxs-lookup"><span data-stu-id="d2148-157">Try moving more slowly.</span></span>
+
+[<span data-ttu-id="d2148-158">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-158">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-159">Les hologrammes prévus ne s'affichent pas dans mon espace</span><span class="sxs-lookup"><span data-stu-id="d2148-159">I'm not seeing the holograms that I expect to see in my space</span></span>
+
+<span data-ttu-id="d2148-160">Si vous ne voyez pas les hologrammes que vous avez placés, ou si vous en voyez d'autres non prévus, essayez d’effectuer au moins une des solutions suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-160">If you don't see the holograms that you placed, or if you're seeing some that you don't expect, try one or more of the following fixes:</span></span>
+
+- <span data-ttu-id="d2148-161">Allumer des éclairages.</span><span class="sxs-lookup"><span data-stu-id="d2148-161">Turn on some lights.</span></span> <span data-ttu-id="d2148-162">HoloLens est plus efficace dans un espace bien éclairé.</span><span class="sxs-lookup"><span data-stu-id="d2148-162">HoloLens works best in a well-lit space.</span></span>
+- <span data-ttu-id="d2148-163">Supprimez les hologrammes qui ne sont pas nécessaires en accédant aux **Paramètres** > **Système** > **Hologrammes** > **Éliminer des hologrammes avoisinants**.</span><span class="sxs-lookup"><span data-stu-id="d2148-163">Remove holograms that you don't need by going to **Settings** > **System** > **Holograms** > **Remove nearby holograms**.</span></span> <span data-ttu-id="d2148-164">Ou, le cas échéant, sélectionnez **Supprimer tous les hologrammes**.</span><span class="sxs-lookup"><span data-stu-id="d2148-164">Or, if needed, select **Remove all holograms**.</span></span>
+
+  > [!NOTE]
+  > <span data-ttu-id="d2148-165">Si la mise en page ou l’éclairage de votre espace change de façon notable, votre appareil peut rencontrer des difficultés pour identifier votre espace et afficher vos hologrammes.</span><span class="sxs-lookup"><span data-stu-id="d2148-165">If the layout or lighting in your space changes significantly, your device might have trouble identifying your space and showing your holograms.</span></span>
+
+[<span data-ttu-id="d2148-166">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-166">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-167">Je ne peux pas placer d’hologrammes aux emplacements souhaités</span><span class="sxs-lookup"><span data-stu-id="d2148-167">I can't place holograms where I want to</span></span>
+
+<span data-ttu-id="d2148-168">Voici quelques actions à tenter si vous rencontrez des difficultés pour le placement des hologrammes:</span><span class="sxs-lookup"><span data-stu-id="d2148-168">Here are some things to try if you're having trouble placing holograms:</span></span>
+
+- <span data-ttu-id="d2148-169">Placez-vous à une distance de un à trois mètres de l’emplacement où vous essayez de placer l’hologramme.</span><span class="sxs-lookup"><span data-stu-id="d2148-169">Stand between one and three meters from where you're trying to place the hologram.</span></span>
+- <span data-ttu-id="d2148-170">Ne pas placer d’hologrammes sur des surfaces noires ou réfléchissantes.</span><span class="sxs-lookup"><span data-stu-id="d2148-170">Don't place holograms on black or reflective surfaces.</span></span>
+- <span data-ttu-id="d2148-171">Veillez à vous trouver dans une salle bien éclairée n'ayant pas trop de lumière directe.</span><span class="sxs-lookup"><span data-stu-id="d2148-171">Make sure that you're in a well-lit room that does not have a lot of direct sunlight.</span></span>
+- <span data-ttu-id="d2148-172">Marchez dans les pièces pour que HoloLens puisse analyser de nouveau votre environnement.</span><span class="sxs-lookup"><span data-stu-id="d2148-172">Walk around the rooms so HoloLens can rescan your surroundings.</span></span> <span data-ttu-id="d2148-173">Pour voir ce qui a déjà été analysé, faites un clic aérien pour afficher le graphique de maillage cartographique.</span><span class="sxs-lookup"><span data-stu-id="d2148-173">To see what's already been scanned, air tap to reveal the mapping mesh graphic.</span></span>
+
+[<span data-ttu-id="d2148-174">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-174">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-175">Les hologrammes disparaissent ou sont contenus dans d’autres hologrammes ou objets</span><span class="sxs-lookup"><span data-stu-id="d2148-175">Holograms disappear or are encased in other holograms or objects</span></span>
+
+<span data-ttu-id="d2148-176">Si vous êtes trop proche d'un hologramme, celui-ci disparaîtra temporairement&mdash;pour restaurer l’hologramme, il suffit de vous en éloigner.</span><span class="sxs-lookup"><span data-stu-id="d2148-176">If you get too close to a hologram, it will temporarily disappear&mdash;to restore the hologram, just move away from it.</span></span> <span data-ttu-id="d2148-177">En outre, si vous avez placé plusieurs hologrammes ensemble, certains peuvent disparaître.</span><span class="sxs-lookup"><span data-stu-id="d2148-177">Also, if you've placed several holograms close together, some may disappear.</span></span> <span data-ttu-id="d2148-178">Essayez d'en supprimer quelques-uns.</span><span class="sxs-lookup"><span data-stu-id="d2148-178">Try removing a few.</span></span>
+
+<span data-ttu-id="d2148-179">Les hologrammes peuvent également être bloqués ou enfermés par d’autres hologrammes ou objets tels que les murs.</span><span class="sxs-lookup"><span data-stu-id="d2148-179">Holograms can also be blocked or encased by other holograms or by objects such as walls.</span></span> <span data-ttu-id="d2148-180">Dans ce cas, essayez l’une des solutions suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-180">If this happens, try one of the following fixes:</span></span>
+
+- <span data-ttu-id="d2148-181">Si l’hologramme est contenu dans un autre hologramme, déplacez l’hologramme enfermé vers un autre emplacement.</span><span class="sxs-lookup"><span data-stu-id="d2148-181">If the hologram is encased in another hologram, move the encased hologram to another location.</span></span> <span data-ttu-id="d2148-182">Pour ce faire, sélectionnez **Ajuster**, puis appuyez de façon prolongée pour le placer.</span><span class="sxs-lookup"><span data-stu-id="d2148-182">To do this, select **Adjust**, then tap and hold to position it.</span></span>
+- <span data-ttu-id="d2148-183">Si l’hologramme est contenu sur un mur, sélectionnez **Ajuster**, puis marchez vers le mur jusqu’à ce que l’hologramme s’affiche.</span><span class="sxs-lookup"><span data-stu-id="d2148-183">If the hologram is encased in a wall, select **Adjust**, then walk toward the wall until the hologram appears.</span></span> <span data-ttu-id="d2148-184">Appuyez longuement, puis faire avancer l’hologramme vers l’avant ou l’arrière du mur.</span><span class="sxs-lookup"><span data-stu-id="d2148-184">Tap and hold, then pull the hologram forward and out of the wall.</span></span>
+- <span data-ttu-id="d2148-185">Si vous ne pouvez pas déplacer l’hologramme à l’aide de mouvements, utilisez votre voix pour le supprimer.</span><span class="sxs-lookup"><span data-stu-id="d2148-185">If you can't move the hologram by using gestures, use your voice to remove it.</span></span> <span data-ttu-id="d2148-186">Regardez l’hologramme, puis dire «Supprimer».</span><span class="sxs-lookup"><span data-stu-id="d2148-186">Gaze at the hologram, then say "Remove."</span></span> <span data-ttu-id="d2148-187">Rouvrez ensuite l’hologramme et placez-le à un nouvel emplacement.</span><span class="sxs-lookup"><span data-stu-id="d2148-187">Then reopen the hologram and place it in a new location.</span></span>
+
+[<span data-ttu-id="d2148-188">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-188">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-189">Je peux voir des hologrammes situés de l’autre côté d’un mur</span><span class="sxs-lookup"><span data-stu-id="d2148-189">I can see holograms that are on the other side of a wall</span></span>
+
+<span data-ttu-id="d2148-190">Si vous êtes très près d’un mur ou si HoloLens n’a pas encore analysé le mur, vous pouvez voir les hologrammes se trouvant dans la pièce suivante.</span><span class="sxs-lookup"><span data-stu-id="d2148-190">If you're very close to a wall, or if HoloLens hasn't scanned the wall yet, you can see holograms that are in the next room.</span></span> <span data-ttu-id="d2148-191">Pour analyser le mur, placez-vous de un à trois mètres du mur et regardez-le.</span><span class="sxs-lookup"><span data-stu-id="d2148-191">To scan the wall, stand between one and three meters from the wall and gaze at it.</span></span>
+
+<span data-ttu-id="d2148-192">Un objet noir ou réfléchissant (par exemple, un canapé noir ou un réfrigérateur en acier inoxydable) peut s'avérer problématique lorsque HoloLens tente d’analyser le mur.</span><span class="sxs-lookup"><span data-stu-id="d2148-192">A black or reflective object (for example, a black couch or a stainless steel refrigerator) near the wall may cause problems when HoloLens tries to scan the wall.</span></span> <span data-ttu-id="d2148-193">Si un tel objet existe, analysez l’autre côté du mur.</span><span class="sxs-lookup"><span data-stu-id="d2148-193">If there is such an object, scan the other side of the wall.</span></span>
+
+[<span data-ttu-id="d2148-194">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-194">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-195">Lorsque je place un hologramme sur un mur, il semble flotter</span><span class="sxs-lookup"><span data-stu-id="d2148-195">When I place a hologram on a wall, the hologram seems to float</span></span>
+
+<span data-ttu-id="d2148-196">Un hologramme que vous placez sur un mur apparaît normalement comme étant à environ un pouce du mur.</span><span class="sxs-lookup"><span data-stu-id="d2148-196">A hologram that you place on a wall typically appears to be an inch or so away from the wall.</span></span> <span data-ttu-id="d2148-197">S'il paraît être plus éloigné, tentez au moins l’une des solutions suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-197">If it appears to be farther away, try one or more of the following fixes:</span></span>
+
+- <span data-ttu-id="d2148-198">Lorsque vous placez un hologramme sur un mur, placez-vous entre un et trois mètres du mur et faites directement face au mur.</span><span class="sxs-lookup"><span data-stu-id="d2148-198">When you place a hologram on a wall, stand between one and three meters from the wall and face the wall straight on.</span></span>
+- <span data-ttu-id="d2148-199">Faites un clic aérien sur le mur pour afficher le graphique de maillage cartographique.</span><span class="sxs-lookup"><span data-stu-id="d2148-199">Air tap the wall to reveal the mapping mesh graphic.</span></span> <span data-ttu-id="d2148-200">Veillez à ce que le maillage s'aligne sur le mur.</span><span class="sxs-lookup"><span data-stu-id="d2148-200">Make sure that the mesh aligns with the wall.</span></span> <span data-ttu-id="d2148-201">Si ce n’est pas le cas, supprimez l’hologramme, analysez de le mur de nouveau, puis réessayez.</span><span class="sxs-lookup"><span data-stu-id="d2148-201">If it doesn't, remove the hologram, rescan the wall, and then try again.</span></span>
+- <span data-ttu-id="d2148-202">Si le problème persiste, exécutez l’application d’étalonnage.</span><span class="sxs-lookup"><span data-stu-id="d2148-202">If the issue persists, run the Calibration app.</span></span> <span data-ttu-id="d2148-203">Celle-ci est accessible dans les **Paramètres** > **Système** > **Utilitaires**.</span><span class="sxs-lookup"><span data-stu-id="d2148-203">You'll find it in **Settings** > **System** > **Utilities**.</span></span>
+
+[<span data-ttu-id="d2148-204">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-204">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-205">Les applications semblent trop proches de moi lorsque j’essaie de les déplacer</span><span class="sxs-lookup"><span data-stu-id="d2148-205">Apps appear too close to me when I'm trying to move them</span></span>
+
+<span data-ttu-id="d2148-206">Essayez de vous déplacer et de regarder la zone sur laquelle vous placez l’application pour que HoloLens analyse l'endroit sous différents angles.</span><span class="sxs-lookup"><span data-stu-id="d2148-206">Try walking around and looking at the area where you're placing the app so that HoloLens scans the area from different angles.</span></span> <span data-ttu-id="d2148-207">[Nettoyez la visière de votre appareil](hololens1-hardware.md#care-and-cleaning) peut également être utile.</span><span class="sxs-lookup"><span data-stu-id="d2148-207">[Cleaning your device visor](hololens1-hardware.md#care-and-cleaning) may also help.</span></span>
+
+[<span data-ttu-id="d2148-208">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-208">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-209">Je reçois un message d’erreur mentionnant un espace disque insuffisant</span><span class="sxs-lookup"><span data-stu-id="d2148-209">I'm getting a low disk space error</span></span>
+
+<span data-ttu-id="d2148-210">Libérez de l'espace de stockage en effectuant au moins une des opérations suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-210">Free up some storage space by doing one or more of the following:</span></span>
+
+- <span data-ttu-id="d2148-211">Supprimez certains hologrammes que vous avez placés ou supprimez des données enregistrées dans des applications.</span><span class="sxs-lookup"><span data-stu-id="d2148-211">Remove some of the holograms that you've placed, or remove some saved data from within apps.</span></span> [<span data-ttu-id="d2148-212">Comment puis-je retrouver mes données?</span><span class="sxs-lookup"><span data-stu-id="d2148-212">How do I find my data?</span></span>](holographic-data.md)
+- <span data-ttu-id="d2148-213">Supprimez des images et vidéos dans l’application Photos.</span><span class="sxs-lookup"><span data-stu-id="d2148-213">Delete some pictures and videos in the Photos app.</span></span>
+- <span data-ttu-id="d2148-214">Désinstallez des applications dans votre HoloLens.</span><span class="sxs-lookup"><span data-stu-id="d2148-214">Uninstall some apps from your HoloLens.</span></span> <span data-ttu-id="d2148-215">Dans la liste **Toutes les applications**, appuyez de façon prolongée sur l’application à désinstaller, puis sélectionnez **Désinstaller**.</span><span class="sxs-lookup"><span data-stu-id="d2148-215">In the **All apps** list, tap and hold the app you want to uninstall, then select **Uninstall**.</span></span> <span data-ttu-id="d2148-216">(la désinstallation de l’application supprime également toutes les données stockées par l'application sur l’appareil).</span><span class="sxs-lookup"><span data-stu-id="d2148-216">(Uninstalling the app also deletes any data that the app stores on the device.)</span></span>
+
+[<span data-ttu-id="d2148-217">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-217">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-218">HoloLens ne répond pas à mes mouvements</span><span class="sxs-lookup"><span data-stu-id="d2148-218">HoloLens doesn't respond to my gestures</span></span>
+
+<span data-ttu-id="d2148-219">Pour assurer la détection de vos mouvements par HoloLens, gardez votre main à l'intérieur du cadre de mouvement.</span><span class="sxs-lookup"><span data-stu-id="d2148-219">To make sure that HoloLens can see your gestures, keep your hand in the gesture frame.</span></span> <span data-ttu-id="d2148-220">Le cadre de mouvement s'étend de quelques pieds autour de vous.</span><span class="sxs-lookup"><span data-stu-id="d2148-220">The gesture frame extends a couple of feet on either side of you.</span></span> <span data-ttu-id="d2148-221">HoloLens peut aussi mieux remarquer votre main lorsque vous la maintenez à environ 18pouces devant votre corps (vous n'avez toutefois pas à vous préoccuper de l'exactitude).</span><span class="sxs-lookup"><span data-stu-id="d2148-221">HoloLens can also best see your hand when you hold it about 18 inches in front of your body (though you don't have to be precise about this).</span></span> <span data-ttu-id="d2148-222">Lorsque HoloLens peut détecter votre main, le curseur passe du point à l’anneau.</span><span class="sxs-lookup"><span data-stu-id="d2148-222">When HoloLens can see your hand, the cursor changes from a dot to a ring.</span></span> <span data-ttu-id="d2148-223">En savoir plus sur l'[utilisation des mouvements dans HoloLens2](hololens2-basic-usage.md) ou l’[utilisation des mouvements dans HoloLens (1ère génération)](hololens1-basic-usage.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-223">Learn more about [using gestures in HoloLens 2](hololens2-basic-usage.md) or [using gestures in HoloLens (1st gen)](hololens1-basic-usage.md).</span></span>
+
+[<span data-ttu-id="d2148-224">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-224">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-225">HoloLens ne répond pas à ma voix</span><span class="sxs-lookup"><span data-stu-id="d2148-225">HoloLens doesn't respond to my voice</span></span>
+
+<span data-ttu-id="d2148-226">HoloLens (1ère génération) et HoloLens2 ont intégré la reconnaissance vocale et prennent également en charge Cortana (reconnaissance vocale en ligne).</span><span class="sxs-lookup"><span data-stu-id="d2148-226">HoloLens (1st gen) and HoloLens 2 have built-in speech recognition, and also support Cortana (online speech recognition).</span></span>
+
+### <span data-ttu-id="d2148-227">Les commandes vocales intégrées ne fonctionnent pas</span><span class="sxs-lookup"><span data-stu-id="d2148-227">Built-in voice commands do not work</span></span>
+
+<span data-ttu-id="d2148-228">Sur HoloLens (1ère génération), la reconnaissance vocale intégrée n'est pas paramétrable.</span><span class="sxs-lookup"><span data-stu-id="d2148-228">On HoloLens (1st gen), built-in speech recognition is not configurable.</span></span> <span data-ttu-id="d2148-229">Elle est constamment activée.</span><span class="sxs-lookup"><span data-stu-id="d2148-229">It is always turned on.</span></span> <span data-ttu-id="d2148-230">Sur HoloLens2, vous pouvez choisir d’activer la reconnaissance vocale et Cortana pendant la configuration de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="d2148-230">On HoloLens 2, you can choose whether to turn on both speech recognition and Cortana during device setup.</span></span>
+
+<span data-ttu-id="d2148-231">Si votre HoloLens2 ne répond pas à votre voix, veillez à ce que la reconnaissance vocale soit activée.</span><span class="sxs-lookup"><span data-stu-id="d2148-231">If your HoloLens 2 is not responding to your voice, make sure Speech recognition is turned on.</span></span> <span data-ttu-id="d2148-232">Accédez à **Démarrer** > **Paramètres** > **Confidentialité** > **Voix** et activez la **Reconnaissance vocale**.</span><span class="sxs-lookup"><span data-stu-id="d2148-232">Go to **Start** > **Settings** > **Privacy** > **Speech** and turn on **Speech recognition**.</span></span>
+
+### <span data-ttu-id="d2148-233">Cortana et Dictée ne fonctionnent pas</span><span class="sxs-lookup"><span data-stu-id="d2148-233">Cortana or Dictation doesn't work</span></span>
+
+<span data-ttu-id="d2148-234">Si Cortana ou Dictée ne sont pas réceptifs à votre voix, veillez à ce que la reconnaissance vocale en ligne soit activée.</span><span class="sxs-lookup"><span data-stu-id="d2148-234">If Cortana or Dictation isn't responding to your voice, make sure online speech recognition is turned on.</span></span> <span data-ttu-id="d2148-235">Accédez à **Démarrer** > **Paramètres** > **Confidentialité** > **Voix** et activez les paramètres de la **Reconnaissance vocale**.</span><span class="sxs-lookup"><span data-stu-id="d2148-235">Go to **Start** > **Settings** > **Privacy** > **Speech** and verify the **Online speech recognition** settings.</span></span> 
+
+<span data-ttu-id="d2148-236">Si Cortana ne répond toujours pas, effectuez l’une des opérations suivantes pour vérifier que Cortana est elle-même activée:</span><span class="sxs-lookup"><span data-stu-id="d2148-236">If Cortana is still not responding, do one of the following to verify that Cortana itself is turned on:</span></span>
+
+- <span data-ttu-id="d2148-237">Dans **Toutes les applications**, sélectionnez **Cortana** > sélectionnez **Menu** > **Bloc-notes** > **Paramètres** pour apporter des modifications.</span><span class="sxs-lookup"><span data-stu-id="d2148-237">In **All apps**, select **Cortana** > select **Menu** > **Notebook** > **Settings** to make changes.</span></span>
+- <span data-ttu-id="d2148-238">Sur HoloLens2, sélectionnez le bouton **Paramètres vocaux** ou prononcez «Paramètres vocaux».</span><span class="sxs-lookup"><span data-stu-id="d2148-238">On HoloLens 2, select the **Speech settings** button or say "Speech settings."</span></span>
+
+<span data-ttu-id="d2148-239">Pour en savoir plus sur ce que vous pouvez dire, voir [Utiliser votre voix avec HoloLens](hololens-cortana.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-239">To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).</span></span>
+
+[<span data-ttu-id="d2148-240">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-240">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-241">Je rencontre des problèmes de jumelage ou d’utilisation d’un appareil Bluetooth</span><span class="sxs-lookup"><span data-stu-id="d2148-241">I'm having problems pairing or using a Bluetooth device</span></span>
+
+<span data-ttu-id="d2148-242">Si vous rencontrez des problèmes de [jumelage d'un appareil Bluetooth](hololens-connect-devices.md), procédez comme suit:</span><span class="sxs-lookup"><span data-stu-id="d2148-242">If you're having problems [pairing a Bluetooth device](hololens-connect-devices.md), try the following:</span></span>
+
+- <span data-ttu-id="d2148-243">Accédez à **Paramètres** > **Appareils** et vérifiez que l’option Bluetooth est activée.</span><span class="sxs-lookup"><span data-stu-id="d2148-243">Go to **Settings** > **Devices**, and make sure that Bluetooth is turned on.</span></span> <span data-ttu-id="d2148-244">Si tel est le cas, désactivez-la et activez-la de nouveau.</span><span class="sxs-lookup"><span data-stu-id="d2148-244">If it is, turn it off and on again.</span></span>
+- <span data-ttu-id="d2148-245">Assurez-vous que votre appareil Bluetooth est totalement chargé ou qu'il dispose de nouvelles batteries.</span><span class="sxs-lookup"><span data-stu-id="d2148-245">Make sure that your Bluetooth device is fully charged or has fresh batteries.</span></span>
+- <span data-ttu-id="d2148-246">Si vous ne parvenez toujours pas à vous connecter, [redémarrez HoloLens](hololens-recovery.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-246">If you still can't connect, [restart the HoloLens](hololens-recovery.md).</span></span>
+
+[<span data-ttu-id="d2148-247">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-247">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-248">Les paramètres HoloLens répertorie les appareils comme disponibles, mais ceux-ci ne fonctionnent pas</span><span class="sxs-lookup"><span data-stu-id="d2148-248">HoloLens Settings lists devices as available, but the devices don't work</span></span>
+
+<span data-ttu-id="d2148-249">HoloLens ne prend pas en charge les profils audio Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="d2148-249">HoloLens doesn't support Bluetooth audio profiles.</span></span> <span data-ttu-id="d2148-250">Les appareils audio Bluetooth, tels que les haut-parleurs et les casques, peuvent apparaître comme disponibles dans les paramètres HoloLens. Ils ne sont toutefois pas pris en charge.</span><span class="sxs-lookup"><span data-stu-id="d2148-250">Bluetooth audio devices, such as speakers and headsets, may appear as available in HoloLens settings, but they aren't supported.</span></span>
+
+<span data-ttu-id="d2148-251">Si vous rencontrez des problèmes lors de l'utilisation d'un périphérique Bluetooth, assurez-vous qu’il s’agit d’un appareil pris en charge.</span><span class="sxs-lookup"><span data-stu-id="d2148-251">If you're having trouble using a Bluetooth device, make sure that it's a supported device.</span></span> <span data-ttu-id="d2148-252">Voici les appareils pris en charge:</span><span class="sxs-lookup"><span data-stu-id="d2148-252">Supported devices include the following:</span></span>
+
+- <span data-ttu-id="d2148-253">Claviers anglais QWERTY Bluetooth (vous pouvez les utiliser dans les emplacements où vous utilisez le clavier holographique).</span><span class="sxs-lookup"><span data-stu-id="d2148-253">English-language QWERTY Bluetooth keyboards (you can use these anywhere that you use the holographic keyboard).</span></span>
+- <span data-ttu-id="d2148-254">Souris Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="d2148-254">Bluetooth mice.</span></span>
+- <span data-ttu-id="d2148-255">Le [Dispositif de clic HoloLens](hololens1-clicker.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-255">The [HoloLens clicker](hololens1-clicker.md).</span></span>
+
+<span data-ttu-id="d2148-256">Vous pouvez jumeler d’autres appareils HID et GATT Bluetooth à votre HoloLens.</span><span class="sxs-lookup"><span data-stu-id="d2148-256">You can pair other Bluetooth HID and GATT devices together with your HoloLens.</span></span> <span data-ttu-id="d2148-257">Toutefois, il peut être nécessaire d'installer les applications dédiées correspondantes à partir du Microsoft Store pour utiliser effectivement les appareils.</span><span class="sxs-lookup"><span data-stu-id="d2148-257">However, you may have to install corresponding companion apps from Microsoft Store to actually use the devices.</span></span>
+
+[<span data-ttu-id="d2148-258">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-258">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-259">Je rencontre des problèmes lors de l’utilisation du dispositif de clic HoloLens</span><span class="sxs-lookup"><span data-stu-id="d2148-259">I'm having problems using the HoloLens clicker</span></span>
+
+<span data-ttu-id="d2148-260">Utilisez le [dispositif de clic](hololens1-clicker.md) pour sélectionner, défiler, déplacer et redimensionner des hologrammes.</span><span class="sxs-lookup"><span data-stu-id="d2148-260">Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms.</span></span> <span data-ttu-id="d2148-261">Les applications physiques peuvent prendre en charge d’autres mouvements du dispositif de clic.</span><span class="sxs-lookup"><span data-stu-id="d2148-261">Individial apps may support additional clicker gestures.</span></span>
+
+<span data-ttu-id="d2148-262">Si vous ne parvenez pas à utiliser le dispositif de clic, assurez-vous qu’il est chargé et jumelé à votre HoloLens.</span><span class="sxs-lookup"><span data-stu-id="d2148-262">If you're having trouble using the clicker, make sure that it's charged and paired with your HoloLens.</span></span> <span data-ttu-id="d2148-263">Si la batterie est faible, la lumière de l’indicateur clignote de couleur orange.</span><span class="sxs-lookup"><span data-stu-id="d2148-263">If the battery is low, the indicator light blinks amber.</span></span> <span data-ttu-id="d2148-264">Pour vérifier que le dispositif de clic est jumelé, accédez à **Paramètres** > **Appareils** pour vérifier sa présence.</span><span class="sxs-lookup"><span data-stu-id="d2148-264">To verify that the clicker is paired, go to **Settings** > **Devices** and see if it shows up there.</span></span> <span data-ttu-id="d2148-265">Pour plus d’informations, voir [Jumeler le dispositif de clic](hololens-connect-devices.md#hololens-1st-gen-pair-the-clicker).</span><span class="sxs-lookup"><span data-stu-id="d2148-265">For more information, see [Pair the clicker](hololens-connect-devices.md#hololens-1st-gen-pair-the-clicker).</span></span>
+
+<span data-ttu-id="d2148-266">Si le dispositif de clic est chargé et jumelé et que vous rencontrez toujours des problèmes, réinitialisez-le en appuyant sur le bouton principal et sur le bouton de jumelage pendant 15secondes.</span><span class="sxs-lookup"><span data-stu-id="d2148-266">If the clicker is charged and paired and you're still having problems, reset it by holding down the main button and the pairing button for 15 seconds.</span></span> <span data-ttu-id="d2148-267">Puis jumelez de nouveau le dispositif de clic à votre HoloLens.</span><span class="sxs-lookup"><span data-stu-id="d2148-267">Then pair the clicker with your HoloLens again.</span></span>
+
+<span data-ttu-id="d2148-268">Si le paramétrage du dispositif de clic ne vous est pas utile, consultez [Redémarrer ou récupérer le dispositif de clic HoloLens](hololens1-clicker.md#restart-or-recover-the-clicker).</span><span class="sxs-lookup"><span data-stu-id="d2148-268">If resetting the clicker doesn't help, see [Restart or recover the HoloLens clicker](hololens1-clicker.md#restart-or-recover-the-clicker).</span></span>
+
+[<span data-ttu-id="d2148-269">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-269">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-270">Je ne peux pas me connecter au Wi-Fi.</span><span class="sxs-lookup"><span data-stu-id="d2148-270">I can't connect to Wi-Fi</span></span>
+
+<span data-ttu-id="d2148-271">Voici quelques actions à tenter si vous ne pouvez pas connecter votre HoloLens à un réseau Wi-Fi:</span><span class="sxs-lookup"><span data-stu-id="d2148-271">Here are some things to try if you can't connect your HoloLens to a Wi-Fi network:</span></span>
+
+- <span data-ttu-id="d2148-272">Vérifiez que le Wi-Fi est activé.</span><span class="sxs-lookup"><span data-stu-id="d2148-272">Make sure that Wi-Fi is turned on.</span></span> <span data-ttu-id="d2148-273">Pour ce faire, utilisez le mouvement Démarrer, puis sélectionnez **Paramètres** > **Réseau&amp; Internet** > **Wi-Fi**.</span><span class="sxs-lookup"><span data-stu-id="d2148-273">To check, use the Start gesture, then select **Settings** > **Network &amp; Internet** > **Wi-Fi**.</span></span> <span data-ttu-id="d2148-274">Si le Wi-Fi est activé, désactivez-le, puis activez-le de nouveau.</span><span class="sxs-lookup"><span data-stu-id="d2148-274">If Wi-Fi is on, try turning it off and then on again.</span></span>
+- <span data-ttu-id="d2148-275">Rapprochez-vous du routeur ou du point d’accès.</span><span class="sxs-lookup"><span data-stu-id="d2148-275">Move closer to the router or access point.</span></span>
+- <span data-ttu-id="d2148-276">Redémarrez votre routeur Wi-Fi, puis [Redémarrer HoloLens](hololens-recovery.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-276">Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md).</span></span> <span data-ttu-id="d2148-277">Essayez de vous reconnecter.</span><span class="sxs-lookup"><span data-stu-id="d2148-277">Try connecting again.</span></span>
+- <span data-ttu-id="d2148-278">Si ces options ne fonctionnent pas, vérifiez que votre routeur utilise le microprogramme le plus récent.</span><span class="sxs-lookup"><span data-stu-id="d2148-278">If none of these things work, check to make sure that your router is using the latest firmware.</span></span> <span data-ttu-id="d2148-279">Ces informations sont disponibles sur le site web du fabricant.</span><span class="sxs-lookup"><span data-stu-id="d2148-279">You can find this information on the manufacturer website.</span></span>
+
+[<span data-ttu-id="d2148-280">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-280">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-281">Mon HoloLens ne fonctionne pas correctement, ne répond pas ou ne démarre pas</span><span class="sxs-lookup"><span data-stu-id="d2148-281">My HoloLens isn't running well, is unresponsive, or won't start</span></span>
+
+<span data-ttu-id="d2148-282">Si votre appareil ne fonctionne pas correctement, voir [Redémarrer, réinitialiser ou récupérer HoloLens](hololens-recovery.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-282">If your device isn't performing properly, see [Restart, reset, or recover HoloLens](hololens-recovery.md).</span></span>
+
+[<span data-ttu-id="d2148-283">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-283">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-284">Je ne peux pas me connecter à un appareil HoloLens, car il a déjà été configuré pour une autre personne</span><span class="sxs-lookup"><span data-stu-id="d2148-284">I can't sign in to a HoloLens device because it was previously set up for someone else</span></span>
+
+<span data-ttu-id="d2148-285">Si votre appareil a été précédemment configuré pour une autre personne, soit pour un client, soit pour un ancien employé, et que vous ne disposez pas de leur mot de passe pour déverrouiller l’appareil, vous pouvez effectuer l’une des opérations suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-285">If your device was previously set up for someone else, either for a client or for a former employee, and you don't have their password to unlock the device, you can do one of the following:</span></span>
+
+- <span data-ttu-id="d2148-286">Pour un appareil inscrit dans la gestion des données de référence Intune (MDM), vous pouvez utiliser Intune pour effectuer une [réinitialisation](https://docs.microsoft.com/intune/remote-actions/devices-wipe) à distance de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="d2148-286">For a device that is enrolled in Intune mobile device management (MDM), you can use Intune to remotely [wipe](https://docs.microsoft.com/intune/remote-actions/devices-wipe) the device.</span></span> <span data-ttu-id="d2148-287">L’appareil redémarre ensuite automatiquement.</span><span class="sxs-lookup"><span data-stu-id="d2148-287">The device then re-flashes itself.</span></span>  
+   > [!IMPORTANT]  
+   > <span data-ttu-id="d2148-288">Lorsque vous réinitialisez l’appareil, veillez à laisser **Conserver l’état de l'inscription et le compte utilisateur** désactivé.</span><span class="sxs-lookup"><span data-stu-id="d2148-288">When you wipe the device, make sure to leave **Retain enrollment state and user account** unchecked.</span></span>
+- <span data-ttu-id="d2148-289">Pour un appareil non inscrit dans la gestion des données de référence, vous pouvez [placer l’appareil dans le **Mode clignotant** et utiliser le Compagnon de récupération avancée](hololens-recovery.md#clean-reflash-the-device) pour récupérer l’appareil.</span><span class="sxs-lookup"><span data-stu-id="d2148-289">For a non-MDM device, you can [put the device into **Flashing Mode** and use Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) to recover the device.</span></span>
+
+[<span data-ttu-id="d2148-290">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-290">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-291">Questions sur la gestion d'appareils HoloLens</span><span class="sxs-lookup"><span data-stu-id="d2148-291">Questions about managing HoloLens devices</span></span>
+
+### <span data-ttu-id="d2148-292">Puise-je utiliser System Center Configuration Manager (SCCM) pour gérer des appareils HoloLens?</span><span class="sxs-lookup"><span data-stu-id="d2148-292">Can I use System Center Configuration Manager (SCCM) to manage HoloLens devices?</span></span>
+
+<span data-ttu-id="d2148-293">Non.</span><span class="sxs-lookup"><span data-stu-id="d2148-293">No.</span></span> <span data-ttu-id="d2148-294">Vous devez utiliser un système de gestion des données de référence pour gérer les appareils HoloLens.</span><span class="sxs-lookup"><span data-stu-id="d2148-294">You have to use an MDM system to manage HoloLens devices.</span></span>
+
+### <span data-ttu-id="d2148-295">Puis-je utiliser Active Directory Domain Services (AD DS) pour gérer des comptes d'utilisateur HoloLens?</span><span class="sxs-lookup"><span data-stu-id="d2148-295">Can I use Active Directory Domain Services (AD DS) to manage HoloLens user accounts?</span></span>
+
+<span data-ttu-id="d2148-296">Non.</span><span class="sxs-lookup"><span data-stu-id="d2148-296">No.</span></span> <span data-ttu-id="d2148-297">Vous devez utiliser Azure Active Directory (AAD) pour gérer des comptes d'utilisateur pour les appareils HoloLens.</span><span class="sxs-lookup"><span data-stu-id="d2148-297">You have to use Azure Active Directory (AAD) to manage user accounts for HoloLens devices.</span></span>
+
+### <span data-ttu-id="d2148-298">HoloLens peut-elle effectuer l'inscription automatique Automated Data Capture Systems (ADCS)?</span><span class="sxs-lookup"><span data-stu-id="d2148-298">Is HoloLens capable of Automated Data Capture Systems (ADCS) auto-enrollment?</span></span>
+
+<span data-ttu-id="d2148-299">Non.</span><span class="sxs-lookup"><span data-stu-id="d2148-299">No.</span></span>
+
+### <span data-ttu-id="d2148-300">HoloLens peut-elle participer à l'Authentification Windows intégrée?</span><span class="sxs-lookup"><span data-stu-id="d2148-300">Can HoloLens participate in Integrated Windows Authentication?</span></span>
+
+<span data-ttu-id="d2148-301">Non.</span><span class="sxs-lookup"><span data-stu-id="d2148-301">No.</span></span>
+
+### <span data-ttu-id="d2148-302">HoloLens prend-elle prise en charge la personnalisation?</span><span class="sxs-lookup"><span data-stu-id="d2148-302">Does HoloLens support branding?</span></span>
+
+<span data-ttu-id="d2148-303">Non.</span><span class="sxs-lookup"><span data-stu-id="d2148-303">No.</span></span> <span data-ttu-id="d2148-304">Vous pouvez cependant contourner ce problème en utilisant l’une des méthodes suivantes:</span><span class="sxs-lookup"><span data-stu-id="d2148-304">However, you can work around this issue by using one of the following approaches:</span></span>
+
+- <span data-ttu-id="d2148-305">Créez une application personnalisée, puis [activer le mode kiosque](hololens-kiosk.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-305">Create a custom app, and then [enable Kiosk mode](hololens-kiosk.md).</span></span> <span data-ttu-id="d2148-306">L’application personnalisée peut être personnalisée et lancer d’autres applications (par exemple, Remote Assist).</span><span class="sxs-lookup"><span data-stu-id="d2148-306">The custom app can have branding, and can launch other apps (such as Remote Assist).</span></span>  
+- <span data-ttu-id="d2148-307">Remplacez toutes les images de profil utilisateur dans Azure Active Directory par le logo de votre entreprise.</span><span class="sxs-lookup"><span data-stu-id="d2148-307">Change all of the user profile pictures in AAD to your company logo.</span></span> <span data-ttu-id="d2148-308">Cela n'est peut-être pas recommandé pour tous les scénarios.</span><span class="sxs-lookup"><span data-stu-id="d2148-308">However, this may not be desirable for all scenarios.</span></span>
+
+### <span data-ttu-id="d2148-309">Quelles fonctionnalités de journalisation sont proposées dans l'offre HoloLens (1èregénération) et HoloLens2?</span><span class="sxs-lookup"><span data-stu-id="d2148-309">What logging capabilities do HoloLens (1st gen) and HoloLens 2 offer?</span></span>
+
+<span data-ttu-id="d2148-310">La journalisation se limite aux traces pouvant être capturées dans les scénarios de développement ou de résolution de problèmes, ou la télémétrie que les appareils envoient aux serveurs Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d2148-310">Logging is limited to traces that can be captured in development or troubleshooting scenarios, or telemetry that the devices send to Microsoft servers.</span></span>
+
+[<span data-ttu-id="d2148-311">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-311">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-312">Questions sur la sécurisation d'appareils HoloLens</span><span class="sxs-lookup"><span data-stu-id="d2148-312">Questions about securing HoloLens devices</span></span>
+
+<span data-ttu-id="d2148-313">Consultez [Questions fréquemment posées relatives à la protection des appareils HoloLens](hololens-faq-security.md).</span><span class="sxs-lookup"><span data-stu-id="d2148-313">See [frequently asked questions about securing HoloLens devices](hololens-faq-security.md).</span></span>
+
+[<span data-ttu-id="d2148-314">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-314">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-315">Comment faire pour supprimer tous les espaces?</span><span class="sxs-lookup"><span data-stu-id="d2148-315">How do I delete all spaces?</span></span>
+
+*<span data-ttu-id="d2148-316">Bientôt disponible</span><span class="sxs-lookup"><span data-stu-id="d2148-316">Coming soon</span></span>*
+
+[<span data-ttu-id="d2148-317">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-317">Back to list</span></span>](#list)
+
+## <span data-ttu-id="d2148-318">Je ne peux pas trouver ou utiliser le clavier pour faire une saisie dans l’émulateur HoloLens2</span><span class="sxs-lookup"><span data-stu-id="d2148-318">I cannot find or use the keyboard to type in the HoloLens 2 Emulator</span></span>
+
+*<span data-ttu-id="d2148-319">Bientôt disponible</span><span class="sxs-lookup"><span data-stu-id="d2148-319">Coming soon</span></span>*
+
+[<span data-ttu-id="d2148-320">Retour à la liste</span><span class="sxs-lookup"><span data-stu-id="d2148-320">Back to list</span></span>](#list)
