@@ -1,3 +1,7 @@
 - name: Documents
   tocHref: /
   topicHref: /
+  items:
+    - name: Hololens
+      tocHref: /hololens
+      topicHref: /hololens/index
