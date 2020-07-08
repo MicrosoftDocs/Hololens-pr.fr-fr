@@ -1,5 +1,5 @@
 ---
-title: Activer le chiffrement Bitlocker pour HoloLens (HoloLens)
+title: Chiffrement BitLocker HoloLens
 description: Activer le chiffrement de l’appareil Bitlocker pour protéger les fichiers stockés sur le casque HoloLens
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -11,16 +11,13 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-appliesto:
-- HoloLens (1st gen)
-ms.openlocfilehash: 29b9ce346456019dad8e9bc6fd02b104ed4a821d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: a18d9e890b34f28ffcd8be7546dcdbe08e9934a6
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828094"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857812"
 ---
-# Activer le chiffrement pour HoloLens
+# Chiffrement BitLocker HoloLens
 
 HoloLens (1er génération) et HoloLens 2 prennent en charge le chiffrement de l’appareil à l’aide de BitLocker, mais BitLocker est toujours activé sur HoloLens 2.
 

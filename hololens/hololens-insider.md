@@ -11,27 +11,32 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 4/21/2020
+ms.date: 6/29/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e00c043f7de1142e4d2e08e41ff0d91123d4a98b
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828063"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858008"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
 Bienvenue dans la dernière build Insider Preview pour HoloLens.  Il est facile de commencer et de fournir des commentaires utiles pour notre prochaine mise à jour du système d’exploitation pour HoloLens.
 
+Windows Insider se déplace désormais vers les canaux. Le sonne **rapide** devient le **canal de développement**, la sonnerie **lente** devient le **canal bêta**et la sonnerie de la version d' **évaluation** devient le **canal de publication**. Voici à quoi ressemble le mappage:
+
+![Canaux Windows Insider explication](images/WindowsInsiderChannels.png)
+
+Pour plus d’informations: [entrée de blog Windows](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
+
 ## Commencer à recevoir les builds Insider
 
 Sur un appareil HoloLens 2, accédez à **paramètres**  ->  **mise à jour &**  ->  **programme Windows Insider** Security et sélectionnez **commencer**. Liez le compte que vous avez utilisé pour vous inscrire au programme Windows Insider.
 
-Ensuite, sélectionnez **développement actif de Windows**, choisissez si vous souhaitez recevoir des builds **rapides** ou **lentes** , puis passez en revue les termes du programme.
+Ensuite, sélectionnez **développement actif de Windows**, choisissez si vous souhaitez recevoir les builds de **canaux de développement** ou de **canaux bêta** , puis passez en revue les termes du programme.
 
 Sélectionnez **confirmer-> redémarrer maintenant** pour terminer. Après le redémarrage de votre appareil, accédez à **paramètres-> mettre à jour & sécurité-> Rechercher les mises à jour** pour obtenir la dernière version.
 
@@ -68,11 +73,31 @@ Vous êtes heureux et encouragé à essayer de développer vos applications à l
 
 ## Notes de publication de Windows Insider
 
-Dans le cadre de notre version d’évaluation de 2020, les [mises à jour d'](hololens-release-notes.md) sont désormais les avalible Veillez à [mettre à jour votre HoloLens](hololens-update-hololens.md) pour obtenir les dernières fonctionnalités.  
+Si vous recherchez une fonctionnalité qui n’est pas visible dans la liste, assurez-vous que vous ne l’avez pas fait dans les builds non-Insider, assurez-vous de lire les [notes de publication](hololens-release-notes.md) pour voir toutes les fonctionnalités disponibles en général. Veillez à [mettre à jour votre HoloLens](hololens-update-hololens.md) pour obtenir les dernières fonctionnalités.  
 
-Cette page sera de nouveau mise à jour avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Microsoft Insider. 
+Cette page sera de nouveau mise à jour avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Insider pour Windows. 
 
-### FFU télécharger et clignoter
+### Prise en charge de la position de l’oeil automatique
+
+Dans HoloLens 2, les positions visuelles permettent un positionnement précis des hologrammes, une confort d’affichage confortable et une meilleure qualité d’affichage. Les positions visuelles sont calculées dans le résultat du suivi visuel. Toutefois, cela nécessite que chaque utilisateur passe par le calibrage du suivi visuel, même lorsque l’utilisation ne requiert pas d’entrée en regard.
+
+La position de l' **oeil automatique (AEP)** permet à ces scénarios d’avoir une méthode d’interaction sans interaction pour calculer la position des yeux de l’utilisateur.  La position de l’oeil automatique commence automatiquement à fonctionner en arrière-plan à partir du moment où l’utilisateur place le périphérique. Si l’utilisateur ne dispose pas d’un étalonnage de suivi d’oeil antérieur, la position d’oeil automatique commencera à fournir à l’oeil de l’utilisateur le système d’affichage après un temps de traitement faible. Ce temps de traitement est généralement compris entre 20-60 secondes. Les données de l’utilisateur ne sont pas conservées sur l’appareil et, de ce fait, le processus est répété s’il est mis en place par l’utilisateur, ou si l’appareil est redémarré ou s’arrête de sortir du mode veille.  
+
+Il existe certaines modifications de comportement système avec la fonctionnalité de position de l’oeil automatique quand un utilisateur non calibré le place sur l’appareil. Un utilisateur sans calibrage fait référence à une personne qui n’a pas encore parcouru le processus d’étalonnage du suivi visuel sur l’appareil.
+
+|     Application active                           |     Comportement actuel                                   |     Comportement de Windows Insider Build 19041.1339 +                                                      |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     Application et interpréteur holographique non activé    |     Invite de calibration du suivi d’oeil s’affiche.    |     Aucune invite ne s’affiche.                                                                                |
+|     Application en option                             |     Invite de calibration du suivi d’oeil s’affiche.    |     L’invite de calibration du suivi d’oeil s’affiche uniquement lorsque l’application accède à un flux d’oeil.     |
+
+ Si l’utilisateur passe d’une application à l’autre qui accède aux données de pointage, l’invite s’affiche. Il n’y a aucun changement de flux d’expérimentation hors champ. 
+ 
+Dans le cas d’expériences nécessitant des informations visuelles ou un positionnement très précis, nous vous recommandons d’effectuer un étalonnage du suivi visuel à partir de l’invite d’étalonnage du suivi d’oeil ou en lançant l’application paramètres à partir du menu Démarrer, puis en sélectionnant **système > calibration >** d’étalonnage > d’exécution.
+
+**Problèmes connus**
+1.  Nous travaillons à la résolution d’un problème dans lequel le processus de l’hôte du pilote Le processus hôte du pilote de suivi visuel doit procéder à une récupération automatique.
+
+## FFU télécharger et clignoter
 Pour tester la version d’évaluation d’un FFU, vous devez d’abord déverrouiller votre appareil avant de faire clignoter le FFU.
 1. Sur un PC
     1. Téléchargez FFU sur votre PC à partir de:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)

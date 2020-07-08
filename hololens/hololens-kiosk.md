@@ -17,12 +17,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828437"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857998"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -99,7 +98,8 @@ Si vous utilisez un système de gestion des appareils mobiles ou de déploiement
 |Calendrier |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \. Microsoft. windowslive. Calendar |
 |Caméra <sup> 1, 2</sup> |HoloCamera \ _cw5n1h2txyewy \! HoloCamera |
 |Cortana <sup> 3</sup> |Microsoft. 549981C3F5F10 \ _8wekyb3d8bbwe \! Appli |
-|Sélecteur d’appareil |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
+|Sélecteur d’appareil sur HoloLens (1er génération) |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
+|Sélecteur d’appareil sur HoloLens 2 |Microsoft. Windows. DevicesFlowHost \ _cw5n1h2txyewy \! Microsoft. Windows. DevicesFlowHost |
 |Dynamics 365 Guides |Microsoft. Dynamics365. guides \ _8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Hub de commentaires &nbsp; |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! Appli |
@@ -358,7 +358,7 @@ Pour activer le compte **invité** , ajoutez l’extrait de code suivant à votr
 
 #### <a id="start-layout-for-hololens"></a>Disposition de début de l’espace réservé pour HoloLens
 
-Si vous utilisez un [package de mise en service](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) pour configurer une borne multi-App, la procédure nécessite une disposition de démarrage. La personnalisation de la disposition de démarrage n’est pas prise en charge dans Windows holographique pour les entreprises. Par conséquent, vous devez utiliser une disposition de démarrage d’espace réservé.
+Si vous utilisez un [package de mise en service](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) pour configurer une borne multi-App, la procédure nécessite une disposition de démarrage. La personnalisation de la disposition de démarrage n’est pas prise en charge dans Windows holographique pour les entreprises. Par conséquent, vous devez utiliser une disposition de démarrage d’espace réservé.
 
 > [!NOTE]  
 > Dans la mesure où une borne d’application unique démarre l’application Kiosk quand un utilisateur se connecte, il n’utilise pas de menu Démarrer et ne doit pas avoir de disposition de démarrage.
