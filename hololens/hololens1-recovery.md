@@ -16,14 +16,14 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 837a019f110a58c490618d3d5c47e83e58231d18
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 36192315e234db16c7747457e69d6d6281c31bfe
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828051"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857732"
 ---
-# Redémarrer, réinitialiser ou récupérer HoloLens 1ère génération
+# Redémarrer, réinitialiser ou récupérer HoloLens (1ère génération)
 
 Si vous rencontrez des problèmes avec votre HoloLens, vous souhaiterez peut-être essayer d’effectuer un redémarrage, de réinitialiser ou même de relancer la récupération des appareils.
 
