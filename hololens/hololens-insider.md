@@ -16,11 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
+ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858008"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860604"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -28,7 +29,7 @@ Bienvenue dans la dernière build Insider Preview pour HoloLens.  Il est facile 
 
 Windows Insider se déplace désormais vers les canaux. Le sonne **rapide** devient le **canal de développement**, la sonnerie **lente** devient le **canal bêta**et la sonnerie de la version d' **évaluation** devient le **canal de publication**. Voici à quoi ressemble le mappage:
 
-![Canaux Windows Insider explication](images/WindowsInsiderChannels.png)
+![Explication des canaux Windows Insider](images/WindowsInsiderChannels.png)
 
 Pour plus d’informations: [entrée de blog Windows](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
 
@@ -58,7 +59,6 @@ Pour désactiver les builds Insider:
 1. Suivez les instructions pour choisir votre appareil.
 
 
-
 ## Faire part de vos commentaires et signaler des problèmes
 
 Utilisez [l’application Hub de commentaires](hololens-feedback.md) sur votre HoloLens pour formuler des commentaires et signaler des problèmes. Le hub de commentaires vous permet de vous assurer que toutes les informations de diagnostic nécessaires sont incluses pour faciliter le débogage et le résolution rapide du problème.  Des problèmes liés à la version chinois et japonais de HoloLens doivent être signalés de la même manière.
@@ -73,9 +73,10 @@ Vous êtes heureux et encouragé à essayer de développer vos applications à l
 
 ## Notes de publication de Windows Insider
 
-Si vous recherchez une fonctionnalité qui n’est pas visible dans la liste, assurez-vous que vous ne l’avez pas fait dans les builds non-Insider, assurez-vous de lire les [notes de publication](hololens-release-notes.md) pour voir toutes les fonctionnalités disponibles en général. Veillez à [mettre à jour votre HoloLens](hololens-update-hololens.md) pour obtenir les dernières fonctionnalités.  
+Dans le cadre de la [mise à jour](hololens-release-notes.md) de la version d’évaluation de 2020, l’ensemble des fonctionnalités de la version d’évaluation d’sont désormais disponibles. Veillez à [mettre à jour votre HoloLens](hololens-update-hololens.md) pour obtenir les dernières fonctionnalités.
 
-Cette page sera de nouveau mise à jour avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Insider pour Windows. 
+Cette page sera de nouveau mise à jour avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Microsoft Insider.
+
 
 ### Prise en charge de la position de l’oeil automatique
 
@@ -101,6 +102,6 @@ Dans le cas d’expériences nécessitant des informations visuelles ou un posit
 Pour tester la version d’évaluation d’un FFU, vous devez d’abord déverrouiller votre appareil avant de faire clignoter le FFU.
 1. Sur un PC
     1. Téléchargez FFU sur votre PC à partir de:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
-    1. Installez ARC (Advanced Recovery Companion) à partir du Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 
+    1. Installez ARC (Advanced Recovery Companion) à partir du Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 1. Sur HoloLens-version déverrouillée **Settings**: ouvrir la  >  **mise à jour des paramètres &**  >  **programme Windows Insider** Security puis s’inscrire, redémarrer l’appareil
-1. Flash FFU-désormais, vous pouvez faire clignoter le FFU signé par ARC. 
+1. Flash FFU-désormais, vous pouvez faire clignoter le FFU signé par ARC.
