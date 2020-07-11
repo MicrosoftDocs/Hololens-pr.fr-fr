@@ -10,18 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
-ms.openlocfilehash: 8aa8e0f679ad18a2e47f34c5f1233435a502dc0c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: e53e6575ef688e01ce2d1f6124f3214b18b05c95
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830128"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865563"
 ---
 # Déploiement de HoloLens dans un environnement commercial
 
 Vous pouvez déployer et configurer HoloLens à des fins d’évolution dans un environnement commercial. Cet article fournit des instructions pour le déploiement d’appareils HoloLens dans un environnement commercial. Ce guide suppose une connaissance de base de HoloLens. Suivez le [Guide](hololens1-setup.md) de mise en route pour configurer HoloLens pour la première fois.
 
-Ce document part du principe que le HoloLens a été évalué par les équipes de sécurité en toute sécurité sur le réseau d’entreprise. Vous trouverez les questions fréquemment posées sur la sécurité [ici](hololens-faq-security.md)
+Ce document part du principe que le HoloLens a été évalué par les équipes de sécurité en toute sécurité sur le réseau d’entreprise.  
+> [!Tip]
+> En savoir plus sur la [sécurité HoloLens](security-overview.md).
+> Pour la sécurité HoloLens (1ère génération), consultez [cette FAQ](hololens1-faq-security.md).
 
 ## Vue d’ensemble des étapes de déploiement
 
@@ -32,11 +35,11 @@ Ce document part du principe que le HoloLens a été évalué par les équipes d
 1. Facultatif [Configurer HoloLens à l’aide d’un package de mise en service](hololens-provisioning.md)
 1. [Appareil d’inscription](hololens-enroll-mdm.md)
 1. [Configurer des mises à jour basées sur un anneau pour HoloLens](hololens-updates.md)
-1. [Activer le chiffrement d’appareil Bitlocker pour HoloLens](hololens-encryption.md)
+1. [Activer le chiffrement d’appareil Bitlocker pour HoloLens](security-encryption-data-protection.md)
 
 ## Étape1. Déterminez ce dont vous avez besoin
 
-Avant de déployer le HoloLens dans votre environnement, il est important de déterminer les fonctionnalités, les applications et le type d’identité nécessaires. Il est également important de veiller à ce que votre équipe de sécurité ait approuvé l’utilisation du HoloLens sur le réseau de la société. Pour plus d’informations sur la sécurité, consultez la rubrique [poser les questions](hololens-faq-security.md) sur la sécurité.
+Avant de déployer le HoloLens dans votre environnement, il est important de déterminer les fonctionnalités, les applications et le type d’identité nécessaires. Il est également important de veiller à ce que votre équipe de sécurité ait approuvé l’utilisation du HoloLens sur le réseau de la société. Pour plus d’informations sur la sécurité, consultez [HoloLens2 Security](security-overview.md) .
 
 ### Type d’identité
 
