@@ -38,12 +38,27 @@
 ## Planification du déploiement d’entreprise HoloLens2
 ### [Déploiement de HoloLens dans un environnement commercial](hololens-requirements.md)
 ### [Scénarios courants de déploiement d’infrastructure](common-scenarios.md)
+## Sécurité
+### [Vue d’ensemble de la sécurité](security-overview.md)
+### [Architecture](security-architecture.md)
+### [Séparation et isolation d’état](security-state-separation-isolation.md)
+### [Système d’exploitation sans administrateur ](security-adminless-os.md)
+### [Limitation de l’utilisation d’un mot de passe](security-limiting-password-use.md)
+### [Attestation de sécurité et de runtime assurée par le matériel](security-hardware-backed-integrity.md)
+### [Chiffrement et protection des données](security-encryption-data-protection.md)
+### [Sécurité du réseau](security-network-security.md)
+### [Sans fil et Wi-Fi](security-wireless-wifi.md)
+### [Ingénierie de sécurité ](security-engineering.md)
+### Sécurité sur la 1ère génération HoloLens
+#### [Questions de sécurité fréquemment posées sur HoloLens (1ère génération)](hololens1-faq-security.md)
+#### [Chiffrement BitLocker HoloLens (1ère génération)](hololens1-encryption.md)
 ## [Exigences relatives à la licence](hololens-licenses-requirements.md)
 ## Environment
 ### [Considérations en matière d’environnement pour HoloLens](hololens-environment-considerations.md)
 ### [Mapper des espaces physiques avec HoloLens](hololens-spaces.md)
 ## [Fonctionnalités commerciales](hololens-commercial-features.md)
 ## [Déverrouiller les fonctionnalités de Windows Holographic for Business](hololens1-upgrade-enterprise.md)
+
 # Configurer
 ## Identité
 ### [Gérer l’identité utilisation et la connexion pour HoloLens](hololens-identity.md)
@@ -53,9 +68,8 @@
 ### [Connecter HoloLens à un réseau](hololens-network.md)
 ### [Gérer les points de terminaison de connexion de HoloLens](hololens-offline.md)
 ### [Se connecter à des appareils Bluetooth et USB-C](hololens-connect-devices.md)
-## Sécurité
-### [Questions de sécurité fréquemment posées](hololens-faq-security.md)
-### [Chiffrement HoloLens BitLocker](hololens-encryption.md)
+
+
 ## Stratégies
 ### [Configurer HoloLens à l'aide de packages d'approvisionnement](hololens-provisioning.md)
 ### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)
