@@ -97,5 +97,6 @@
 # Notes de publication HoloLens
 ## [Notes de publication HoloLens 2](hololens-release-notes.md)
 ## [Insider Preview pour MicrosoftHoloLens](hololens-insider.md)
+### [Accès global affecté – Kiosque](hololens-global-assigned-access-kiosk.md)
 ## [Notes de publication HoloLens (1ère génération)](hololens1-release-notes.md)
 # [Faites-nous part de vos commentaires](hololens-feedback.md)
