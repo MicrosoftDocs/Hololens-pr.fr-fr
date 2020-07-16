@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 330a7fd549a2b847f77715ca90d69f1d4df1fb1d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828425"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881327"
 ---
 # Problèmes connus avec HoloLens
 
@@ -47,6 +47,14 @@ Voici la liste actuelle des problèmes connus des appareils HoloLens. Activez d�
 - La fonctionnalité d’aperçu instantané de la capture d’une réalité mixte risque de présenter plusieurs secondes de latence.
 - Sur la page d’entrée virtuelle, les contrôles de mouvement et de défilement situés sous la section gestes virtuels ne fonctionnent pas. L’utilisation de ces dernières n’aura aucun effet. Le clavier virtuel sur la même page fonctionne correctement.
 - Après avoir activé le mode développeur dans les paramètres, l’activation de Device Portal peut prendre quelques secondes.
+
+### Chargement de l’appareil photo OneDrive
+
+L’application OneDrive pour HoloLens ne prend pas en charge le chargement de caméra automatique pour les comptes professionnels ou scolaires.
+
+Contournement
+- Si vous êtes viable pour votre entreprise, le chargement automatique des caméras est pris en charge sur les comptes Microsoft Consumer. Vous pouvez vous connecter à votre compte Microsoft en plus de votre compte professionnel ou scolaire (l’application OneDrive prend en charge la connexion double). À partir du profil de votre compte Microsoft dans OneDrive, vous pouvez activer le chargement automatique de la pellicule en arrière-plan.
+- Si vous ne pouvez pas utiliser en toute sécurité un compte Microsoft pour le chargement automatique de vos photos, vous pouvez télécharger manuellement des photos sur votre compte professionnel ou scolaire à partir de l’application OneDrive. Pour cela, assurez-vous que vous êtes connecté à votre compte professionnel ou scolaire dans l’application OneDrive. Sélectionnez le **+** bouton, puis **Télécharger**. Recherchez les photos ou vidéos que vous voulez charger en accédant à **images > pellicule**. Sélectionnez les photos ou vidéos que vous voulez télécharger, puis cliquez sur le bouton **ouvrir** .
 
 ## Problèmes connus pour les appareils HoloLens 2
 

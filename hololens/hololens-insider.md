@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
-ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
+ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860604"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882426"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -51,11 +51,13 @@ Si vous ne voulez plus recevoir les builds Insider de Windows holographique, vou
 Pour vérifier que votre HoloLens exécute une build de production:
 
 1. Accédez à **paramètres > système > à propos**de et recherchez le numéro de Build.
-1. [Consultez les notes de publication pour les numéros de build de production.](hololens-release-notes.md)
+
+1. [Consultez les notes de publication pour les numéros de build de production](hololens-release-notes.md).
 
 Pour désactiver les builds Insider:
 
 1. Sur un HoloLens exécutant une build de production, accédez à **paramètres > mettre à jour & sécurité > programme Windows Insider**, puis sélectionnez **arrêter les builds Insider**.
+
 1. Suivez les instructions pour choisir votre appareil.
 
 
@@ -73,10 +75,15 @@ Vous êtes heureux et encouragé à essayer de développer vos applications à l
 
 ## Notes de publication de Windows Insider
 
-Dans le cadre de la [mise à jour](hololens-release-notes.md) de la version d’évaluation de 2020, l’ensemble des fonctionnalités de la version d’évaluation d’sont désormais disponibles. Veillez à [mettre à jour votre HoloLens](hololens-update-hololens.md) pour obtenir les dernières fonctionnalités.
+Si vous recherchez une fonctionnalité qui n’est plus répertoriée ici, elle est désormais disponible en général. Veuillez consulter les [notes de publication](hololens-release-notes.md) pour savoir quelle Build dispose de la ou des fonctionnalités dont vous êtes ravi. Veillez à [mettre à jour votre HoloLens](hololens-update-hololens.md) pour obtenir les dernières fonctionnalités.
 
-Cette page sera de nouveau mise à jour avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Microsoft Insider.
+Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Insider.
 
+| Fonctionnalité                               | Description                                                                                   | Disponible dans les builds Insider |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Prise en charge de la position de l’oeil automatique             | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
+| Accès global affecté                | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système.  | 19041.1346 +                 |
+| Lancement automatique d’une application dans Kiosk multi-App | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion à un mode Kiosk à plusieurs applications. | 19041.1346 +                 |
 
 ### Prise en charge de la position de l’oeil automatique
 
@@ -96,12 +103,29 @@ Il existe certaines modifications de comportement système avec la fonctionnalit
 Dans le cas d’expériences nécessitant des informations visuelles ou un positionnement très précis, nous vous recommandons d’effectuer un étalonnage du suivi visuel à partir de l’invite d’étalonnage du suivi d’oeil ou en lançant l’application paramètres à partir du menu Démarrer, puis en sélectionnant **système > calibration >** d’étalonnage > d’exécution.
 
 **Problèmes connus**
-1.  Nous travaillons à la résolution d’un problème dans lequel le processus de l’hôte du pilote Le processus hôte du pilote de suivi visuel doit procéder à une récupération automatique.
+ - Nous travaillons à la résolution d’un problème dans lequel le processus de l’hôte du pilote Le processus hôte du pilote de suivi visuel doit procéder à une récupération automatique.
+
+### Accès global affecté – mode plein écran
+Cette nouvelle fonctionnalité permet à un administrateur informatique de configurer un appareil HoloLens 2 pour le mode kiosque de plusieurs applications, qui est applicable au niveau du système, sans affinité avec aucune identité sur le système et qui s’applique à toutes les personnes qui se connectent à l’appareil. Pour en savoir [plus, consultez](hololens-global-assigned-access-kiosk.md)cette nouvelle fonctionnalité.
+
+### Lancement automatique d’une application dans le mode Kiosk à plusieurs applications 
+S’applique uniquement au mode Kiosk multi-App et seule une application peut être désignée pour le lancement automatique à l’aide de l’attribut en surbrillance ci-dessous dans la configuration Access attribuée. 
+
+L’application est automatiquement lancée lorsque l’utilisateur se connecte. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU télécharger et clignoter
 Pour tester la version d’évaluation d’un FFU, vous devez d’abord déverrouiller votre appareil avant de faire clignoter le FFU.
-1. Sur un PC
-    1. Téléchargez FFU sur votre PC à partir de:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
+1. Sur PC:
+
+    1. Téléchargez FFU sur votre PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
+    
     1. Installez ARC (Advanced Recovery Companion) à partir du Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
-1. Sur HoloLens-version déverrouillée **Settings**: ouvrir la  >  **mise à jour des paramètres &**  >  **programme Windows Insider** Security puis s’inscrire, redémarrer l’appareil
+    
+1. Sur HoloLens-version de déverrouillage **Settings**: Ouvrez la  >  **mise à jour des paramètres &**  >  **programme Windows Insider** Security et inscrivez-vous, puis redémarrez l’appareil.
+
 1. Flash FFU-désormais, vous pouvez faire clignoter le FFU signé par ARC.
