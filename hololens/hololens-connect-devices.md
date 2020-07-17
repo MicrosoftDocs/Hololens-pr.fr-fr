@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881244"
+ms.locfileid: "10881337"
 ---
 # Se connecter à des appareils Bluetooth et USB-C
 
@@ -80,6 +80,8 @@ HoloLens 2 prend en charge les classes suivantes d’appareils USB-C:
 
 > [!NOTE]
 > Certains appareils mobiles disposant de connexions USB-C se présentent eux-mêmes au contrôle HoloLens (adaptateurs Ethernet), et peuvent être utilisés dans une configuration de connexion, à commencer par Windows holographique (version 2004). Les modems LTE USB qui requièrent un pilote distinct et/ou l’application installée pour la configuration ne sont pas pris en charge.
+
+Suite aux commentaires des clients, nous avons activé une prise en charge limitée de la connectivité cellulaire directement dans le service HoloLens via USB-C.  La connectivité par câble ne fonctionne que pour les appareils qui prennent en charge l'implémentation générique du pilote Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) et qui ne nécessitent pas l'installation d'autres pilotes ou applications.  Cet appareil, une fois connecté, s'affiche automatiquement sous la forme d'une nouvelle connexion Ethernet dans l'interface utilisateur des paramètres réseau HoloLens 2. Pour plus d’informations sur la prise en charge du pilote Microsoft RNDIS générique, consultez le fabricant de votre appareil.
 
 ## Se connecter à Miracast
 
