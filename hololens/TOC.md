@@ -1,4 +1,4 @@
-# [MicrosoftHoloLens](index.md)
+# [MicrosoftHoloLens](index.yml)
 
 # Vue d'ensemble
 
