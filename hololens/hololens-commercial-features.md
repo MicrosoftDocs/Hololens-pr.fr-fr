@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28898c5c0cbc2a4f66cea13665e5ef63447db382
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
+ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828122"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10882984"
 ---
 # Fonctionnalités commerciales
 
@@ -75,11 +75,11 @@ HoloLens (1re génération) est doté de deux options de gestion des licences, l
 
 ## Activation des fonctionnalités commerciales
 
-L’administrateur informatique de votre organisation peut installer des fonctionnalités commerciales telles que Microsoft Store pour Entreprises, le mode plein écran et l’accès Wi-Fi d’entreprise. La documentation [Microsoft HoloLens](index.md) fournit des instructions détaillées pour inscrire des appareils et installer des applications à partir de Microsoft Store pour Entreprises.
+L’administrateur informatique de votre organisation peut installer des fonctionnalités commerciales telles que Microsoft Store pour Entreprises, le mode plein écran et l’accès Wi-Fi d’entreprise. La documentation [Microsoft HoloLens](index.yml) fournit des instructions détaillées pour inscrire des appareils et installer des applications à partir de Microsoft Store pour Entreprises.
 
 ## Articles associés
 
-- [MicrosoftHoloLens](index.md)
+- [MicrosoftHoloLens](index.yml)
 - [Mode plein écran](hololens-kiosk.md)
 - [Fournisseurs de solutions Cloud pris en charge sur les appareils HoloLens](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [Microsoft Store pour Entreprises et applications cœur de métier](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
