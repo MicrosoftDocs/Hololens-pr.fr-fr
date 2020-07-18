@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 6/29/2020
+ms.date: 7/17/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
-ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
+ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
+ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882426"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "10883369"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -84,6 +84,8 @@ Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure qu
 | Prise en charge de la position de l’oeil automatique             | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
 | Accès global affecté                | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système.  | 19041.1346 +                 |
 | Lancement automatique d’une application dans Kiosk multi-App | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion à un mode Kiosk à plusieurs applications. | 19041.1346 +                 |
+| Nouvelles stratégies d’alimentation pour Hololens 2     | Stratégies récemment prises en charge pour les paramètres de délai d’alimentation.                                          | 19041.1349 +                 |
+| Afficheur de certificats                    | Affichez les certificats d’utilisateur et d’appareil dans l’application paramètres.                                        | 19041.1346 +                 |
 
 ### Prise en charge de la position de l’oeil automatique
 
@@ -117,6 +119,33 @@ L’application est automatiquement lancée lorsque l’utilisateur se connecte.
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+### Nouvelles stratégies d’alimentation pour Hololens 2
+Ces stratégies récemment ajoutées permettent aux administrateurs de contrôler les États d’alimentation tels que le délai d’inactivité. Pour en savoir plus sur chaque stratégie individuelle, cliquez sur le lien correspondant à cette stratégie.
+
+|     Lien documentation de la stratégie                |     Remarques                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Par exemple, la valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Par exemple, la valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Exemple de valeur à utiliser dans le concepteur de configuration Windows, c’est-à-dire 100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Exemple de valeur à utiliser dans le concepteur de configuration Windows, c’est-à-dire 100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Par exemple, la valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Par exemple, la valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### Afficheur de certificats
+
+Dans Windows Insider Build 19041.1346 +, nous ajoutons un afficheur de certificats à l’application paramètres HoloLens 2. Cette fonctionnalité fournit un moyen simple et convivial de vérifier les certificats sur votre appareil. Pour trouver rapidement un certificat spécifique, il est possible d’effectuer un tri sur la base d’un nom, d’un magasin ou d’une date d’expiration. Les utilisateurs peuvent également rechercher directement un certificat. Avec la nouvelle visionneuse de certificats, les administrateurs et les utilisateurs ont désormais amélioré les outils d’audit, de diagnostic et de validation pour garantir la sécurité et la conformité des appareils.  Pour afficher davantage d’informations sur un certificat individuel, sélectionnez le certificat, puis cliquez sur informations.
+
+> [!NOTE]
+> Il existe une limite connue concernant la localisation des langues non américaine que nous travaillons à la résolution des versions ultérieures de Windows Insider.
+
+-   **Audit:** Possibilité de vérifier que le déploiement d’un certificat est correct ou qu’il a été supprimé de manière appropriée. 
+-   **Diagnostic:** En cas de problème, le fait de vérifier que les certificats appropriés existent sur l’appareil permet de gagner du temps et d’aider à résoudre les problèmes. 
+-   **Validation:** Le fait de vérifier que le certificat a la finalité prévue et qu’il est fonctionnel, peut faire gagner du temps, en particulier dans les environnements commerciaux avant de déployer des certificats à plus grande échelle.
+
+Pour afficher les certificats, accédez à **paramètres > mettre à jour & certificats de sécurité >**.
+
+![Afficheur de certificats dans l’application paramètres](images/hololens-certificate-viewer.png)
 
 ## FFU télécharger et clignoter
 Pour tester la version d’évaluation d’un FFU, vous devez d’abord déverrouiller votre appareil avant de faire clignoter le FFU.
