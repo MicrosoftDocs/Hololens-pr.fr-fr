@@ -47,7 +47,6 @@
 ### [Attestation de sécurité et de runtime assurée par le matériel](security-hardware-backed-integrity.md)
 ### [Chiffrement et protection des données](security-encryption-data-protection.md)
 ### [Sécurité du réseau](security-network-security.md)
-### [Sans fil et Wi-Fi](security-wireless-wifi.md)
 ### [Ingénierie de sécurité ](security-engineering.md)
 ### Sécurité sur la 1ère génération HoloLens
 #### [Questions de sécurité fréquemment posées sur HoloLens (1ère génération)](hololens1-faq-security.md)
