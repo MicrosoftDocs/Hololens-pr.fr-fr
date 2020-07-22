@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857792"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883148"
 ---
 # Connecter HoloLens à un réseau
 
@@ -32,24 +32,14 @@ Lors de la première utilisation de votre HoloLens, vous serez guidé pour vous 
 
 ## Connexion à un réseau Wi-Fi après l’installation
 
-1. Sélectionnez **Démarrer** > **Paramètres**.
-   - *HoloLens (1re génération) uniquement*: utilisez le pointage de votre regard pour positionner l’application Paramètres, puis faites un clic aérien pour la placer ou dire «Placer».
-1. Sélectionnez **Réseau et Internet** > **Wi-Fi**. Si vous ne voyez pas votre réseau, faites défiler la liste.
+1. Effectuez le **mouvement associé au menu Démarrer**, puis sélectionnez **Paramètres**. L’application Paramètres sera placée automatiquement en face de vous.
+1. Sélectionnez **Réseau et Internet** > **Wi-Fi**. Vérifiez que le Wi-Fi est activé. Si vous ne voyez pas votre réseau, faites défiler la liste.
 1. Sélectionnez un réseau, puis **Connecter**.
 1. Si vous êtes invité à entrer un mot de passe réseau, tapez-le, puis sélectionnez **Suivant**.
-
-## Connexion au Wi-Fi sur HoloLens (1re génération)
 
 HoloLens est muni d'une option Wi-Fi 2x2, compatible 802.11ac. La connexion de HoloLens à un réseau Wi-Fi est semblable à la connexion d’un ordinateur de bureau ou d’un appareil mobile Windows10 à un réseau Wi-Fi.
 
 ![Paramètres Wi-Fi HoloLens](./images/wifi-hololens-600px.jpg)
-
-1. Ouvrez le menu **Démarrer**.
-1. Sélectionnez l’application Paramètres dans le menu **Démarrer** ou dans la liste **Toutes les applications** à droite du menu **Démarrer** . L’application Paramètres sera placée automatiquement en face de vous.
-1. Sélectionnez **Réseau et Internet**.
-1. Vérifiez que le Wi-Fi est activé.
-1. Sélectionnez un réseau Wi-Fi dans la liste.
-1. Le cas échéant, entrez le mot de passe du réseau Wi-Fi.
 
 Vous pouvez également confirmer que vous êtes connecté à un réseau Wi-Fi en vérifiant l’état du Wi-Fi dans le menu **Démarrer** .
 
@@ -61,6 +51,19 @@ Vous pouvez également confirmer que vous êtes connecté à un réseau Wi-Fi en
 Si vous rencontrez des problèmes lors de la connexion à la Wi-Fi, consultez [Je ne peux pas me connecter à la Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).
 
 Lorsque vous connectez un compte d’entreprise ou organisationnel sur l’appareil, il peut également appliquer une stratégie de gestion des appareils mobiles (GDM), si la stratégie est configurée par votre administrateur informatique.
+
+## VPN
+Le VPN offre une connexion et un accès plus sécurisés au réseau de votre entreprise et à Internet. HoloLens2 prend en charge le client VPN intégré et le plug-in VPN de la plateforme Windows universelle (UWP). 
+
+Protocoles VPN intégrés pris en charge:
+- IKEv2
+- L2TP
+- PPTP
+
+Si l’authentification pour le client VPN intégré fait appel à un certificat, vous devez ajouter le certificat client nécessaire au magasin de certificats de l’utilisateur. Pour déterminer si un plug-in VPN tiers prend en charge HoloLens2, accédez à Store pour trouver l’application VPN. Ensuite, vérifiez si HoloLens est répertorié comme appareil pris en charge, puis, dans la page Configuration requise, si l’application prend en charge l’architecture ARM ou ARM64. HoloLens ne prend en charge que les applications de plateforme Windows universelles pour les VPN tiers.
+
+Le VPN n’est pas activé par défaut, mais vous pouvez l’activer manuellement en ouvrant l’application **Paramètres**, puis et en accédant à **Réseau et Internet -> VPN**. Vous pouvez gérer le VPN par GPM via [Paramètres/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn), puis le définir via [Vpnv2-stratégie csp](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+Si vous souhaitez en savoir plus sur [la configuration du VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn), veuillez consulter [ces guides](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
 
 ## Désactivation de Wi-Fi sur HoloLens (1regénération)
 
@@ -89,9 +92,9 @@ Lorsque vous connectez un compte d’entreprise ou organisationnel sur l’appar
 
    L’adresse IP apparaît en regard de **adresse IPv4**.
 
-### À l’aide de Cortana
+### Via des commandes vocales
 
-Dites «Hey Cortana, quelle est mon adresseIP?». Cortana afficher et lit votre adresse IP.
+En fonction de la build de votre appareil, vous pouvez utiliser les commandes vocales intégrées ou Cortana pour afficher votre adresse IP. Sur les builds ultérieures à la [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) demandez «quelle est mon adresse IP?» Celle-ci s’affiche alors. Sur les builds antérieures ou sur HoloLens (1ère génération), dites «Hey Cortana, quelle est mon adresse IP?» Cortana afficher et lit votre adresse IP.
 
 ### À l’aide du Portail d’appareil Windows
 
