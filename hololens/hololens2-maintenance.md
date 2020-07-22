@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6ce55630c6ec20b83ca24006acedbe5f949997
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
+ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828221"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888553"
 ---
 # Nettoyage HoloLens2: FAQ
 
@@ -74,7 +74,7 @@ Pour nettoyer le BMD, essuyez-le en utilisant un chiffon qui est humecté à l�
 
 ## Puis-je utiliser le rayonnement ultraviolet pour assainir le périphérique?
 
-Le rayonnement UV-C Germicidal n’a pas été testé sur HoloLens 2.
+UVC irradiant avec UVC del, qui fonctionne à 265nm au niveau d’intensité de 0.5-0,6 mW/cm <sup> 2 </sup> et n’émet pas d’ozone, peut être utilisé pour assainir HoloLens2. Suivez les spécifications du fabricant concernant le temps de gestion et d’exposition.
 
 > [!CAUTION]  
 > Les niveaux élevés d’exposition UV-A et UV-B peuvent nuire à la qualité d’affichage de l’appareil et endommager le revêtement du Visor. Les effets de dépassement sur le rayonnement UV-A et UV-B sont les suivants, selon la durée et l’intensité d’exposition:
@@ -82,7 +82,7 @@ Le rayonnement UV-C Germicidal n’a pas été testé sur HoloLens 2.
 > 1. Le pavé tactile et les fermetures de périphériques sont décolorés.
 > 1. Les défauts apparaissent dans le revêtement anti-reflet sur le visière et dans les fenêtres du capteur.
 > 1. Les défauts apparaissent dans les matériaux de base du Visor et dans les fenêtres du capteur.
-> 1. SRG des performances.
+> 1. Afficher les performances détériorées.
 
 ## Le pavé ARRIERE est-il remplaçable?
 
