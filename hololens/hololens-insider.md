@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
-ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
+ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
+ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "10883369"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10894063"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -31,47 +31,7 @@ Windows Insider se déplace désormais vers les canaux. Le sonne **rapide** devi
 
 ![Explication des canaux Windows Insider](images/WindowsInsiderChannels.png)
 
-Pour plus d’informations: [entrée de blog Windows](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
-
-## Commencer à recevoir les builds Insider
-
-Sur un appareil HoloLens 2, accédez à **paramètres**  ->  **mise à jour &**  ->  **programme Windows Insider** Security et sélectionnez **commencer**. Liez le compte que vous avez utilisé pour vous inscrire au programme Windows Insider.
-
-Ensuite, sélectionnez **développement actif de Windows**, choisissez si vous souhaitez recevoir les builds de **canaux de développement** ou de **canaux bêta** , puis passez en revue les termes du programme.
-
-Sélectionnez **confirmer-> redémarrer maintenant** pour terminer. Après le redémarrage de votre appareil, accédez à **paramètres-> mettre à jour & sécurité-> Rechercher les mises à jour** pour obtenir la dernière version.
-
-## Ne plus recevoir les builds Insider
-
-Si vous ne voulez plus recevoir les builds Insider de Windows holographique, vous pouvez choisir de désactiver la version d’évaluation de votre appareil à [l’aide du](hololens-recovery.md) compagnon de récupération avancé pour récupérer votre appareil vers une version non-Insider de Windows holographique.
-
-> [!CAUTION]
-> Il existe un problème connu dans lequel les utilisateurs qui se sont désinscrits de la version d’évaluation Insider Preview après la réinstallation manuelle d’une nouvelle version d’évaluation apparaîtraient sur un écran bleu. Par la suite, ils doivent récupérer manuellement leur appareil. Pour obtenir des informations complètes sur le [problème](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)ou non, consultez ce qui suit.
-
-Pour vérifier que votre HoloLens exécute une build de production:
-
-1. Accédez à **paramètres > système > à propos**de et recherchez le numéro de Build.
-
-1. [Consultez les notes de publication pour les numéros de build de production](hololens-release-notes.md).
-
-Pour désactiver les builds Insider:
-
-1. Sur un HoloLens exécutant une build de production, accédez à **paramètres > mettre à jour & sécurité > programme Windows Insider**, puis sélectionnez **arrêter les builds Insider**.
-
-1. Suivez les instructions pour choisir votre appareil.
-
-
-## Faire part de vos commentaires et signaler des problèmes
-
-Utilisez [l’application Hub de commentaires](hololens-feedback.md) sur votre HoloLens pour formuler des commentaires et signaler des problèmes. Le hub de commentaires vous permet de vous assurer que toutes les informations de diagnostic nécessaires sont incluses pour faciliter le débogage et le résolution rapide du problème.  Des problèmes liés à la version chinois et japonais de HoloLens doivent être signalés de la même manière.
-
-> [!NOTE]
-> Assurez-vous d’accepter l’invite qui vous demande si vous souhaitez que le hub de commentaires accède à votre dossier documents (sélectionnez **Oui** lorsque vous y êtes invité).
-
-## Remarque pour les développeurs
-
-Vous êtes heureux et encouragé à essayer de développer vos applications à l’aide des builds Insider de HoloLens.  Consultez la [documentation pour développeurs HoloLens](https://developer.microsoft.com/windows/mixed-reality/development) pour commencer. Ces mêmes instructions fonctionnent avec les builds Insider d’HoloLens.  Vous pouvez utiliser les mêmes builds Unity et Visual Studio que vous utilisez déjà pour le développement HoloLens.
-
+Pour plus d’informations, consultez [Présentation des canaux Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) sur les blogs Windows.
 
 ## Notes de publication de Windows Insider
 
@@ -79,13 +39,16 @@ Si vous recherchez une fonctionnalité qui n’est plus répertoriée ici, elle 
 
 Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Insider.
 
-| Fonctionnalité                               | Description                                                                                   | Disponible dans les builds Insider |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Prise en charge de la position de l’oeil automatique             | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
-| Accès global affecté                | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système.  | 19041.1346 +                 |
-| Lancement automatique d’une application dans Kiosk multi-App | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion à un mode Kiosk à plusieurs applications. | 19041.1346 +                 |
-| Nouvelles stratégies d’alimentation pour Hololens 2     | Stratégies récemment prises en charge pour les paramètres de délai d’alimentation.                                          | 19041.1349 +                 |
-| Afficheur de certificats                    | Affichez les certificats d’utilisateur et d’appareil dans l’application paramètres.                                        | 19041.1346 +                 |
+| Fonctionnalité                                         | Description                                                                                   | Disponible dans les builds Insider |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Prise en charge de la position de l’oeil automatique                       | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
+| Accès global affecté                          | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système.  | 19041.1346 +                 |
+| Lancement automatique d’une application dans Kiosk multi-App           | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion à un mode Kiosk à plusieurs applications. | 19041.1346 +                 |
+| Nouvelles stratégies d’alimentation pour Hololens 2               | Stratégies récemment prises en charge pour les paramètres de délai d’alimentation.                                          | 19041.1349 +                 |
+| Afficheur de certificats                              | Affichez les certificats d’utilisateur et d’appareil dans l’application paramètres.                                        | 19041.1346 +                 |
+| Nouvelles stratégies de restriction d’appareil pour HoloLens 2  | Les stratégies de gestion des appareils activées pour HoloLens 2 sont activées.                              | 19041.1349 +                 |
+| Visibilité de la page de paramètres activée pour HoloLens 2 | Stratégie pour sélectionner les pages qui apparaissent dans l’application paramètres.                                          | 19041.1349 +                 |
+| Stratégies HoloLens                               | Nouvelles stratégies pour les appareils de réalité mixte.                                                       | 19041.1349 +                 |
 
 ### Prise en charge de la position de l’oeil automatique
 
@@ -147,6 +110,38 @@ Pour afficher les certificats, accédez à **paramètres > mettre à jour & cert
 
 ![Afficheur de certificats dans l’application paramètres](images/hololens-certificate-viewer.png)
 
+### Nouvelles stratégies de restriction d’appareil pour HoloLens 2
+Stratégies récemment activées qui autorisent davantage d’options de gestion des appareils HoloLens 2. 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Visibilité de la page de paramètres activée pour HoloLens 2
+Nous avons à présent activé une stratégie qui permet aux administrateurs informatiques d’empêcher les pages spécifiques de l’application Paramètres système d’être visibles ou accessibles, ou de le faire pour toutes les pages à l’exception de celles spécifiées. Pour savoir comment personnaliser entièrement cette fonctionnalité, cliquez sur le lien ci-dessous.
+ 
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+ 
+![Capture d’heures d’activité modifiées dans l’application paramètres](images/hololens-page-visibility-list.jpg)
+
+### Stratégies HoloLens
+De nouvelles stratégies de réalité mixte ont été créées pour les appareils HoloLens 2 lors de générations 19041.1349 +. Les nouveaux paramètres contrôlable incluent: définir la luminosité, définir le volume et désactiver l’enregistrement audio dans les captures de réalité mixte et définir la date de collecte des Diagnostics.  
+
+|     Nouvelle stratégie HoloLens                   |     Description                                                                            |     Remarques                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|     MixedReality\BrightnessButtonDisabled |     Permet que les boutons de luminosité soient désactivés, ce qui permet de ne pas modifier la luminosité.    |     1 Oui, 0 (par défaut)                                                |
+|     MixedReality\VolumeButtonDisabled     |     Autorise la désactivation des boutons de volume et la pression sur celle-ci ne modifie pas le volume.            |     1 Oui, 0 (par défaut)                                                |
+|     MixedReality\MicrophoneDisabled       |     Désactive le microphone de sorte qu’aucun enregistrement audio ne soit possible sur HoloLens 2.                   |     1 Oui, 0 (par défaut)                                                |
+|     MixedReality\FallbackDiagnostics      |     Contrôle le comportement du moment où les journaux de diagnostic peuvent être collectés.                            |     0 désactivé, 1 activé pour les propriétaires d’appareils, 2 activés pour All (par défaut) |
+|     MixedReality\HeadTrackingMode         |     Réservé pour une utilisation ultérieure.                                                               |                                                                          |
+
+## Commencer à recevoir les builds Insider
+
+Sur un appareil HoloLens 2, accédez à **paramètres**  >  **mise à jour &**  >  **programme Windows Insider** Security et sélectionnez **commencer**. Liez le compte que vous avez utilisé pour vous inscrire au programme Windows Insider.
+
+Ensuite, sélectionnez **développement actif de Windows**, choisissez si vous souhaitez recevoir les builds de **canaux de développement** ou de **canaux bêta** , puis passez en revue les termes du programme.
+
+Sélectionnez **confirmer > redémarrer maintenant** pour terminer. Après le redémarrage de votre appareil, accédez à **paramètres > mettre à jour & sécurité > Rechercher les mises à jour** pour obtenir la dernière version.
+
 ## FFU télécharger et clignoter
 Pour tester la version d’évaluation d’un FFU, vous devez d’abord déverrouiller votre appareil avant de faire clignoter le FFU.
 1. Sur PC:
@@ -158,3 +153,33 @@ Pour tester la version d’évaluation d’un FFU, vous devez d’abord déverro
 1. Sur HoloLens-version de déverrouillage **Settings**: Ouvrez la  >  **mise à jour des paramètres &**  >  **programme Windows Insider** Security et inscrivez-vous, puis redémarrez l’appareil.
 
 1. Flash FFU-désormais, vous pouvez faire clignoter le FFU signé par ARC.
+
+## Faire part de vos commentaires et signaler des problèmes
+
+Utilisez [l’application Hub de commentaires](hololens-feedback.md) sur votre HoloLens pour formuler des commentaires et signaler des problèmes. Le hub de commentaires vous permet de vous assurer que toutes les informations de diagnostic nécessaires sont incluses pour faciliter le débogage et le résolution rapide du problème.  Des problèmes liés à la version chinois et japonais de HoloLens doivent être signalés de la même manière.
+
+> [!NOTE]
+> Assurez-vous d’accepter l’invite qui vous demande si vous souhaitez que le hub de commentaires accède à votre dossier documents (sélectionnez **Oui** lorsque vous y êtes invité).
+
+## Remarque pour les développeurs
+
+Vous êtes heureux et encouragé à essayer de développer vos applications à l’aide des builds Insider de HoloLens.  Consultez la [documentation pour développeurs HoloLens](https://developer.microsoft.com/windows/mixed-reality/development) pour commencer. Ces mêmes instructions fonctionnent avec les builds Insider d’HoloLens.  Vous pouvez utiliser les mêmes builds Unity et Visual Studio que vous utilisez déjà pour le développement HoloLens.
+
+## Ne plus recevoir les builds Insider
+
+Si vous ne voulez plus recevoir les builds Insider de Windows holographique, vous pouvez choisir de désactiver la version d’évaluation de votre appareil à [l’aide du](hololens-recovery.md) compagnon de récupération avancé pour récupérer votre appareil vers une version non-Insider de Windows holographique.
+
+> [!CAUTION]
+> Il existe un problème connu dans lequel les utilisateurs qui se sont désinscrits de la version d’évaluation Insider Preview après la réinstallation manuelle d’une nouvelle version d’évaluation apparaîtraient sur un écran bleu. Par la suite, ils doivent récupérer manuellement leur appareil. Pour obtenir des informations complètes sur le [problème](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)ou non, consultez ce qui suit.
+
+Pour vérifier que votre HoloLens exécute une build de production:
+
+1. Accédez à **paramètres > système > à propos**de et recherchez le numéro de Build.
+
+1. [Consultez les notes de publication pour les numéros de build de production](hololens-release-notes.md).
+
+Pour désactiver les builds Insider:
+
+1. Sur un HoloLens exécutant une build de production, accédez à **paramètres > mettre à jour & sécurité > programme Windows Insider**, puis sélectionnez **arrêter les builds Insider**.
+
+1. Suivez les instructions pour choisir votre appareil.
