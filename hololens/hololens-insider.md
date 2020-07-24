@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
+ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894063"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894603"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -39,8 +39,8 @@ Si vous recherchez une fonctionnalité qui n’est plus répertoriée ici, elle 
 
 Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Insider.
 
-| Fonctionnalité                                         | Description                                                                                   | Disponible dans les builds Insider |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+|                     Fonctionnalité                     |                                          Description                                          | Disponible dans les builds Insider |
+|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | Prise en charge de la position de l’oeil automatique                       | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
 | Accès global affecté                          | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système.  | 19041.1346 +                 |
 | Lancement automatique d’une application dans Kiosk multi-App           | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion à un mode Kiosk à plusieurs applications. | 19041.1346 +                 |
@@ -49,6 +49,7 @@ Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure qu
 | Nouvelles stratégies de restriction d’appareil pour HoloLens 2  | Les stratégies de gestion des appareils activées pour HoloLens 2 sont activées.                              | 19041.1349 +                 |
 | Visibilité de la page de paramètres activée pour HoloLens 2 | Stratégie pour sélectionner les pages qui apparaissent dans l’application paramètres.                                          | 19041.1349 +                 |
 | Stratégies HoloLens                               | Nouvelles stratégies pour les appareils de réalité mixte.                                                       | 19041.1349 +                 |
+| Stratégies de mise à jour                                 | Stratégies récemment activées permettant le contrôle des mises à jour.                                           | 19041.1352 +                 |
 
 ### Prise en charge de la position de l’oeil automatique
 
@@ -133,6 +134,12 @@ De nouvelles stratégies de réalité mixte ont été créées pour les appareil
 |     MixedReality\MicrophoneDisabled       |     Désactive le microphone de sorte qu’aucun enregistrement audio ne soit possible sur HoloLens 2.                   |     1 Oui, 0 (par défaut)                                                |
 |     MixedReality\FallbackDiagnostics      |     Contrôle le comportement du moment où les journaux de diagnostic peuvent être collectés.                            |     0 désactivé, 1 activé pour les propriétaires d’appareils, 2 activés pour All (par défaut) |
 |     MixedReality\HeadTrackingMode         |     Réservé pour une utilisation ultérieure.                                                               |                                                                          |
+### Stratégies de mise à jour récemment activées HoloLens
+Ces stratégies de mise à jour sont désormais activées sur les appareils HoloLens 2:
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ## Commencer à recevoir les builds Insider
 
