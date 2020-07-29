@@ -1,5 +1,5 @@
 ---
-title: Collecter et utiliser les informations de diagnostic provenant des appareils HoloLens
+title: Collecter et utiliser des informations de diagnostic sur les appareils HoloLens
 description: ''
 author: Teresa-Motiv
 ms.author: v-tea
@@ -18,14 +18,14 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828401"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899167"
 ---
-# Collecter et utiliser les informations de diagnostic provenant des appareils HoloLens
+# Collecter et utiliser des informations de diagnostic sur les appareils HoloLens
 
 Les utilisateurs et administrateurs HoloLens peuvent choisir parmi quatre méthodes différentes pour collecter les informations de diagnostic du HoloLens:
 
@@ -43,6 +43,7 @@ Le tableau suivant compare les trois méthodes de collection. Les noms de métho
 |[Hub de commentaires](#feedback-hub) |Connexion réseau et Internet<br /><br />Application Hub de commentaires<br /><br />Autorisation de chargement de fichiers dans le Cloud Microsoft |Cloud Computing Microsoft<br /><br />Appareil HoloLens (facultatif) |L’utilisateur demande une assistance, accepte les conditions d’utilisation et charge les données<br /><br />Les employés Microsoft affichent les données de la même manière que les conditions d’utilisation. |Les données du Cloud sont conservées pendant la période définie par la déclaration de confidentialité de nouvelle génération (NGP). Les données sont alors supprimées automatiquement.<br /><br />Les données sur l’appareil peuvent être supprimées à tout moment par un utilisateur disposant des autorisations de propriétaire de l' **appareil** ou d' **administrateur** . |
 |[Utilitaire de dépannage des paramètres](#settings-troubleshooter) |Application Paramètres |AppareilHoloLens<br /><br />Ordinateur connecté (facultatif) |L’utilisateur stocke les données, et seul l’utilisateur accède aux données (sauf si l’utilisateur partage spécifiquement les données avec un autre utilisateur). |Les données sont conservées tant que l’utilisateur ne les supprime pas. * |
 |[Fournisseur de services de configuration DiagnosticLog](#diagnosticlog-csp) |Connexion réseau<br /><br />Environnement GPM prenant en charge le fournisseur de services de DiagnosticLog |L’administrateur configure les emplacements de stockage |Dans l’environnement géré, l’utilisateur est implicitement autorisé à accéder aux données de l’administrateur.<br /><br />Un administrateur configure les rôles et les autorisations d’accès. | Un administrateur configure une stratégie de rétention. |
+|[Diagnostics hors connexion](#offline-diagnostics) |Configuration de l’appareil:<ul><li>Allumé et connecté à l’ordinateur</li><li>Fonctionnement des boutons d’alimentation et de volume</li></ul> |AppareilHoloLens<br /><br />Ordinateur connecté |L’utilisateur stocke les données, et seul l’utilisateur accède aux données (sauf si l’utilisateur partage spécifiquement les données avec un autre utilisateur). |Les données sont conservées jusqu’à ce que l’utilisateur le supprime. | 
 
 
 -   L’utilisateur final est responsable du partage du journal de manière responsable avec une autre personne. Ces fichiers sont principalement utiles lorsque vous contactez le service clientèle et le support technique.  
@@ -73,7 +74,7 @@ Le hub de commentaires fournit deux emplacements pour l’utilisateur dans le st
 
 ## Utilitaire de dépannage des paramètres
 
-Un utilisateur HoloLens peut utiliser l’application paramètres sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour cela, procédez comme suit:
+Un utilisateur HoloLens peut utiliser l’application paramètres sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour ce faire, procédez comme suit:
 
 1. Ouvrez l’application paramètres, puis sélectionnez **mettre à jour &**  >  page**résolution des problèmes** de sécurité.
 1. Sélectionnez la zone appropriée, puis cliquez sur **Démarrer**.
@@ -116,4 +117,22 @@ L’administrateur informatique utilise le fournisseur de services de Diagnostic
 - Durée de rétention des informations de diagnostic.
 - Autorisations qui contrôlent l’accès aux informations de diagnostic.
 
+## Diagnostics hors connexion
+Dans les situations où l’appareil n’est pas en mesure de collecter des diagnostics par le biais du Hub de commentaires ou de l’utilitaire de résolution des problèmes, vous pouvez récupérer les diagnostics manuellement. Il s’agit d’un scénario dans lequel cela est nécessaire lorsque l’appareil ne peut pas se connecter au Wi-Fi. Les tests de diagnostic collectent des vidages sur incident et des journaux de l’appareil qui permettent à un ingénieur du support Microsoft d’isoler les problèmes.
+
+Cela fonctionne lorsque l’appareil apparaît dans l’Explorateur de fichiers une fois qu’il est connecté à un PC par le biais d’un câble USB. 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+Pour collecter des diagnostics, procédez comme suit:
+1.  Connectez l’appareil à l’aide d’un câble USB à votre PC.
+2.  Dans l’Explorateur de fichiers sur votre PC, accédez à **«ce PC \<hololens-device> \Internal Storage»**.
+3.  Si le dossier **stockage interne** n’est pas affiché, cela signifie que l’appareil attend qu’un utilisateur se connecte. Connectez-vous ou redémarrez l’appareil en maintenant le bouton d’alimentation enfoncé pendant 10 secondes.
+4.  Appuyez et relâchez immédiatement les boutons **alimentation + volume inférieur** .
+5.  Patientez quelques instants avant que l’appareil prépare les archives zip.
+6.  Actualisez l’Explorateur de fichiers et accédez au dossier **«\Documents»** .
+7.  Copiez les fichiers ZIP de diagnostic et partagez-les avec l’équipe du support technique de Microsoft.
+
+Remarque: certains fichiers ZIP de diagnostics contiennent des informations d’identification personnelle.
 
