@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2c8afffdc24eedf9cb6b462448f5ed6ffc8d5d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a4a5478f396dff9eef84540286e0fa9672172076
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828127"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899096"
 ---
 # Améliorer la qualité visuelle et le confort
 
@@ -89,6 +89,8 @@ Si l’étalonnage ne fonctionne pas correctement, procédez comme suit:
 - Allumez une lumière dans la pièce ou éloignez-vous de la lumière directe du soleil
 
 Si vous avez suivi toutes les recommandations et que l’étalonnage a échoué, vous pouvez désactiver l’invite d’étalonnage dans les paramètres. N’hésitez pas à nous faire part de vos commentaires dans [Hub de commentaires](hololens-feedback.md).
+
+Consultez également les informations relatives à la [résolution des problèmes de couleur ou de luminosité de l’image.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
 Notez que la configuration de IPD ne s’applique pas à HoloLens 2, car les positions oculaires sont calculées par le système. 
 

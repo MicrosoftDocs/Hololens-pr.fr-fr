@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 8f62c09fd569e6c5dbeb961ae023c6f3cefff879
-ms.sourcegitcommit: 72be5b64e90dde339323012997440dfaca182027
+ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10895788"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899106"
 ---
 # Windows Autopilot pour HoloLens2
 
@@ -68,7 +68,7 @@ Suivez les étapes ci-dessous pour configurer votre environnement pour la préve
 
 - Vous devez installer manuellement la dernière version du système d’exploitation (Windows holographique version2004 (Build 19041,1103 ou version ultérieure) à l’aide de l’[Outil de récupération avancée (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). Vous trouverez des instructions [ici](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
 - Vos appareils doivent être inscrits dans Windows AutoPilot. Pour plus d’informations sur l’inscription des appareils, consultez [4. Inscrivez les appareils dans Windows Autopilot](#4-register-devices-in-windows-autopilot). 
-- Dans la version actuelle, les appareils doivent être connectés à Internet avant d’activer le service HoloLens et de lancer le processus de mise en service de Autopilot. Connectez votre appareil à Ethernet à l’aide des adaptateurs «USB C vers Ethernet» pour la connectivité internet câblée ou des adaptateurs «USB C vers WiFi» pour la connectivité internet sans fil. 
+- Dans la version actuelle, les appareils doivent être connectés à Internet avant d’activer le service HoloLens et de lancer le processus de mise en service de Autopilot. Connectez votre appareil à Ethernet à l’aide d’un adaptateur «USB-C vers Ethernet» pour une connectivité Internet par câble. 
 - Les appareils ne sont pas membres d’Azure AD et ne sont pas inscrits dans Intune (ou dans un autre système GPM). Le processus de déploiement autonome Autopilot effectue ces étapes. Pour vous assurer que toutes les informations relatives à l’appareil sont nettoyées, vérifiez les pages sur les **Appareils** dans les Portails Azure AD et Intune.
 - Pour configurer et gérer les profils du mode de déploiement autonome Autopilot, assurez-vous que vous avez accès au [Centre d’administration Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
