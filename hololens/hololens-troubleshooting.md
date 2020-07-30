@@ -13,11 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857742"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902289"
 ---
 # Résolution des problèmes
 
@@ -45,13 +46,15 @@ Si vos hologrammes sont instables, inversement ou ne vous convient pas, essayez 
 - Lorsque vous parcourez et regardez votre environnement, le HoloLens peut les analyser plus complètement.
 - Étalonner votre HoloLens pour les yeux. Accédez à **paramètres**  >  **système**  >  **Utilities**. Sous **Étalonnage**, sélectionnez **Ouvrir l'étalonnage**.
 
-## Le HoloLens ne répond pas aux gestes
+## HoloLens ne répond pas à l’entrée manuelle
 
-Pour vous assurer que HoloLens peut voir vos gestes.  Gardez votre mains dans le cadre du mouvement: lorsque HoloLens peut voir votre mains, le curseur se transforme en anneau.
+Pour vous assurer que HoloLens peut voir vos mains, vous devez les conserver dans le cadre du mouvement.  La page d’accueil de la vie privée fournit des commentaires qui vous permettent de savoir lorsque vos mains sont suivies.  Le retour est différent sur les différentes versions de HoloLens:
+- Sur HoloLens (1ère génération), le curseur en regard passe d’un point à un anneau
+- Sur HoloLens 2, un curseur à main levée s’affiche lorsque la main est proche d’une ardoise et un rayon d’aiguille s’affiche lorsque les ardoises sont éloignées.
 
-En savoir plus sur l’utilisation des gestes sur [hololens (1er génération)](hololens1-basic-usage.md#use-hololens-with-your-hands) ou [hololens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+De nombreux applications immersives suivent des modèles d’entrée similaires à la maison de la vie de la réalité.  En savoir plus sur l’utilisation de la saisie manuscrite sur [hololens (1er génération)](hololens1-basic-usage.md#use-hololens-with-your-hands) et [hololens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-Si votre environnement est trop sombre, le HoloLens peut ne pas voir votre mains, alors assurez-vous qu’il y a suffisamment de lumière.
+Si vous cédez des gants, Notez que certains types de gants ne fonctionnent pas avec le suivi de la main.  Un exemple courant est une gants en caoutchouc noirs, qui permet d’absorber l’éclairage infrarouge et qui ne sont pas pris en compte par la caméra de profondeur.  Si votre entreprise utilise des gants en caoutchouc, nous vous recommandons d’essayer une couleur plus claire, telle que le bleu ou le gris.  Un autre exemple est un grand nombre de chaussures de Baggy, qui a tendance à masquer la forme de votre mains. Nous vous recommandons d’utiliser les gants qui sont en tant que possibles pour les meilleurs résultats.
 
 Si votre visière est dotée d’empreintes digitales ou de traînées, utilisez le microfiber de nettoyage fourni avec le HoloLens pour nettoyer légèrement votre visière.
 
