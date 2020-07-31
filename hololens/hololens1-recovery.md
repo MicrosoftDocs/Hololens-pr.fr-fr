@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
-ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
+ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861159"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899177"
 ---
 # Redémarrer, réinitialiser ou récupérer HoloLens (1ère génération)
 
@@ -91,7 +91,7 @@ Si vous rencontrez encore des problèmes après avoir redémarré votre HoloLens
 
 Si vous réinitialisez votre appareil, toutes vos données, applications et paramètres personnels sont supprimés, y compris la réinitialisation du TPM. La réinitialisation de n’installera que la dernière version de Windows holographique. vous devrez rétablir toutes les étapes d’initialisation (étalonner, connecter à Wi-Fi, créer un compte d’utilisateur, télécharger des applications, etc.).
 
-1. Lancez l’application paramètres, puis sélectionnez **Mise à jour** > **Réinitialiser**.
+1. Lancez l'application Paramètres, puis sélectionnez **Mettre à jour** > **la récupération**.
 1. Sélectionnez l’option **Réinitialiser l’appareil** et lisez le message de confirmation.
 1. Si vous acceptez de réinitialiser votre appareil, l’appareil redémarre et affiche un série de rapports tournants avec une barre de progression.
 1. Patientez environ 30 minutes l’exécution de ce processus.
