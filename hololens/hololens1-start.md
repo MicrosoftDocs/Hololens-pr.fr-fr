@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 042856de2b89395fa0168d90515a7700298087f1
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828507"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903230"
 ---
 # Installer votre HoloLens (1re génération)
 
@@ -48,12 +48,12 @@ Lorsque vous démarrez votre HoloLens pour la première fois, la première chose
 1. Connectez-vous à Internet (HoloLens vous guide pour sélectionner le réseau Wi-Fi).
 
 1. Connectez-vous à votre compte d’utilisateur. Choisissez **Il appartient à mon entreprise ou à mon établissement** ou **Il m’appartient**.
-    - Si vous sélectionnez **Il appartient à mon entreprise ou à mon établissement**, vous vous connectez avec un compte AzureAD. Si votre organisation utilise Azure AD Premium et qu’elle a configuré l’inscription GPM automatique, HoloLens s’inscrit automatiquement dans GPM. Si votre organisation n’utilise pas Azure AD Premium, l’inscription GPM automatique n’est pas disponible, vous devrez donc procéder [manuellement à l’inscription HoloLens dans gestion des périphériques](hololens-enroll-mdm.md#enroll-through-settings-app). Pour vous connecter à votre appareil pour la première fois à l’aide d’un compte professionnel ou scolaire, procédez comme suit:
+    - Si vous sélectionnez **Il appartient à mon entreprise ou à mon établissement**, vous vous connectez avec un compte AzureAD. Si votre organisation utilise Azure AD Premium et qu’elle a configuré l’inscription GPM automatique, HoloLens s’inscrit automatiquement dans GPM. Si votre organisation n’utilise pas Azure AD Premium, l’inscription GPM automatique n’est pas disponible, vous devrez donc procéder [manuellement à l’inscription HoloLens dans gestion des périphériques](hololens-enroll-mdm.md#different-ways-to-enroll). Pour vous connecter à votre appareil pour la première fois à l’aide d’un compte professionnel ou scolaire, procédez comme suit:
         1. Entrez les informations de votre compte professionnel.
         1. Acceptez la déclaration sur le respect de la vie privée.
         1. Connectez-vous à l’aide de vos informations d’identification Azure AD. Cela pourra vous rediriger vers la page de connexion de votre entreprise.
         1. Poursuivez la configuration de l’appareil.
-    - Si vous choisissez **Il m’appartient**, vous vous connectez avec un compte Microsoft. Une fois l’installation terminée, vous pouvez [inscrire HoloLens manuellement dans la gestion des périphériques](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - Si vous choisissez **Il m’appartient**, vous vous connectez avec un compte Microsoft. Une fois l’installation terminée, vous pouvez [inscrire HoloLens manuellement dans la gestion des périphériques](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Entrez les informations de votre compte Microsoft.
         1. Saisissez votre mot de passe. Si votre compte Microsoft nécessite une [vérification en deux étapes (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), achevez le processus de vérification.
 

@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 054c4ded7496957671c055e3161a1297de7abc1a
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 1dd6c2e6cde980b86ac810f82d27b3b88f20f336
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828095"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903220"
 ---
 # Inscrire HoloLens dans un logiciel de gestion des périphériques mobiles (GPM)
 
@@ -31,6 +31,21 @@ Vous pouvez gérer plusieurs appareils Microsoft HoloLens en même temps à l’
 ## Conditions requises
 
  Pour pouvoir gérer les appareils HoloLens, votre organisation doit disposer de la gestion des périphériques mobiles (GPM). Votre fournisseur GPM peut être MicrosoftIntune ou un fournisseur tiers qui utilise les API GPM de Microsoft.
+ 
+## Différentes façons de s’inscrire
+
+Selon le type d’identité choisi lors de la connexion OOBE ou après l’inscription, il existe différentes méthodes d’inscription. Pour en savoir plus sur chaque type d’identité sur HoloLens, consultez [cette page](hololens-identity.md).
+
+- Si Identity est AAD, vous pouvez le faire au cours de l’utilisation de l' **application**OOBE ou du  ->  bouton**School**  ->  **Connect** .
+    - Pour l’inscription AAD, l’inscription de la gestion des appareils mobiles automatique se produit uniquement si AAD a été configuré avec les URL d’inscription.
+- Si Identity est AAD et que l’appareil a été préconfiguré et qu’il a été enregistré avec un profil de configuration Intune et qu’il est affecté, l’inscription AAD et l’inscription se produiront automatiquement dans OOBE.
+    - Également appelé [flux AutoPilot](hololens2-autopilot.md) disponible dans les [Builds 19041.1103 +](hololens-release-notes.md#windows-holographic-version-2004).
+- Si Identity est MSA, utilisez le bouton d’accès à l' **application paramètres**d’utilisation  ->  **ou de School**  ->  **Connect** .
+    - Également appelé flux d’ajout de compte de bureau (AWA).
+- Si Identity est un utilisateur local, utilisez **Settings App**  ->  **Access Work ou School**  ->  **ENROLL only dans le lien gestion des périphériques** .
+    - Également appelé flux d’inscription pour le GPM.
+
+Une fois que l’appareil est inscrit auprès de votre serveur de gestion des périphériques mobiles, l’application paramètres indique désormais que l’appareil est inscrit à la gestion des appareils.
 
 ## Inscription automatique dans GPM
 
@@ -38,16 +53,6 @@ Si votre organisation utilise Azure ActiveDirectory (Azure AD) et une solution G
 
 Lorsque l’inscription automatique est activée, aucune inscription manuelle supplémentaire n’est nécessaire. Lorsque l’utilisateur se connecte avec un compte Azure AD, l’appareil est inscrit dans GPM lors de sa première utilisation.
 
-## Inscription via l’application Paramètres
-
- Lorsque l’appareil n’est pas inscrit dans GPM lors de sa première utilisation, l’utilisateur peut l'inscrire manuellement avec le serveur GPM de l’entreprise via l’application Paramètres.
-
-1. Rendez-vous sur **Paramètres** > **Comptes** > **Accès professionnel**.
-1. Sélectionnez **Inscription GPM (gestion des périphériques mobiles)** et saisissez le compte de votre entreprise. Vous serez redirigé vers la page de connexion de votre entreprise.
-1. Si l’authentification aboutit sur le serveur GPM, un message de réussite s’affiche.
-
-Votre appareil est maintenant inscrit auprès de votre serveur GPM. L’application Paramètres montre maintenant que le périphérique est inscrit dans la gestion des périphériques.
-
 ## Désinscrire HoloLens de Intune
 
-Vous ne pouvez pas [désinscrire](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) un HoloLens de Intune à distance. Si l’administrateur désinscrit l’appareil à l’aide de la GPM, l’appareil demeurera en dehors du tableau de bord Intune.
+Pour en savoir plus sur l’annulation de l’inscription d’un appareil, consultez [cette page](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 

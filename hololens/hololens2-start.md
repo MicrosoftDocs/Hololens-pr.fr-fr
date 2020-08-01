@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8c3d9a10533432b3e8489ffa297c16061abb9eaf
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828209"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903240"
 ---
 # Configurer votre HoloLens2
 
@@ -69,12 +69,12 @@ HoloLens 2 vous guide au cours des étapes suivantes:
 > Notez également que lors de l’installation de HoloLens, le délai d’expiration des informations d’identification est de deux minutes. Le nom d’utilisateur/mot de passe doit être entré dans les deux minutes, sans quoi le champ du nom d’utilisateur sera automatiquement effacé.
 
 1. Connectez-vous à votre compte d’utilisateur. Vous avez le choix entre **Il appartient à mon entreprise ou à mon établissement** et **Il m’appartient**.
-    - Si vous choisissez **Il appartient à mon entreprise ou à mon établissement**, vous vous connectez avec un compte Azure AD. Si votre organisation utilise Azure AD Premium et qu’elle a configuré l’inscription GPM automatique, HoloLens s’inscrit automatiquement dans GPM. Si votre organisation n’utilise pas Azure AD Premium, l’inscription GPM automatique n’est pas disponible. Dans ce cas, vous devez [inscrire HoloLens manuellement dans la gestion des périphériques](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - Si vous choisissez **Il appartient à mon entreprise ou à mon établissement**, vous vous connectez avec un compte Azure AD. Si votre organisation utilise Azure AD Premium et qu’elle a configuré l’inscription GPM automatique, HoloLens s’inscrit automatiquement dans GPM. Si votre organisation n’utilise pas Azure AD Premium, l’inscription GPM automatique n’est pas disponible. Dans ce cas, vous devez [inscrire HoloLens manuellement dans la gestion des périphériques](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Entrez les informations de votre compte professionnel.
         1. Acceptez la déclaration de confidentialité et le contrat de licence utilisateur final.
         1. Connectez-vous à l’aide de vos informations d’identification Azure AD. Vous serez peut-être redirigé vers la page de connexion de votre entreprise.
         1. Poursuivez la configuration de l’appareil.
-    - Lorsque vous choisissez **Il m’appartient**, vous vous connectez avec un compte Microsoft. Une fois l’installation terminée, vous pouvez [inscrire HoloLens manuellement dans la gestion des périphériques](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - Lorsque vous choisissez **Il m’appartient**, vous vous connectez avec un compte Microsoft. Une fois l’installation terminée, vous pouvez [inscrire HoloLens manuellement dans la gestion des périphériques](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Entrez les informations de votre compte Microsoft.
         2. Saisissez votre mot de passe. Si votre compte Microsoft nécessite une [vérification en deux étapes (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), achevez le processus de vérification.
 
