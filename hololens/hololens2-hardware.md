@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894050"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903329"
 ---
 # Matériel HoloLens2
 
@@ -144,6 +144,23 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 
 ### Informations réglementaires
 [Réglementation HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): comprend des informations sur la température, l’élimination, les interférences radio et TV, et bien plus encore.
+
+## Dimensions du paquet
+
+|      Mesure               |      Unités métriques     |      Unités impériales     |
+|--------------------------------|-----------------------|-------------------------|
+|     Longueur de l’unité                |     378,97 mm          |     14,920pouces       |
+|     Largeur de l’unité                 |     247,90 mm          |     9,760pouces        |
+|     Hauteur de l’unité                 |     163,07 mm          |     6,420pouces        |
+|     Poids de l’unité                |     2,878 kg           |     6,344 livres           |
+|     Longueur d’expéditeur externe    |     446,00 mm          |     17,559pouces       |
+|     Largeur d’expéditeur externe     |     257,99 mm          |     10,157 pouces       |
+|     Hauteur d’expéditeur externe     |     172,01 mm          |     6,772 pouces        |
+|     Poids d’expéditeur externe    |     3,284 kg           |     7,240 livres           |
+
+Remarques:
+- Unité : La boîte noir de vente au détail dans laquelle HoloLens 2 est vendu.
+- Expéditeur externe : L’emballage de protection autour de l’unité.
 
 ## Étape suivante
 
