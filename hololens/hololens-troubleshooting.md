@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902289"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915942"
 ---
 # Résolution des problèmes
 
@@ -28,7 +28,7 @@ Cet article décrit comment résoudre plusieurs problèmes courants de HoloLens.
 
 Si votre HoloLens ne démarre pas:
 
-- Si les voyants situés à côté du bouton d’alimentation ne s’allument pas ou qu’un seul voyant clignote, il est possible que vous deviez [facturer votre HoloLens.](hololens-recovery.md#charging-the-device)
+- Si les voyants situés à côté du bouton d’alimentation ne s’allument pas ou qu’un seul voyant clignote, il est possible que vous deviez [facturer votre HoloLens.](hololens-recovery.md#charge-the-device)
 - Si les voyants s’allument lorsque vous appuyez sur le bouton d’alimentation et que vous ne voyez aucun élément sur les écrans, [Préformez une réinitialisation matérielle de l’appareil](hololens-recovery.md#hard-reset-procedure).
 
 Si votre HoloLens devient figé ou ne répond pas, procédez comme suit:
