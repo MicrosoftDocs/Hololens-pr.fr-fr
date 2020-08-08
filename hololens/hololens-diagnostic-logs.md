@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
-ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
+ms.openlocfilehash: d14c397c4783acd88dcd922a92b0ffe6437a6473
+ms.sourcegitcommit: c2040b967f2f884a22f4b93a173224163e37da1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899167"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "10918595"
 ---
 # Collecter et utiliser des informations de diagnostic sur les appareils HoloLens
 
@@ -38,7 +38,7 @@ Les utilisateurs et administrateurs HoloLens peuvent choisir parmi quatre métho
 
 Le tableau suivant compare les trois méthodes de collection. Les noms de méthode sont liés à des informations plus détaillées dans les sections qui suivent le tableau.
 
-|Méthode |Conditions préalables |Emplacements des données |Accès aux données et utilisation |Rétention des données |
+|Méthode |Prérequis |Emplacements des données |Accès aux données et utilisation |Rétention des données |
 | --- | --- | --- | --- | --- |
 |[Hub de commentaires](#feedback-hub) |Connexion réseau et Internet<br /><br />Application Hub de commentaires<br /><br />Autorisation de chargement de fichiers dans le Cloud Microsoft |Cloud Computing Microsoft<br /><br />Appareil HoloLens (facultatif) |L’utilisateur demande une assistance, accepte les conditions d’utilisation et charge les données<br /><br />Les employés Microsoft affichent les données de la même manière que les conditions d’utilisation. |Les données du Cloud sont conservées pendant la période définie par la déclaration de confidentialité de nouvelle génération (NGP). Les données sont alors supprimées automatiquement.<br /><br />Les données sur l’appareil peuvent être supprimées à tout moment par un utilisateur disposant des autorisations de propriétaire de l' **appareil** ou d' **administrateur** . |
 |[Utilitaire de dépannage des paramètres](#settings-troubleshooter) |Application Paramètres |AppareilHoloLens<br /><br />Ordinateur connecté (facultatif) |L’utilisateur stocke les données, et seul l’utilisateur accède aux données (sauf si l’utilisateur partage spécifiquement les données avec un autre utilisateur). |Les données sont conservées tant que l’utilisateur ne les supprime pas. * |
@@ -55,7 +55,7 @@ Un utilisateur HoloLens peut utiliser l’application de bureau Hub de commentai
 > [!NOTE]  
 > **Utilisateurs commerciaux ou d’entreprise:** Si vous utilisez l’application Hub de commentaires pour signaler un problème lié à la gestion des périphériques mobiles, la mise en service ou tout autre aspect de la gestion des **Enterprise Management**appareils, remplacez la catégorie application par la  >  **catégorie appareil**de gestion de l’entreprise.
 
-### Conditions préalables
+### Prérequis
 
 - Le périphérique est connecté à un réseau.
 - L’application Hub de commentaires est disponible sur l’ordinateur de bureau de l’utilisateur et permet de télécharger des fichiers sur le Cloud Microsoft.
@@ -81,7 +81,7 @@ Un utilisateur HoloLens peut utiliser l’application paramètres sur l’appare
 1. Reproduisez le problème.
 1. Après avoir reproduire le problème, revenez aux paramètres, puis sélectionnez **arrêter**.
 
-### Conditions préalables
+### Prérequis
 
 - L’application paramètres est installée sur l’appareil et est disponible pour l’utilisateur.
 
@@ -102,7 +102,7 @@ Les informations de diagnostic restent dans ces emplacements tant que l’utilis
 
 Dans un environnement de gestion des périphériques mobiles (GPM), l’administrateur informatique peut utiliser le [fournisseur de services de configuration (CSP) DiagnosticLog](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) pour configurer les paramètres de diagnostic sur les appareils HoloLens inscrits. L’administrateur informatique peut configurer ces paramètres pour collecter les journaux de périphériques inscrits.
 
-### Conditions préalables
+### Prérequis
 
 - Le périphérique est connecté à un réseau.
 - L’appareil est inscrit dans un environnement MDM qui prend en charge le fournisseur de services de DiagnosticLog.
@@ -130,7 +130,7 @@ Pour collecter des diagnostics, procédez comme suit:
 2.  Dans l’Explorateur de fichiers sur votre PC, accédez à **«ce PC \<hololens-device> \Internal Storage»**.
 3.  Si le dossier **stockage interne** n’est pas affiché, cela signifie que l’appareil attend qu’un utilisateur se connecte. Connectez-vous ou redémarrez l’appareil en maintenant le bouton d’alimentation enfoncé pendant 10 secondes.
 4.  Appuyez et relâchez immédiatement les boutons **alimentation + volume inférieur** .
-5.  Patientez quelques instants avant que l’appareil prépare les archives zip.
+5.  Patientez quelques instants avant que l’appareil prépare les archives zip. (Un fichier temporaire appelé HololensDiagnostics. Temp risque de devenir visible lorsque l’appareil génère les archives zip. Ne l’accédez pas ou n’enregistrez pas ce fichier. Lorsque le processus se termine, il est remplacé par les archives zip.)
 6.  Actualisez l’Explorateur de fichiers et accédez au dossier **«\Documents»** .
 7.  Copiez les fichiers ZIP de diagnostic et partagez-les avec l’équipe du support technique de Microsoft.
 
