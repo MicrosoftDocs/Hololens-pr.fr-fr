@@ -1,7 +1,7 @@
 ---
 title: Rechercher et enregistrer des fichiers sur HoloLens
 description: Utiliser l’Explorateur de fichiers sur HoloLens pour afficher et gérer des fichiers sur votre appareil
-keywords: hololens
+keywords: procédures, sélecteur de fichiers, fichiers, photos, vidéos, images, OneDrive, stockage, Explorateur de fichiers, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
 ms.author: mazeller
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 50a13e1634344bea66bb6b7ce90d9e3fc8c2a783
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: fb3287f0a074eddeac0c7ee2871e289b93eafcac
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828042"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919121"
 ---
 # Rechercher, ouvrir et enregistrer des fichiers sur HoloLens
 
