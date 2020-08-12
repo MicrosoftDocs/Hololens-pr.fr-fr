@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5394e56882c0847333186cbbe25670231293ba4f
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919145"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924246"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -43,6 +43,7 @@ Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure qu
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Prise en charge de la position de l’oeil automatique                            | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
 | Afficheur de certificats                                   | Affichez les certificats d’utilisateur et d’appareil dans l’application paramètres.                                        | 19041.1346 +                 |
+| Connexion Wi-Fi et utilisation du pilotage automatique                 | Utilisez AutoPilot depuis un Wi-Fi sans avoir besoin d’une carte Ethernet.                            | 19041.1364 +                 |
 | Stratégies HoloLens                                    | Nouvelles stratégies pour les appareils de réalité mixte.                                                       | 19041.1349 +                 |
 | Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion         | Politique pour le nombre de jours pendant lesquels le cache d’appartenance au groupe AAD est autorisé à utiliser le mode plein écran.     | 19041.1356 +                 |
 | Nouvelles stratégies de restriction d’appareil pour HoloLens 2       | Les stratégies de gestion des appareils activées pour HoloLens 2 sont activées.                              | 19041.1349 +                 |
@@ -87,6 +88,9 @@ Dans Windows Insider Build 19041.1346 +, nous ajoutons un afficheur de certifica
 Pour afficher les certificats, accédez à **paramètres > mettre à jour & certificats de sécurité >**.
 
 ![Afficheur de certificats dans l’application paramètres](images/hololens-certificate-viewer.png)
+
+### Connexion Wi-Fi et utilisation du pilotage automatique
+À présent, lorsque vous connectez HoloLens 2 avec WiFi, OOBE vérifie s’il y a un profil AutoPilot pour l’appareil. S’il en existe une, il sera utilisé pour effectuer la partie restante du flux d’inscription AAD. En d’autres termes, l’utilisation d’une carte Ethernet vers une carte USB c ou WiFi vers la carte USB C n’est plus obligatoire, mais elle continue de fonctionner au début de OOBE. En savoir plus sur le [pilotage automatique pour les appareils HoloLens 2](hololens2-autopilot.md).
 
 ### Stratégies HoloLens
 De nouvelles stratégies de réalité mixte ont été créées pour les appareils HoloLens 2 lors de générations 19041.1349 +. Les nouveaux paramètres contrôleurs incluent: définir la luminosité, définir le volume et désactiver l’enregistrement audio dans les captures de réalité mixte, définir quand les diagnostics peuvent être collectés et cache d’appartenance de groupe AAD.  

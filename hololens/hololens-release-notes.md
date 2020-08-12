@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fa2c4b5562c27e8d80b765c4acce0191de54a545
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915952"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924256"
 ---
 # Notes de publication HoloLens 2
 
@@ -28,6 +28,20 @@ Pour vous assurer que vous disposez d’une satisfaction productive sur vos appa
 
 >[!NOTE]
 > Pour lire les notes de publication de HoloLens Emulator, [consultez l’archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows holographique, version 2004-mise à jour d’août 2020
+- Version 19041,1113
+
+Améliorations et correctifs de la mise à jour:
+
+- L’application paramètres ne sera plus suivie de l’utilisateur dans les expériences d’étalonnage d’iris ou de suivi oculaire.
+- Correction d’un bogue lors de l’application d’un package de mise en service au cours de l’utilisation de la version OOBE pour renommer l’appareil et effectuer d’autres actions (par exemple, la connexion à un réseau) ne fera pas les autres actions après le redémarrage de l’appareil en raison d’un changement de nom.
+- Le modèle de couleurs modifié des flux d’installation initial de l’appareil pour améliorer la qualité visuelle.
+
+## Windows holographique, version 1903-mise à jour d’août 2020
+- Version 18362,1074
+
+Cette mise à jour de qualité mensuelle ne contient pas de modifications remarquables, nous vous encourageons à essayer les dernières builds pour Windows holographique, version 2004.
 
 ## Windows holographique, version 2004-mise à jour de juillet 2020
 - Version 19041,1109
