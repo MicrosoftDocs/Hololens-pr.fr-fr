@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
+ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924256"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926327"
 ---
 # Notes de publication HoloLens 2
 
@@ -35,7 +35,7 @@ Pour vous assurer que vous disposez d’une satisfaction productive sur vos appa
 Améliorations et correctifs de la mise à jour:
 
 - L’application paramètres ne sera plus suivie de l’utilisateur dans les expériences d’étalonnage d’iris ou de suivi oculaire.
-- Correction d’un bogue lors de l’application d’un package de mise en service au cours de l’utilisation de la version OOBE pour renommer l’appareil et effectuer d’autres actions (par exemple, la connexion à un réseau) ne fera pas les autres actions après le redémarrage de l’appareil en raison d’un changement de nom.
+- Correction d’un bogue lors de l’application d’un package de mise en service au cours de l’utilisation de la version OOBE pour renommer l’appareil et effectuer d’autres actions (par exemple, la connexion à un réseau) n’a pas pu effectuer les autres actions après le redémarrage de l’appareil en raison d’un changement de nom.
 - Le modèle de couleurs modifié des flux d’installation initial de l’appareil pour améliorer la qualité visuelle.
 
 ## Windows holographique, version 1903-mise à jour d’août 2020

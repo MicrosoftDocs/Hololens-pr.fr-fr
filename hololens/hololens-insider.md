@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
+ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924246"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926599"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -179,6 +179,13 @@ Auparavant lors de la mise en application du mode plein écran, HoloLens est uti
 
 ## Commencer à recevoir les builds Insider
 
+> [!NOTE]
+> Si vous n’avez pas effectué de mise à jour récemment, redémarrez votre appareil pour mettre à jour l’État et obtenir la dernière version.
+> - La commande vocale «redémarrage de l’appareil» fonctionne bien. 
+> - Vous pouvez également choisir le bouton redémarrer dans paramètres/programme Windows Insider.
+>
+> Nous avons rencontré un bogue sur le serveur principal que vous avez rencontré et c’est en retour.
+
 Sur un appareil HoloLens 2, accédez à **paramètres**  >  **mise à jour &**  >  **programme Windows Insider** Security et sélectionnez **commencer**. Liez le compte que vous avez utilisé pour vous inscrire au programme Windows Insider.
 
 Ensuite, sélectionnez **développement actif de Windows**, choisissez si vous souhaitez recevoir les builds de **canaux de développement** ou de **canaux bêta** , puis passez en revue les termes du programme.
@@ -191,7 +198,7 @@ Pour tester la version d’évaluation d’un FFU, vous devez d’abord déverro
 
     1. Téléchargez FFU sur votre PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
-    1. Installez ARC (Advanced Recovery Companion) à partir du Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Installez ARC (Advanced Recovery Companion) à partir du Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
 1. Sur HoloLens-version de déverrouillage **Settings**: Ouvrez la  >  **mise à jour des paramètres &**  >  **programme Windows Insider** Security et inscrivez-vous, puis redémarrez l’appareil.
 
