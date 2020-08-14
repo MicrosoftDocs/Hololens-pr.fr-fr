@@ -16,22 +16,16 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
-ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
+ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926599"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929873"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
-Bienvenue dans la dernière build Insider Preview pour HoloLens.  Il est facile de commencer et de fournir des commentaires utiles pour notre prochaine mise à jour du système d’exploitation pour HoloLens.
-
-Windows Insider se déplace désormais vers les canaux. Le sonne **rapide** devient le **canal de développement**, la sonnerie **lente** devient le **canal bêta**et la sonnerie de la version d' **évaluation** devient le **canal de publication**. Voici à quoi ressemble le mappage:
-
-![Explication des canaux Windows Insider](images/WindowsInsiderChannels.png)
-
-Pour plus d’informations, consultez [Présentation des canaux Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) sur les blogs Windows.
+Bienvenue dans la dernière build Insider Preview pour HoloLens. Il est facile de [commencer et de fournir des commentaires](hololens-insider.md#start-receiving-insider-builds) utiles pour notre prochaine mise à jour du système d’exploitation pour HoloLens.
 
 ## Notes de publication de Windows Insider
 
@@ -43,6 +37,9 @@ Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure qu
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Prise en charge de la position de l’oeil automatique                            | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
 | Afficheur de certificats                                   | Affichez les certificats d’utilisateur et d’appareil dans l’application paramètres.                                        | 19041.1346 +                 |
+| Installation et suppression de certificats                      | Les utilisateurs peuvent installer et supprimer des certificats à l’aide de l’observateur de certificats.                       | 19041.1361 +                 |
+| Lancement automatique de la mise en service depuis USB                    | OOBE détecte automatiquement les packages de mise en service sur les lecteurs USB.                                 | 19041.1361 +                 |
+| Confirmation automatique de l’approvisionnement des packages dans OOBE           | Appliquer automatiquement les packages de mise en service dans OOBE.                                            | 19041.1361 +                 |
 | Connexion Wi-Fi et utilisation du pilotage automatique                 | Utilisez AutoPilot depuis un Wi-Fi sans avoir besoin d’une carte Ethernet.                            | 19041.1364 +                 |
 | Stratégies HoloLens                                    | Nouvelles stratégies pour les appareils de réalité mixte.                                                       | 19041.1349 +                 |
 | Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion         | Politique pour le nombre de jours pendant lesquels le cache d’appartenance au groupe AAD est autorisé à utiliser le mode plein écran.     | 19041.1356 +                 |
@@ -52,7 +49,9 @@ Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure qu
 | Visibilité de la page de paramètres activée pour HoloLens 2      | Stratégie pour sélectionner les pages qui apparaissent dans l’application paramètres.                                          | 19041.1349 +                 |
 | Accès global affecté                               | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système.  | 19041.1356 +                 |
 | Lancement automatique d’une application dans Kiosk multi-App                | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion à un mode Kiosk à plusieurs applications. | 19041.1346 +                 |
+| Connexion automatique de visiteur pour les bornes                        | Autorise l’utilisation de l’ouverture de session automatique sur les comptes de visiteur pour les modes Kiosk.                        | 19041.1361 +                 |
 | Modification du comportement du mode plein écran pour la gestion des échecs | Modification de la façon dont l’échec du mode plein écran est désormais géré.                                             | 19041.1356 +                 |
+| Améliorations et correctifs de la mise à jour                 | Autres correctifs de la mise à jour.                                                               | 19041.1361 +                 |
 
 ### Prise en charge de la position de l’oeil automatique
 
@@ -76,10 +75,7 @@ Dans le cas d’expériences nécessitant des informations visuelles ou un posit
 
 ### Afficheur de certificats
 
-Dans Windows Insider Build 19041.1346 +, nous ajoutons un afficheur de certificats à l’application paramètres HoloLens 2. Cette fonctionnalité fournit un moyen simple et convivial de vérifier les certificats sur votre appareil. Pour trouver rapidement un certificat spécifique, il est possible d’effectuer un tri sur la base d’un nom, d’un magasin ou d’une date d’expiration. Les utilisateurs peuvent également rechercher directement un certificat. Avec la nouvelle visionneuse de certificats, les administrateurs et les utilisateurs ont désormais amélioré les outils d’audit, de diagnostic et de validation pour garantir la sécurité et la conformité des appareils.  Pour afficher davantage d’informations sur un certificat individuel, sélectionnez le certificat, puis cliquez sur informations.
-
-> [!NOTE]
-> Il existe une limite connue concernant la localisation des langues non américaine que nous travaillons à la résolution des versions ultérieures de Windows Insider.
+Dans Windows Insider Build 19041.1346 +, nous ajoutons un afficheur de certificats à l’application paramètres HoloLens 2. Le certificat installation prend actuellement en charge les fichiers. cer et. CRT. Les propriétaires d’appareils peuvent installer des certificats dans l’ordinateur local et l’utilisateur actuel.  tous les autres utilisateurs ne peuvent être installés que dans l’utilisateur actuel. Les utilisateurs peuvent uniquement supprimer des certificats installés directement à partir de l’interface utilisateur des paramètres. Si un certificat a été installé par d’autres moyens, il doit également être supprimé par le même mécanisme.
 
 -   **Audit:** Possibilité de vérifier que le déploiement d’un certificat est correct ou qu’il a été supprimé de manière appropriée. 
 -   **Diagnostic:** En cas de problème, le fait de vérifier que les certificats appropriés existent sur l’appareil permet de gagner du temps et d’aider à résoudre les problèmes. 
@@ -88,6 +84,56 @@ Dans Windows Insider Build 19041.1346 +, nous ajoutons un afficheur de certifica
 Pour afficher les certificats, accédez à **paramètres > mettre à jour & certificats de sécurité >**.
 
 ![Afficheur de certificats dans l’application paramètres](images/hololens-certificate-viewer.png)
+
+### Installation et suppression de certificats
+À partir de Windows Insider version 19041.1361 +, vous pouvez installer et supprimer des certificats directement sur HoloLens 2 via l’application paramètres. Le certificat installation prend actuellement en charge les fichiers. cer et. CRT. Les propriétaires d’appareils peuvent installer des certificats dans l’ordinateur local et l’utilisateur actuel.  tous les autres utilisateurs ne peuvent être installés que dans l’utilisateur actuel. Les utilisateurs peuvent uniquement supprimer des certificats installés directement à partir de l’interface utilisateur des paramètres. Si un certificat a été installé par d’autres moyens, il doit également être supprimé par le même mécanisme.
+
+#### Pour installer un certificat à l’aide de l’observateur de certificats: 
+1. Accédez à **paramètres**de  ->  **mise à jour de l’application et**  ->  **certificats**de sécurité, puis sélectionnez **installer un certificat**. 
+1. Sélectionnez un fichier. cer dans l’interface du sélecteur de fichiers.
+1. Sélectionnez ordinateur local (ou votre certificat).
+1. Sélectionnez **racine** en tant que magasin de certificats (ou quel magasin vous voulez placer votre certificat). 
+1. Cliquez sur **Installer**.
+
+Le certificat doit maintenant être installé sur l’appareil.
+
+#### Pour supprimer un certificat à l’aide de l’observateur de certificats: 
+1. Accédez à **paramètres**de  ->  **mise à jour de l’application et**  ->  **certificats**de sécurité.
+1. Recherchez le certificat par nom dans la zone de recherche.
+1. Cliquez sur le certificat.
+1. Cliquez sur **supprimer** .
+1. Sélectionnez Oui lorsque vous y êtes invité, puis, lorsque vous êtes invité à confirmer.
+
+![Image illustrant l’utilisation de l’interface utilisateur de certificats pour l’installation d’un certificat](images/hololens-install-certificate.jpg)
+
+#### Problèmes connus 
+Dans le cadre de la sélection d’un certificat dans le sélecteur de fichiers, l’interface utilisateur de la boîte de dialogue d’installation ne montre pas le fichier de certificat sélectionné, même si elle a été sélectionnée. Après avoir sélectionné le fichier, vous pouvez poursuivre l’installation même si le fichier n’apparaît pas dans la boîte de dialogue. 
+
+### Mise en service du lancement automatique à partir d’USB
+Avant cela, les utilisateurs devaient lancer l’écran de mise en service manuellement lors de la mise en service à l’aide d’une combinaison de boutons. Les utilisateurs peuvent désormais ignorer la combinaison de boutons à l’aide d’un package de mise en service sur un lecteur de stockage USB. 
+
+1. Brancher le lecteur USB avec le package de mise en service lors du premier moment de l’interaction de OOBE
+1. Lorsque l’appareil est prêt à être approvisionné, il ouvre automatiquement l’invite à l’aide de la page de configuration. 
+
+Remarque: Si vous laissez un lecteur USB branché dans le cadre du démarrage de l’appareil, l’interface OOBE recense le périphérique de stockage USB existant, ainsi que les éléments supplémentaires connectés.
+
+Pour plus d’informations sur l’application des packages de mise en service lors de la configuration de OOBE, continuez à lire [ici](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+### Vérifier automatiquement les packages de mise en service dans OOBE
+Lorsque l’écran principal de mise en service s’affiche, OOBE compte 10 secondes avant de commencer à appliquer automatiquement tous les packages de mise en service. Les utilisateurs peuvent toujours confirmer ou annuler dans les 10 secondes qui suivent la vérification des packages attendus.
+
+### Configuration automatique sans utiliser d’interface utilisateur
+En associant le lancement automatique de la mise en service à partir d’appareils USB et la confirmation automatique des packages de mise en service, un utilisateur peut configurer automatiquement les appareils HoloLens 2 sans utiliser l’interface utilisateur de l’appareil, ni ne porter le périphérique. Vous pouvez continuer à utiliser le même pilote USB et le même package de mise en service pour plusieurs appareils. Cela s’avère utile pour le déploiement de plusieurs appareils à la fois dans la même zone. 
+
+1. [Créer un package de mise à service](hololens-provisioning.md) à l’aide du [Concepteur de configuration Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copiez le package sur un lecteur de stockage USB.
+1. [Flashez votre HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) vers [19041,1361 ou version ultérieure](https://aka.ms/hololens2previewdownload). 
+1. Lorsque le [compagnon de récupération avancée](https://www.microsoft.com/store/productId/9P74Z35SFRS8) clignote sur votre appareil, débranchez votre câble USB-C. 
+1. Branchez votre lecteur USB sur le périphérique.
+1. Lors du démarrage de l’appareil HoloLens 2 dans OOBE, le package de mise en service sera automatiquement détecté sur le lecteur USB et lancera la page de configuration.
+1. Après 10 secondes, l’appareil applique automatiquement le package de mise en service. 
+
+Votre appareil est désormais configuré et affiche l’écran de mise en service réussi.
 
 ### Connexion Wi-Fi et utilisation du pilotage automatique
 À présent, lorsque vous connectez HoloLens 2 avec WiFi, OOBE vérifie s’il y a un profil AutoPilot pour l’appareil. S’il en existe une, il sera utilisé pour effectuer la partie restante du flux d’inscription AAD. En d’autres termes, l’utilisation d’une carte Ethernet vers une carte USB c ou WiFi vers la carte USB C n’est plus obligatoire, mais elle continue de fonctionner au début de OOBE. En savoir plus sur le [pilotage automatique pour les appareils HoloLens 2](hololens2-autopilot.md).
@@ -130,7 +176,8 @@ Procédure d’utilisation correcte de cette stratégie:
 Stratégies récemment activées qui autorisent davantage d’options de gestion des appareils HoloLens 2. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 ### Nouvelles stratégies d’alimentation pour Hololens 2
 Ces stratégies récemment ajoutées permettent aux administrateurs de contrôler les États d’alimentation tels que le délai d’inactivité. Pour en savoir plus sur chaque stratégie individuelle, cliquez sur le lien correspondant à cette stratégie.
@@ -171,11 +218,29 @@ L’application est automatiquement lancée lorsque l’utilisateur se connecte.
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
+### Connexion automatique de visiteur pour les bornes
+Cette nouvelle fonctionnalité permet d’utiliser l’ouverture de session automatique sur les comptes de visiteur pour les modes Kiosk. 
+
+Pour une configuration non-AAD, pour configurer un appareil pour le logo automatique de visiteur:
+1.  Créez un package de mise à service qui:
+    1.  Configure les **paramètres d’exécution/AssignedAccess** pour autoriser les comptes de visiteur.
+    1.  Si vous le souhaitez, vous pouvez inscrire l’appareil dans la gestion des périphériques mobiles **(paramètres d’exécution/lieu de travail/inscriptions)** afin qu’il puisse être géré par la suite.
+    1.  Ne pas créer de compte local
+1.  [Appliquez le package de mise en service](hololens-provisioning.md).
+
+Dans le cas d’une configuration AAD, les utilisateurs peuvent obtenir un aspect similaire à celui-ci aujourd’hui sans cette modification. Les appareils joints AAD configurés pour le mode kiosque peuvent se connecter à un compte visiteur avec un seul bouton à partir de l’écran de connexion. Lorsque vous êtes connecté au compte du visiteur, l’appareil ne demande pas de connexion tant qu’il n’a pas été explicitement déconnecté du menu Démarrer ou que l’appareil est redémarré.
+
 ### Modification du comportement du mode plein écran pour la gestion des échecs
 
 Auparavant lors de la mise en application du mode plein écran, HoloLens est utilisé pour afficher toutes les applications dans le menu Démarrer. À partir de cette version de Windows Insider, en cas d’échecs, aucune application ne s’affichera dans le menu Démarrer comme suit: 
 
 ![Image illustrant l’affichage du mode plein écran lors d’une panne.](images/hololens-kiosk-failure-behavior.png )
+
+### Améliorations et correctifs de la mise à jour:
+- Stratégie mise à jour pour désactiver l’énumération des fonctions USB via la gestion des périphériques mobiles (GPM) pour NCM pour AllowUsbConnection.
+- D’autres écrans dans OOBE sont désormais en mode sombre.
+- En savoir plus sur le contenu doit pointer vers la dernière déclaration de confidentialité en ligne.
+- Résolu et problème dans lequel les utilisateurs ne pouvaient pas approvisionner des profils VPN via les packages de mise en service.
 
 ## Commencer à recevoir les builds Insider
 
@@ -187,6 +252,12 @@ Auparavant lors de la mise en application du mode plein écran, HoloLens est uti
 > Nous avons rencontré un bogue sur le serveur principal que vous avez rencontré et c’est en retour.
 
 Sur un appareil HoloLens 2, accédez à **paramètres**  >  **mise à jour &**  >  **programme Windows Insider** Security et sélectionnez **commencer**. Liez le compte que vous avez utilisé pour vous inscrire au programme Windows Insider.
+
+Windows Insider se déplace désormais vers les canaux. Le sonne **rapide** devient le **canal de développement**, la sonnerie **lente** devient le **canal bêta**et la sonnerie de la version d' **évaluation** devient le **canal de publication**. Voici à quoi ressemble le mappage:
+
+![Explication des canaux Windows Insider](images/WindowsInsiderChannels.png)
+
+Pour plus d’informations, consultez [Présentation des canaux Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) sur les blogs Windows.
 
 Ensuite, sélectionnez **développement actif de Windows**, choisissez si vous souhaitez recevoir les builds de **canaux de développement** ou de **canaux bêta** , puis passez en revue les termes du programme.
 

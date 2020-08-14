@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
+ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857852"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "10927838"
 ---
 # Considérations en matière d’environnement pour HoloLens
 
@@ -117,7 +117,10 @@ Pour accéder à l’application d’étalonnage, accédez à **Paramètres** > 
 
 Si une autre personne utilisera votre HoloLens, elle doit d’abord exécuter l’application d’étalonnage pour que l’appareil soit correctement configuré en fonction de ses propres besoins.
 
-## Articles associés
+### Informations sur la réglementation et la température
+[Réglementation HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): comprend des informations sur la température, l’élimination, les interférences radio et TV, et bien plus encore.
+
+## Voir également
 
 - [Conception de cartographie spatiale](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
 - [Hologrammes](https://docs.microsoft.com/windows/mixed-reality/hologram)

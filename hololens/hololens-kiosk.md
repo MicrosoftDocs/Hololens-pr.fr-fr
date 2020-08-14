@@ -17,11 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857998"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929850"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -251,7 +252,7 @@ Les étapes suivantes diffèrent selon le type de kiosque souhaité. Pour plus d
 
 Pour plus d’informations sur la création d’un profil de configuration Kiosk, voir les paramètres de l' [appareil Windows 10 et Windows holographique pour les entreprises à exécuter comme borne dédiée à l’aide de Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
-### <a id="mdmconfigsingle"></a>MDM, étape 3 (application unique) &ndash; configurer les paramètres d’une borne pour une seule application
+### <a id="mdmconfigsingle"></a>MDM, étape 3 (application unique) &ndash;  configurer les paramètres d’une borne pour une seule application
 
 Cette section résume les paramètres requis par un kiosque d’application unique. Pour plus d’informations, consultez les articles suivants:
 
@@ -445,7 +446,7 @@ L’article «configurer HoloLens à l’aide d’un package de mise à service�
 
 - Vous pouvez [appliquer un package de mise à service à HoloLens lors de l’installation](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- Vous pouvez également [appliquer un package de mise à service à HoloLens après l’installation](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
+- Vous pouvez également [appliquer un package de mise à service à HoloLens après l’installation](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup).
 
 ## Utiliser Windows Device Portal pour configurer une borne sur une seule application
 

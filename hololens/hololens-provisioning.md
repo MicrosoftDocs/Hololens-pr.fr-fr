@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2b34cc642aa08adf5bb875588c9e4458df0034e1
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830158"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929860"
 ---
 # Configurer HoloLens à l’aide d’un package de mise à service
 
@@ -152,7 +152,9 @@ Lorsque vous avez terminé, sélectionnez **créer**. Cela ne prend que quelques
 
 ## Appliquer un package de mise à service à HoloLens lors de l’installation
 
-1. Utilisez le câble USB pour connecter l’appareil à un PC, puis démarrez le périphérique. Ne passez pas à la **première** page de début d’interaction de OOBE.   
+Les appareils HoloLens 2 sur la build [19041,1103](hololens-release-notes.md#windows-holographic-version-2004) ou une version ultérieure pourront utiliser un lecteur USB pour appliquer un package de mise en service. Il suffit de copier le fichier. ppkg à la racine du lecteur USB. Les packages de mise en service ne seront appliqués que s’ils sont à la racine du lecteur USB. La présence de plusieurs packages de mise en service sera appliquée séquentiellement.
+
+1. Utilisez le câble USB pour connecter l’appareil à un PC (ou un lecteur USB pour HoloLens 2, comme mentionné ci-dessus), puis démarrez l’appareil. Ne passez pas à la **première** page de début d’interaction de OOBE.   
     - Sur HoloLens (1ère génération), cette page contient un cadre bleu. 
     - Sur HoloLens 2, cette page contient le Hummingbird.
 
@@ -162,7 +164,7 @@ Lorsque vous avez terminé, sélectionnez **créer**. Cela ne prend que quelques
 
 4. Dans l’Explorateur de fichiers, faites glisser-déplacer le package d’approvisionnement (.ppkg) sur l'espace de stockage de l’appareil.
 
-5. Appuyez à nouveau brièvement sur les boutons **Baisser le Volume** et **Alimentation** simultanément, puis relâchez-les, lorsque vous êtes sur la page **Ajuster**.
+5. Appuyez de nouveau sur le **volume** et relâchez-le en appuyant sur le bouton d' **alimentation** , puis cliquez sur la première page d’un **moment** interactif de OOBE.
 
 6. L’appareil vous demande si vous faites confiance au package et que vous souhaitez l’appliquer. Confirmez que vous faites confiance au package.
 
@@ -171,7 +173,7 @@ Lorsque vous avez terminé, sélectionnez **créer**. Cela ne prend que quelques
 > [!NOTE]
 > Si l’appareil a été acheté avant le 2016 août, vous devez vous connecter à l’appareil à l’aide d’un compte Microsoft, obtenir la dernière mise à jour du système d’exploitation, puis réinitialiser le système d’exploitation pour appliquer le package de mise à service.
 
-### 4. appliquer un package de mise à service à HoloLens après l’installation
+### Appliquer un package de mise à service à HoloLens après l’installation
 
 > [!NOTE]
 > Ces étapes s’appliquent uniquement toWindows 10, version 1809.

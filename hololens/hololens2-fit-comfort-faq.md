@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828486"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929840"
 ---
 # Questions fréquentes sur l'ajustement et le confort avec les HoloLens 2
 
@@ -50,12 +50,7 @@ Essayez d’ajuster la position du viseur de votre appareil de sorte que le cadr
 
 ## La luminosité ou la couleur de l’image d’hologramme n’est pas correcte
 
-Pour HoloLens 2, procédez comme suit pour garantir une qualité visuelle optimale des hologrammes présentés dans les affichages:
-
-- **Augmentez la luminosité de l’affichage.** Les hologrammes s’affichent mieux lorsque l’écran est à son niveau le plus lumineux.
-- **Rapprochez la visière de vos yeux.** Faites basculer la visière vers la position la plus proche de vos yeux.
-- **Décaler la visière vers le bas.** Essayez de déplacer le pavé de navigation de votre front vers le bas, ce qui rapprochera la visière de votre nez.
-- **Exécutez l’étalonnage des yeux.** L’affichage utilise votre écart pupillaire et le pointage de votre regard pour optimiser les images sur l’écran. Si vous n’effectuez pas l’étalonnage de l’œil, la qualité de l’image peut être pire.
+Consultez les [étapes de dépannage de l’affichage](hololens2-display.md) HoloLens 2.
 
 ## L’appareil glisse lorsque je l’utilise ou je dois serrer le bandeau excessivement pour le maintenir en place
 
