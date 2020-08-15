@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
+ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929873"
+ms.locfileid: "10930861"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -33,25 +33,25 @@ Si vous recherchez une fonctionnalité qui n’est plus répertoriée ici, elle 
 
 Nous mettrons à jour cette page avec de nouvelles fonctionnalités à mesure que nous les publions vers les builds Insider.
 
-| Fonctionnalité                                              | Description                                                                                   | Disponible dans les builds Insider |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Prise en charge de la position de l’oeil automatique                            | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                       | 19041.1339 +                 |
-| Afficheur de certificats                                   | Affichez les certificats d’utilisateur et d’appareil dans l’application paramètres.                                        | 19041.1346 +                 |
-| Installation et suppression de certificats                      | Les utilisateurs peuvent installer et supprimer des certificats à l’aide de l’observateur de certificats.                       | 19041.1361 +                 |
-| Lancement automatique de la mise en service depuis USB                    | OOBE détecte automatiquement les packages de mise en service sur les lecteurs USB.                                 | 19041.1361 +                 |
-| Confirmation automatique de l’approvisionnement des packages dans OOBE           | Appliquer automatiquement les packages de mise en service dans OOBE.                                            | 19041.1361 +                 |
-| Connexion Wi-Fi et utilisation du pilotage automatique                 | Utilisez AutoPilot depuis un Wi-Fi sans avoir besoin d’une carte Ethernet.                            | 19041.1364 +                 |
-| Stratégies HoloLens                                    | Nouvelles stratégies pour les appareils de réalité mixte.                                                       | 19041.1349 +                 |
-| Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion         | Politique pour le nombre de jours pendant lesquels le cache d’appartenance au groupe AAD est autorisé à utiliser le mode plein écran.     | 19041.1356 +                 |
-| Nouvelles stratégies de restriction d’appareil pour HoloLens 2       | Les stratégies de gestion des appareils activées pour HoloLens 2 sont activées.                              | 19041.1349 +                 |
-| Nouvelles stratégies d’alimentation pour HoloLens 2                    | Stratégies récemment prises en charge pour les paramètres de délai d’alimentation.                                          | 19041.1349 +                 |
-| Stratégies de mise à jour                                      | Stratégies récemment activées permettant le contrôle des mises à jour.                                           | 19041.1352 +                 |
-| Visibilité de la page de paramètres activée pour HoloLens 2      | Stratégie pour sélectionner les pages qui apparaissent dans l’application paramètres.                                          | 19041.1349 +                 |
-| Accès global affecté                               | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système.  | 19041.1356 +                 |
-| Lancement automatique d’une application dans Kiosk multi-App                | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion à un mode Kiosk à plusieurs applications. | 19041.1346 +                 |
-| Connexion automatique de visiteur pour les bornes                        | Autorise l’utilisation de l’ouverture de session automatique sur les comptes de visiteur pour les modes Kiosk.                        | 19041.1361 +                 |
-| Modification du comportement du mode plein écran pour la gestion des échecs | Modification de la façon dont l’échec du mode plein écran est désormais géré.                                             | 19041.1356 +                 |
-| Améliorations et correctifs de la mise à jour                 | Autres correctifs de la mise à jour.                                                               | 19041.1361 +                 |
+| Fonctionnalité                                                | Description                                                                                    | Disponible dans les builds Insider |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [Prise en charge de la position de l’oeil automatique](hololens-insider.md#auto-eye-position-support)                              | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                        | 19041.1339 +                 |
+| [Afficheur de certificats](hololens-insider.md#certificate-viewer)                                     | Affichez les certificats d’utilisateur et d’appareil dans l’application paramètres.                                         | 19041.1346 +                 |
+| [Installation et suppression de certificats](hololens-insider.md#install-and-remove-certificates)                        | Les utilisateurs peuvent installer et supprimer des certificats à l’aide de l’observateur de certificats.                        | 19041.1361 +                 |
+| [Mise en service du lancement automatique à partir d’USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE détecte automatiquement les packages de mise en service sur les lecteurs USB.                                | 19041.1361 +                 |
+| [Vérifier automatiquement les packages de mise en service dans OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Appliquer automatiquement les packages de mise en service dans OOBE.                                             | 19041.1361 +                 |
+| [Utilisation du pilotage automatique avec la connexion Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Utilisez AutoPilot depuis un Wi-Fi sans avoir besoin d’une carte Ethernet.                             | 19041.1364 +                 |
+| [Accès global affecté](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système. | 19041.1356 +                 |
+| [Lancement automatique d’une application dans Kiosk multi-App](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion au mode plein écran à plusieurs applications.     | 19041.1346 +                 |
+| [Connexion automatique de visiteur pour les bornes](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Autorise l’utilisation de la connexion automatique sur les comptes de visiteur pour les modes Kiosk.                         | 19041.1361 +                 |
+| [Modification du comportement du mode plein écran pour la gestion des échecs](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Modification de la façon dont l’échec du mode plein écran est désormais géré.                                              | 19041.1356 +                 |
+| [Stratégies HoloLens](hololens-insider.md#hololens-policies)                                      | Nouvelles stratégies pour les appareils de réalité mixte.                                                        | 19041.1349 +                 |
+| [Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Politique pour le nombre de jours pendant lesquels le cache d’appartenance au groupe AAD est autorisé à utiliser le mode plein écran.    | 19041.1356 +                 |
+| [Nouvelles stratégies de restriction d’appareil pour HoloLens 2](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | Les stratégies de gestion des appareils activées pour HoloLens 2 sont activées.                               | 19041.1349 +                 |
+| [Nouvelles stratégies d’alimentation pour HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Stratégies récemment prises en charge pour les paramètres de délai d’alimentation.                                           | 19041.1349 +                 |
+| [Stratégies de mise à jour](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Stratégies récemment activées permettant le contrôle des mises à jour.                                            | 19041.1352 +                 |
+| [Visibilité de la page de paramètres activée pour HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Stratégie pour sélectionner les pages qui apparaissent dans l’application paramètres.                                           | 19041.1349 +                 |
+| [Améliorations et correctifs de la mise à jour](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Autres correctifs de la mise à jour.                                                                | 19041.1361 +                 |
 
 ### Prise en charge de la position de l’oeil automatique
 
@@ -135,8 +135,39 @@ En associant le lancement automatique de la mise en service à partir d’appare
 
 Votre appareil est désormais configuré et affiche l’écran de mise en service réussi.
 
-### Connexion Wi-Fi et utilisation du pilotage automatique
+### Utilisation du pilotage automatique avec la connexion Wi-Fi
 À présent, lorsque vous connectez HoloLens 2 avec WiFi, OOBE vérifie s’il y a un profil AutoPilot pour l’appareil. S’il en existe une, il sera utilisé pour effectuer la partie restante du flux d’inscription AAD. En d’autres termes, l’utilisation d’une carte Ethernet vers une carte USB c ou WiFi vers la carte USB C n’est plus obligatoire, mais elle continue de fonctionner au début de OOBE. En savoir plus sur le [pilotage automatique pour les appareils HoloLens 2](hololens2-autopilot.md).
+
+### Accès global affecté – mode plein écran
+Cette nouvelle fonctionnalité permet à un administrateur informatique de configurer un appareil HoloLens 2 pour le mode kiosque de plusieurs applications, qui est applicable au niveau du système, sans affinité avec aucune identité sur le système et qui s’applique à toutes les personnes qui se connectent à l’appareil. Pour en savoir [plus, consultez](hololens-global-assigned-access-kiosk.md)cette nouvelle fonctionnalité.
+
+### Lancement automatique d’une application dans le mode Kiosk à plusieurs applications 
+S’applique uniquement au mode Kiosk multi-App et seule une application peut être désignée pour le lancement automatique à l’aide de l’attribut en surbrillance ci-dessous dans la configuration Access attribuée. 
+
+L’application est automatiquement lancée lorsque l’utilisateur se connecte. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Connexion automatique de visiteur pour les bornes
+Cette nouvelle fonctionnalité permet d’utiliser l’ouverture de session automatique sur les comptes de visiteur pour les modes Kiosk. 
+
+Pour une configuration non-AAD, pour configurer un appareil pour le logo automatique de visiteur:
+1.  Créez un package de mise à service qui:
+    1.  Configure les **paramètres d’exécution/AssignedAccess** pour autoriser les comptes de visiteur.
+    1.  Si vous le souhaitez, vous pouvez inscrire l’appareil dans la gestion des périphériques mobiles **(paramètres d’exécution/lieu de travail/inscriptions)** afin qu’il puisse être géré par la suite.
+    1.  Ne pas créer de compte local
+1.  [Appliquez le package de mise en service](hololens-provisioning.md).
+
+Dans le cas d’une configuration AAD, les utilisateurs peuvent obtenir un aspect similaire à celui-ci aujourd’hui sans cette modification. Les appareils joints AAD configurés pour le mode kiosque peuvent se connecter à un compte visiteur avec un seul bouton à partir de l’écran de connexion. Lorsque vous êtes connecté au compte du visiteur, l’appareil ne demande pas de connexion tant qu’il n’a pas été explicitement déconnecté du menu Démarrer ou que l’appareil est redémarré.
+
+### Modification du comportement du mode plein écran pour la gestion des échecs
+
+Auparavant lors de la mise en application du mode plein écran, HoloLens est utilisé pour afficher toutes les applications dans le menu Démarrer. À partir de cette version de Windows Insider, en cas d’échecs, aucune application ne s’affichera dans le menu Démarrer comme suit: 
+
+![Image illustrant l’affichage du mode plein écran lors d’une panne.](images/hololens-kiosk-failure-behavior.png )
 
 ### Stratégies HoloLens
 De nouvelles stratégies de réalité mixte ont été créées pour les appareils HoloLens 2 lors de générations 19041.1349 +. Les nouveaux paramètres contrôleurs incluent: définir la luminosité, définir le volume et désactiver l’enregistrement audio dans les captures de réalité mixte, définir quand les diagnostics peuvent être collectés et cache d’appartenance de groupe AAD.  
@@ -204,37 +235,6 @@ Nous avons à présent activé une stratégie qui permet aux administrateurs inf
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
 ![Capture d’heures d’activité modifiées dans l’application paramètres](images/hololens-page-visibility-list.jpg)
-
-### Accès global affecté – mode plein écran
-Cette nouvelle fonctionnalité permet à un administrateur informatique de configurer un appareil HoloLens 2 pour le mode kiosque de plusieurs applications, qui est applicable au niveau du système, sans affinité avec aucune identité sur le système et qui s’applique à toutes les personnes qui se connectent à l’appareil. Pour en savoir [plus, consultez](hololens-global-assigned-access-kiosk.md)cette nouvelle fonctionnalité.
-
-### Lancement automatique d’une application dans le mode Kiosk à plusieurs applications 
-S’applique uniquement au mode Kiosk multi-App et seule une application peut être désignée pour le lancement automatique à l’aide de l’attribut en surbrillance ci-dessous dans la configuration Access attribuée. 
-
-L’application est automatiquement lancée lorsque l’utilisateur se connecte. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Connexion automatique de visiteur pour les bornes
-Cette nouvelle fonctionnalité permet d’utiliser l’ouverture de session automatique sur les comptes de visiteur pour les modes Kiosk. 
-
-Pour une configuration non-AAD, pour configurer un appareil pour le logo automatique de visiteur:
-1.  Créez un package de mise à service qui:
-    1.  Configure les **paramètres d’exécution/AssignedAccess** pour autoriser les comptes de visiteur.
-    1.  Si vous le souhaitez, vous pouvez inscrire l’appareil dans la gestion des périphériques mobiles **(paramètres d’exécution/lieu de travail/inscriptions)** afin qu’il puisse être géré par la suite.
-    1.  Ne pas créer de compte local
-1.  [Appliquez le package de mise en service](hololens-provisioning.md).
-
-Dans le cas d’une configuration AAD, les utilisateurs peuvent obtenir un aspect similaire à celui-ci aujourd’hui sans cette modification. Les appareils joints AAD configurés pour le mode kiosque peuvent se connecter à un compte visiteur avec un seul bouton à partir de l’écran de connexion. Lorsque vous êtes connecté au compte du visiteur, l’appareil ne demande pas de connexion tant qu’il n’a pas été explicitement déconnecté du menu Démarrer ou que l’appareil est redémarré.
-
-### Modification du comportement du mode plein écran pour la gestion des échecs
-
-Auparavant lors de la mise en application du mode plein écran, HoloLens est utilisé pour afficher toutes les applications dans le menu Démarrer. À partir de cette version de Windows Insider, en cas d’échecs, aucune application ne s’affichera dans le menu Démarrer comme suit: 
-
-![Image illustrant l’affichage du mode plein écran lors d’une panne.](images/hololens-kiosk-failure-behavior.png )
 
 ### Améliorations et correctifs de la mise à jour:
 - Stratégie mise à jour pour désactiver l’énumération des fonctions USB via la gestion des périphériques mobiles (GPM) pour NCM pour AllowUsbConnection.
