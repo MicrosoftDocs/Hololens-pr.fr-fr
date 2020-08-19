@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 6947fe2232701fb9451291bd07e1c896979861d5
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881327"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940194"
 ---
 # Problèmes connus avec HoloLens
 
@@ -28,7 +28,7 @@ Voici la liste actuelle des problèmes connus des appareils HoloLens. Activez d�
 
 >[!NOTE]
 > - Si vous rencontrez un problème qui ne se bloque pas, signalez-le sur votre appareil HoloLens via le [Hub de commentaires](hololens-feedback.md).
-> - Si le problème que vous rencontrez vous empêche, dans addtion de classer votre avis, envoyez [une demande de support](https://aka.ms/hlsupport).
+> - Si le problème que vous rencontrez vous empêche, dans addtion de classer votre avis, envoyez  [une demande de support](https://aka.ms/hlsupport).
 
 - [Problèmes connus pour toutes les générations HoloLens](#known-issues-for-all-hololens-generations)
 - [Problèmes connus pour les appareils HoloLens 2](#known-issues-for-hololens-2-devices)
@@ -57,6 +57,20 @@ Contournement
 - Si vous ne pouvez pas utiliser en toute sécurité un compte Microsoft pour le chargement automatique de vos photos, vous pouvez télécharger manuellement des photos sur votre compte professionnel ou scolaire à partir de l’application OneDrive. Pour cela, assurez-vous que vous êtes connecté à votre compte professionnel ou scolaire dans l’application OneDrive. Sélectionnez le **+** bouton, puis **Télécharger**. Recherchez les photos ou vidéos que vous voulez charger en accédant à **images > pellicule**. Sélectionnez les photos ou vidéos que vous voulez télécharger, puis cliquez sur le bouton **ouvrir** .
 
 ## Problèmes connus pour les appareils HoloLens 2
+
+### Le clavier ne bascule pas en caractères spéciaux
+
+Il y a un problème au cours de l’utilisation de la fonction OOBE et, lorsque l’utilisateur a choisi un compte professionnel ou scolaire et qu’il saisit son mot de passe, le passage aux caractères spéciaux sur le clavier peut être modifié en appuyant sur le bouton &123. 
+
+Solutions de contournement:
+-   Fermez le clavier et rouvrez-le en appuyant sur le champ de texte.
+-   Entrez votre mot de passe de manière incorrecte. Lorsque le clavier est relancé à la prochaine fois, il fonctionne comme prévu.
+- Authentification Web, fermez le clavier et sélectionnez **se connecter à partir d’un autre appareil**. 
+-   Si vous n’entrez que des nombres, l’utilisateur doit appuyer sur certaines touches pour ouvrir un menu développé.
+-   À l’aide d’un clavier USB.
+
+Cela n’affecte pas les éléments suivants:
+- Utilisateurs qui choisissent d’utiliser un compte personnel.
 
 ### Un écran bleu s’affiche après l’annulation de l’inscription de builds Insider Preview à partir d’un appareil à l’aide d’une build Insider
 
@@ -98,7 +112,7 @@ Notre équipe travaille actuellement sur un correctif. Entre-temps, vous pouvez 
 1. Donnez un nom au projet (par exemple, «HoloLensDeploymentFix») et assurez-vous que l’infrastructure est définie sur au moins .NET Framework 4,5, puis sélectionnez **OK**.
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud **références** et ajoutez les références suivantes (sélectionnez la section **Parcourir** , puis sélectionnez **Parcourir**):
 
-    ```CMD
+    ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -113,7 +127,7 @@ Notre équipe travaille actuellement sur un correctif. Entre-temps, vous pouvez 
 1. Recherchez et sélectionnez les deux fichiers dans l’Explorateur de solutions (ils doivent figurer en bas de la liste des fichiers) et remplacez l’option **copier dans le répertoire de sortie** de la fenêtre **Propriétés** pour pouvoir les **copier toujours**.
 1. En haut du fichier, ajoutez ce qui suit à la liste d’instructions existante `using` :
 
-    ```CMD
+    ```console
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
