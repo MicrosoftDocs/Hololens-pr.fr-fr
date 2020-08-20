@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0f293fac531045e50bee9a9dd153eb9dd2b377
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929901"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940204"
 ---
 # Affichage HoloLens 2
 
@@ -30,7 +30,7 @@ Pour HoloLens 2, procédez comme suit pour garantir une qualité visuelle optima
 * **Augmentez la luminosité de l’affichage.** Les hologrammes s’affichent mieux lorsque l’écran est à son niveau le plus lumineux.
 * **Rapprochez la visière de vos yeux.** Faites basculer la visière vers la position la plus proche de vos yeux.
 * **Décaler la visière vers le bas.** Essayez de déplacer le pavé de navigation de votre front vers le bas, ce qui rapprochera la visière de votre nez.
-* **Exécutez l’étalonnage des yeux.** L’affichage utilise votre distance interpupillaire (IPD) et le pointage de votre regard pour optimiser les images sur l’écran. Si vous n’effectuez pas l’étalonnage de l’œil, la qualité de l’image peut être pire. Pour effectuer l’étalonnage de l’œil, accédez à **Paramètres** ➔ **Système** ➔ **Étalonnage** ➔ **Étalonnage de l’œil**.
+* **Exécutez l’étalonnage des yeux.** L’affichage utilise votre distance interpupillaire (IPD) et le pointage de votre regard pour optimiser les images sur l’écran. Si vous n’effectuez pas l’étalonnage de l’œil, la qualité de l’image peut être pire. Pour effectuer l’étalonnage de l’œil, accédez à **Paramètres** > **Système** > **Étalonnage** > **Étalonnage de l’œil**.
 
 ## Forum Aux Questions
 
@@ -77,11 +77,14 @@ Les mises à jour de système d’exploitation sont automatiquement remises. Vou
 
 ### Quelles instructions sont disponibles pour que les développeurs appliquent des principes de conception en mode sombre?
 
-Microsoft prépare des conseils pour les développeurs en matière de conception en mode sombre. Les recommandations seront bientôt disponibles dans la [documentation des développeurs](https://docs.microsoft.com/windows/mixed-reality/). Résumé des conseils:
+Les utilisateurs bénéficieront d’une expérience optimale pour éviter les arrière-plans. Le mode sombre est un principe de conception utilisé par les applications pour utiliser des arrière-plans de couleur noire ou sombre. Les paramètres système sont définis par défaut sur le mode sombre. Vous pouvez les ajuster en accédant à **Paramètres** > **Système** > **Couleur**.
 
-* Utiliser des couleurs sombres pour l’arrière-plan de l’interface utilisateur
-* Utilisez des caractères semi-gras ou gras
-* Utiliser la HolographicBackplate du kit de ressources de réalité mixte
+Il est recommandé aux développeurs de suivre les conseils de conception en mode sombre:
+
+* [Instructions de conception pour les développeurs pour HoloLens](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [Tailles de police recommandées](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+
+Lorsqu’un hologramme nécessite un arrière-plan blanc, conserver la taille de l’hologramme plus petit que le champ complet de l’affichage. Cette taille permet aux utilisateurs de placer l’hologramme au centre de l’écran.
 
 ### Comment nettoyer un affichage HoloLens2?
 
