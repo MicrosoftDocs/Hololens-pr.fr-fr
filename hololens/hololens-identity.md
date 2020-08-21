@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9829b90445be7f73cfdc0e330d9d57af1ef0a44b
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 17d55d8cd5540c9beaf4b7348688c362b079f5da
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919117"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955446"
 ---
 # Gérer l’identité utilisation et la connexion pour HoloLens
 
@@ -60,12 +60,14 @@ La liaison des comptes ne sépare pas les données utilisateur créées sur l’
 
 ### Configuration de la prise en charge des utilisateurs multiples (AAD uniquement)
 
-> [!NOTE]
-> **HoloLens (1er génération)** a commencé à prendre en charge plusieurs utilisateurs AAD dans le cadre de la [mise à jour 2018 de Windows 10 d’avril](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) dans le cadre de [Windows holographique pour les entreprises](hololens-upgrade-enterprise.md).
-
 HoloLens prend en charge plusieurs utilisateurs du même client AAD. Pour utiliser cette fonctionnalité, vous devez utiliser un compte qui fait partie de votre organisation pour configurer l’appareil. Par la suite, les autres utilisateurs du même client peuvent se connecter à l’appareil à partir de l’écran de connexion ou en appuyant sur la vignette utilisateur dans le panneau Démarrer. Un seul utilisateur peut être connecté à la fois. Lorsqu’un utilisateur se connecte, le HoloLens déconnecte l’utilisateur précédent.  
 
 Tous les utilisateurs peuvent utiliser les applications installées sur l’appareil. Toutefois, chaque utilisateur possède ses propres données et préférences d’application. La suppression d’une application de l’appareil supprime celle-ci pour tous les utilisateurs.  
+
+Les périphériques configurés avec des comptes AAD n’autorisent pas la connexion à l’appareil avec un compte Microsoft. Tous les comptes utilisés suivants doivent être des comptes AAD du même client que l’appareil. Vous pouvez toujours vous [connecter à l’aide d’un compte Microsoft aux applications](hololens-identity.md#setting-up-multi-user-support-aad-only) qui la prennent en charge (par exemple, Microsoft Store). Pour passer de l’utilisation de comptes AAD aux comptes Microsoft pour vous connecter à l’appareil, vous devez refaire [clignoter le périphérique](hololens-recovery.md#clean-reflash-the-device).
+
+> [!NOTE]
+> **HoloLens (1er génération)** a commencé à prendre en charge plusieurs utilisateurs AAD dans le cadre de la [mise à jour 2018 de Windows 10 d’avril](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) dans le cadre de [Windows holographique pour les entreprises](hololens-upgrade-enterprise.md).
 
 ## Supprimer des utilisateurs
 
@@ -73,7 +75,7 @@ Vous pouvez supprimer un utilisateur de l’appareil en accédant à **paramètr
 
 ## Utilisation de l’authentification unique dans une application
 
-En tant que développeur d’applications, vous pouvez tirer parti d’identités liées sur HoloLens en utilisant les [API du gestionnaire de comptes Windows](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core), de la même manière que sur d’autres appareils Windows. Certains exemples de code pour ces API sont disponibles [ici](https://go.microsoft.com/fwlink/p/?LinkId=620621).
+En tant que développeur d’applications, vous pouvez tirer parti d’identités liées sur HoloLens en utilisant les [API du gestionnaire de comptes Windows](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core), de la même manière que sur d’autres appareils Windows. Certains exemples de code pour ces API sont disponibles sur GitHub: [exemple de gestion de compte Web](https://go.microsoft.com/fwlink/p/?LinkId=620621).
 
 Les interruptions de compte qui peuvent se produire, par exemple pour demander l’autorisation d’un utilisateur pour les informations sur le compte, l’authentification à deux facteurs, etc., doivent être gérées lorsque l’application demande un jeton d’authentification.
 

@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929860"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955456"
 ---
 # Configurer HoloLens à l’aide d’un package de mise à service
 
@@ -173,7 +173,7 @@ Les appareils HoloLens 2 sur la build [19041,1103](hololens-release-notes.md#win
 > [!NOTE]
 > Si l’appareil a été acheté avant le 2016 août, vous devez vous connecter à l’appareil à l’aide d’un compte Microsoft, obtenir la dernière mise à jour du système d’exploitation, puis réinitialiser le système d’exploitation pour appliquer le package de mise à service.
 
-### Appliquer un package de mise à service à HoloLens après l’installation
+## Appliquer un package de mise à service à HoloLens après l’installation
 
 > [!NOTE]
 > Ces étapes s’appliquent uniquement toWindows 10, version 1809.
