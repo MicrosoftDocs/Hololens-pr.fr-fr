@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18a583f407b19c5b86870a49b8182d45f46a45f5
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857802"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956760"
 ---
 # Exigences relatives à la licence
 
@@ -31,9 +31,9 @@ Si vous comptez utiliser Intune pour la gestion des appareils mobiles, [voici](h
 
 ## Identifier les licences nécessaires pour votre scénario et vos produits
 
-### Conditions préalables pour les licences HoloLens
+### Conditions d’acquisition de Licences de HoloLens (1ère génération)
 
-Vous devez peut-être mettre à niveau votre appareil HoloLens de la première génération vers Windows Holographic for Business. (Voir [Fonctionnalités commerciales de HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions) pour déterminer si vous avez besoin d'une mise à niveau).
+Vous devez peut-être mettre à niveau votre appareil HoloLens (1ère génération) vers Windows Holographic pour Entreprises. (Voir [Fonctionnalités commerciales de HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions) pour déterminer si vous avez besoin d'une mise à niveau).
 
  Si c’est le cas, vous devez effectuer les opérations suivantes:
 
@@ -45,6 +45,7 @@ Vous devez peut-être mettre à niveau votre appareil HoloLens de la première g
 Assurez-vous que vous disposez des licences et des appareils requis. Les mises à jour des licences et des exigences concernant les produits sont disponibles [ici](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
 
 1. [Licence Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
+    1. Ou essayer une version d’évaluation de [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 1. [Équipes Freemium et Teams](https://products.office.com/microsoft-teams/free)
 1. [Licence Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 
