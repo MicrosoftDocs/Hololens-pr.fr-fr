@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: e819dfb95a6735d0eae6287d97f5856856a33526
+ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956770"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963679"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -261,8 +261,10 @@ Ces stratégies de mise à jour sont désormais activées sur les appareils Holo
 
 ### Visibilité de la page de paramètres activée pour HoloLens 2
 Nous avons à présent activé une stratégie qui permet aux administrateurs informatiques d’empêcher les pages spécifiques de l’application Paramètres système d’être visibles ou accessibles, ou de le faire pour toutes les pages à l’exception de celles spécifiées. Pour savoir comment personnaliser entièrement cette fonctionnalité, cliquez sur le lien ci-dessous.
- 
+
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+Pour en savoir plus sur les paramètres de page que vous pouvez personnaliser sur HoloLens 2, consultez notre [page des URI de paramètres](settings-uri-list.md). 
  
 ![Capture d’heures d’activité modifiées dans l’application paramètres](images/hololens-page-visibility-list.jpg)
 
@@ -270,7 +272,8 @@ Nous avons à présent activé une stratégie qui permet aux administrateurs inf
 - Stratégie mise à jour pour désactiver l’énumération des fonctions USB via la gestion des périphériques mobiles (GPM) pour NCM pour AllowUsbConnection.
 - D’autres écrans dans OOBE sont désormais en mode sombre.
 - En savoir plus sur le contenu doit pointer vers la dernière déclaration de confidentialité en ligne.
-- Résolu et problème dans lequel les utilisateurs ne pouvaient pas approvisionner des profils VPN via les packages de mise en service.
+- Nous avons résolu un problème dans lequel les utilisateurs ne pouvaient pas approvisionner des profils VPN via les packages de mise en service.
+- Nous avons résolu un problème qui empêchait un appareil de HoloLens d’apparaître dans l’Explorateur de fichiers sur le protocole MTP (Media Transfer Protocol) quand l’appareil est configuré en tant que [borne d’application unique](hololens-kiosk.md). Notez que le MTP (et la connexion USB en général) peut toujours être désactivé à l’aide de la stratégie [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) .
 
 ## Commencer à recevoir les builds Insider
 
