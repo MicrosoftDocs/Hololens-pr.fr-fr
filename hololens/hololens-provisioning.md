@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
-ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
+ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
+ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "10955456"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10990911"
 ---
 # Configurer HoloLens à l’aide d’un package de mise à service
 
@@ -176,7 +176,7 @@ Les appareils HoloLens 2 sur la build [19041,1103](hololens-release-notes.md#win
 ## Appliquer un package de mise à service à HoloLens après l’installation
 
 > [!NOTE]
-> Ces étapes s’appliquent uniquement toWindows 10, version 1809.
+> Ces étapes s’appliquent uniquement à Windows 10, version 1809.
 
 Sur votre PC, procédez comme suit:
 1. Pour créer un package de mise en service, voir [créer un package de mise à niveau pour HoloLens à l’aide de l’Assistant hololens](hololens-provisioning.md).
@@ -205,5 +205,9 @@ Dans le Concepteur de configuration Windows, lorsque vous créez un package de c
 | **EditionUpgrade** | [Mise à niveau vers Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Stratégies** | Autoriser ou interdire le mode développeur sur HoloLens. [Stratégies prises en charge par Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
 
+## Installation de l’application via le package de mise en service
+
+Les applications peuvent être installées par le biais de packages de mise en service sur les appareils HoloLens 2. Cela permet de disposer d’un package facilement réutilisable que vous pouvez utiliser pour vous aider à distribuer vos applications. Lisez les instructions complètes pour le [déploiement d’applications par packages de mise en service](app-deploy-provisioning-package.md).  
+
 > [!NOTE]
-> HoloLens ne prend actuellement pas en charge l’installation d’applications (**UniversalAppInstall**) à l’aide d’un package de mise en service.
+> HoloLens (1ère génération) ne prend pas en charge l’installation d’applications (**UniversalAppInstall**) à l’aide d’un package de mise en service.
