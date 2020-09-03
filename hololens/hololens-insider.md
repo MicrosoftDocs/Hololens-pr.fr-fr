@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
+ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985860"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10994427"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -38,7 +38,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités à venir que vous pouvez
 | [Mise en service du lancement automatique à partir d’USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE détecte automatiquement les packages de mise en service sur les lecteurs USB.                                | 19041.1361 +                 |
 | [Vérifier automatiquement les packages de mise en service dans OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Appliquer automatiquement les packages de mise en service dans OOBE.                                             | 19041.1361 +                 |
 | [Utilisation du pilotage automatique avec la connexion Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Utilisez AutoPilot depuis un Wi-Fi sans avoir besoin d’une carte Ethernet.                             | 19041.1364 +                 |
-|[FSC Tenantlockdown et Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Après l’inscription au client et si le Policiy est appliqué, l’appareil ne peut être inscrit à ce client qu’à chaque réinitialisation ou réactivation de l’appareil. | 19041.1366 +|
+|[FSC Tenantlockdown et Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Après l’inscription du client et la stratégie appliquée, l’appareil ne peut être inscrit qu’à ce client à chaque réinitialisation ou réactivation de l’appareil. | 19041.1366 +|
 | [Accès global affecté](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système. | 19041.1356 +                 |
 | [Lancement automatique d’une application dans Kiosk multi-App](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion au mode plein écran à plusieurs applications.     | 19041.1346 +                 |
 | [Connexion automatique de visiteur pour les bornes](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Autorise l’utilisation de la connexion automatique sur les comptes de visiteur pour les modes Kiosk.                         | 19041.1361 +                 |
