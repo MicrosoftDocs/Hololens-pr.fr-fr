@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927838"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993644"
 ---
 # Considérations en matière d’environnement pour HoloLens
 
@@ -117,8 +117,17 @@ Pour accéder à l’application d’étalonnage, accédez à **Paramètres** > 
 
 Si une autre personne utilisera votre HoloLens, elle doit d’abord exécuter l’application d’étalonnage pour que l’appareil soit correctement configuré en fonction de ses propres besoins.
 
-### Informations sur la réglementation et la température
-[Réglementation HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): comprend des informations sur la température, l’élimination, les interférences radio et TV, et bien plus encore.
+## Informations sur la réglementation et la température
+
+[Réglementation HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): comprend des informations sur la température, l’élimination, les interférences radio et Télé, et bien plus encore.
+
+Voici quelques recommandations à suivre lorsque vous utilisez votre appareil:
+
+1. Stockez l’appareil dans un environnement compris dans la plage de températures (en veille ou éteint) pendant une heure avant de l’utiliser.
+1. Utilisez l’appareil dans un environnement compris dans la plage de températures.
+1. Utilisez l’appareil à l’intérieur .
+1. Utilisez l’appareil à l’ombre; même à l’intérieur évitez le contact direct de la lumière solaire à travers les fenêtres ou les verrières.
+1. Si vous suivez les recommandations ci-dessus, mais que vous rencontrez des problèmes de surchauffe inattendus, assurez-vous que la fonctionnalité de télémétrie complète est activée avant de soumettre [les commentaires](hololens-feedback.md).
 
 ## Voir également
 
