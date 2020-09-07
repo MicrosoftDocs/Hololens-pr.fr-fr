@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915956"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996412"
 ---
 # Redémarrer, réinitialiser ou récupérer HoloLens 2
 
 ## Recharger l’appareil
 
-Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au moins entre 20 et 40%, si possible. Utilisez le chargeur et les câbles USB de typeC fournis avec l’appareil HoloLens2. Si ces accessoires ne sont pas disponibles, assurez-vous que le chargeur disponible peut supporter au moins 15W de puissance.
+Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au moins entre 20 et 40%, si possible. Utilisez le chargeur et les câbles USB de typeC fournis avec l’appareil HoloLens2. Le bloc d’alimentation et le câble USB-C vers C fournis avec l’appareil constituent le meilleur moyen de charger votre HoloLens 2. Le chargeur fournit 18W d’alimentation (9V à 2A). Si ces accessoires ne sont pas disponibles, assurez-vous que le chargeur disponible peut supporter au moins 15W de puissance.
 
 > [!NOTE]
 > Si possible, évitez d’utiliser un PC pour charger l’appareil par câble USB, ce serait trop lent.
@@ -34,15 +34,19 @@ Si l’appareil est correctement initialisé et en cours d’exécution, trois m
 
 - Dans le menu principal de l’interface utilisateur de l’appareil HoloLens.
 - Regardez le voyant près du bouton d’alimentation (pour un débit de 40%, vous devriez voir au moins deux voyants pleins).
-- Sur votre ordinateur hôte, ouvrez la fenêtre de l’Explorateur de fichiers et recherchez votre appareil HoloLens2 sur le côté gauche sous **CePC**. Cliquez avec le bouton droit sur l’appareil, puis sélectionnez **Propriétés**. Une boîte de dialogue indique le niveau de charge de la batterie.
+    - Lorsque l’appareil est en charge, l’indicateur de batterie s’allume pour indiquer le niveau de charge actuel.  Le dernier voyant clignote lentement pour indiquer que l’appareil est en charge.
+    - Lorsque votre HoloLens est allumé, le témoin de la batterie affiche le niveau de la batterie par cinq incréments.
+    - Lorsqu’un seul des cinq voyants est allumé, le niveau de batterie est inférieur à 20%.
+    - Si le niveau de batterie est extrêmement faible et que vous essayez d’allumer l’appareil, un voyant clignote brièvement, puis s’éteint.
+- Sur votre ordinateur hôte, ouvrez la fenêtre de l’**Explorateur de fichiers** et recherchez votre appareil HoloLens2 sur le côté gauche sous **CePC**. Cliquez avec le bouton droit sur l’appareil, puis sélectionnez **Propriétés**. Une boîte de dialogue indique le niveau de charge de la batterie.
 
    ![Un écran Propriétés HoloLens2 affiche le niveau de charge de la batterie](images/ResetRecovery2.png)
 
-Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](https://docs.microsoft.com/hololens/hololens-troubleshooting). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une *procédure de réinitialisation matérielle* avec l’appareil connecté à l’alimentation, et non à votre PChôte. Patientez au moins une heure pour le chargement de l’appareil.
+Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](https://docs.microsoft.com/hololens/hololens-troubleshooting). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une [procédure de réinitialisation matérielle](hololens-recovery.md#hard-reset-procedure) avec l’appareil connecté à l’alimentation, et non à votre PChôte. Patientez au moins une heure pour le chargement de l’appareil.
 
 ## Réinitialisez l’appareil
 
-Dans certains cas, il se peut que vous deviez réinitialiser manuellement l’appareil sans utiliser l’interface utilisateurSW.
+Dans certains cas, il se peut que vous deviez réinitialiser manuellement l’appareil sans utiliser l’interface utilisateurdu logiciel.
 
 ### Procédure standard
 1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de typeC.
@@ -70,7 +74,14 @@ Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la pr
 
 ## Nettoyer l’appareil
 
-Dans de rares cas, il peut être nécessaire de nettoyer l’Hololens2. Il existe deux méthodes pour nettoyer un appareil HoloLens2. Pour chacune, vous devez commencer par installer [Advanced Recovery Companion à partir du WindowsStore](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+Dans de rares cas, il peut être nécessaire de nettoyer l’Hololens2. Veuillez noter que la réinstallation rapide n’est pas susceptible d’affecter les problèmes suivants:
+- [Uniformiser la couleur d’affichage](hololens2-display.md)
+- Démarrage avec un son, mais pas de sortie d’affichage
+- [1-3-5-Modèle LED](hololens2-setup.md#lights-to-indicate-problems)
+- [Surchauffe](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- Les blocages du système d'exploitation (qui sont distincts des blocages de l’application)
+
+Il existe deux méthodes pour nettoyer un appareil HoloLens2. Pour chacune, vous devez commencer par installer [Advanced Recovery Companion à partir du WindowsStore](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Si vous réinitialisez votre appareil, toutes vos données, applications et paramètres personnels seront supprimés, y compris les informations de réinitialisation du TPM.
