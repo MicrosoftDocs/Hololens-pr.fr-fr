@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905621"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996402"
 ---
 # Préparer votre HoloLens 2 pour utilisation
 
@@ -33,6 +33,8 @@ Le taux de charge et la vitesse peuvent varier en fonction de l’environnement 
 - Lorsque votre HoloLens est allumé, le témoin de la batterie affiche le niveau de la batterie par incréments.
 - Lorsqu’un seul des cinq voyants est allumé, le niveau de batterie est inférieur à 20%.
 - Si le niveau de batterie est extrêmement faible et que vous essayez d’allumer l’appareil, un voyant clignote brièvement, puis s’éteint.
+
+Pour plus d’informations, vous pourrez trouver des [détails complets sur le chargement des appareils ici](hololens-recovery.md#charge-the-device). 
 
 ## Ajuster la taille
 
@@ -108,7 +110,7 @@ Vous ne savez pas exactement ce qu’indiquent les témoins de votre HoloLens? V
 | - | - | - |
 | Appuyer sur le bouton d’alimentation. | Un voyant clignote cinq fois, puis s’éteint. | La batterie HoloLens est très basse. Chargez votre HoloLens. |
 | Appuyer sur le bouton d’alimentation. | Les cinq voyants clignotent cinq fois, puis s’éteignent. |  HoloLens ne parvient pas à démarrer correctement; il est dans un état d’erreur. [Réinstallez le système d’exploitation](hololens-recovery.md) pour récupérer votre appareil. |
-| Appuyer sur le bouton d’alimentation. | Le premier, troisièmeet cinquième voyants clignotent continuellement. |  HoloLens peut présenter une défaillance matérielle. Pour vous en assurer, [réinstallez le système d’exploitation](hololens-recovery.md) et réessayez. Si les voyants continuent de clignoter une fois le système d'exploitation réinstallé, contactez le [support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
+| Appuyer sur le bouton d’alimentation. | Le premier, troisièmeet cinquième voyants clignotent continuellement. |  HoloLens peut présenter une défaillance matérielle. Contacter le [support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## Sécurité et confort
 
