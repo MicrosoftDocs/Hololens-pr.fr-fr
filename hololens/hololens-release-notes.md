@@ -1,6 +1,6 @@
 ---
 title: Notes de publication HoloLens 2
-description: En savoir plus sur les mises à jour de chaque nouvelle version de HoloLens.
+description: En savoir plus sur les mises à jour de chaque nouvelle version de HoloLens 2.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
-ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
+ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
+ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926327"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "10997215"
 ---
 # Notes de publication HoloLens 2
 
@@ -28,6 +28,25 @@ Pour vous assurer que vous disposez d’une satisfaction productive sur vos appa
 
 >[!NOTE]
 > Pour lire les notes de publication de HoloLens Emulator, [consultez l’archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows holographique, version 2004-mise à jour de septembre 2020
+- Version 19041,1117
+
+Améliorations et correctifs de la mise à jour:
+
+- Résout un problème qui empêchait Visual Studio de déboguer une application lorsque SupportsMultipleInstances = «true» est présent dans appxmanifest.
+- Cette version inclut le correctif de détection de proxy NCSI permettant d’adresser une détection Internet ayant échoué sur un proxy réseau. NCSI peut utiliser proxy d’ordinateur et proxy par profil pour la détection de connectivité Internet. Le proxy par utilisateur sera pris en charge par NCSI dans la prochaine version.
+- Sur la plupart des appareils Windows Mixed Reality, le vecteur de direction vers le haut est parallèle au sol lorsque la tête de l’utilisateur se trouve à la position neutre en avance. Toutefois, les versions antérieures de HoloLens 2 alignent le vecteur pour être perpendiculaire aux panneaux d’affichage à la place, qui est inclinée de quelques degrés par rapport à l’orientation idéale. Les versions plus récentes de HoloLens 2 ont corrigé le problème afin de garantir la cohérence de la sémantique entre les différents facteurs de forme.
+- Amélioration de la robustesse de suivi des mains entraînant moins de pertes de suivi dans des scénarios spécifiques.
+- Cette version contient un correctif permettant d’améliorer la qualité de l’estampille audio, qui pourrait avoir contribué aux problèmes de capture vidéo.
+
+## Windows holographique, version 1903-mise à jour de septembre 2020
+- Version 18362,1079
+
+Améliorations et correctifs de la mise à jour:
+
+- Sur la plupart des appareils Windows Mixed Reality, le vecteur de direction vers le haut est parallèle au sol lorsque la tête de l’utilisateur se trouve à la position neutre en avance. Toutefois, les versions antérieures de HoloLens 2 alignent le vecteur pour être perpendiculaire aux panneaux d’affichage à la place, qui est inclinée de quelques degrés par rapport à l’orientation idéale. Les versions plus récentes de HoloLens 2 ont corrigé le problème afin de garantir la cohérence de la sémantique entre les différents facteurs de forme.
+- Amélioration de la robustesse de suivi des mains entraînant moins de pertes de suivi dans des scénarios spécifiques.
 
 ## Windows holographique, version 2004-mise à jour d’août 2020
 - Version 19041,1113
@@ -111,7 +130,7 @@ La mise à jour logicielle majeure de 2020 pour HoloLens 2, *Windows holographiq
 
 |             Fonctionnalité                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-|       WindowsAutopilot                          |          Préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide de Windows AutoPilot                 |
+|       Windows Autopilot                          |          Préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide de Windows AutoPilot                 |
 |       Support au 2-2                             |          La prise en charge des clés de sécurité FIDO2 pour activer l’authentification rapide et sécurisée pour les appareils partagés            |
 |       Attribution améliorée                      |          Appliquez en toute transparence un package de mise à service d’un lecteur USB à votre HoloLens                              |
 |       État de l’installation de l’application                 |          Vérifier l’état d’installation dans l’application paramètres pour les applications qui ont été transmises à HoloLens 2 via la gestion des périphériques mobiles               |
