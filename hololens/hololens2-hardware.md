@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
-ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
+ms.openlocfilehash: d5d875b17e69705591c6730349c8e23bc9692db1
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903329"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009432"
 ---
 # Matériel HoloLens2
 
@@ -126,13 +126,21 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 ## Logiciels préinstallés
 
 - Système d’exploitation holographique Windows
-- MicrosoftEdge
-- Dynamics 365 Remote Assist
-- Dynamics 365 Guides
 - Visionneuse3D
-- OneDriveEntreprise
-- Astuces HoloLens
+- Calendrier
 - Cortana
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- Hub de commentaires
+- Explorateur de fichiers
+- Mail
+- MicrosoftEdge
+- MicrosoftStore
+- Films et TV
+- OneDrive
+- Photos
+- Paramètres
+- Conseils
 
 ## Certifications d’appareil
 

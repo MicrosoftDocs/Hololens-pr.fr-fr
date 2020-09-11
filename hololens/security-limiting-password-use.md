@@ -1,24 +1,25 @@
 ---
 title: Limitation de l’utilisation d’un mot de passe
 description: limitation de l’utilisation d’un mot de passe pour holoLens
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sécurité, hololens, limitation de l’utilisation d’un mot de passe, mot de passe, mot de passe hololens, connexion, connexion, connexion windowshello, hello, gestionnaire de comptes windows, connexion FIDO2, FIDO2, WEBAUTHN, compte local, sécurité hololens
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 61330e77bc3aca5b0b21b58f18d087f7d5c06f3b
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865741"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009512"
 ---
 # Limitation de l’utilisation d’un mot de passe
 

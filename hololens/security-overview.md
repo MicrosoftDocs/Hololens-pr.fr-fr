@@ -1,23 +1,24 @@
 ---
 title: Vue d’ensemble de la sécurité HoloLens
 description: Vue d’ensemble de la sécurité
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sécurité, hololens, hololens 2, sécurité hololens2, sue d’ensemble de la sécurité
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1404c4786fd9b2f611573a5148d217380903cd43
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: cd626d404831cdfb39acd5a2d8a4f6507a5c694b
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865718"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009442"
 ---
 # Vue d’ensemble de la sécurité
 

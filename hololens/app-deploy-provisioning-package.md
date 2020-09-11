@@ -1,8 +1,9 @@
 ---
-title: Package de mise à service
+title: Package d’approvisionnement
 description: application, déploiement de l’application, application d’entreprise demployment, approvisionnement
 keywords: application, déploiement de l’application, application d’entreprise demployment, approvisionnement
-author: v-jodben
+author: evmill
+ms.author: v-evmill
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.sitesec: library
@@ -13,13 +14,14 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7417f9e8cf1921d9fdb57dbd96fff094e21c44f9
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857911"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009502"
 ---
-# Package de mise à service
+# Package d’approvisionnement
 
 Les packages de mise en service peuvent être utilisés pour préparer et configurer des appareils dans un environnement sans accès à la gestion des points de terminaison. Elles peuvent également être déployées sur un appareil quelle que soit l’identité de l’utilisateur, l’état de l’inscription, lors de l’utilisation de OOBE (out-of-Box Experience) ou en [appliquant un package de mise](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)à disponibilité lors de l’installation.
 
