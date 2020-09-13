@@ -72,6 +72,7 @@
 
 ## Stratégies
 ### [Configurer HoloLens à l'aide de packages d'approvisionnement](hololens-provisioning.md)
+### [Utilisation de MDM pour gérer les appareils HoloLens](hololens-mdm-configure.md)
 ### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)
 # Déployer
 ## Inscription
