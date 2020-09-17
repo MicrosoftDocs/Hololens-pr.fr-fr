@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929850"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016688"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -31,7 +31,9 @@ Vous pouvez configurer un appareil HoloLens pour qu’il fonctionne en tant qu�
 Cet article fournit des informations sur les aspects de la configuration Kiosk spécifiques aux appareils HoloLens. Pour obtenir des informations générales sur les différents types de kiosques Windows et la façon de les configurer, voir [configurer des bornes et des signes numériques sur les éditions de bureau de Windows](https://docs.microsoft.com/windows/configuration/kiosk-methods).  
 
 > [!IMPORTANT]  
-> Le mode kiosque détermine les applications disponibles lorsqu’un utilisateur se connecte à l’appareil. Le mode Kiosk n’est toutefois pas une méthode de sécurité. Il n’y a pas d’arrêt d’une application «autorisée» pour l’ouverture d’une autre application qui n’est pas autorisée. Pour bloquer les applications ou les processus de l’ouverture, utilisez [le fournisseur de services d’application Windows Defender (WDac)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) pour créer des stratégies appropriées.  
+> Le mode kiosque détermine les applications disponibles lorsqu’un utilisateur se connecte à l’appareil. Le mode Kiosk n’est toutefois pas une méthode de sécurité. Il n’y a pas d’arrêt d’une application «autorisée» pour l’ouverture d’une autre application qui n’est pas autorisée. Pour bloquer les applications ou les processus de l’ouverture, utilisez [le fournisseur de services d’application Windows Defender (WDac)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) pour créer des stratégies appropriées.
+>
+> En savoir plus sur les services Microsoft pour fournir aux utilisateurs un niveau de sécurité avancé que HoloLens 2 utilise, en savoir plus sur la [séparation d’État et les protections de l’isolation-Defender](security-state-separation-isolation.md#defender-protections). Ou apprenez à [utiliser WDac et Windows PowerShell pour autoriser ou bloquer des applications sur les appareils HoloLens 2 avec Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
 Vous pouvez utiliser le mode plein écran dans une configuration à application unique ou à plusieurs applications, et vous pouvez utiliser l’un des trois processus suivants pour configurer et déployer la configuration Kiosk.
 
