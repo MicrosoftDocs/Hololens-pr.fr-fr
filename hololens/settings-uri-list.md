@@ -1,6 +1,6 @@
 ---
-title: URI paramètres
-description: Liste des URI pris en charge par HoloLens pour PageVisibilityList
+title: Visibilité des paramètres de la page
+description: Liste des URI pris en charge par HoloLens pour PageVisibilityList et Guide
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -13,14 +13,14 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
+ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016698"
+ms.locfileid: "11026937"
 ---
-# URI paramètres
+# Visibilité des paramètres de la page
 
 L’une des fonctionnalités gérables pour les appareils HoloLens utilise la [stratégie paramètres/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) pour restreindre les pages visibles dans l’application paramètres. PageVisibilityList est une stratégie qui permet aux administrateurs informatiques d’empêcher l’affichage ou l’accessibilité de pages spécifiques dans l’application Paramètres système, ou de le faire pour toutes les pages à l’exception de celles spécifiées. 
 
@@ -122,8 +122,7 @@ Les appareils HoloLens et les appareils Windows10 ont une sélection de pages di
 | Windows Update: recherche les mises à jour | ms-settings:windowsupdate-action          |
 | Options avancées                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 Les deux URI suivants ne vous permettent pas réellement d'accéder à la page Options avancées ou Options, ils ne feront que bloquer / afficher la page principale Windows Update. 
+>  <sup>1</sup> Les deux URI suivants ne vous permettent pas réellement d'accéder à la page **Options avancées** ou **Options**, ils ne feront que bloquer ou afficher la page principale Windows Update. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
