@@ -71,10 +71,16 @@
 ### [Se connecter à des appareils Bluetooth et USB-C](hololens-connect-devices.md)
 
 
-## Stratégies
+## Gestion des périphériques
+### [Configurez l’aperçu des CSPs et Gestion des Périphériques](hololens-csp-policy-overview.md)
 ### [Configurer HoloLens à l'aide de packages d'approvisionnement](hololens-provisioning.md)
 ### [Utilisation de MDM pour gérer les appareils HoloLens](hololens-mdm-configure.md)
+### [Limites des PériphériquesCommunes](hololens-common-device-restrictions.md)
 ### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)
+### [Contrôle de l’Application Windows Defender](windows-defender-application-control-wdac.md)
+
+
+
 # Déployer
 ## Inscription
 ### [Inscrire HoloLens dans GPM](hololens-enroll-mdm.md)
