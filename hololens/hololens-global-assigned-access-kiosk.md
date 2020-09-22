@@ -3,7 +3,7 @@ title: Accès global affecté
 description: Guide pour l’utilisation des OMA-URI pour les Kiosques Accès affecté
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: hololens, hololens 2, Access affecté, Kiosque
 ms.prod: hololens
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902299"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052623"
 ---
 # Accès global affecté – Kiosque
 
@@ -44,7 +44,7 @@ Cette fonctionnalité configure l’appareil Hololens 2 pour le mode kiosque de 
 
 2.  Suivez les étapes décrites dans [Utiliser un package d’approvisionnement pour configurer une borne d’application ou une station multi-applications](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk), notamment la section «Prov. Pack, étape 2: ajouter le fichier XML de configuration Kiosque à un package d’approvisionnement» et faire référence au fichier XML enregistré à l’étape précédente. 
 
-## Puis-je créer une configuration où le groupe général s’applique à tout le monde sauf 1 compte AAD ou un groupe AAD? 
+## Puis-je créer une configuration où le groupe général s’applique à tout le monde et une configuration distincte s’applique à un compte ou groupe AAD? 
 
 Oui, consultez l’exemple d’objet blob XML ci-dessous. Le profil d’accès attribué global est appliqué sur Hololens lorsque celui-ci n’est pas trouvé pour l’utilisateur connecté. Par conséquent, il s’agit de la configuration par défaut en mode kiosque pour l’utilisateur connecté. Voici un exemple de blob XML à utiliser : 
 
