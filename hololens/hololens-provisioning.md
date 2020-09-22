@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
-ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
+ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10990911"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052643"
 ---
 # Configurer HoloLens à l’aide d’un package de mise à service
 
@@ -210,4 +210,4 @@ Dans le Concepteur de configuration Windows, lorsque vous créez un package de c
 Les applications peuvent être installées par le biais de packages de mise en service sur les appareils HoloLens 2. Cela permet de disposer d’un package facilement réutilisable que vous pouvez utiliser pour vous aider à distribuer vos applications. Lisez les instructions complètes pour le [déploiement d’applications par packages de mise en service](app-deploy-provisioning-package.md).  
 
 > [!NOTE]
-> HoloLens (1ère génération) ne prend pas en charge l’installation d’applications (**UniversalAppInstall**) à l’aide d’un package de mise en service.
+> HoloLens (1er génération) dispose d’une prise en charge limitée pour l’installation d’applications (**UniversalAppInstall**) à l’aide d’un package de mise en service. Les appareils HoloLens (1ère génération) ne prennent en charge l’installation d’une application qu’avec PPKG que dans OOBE et uniquement avec les installations de contexte utilisateur.

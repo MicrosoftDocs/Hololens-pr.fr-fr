@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027439"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052633"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -43,7 +43,6 @@ Vous trouverez ci-dessous la liste des fonctionnalités à venir que vous pouvez
 |[FSC Tenantlockdown et Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Après l’inscription du client et la stratégie appliquée, l’appareil ne peut être inscrit qu’à ce client à chaque réinitialisation ou réactivation de l’appareil. | 19041.1366 +|
 | [Accès global affecté](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configurer l’appareil HoloLens 2 pour le mode kiosque de plusieurs applications, applicable au niveau du système. | 19041.1356 +                 |
 | [Lancement automatique d’une application dans Kiosk multi-App](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion au mode plein écran à plusieurs applications.     | 19041.1346 +                 |
-| [Connexion automatique de visiteur pour les bornes](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Autorise l’utilisation de la connexion automatique sur les comptes de visiteur pour les modes Kiosk.                         | 19041.1361 +                 |
 | [Modification du comportement du mode plein écran pour la gestion des échecs](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Modification de la façon dont l’échec du mode plein écran est désormais géré.                                              | 19041.1356 +                 |
 | [Stratégies HoloLens](hololens-insider.md#hololens-policies)                                      | Nouvelles stratégies pour les appareils de réalité mixte.                                                        | 19041.1349 +                 |
 | [Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Politique pour le nombre de jours pendant lesquels le cache d’appartenance au groupe AAD est autorisé à utiliser le mode plein écran.    | 19041.1356 +                 |
@@ -213,18 +212,6 @@ L’application est automatiquement lancée lorsque l’utilisateur se connecte.
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-### Connexion automatique de visiteur pour les bornes
-Cette nouvelle fonctionnalité permet d’utiliser l’ouverture de session automatique sur les comptes de visiteur pour les modes Kiosk. 
-
-Pour une configuration non-AAD, pour configurer un appareil pour le logo automatique de visiteur:
-1.  Créez un package de mise à service qui:
-    1.  Configure les **paramètres d’exécution/AssignedAccess** pour autoriser les comptes de visiteur.
-    1.  Si vous le souhaitez, vous pouvez inscrire l’appareil dans la gestion des périphériques mobiles **(paramètres d’exécution/lieu de travail/inscriptions)** afin qu’il puisse être géré par la suite.
-    1.  Ne pas créer de compte local
-1.  [Appliquez le package de mise en service](hololens-provisioning.md).
-
-Dans le cas d’une configuration AAD, les utilisateurs peuvent obtenir un aspect similaire à celui-ci aujourd’hui sans cette modification. Les appareils joints AAD configurés pour le mode kiosque peuvent se connecter à un compte visiteur avec un seul bouton à partir de l’écran de connexion. Lorsque vous êtes connecté au compte du visiteur, l’appareil ne demande pas de connexion tant qu’il n’a pas été explicitement déconnecté du menu Démarrer ou que l’appareil est redémarré.
-
 ### Modification du comportement du mode plein écran pour la gestion des échecs
 
 Auparavant lors de la mise en application du mode plein écran, HoloLens est utilisé pour afficher toutes les applications dans le menu Démarrer. À partir de cette version de Windows Insider, en cas d’échecs, aucune application ne s’affichera dans le menu Démarrer comme suit: 
@@ -301,7 +288,7 @@ Nous avons à présent activé une stratégie qui permet aux administrateurs inf
 
 Pour en savoir plus sur les paramètres de page que vous pouvez personnaliser sur HoloLens 2, consultez notre [page des URI de paramètres](settings-uri-list.md). 
  
-![Capture d’heures d’activité modifiées dans l’application paramètres](images/hololens-page-visibility-list.jpg)
+![Capture d’écran d’heures actives modifiées dans l’application Paramètres](images/hololens-page-visibility-list.jpg)
 
 ### Mode recherche
 Dans le mode recherche, le HoloLens 2 devient un outil puissant pour la recherche de vision informatisée. Comparé aux éditions précédentes, le mode recherche pour HoloLens 2 offre les avantages suivants:
