@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016688"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072791"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -477,6 +477,9 @@ Pour configurer le mode plein écran à l’aide de Windows Device Portal, proc�
 
     ![Mode plein écran](images/kiosk.png)
 1. Redémarrez HoloLens. Si votre page Device Portal est encore ouverte, vous pouvez sélectionner **redémarrer** en haut de la page.
+
+> [!NOTE]
+> Le mode plein écran peut être défini via l’API REST du portail de périphériques en effectuant une publication sur/API/Holographic/KioskMode/Settings avec un paramètre de chaîne de requête requis («kioskModeEnabled» avec la valeur «true» ou «false») et un paramètre facultatif («startupApp» avec une valeur de nom de package). Gardez à l’esprit que Device Portal est destiné uniquement aux développeurs et qu’il n’est pas compatible avec les appareils autres que développeurs. L’API REST peut faire l’objet de modifications dans les futures mises à jour/versions.
 
 ## Informations supplémentaires
 

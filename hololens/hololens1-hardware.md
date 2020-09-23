@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 1ef464e03bfc17d15e2b776768223b3889cdb4e9
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828233"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072781"
 ---
 # Matériel HoloLens (1èregénération)
 
@@ -139,7 +139,7 @@ Pour comprendre l’environnement, procédez comme suit:
 
 ## Logiciels préinstallés
 
-- Windows 10
+- Windows10
 - Windows Store
 - Hologrammes
 - MicrosoftEdge
@@ -154,6 +154,7 @@ Pour comprendre l’environnement, procédez comme suit:
 ### Sécurité
 
 HoloLens a été testé et avéré qu’il est conforme aux exigences de protection de base en matière de protection des 87.1, CSA Z 94.3 et en 166.
+- [Informations SAR](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## Entretien et nettoyage
 
