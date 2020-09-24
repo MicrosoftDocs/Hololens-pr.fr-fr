@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 8/21/2020
+ms.date: 9/23/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052633"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077691"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -35,8 +35,6 @@ Vous trouverez ci-dessous la liste des fonctionnalités à venir que vous pouvez
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Prise en charge de la position de l’oeil automatique](hololens-insider.md#auto-eye-position-support)                              | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                        | 19041.1339 +                 |
 | [Gestionnaire de certificats](hololens-insider.md#certificate-manager)                                     | Les utilisateurs peuvent afficher, installer et supprimer des certificats dans l’application paramètres.                                         | 19041.1361 +                 |
-| [Programme d'installation d'application](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Sur l’interface utilisateur de l’appareil pour installer des applications à partir de fichiers Appx. | 19041.1377 + |
-| [Installation d’applications à partir d’une page Web](hololens-insider.md#installing-apps-from-a-web-page) | Configurez les applications à télécharger et à installer à partir du navigateur. | 19041.1366 + | 
 | [Mise en service du lancement automatique à partir d’USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE détecte automatiquement les packages de mise en service sur les lecteurs USB.                                | 19041.1361 +                 |
 | [Vérifier automatiquement les packages de mise en service dans OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Appliquer automatiquement les packages de mise en service dans OOBE.                                             | 19041.1361 +                 |
 | [Utilisation du pilotage automatique avec la connexion Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Utilisez AutoPilot depuis un Wi-Fi sans avoir besoin d’une carte Ethernet.                             | 19041.1364 +                 |
@@ -108,22 +106,6 @@ Le certificat doit maintenant être installé sur l’appareil.
 ![Afficheur de certificats dans l’application paramètres](images/certificate-viewer-device.jpg)
 
 ![Image illustrant l’utilisation de l’interface utilisateur de certificats pour l’installation d’un certificat](images/certificate-device-install.jpg)
-
-### Installer des applications sur HoloLens 2 via le programme d’installation d’application
-Les utilisateurs peuvent désormais installer des applications à l’aide de forfaits AppX dès maintenant sans avoir besoin d’activer le mode développeur ou d’utiliser Device Portal. Cette expérience est simple lors de l’installation d’applications sur des appareils locaux ou du partage d’une application avec une autre personne qui ne connaît pas les autres méthodes d’installation d’application sur HoloLens.
-
-Il s’agit d’une méthode simple de distribution d’une application entièrement créée. Que vous vouliez simplement faire une démonstration de votre application auprès d’un autre utilisateur à l’aide d’un HoloLens, ou si vous voulez déployer votre application à l’échelle, cette méthode fonctionnera pour les deux.
-
-Apprenez-en davantage sur l' [installation complète des applications sur HoloLens 2 avec le programme d’installation de l’application](app-deploy-app-installer.md).  
-
-![Installation des exemples MRTK via le programme d’installation de l’application](images/hololens-app-installer-picture.jpg)
-
-### Installation d’applications à partir d’une page Web
-Pour le moment, les utilisateurs de Windows Insider 19041.1366 + peuvent installer une application directement à partir d’un serveur Web. 
-
-Les packages AppX désormais créés peuvent être hébergés sur une page Web. En association avec le déploiement de certificats cette méthode de distribution d’application peut être très utile pour le déploiement d’applications.
-
-Découvrir le processus complet d' [installation d’applications sur HoloLens 2 à partir d’une page Web](app-deploy-web-installer.md)
 
 ### Mise en service du lancement automatique à partir d’USB
 Avant cela, les utilisateurs devaient lancer l’écran de mise en service manuellement lors de la mise en service à l’aide d’une combinaison de boutons. Les utilisateurs peuvent désormais ignorer la combinaison de boutons à l’aide d’un package de mise en service sur un lecteur de stockage USB. 
@@ -260,7 +242,10 @@ Stratégies récemment activées qui autorisent davantage d’options de gestion
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) *
+
+>[!NOTE]
+> En ce qui concerne [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp), HoloLens ne prend en charge que la configuration./Vendor/msft/RemoteLock/Lock. Les configurations en fonction d’un code confidentiel comme Reset et AutoRecover ne sont pas prises en charge.
 
 ### Nouvelles stratégies d’alimentation pour Hololens 2
 Ces stratégies récemment ajoutées permettent aux administrateurs de contrôler les États d’alimentation tels que le délai d’inactivité. Pour en savoir plus sur chaque stratégie individuelle, cliquez sur le lien correspondant à cette stratégie.
