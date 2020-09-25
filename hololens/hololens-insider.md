@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
+ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077691"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078382"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -258,6 +258,9 @@ Ces stratégies récemment ajoutées permettent aux administrateurs de contrôle
 |     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Exemple de valeur à utiliser dans le concepteur de configuration Windows, c’est-à-dire 100                                                                          |
 |     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Par exemple, la valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Par exemple, la valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+> [!NOTE]
+> Pour une interface cohérente sur HoloLens 2, assurez-vous que les valeurs pour DisplayOffTimeoutOnBattery et StandbyTimeoutOnBattery sont définies sur la même valeur. Il en va de même pour DisplayOffTimeoutPluggedIn et StandbyTimeoutPluggedIn. Pour plus d’informations sur l’utilisation du mode moderne, voir les [minuteurs d’affichage, de mise en veille et de mise en veille prolongée](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) .
 
 ### Stratégies de mise à jour récemment activées HoloLens
 Ces stratégies de mise à jour sont désormais activées sur les appareils HoloLens 2:
