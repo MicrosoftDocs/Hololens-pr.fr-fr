@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072791"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080443"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -90,8 +90,10 @@ Si vous utilisez Windows Device Portal pour configurer une borne sur une seule a
 
 Si vous utilisez un système de gestion des appareils mobiles ou de déploiement pour configurer le mode kiosque, vous devez utiliser le fournisseur de [services de configuration (CSP) AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) pour spécifier des applications. Le fournisseur de services d’application utilise des [ID de modèle d’application (aumid)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) pour identifier les applications. Le tableau suivant répertorie les Aumid de certaines applications prédéfinies que vous pouvez utiliser dans une borne multi-application.
 
-> [!CAUTION]
-> Vous ne pouvez pas sélectionner l’application Shell en tant qu’application Kiosk. Par ailleurs, il est recommandé de ne **pas** sélectionner Microsoft Edge, Microsoft Store ou l’Explorateur de fichiers en tant qu’application Kiosk.  
+> [!IMPORTANT]
+> Le mode kiosque détermine les applications disponibles lorsqu’un utilisateur se connecte à l’appareil. Le mode Kiosk n’est toutefois pas une méthode de sécurité. Il n’y a pas d’arrêt d’une application «autorisée» pour l’ouverture d’une autre application qui n’est pas autorisée. Étant donné que nous n’avons pas limité ce comportement, les applications peuvent toujours être lancées à partir d’Edge, de l’Explorateur de fichiers et des applications du Microsoft Store. S’il existe des applications spécifiques que vous ne souhaitez pas lancer à partir d’une borne, utilisez [le fournisseur de services d’application Windows Defender (WDac)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) pour créer des stratégies appropriées. 
+> 
+> De plus, la page d’accueil de la réalité mixte ne peut pas être définie en tant qu’application Kiosk.
 
 <a id="aumids"></a>
 
