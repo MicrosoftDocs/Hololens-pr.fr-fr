@@ -39,6 +39,8 @@
 ## Planification du déploiement d’entreprise HoloLens2
 ### [Déploiement de HoloLens dans un environnement commercial](hololens-requirements.md)
 ### [Scénarios courants de déploiement d’infrastructure](common-scenarios.md)
+## Scénarios courants
+### [Sécurité hors ligne](hololens-common-scenarios-offline-secure.md)
 ## Sécurité
 ### [Vue d’ensemble de la sécurité](security-overview.md)
 ### [Architecture](security-architecture.md)
