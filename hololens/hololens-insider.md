@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
-ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
+ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078382"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088608"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -33,7 +33,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités à venir que vous pouvez
 
 | Fonctionnalité                                                | Description                                                                                    | Disponible dans les builds Insider |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [Prise en charge de la position de l’oeil automatique](hololens-insider.md#auto-eye-position-support)                              | Trouve activement les positions visuelles et permet un positionnement précis des hologrammes.                        | 19041.1339 +                 |
+| [Prise en charge de la position de l’oeil automatique](hololens-insider.md#auto-eye-position-support)                              | Calcule activement les positions visuelles et permet un positionnement précis des hologrammes.                        | 19041.1339 +                 |
 | [Gestionnaire de certificats](hololens-insider.md#certificate-manager)                                     | Les utilisateurs peuvent afficher, installer et supprimer des certificats dans l’application paramètres.                                         | 19041.1361 +                 |
 | [Mise en service du lancement automatique à partir d’USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE détecte automatiquement les packages de mise en service sur les lecteurs USB.                                | 19041.1361 +                 |
 | [Vérifier automatiquement les packages de mise en service dans OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Appliquer automatiquement les packages de mise en service dans OOBE.                                             | 19041.1361 +                 |
@@ -68,9 +68,6 @@ Il existe certaines modifications de comportement système avec la fonctionnalit
  Si l’utilisateur passe d’une application à l’autre qui accède aux données de pointage, l’invite s’affiche. Il n’y a aucun changement de flux d’expérimentation hors champ. 
  
 Dans le cas d’expériences nécessitant des informations visuelles ou un positionnement très précis, nous vous recommandons d’effectuer un étalonnage du suivi visuel à partir de l’invite d’étalonnage du suivi d’oeil ou en lançant l’application paramètres à partir du menu Démarrer, puis en sélectionnant **système > calibration >** d’étalonnage > d’exécution.
-
-**Problèmes connus**
- - Nous travaillons à la résolution d’un problème dans lequel le processus de l’hôte du pilote Le processus hôte du pilote de suivi visuel doit procéder à une récupération automatique.
 
 ### Gestionnaire de certificats
 
