@@ -87,6 +87,7 @@
 ## Inscription
 ### [Inscrire HoloLens dans GPM](hololens-enroll-mdm.md)
 ### [Windows Autopilot pour HoloLens2](hololens2-autopilot.md) 
+### [Inscrivez-vous à l'environnement Wi-Fi restreint par adresse MAC](mac-address-options.md)
 ## Applications
 ### [Présentation de la gestion d'applications](app-deploy-overview.md)
 ### [Portail d'entreprise et Intune](app-deploy-intune.md)
