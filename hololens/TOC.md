@@ -62,6 +62,13 @@
 ## [Déverrouiller les fonctionnalités de Windows Holographic for Business](hololens1-upgrade-enterprise.md)
 
 # Configurer
+## Gestion des périphériques
+### [Configurez l’aperçu des CSPs et Gestion des Périphériques](hololens-csp-policy-overview.md)
+### [Configurer HoloLens à l'aide de packages d'approvisionnement](hololens-provisioning.md)
+### [Utilisation de MDM pour gérer les appareils HoloLens](hololens-mdm-configure.md)
+### [Limites des PériphériquesCommunes](hololens-common-device-restrictions.md)
+### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)
+### [Contrôle de l’Application Windows Defender](windows-defender-application-control-wdac.md)
 ## Identité
 ### [Gérer l’identité utilisation et la connexion pour HoloLens](hololens-identity.md)
 ### [Partager HoloLens avec plusieurs personnes](hololens-multiple-users.md)
@@ -71,16 +78,6 @@
 ### [Préparer des certificats et des profils de réseau pour l'HoloLens 2](hololens-certificates-network.md)
 ### [Gérer les points de terminaison de connexion de HoloLens](hololens-offline.md)
 ### [Se connecter à des appareils Bluetooth et USB-C](hololens-connect-devices.md)
-
-
-## Gestion des périphériques
-### [Configurez l’aperçu des CSPs et Gestion des Périphériques](hololens-csp-policy-overview.md)
-### [Configurer HoloLens à l'aide de packages d'approvisionnement](hololens-provisioning.md)
-### [Utilisation de MDM pour gérer les appareils HoloLens](hololens-mdm-configure.md)
-### [Limites des PériphériquesCommunes](hololens-common-device-restrictions.md)
-### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)
-### [Contrôle de l’Application Windows Defender](windows-defender-application-control-wdac.md)
-
 
 
 # Déployer
