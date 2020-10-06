@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
-ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
+ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
+ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "11093934"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094972"
 ---
 # Accès global affecté – Kiosque
 
@@ -34,7 +34,7 @@ Cette fonctionnalité configure l’appareil Hololens 2 pour le mode kiosque de 
 
 1.  Créez un profil de configuration d’appareil OMA URI personnalisé comme suit et appliquez-le au groupe d’appareils HoloLens: 
 
-    Valeur de l’URI:.Device/Vendor/MSFT/AssignedAccess/configuration
+    Valeur de l’URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
    
     > [!div class="mx-imgBorder"]
     > ![Accès attribué global OMA-URI dans Intune](images/global-assigned-access-omauri.png)
