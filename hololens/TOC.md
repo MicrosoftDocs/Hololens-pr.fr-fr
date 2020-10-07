@@ -3,6 +3,7 @@
 # Vue d'ensemble
 
 ## Prendre en main HoloLens2
+### [Vue d’ensemble de HoloLens 2](hololens2-options.md)
 ### [Matériel HoloLens2](hololens2-hardware.md)
 ### [Préparer votre HoloLens 2 pour utilisation](hololens2-setup.md)
 ### [Configurer votre HoloLens2](hololens2-start.md)
