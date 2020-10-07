@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016638"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102313"
 ---
 # Système d’exploitation sans administrateur
 
@@ -29,6 +29,8 @@ Ces fonctionnalités d’application continuent d’utiliser le modèle de class
   * Windows
 
 Les composants Windows peuvent également profiter du bac à sable AppContainer via les UWP système. Si vous souhaitez en savoir plus sur la plateforme Windows universelle (UWP), consultez la [documentation UWP](https://docs.microsoft.com/windows/uwp/). De plus, les composants Windows ayant besoin d’une meilleure réduction des privilèges (par exemple, les pages de contenu du navigateur, les analyseurs) utilisent le bac à sable à faible privilège AppContainer (LPAC) qui coupe l’accès à l’ensemble des ressources accessibles à tous les AppContainers.
+
+## Propriétaire de l’appareil
 
 Enfin, l’exécution d’opérations spécifiques à l’ensemble de l’appareil, telles que l’ajout de l’appareil à un client ou la gestion des utilisateurs, n’est autorisée que pour les «propriétaires des appareils». Les utilisateurs de l’appareil sont ajoutés à ce groupe via l’une des étapes suivantes:
   * Le premier utilisateur de l’appareil est toujours désigné comme étant le Propriétaire. 
