@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
-ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
+ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
+ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997215"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117769"
 ---
 # Notes de publication HoloLens 2
 
@@ -28,6 +28,18 @@ Pour vous assurer que vous disposez d’une satisfaction productive sur vos appa
 
 >[!NOTE]
 > Pour lire les notes de publication de HoloLens Emulator, [consultez l’archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows holographique, version 2004-mise à jour d’octobre 2020
+- Version 19041,1124
+ 
+Améliorations et correctifs de la mise à jour:
+
+- Suppression d’une vérification inutile qui entraînait une erreur du système d’exécution.
+
+## Windows holographique, version 1903-mise à jour d’octobre 2020
+- Version 18362,1081
+
+Cette mise à jour de qualité mensuelle ne contient pas de modifications remarquables, nous vous encourageons à essayer les dernières builds pour Windows holographique, version 2004.
 
 ## Windows holographique, version 2004-mise à jour de septembre 2020
 - Version 19041,1117
@@ -130,7 +142,7 @@ La mise à jour logicielle majeure de 2020 pour HoloLens 2, *Windows holographiq
 
 |             Fonctionnalité                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-|       Windows Autopilot                          |          Préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide de Windows AutoPilot                 |
+|       WindowsAutopilot                          |          Préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide de Windows AutoPilot                 |
 |       Support au 2-2                             |          La prise en charge des clés de sécurité FIDO2 pour activer l’authentification rapide et sécurisée pour les appareils partagés            |
 |       Attribution améliorée                      |          Appliquez en toute transparence un package de mise à service d’un lecteur USB à votre HoloLens                              |
 |       État de l’installation de l’application                 |          Vérifier l’état d’installation dans l’application paramètres pour les applications qui ont été transmises à HoloLens 2 via la gestion des périphériques mobiles               |
@@ -208,7 +220,7 @@ Le fournisseur de services de configuration NetworkQoSPolicy crée des stratégi
 
 ### Prise en charge Ethernet USB améliorée pour les appareils compatibles 5 5G/LTE
 
-Une assistance a été ajoutée pour permettre à certains appareils mobiles haut débit, tels que les téléphones 5G/LTE et Wi-Fi hotpots, lorsqu’ils sont connectés au HoloLens 2 via USB. Ces périphériques apparaissent désormais dans les **paramètres réseau** comme une autre connexion Ethernet. (Les appareils mobiles haut débit qui nécessitent un pilote externe ne sont pas pris en charge.) Cette fonctionnalité permet une connexion haut débit lorsque le Wi-Fi n’est pas disponible et que la connexion Wi-Fi n’est pas assez performante. Pour en savoir plus sur les périphériques USB pris en charge, voir [se connecter à des appareils Bluetooth et USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).  
+La prise en charge des appareils mobiles haut débit (par exemple, les téléphones 5G/LTE et Wi-Fi hotpots, lorsqu’elles sont attachées au HoloLens 2 via USB) a été ajoutée. Ces périphériques apparaissent désormais dans les **paramètres réseau** comme une autre connexion Ethernet. (Les appareils mobiles haut débit qui nécessitent un pilote externe ne sont pas pris en charge.) Cette fonctionnalité permet une connexion haut débit lorsque le Wi-Fi n’est pas disponible et que la connexion Wi-Fi n’est pas suffisamment performante. Pour en savoir plus sur les périphériques USB pris en charge, voir [se connecter à des appareils Bluetooth et USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
 ### Amélioration du suivi des mains
 
@@ -245,13 +257,13 @@ Vous pouvez désormais utiliser les commandes vocales avec n’importe quelle ap
 
 ### Mises à jour de Cortana
 
-L’application mise à jour s’intègre à Microsoft 365 pour vous permettre d’être plus productif sur vos appareils (actuellement en anglais uniquement). Sur HoloLens 2, Cortana ne prend plus en charge certaines commandes spécifiques à des appareils, comme le réglage du volume ou le redémarrage. Ces options sont désormais prises en charge par les nouvelles commandes vocales du système. En savoir plus sur la nouvelle application Cortana dans notre [blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
+L’application mise à jour s’intègre à Microsoft 365 pour vous permettre d’être plus productif sur vos appareils (actuellement US-English uniquement). Sur HoloLens 2, Cortana ne prend plus en charge certaines commandes spécifiques à des appareils, comme le réglage du volume ou le redémarrage. Ces options sont désormais prises en charge par les nouvelles commandes vocales du système. En savoir plus sur la nouvelle application Cortana dans notre [blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
 ### Améliorations de la qualité et correctifs
 
 Améliorations et correctifs également dans la mise à jour:  
 - Introduction d’un système de calibration d’affichage actif. Cette fonctionnalité permet d’améliorer la stabilité et l’alignement des hologrammes. Ils restent en place lorsque vous déplacez votre tête d’un côté à l’autre.
-- Correction d’un bogue qui entraînait une interruption périodique de la diffusion Wi-Fi vers HoloLens. Si une application indique qu’elle a besoin d’une latence en flux faible, mettez-la en service en appelant la [fonction SetSocketMediaStreamingMode](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
+- Correction d’un bogue qui entraînait une interruption périodique de Wi-Fi la diffusion en continu vers HoloLens. Si une application indique qu’elle a besoin d’une latence en flux faible, mettez-la en service en appelant la [fonction SetSocketMediaStreamingMode](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
 - Correction d’un blocage de périphérique qui se produisait lors de la diffusion en mode de recherche.
 - Correction d’un bogue où, dans certains cas, l’utilisateur approprié ne s’affichait pas sur l’écran de connexion lors de la reprise d’une session.
 - Correction d’un problème dans lequel les utilisateurs ne pouvaient pas exporter les journaux GPM via les **paramètres**.
