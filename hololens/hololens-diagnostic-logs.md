@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
-ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
+ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
+ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "11119944"
+ms.locfileid: "11120145"
 ---
 # Collecter et utiliser des informations de diagnostic sur les appareils HoloLens
 
@@ -124,8 +124,8 @@ Cela fonctionne lorsque l’appareil apparaît dans l’Explorateur de fichiers 
 
 > [!NOTE]
 > Les diagnostics hors connexion sont activés uniquement lorsque l’utilisateur passe via OOBE ou si la valeur de la stratégie [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) est définie sur complet (la valeur par défaut de base est définie sur Hololens). 
->
-> Pour désactiver les diagnostics hors connexion, accédez à la page Paramètres de l' **application > confidentialité** , puis sélectionnez de **base** dans **données de diagnostic**.
+
+Si l’appareil est verrouillé, les journaux ne s’afficheront pas. Pour désactiver les diagnostics hors connexion, accédez à la page Paramètres de l' **application > confidentialité** , puis sélectionnez de **base** dans **données de diagnostic**. Le cas échéant, les tests de diagnostic hors connexion dépendent du paramètre de télémétrie. Il n’y a aucun impact sur les fichiers collectés.
 
 Regardez cette vidéo pour en savoir plus. 
 
