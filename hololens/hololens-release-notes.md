@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
-ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
+ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
+ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117769"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134423"
 ---
 # Notes de publication HoloLens 2
 
@@ -142,7 +142,7 @@ La mise à jour logicielle majeure de 2020 pour HoloLens 2, *Windows holographiq
 
 |             Fonctionnalité                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-|       WindowsAutopilot                          |          Préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide de Windows AutoPilot                 |
+|       Windows Autopilot                          |          Préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide de Windows AutoPilot                 |
 |       Support au 2-2                             |          La prise en charge des clés de sécurité FIDO2 pour activer l’authentification rapide et sécurisée pour les appareils partagés            |
 |       Attribution améliorée                      |          Appliquez en toute transparence un package de mise à service d’un lecteur USB à votre HoloLens                              |
 |       État de l’installation de l’application                 |          Vérifier l’état d’installation dans l’application paramètres pour les applications qui ont été transmises à HoloLens 2 via la gestion des périphériques mobiles               |
@@ -155,7 +155,7 @@ La mise à jour logicielle majeure de 2020 pour HoloLens 2, *Windows holographiq
 
 ### Prise en charge de Windows AutoPilot
 
-Windows AutoPilot pour HoloLens 2 permet au canal des ventes de l’appareil de procéder à l’inscription de HoloLens dans votre client Intune. Lorsque les appareils arrivent, ils sont prêts à être auto-déployés en tant qu’appareils partagés sous votre client. Pour tirer parti du déploiement autonome, l’appareil doit se connecter à un réseau au cours du premier écran du programme d’installation à l’aide d’une clé USB-C-to-Ethernet ou USB-C-to-LTE.
+Windows AutoPilot pour HoloLens 2 permet au canal des ventes de l’appareil de procéder à l’inscription de HoloLens dans votre client Intune. Lorsque les appareils arrivent, ils sont prêts à être auto-déployés en tant qu’appareils partagés sous votre client. Pour tirer parti de l’auto-déploiement, l’appareil doit se connecter à un réseau au cours du premier écran du programme d’installation en utilisant une connexion USB-C-to-Ethernet.
 
 Après le démarrage du processus de déploiement automatique du pilotage automatique par un utilisateur, le processus effectue les étapes suivantes:
 
