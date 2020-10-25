@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072781"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134674"
 ---
 # Matériel HoloLens (1èregénération)
 
@@ -94,7 +94,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 - Luminosité vers le haut/bas
 - Bouton d’alimentation
 - Voyants de l’état de la batterie
-- Wi-Fi 802.11 AC
+- Wi-Fi le secteur 802.11
 - Micro USB 2,0
 - Bluetooth 4,1 LE
 
@@ -139,7 +139,7 @@ Pour comprendre l’environnement, procédez comme suit:
 
 ## Logiciels préinstallés
 
-- Windows10
+- Windows 10
 - Windows Store
 - Hologrammes
 - MicrosoftEdge
@@ -154,7 +154,7 @@ Pour comprendre l’environnement, procédez comme suit:
 ### Sécurité
 
 HoloLens a été testé et avéré qu’il est conforme aux exigences de protection de base en matière de protection des 87.1, CSA Z 94.3 et en 166.
-- [Informations SAR](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
+- [Informations R.A.S](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## Entretien et nettoyage
 
@@ -167,6 +167,22 @@ Pour nettoyer le Visor, éliminez la poussière en utilisant une brosse à poils
 Pour nettoyer le reste du périphérique, y compris le bandeau et les bras du périphérique, utilisez un chiffon sans peluche humecté à l’aide d’un savon et de l’eau doux. Laissez votre HoloLens sécher entièrement avant de le réutiliser.
 
 ![Image illustrant le nettoyage de la visière](images/hololens-cleaning-visor.png)
+
+## Recherche du numéro de série
+
+Le numéro de série de l’appareil HoloLens (1ère génération) s’imprime sous la lentille droite.
+1. Tenez l’appareil devant vous comme si vous aviez l’usure.
+1. Lorsque la glace est redirigée vers l’avant, retournez le deivce à l’envers pour vous voir le dessous.
+1. Le bon objectif est désormais affiché à gauche, imprimé sous la glace de la bande correspond au numéro de série. 
+
+Le numéro de série peut également être trouvé via un PC connecté:
+
+1. Brancher l’appareil
+1. Accédez à **ce PC** dans l’Explorateur de fichiers
+1. Cliquer avec le bouton droit et sélectionner les **Propriétés** de l’appareil HoloLens
+1. Le numéro de série de l’appareil s’affiche. Comme cette capture d’écran ci-dessous.
+
+<img src="images/hl1-serial-number.png" width="400" height="600" />
 
 > [!div class="nextstepaction"]
 > [Configurer et démarrer votre HoloLens (1ère génération)](hololens1-setup.md)
