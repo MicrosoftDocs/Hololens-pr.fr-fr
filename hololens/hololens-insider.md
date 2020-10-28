@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
-ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
+ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
+ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119297"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11135555"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -35,6 +35,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités à venir que vous pouvez
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Prise en charge de la position de l’oeil automatique](hololens-insider.md#auto-eye-position-support)                              | Calcule activement les positions visuelles et permet un positionnement précis des hologrammes.                        | 19041.1339 +                 |
 | [Gestionnaire de certificats](hololens-insider.md#certificate-manager)                                     | Les utilisateurs peuvent afficher, installer et supprimer des certificats dans l’application paramètres.                                         | 19041.1361 +                 |
+| [Programme d'installation d'application](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Sur l’interface utilisateur de l’appareil pour installer des applications à partir de fichiers Appx. | 19041.1377 + |
 | [Mise en service du lancement automatique à partir d’USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE détecte automatiquement les packages de mise en service sur les lecteurs USB.                                | 19041.1361 +                 |
 | [Vérifier automatiquement les packages de mise en service dans OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Appliquer automatiquement les packages de mise en service dans OOBE.                                             | 19041.1361 +                 |
 | [Utilisation du pilotage automatique avec la connexion Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Utiliser AutoPilot à partir d’un Wi-Fi d’appareil sans avoir besoin d’une carte Ethernet.                             | 19041.1364 +                 |
@@ -104,6 +105,26 @@ Le certificat doit maintenant être installé sur l’appareil.
 ![Afficheur de certificats dans l’application paramètres](images/certificate-viewer-device.jpg)
 
 ![Image illustrant l’utilisation de l’interface utilisateur de certificats pour l’installation d’un certificat](images/certificate-device-install.jpg)
+
+### Installer des applications sur HoloLens 2 via le programme d’installation d’application
+Dans notre version de Windows Insider, nous **ajoutons une nouvelle fonctionnalité (programme d’installation d’application) qui vous permet d’installer des applications plus en toute transparence** sur vos appareils HoloLens 2.  Vous pouvez maintenant installer des applications sans avoir besoin d’activer le mode développeur ou Device Portal.  Il vous suffit de télécharger (via câble USB ou via le système) l’ensemble d’applications AppX sur votre appareil et d’accéder à l’ensemble d’applications AppX de l’Explorateur de fichiers pour être invité à démarrer l’installation.  Vous pouvez également [lancer une installation à partir d’une page Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  À l’instar des applications que vous installez à partir du Microsoft Store ou d’charger à l’aide de la fonctionnalité de déploiement d’applications métier de la gestion des applications métier, les applications doivent être signées numériquement à l’aide de l' [outil de signature](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) et le [certificat utilisé pour la signature doit être approuvé](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) par l’appareil HoloLens pour pouvoir déployer l’application. Remarque: vous disposez d’un contrôle total sur la désactivation de l’installation de l’application par le biais de la désactivation du programme d’installation de l’application à l’aide du [contrôle d’application Windows Defender-fournisseur de services de cryptographie WDac](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), blocage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+
+**Instructions d’installation de l’application.**
+
+1.  Vérifiez que votre appareil HoloLens 2 est allumé et connecté à votre PC.
+2.  Vérifiez que vous êtes connecté à l’appareil HoloLens 2
+3.  Sur votre PC, accédez à votre application personnalisée, puis copiez le fichier VotreApplication. appxbundle sur yourdevicename\Internal Storage\Downloads.   Lorsque vous avez terminé de copier votre fichier, vous pouvez le déconnecter de votre appareil.
+4.  Sur votre appareil HoloLens 2, ouvrez le menu Démarrer, sélectionnez toutes les applications, puis lancez l’application Explorateur de fichiers.
+5.  Accédez au dossier téléchargements. Vous pouvez être amené à vous rendre dans le volet gauche de l’application sélectionnez ce dernier d’abord, puis accéder à téléchargements.
+6.  Sélectionnez le fichier VotreApplication. appxbundle.
+7.  Le programme d’installation de l’application démarre. Sélectionnez le bouton installer pour installer votre application.
+L’application installée s’ouvre automatiquement lors de l’installation.
+
+Vous trouverez des exemples d’applications sur [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) pour tester ce flux.
+
+Apprenez-en davantage sur l' [installation complète des applications sur HoloLens 2 avec le programme d’installation de l’application](app-deploy-app-installer.md).  
+
+![Installation des exemples MRTK via le programme d’installation de l’application](images/hololens-app-installer-picture.jpg)
 
 ### Mise en service du lancement automatique à partir d’USB
 Avant cela, les utilisateurs devaient lancer l’écran de mise en service manuellement lors de la mise en service à l’aide d’une combinaison de boutons. Les utilisateurs peuvent désormais ignorer la combinaison de boutons à l’aide d’un package de mise en service sur un lecteur de stockage USB. 
