@@ -3,7 +3,7 @@ title: Rechercher, installer et désinstaller des applications
 description: Le Microsoft Store constitue votre source d’applications et de jeux compatibles avec HoloLens.  En savoir plus sur la recherche, l’installation et la désinstallation d’applications holographiques.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: hololens, store, uwp, application, installer
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985836"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145635"
 ---
 # Rechercher, installer et désinstaller des applications à partir du Microsoft Store
 
@@ -35,6 +35,15 @@ Pour en savoir plus sur l’installation et l’exécution des applications pers
 ## Rechercher des applications
 
 Ouvrez le Microsoft Store à partir du menu **Démarrer**. Recherchez ensuite applications et jeux. Vous pouvez utiliser des [commandes vocales](hololens-cortana.md) pour effectuer des recherches en prononçant «Rechercher». Une fois la fenêtre de recherche ouverte, dites «Démarrer la dictée», puis lorsque vous y êtes invité, commencez à énoncer vos critères de recherche.
+
+> [!NOTE]
+> Le 12 janvier 2021, nous ne prendrons plus en charge les applications suivantes sur les appareils HoloLens. Nous vous encourageons à utiliser le lien suivant sur votre appareil pour bénéficier de la version web de l’application.
+
+| Application        | Link                                          |
+|------------|-----------------------------------------------|
+| ExcelMobile      | https://office.live.com/start/Excel.aspx      |
+| WordMobile       | https://office.live.com/start/Word.aspx       |
+| PowerPointMobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## Installation d’applications
 
