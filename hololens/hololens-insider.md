@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: d054628ec53fdc00560d628299058ce4c8d56185
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135555"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150955"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -107,17 +107,25 @@ Le certificat doit maintenant être installé sur l’appareil.
 ![Image illustrant l’utilisation de l’interface utilisateur de certificats pour l’installation d’un certificat](images/certificate-device-install.jpg)
 
 ### Installer des applications sur HoloLens 2 via le programme d’installation d’application
-Dans notre version de Windows Insider, nous **ajoutons une nouvelle fonctionnalité (programme d’installation d’application) qui vous permet d’installer des applications plus en toute transparence** sur vos appareils HoloLens 2.  Vous pouvez maintenant installer des applications sans avoir besoin d’activer le mode développeur ou Device Portal.  Il vous suffit de télécharger (via câble USB ou via le système) l’ensemble d’applications AppX sur votre appareil et d’accéder à l’ensemble d’applications AppX de l’Explorateur de fichiers pour être invité à démarrer l’installation.  Vous pouvez également [lancer une installation à partir d’une page Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  À l’instar des applications que vous installez à partir du Microsoft Store ou d’charger à l’aide de la fonctionnalité de déploiement d’applications métier de la gestion des applications métier, les applications doivent être signées numériquement à l’aide de l' [outil de signature](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) et le [certificat utilisé pour la signature doit être approuvé](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) par l’appareil HoloLens pour pouvoir déployer l’application. Remarque: vous disposez d’un contrôle total sur la désactivation de l’installation de l’application par le biais de la désactivation du programme d’installation de l’application à l’aide du [contrôle d’application Windows Defender-fournisseur de services de cryptographie WDac](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), blocage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+Nous vous enverrons la fonctionnalité du programme d’installation de l’application dès la prochaine mise à jour de fonctionnalité. Nous **ajoutons une nouvelle fonctionnalité (programme d’installation de l’application) pour vous permettre d’installer des applications plus en continu** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
+
+Un appareil est considéré comme «géré» si l' **une** des conditions suivantes est vraie:
+- GPM [inscrits](hololens-enroll-mdm.md)
+- Configuré avec le [package de mise en service](hololens-provisioning.md)
+- L' [identité](hololens-identity.md) de l’utilisateur est AAD
+
+Vous pouvez maintenant installer des applications sans avoir besoin d’activer le mode développeur ou Device Portal.  Il vous suffit de télécharger (via câble USB ou via le système) l’ensemble d’applications AppX sur votre appareil et d’accéder à l’ensemble d’applications AppX de l’Explorateur de fichiers pour être invité à démarrer l’installation.  Vous pouvez également [lancer une installation à partir d’une page Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  À l’instar des applications que vous installez à partir du Microsoft Store ou d’charger à l’aide de la fonctionnalité de déploiement d’applications métier de la gestion des applications métier, les applications doivent être signées numériquement à l’aide de l' [outil de signature](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) et le [certificat utilisé pour la signature doit être approuvé](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) par l’appareil HoloLens pour pouvoir déployer l’application.
 
 **Instructions d’installation de l’application.**
 
+1.  Vérifiez que votre appareil n’est pas considéré comme géré.
 1.  Vérifiez que votre appareil HoloLens 2 est allumé et connecté à votre PC.
-2.  Vérifiez que vous êtes connecté à l’appareil HoloLens 2
-3.  Sur votre PC, accédez à votre application personnalisée, puis copiez le fichier VotreApplication. appxbundle sur yourdevicename\Internal Storage\Downloads.   Lorsque vous avez terminé de copier votre fichier, vous pouvez le déconnecter de votre appareil.
-4.  Sur votre appareil HoloLens 2, ouvrez le menu Démarrer, sélectionnez toutes les applications, puis lancez l’application Explorateur de fichiers.
-5.  Accédez au dossier téléchargements. Vous pouvez être amené à vous rendre dans le volet gauche de l’application sélectionnez ce dernier d’abord, puis accéder à téléchargements.
-6.  Sélectionnez le fichier VotreApplication. appxbundle.
-7.  Le programme d’installation de l’application démarre. Sélectionnez le bouton installer pour installer votre application.
+1.  Vérifiez que vous êtes connecté à l’appareil HoloLens 2
+1.  Sur votre PC, accédez à votre application personnalisée, puis copiez le fichier VotreApplication. appxbundle sur yourdevicename\Internal Storage\Downloads.   Lorsque vous avez terminé de copier votre fichier, vous pouvez le déconnecter de votre appareil.
+1.  Sur votre appareil HoloLens 2, ouvrez le menu Démarrer, sélectionnez toutes les applications, puis lancez l’application Explorateur de fichiers.
+1.  Accédez au dossier téléchargements. Vous pouvez être amené à vous rendre dans le volet gauche de l’application sélectionnez ce dernier d’abord, puis accéder à téléchargements.
+1.  Sélectionnez le fichier VotreApplication. appxbundle.
+1.  Le programme d’installation de l’application démarre. Sélectionnez le bouton installer pour installer votre application.
 L’application installée s’ouvre automatiquement lors de l’installation.
 
 Vous trouverez des exemples d’applications sur [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) pour tester ce flux.
