@@ -12,6 +12,8 @@
 ### [Nettoyage HoloLens2: FAQ](hololens2-maintenance.md)
 ### [Langues prises en charge pour HoloLens 2](hololens2-language-support.md)
 ### [Naviguer dans HoloLens2](hololens2-basic-usage.md)
+### [FAQ sur l’édition de développement HoloLens](hololens2-development-edition-faq.md)
+
 
 ## Prise en main de HoloLens (1regénération)
 ### [Matériel HoloLens (1èregénération)](hololens1-hardware.md)
@@ -108,6 +110,7 @@
 ## [Insider Preview pour MicrosoftHoloLens](hololens-insider.md)
 ### [Accès global affecté – Kiosque](hololens-global-assigned-access-kiosk.md)
 ### [URI Paramètres de page pour HoloLens](settings-uri-list.md)
+### [Installateur de l'application](app-deploy-app-installer.md)
 
 ## [Notes de publication HoloLens (1ère génération)](hololens1-release-notes.md)
 # [Faites-nous part de vos commentaires](hololens-feedback.md)
