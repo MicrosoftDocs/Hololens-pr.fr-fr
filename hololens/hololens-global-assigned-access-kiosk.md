@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094972"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154195"
 ---
 # Accès global affecté – Kiosque
 
@@ -37,7 +37,7 @@ Cette fonctionnalité configure l’appareil Hololens 2 pour le mode kiosque de 
     Valeur de l’URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
    
     > [!div class="mx-imgBorder"]
-    > ![Accès attribué global OMA-URI dans Intune](images/global-assigned-access-omauri.png)
+    > ![Accès affecté global OMA-URI dans Intune](images/global-assigned-access-omauri.png)
 
 2.  Pour valeur, mettre à jour et coller le contenu suivant: 
 
@@ -51,16 +51,27 @@ Cette fonctionnalité configure l’appareil Hololens 2 pour le mode kiosque de 
 
 ## Puis-je créer une configuration où le groupe général s’applique à tout le monde et une configuration distincte s’applique à un compte ou groupe AAD? 
 
-Oui, consultez l’exemple d’objet blob XML ci-dessous. Le profil d’accès attribué global est appliqué sur Hololens lorsque celui-ci n’est pas trouvé pour l’utilisateur connecté. Par conséquent, il s’agit de la configuration par défaut en mode kiosque pour l’utilisateur connecté. Voici un exemple de blob XML à utiliser : 
+Oui, consultez l’exemple d’objet blob XML ci-dessous. Le profil d’accès affecté global est appliqué sur Hololens lorsque celui-ci n’est pas trouvé pour l’utilisateur connecté. Par conséquent, il s’agit de la configuration par défaut en mode kiosque pour l’utilisateur connecté. Voici un exemple de blob XML à utiliser : 
 
 > [!NOTE]
 > Notez les zones mises en surbrillance avec `<!-`. Dans ces zones, vous devez apporter des modifications en fonction de vos préférences. 
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
-## Exclusion de DeviceOwners dans le profil d’accès attribué global
+## Exclusion de DeviceOwners dans le profil d’accès affecté global
 
-Cette fonctionnalité permet à un utilisateur considéré comme «[Propriétaire d’appareil](security-adminless-os.md)» sur Hololens d’être exclu de l’accès attribué global. Pour tirer parti de cette fonctionnalité, dans le blob XML pour la configuration Kiosque multi-applications, vérifiez que les lignes mises en surbrillance sont ajoutées: 
+Cette fonctionnalité permet à un utilisateur considéré comme «[Propriétaire d’appareil](security-adminless-os.md)» sur Hololens d’être exclu de l’accès affecté global. Pour tirer parti de cette fonctionnalité, dans le blob XML pour la configuration Kiosque multi-applications, vérifiez que les lignes mises en surbrillance sont ajoutées: 
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## Autres exemples d’accès affectés globaux
+
+Il s’agit d’une borne d’accès affecté global qui, lorsqu’un utilisateur se connecte, dispose d’une borne multi-applications avec l’application Paramètres, le hub de commentaires et Edge.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+Il s’agit d’une borne d’accès affecté global qui exclut le propriétaire de l’appareil, lorsque tout autre utilisateur AAD se connecte, il dispose d’une borne multi-applications avec l’application Paramètres, le hub de commentaires et Edge. Ce kiosque inclut également une configuration de kiosque secondaire pour un compte visiteur, auquel tout le monde peut se connecter sur l’écran de verrouillage. Lorsqu’un utilisateur se connecte au compte visiteur, il dispose d’une borne multi-applications qui contient uniquement l’application Hub de commentaires.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
