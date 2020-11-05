@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/27/2020
+ms.date: 10/27/2020
 ms.custom:
 - CI 115262
 - CI 111456
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
-ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
+ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "11080443"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154182"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -41,6 +41,13 @@ Vous pouvez utiliser le mode plein écran dans une configuration à application 
 > Si vous supprimez la configuration multi-App, les profils de verrouillage de l’utilisateur créés par l’utilisateur sont supprimés. Toutefois, elle ne restaure pas les modifications apportées à la stratégie. Pour rétablir ces stratégies, vous devez réinitialiser l’appareil aux paramètres d’usine.
 
 ## Planifier le déploiement de Kiosk
+
+Lorsque vous planifiez votre kiosque, vous devez être en mesure de répondre aux questions suivantes. Voici quelques décisions que vous devez prendre en considération lors de la lecture de cette page, ainsi que quelques considérations concernant ces questions.
+1. **Qui utilisera votre kiosque et quel [type de compte](hololens-identity.md) utilisera-t-il?** Il s’agit d’une décision que vous avez peut-être déjà réalisée et qui ne doit pas être ajustée par la suite de votre kiosque, mais qui affectera la façon dont le kiosque est attribué plus tard.
+1. **Avez-vous besoin d’un kiosque différent par utilisateur/groupe ou par kiosque?** Si tel est le cas, vous pouvez créer votre kiosque via XML. 
+1. **Combien d’applications votre kiosque va-t-il?** Si vous avez plusieurs applications, vous avez besoin d’une borne multipoint. 
+1. **Quelles applications sera dans votre borne?** Merci d’utiliser notre liste de Aumid ci-dessous pour ajouter des applications In-Box en plus de votre propre application.
+1. **Comment planifier le déploiement de votre borne?** Si vous êtes inscrit à la gestion des périphériques mobiles, nous vous suggérons d’utiliser la gestion des périphériques mobiles pour déployer votre borne. Si vous n’utilisez pas la gestion des périphériques mobiles, le déploiement avec le package de mise en service est disponible.  
 
 ### Configuration requise du mode plein écran
 
@@ -62,7 +69,7 @@ Le tableau suivant répertorie les fonctionnalités des différents modes Kiosk.
 | &nbsp; |Menu Démarrer |Menu actions rapides |Caméra et vidéo |Miracast |Cortana |Commandes vocales prédéfinies |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |Borne d’application unique |Désactivée |Désactivée   |Désactivée |Désactivée   |Désactivée |Activée <sup> 1</sup> |
-|Kiosk multi-App |Activé |Option <sup> 2 activée</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2, 3</sup>  |Activée <sup> 1</sup> |
+|Borne à plusieurs applications |Activé |Option <sup> 2 activée</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2, 3</sup>  |Activée <sup> 1</sup> |
 
 > <sup>1 les </sup> commandes vocales associées aux fonctionnalités désactivées ne fonctionnent pas.  
 > <sup>2 </sup> pour plus d’informations sur la configuration de ces fonctionnalités, voir [Sélectionner des applications Kiosk](#plan-kiosk-apps).  
@@ -73,7 +80,7 @@ Le tableau suivant répertorie les fonctionnalités d’assistance utilisateur d
 | &nbsp; |Types d’utilisateurs pris en charge | Connexion automatique | Plusieurs niveaux d’accès |
 | --- | --- | --- | --- |
 |Borne d’application unique |Compte de service géré (MSA) dans Azure Active Directory (AAD) ou un compte local |Oui |Non |
-|Kiosk multi-App |Compte AAD |Non |Oui |
+|Borne à plusieurs applications |Compte AAD |Non |Oui |
 
 Pour obtenir des exemples d’utilisation de ces fonctionnalités, consultez le tableau suivant.
 
@@ -109,7 +116,7 @@ Si vous utilisez un système de gestion des appareils mobiles ou de déploiement
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Hub de commentaires &nbsp; |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! Appli |
 |Explorateur de fichiers |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Mail |Microsoft. windowscommunicationsapps_8wekyb3d8bbwe. Microsoft. windowslive. mail |
+|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe. Microsoft. windowslive. mail |
 |MicrosoftStore |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |Films et TV |Microsoft. ZuneVideo \ _8wekyb3d8bbwe \! Microsoft. ZuneVideo |
@@ -126,71 +133,24 @@ Si vous utilisez un système de gestion des appareils mobiles ou de déploiement
 > <sup>3 </sup> même si vous n’activez pas Cortana en tant qu’application Kiosk, les commandes vocales intégrées sont activées. Toutefois, les commandes associées aux fonctionnalités désactivées ne sont pas prises en compte.  
 > <sup>4 </sup> vous ne pouvez pas activer le Miracast directement. Pour activer Miracast en tant qu’application Kiosk, activez l’application caméra et l’application de sélecteur d’appareil.
 
-### Planifier les utilisateurs et les groupes d’appareils
+### Planifier des profils Kiosk pour des utilisateurs ou des groupes
 
-Dans un environnement GPM, vous utilisez des groupes pour gérer les configurations d’appareils et l’accès utilisateur. 
+Lors de la création du fichier XML ou de l’utilisation de l’interface utilisateur de Intune dans le cadre de la configuration d’une borne, vous devez tenir compte des utilisateurs de la borne. Une configuration Kiosk peut être limitée à un compte individuel ou à un groupe Azure AD. 
 
-Le profil de configuration Kiosk inclut le paramètre **type d’ouverture de session** de l’utilisateur. Le **type de connexion** de l’utilisateur identifie l’utilisateur (ou le groupe qui contient les utilisateurs) qui peut utiliser l’application ou les applications que vous ajoutez. Si un utilisateur se connecte à l’aide d’un compte qui n’est pas inclus dans le profil de configuration, il ne peut pas utiliser les applications sur la borne.  
+En règle générale, l’option Kiosk est activée pour un utilisateur ou un groupe d’utilisateurs. Néanmoins, si vous envisagez d’écrire votre propre borne XML, vous voudrez peut-être envisager un accès global affecté, dans lequel l’application Kiosk est appliquée au niveau de l’appareil quelle que soit l’identité. S’il s’agit d' [informations supplémentaires sur les bornes d’accès globalement affectées.](hololens-global-assigned-access-kiosk.md)
 
-> [!NOTE]  
-> Le **type d’ouverture de session** d’une borne d’application unique spécifie un seul compte d’utilisateur. Il s’agit du contexte d’utilisateur sous lequel s’exécute la Kiosk. Le **type d’ouverture de session** d’une borne multi-App peut spécifier un ou plusieurs comptes d’utilisateurs ou groupes qui peuvent utiliser la borne.
+#### Si vous créez un fichier XML:
+-   Vous pouvez créer plusieurs profils Kiosk et les attribuer à différents utilisateurs/groupes. Par exemple, un kiosque pour votre groupe AAD qui comporte de nombreuses applications et un visiteur disposant d’une application de plusieurs bornes d’application avec une application au singulier.
+-   La configuration de votre kiosque s’appelle un **ID de profil** et possède un GUID.
+-   Vous allez attribuer ce profil dans la section configurations en spécifiant le type d’utilisateur et en utilisant le même GUID pour l' **ID DefaultProfile**.
+- Il est possible de créer un fichier XML tout en le appliquant à un appareil via la gestion des périphériques mobiles via la gestion des périphériques mobiles et de l’appliquer au groupe de périphériques HoloLens à l’aide de la valeur URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
 
-Avant de pouvoir déployer la configuration Kiosk sur un appareil, vous devez *affecter* le profil de la configuration Kiosk à un groupe qui contient l’appareil ou un utilisateur qui peut se connecter à l’appareil. Ce paramètre génère un comportement tel que celui-ci.
-
-- Si l’appareil est membre du groupe affecté, la configuration Kiosk est déployée sur le périphérique la première fois qu’un utilisateur se connecte à l’appareil.  
-- Si l’appareil n’est pas membre du groupe affecté, mais qu’un utilisateur membre de ce groupe se connecte, la configuration Kiosk est déployée sur le périphérique à ce moment.
-
-Pour plus d’informations sur les effets de l’attribution de profils de configuration dans Intune, voir [affecter des profils utilisateur et d’appareil dans Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
-
-> [!NOTE]  
-> Les exemples suivants décrivent des kiosques à plusieurs applications. Les bornes à application unique se comportent de la même façon, mais un seul compte d’utilisateur obtient l’interface Kiosk.
-
-**Exemple1**
-
-Vous utilisez un seul groupe (groupe 1) pour les appareils et les utilisateurs. Un appareil et les utilisateurs A, B et C sont membres de ce groupe. Vous pouvez configurer le profil de la configuration Kiosk comme suit:  
-
-- **Type de connexion utilisateur**: groupe 1
-- **Groupe affecté**: groupe 1
-
-Quels que soient les utilisateurs qui se connectent d’abord à l’appareil (et passent par le biais de l’OOBE (out-of-Box Experience), la configuration Kiosk est déployée sur l’appareil. Les utilisateurs A, B et C peuvent se connecter à l’appareil et bénéficier de l’interface Kiosk.
-
-**Exemple2**
-
-Vous contractez des appareils pour deux fournisseurs différents qui ont besoin d’expériences Kiosk différentes. Les deux fournisseurs ont des utilisateurs et vous souhaitez que tous les utilisateurs puissent accéder aux kiosques de leur propre fournisseur et de l’autre fournisseur. Vous pouvez configurer les groupes comme suit:
-
-- Groupe de périphériques 1:
-  - Appareil 1 (fournisseur 1)
-  - Appareil 2 (fournisseur 1)
-
-- Groupe de périphériques 2:
-  - Appareil 3 (fournisseur 2)
-  - Appareil 4 (fournisseur 2)
-
-- Groupe d’utilisateurs:
-  - Utilisateur A (fournisseur 1)
-  - Utilisateur B (fournisseur 2)
-
-Vous créez deux profils de configuration Kiosk qui présentent les paramètres suivants:
-
-- Profil Kiosk 1:
-   - **Type de connexion utilisateur**: groupe d’utilisateurs
-   - **Groupe affecté**: groupe de périphériques 1
-
-- Profil Kiosk 2:
-   - **Type de connexion utilisateur**: groupe d’utilisateurs
-   - **Groupe affecté**: groupe de périphériques 2
-
-Ces configurations génèrent les résultats suivants:
-
-- Lorsqu’un utilisateur se connecte à l’appareil 1 ou à l’appareil 2, Intune déploie le profil Kiosk 1 sur cet appareil.
-- Lorsqu’un utilisateur se connecte à l’appareil 3 ou à l’appareil 4, Intune déploie le profil Kiosk 2 sur cet appareil.
-- Les utilisateurs A et B peuvent se connecter à l’un des quatre appareils suivants. S’il se connecte à l’appareil 1 ou à l’appareil 2, il voit l’interface du fabricant 1 Kiosk. S’il se connecte à l’appareil 3 ou à l’appareil 4, il voit l’interface du fabricant 2 Kiosk.
-
-#### Conflits de profil
-
-Si au moins deux profils de configuration Kiosk visent le même appareil, ils sont en conflit. Dans le cas des appareils gérés par Intune, Intune n’applique aucun des profils en conflit.
-
-D’autres types de profils et de stratégies, tels que les restrictions d’appareil qui ne sont pas associées au profil de configuration Kiosk, n’entrent pas en conflit avec le profil de configuration Kiosk.
+#### Si vous créez une borne dans Intune.
+-   Chaque appareil ne peut recevoir qu’un seul profil Kiosk; sinon, il crée un conflit et ne reçoit pas du tout de configurations Kiosk. 
+    -   D’autres types de profils et de stratégies, tels que les restrictions d’appareil qui ne sont pas associées au profil de configuration Kiosk, n’entrent pas en conflit avec le profil de configuration Kiosk.
+-   La borne sera activée pour tous les utilisateurs qui font partie du type d’ouverture de session de l’utilisateur, cette personne sera définie avec un utilisateur ou un groupe AAD. 
+-   Une fois la configuration Kiosk définie et le **type d’ouverture de session utilisateur** (les utilisateurs qui peuvent se connecter à la borne) et les applications sélectionnées, la configuration de l’appareil doit toujours être affectée à un groupe. Le ou les groupes attribués déterminent les appareils qui reçoivent la configuration de l’appareil Kiosk, mais n’interagissent pas avec si la borne est activée ou non. 
+    - Pour plus d’informations sur les effets de l’attribution de profils de configuration dans Intune, voir [affecter des profils utilisateur et d’appareil dans Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
 ### Sélectionner une méthode de déploiement
 
@@ -215,8 +175,8 @@ Le tableau suivant répertorie les fonctionnalités et les avantages de chacune 
 |Déploiement via le mode développeur |Requis       | Non requis            | Non requis   |
 |Déploiement à l’aide d’Azure Active Directory (AAD)  | Non requis            | Non requis                   | Requis  |
 |Déployer automatiquement      | Non            | Non                   | Oui  |
-|Vitesse de déploiement            | Aussi       | Rapide                 | Lent |
-|Déploiement à l’échelle | Déconseillé    | Déconseillé        | Nos recommandations |
+|Vitesse de déploiement            | Rapide       | Rapide                 | Lent |
+|Déploiement à l’échelle | Déconseillé    | Nos recommandations        | Nos recommandations |
 
 ## Utiliser Microsoft Intune ou un autre GPM pour configurer une borne d’application unique ou multi-App
 
@@ -252,7 +212,7 @@ Pour plus d’informations sur la façon d’inscrire les appareils, voir [inscr
 Les étapes suivantes diffèrent selon le type de kiosque souhaité. Pour plus d’informations, sélectionnez l’une des options suivantes:  
 
 - [Borne d’application unique](#mdmconfigsingle)
-- [Kiosk multi-App](#mdmconfigmulti)
+- [Borne à plusieurs applications](#mdmconfigmulti)
 
 Pour plus d’informations sur la création d’un profil de configuration Kiosk, voir les paramètres de l' [appareil Windows 10 et Windows holographique pour les entreprises à exécuter comme borne dédiée à l’aide de Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
@@ -487,3 +447,19 @@ Pour configurer le mode plein écran à l’aide de Windows Device Portal, proc�
 
 Apprenez à configurer une borne à l’aide d’un package de mise en service.  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+## Exemples de code de kiosque XML pour HoloLens
+
+### Mode plein écran de plusieurs applications ciblant un groupe AAD. 
+Ce Kiosk déploie une borne pour les utilisateurs du groupe AAD, une Kiosk est activée et inclut les 3 applications: paramètres, assistance à distance et Hub de commentaires. Pour modifier cet exemple pour pouvoir l’utiliser immédiatement, veillez à changer le GUID en surbrillance ci-dessous pour qu’il corresponde à un groupe AAD de votre propre. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
+
+
+### Compte AAD du mode kiosque de plusieurs applications.
+Ce Kiosk déploie un kiosque pour un utilisateur unique, il dispose d’une Kiosk compatible avec les 3 applications: Settings, assistance à distance et Hub de commentaires. Pour modifier cet exemple afin qu’il soit utilisé immédiatement, veillez à changer le compte en surbrillance ci-dessous pour qu’il corresponde à un compte AAD. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
+

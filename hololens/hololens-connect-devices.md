@@ -13,14 +13,17 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
+ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881337"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11155390"
 ---
 # Se connecter à des appareils Bluetooth et USB-C
+
+> [!NOTE]
+> Les microphones externes ne peuvent pas être utilisés. HoloLens 2 utilise son [réseau de microphones](hololens2-hardware.md#audio-and-speech) intégré.
 
 ## Appariement des appareils Bluetooth
 
@@ -29,9 +32,6 @@ HoloLens 2 prend en charge les classes suivantes d’appareils Bluetooth:
 - Souris
 - Clavier
 - Périphériques de sortie audio Bluetooth (A2DP)
-
-> [!NOTE]
-> Les microphones externes ne peuvent pas être utilisés. HoloLens 2 utilise son [réseau de microphones](hololens2-hardware.md#audio-and-speech) intégré.
 
 HoloLens (1ère génération) prend en charge les classes suivantes d’appareils Bluetooth:
 
