@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
-ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
+ms.openlocfilehash: 2f2de4d776a0fdb99555687a96719d111ffb6460
+ms.sourcegitcommit: 8bf8e9196c4ea89297f210b5c1d41b31f9edd407
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "11155390"
+ms.locfileid: "11156291"
 ---
 # Se connecter à des appareils Bluetooth et USB-C
 
@@ -66,6 +66,14 @@ HoloLens (1ère génération) prend en charge les classes suivantes d’appareil
    
 1. Sur l'écran d’appairage, sélectionnez **Appairage** > **du dispositif de clic**.
 
+## Désactiver Bluetooth
+
+Cette procédure désactive les composants RF de la radio Bluetooth et désactive toutes les fonctionnalités Bluetooth sur Microsoft HoloLens.
+
+1. Utilisez le geste fleuri (HoloLens (1ère génération)) ou le geste de démarrage (HoloLens 2) pour accéder à **Démarrer**, puis sélectionnez **Paramètres** > **Appareils**.
+
+1. Déplacez le curseur de **Bluetooth** vers la position**Désactivée**.
+
 ## HoloLens 2: connecter des appareils USB-C
 
 HoloLens 2 prend en charge les classes suivantes d’appareils USB-C:
@@ -95,11 +103,3 @@ Pour utiliser Miracast, procédez comme suit:
 1. Dans la liste des appareils qui s’affiche, sélectionnez un appareil disponible.
 
 1. Terminez l’appariement pour commencer la projection.
-
-## Désactiver Bluetooth
-
-Cette procédure désactive les composants RF de la radio Bluetooth et désactive toutes les fonctionnalités Bluetooth sur Microsoft HoloLens.
-
-1. Utilisez le geste fleuri (HoloLens (1ère génération)) ou le geste de démarrage (HoloLens 2) pour accéder à **Démarrer**, puis sélectionnez **Paramètres** > **Appareils**.
-
-1. Déplacez le curseur de **Bluetooth** vers la position**Désactivée**.
