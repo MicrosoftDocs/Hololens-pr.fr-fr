@@ -10,18 +10,18 @@ ms.custom:
 - CI 115190
 - CSSTroubleshooting
 ms.localizationpriority: medium
-ms.date: 03/10/2020
+ms.date: 10/13/2020
 ms.reviewer: Teresa-Motiv
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052643"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162994"
 ---
 # Configurer HoloLens à l’aide d’un package de mise à service
 
@@ -88,12 +88,12 @@ Utilisez l'outil Concepteur de configuration Windows pour créer un package de c
 ### Configurer les paramètres
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Recherchez et sélectionnez le fichier de licence d’entreprise pour mettre à niveau l’édition HoloLens.</br></br>Vous pouvez également activer <strong> ou désactiver le bouton Oui </strong> <strong> </strong> pour masquer les parties de la première expérimentation.</br></br>Pour configurer l’appareil sans qu’il soit nécessaire de se connecter à un réseau Wi-Fi, activez le bouton bascule <strong> ignorer l’installation Wi-Fi </strong> <strong> </strong> .</br></br>Sélectionnez la région et le fuseau horaire dans lesquels l’appareil doit être utilisé. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>Dans cette section, vous pouvez entrer les détails du réseau Wi-Fi sans fil sur lequel l’appareil doit se connecter automatiquement. Pour cela, sélectionnez <strong> activé </strong> , entrez le SSID, le type du réseau ( <strong> ouvert </strong> ou <strong> WPA2-personnel </strong> ) et (si <strong> WPA2-personnel </strong> ) le mot de passe du réseau sans fil.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Recherchez et sélectionnez le fichier de licence d’entreprise pour mettre à niveau l’édition HoloLens.</br></br>Vous pouvez également activer <strong> ou désactiver le bouton Oui </strong> <strong> </strong> pour masquer les parties de la première expérimentation.</br></br>Pour configurer l’appareil sans qu’il soit nécessaire de se connecter à un réseau Wi-Fi, activez la bascule <strong> ignorer Wi-Fi configuration </strong> <strong> </strong> .</br></br>Sélectionnez la région et le fuseau horaire dans lesquels l’appareil doit être utilisé. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>Dans cette section, vous pouvez entrer les détails du réseau sans fil Wi-Fi auquel l’appareil doit se connecter automatiquement. Pour cela, sélectionnez <strong> activé </strong> , entrez le SSID, le type du réseau ( <strong> ouvert </strong> ou <strong> WPA2-personnel </strong> ) et (si <strong> WPA2-personnel </strong> ) le mot de passe du réseau sans fil.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Vous pouvez inscrire l’appareil dans Azure Active Directory ou créer un compte local sur l’appareil.</br></br>Avant d’utiliser un assistant de Concepteur de configuration Windows pour configurer l’inscription en bloc à Azure AD, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">configurez Azure AD pour qu'il rejoigne votre organisation</a>. Le paramètre <strong>Nombre maximal d'appareils par utilisateur</strong> dans votre locataire Azure AD détermine le nombre de fois où le jeton en bloc que vous avez obtenu via l’assistant peut être utilisé. Pour inscrire l’appareil dans Azure AD, sélectionnez cette option et entrez un nom convivial pour le jeton en bloc que vous obtiendrez via l’assistant. Définissez une date d’expiration pour le jeton (30jours maximum à compter de la date à laquelle vous avez reçu le jeton). Sélectionnez <strong> obtenir un jeton en bloc </strong> . Dans la <strong> fenêtre permettre aux&#39;de vous connecter </strong> , entrez un compte disposant des autorisations nécessaires pour joindre un appareil à Azure ad, puis le mot de passe. Sélectionnez <strong> accepter </strong> pour donner aux concepteurs de configuration Windows les autorisations nécessaires. </br></br>Pour créer un compte local, sélectionnez cette option et entrez un nom d’utilisateur et un mot de passe. </br></br><strong>Important:</strong> <br />(Pour Windows 10, version 1607 uniquement) Si vous créez un compte local dans le package de mise en service, vous devez modifier le mot de passe à l’aide de l' <strong> </strong> application paramètres tous les 42 jours. Si le mot de passe n’est pas modifié pendant cette période, le compte peut être verrouillé et vous risquez de ne plus pouvoir vous connecter.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Pour configurer l’appareil avec un certificat, cliquez sur <strong>Ajouter un certificat</strong>. Entrez un nom pour le certificat, puis recherchez et sélectionnez le certificat à utiliser.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
 <tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br><strong> </strong> Activez oui ou <strong> non </strong> pour activer le mode développeur sur le HoloLens. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">En savoir plus sur le mode développeur.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finish"/></br></br>Ne définissez aucun mot de passe pour protéger votre package de mise en service. Si le package de mise en service est protégé par un mot de passe, la mise en service de l’appareil HoloLens échoue.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Ne définissez aucun mot de passe pour protéger votre package de mise en service. Si le package de mise en service est protégé par un mot de passe, la mise en service de l’appareil HoloLens échoue.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 Lorsque vous avez terminé, sélectionnez **créer**. Cela ne prend que quelques secondes. Une fois le package créé, l’emplacement du package s’affiche en tant que lien hypertexte au bas de la page.
@@ -152,7 +152,13 @@ Lorsque vous avez terminé, sélectionnez **créer**. Cela ne prend que quelques
 
 ## Appliquer un package de mise à service à HoloLens lors de l’installation
 
-Les appareils HoloLens 2 sur la build [19041,1103](hololens-release-notes.md#windows-holographic-version-2004) ou une version ultérieure pourront utiliser un lecteur USB pour appliquer un package de mise en service. Il suffit de copier le fichier. ppkg à la racine du lecteur USB. Les packages de mise en service ne seront appliqués que s’ils sont à la racine du lecteur USB. La présence de plusieurs packages de mise en service sera appliquée séquentiellement.
+Les appareils HoloLens 2 sur Windows holographique, version 2004 ou build [19041,1103](hololens-release-notes.md#windows-holographic-version-2004) ou version ultérieure, pourront utiliser un lecteur USB pour appliquer un package de mise en service. Il suffit de copier le fichier. ppkg à la racine du lecteur USB. Les packages de mise en service ne seront appliqués que s’ils sont à la racine du lecteur USB. La présence de plusieurs packages de mise en service sera appliquée séquentiellement.
+
+Les appareils HoloLens 2 sur [Windows holographique version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) ou ultérieure possèdent de nouvelles fonctionnalités qui vous permettent de rationaliser et de simplifier ce processus. Veuillez consulter les sections suivantes:
+
+- [Mise en service du lancement automatique à partir d’USB](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+- [Vérifier automatiquement les packages de mise en service dans OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+- [Configuration automatique sans utiliser d’interface utilisateur](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 1. Utilisez le câble USB pour connecter l’appareil à un PC (ou un lecteur USB pour HoloLens 2, comme mentionné ci-dessus), puis démarrez l’appareil. Ne passez pas à la **première** page de début d’interaction de OOBE.   
     - Sur HoloLens (1ère génération), cette page contient un cadre bleu. 
@@ -172,6 +178,39 @@ Les appareils HoloLens 2 sur la build [19041,1103](hololens-release-notes.md#win
 
 > [!NOTE]
 > Si l’appareil a été acheté avant le 2016 août, vous devez vous connecter à l’appareil à l’aide d’un compte Microsoft, obtenir la dernière mise à jour du système d’exploitation, puis réinitialiser le système d’exploitation pour appliquer le package de mise à service.
+
+### Mise en service du lancement automatique à partir d’USB
+
+- Processus automatisés autorisant moins d’interactions utilisateur, lorsque les lecteurs USB avec des packages de mise en service sont utilisés au cours de l’utilisation de la fonction OOBE.
+
+Pour pouvoir lancer l’affichage de l’écran de mise en service manuellement lors de la mise en service de l’utilisation d’une combinaison de boutons Les utilisateurs peuvent désormais ignorer la combinaison de boutons à l’aide d’un package de mise en service sur un lecteur de stockage USB. 
+
+1. Brancher le lecteur USB avec le package de mise en service lors du premier moment de l’interaction de OOBE
+1. Lorsque l’appareil est prêt à être approvisionné, il ouvre automatiquement l’invite à l’aide de la page de configuration. 
+
+Remarque: Si vous laissez un lecteur USB branché dans le cadre du démarrage de l’appareil, l’interface OOBE recense le périphérique de stockage USB existant, ainsi que les éléments supplémentaires connectés.
+
+Pour plus d’informations sur l’application des packages de mise en service lors de la configuration de OOBE, continuez à lire [ici](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+### Vérifier automatiquement les packages de mise en service dans OOBE
+- Processus automatisé permettant d’avoir moins d’interactions avec l’utilisateur, lorsque la page package de mise en service s’affiche, il applique automatiquement tous les packages répertoriés.
+
+Lorsque l’écran principal de mise en service s’affiche, OOBE compte 10 secondes avant de commencer à appliquer automatiquement tous les packages de mise en service. Les utilisateurs peuvent toujours confirmer ou annuler dans les 10 secondes qui suivent la vérification des packages attendus.
+
+### Configuration automatique sans utiliser d’interface utilisateur
+- Processus automatiques combinés pour réduire les interactions d’appareil pour la mise en service. 
+
+En associant le lancement automatique de la mise en service à partir d’appareils USB et la confirmation automatique des packages de mise en service, un utilisateur peut configurer automatiquement les appareils HoloLens 2 sans utiliser l’interface utilisateur de l’appareil, ni ne porter le périphérique. Vous pouvez continuer à utiliser le même pilote USB et le même package de mise en service pour plusieurs appareils. Cela s’avère utile pour le déploiement de plusieurs appareils à la fois dans la même zone. 
+
+1. [Créer un package de mise à service](hololens-provisioning.md) à l’aide du [Concepteur de configuration Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copiez le package sur un lecteur de stockage USB.
+1. [Flashez votre HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) vers [19041,1361 ou version ultérieure](https://aka.ms/hololens2previewdownload). 
+1. Lorsque le [compagnon de récupération avancée](https://www.microsoft.com/store/productId/9P74Z35SFRS8) clignote sur votre appareil, débranchez votre câble USB-C. 
+1. Branchez votre lecteur USB sur le périphérique.
+1. Lors du démarrage de l’appareil HoloLens 2 dans OOBE, le package de mise en service sera automatiquement détecté sur le lecteur USB et lancera la page de configuration.
+1. Après 10 secondes, l’appareil applique automatiquement le package de mise en service. 
+
+Votre appareil est désormais configuré et affiche l’écran de mise en service réussi.
 
 ## Appliquer un package de mise à service à HoloLens après l’installation
 

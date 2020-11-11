@@ -5,7 +5,7 @@ keywords: gestion des applications, application, hololens, programme d’install
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,17 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
-ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
+ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11150915"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162892"
 ---
 # Installer des applications sur HoloLens 2 via le programme d’installation d’application
 
+
+Nous vous enverrons la fonctionnalité du programme d’installation de l’application bientôt disponible suite à la mise à jour de Windows holographique, version 20H2. Nous **ajoutons une nouvelle fonctionnalité (programme d’installation de l’application) pour vous permettre d’installer des applications plus en continu** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
+
 > [!IMPORTANT]
-> Pour le moment, cette fonctionnalité est uniquement avalible dans les builds Insider 19041.1377 +. En [savoir plus sur l’inscription aux builds Insider pour Windows](hololens-insider.md).
+> Pour l’instant, cette fonctionnalité est uniquement disponible dans les builds Windows Insider. En [savoir plus sur l’inscription aux builds Insider pour Windows](hololens-insider.md).
 
 Dans notre version de Windows Insider, nous **ajoutons une nouvelle fonctionnalité (programme d’installation d’application) qui vous permet d’installer des applications plus en toute transparence** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
 
@@ -38,8 +41,7 @@ Vous pouvez maintenant installer des applications sans avoir besoin d’activer 
 ## Conditions requises
 
 ### Pour vos appareils: 
-> [!NOTE]
-> Pour le moment, cette fonctionnalité est uniquement avalible dans les builds Insider 19041.1377 +. En [savoir plus sur l’inscription aux builds Insider pour Windows](hololens-insider.md).
+Ce n’est actuellement avalible que dans les [versions de Windows Insider](hololens-insider.md) pour les appareils HoloLens 2. Vérifiez que tous les appareils qui utilisent cette méthode sont [mis à jour](hololens-update-hololens.md). 
 
 ### Pour vos applications: 
 La configuration de la solution de votre application doit être **maître** ou **Release** , car le programme d’installation de l’application utilisera les dépendances du Windows Store. En savoir plus sur la [création de packages d’application](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
@@ -53,7 +55,7 @@ Les applications installées par le biais de cette méthode doivent être signé
 **Choisissez une méthode de déploiement de certificats.** 
 - Les [packages de mise en service](hololens-provisioning.md) peuvent être appliqués aux périphériques locaux.
 - La gestion des périphériques mobiles peut être utilisée pour [appliquer des certificats avec des configurations d’appareil](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-- Utiliser le gestionnaire de [certificats](hololens-insider.md#certificate-manager)d’appareil. 
+- Utiliser le gestionnaire de [certificats](certificate-manager.md)d’appareil. 
 
 ## Méthode d’installation
 

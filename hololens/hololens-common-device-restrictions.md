@@ -1,5 +1,5 @@
 ---
-title: Restrictions d’appareil courantes
+title: Limites des PériphériquesCommunes
 description: Le périphérique restrctions est généralement défini sur HoloLens.
 ms.prod: hololens
 ms.sitesec: library
@@ -7,28 +7,32 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ace1e071b3d73855daacc8a11ac87770fb7f5f99
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 744d54a344867c5c38681781580f5357e0a0da70
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016773"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162964"
 ---
-# Restrictions d’appareil courantes 
+# Limites des PériphériquesCommunes 
 
 Ce guide est destiné à aider les informaticiens à comprendre les options de gestion les plus fréquemment utilisées pour le système d’exploitation Windows 10 holographique au sein de l’entreprise. Consultez la documentation de votre système GPM pour comprendre comment ces stratégies sont activées par votre fournisseur GPM. Tous les paramètres décrits dans ce guide ne sont pas pris en charge par l’ensemble des systèmes GPM. Certains d’entre eux prennent en charge des stratégies personnalisées par le biais de fichiers XML OMA-URI. Voir [Prise en charge des stratégies personnalisées dans MicrosoftIntune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10). Les conventions d’affectation de noms peuvent également varier parmi les fournisseurs GPM.
 
 ## Empêcher la modification des paramètres
 Les employés sont généralement autorisés à modifier certains paramètres d’appareils personnels que vous souhaiterez peut-être verrouiller sur des appareils d’entreprise. Les employés peuvent ajuster les paramètres du HoloLens par le biais de l’interface utilisateur des paramètres. À l’aide du système GPM, vous pouvez limiter les possibilités de modification des utilisateurs. Les listes suivantes répertorient les paramètres de gestion des périphériques mobiles fréquemment utilisés que Windows 10 holographique prend en charge pour configurer les restrictions de paramètres:
 -   [Autoriser VPN:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) Permet à l’utilisateur de modifier les paramètres de réseau privé virtuel (VPN)
--   [Autorisez la configuration WiFi manuelle:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowmanualwificonfiguration) Permet aux utilisateurs de créer des connexions Wi-Fi en dehors de réseaux approvisionnés pour la gestion des périphériques mobiles.
+-   [Autorisez la configuration WiFi manuelle:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowmanualwificonfiguration) Permet aux utilisateurs de créer des connexions Wi-Fi à l’extérieur des réseaux configurés pour la gestion des périphériques mobiles
 -   [Autoriser la désinscription manuelle](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment) de la gestion des périphériques mobiles Si les utilisateurs sont autorisés à supprimer le compte de l’entreprise (c’est-à-dire, à annuler l’inscription de l’appareil à partir du système GPM);
+
+Ajouté dans [Windows holographique, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) pour les appareils HoloLens 2:
+- [Autoriser l’ajout d’un package de mise en service:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage) Basculez si les utilisateurs peuvent ajouter de nouveaux packages de mise en service, en écrasant les nouvelles valeurs.
+- [Autoriser la suppression du package de mise en service:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) Basculer si les utilisateurs peuvent supprimer des packages de mise en service, ce qui leur permet d’activer ou de désactiver les paramètres déjà verrouillés.
 
 Pour plus d’informations, consultez Options de stratégie dans les [fournisseurs de stratégie](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2) pris en charge HoloLens.
 
@@ -44,3 +48,7 @@ Les listes suivantes permettent de configurer les paramètres de gestion des pé
 -   [Autoriser Bluetooth:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) Si les utilisateurs peuvent activer et utiliser la radio Bluetooth sur leurs appareils.
 -   [Restreindre la caméra:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesscamera) Spécifie si les applications Windows peuvent accéder à la caméra.
 -   [Restreindre les microphones:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone) Spécifie si les applications Windows peuvent accéder au micro.
+
+Ajouté dans [Windows holographique, de 20H2](hololens-release-notes.md#windows-holographic-version-20h2) pour les appareils HoloLens 2. 
+- [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery) Définissez le délai d’affichage jusqu’à ce que l’affichage soit désactivé et en désactivant l’affichage, verrouillez l’appareil. 
+- [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) Définissez le délai d’affichage jusqu’à ce que l’affichage soit désactivé et en désactivant l’affichage, verrouillez l’appareil. 

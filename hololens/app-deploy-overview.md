@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0b7609f1caac20ff0c47251b1f85a26d7fe1de8
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 36d86e24cc10d6b8457cfb415528398a8d43aa27
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016648"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162859"
 ---
 # Vue d’ensemble de la gestion des applications
 
@@ -65,7 +65,18 @@ Pour plus d’informations, consultez applications du Windows [Store holographiq
 Les [packages de mise en service](app-deploy-provisioning-package.md) vous permettent d’installer des applications personnalisées ou d’une entreprise, ce qui permet aux professionnels de l’informatique et aux administrateurs d’installer rapidement des applications sur un ou des appareils locaux via USB. Cette opération peut être réalisée sans connexion Internet et pour tout type d’identité.
     
 L’installation via les packages de mise en service est applicable pour: 
-* Lignes d’applications entreprise (non publiques)
+* Lignes de entreprise/applications auto-développées (non publiques)
 * Applications publiques (si le programme d’installation hors connexion est disponible)
 * Télécharger uniquement le bus USB
 * Aucune mise à jour automatique (nécessite des mises à jour manuelles via le package de mise en service)
+
+## Installer des applications sur HoloLens 2 via le programme d’installation d’application
+L’utilisation des utilisateurs du [programme d’installation](app-deploy-app-installer.md) de l’application peut avoir une expérience simple pour l’installation d’applications sur des appareils locaux ou le partage d’une application avec une autre personne qui ne connaît pas les méthodes d’installation d’autres applications sur HoloLens. Pour cela, vous devez activer le mode développeur ou utiliser Device Portal. Il s’agit d’une méthode simple de distribution d’une application entièrement créée. Que vous vouliez simplement faire une démonstration de votre application auprès d’un autre utilisateur à l’aide d’un HoloLens, ou si vous voulez déployer votre application, cette méthode fonctionne facilement.
+
+L’installation via le programme d’installation d’application s’applique aux éléments suivants: 
+* Lignes de entreprise/applications auto-développées (non publiques)
+* Chargement en partie uniquement
+* Ne nécessite pas le mode développeur ou Device Portal
+* Installation facile pour l’utilisateur final
+
+

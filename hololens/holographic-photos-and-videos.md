@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100269"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163113"
 ---
 # Créer des photos et des vidéos de réalité mixte
 
@@ -155,8 +155,18 @@ Vous pouvez également partager des photos et des vidéos de réalité mixte à 
 ## Limitations d’une capture de réalité mixte
 
 - Lorsque vous utilisez la capture de la réalité mixte, la fréquence d’images de HoloLens est divisée en deux à 30 Hz.
-- Les vidéos ont une longueur maximale de cinq minutes.
 - La résolution des photos et des vidéos peut être réduite si la caméra photo/vidéo est déjà utilisée par une autre application, en flux continu ou lorsque le niveau de ressources système est faible.
+
+### Durée d’enregistrement maximum
+
+Sur les appareils HoloLens 2 avant les vidéos Windows holographiques, version 20H2 enregistrées sur l’appareil étaient limitées à une longueur maximale de cinq minutes.
+
+En raison des commentaires des clients, nous avons augmenté la durée d’enregistrement des [captures de réalité mélangées](holographic-photos-and-videos.md). Par défaut, les captures de réalité mixte ne seront plus limitées à 5 minutes, mais au lieu de calculer la longueur d’enregistrement maximale en fonction de l’espace disque disponible. L’appareil évalue la durée d’enregistrement vidéo maximale en fonction de l’espace disque disponible jusqu’à 80% du total de l’espace disque.
+
+> [!NOTE]
+> Le HoloLens utilisera une durée d’enregistrement vidéo par défaut (5 minutes) dans l’un des cas suivants:
+> - La durée d’enregistrement maximale estimée est inférieure à la valeur par défaut de 5 minutes.
+> - L’espace disque disponible est inférieur à 20% du total de l’espace disque.
 
 ## Format de fichier et résolution par défaut
 
