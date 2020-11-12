@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940204"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163016"
 ---
 # Affichage HoloLens 2
 
@@ -59,7 +59,7 @@ Il reste néanmoins possible pour les appareils photo industriels spécialisés 
 
 L’affichage HoloLens2 affiche une couleur active pour corriger les images en fonction de la position des yeux de l’utilisateur. [L’étalonnage de l’œil](hololens-calibration.md) fournit deux entrées importantes: (1) la distance interpupillaire (IPD) de l’utilisateur et (2) la direction de chaque œil. Sans étalonnage de l’œil, le système par défaut est une position oculaire sans mouvement oculaire. La différence entre la correction de couleur active et la non-correction dépend de la physiologie de l’utilisateur proprement dit. Par exemple, les utilisateurs qui ont la même IPD que le système par défaut voient moins d’améliorations de la correction de couleur. Bien que les utilisateurs disposant d’une IPD plus étroite ou plus large que le système par défaut, voient plus de modifications apportées à l’image d’affichage.
 
-Notez qu’une nouvelle fonctionnalité disponible dans une prochaine mise à jour de système d’exploitation commencera à [détecter automatiquement la position oculaire](hololens-insider.md#auto-eye-position-support). Les utilisateurs peuvent s’inscrire dans le [Insider Preview](hololens-insider.md) pour essayer cette fonctionnalité maintenant.
+Notez qu’une nouvelle fonctionnalité de la [Windows Holographic version20H2](hololens-release-notes.md#windows-holographic-version-20h2) commencera à [détecter automatiquement la position des yeux](hololens-calibration.md#auto-eye-position-support). 
 
 ### Quelles sont les différences d’affichage entre HoloLens (1ère génération) et HoloLens2?
 

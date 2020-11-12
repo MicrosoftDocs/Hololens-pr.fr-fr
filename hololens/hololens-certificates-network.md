@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015519"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162978"
 ---
 # Préparer des certificats et des profils de réseau pour l'HoloLens 2
 
@@ -45,18 +45,20 @@ Pour déployer les certificats et les profils, suivez ces étapes :
 1.  Créez un profil pour chacun des certificats racine et intermédiaire (voir [Créer des profils de certificats de confiance ](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles).) Chacun de ces profils doit avoir une description qui comprend une date d'expiration au format JJ/MM/AAAA. **Les profils de certificat sans date d'expiration ne seront pas déployés.**
 1.  Créer un profil pour chaque certificat SCEP ou PKCS (voir [Créer un profil de certificat SCEP ou Créer un profil de certificat PKCS](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Chacun de ces profils doit avoir une description qui comprend une date d'expiration au format JJ/MM/AAAA. **Les profils de certificat sans date d'expiration ne seront pas déployés.**
 
-> [!NOTE]
-> Comme l'HoloLens 2 est considéré pour beaucoup comme un appareil partagé, plusieurs utilisateurs par appareil, il est recommandé de déployer des certificats d'appareil au lieu de certificats d'utilisateur pour l'authentification Wi-Fi lorsque cela est possible
+    > [!NOTE]
+    > Comme l'HoloLens 2 est considéré pour beaucoup comme un appareil partagé, plusieurs utilisateurs par appareil, il est recommandé de déployer des certificats d'appareil au lieu de certificats d'utilisateur pour l'authentification Wi-Fi lorsque cela est possible
 
 3.  Créez un profil pour chaque réseau Wi-Fi d'entreprise (voir[les paramètres Wi-Fi pour les appareils Windows 10 et ultérieurs](https://docs.microsoft.com/intune/wi-fi-settings-windows)). 
-> [!NOTE]
-> Il est recommandé d'attribuer le profil Wi-Fi à [des groupes ](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) d'appareils plutôt qu'à des groupes d'utilisateurs, dans la mesure du possible. 
+    > [!NOTE]
+    > Il est recommandé d'attribuer le profil Wi-Fi à [des groupes ](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) d'appareils plutôt qu'à des groupes d'utilisateurs, dans la mesure du possible. 
 
-> [!TIP]
-> Vous pouvez également exporter un profil Wi-Fi fonctionnel à partir d'un ordinateur Windows 10 sur votre réseau corporatif. Cette exportation crée un fichier XML avec tous les paramètres actuels. Ensuite, importez ce fichier dans Intune, et utilisez-le comme profil Wi-Fi pour vos appareils HoloLens 2. Voir [ Exporter et importer les paramètres Wi-Fi pour les appareils Windows.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
+    > [!TIP]
+    > Vous pouvez également exporter un profil Wi-Fi fonctionnel à partir d'un ordinateur Windows 10 sur votre réseau corporatif. Cette exportation crée un fichier XML avec tous les paramètres actuels. Ensuite, importez ce fichier dans Intune, et utilisez-le comme profil Wi-Fi pour vos appareils HoloLens 2. Voir [ Exporter et importer les paramètres Wi-Fi pour les appareils Windows.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
 
 4.  Créez un profil pour chaque VPN corporatif (voir [ les paramètres de Windows 10 et de Windows Holographic pour ajouter des connexions VPN en utilisant Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
 
+## Résolution des problèmes de certificats
 
+Si vous devez confirmer que le déploiement d’un certificat est correct, veuillez utiliser le [Gestionnaire de certificats](certificate-manager.md) de l’appareil pour vérifier que votre certificat est présent.  
 
 

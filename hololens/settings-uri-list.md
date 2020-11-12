@@ -3,7 +3,7 @@ title: Visibilité des paramètres de la page
 description: Liste des URI pris en charge par HoloLens pour PageVisibilityList et Guide
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: hololens, hololens 2, Access affecté, Kiosque, page paramètres
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026937"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163145"
 ---
 # Visibilité des paramètres de la page
 
 L’une des fonctionnalités gérables pour les appareils HoloLens utilise la [stratégie paramètres/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) pour restreindre les pages visibles dans l’application paramètres. PageVisibilityList est une stratégie qui permet aux administrateurs informatiques d’empêcher l’affichage ou l’accessibilité de pages spécifiques dans l’application Paramètres système, ou de le faire pour toutes les pages à l’exception de celles spécifiées. 
 
-> [!IMPORTANT]
-> Pour l’instant, cette fonctionnalité est uniquement disponible dans les [builds Windows Insider](hololens-insider.md). Assurez-vous que les appareils que vous avez l’intention d’utiliser sont sur la build 19041.1349+.
+> [!NOTE]
+> Cette fonctionnalité est uniquement disponible dans [Windows Holographic version20H2](hololens-release-notes.md#windows-holographic-version-20h2) pour les appareils HoloLens2. Veuillez vérifier que les appareils pour lesquels vous envisagez d’utiliser cette fonctionnalité sont à jour.
 
 L’exemple suivant illustre une stratégie qui autoriserait l’accès uniquement aux pages « À propos de» et Bluetooth, avec l’URI «ms-settings: Network-WiFi» et «ms-settings: Bluetooth» respectivement:
 - AfficherSeulement: réseau-WiFi;réseau-proxy;bluetooth
