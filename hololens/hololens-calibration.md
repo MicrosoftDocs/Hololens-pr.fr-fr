@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 627631ee7070af6cb6c60e91890f05472ce0f6be
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919155"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163056"
 ---
 # Améliorer la qualité visuelle et le confort
 
@@ -40,19 +40,19 @@ HoloLens 2 demande à l’utilisateur d’étalonner l’appareil dans les cas s
 - L'appareil est retiré et remis en marche et l'une des circonstances ci-dessus s'applique 
 
 
-![Invite d’étalonnage](./images/07-et-adjust-for-your-eyes.png)
+![Invite de calibrage pour le suivi des yeux.](./images/07-et-adjust-for-your-eyes.png)
 
 Au cours de ce processus, vous devez regarder un ensemble de cibles (gemmes). Si vous clignotez pendant l’étalonnage, essayez de rester concentré sur les gemmes au lieu d’autres objets dans la salle.  Cela permet à HoloLens d’en savoir plus sur la position de votre œil pour afficher votre univers holographique.
 
-![Invite d’étalonnage](./images/07-et-hold-head-still.png)
+![Invite de calibrage indiquant aux utilisateurs de rester immobile et de suivre les points des yeux.](./images/07-et-hold-head-still.png)
 
-![Invite d’étalonnage](./images/08-et-gems.png)
+![Invite de calibrage avec un exemple de gemme.](./images/08-et-gems.png)
 
-![Invite d’étalonnage](./images/09-et-adjusting.png)
+![Réglage d’une invite de calibrage.](./images/09-et-adjusting.png)
 
 Si l’étalonnage a réussi, un écran de réussite s’affiche.  Si ce n’est pas le cas, découvrez la façon de diagnostiquer les échecs d’étalonnage [ici](#troubleshooting-hololens-2-calibration).
 
-![Invite d’étalonnage](./images/10-et-success.png)
+![Réussite de l’invite de calibrage.](./images/10-et-success.png)
 
 ### Étalonnage lors du partage d’un appareil ou d’une session
 
@@ -66,7 +66,29 @@ Plusieurs utilisateurs peuvent partager un appareil HoloLens 2 sans qu’il soit
 
    ![Application Paramètres présentant l’option d’étalonnage des yeux](./images/C-Settings.Calibration.png)
 
-### Résolution des problèmes d’étalonnage d’HoloLens 2
+### Prise en charge de la position automatique des yeux
+- Nous proposons désormais une plus grande précision pour le positionnement de l’hologramme grâce à la prise en charge de la position automatique des yeux pour un confort visuel élevé et une qualité d’affichage améliorée. 
+
+Dans HoloLens2, la position des yeux permet un positionnement précis de l’hologramme, une expérience visuelle agréable et une qualité d’affichage améliorée. La positions des yeux est calculée dans le cadre du résultat du suivi oculaire. Cependant, cela nécessite que chaque utilisateur effectue un calibrage du suivi oculaire, même lorsque l’expérience ne nécessite pas l’utilisation du regard.
+
+La **Position automatique des yeux** permet à ces scénarios sans interaction de calculer la position des yeux de l’utilisateur.  La Position automatique des yeux commence à fonctionner automatiquement en arrière-plan dès que l’utilisateur allume l’appareil. Si l’utilisateur n’a pas encore effectué de suivi oculaire, la position automatique des yeux commencera à fournir la position des yeux de l’utilisateur au système d’affichage après un petit temps de traitement. Ce temps de traitement est généralement compris entre 20 et 60secondes. Les données utilisateur ne sont pas conservées sur l’appareil et, par conséquent, ce processus est répété si l’utilisateur éteint l’appareil puis le rallume ou si l’appareil redémarre ou sort du mode veille.  
+
+Il existe certaines modifications de comportement système avec la fonctionnalité de position automatique des yeux quand un utilisateur n’ayant pas effectué de calibrage utilise l’appareil. Un utilisateur n’ayant pas effectué de calibrage fait référence à une personne qui n’a pas encore effectué le processus de calibrage du suivi oculaire sur l’appareil.
+
+|     Application active                           |     Ancien comportement                                   |     Comportement pour Windows HWindows Holographic, version20H2 et ultérieures                                                     |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     Application non compatible avec le regard ou Holographic Shell    |     L’invite de calibrage du suivi oculaire est affichée.    |     Aucune invite n’est affichée.                                                                                |
+|     Application compatible avec le regard                             |     L’invite de calibrage du suivi oculaire est affichée.    |     L’invite de calibrage du suivi oculaire s’affiche uniquement lorsque l’application accède au flux de regard.     |
+
+ Si l’utilisateur passe d’une application non compatible avec le regard à une application qui accède aux données du regard, l’invite de calibrage s’affiche. Le flux Out Of Box Experience ne sera pas modifié. 
+ 
+Pour les expériences nécessitant des informations visuelles ou un positionnement d’hologramme très précis, nous vous recommandons d’effectuer un calibrage du suivi oculaire à partir de l’invite de calibrage du suivi oculaire ou en lançant l’application Paramètres à partir du menu Démarrer, puis en sélectionnant **Système > Calibrage > Calibrage oculaire > Effectuer un calibrage oculaire**.
+
+**Problèmes connus**
+ - Nous travaillons à la résolution d’un problème dans lequel le processus hôte du pilote de suivi oculaire pourrait se bloquer lors de l’exécution sous une charge mémoire importante. Le processus hôte du pilote de suivi oculaire doit procéder à une récupération automatique.
+
+
+### Résolution des problèmes de calibrage d’HoloLens2
 
 L’étalonnage devrait fonctionner pour la plupart des personnes, mais ce n’est pas toujours le cas.
   

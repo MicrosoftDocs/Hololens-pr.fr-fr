@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 07/09/2020
+ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 384d33e72effd298e1874e5723e9c418061c3287
-ms.sourcegitcommit: 0d4e67d8e21d34885e0eaee08646e28426c4f641
+ms.openlocfilehash: 3a2246296c5ab8aa86dfaa419ed02aa5a961dbfc
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "10861907"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163131"
 ---
 # Gérer les mises à jour de HoloLens
 
@@ -77,7 +77,22 @@ Pour configurer les modalités d’application des mises à jour, utilisez les s
   - Valeurs: 0–23 (0 = minuit, 23 = 11h00)
   - Valeur par défaut: 15h00
 
-#### Pour les appareils exécutant Windows 10, version 1607 uniquement
+#### Configurer les heures d’activité
+À partir de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), un administrateur informatique peut spécifier la plage des heures d’activité pour les appareils HoloLens2.
+
+Les heures d’activité identifie la période lors de laquelle l’appareil est censé être utilisé. Les redémarrages automatiques suite à une mise à jour surviennent en dehors des heures d’activité. La plage spécifiée est calculée dès l’heure de début des heures d’activité. Vous pouvez utiliser GPM, comme décrit dans la section [Configurer les heures d’activité avec GPM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). GPM utilise les paramètres Update/ActiveHoursStart, Update/ActiveHoursEnd et Update/ActiveHoursMaxRange dans le CSP de la stratégie pour configurer les heures d’activité.
+
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend): cette valeur définit l’heure de fin. 12heures maximum sont possibles entre l’heure de début et l’heure de fin.
+    -   Les valeurs prises en charge sont comprises entre 0 et 23. 0 correspond à minuit, 1 correspond à 1h du matin, etc.
+    -   La valeur par défaut est 17 (17:00).
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange): cette valeur définit le nombre maximal d’heures d’activités depuis l’heure de début.
+    -   Les valeurs prises en charge sont comprises entre 8 et 18.
+    -   La valeur par défaut est 18 (heures).
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart): cette valeur définit l’heure de début. 12heures maximum sont possibles entre l’heure de début et l’heure de fin.
+    -   Les valeurs prises en charge sont comprises entre 0 et 23. 0 correspond à minuit, 1 correspond à 1h du matin, etc.
+    -   La valeur par défaut est 8 (8:00).
+
+#### Pour les appareils fonctionnant avec la version1607 de Windows10 uniquement
 
 Vous pouvez utiliser les stratégies de mise à jour suivantes pour configurer les appareils de façon à obtenir les mises à jour à partir du service WSUS (Windows Server Update Service) au lieu de Windows Update:
 
@@ -117,6 +132,15 @@ Vous pouvez configurer différents reports pour les mises à jour de fonctionnal
 | --- | --- | --- |
 |Mises à jour des fonctionnalités |DeferFeatureUpdatesPeriodInDays |365jours |
 |Mises à jour qualité |DeferQualityUpdatesPeriodInDays |30jours |
+
+#### Suspendre les mises à jour via l’appareil
+
+Si un utilisateur n’a pas accès à GPM, il peut suspendre individuellement les mises à jour pendant jusqu’à 35jours manuellement sur un appareil HoloLens2 sur la [version2004 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-2004) ou les versions ultérieures. Les utilisateurs peuvent accéder à ce paramètre en accédant à **Paramètres -> Mise à jour et sécurité -> Options avancées**. Faites défiler vers le bas pour **Suspendre les mises à jour**, puis sélectionnez la date jusqu’à laquelle celles-ci peuvent être suspendues. Une fois la date limite de suspension atteinte, l’appareil doit obtenir de nouvelles mises à jour, car l’utilisateur peut de nouveau les suspendre. 
+
+À partir de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), cette fonctionnalité de suspension de mises à jour peut être gérée pour les appareils HoloLens2. 
+- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
+    - 0 (par défaut): activé
+    - 1: désactivé
 
 #### Fonctionnalités de gestion des mises à jour Intune prises en charge par HoloLens
 

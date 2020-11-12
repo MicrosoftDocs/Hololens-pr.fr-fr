@@ -8,23 +8,23 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 11/10/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
+ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163152"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165974"
 ---
 # Notes de publication HoloLens 2
 
-Pour vous assurer que vous disposez d’une satisfaction productive sur vos appareils HoloLens, nous continuons à libérer les mises à jour de fonctionnalités, de bogues et de sécurité. Sur cette page, vous pouvez voir les nouveautés du HoloLens par mois. Pour obtenir la dernière mise à jour du flash HoloLens 2 (FFU [), vous pouvez la](hololens-recovery.md#clean-reflash-the-device) [Télécharger ici](https://aka.ms/hololens2download). Le téléchargement est mis à jour et fournit la version la plus récente disponible en général.
+Pour vous assurer que vous disposez d’une satisfaction productive sur vos appareils HoloLens, nous continuons à libérer les mises à jour de fonctionnalités, de bogues et de sécurité. Sur cette page, vous pouvez voir les nouveautés du HoloLens par mois. Pour obtenir la mise à jour de HoloLens 2 la plus récente, vous pouvez [Rechercher les mises à jour et effectuer une mise à jour manuelle](hololens-update-hololens.md#check-for-updates-and-manually-update) ou télécharger la mise à jour Flash complète (FFU) pour faire [clignoter votre appareil](hololens-recovery.md#clean-reflash-the-device)à l’aide de l’Assistant de restauration avancée, le [Télécharger ici](https://aka.ms/hololens2download). Le téléchargement est mis à jour et fournit la version la plus récente disponible en général.
 
 >[!NOTE]
 > Pour lire les notes de publication de HoloLens Emulator, [consultez l’archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
@@ -40,7 +40,7 @@ Cette dernière version est une mise à jour mensuelle de la version 2004, mais 
 
 | Fonctionnalité                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Prise en charge de la position de l’oeil automatique](hololens-release-notes.md#auto-eye-position-support) | Calcule activement les positions visuelles sans qu’ils passent par le calibrage actif.   |
+| [Prise en charge de la position de l’oeil automatique](hololens-release-notes.md#auto-eye-position-support) | Calcule activement les positions visuelles sans qu’ils passent par le biais du calibrage du suivi visuel.   |
 | [Gestionnaire de certificats](hololens-release-notes.md#certificate-manager)   | Permet aux nouvelles méthodes simples d’installer et de supprimer des certificats de l’application paramètres.     |
 | [Mise en service du lancement automatique à partir d’USB](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Les packages de mise en service sur les lecteurs USB invitent automatiquement la page de configuration dans OOBE.                                                         |
 | [Vérifier automatiquement les packages de mise en service dans OOBE](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | Les packages de mise en service sont automatiquement appliqués lors de la création de la page de configuration.                                                         |
@@ -62,22 +62,22 @@ Cette dernière version est une mise à jour mensuelle de la version 2004, mais 
 
 ### Prise en charge de la position de l’oeil automatique
 
-- Nous fournissons désormais une précision supérieure pour le positionnement des hologrammes grâce à la prise en charge automatique de la position des yeux pour une qualité d’affichage élevée et une meilleure qualité d’affichage. 
+Dans HoloLens 2, les positions visuelles permettent un positionnement précis des hologrammes, une confort d’affichage confortable et une meilleure qualité d’affichage. Les positions visuelles sont calculées en interne dans le cadre du calcul du suivi visuel. Toutefois, cela nécessite que chaque utilisateur passe par le calibrage du suivi visuel, même lorsque l’utilisation de l’aide n’est pas nécessaire.
 
-Dans HoloLens 2, les positions visuelles permettent un positionnement précis des hologrammes, une confort d’affichage confortable et une meilleure qualité d’affichage. Les positions visuelles sont calculées dans le résultat du suivi visuel. Toutefois, cela nécessite que chaque utilisateur passe par le calibrage du suivi visuel, même lorsque l’utilisation ne requiert pas d’entrée en regard.
+La position de l' **oeil automatique (AEP)** permet à ces scénarios d’avoir une méthode d’interaction sans interaction pour calculer la position des yeux de l’utilisateur. La position de l’oeil automatique commence automatiquement à fonctionner en arrière-plan à partir du moment où l’utilisateur place le périphérique. Si l’utilisateur ne dispose pas d’un étalonnage de suivi d’oeil antérieur, la position de l’oeil automatique commencera à fournir à l’utilisateur le système d’affichage après un délai de traitement de 20-30 secondes. Les données de l’utilisateur ne sont pas conservées sur l’appareil et, de ce fait, le processus est répété s’il est mis en place par l’utilisateur, ou si l’appareil est redémarré ou s’arrête de sortir du mode veille.
 
-La position de l' **oeil automatique (AEP)** permet à ces scénarios d’avoir une méthode d’interaction sans interaction pour calculer la position des yeux de l’utilisateur.  La position de l’oeil automatique commence automatiquement à fonctionner en arrière-plan à partir du moment où l’utilisateur place le périphérique. Si l’utilisateur ne dispose pas d’un étalonnage de suivi d’oeil antérieur, la position d’oeil automatique commencera à fournir à l’oeil de l’utilisateur le système d’affichage après un temps de traitement faible. Ce temps de traitement est généralement compris entre 20-60 secondes. Les données de l’utilisateur ne sont pas conservées sur l’appareil et, de ce fait, le processus est répété s’il est mis en place par l’utilisateur, ou si l’appareil est redémarré ou s’arrête de sortir du mode veille.  
+Il existe certaines modifications de comportement système avec la fonctionnalité de position de l’oeil automatique quand un utilisateur non calibré le place sur l’appareil. Dans ce contexte, un utilisateur non calibré fait référence à une personne qui n’a pas encore parcouru le processus d’étalonnage du suivi d’oeil sur l’appareil.
 
-Il existe certaines modifications de comportement système avec la fonctionnalité de position de l’oeil automatique quand un utilisateur non calibré le place sur l’appareil. Un utilisateur sans calibrage fait référence à une personne qui n’a pas encore parcouru le processus d’étalonnage du suivi visuel sur l’appareil.
+| Application active | Comportement antérieur | Comportement de Windows holographique, version 20H2 Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| Application et interpréteur holographique non activé |Boîte de dialogue de l’invite d’étalonnage du suivi d’oeil. | Aucune invite ne s’affiche. |
+| Application en option | Boîte de dialogue de l’invite d’étalonnage du suivi d’oeil. | L’invite de calibration du suivi d’oeil s’affiche uniquement lorsque l’application accède à un flux d’oeil. |
 
-|     Application active                           |     Ancien comportement                                   |     Comportement de la version holographique Windows 20H2                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     Application et interpréteur holographique non activé    |     Invite de calibration du suivi d’oeil s’affiche.    |     Aucune invite ne s’affiche.                                                                                |
-|     Application en option                             |     Invite de calibration du suivi d’oeil s’affiche.    |     L’invite de calibration du suivi d’oeil s’affiche uniquement lorsque l’application accède à un flux d’oeil.     |
+Si l’utilisateur passe d’une application à l’autre qui accède aux données de pointage, l’invite s’affiche. 
 
- Si l’utilisateur passe d’une application à l’autre qui accède aux données de pointage, l’invite s’affiche. Il n’y a aucun changement de flux d’expérimentation hors champ. 
- 
-Dans le cas d’expériences nécessitant des informations visuelles ou un positionnement très précis, nous vous recommandons d’effectuer un étalonnage du suivi visuel à partir de l’invite d’étalonnage du suivi d’oeil ou en lançant l’application paramètres à partir du menu Démarrer, puis en sélectionnant **système > calibration >** d’étalonnage > d’exécution.
+Tout autre comportement du système est semblable à celui que l’utilisateur actuel n’aura pas d’étalonnage du suivi de l’oeil actif. Par exemple, le geste de début à main nulle ne sera pas activé. Aucune modification n’est apportée à la configuration initiale de l’interface utilisateur.
+
+Dans le cas d’expériences nécessitant des informations visuelles ou un positionnement d’hologramme très précis, nous vous conseillons d’effectuer un étalonnage du suivi visuel. Ce dernier est accessible à partir de l’invite de calibration de l’outil de suivi des yeux ou en lançant l’application paramètres à partir du menu Démarrer, puis en sélectionnant > de calibrage **> >** d’étalonnage des yeux.
 
 Pour plus d' [informations](hololens-calibration.md#auto-eye-position-support), consultez les informations suivantes. 
 
@@ -189,7 +189,7 @@ La valeur d’URI OMA doit être./Vendor/MSFT/TenantLockdown/RequireNetworkInOOB
 
 1. Définissez le membre du périphérique HoloLens 2 du groupe créé lors de l’étape précédente et déclenchez la synchronisation.  
 
-Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois que la configuration de l’appareil Hololens 2 s’applique correctement, les effets de TenantLockdown seront actifs.
+Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois que la configuration de l’appareil HoloLens 2 s’applique correctement, les effets de TenantLockdown seront actifs.
 
 #### Comment inverser les RequireNetworkInOOBE de TenantLockdown sur HoloLens 2 avec Intune? 
 1. Supprimez le HoloLens 2 du groupe de périphériques sur lequel est précédemment attribuée la configuration de l’appareil créée ci-dessus. 
@@ -203,7 +203,7 @@ Vérifiez que la configuration de l’appareil a été appliquée dans le portai
 
 1. Définissez le membre du périphérique HoloLens 2 du groupe créé lors de l’étape précédente et déclenchez la synchronisation.
 
-Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois la configuration de l’appareil Hololens 2 appliquée, les effets de TenantLockdown seront désactivés. 
+Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois la configuration de l’appareil HoloLens 2 appliquée, les effets de TenantLockdown seront désactivés. 
 
 #### Que se passe-t-il lors de l’installation de OOBE, si le profil de pilote automatique n’est pas affecté sur un HoloLens après la définition de TenantLockdown. 
 OOBE attend indéfiniment du profil AutoPilot pour le téléchargement et la présentation de la boîte de dialogue qui s’affiche. Pour supprimer les effets de TenantLockdown, l’appareil doit d’abord être inscrit au client d’origine à l’aide du pilotage automatique uniquement et RequireNetworkInOOBE doit être désactivé comme décrit dans l’étape précédente avant la suppression des restrictions introduites par le fournisseur de services de TenantLockdown. 
@@ -284,7 +284,7 @@ Stratégies récemment activées qui autorisent davantage d’options de gestion
 
 Ces deux nouvelles politiques pour AllowAddProvisioningPackage et AllowRemoveProvisioningPackage sont ajoutées à nos restrictions d' [appareil courantes](hololens-common-device-restrictions.md).
 
-### Nouvelles stratégies d’alimentation pour Hololens 2
+### Nouvelles stratégies d’alimentation pour HoloLens 2
 - Plus d’options pour la mise en veille de l’HoloLens ou son verrouillage via une stratégie d’alimentation. 
 
 Ces stratégies récemment ajoutées permettent aux administrateurs de contrôler les États d’alimentation tels que le délai d’inactivité. Pour en savoir plus sur chaque stratégie individuelle, cliquez sur le lien correspondant à cette stratégie.

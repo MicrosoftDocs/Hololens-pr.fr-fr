@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134674"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165012"
 ---
 # Matériel HoloLens (1èregénération)
 
@@ -139,7 +139,7 @@ Pour comprendre l’environnement, procédez comme suit:
 
 ## Logiciels préinstallés
 
-- Windows 10
+- Windows10
 - Windows Store
 - Hologrammes
 - MicrosoftEdge
@@ -168,19 +168,19 @@ Pour nettoyer le reste du périphérique, y compris le bandeau et les bras du p�
 
 ![Image illustrant le nettoyage de la visière](images/hololens-cleaning-visor.png)
 
-## Recherche du numéro de série
+## Découverte du numéro de série
 
 Le numéro de série de l’appareil HoloLens (1ère génération) s’imprime sous la lentille droite.
-1. Tenez l’appareil devant vous comme si vous aviez l’usure.
+1. Tenez l’appareil devant vous comme si vous aviez l’usure sur votre tête. Avec l’appareil orienté vers l’avant ou vers le debout.
 1. Lorsque la glace est redirigée vers l’avant, retournez le deivce à l’envers pour vous voir le dessous.
 1. Le bon objectif est désormais affiché à gauche, imprimé sous la glace de la bande correspond au numéro de série. 
 
-Le numéro de série peut également être trouvé via un PC connecté:
+Le numéro de série se trouve également via un PC connecté:
 
-1. Brancher l’appareil
+1. Branchez l’appareil
 1. Accédez à **ce PC** dans l’Explorateur de fichiers
-1. Cliquer avec le bouton droit et sélectionner les **Propriétés** de l’appareil HoloLens
-1. Le numéro de série de l’appareil s’affiche. Comme cette capture d’écran ci-dessous.
+1. Cliquez avec le bouton droit et sélectionnez les **Propriétés** de l’appareil HoloLens
+1. Cette action permet d’afficher le numéro de série de l’appareil. Comme le montre la capture d’écran ci-dessous.
 
 <img src="images/hl1-serial-number.png" width="400" height="600" />
 

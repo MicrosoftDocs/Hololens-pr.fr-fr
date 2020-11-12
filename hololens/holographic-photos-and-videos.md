@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163113"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165003"
 ---
 # Créer des photos et des vidéos de réalité mixte
 
@@ -140,7 +140,7 @@ Comme pour les autres appareils mobiles, connectez votre HoloLens à votre PC po
 Conseils:
 - Si vous ne voyez aucun fichier, veuillez vous connecter à votre HoloLens pour autoriser l’accès à vos données.
 - Vous pouvez obtenir d’autres fichiers dans d’autres dossiers, par exemple, des [fichiers de diagnostics](hololens-diagnostic-logs.md#offline-diagnostics) à partir du dossier Documents.
-- À partir de l’Explorateur de fichiers sur votre PC, vous pouvez sélectionner les propriétés de l’appareil pour afficher le numéro de version du système d’exploitation Windows holographique (version du microprogramme), le numéro de série de l’appareil et le pourcentage de batterie
+- À partir de l’Explorateur de fichiers sur votre PC, vous pouvez sélectionner les propriétés de l’appareil pour afficher le numéro de version du système d’exploitation Windows holographique (version du microprogramme), le numéro de série de l’appareil et le pourcentage de batterie.
 - Si votre organisation a utilisé la gestion des périphériques mobiles pour désactiver la [connectivité/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) , vous ne pourrez pas vous connecter à votre appareil.
 
 ## Partager des photos et des vidéos de réalité
