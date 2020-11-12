@@ -1,9 +1,9 @@
 ---
 title: Windows Autopilot pour HoloLens2 (préversion privée)
-description: ''
+description: Comment configurer AutoPilot sur les appareils HoloLens2.
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 4/10/2020
+ms.date: 10/13/2020
 ms.prod: hololens
 ms.topic: article
 ms.custom:
@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 6851249ab9ed79e7dcdea6afc853fee66fdddf19
-ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
+ms.openlocfilehash: 5f887d7321c391ea9d67833373b39b3c9feeaf2c
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145655"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163092"
 ---
 # Windows Autopilot pour HoloLens2
 
@@ -64,11 +64,19 @@ Suivez les étapes ci-dessous pour configurer votre environnement pour la préve
 > [!IMPORTANT]  
 > Windows Autopilot pour HoloLens 2 exige une configuration de système d’exploitation particulière. Autopilot s’appuie sur Windows Holographique version2004 (build 19041,1103 ou version ultérieure) préinstallé sur les appareils HoloLens. Les appareils livrés jusqu’à la fin septembre 2020 hébergent Windows Holographique version1903. Veuillez contacter votre distributeur pour savoir quand les appareils prêts pour Autopilot peuvent vous être expédiés. Si vous souhaitez participer à la préversion privée, veuillez consulter les instructions et les conditions requises ci-dessous.
 
+Informations spécifiques à Autopilot pour les différentes versions de système d’exploitation HoloLens.
+- Pour pouvoir utiliser AutoPilot, un appareil doit disposer de la [version2004 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-2004) ou d’une version plus récente.
+- Pour utiliser Autopilot avec le Wi-Fi, un appareil doit disposer de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2) ou d’une version plus récente. Cependant, ces versions peuvent toujours utiliser des adaptateurs Ethernet. 
+- Sur les [versions20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), une nouvelle option de gestion des appareils a été activée: [CSP Tenantlockdown et AutoPilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).  
+
+Si vous souhaitez déterminer la version de build de votre appareil ou mettre à jour celle-ci, connectez le à votre ordinateur Windows10 et lancez l’[outil de récupération avancée](https://www.microsoft.com/store/productId/9P74Z35SFRS8). 
+
 **Si vous souhaitez essayer la préversion Autopilot, avant de démarrer le processus OOBE et la mise en service, assurez-vous que les appareils HoloLens respectent les conditions suivantes:**
 
 - Vérifiez que votre appareil utilise Windows Holographique version2004 (build19041,1103 ou version ultérieure). Si vous ne disposez pas de la dernière version du système d’exploitation, vous devez effectuer une mise à jour manuellement via [l’outil de récupération avancée (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). Vous trouverez des instructions [ici](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
-- Vos appareils doivent être inscrits dans Windows AutoPilot. Pour plus d’informations sur l’inscription des appareils, consultez [4. Inscrivez les appareils dans Windows Autopilot](#4-register-devices-in-windows-autopilot). Nous recommandons à votre revendeur ou à votre distributeur d’enregistrer vos appareils.     
-- Dans la version actuelle, les appareils doivent être connectés à Internet avant d’activer le service HoloLens et de lancer le processus de mise en service de Autopilot. Connectez votre appareil à Ethernet à l’aide d’un adaptateur «USB-C vers Ethernet» pour une connectivité Internet par câble. 
+- Vos appareils doivent être inscrits dans Windows AutoPilot. Pour plus d’informations sur l’inscription des appareils, consultez [4. Inscrivez les appareils dans Windows Autopilot](#4-register-devices-in-windows-autopilot). Nous recommandons à votre revendeur ou à votre distributeur d’enregistrer vos appareils.  
+- Dans la [version2004 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-2004) , les appareils doivent être connectés à Internet avant d’allumer HoloLens et de lancer le processus de configuration de Autopilot. Connectez votre appareil en Ethernet à l’aide d’un adaptateur «USB-C vers Ethernet» pour une connectivité Internet filaire.
+- Dans la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), les appareils peuvent se connecter au Wi-Fi dans l’application OOBE pour détecter AutoPilot. 
 - Les appareils ne sont pas membres d’Azure AD et ne sont pas inscrits dans Intune (ou dans un autre système GPM). Le processus de déploiement autonome Autopilot effectue ces étapes. Pour vous assurer que toutes les informations relatives à l’appareil sont nettoyées, vérifiez les pages sur les **Appareils** dans les Portails Azure AD et Intune.
 - Pour configurer et gérer les profils du mode de déploiement autonome Autopilot, assurez-vous que vous avez accès au [Centre d’administration Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
@@ -96,7 +104,7 @@ Pour vérifier que votre client est activé pour le programme Autopilot après a
 1. Sélectionnez **Appareils** > **Windows** > **Inscription Windows** > **Profils de déploiement Windows Autopilot** > **Créer un profil**.  
    
    ![La liste déroulante de création de profil inclut un élément HoloLens.](./images/hololens-ap-enrollment-profiles.png)
-  Une liste comprenant **HoloLens** doit s’afficher. Si cette option n’est pas disponible, utilisez l’une des options de [Commentaires](#feedback) pour nous contacter.
+  Une liste comprenant **HoloLens** doit s’afficher. Si cette option n’est pas disponible, utilisez l’une des options de [Commentaires](hololens2-autopilot.md#feedback-for-autopilot) pour nous contacter.
 
 ### 4. Inscrivez les appareils dans Windows Autopilot
 
@@ -112,7 +120,8 @@ Pour plus d’informations sur l’inscription de l’appareil, consultez la doc
 L’appareil peut enregistrer son hachage matériel dans un fichier CSV durant le processus OOBE, ou ultérieurement lorsqu’un propriétaire d’appareil démarre le processus de collecte de journal de diagnostic (décrit dans la procédure ci-dessous). En règle générale, le propriétaire de l’appareil est le premier utilisateur à se connecter sur l’appareil.
 
 1. Démarrez l’appareil HoloLens2.
-1. Sur l’appareil, appuyez sur les boutons Alimentation et Baisser le volume en même temps, puis relâchez-les. L’appareil recueille les journaux de diagnostics et le hachage matériel, puis les stocke dans un ensemble de fichiers .zip.
+1. Sur l’appareil, appuyez sur les boutons Alimentation et Baisser le volume en même temps, puis relâchez-les. L’appareil recueille les journaux de diagnostics et le hachage matériel, puis les stocke dans un ensemble de fichiers .zip. 
+   1. Si vous souhaitez obtenir des informations complètes et une vidéo d’instructions sur la façon de procéder, consultez l’article [Diagnostics hors connexion](hololens-diagnostic-logs.md#offline-diagnostics). 
 1. Utilisez un câble USB-C pour connecter l’appareil à un ordinateur.
 1. Ouvrez l’Explorateur de fichiers sur l’ordinateur. Ouvrez **Ce PC\\\<*HoloLens device name*>\\Stockage interne\\Documents**, puis recherchez le fichier AutopilotDiagnostics.zip.  
 
@@ -200,15 +209,20 @@ La page du statut de l’inscription (ESP) affiche l’état du processus de con
 
 ## Expérience utilisateur de Windows Autopilot pour HoloLens2
 
-Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens 2 passent par l’expérience suivante pour configurer leurs appareils HoloLens:  
+Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens2 passent par l’expérience suivante pour configurer leurs appareils HoloLens:  
 
-> [!NOTE]
-> L’utilisation d’Autopilot aura un effet sur le [propriétaire de l’appareil](security-adminless-os.md#device-owner).
+1. L’interface de Autopilot nécessite un accès à Internet. Utilisez l’une des options suivantes pour fournir un accès à Internet:
+    - Connectez votre appareil à un réseau Wi-Fi dans l’application OOBE, puis laissez-le détecter automatiquement l’expérience Autopilot. C’est le seul moment où vous devrez interagir avec l’application OOBE, et ce jusqu’à ce que l’expérience de Autopilot se termine d’elle-même. Notez que, par défaut, HoloLens2 attend 10secondes avant de détecter Autopilot après avoir détecté Internet. Si aucun profil AutoPilot n’est détecté dans un délai de 10secondes, l’application OOBE présentera le CLUF. Si vous rencontrez ce problème, redémarrez votre appareil pour pouvoir détecter AutoPilot. Notez également que l’application OOBE peut attendre indéfiniment Autopilot uniquement si la stratégie TenantLockdown est définie sur l’appareil.
+    - Connectez votre appareil à Ethernet à l’aide d’adaptateurs «USB-C vers Ethernet» pour une connexion Internet filaire et laissez HoloLens2 compléter automatiquement l’expérience Autopilot.
+    - Connectez votre appareil avec des adaptateurs «USB-C vers Wifi» pour une connexion Internet sans fil et laissez HoloLens2 compléter l’expérience Autopilot automatiquement.
 
-1. Comme mentionné dans la version actuelle, les appareils doivent être connectés à Internet avant d’activer le service HoloLens et de lancer le processus de mise en service de Autopilot. Connectez votre appareil à Ethernet à l’aide des adaptateurs «USB C vers Ethernet» pour la connectivité internet câblée ou des adaptateurs «USB C vers WiFi» pour la connectivité internet sans fil.
+       > [!NOTE]
+       > L’utilisation de Autopilot impactera le [propriétaire de l’appareil](security-adminless-os.md#device-owner).
    
-   > [!IMPORTANT]  
-   > Vous devez connecter l’appareil au réseau avant le démarrage de l’application Out-of-the-Box-Experience (OOBE). L’appareil détermine s’il est configuré en tant qu’appareil Autopilot lors de l’affichage du premier écran de l’application OOBE. Si l’appareil ne parvient pas à se connecter au réseau, ou si vous décidez de ne pas configurer l’appareil en tant qu’appareil Autopilot, vous ne pourrez pas utiliser la mise en service Autopilot à une date ultérieure. Au lieu de cela, vous devrez recommencer cette procédure pour configurer l’appareil en tant qu’appareil Autopilot.
+       > [!IMPORTANT]  
+       > Les appareils qui tentent d’utiliser les réseaux Wi-Fi dans l’application OOBE pour Autopilot doivent disposés de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2).
+       >
+       > Pour les périphériques utilisant des adaptateurs Ethernet, vous devez connecter le périphérique au réseau avant le démarrage de l’application Out-of-the-Box-Experience (OOBE). L’appareil détermine s’il est configuré en tant qu’appareil Autopilot lorsqu’il est sur le premier écran de l’application OOBE. Si l’appareil ne parvient pas à se connecter au réseau, ou si vous décidez de ne pas configurer l’appareil en tant qu’appareil Autopilot, vous ne pourrez pas utiliser la mise en service Autopilot à une date ultérieure. Au lieu de cela, vous devrez recommencer cette procédure pour configurer l’appareil en tant qu’appareil Autopilot.
 
 1. L’appareil doit démarrer l’application OOBE automatiquement. Ne pas interférer avec l’application OOBE. Au lieu de cela, il ne vous reste qu’à vous détendre. Laissez HoloLens 2 détecter la connectivité réseau et permettez-lui d’exécuter l’application OOBE automatiquement. Il est possible que l’appareil redémarre pendant le processus OOBE. Les écrans de l’application OOBE doivent ressembler à ce qui suit.
    
@@ -219,15 +233,61 @@ Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens 2 pass
 
 1. À la fin du processus OOBE, vous pouvez vous connecter à l’appareil à l’aide de votre nom d’utilisateur et de votre mot de passe.
 
-  ![Étape 5 du processus OOBE](./images/hololens-ap-uex-5.png)
+   ![Étape 5 du processus OOBE](./images/hololens-ap-uex-5.png)
 
 ## Problèmes connus
 
 - Vous ne pouvez pas installer d’applications qui utilisent le contexte de sécurité de l’appareil.
 
-## Commentaires
+## CSP Tenantlockdown et Autopilot
+- Conserve les appareils sur le client de l’organisation en les verrouillant vers le client via la réinitialisation ou le redémarrage de l’appareil. Avec plus de sécurité en interdisant la création de compte via la configuration. 
 
-Pour fournir des commentaires ou signaler des problèmes, utilisez l’une des méthodes suivantes:
+Les appareils HoloLens2 prennent désormais en charge le CSP TenantLockdown à partir de la version20H2 de Windows Holographic. 
+
+Le CSP [TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) permet à HoloLens2 d’être lié à l’inscription de la gestion des périphériques mobiles à l’aide de Autpilot uniquement. Une fois que le nœud RequireNetworkInOOBE du CSP TenantLockdown est défini sur la valeur true ou false (initialement définie) sur HoloLens2, cette valeur reste sur l’appareil malgré le redémarrage, les mises à jour du système d’exploitation, etc. 
+
+Une fois que le nœud RequireNetworkInOOBE du CSP TenantLockdown est défini sur true sur HoloLens2, l’application OOBE attend indéfiniment que le profil Autopilot soit téléchargé et appliqué avec succès, après la connectivité réseau. 
+
+Une fois que le nœud RequireNetworkInOOBE du CSP TenantLockdown est défini sur true sur HoloLens2, les opérations suivantes ne sont pas autorisées dans l’application OOBE: 
+- Créer un utilisateur local à l’aide de la configuration de l’exécution 
+- Exécuter une opération de jointure AAD via la configuration de l’exécution 
+- Sélectionner le propriétaire de l’appareil dans l’application OOBE 
+
+### Comment définir cette configuration à l’aide de Intune? 
+1. Créez un profil de configuration de périphérique URI OMA personnalisé et spécifiez true pour le nœud RequireNetworkInOOBE comme indiqué ci-dessous.
+La valeur OMA-URI doit être ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Définition du verrouillage du client via OMA-URI](images/hololens-tenant-lockdown.png)
+
+1. Créez un groupe et attribuez le profil de configuration de périphérique à ce groupe d’appareils. 
+
+1. Faites de l’appareil HoloLens2 un membre du groupe créé à l’étape précédente et déclenchez la synchronisation.  
+
+Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois que cette configuration d’appareil s’applique correctement sur l’appareil Hololens2, les effets de TenantLockdown seront actifs.
+
+### Comment annuler la configuration de RequireNetworkInOOBE de TenantLockdown sur HoloLens2 avec Intune? 
+1. Supprimez HoloLens2 du groupe d’appareils auquel la configuration d’appareil créée ci-dessus a été précédemment affectée. 
+
+1. Créez un profil de configuration de périphérique basé sur OMA URI personnalisé et spécifiez false pour RequireNetworkInOOBE comme indiqué ci-dessous. La valeur OMA-URI doit être ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Capture d’écran de la définition de RequireNetworkInOOBE sur false via un URI OMA dans Intune](images/hololens-tenant-lockdown-false.png)
+
+1. Créez un groupe et attribuez le profil de configuration de périphérique à ce groupe d’appareils. 
+
+1. Faites de l’appareil HoloLens2 un membre du groupe créé à l’étape précédente et déclenchez la synchronisation.
+
+Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois que cette configuration d’appareil s’applique avec succès sur l’appareil Hololens2, les effets de TenantLockdown seront inactifs. 
+
+### Que se passe-t-il pendant le processus OOBE, si le profil Autopilot n’est pas affecté sur un HoloLens après la définition de TenantLockdown sur true. 
+L’application OOBE attend indéfiniment le téléchargement du profil AutoPilot et la boîte de dialogue suivante s’affichera. Afin de supprimer les effets de TenantLockdown, l’appareil doit d’abord être inscrit auprès de son client d’origine à l’aide de Autopilot uniquement et RequireNetworkInOOBE doit être annulé comme décrit à l’étape précédente avant que les restrictions introduites par le CSP TenantLockdown ne soient supprimées. 
+
+![Vue de l’appareil lorsque la stratégie est appliquée à l’appareil.](images/hololens-autopilot-lockdown.png)
+
+## Commentaires sur AutoPilot
+
+Pour donner votre avis ou signaler des problèmes, utilisez l’une des méthodes suivantes:
 
 - Utilisez l’application Hub de commentaires. Cette application est accessible depuis un ordinateur connecté à HoloLens. Dans le Hub de commentaires, sélectionnez la catégorie **Gestion d’entreprise** > **Appareil**.  
 

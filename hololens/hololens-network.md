@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 7932ba493f8434c0fa5fc7a0efdd4d43eedd51bd
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009522"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163047"
 ---
 # Connecter HoloLens à un réseau
 
@@ -54,6 +54,97 @@ Si vous rencontrez des problèmes lors de la connexion à la Wi-Fi, consultez [J
 
 Lorsque vous connectez un compte d’entreprise ou organisationnel sur l’appareil, il peut également appliquer une stratégie de gestion des appareils mobiles (GDM), si la stratégie est configurée par votre administrateur informatique.
 
+## Connecter HoloLens au réseau Wi-Fi d’entreprise
+
+Les profils Wi-Fi d’entreprise utilisent le protocole d’authentification extensible (EAP) pour authentifier les connexions Wi-Fi. Le profil Wi-Fi d’entreprise HoloLens peut être configuré via GPM ou un package de configuration créé par le [Concepteur de configuration Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages).
+
+Pour l’appareil géré par MicrosoftIntune, consultez [Intune](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) pour obtenir des instructions de configuration.
+
+Pour créer un package de configuration Wi-Fi dans le Concepteur de configuration Windows, un fichier .xml de profil Wi-Fi préconfiguré est requis. Voici un exemple de profil Wi-Fi pour WPA2-Enterprise avec authentification EAP-TLS:
+
+``` xml
+<?xml version="1.0"?> 
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"> 
+    <name>SampleEapTlsProfile</name> 
+    <SSIDConfig> 
+        <SSID> 
+            <hex>53616d706c65</hex> 
+            <name>Sample</name> 
+        </SSID> 
+        <nonBroadcast>true</nonBroadcast> 
+    </SSIDConfig> 
+    <connectionType>ESS</connectionType> 
+    <connectionMode>auto</connectionMode> 
+    <autoSwitch>false</autoSwitch> 
+    <MSM> 
+        <security> 
+            <authEncryption> 
+                <authentication>WPA2</authentication> 
+                <encryption>AES</encryption> 
+                <useOneX>true</useOneX> 
+                <FIPSMode xmlns="http://www.microsoft.com/networking/WLAN/profile/v2">false</FIPSMode> 
+            </authEncryption> 
+            <PMKCacheMode>disabled</PMKCacheMode> 
+            <OneX xmlns="http://www.microsoft.com/networking/OneX/v1"> 
+                <authMode>machine</authMode> 
+                <EAPConfig> 
+                    <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> 
+                        <EapMethod> 
+                            <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type> 
+                            <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId> 
+                            <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType> 
+                            <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId> 
+                        </EapMethod> 
+                        <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> 
+                            <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"> 
+                                <Type>13</Type> 
+                                <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1"> 
+                                    <CredentialsSource><CertificateStore><SimpleCertSelection>true</SimpleCertSelection> 
+                                        </CertificateStore> 
+                                    </CredentialsSource> 
+                                    <ServerValidation> 
+                                        <DisableUserPromptForServerValidation>false</DisableUserPromptForServerValidation> 
+                                        <ServerNames></ServerNames> 
+                                        <TrustedRootCA>00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13</TrustedRootCA> 
+                                    </ServerValidation> 
+                                    <DifferentUsername>false</DifferentUsername> 
+                                    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation> 
+                                    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName> 
+                                </EapType> 
+                            </Eap> 
+                        </Config> 
+                    </EapHostConfig> 
+                </EAPConfig> 
+            </OneX> 
+        </security> 
+    </MSM> 
+</WLANProfile> 
+```
+
+
+Il se peut que le certificat d’autorité de certification racine du serveur et le certificat client doivent être configurés sur l’appareil en fonction du type d’EAP.
+
+Ressources supplémentaires:
+
+- Schéma WLANv1Profile: [[MS-GPWL]: Schéma du profil LAN sans fil v1 | Documents Microsoft](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- Schéma EAP-TLS: [[MS-GPWL]: schéma Microsoft EAP TLS | Documents Microsoft](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+
+### Résolution des problèmes d’EAP
+
+1. Vérifiez que les paramètres de votre profil Wi-Fi sont corrects:
+   1. Le type EAP est correctement configuré. Types d’EAP communs: EAP-TLS (13), EAP-TTLS (21) et PEAP (25).
+   1. Le nom SSID du Wi-Fi est correct et correspond à la chaîne HEX.
+   1. Pour EAP-TLS, TrustedRootCA contient le hachage SHA-1 du certificat d’autorité de certification racine de confiance du serveur. Sur un PC Windows, la commande &quot;certutil.exe -dump cert\_file\_name&quot; affiche la chaîne de hachage SHA-1 d’un certificat.
+1. Collectez la capture de paquets réseau sur les journaux du point d’accès, du contrôleur ou du serveur AAA pour savoir où la session EAP échoue.
+   1. Si l’identité EAP fournie par HoloLens n’est pas attendue, vérifiez si l’identité a été correctement configurée via le profil Wi-Fi ou le certificat client.
+   1. Si le serveur rejette le certificat client HoloLens, vérifiez si le certificat client requis a été configuré sur l’appareil.
+   1. Si HoloLens rejette le certificat de serveur, vérifiez si le certificat d’autorité de certification racine du serveur a été configuré sur HoloLens.
+1. Si le profil d’entreprise est configuré via le package de configuration Wi-Fi, envisagez d’appliquer le package de configuration sur un PC Windows10. Si le problème persiste sur les PC Windows10, suivez le [Guide de résolution des problèmes de l’authentification du client 802.1X](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
+1. Donnez votre avis via le [Hub de commentaires](https://docs.microsoft.com/hololens/hololens-feedback).
+
+### Ressources supplémentaires:
+- [Exporter les paramètres Wi-Fi depuis un appareil Windows](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+
 ## VPN
 Le VPN offre une connexion et un accès plus sécurisés au réseau de votre entreprise et à Internet. HoloLens2 prend en charge le client VPN intégré et le plug-in VPN de la plateforme Windows universelle (UWP). 
 
@@ -62,12 +153,144 @@ Protocoles VPN intégrés pris en charge:
 - L2TP
 - PPTP
 
-Si l’authentification pour le client VPN intégré fait appel à un certificat, vous devez ajouter le certificat client nécessaire au magasin de certificats de l’utilisateur. Pour déterminer si un plug-in VPN tiers prend en charge HoloLens2, accédez à Store pour trouver l’application VPN. Ensuite, vérifiez si HoloLens est répertorié comme appareil pris en charge, puis, dans la page Configuration requise, si l’application prend en charge l’architecture ARM ou ARM64. HoloLens ne prend en charge que les applications de plateforme Windows universelles pour les VPN tiers.
+Si l’authentification pour le client VPN intégré fait appel à un certificat, vous devez ajouter le certificat client nécessaire au magasin de certificats de l’utilisateur. Pour déterminer si un plug-in VPN tiers prend en charge HoloLens2, accédez à Store pour trouver l’application VPN. Ensuite, vérifiez si HoloLens est répertorié comme appareil pris en charge, puis, dans la page Configuration requise, si l’application prend en charge l’architecture ARM ou ARM64. HoloLens prend uniquement en charge les applications de la plateforme Windows universelle pour les VPN tiers.
 
-Le VPN n’est pas activé par défaut, mais vous pouvez l’activer manuellement en ouvrant l’application **Paramètres**, puis et en accédant à **Réseau et Internet -> VPN**. Vous pouvez gérer le VPN par GPM via [Paramètres/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn), puis le définir via [Vpnv2-stratégie csp](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+ Vous pouvez gérer les VPN avec GPM via [Paramètres/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn), puis le définir via la [stratégie Vpnv2-csp](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+
 Si vous souhaitez en savoir plus sur [la configuration du VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn), veuillez consulter [ces guides](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
 
-## Désactivation de Wi-Fi sur HoloLens (1regénération)
+### VPN via une interface utilisateur
+
+Le VPN n’est pas activé par défaut. Vous pouvez l’activer manuellement en ouvrant l’application **Paramètres**, puis en accédant à **Réseau et Internet -> VPN**.
+1. Sélectionnez un fournisseur VPN.
+1. Créez un nom de connexion. 
+1. Entrez le nom ou l’adresse de votre serveur.
+1. Sélectionnez le type de VPN.
+1. Sélectionnez le type d’informations de connexion. 
+1. Ajoutez éventuellement le nom d’utilisateur et le mot de passe.
+1. Appliquez les paramètres VPN. 
+
+![Paramètres du VPN HoloLens](./images/vpn-settings-ui.jpg)
+
+### VPN défini via le package de configuration
+
+> [!TIP] 
+> Dans la version20H2 de Windows Holographic, nous avons résolu un problème de configuration de proxy pour la connexion VPN. Si vous envisagez d’utiliser ce flux, pensez à mettre à niveau les appareils vers cette version.
+
+1. Lancez le Concepteur de configuration Windows.
+1. Cliquez sur mise en **Configurer les appareils HoloLens**, puis sélectionnez l’appareil cible et cliquez sur **suivant**.
+1. Entrez le nom et le chemin du package.
+1. Cliquez sur **Basculer vers l’éditeur avancé**.
+1. Ouvrez les **Paramètres d’exécution** -> **ConnectivityProfiles** -> **VPN** -> **VPNSettings**.
+1. Configurer VPNProfileName
+1. Sélectionnez le ProfileType: **Natif** ou **Tiers**.
+    1. Pour le profil Natif, sélectionnez **NativeProtocolType**, puis configurez le serveur, la stratégie de routage, le type d’authentification et d’autres paramètres.
+    1. Pour le profil «Tiers», configurez l’URL du serveur, le nom de la famille du package de l’application du plug-in VPN (seulement trois prédéfinis) et les configurations personnalisées.
+1. Exportez votre package.
+1. Connectez votre HoloLens et copiez le fichier. ppkg sur l’appareil. 
+1. Sur HoloLens, appliquez le VPN .ppkg en ouvrant le menu Démarrer, puis en sélectionnant **Paramètres** -> **Compte** -> **Accès professionnel ou scolaire** -> **Ajouter ou supprimer un package de configuration** -> Sélectionnez le package de votre VPN.
+
+
+### Configurer un VPN via Intune
+Il suffit de suivre les documents Intune pour commencer. Lorsque vous suivez ces étapes, n’oubliez pas les protocoles VPN intégrés pris en charge par les appareils HoloLens. 
+
+[Créer des profils VPN pour se connecter aux serveurs VPN dans Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure).
+
+[Paramètres de l’appareil Windows10 et Windows Holographic pour ajouter des connexions VPN à l’aide d’Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10).
+
+Lorsque vous avez terminé, pensez à [affecter le profil](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
+
+### VPN via des solutions GPM tierces
+Exemple de connexion VPN tierce:
+```xml
+<!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
+      <Add>
+        <CmdID>10001</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/ServerUrlList</LocURI>
+          </Target>
+          <Data>selfhost.corp.contoso.com</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN Plugin AppX Package ID (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/PluginPackageFamilyName</LocURI>
+          </Target>
+          <Data>TestVpnPluginApp-SL_8wekyb3d8bbwe</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure Microsoft's Custom XML (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/CustomConfiguration</LocURI>
+          </Target>          <Data><pluginschema><ipAddress>auto</ipAddress><port>443</port><networksettings><routes><includev4><route><address>172.10.10.0</address><prefix>24</prefix></route></includev4></routes><namespaces><namespace><space>.vpnbackend.com</space><dnsservers><server>172.10.10.11</server></dnsservers></namespace></namespaces></networksettings></pluginschema></Data>
+        </Item>
+      </Add>
+```
+
+Exemple de VPN IKEv2 natif:
+```xml
+      <Add>
+        <CmdID>10001</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Servers</LocURI>
+          </Target>
+          <Data>Selfhost.corp.contoso.com</Data>
+        </Item>
+      </Add>
+
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/RoutingPolicyType</LocURI>
+          </Target>
+          <Data>ForceTunnel</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN Protocol Type (L2tp, Pptp, Ikev2) -->
+      <Add>
+        <CmdID>10003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/NativeProtocolType</LocURI>
+          </Target>
+          <Data>Ikev2</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN User Method (Mschapv2, Eap) -->
+      <Add>
+        <CmdID>10004</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/UserMethod</LocURI>
+          </Target>
+          <Data>Eap</Data>
+        </Item>
+      </Add>
+
+      <Add>
+        <CmdID>10004</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/Eap/Configuration</LocURI>
+          </Target>
+          <Data>EAP_configuration_xml_content</Data>
+        </Item>
+      </Add>
+```
+## Désactiver le Wi-Fi sur HoloLens (premièregénération)
 
 ### Utilisation de l’application Paramètres sur HoloLens
 

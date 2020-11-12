@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163056"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165038"
 ---
 # Améliorer la qualité visuelle et le confort
 
@@ -40,15 +40,15 @@ HoloLens 2 demande à l’utilisateur d’étalonner l’appareil dans les cas s
 - L'appareil est retiré et remis en marche et l'une des circonstances ci-dessus s'applique 
 
 
-![Invite de calibrage pour le suivi des yeux.](./images/07-et-adjust-for-your-eyes.png)
+![Invite de calibrage pour l’adaptation aux yeux.](./images/07-et-adjust-for-your-eyes.png)
 
 Au cours de ce processus, vous devez regarder un ensemble de cibles (gemmes). Si vous clignotez pendant l’étalonnage, essayez de rester concentré sur les gemmes au lieu d’autres objets dans la salle.  Cela permet à HoloLens d’en savoir plus sur la position de votre œil pour afficher votre univers holographique.
 
-![Invite de calibrage indiquant aux utilisateurs de rester immobile et de suivre les points des yeux.](./images/07-et-hold-head-still.png)
+![Invite de calibration indiquant aux utilisateurs de garder la tête fixe et de suivre les points avec leurs yeux.](./images/07-et-hold-head-still.png)
 
 ![Invite de calibrage avec un exemple de gemme.](./images/08-et-gems.png)
 
-![Réglage d’une invite de calibrage.](./images/09-et-adjusting.png)
+![Ajustement d’une invite de calibrage.](./images/09-et-adjusting.png)
 
 Si l’étalonnage a réussi, un écran de réussite s’affiche.  Si ce n’est pas le cas, découvrez la façon de diagnostiquer les échecs d’étalonnage [ici](#troubleshooting-hololens-2-calibration).
 
@@ -66,29 +66,35 @@ Plusieurs utilisateurs peuvent partager un appareil HoloLens 2 sans qu’il soit
 
    ![Application Paramètres présentant l’option d’étalonnage des yeux](./images/C-Settings.Calibration.png)
 
-### Prise en charge de la position automatique des yeux
-- Nous proposons désormais une plus grande précision pour le positionnement de l’hologramme grâce à la prise en charge de la position automatique des yeux pour un confort visuel élevé et une qualité d’affichage améliorée. 
+### Prise en charge Automatique de la Position des Yeux
 
-Dans HoloLens2, la position des yeux permet un positionnement précis de l’hologramme, une expérience visuelle agréable et une qualité d’affichage améliorée. La positions des yeux est calculée dans le cadre du résultat du suivi oculaire. Cependant, cela nécessite que chaque utilisateur effectue un calibrage du suivi oculaire, même lorsque l’expérience ne nécessite pas l’utilisation du regard.
+Dans HoloLens 2, les positions des yeux permettent un positionnement précis des hologrammes, un affichage confortable et une meilleure qualité d’affichage. Les positions des yeux sont calculées en interne dans le cadre du calcul du suivi oculaire. Toutefois, cela nécessite que chaque utilisateur parcourt le calibrage du suivi oculaire, même lorsque l’utilisation ne nécessite pas le pointage du regard.
 
-La **Position automatique des yeux** permet à ces scénarios sans interaction de calculer la position des yeux de l’utilisateur.  La Position automatique des yeux commence à fonctionner automatiquement en arrière-plan dès que l’utilisateur allume l’appareil. Si l’utilisateur n’a pas encore effectué de suivi oculaire, la position automatique des yeux commencera à fournir la position des yeux de l’utilisateur au système d’affichage après un petit temps de traitement. Ce temps de traitement est généralement compris entre 20 et 60secondes. Les données utilisateur ne sont pas conservées sur l’appareil et, par conséquent, ce processus est répété si l’utilisateur éteint l’appareil puis le rallume ou si l’appareil redémarre ou sort du mode veille.  
+La **Position Automatique des Yeux** permet à ces scénarios sans interaction de calculer la position des yeux de l’utilisateur. La Position automatique des yeux commence à fonctionner automatiquement en arrière-plan dès que l’utilisateur allume l’appareil. Si l’utilisateur n’a pas encore effectué de suivi oculaire, la Position Automatique des Yeux commencera à fournir la position des yeux de l’utilisateur au système d’affichage après un temps de traitement de 20 à 30 secondes. Les données utilisateur ne sont pas conservées sur l’appareil et, par conséquent, ce processus est répété si l’utilisateur éteint l’appareil puis le rallume ou si l’appareil redémarre ou sort du mode veille.
 
-Il existe certaines modifications de comportement système avec la fonctionnalité de position automatique des yeux quand un utilisateur n’ayant pas effectué de calibrage utilise l’appareil. Un utilisateur n’ayant pas effectué de calibrage fait référence à une personne qui n’a pas encore effectué le processus de calibrage du suivi oculaire sur l’appareil.
+Il existe certaines modifications de comportement système avec la fonctionnalité de position automatique des yeux quand un utilisateur n’ayant pas effectué de calibrage utilise l’appareil. Dans ce contexte, un utilisateur non calibré fait référence à une personne qui n’a pas encore parcouru le processus de calibrage du suivi oculaire sur l’appareil.
 
-|     Application active                           |     Ancien comportement                                   |     Comportement pour Windows HWindows Holographic, version20H2 et ultérieures                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     Application non compatible avec le regard ou Holographic Shell    |     L’invite de calibrage du suivi oculaire est affichée.    |     Aucune invite n’est affichée.                                                                                |
-|     Application compatible avec le regard                             |     L’invite de calibrage du suivi oculaire est affichée.    |     L’invite de calibrage du suivi oculaire s’affiche uniquement lorsque l’application accède au flux de regard.     |
+| Application active | Comportement Antérieur | Comportement de Windows Holographique, version 20H2 Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| Application non compatible avec le regard ou Holographic Shell |Affichage du dialogue de l’invite de calibrage du suivi oculaire. | Aucune invite n’est affichée. |
+| Application compatible avec le regard | Affichage du dialogue de l’invite de calibrage du suivi oculaire. | L’invite de calibrage du suivi oculaire s’affiche uniquement lorsque l’application accède à un flux du regard. |
 
- Si l’utilisateur passe d’une application non compatible avec le regard à une application qui accède aux données du regard, l’invite de calibrage s’affiche. Le flux Out Of Box Experience ne sera pas modifié. 
- 
-Pour les expériences nécessitant des informations visuelles ou un positionnement d’hologramme très précis, nous vous recommandons d’effectuer un calibrage du suivi oculaire à partir de l’invite de calibrage du suivi oculaire ou en lançant l’application Paramètres à partir du menu Démarrer, puis en sélectionnant **Système > Calibrage > Calibrage oculaire > Effectuer un calibrage oculaire**.
+Si l’utilisateur passe d’une application non compatible avec le regard à une application qui accède aux données du regard, l’invite de calibrage s’affiche. 
 
-**Problèmes connus**
- - Nous travaillons à la résolution d’un problème dans lequel le processus hôte du pilote de suivi oculaire pourrait se bloquer lors de l’exécution sous une charge mémoire importante. Le processus hôte du pilote de suivi oculaire doit procéder à une récupération automatique.
+Tout autre comportement du système est semblable à celui d’un utilisateur actuel n’ayant pas de calibrage du suivi oculaire actif. Par exemple, le geste de démarrage à une main ne sera pas activé. Aucune modification n’est apportée aux fonctionnalités Out-Of-Box-Experience de la configuration initiale.
 
+Dans le cas d’expériences nécessitant des données du regard ou un positionnement d’hologramme très précis, nous conseillons aux utilisateurs sans calibrage d’exécuter le calibrage du suivi oculaire. Vous pouvez y accéder à partir de l’invite de calibrage du suivi oculaire ou en lançant l’application des Paramètres à partir du menu de démarrage, puis en sélectionnant **Système > Calibration > Exécuter la calibration des yeux**.
 
-### Résolution des problèmes de calibrage d’HoloLens2
+#### Invite de Calibrage Différé
+
+Avec la Position Automatique des Yeux, le dialogue d’invite de Calibration du Suivi Oculaire est différé jusqu’à ce qu’une application demande des Données de Regard. Cela permet de s’assurer que l’utilisateur ne dispose d’aucune invite lorsque l’application active ne nécessite pas de regard. Si l’application requiert des données de regard et que l’utilisateur actuel n’est pas calibrée, l’utilisateur reçoit une invite de calibrage. Ce comportement peut être utilisé pour afficher l’invite de calibration du suivi oculaire pour une durée appropriée de l’utilisation. Cette méthode est recommandée pour les raisons suivantes:
+
+1.  Le dialogue d’Invite de Calibration du Suivi Oculaire fournit à l’utilisateur des détails sur la nécessité du suivi oculaire.
+2.  Offre à l’utilisateur la possibilité de décliner la calibration des yeux.
+
+Si l’utilisateur choisit de lancer la Calibration du Suivi Oculaire, la mise au point retourne à l’application d’origine après le calibrage. 
+
+### Résolution des problèmes de calibrage de HoloLens2
 
 L’étalonnage devrait fonctionner pour la plupart des personnes, mais ce n’est pas toujours le cas.
   
