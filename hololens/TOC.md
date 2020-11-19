@@ -11,8 +11,8 @@
 ### [Affichage HoloLens 2](hololens2-display.md)
 ### [Nettoyage HoloLens2: FAQ](hololens2-maintenance.md)
 ### [Langues prises en charge pour HoloLens 2](hololens2-language-support.md)
-### [Naviguer dans HoloLens2](hololens2-basic-usage.md)
-### [FAQ sur l’édition de développement HoloLens](hololens2-development-edition-faq.md)
+### [Savoir maîtriser HoloLens2](hololens2-basic-usage.md)
+### [FAQ sur l’édition de développement HoloLens 2](hololens2-development-edition-faq.md)
 
 
 ## Prise en main de HoloLens (1regénération)

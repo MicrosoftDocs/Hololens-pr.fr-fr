@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168525"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176896"
 ---
 # Windows Autopilot pour HoloLens2
 
@@ -325,8 +325,8 @@ L’application OOBE attend indéfiniment le téléchargement du profil AutoPilo
 
 ## Problèmes connus
 
-- L’installation de l’application basée sur le contexte de l’appareil, configurée dans Intune, ne fonctionne pas pour le moment.
-- Lorsque vous configurez Autopilot via un réseau Wi-Fi, il se peut que le profil Autopilot ne soit pas téléchargé lorsque la connexion Internet est établie pour la première fois et que le Contrat de Licence de l’Utilisateur Final (CLUF) est présenté. L’utilisateur a la possibilité de continuer avec des expériences de configuration non Autopilot. Pour réessayer la configuration avec Autopilot, mettez l’appareil en veille, puis rallumez-le, ou redémarrez l’appareil et laissez-le réessayer.
+- L’installation de l’application basée sur le contexte de l’appareil, configurée dans Intune, ne fonctionne pas pour le moment. [En savoir plus sur les installations de contexte de périphérique et d’utilisateur.](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   Lors de la configuration d’Autopilot sur un réseauWi-Fi, il se peut que le profile Autopilot n’est pas téléchargé lors de la première connexion à Internet. Dans ce cas, le Contrat de Licence Utilisateur Final (CLUF) est présenté et l’utilisateur a la possibilité de procéder à l’installation sans AutoPilot. Pour réessayer la configuration avec Autopilot, mettez l’appareil en veille, puis rallumez-le, ou redémarrez l’appareil et laissez-le réessayer.
 
 ### Résolution des problèmes
 
