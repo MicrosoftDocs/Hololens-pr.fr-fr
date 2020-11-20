@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
+ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162972"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182005"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -53,7 +53,10 @@ Lorsque vous planifiez votre kiosque, vous devez être en mesure de répondre au
 
 Vous pouvez configurer n’importe quel appareil HoloLens 2 pour utiliser le mode plein écran.
 
-Pour configurer un appareil HoloLens (1er génération) pour utiliser le mode plein écran, vous devez d’abord vous assurer que l’appareil exécute Windows 10, version 1803 ou une version ultérieure. Si vous avez utilisé l’outil de récupération d’appareils Windows pour récupérer votre appareil HoloLens (1er génération) sur sa Build par défaut, ou si vous avez installé les dernières mises à jour, votre appareil est prêt à être configuré.
+> [!IMPORTANT]
+> Le mode Kiosk n’est disponible que si l’appareil utilise Windows holographique pour les entreprises. Tous les périphériques HoloLens 2 sont livrés avec Windows holographique pour les entreprises et il n’y a pas d’autres éditions. Tous les appareils HoloLens 2 peuvent exécuter le mode Kiosk hors de la fenêtre.
+>
+> Les appareils HoloLens (1ère génération) doivent être mis à niveau en termes de build et de version du système d’exploitation. Voici des informations supplémentaires sur la mise à jour d’un HoloLens (1ère génération) vers [Windows holographique pour les entreprises](hololens1-upgrade-enterprise.md) . Pour mettre à jour un appareil HoloLens (1er génération) pour utiliser le mode plein écran, vous devez d’abord vous assurer que l’appareil exécute Windows 10, version 1803 ou une version ultérieure. Si vous avez utilisé l’outil de récupération d’appareils Windows pour récupérer votre appareil HoloLens (1er génération) sur sa Build par défaut, ou si vous avez installé les dernières mises à jour, votre appareil est prêt à être configuré.
 
 > [!IMPORTANT]  
 > Pour vous aider à protéger les appareils qui s’exécutent en mode plein écran, envisagez d’ajouter des stratégies de gestion des appareils qui désactivent les fonctionnalités telles que la connectivité USB. Vous pouvez également vérifier les paramètres de votre anneau de mise à jour pour vous assurer que les mises à jour automatiques ne se produisent pas pendant les heures d’activité.
@@ -415,9 +418,6 @@ L’article «configurer HoloLens à l’aide d’un package de mise à service�
 ## Utiliser Windows Device Portal pour configurer une borne sur une seule application
 
 Pour configurer le mode plein écran à l’aide de Windows Device Portal, procédez comme suit.
-
-> [!IMPORTANT]
-> Le mode kiosque est disponible uniquement si l’appareil est équipé [de Windows holographique pour les entreprises](hololens1-upgrade-enterprise.md) .
 
 1. [Configurer l’appareil HoloLens pour qu’il utilise Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). Le Device Portal est un serveur Web situé sur l'appareil auquel vous pouvez vous connecter depuis un navigateur Web sur votre PC.
 
