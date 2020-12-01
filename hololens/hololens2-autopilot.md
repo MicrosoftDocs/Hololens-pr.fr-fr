@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 5090a433b3d06e92cd36bdadbfbae3758432bb41
-ms.sourcegitcommit: 8656379a4871e118b9e06e72eab1dbcc8eb3cd42
+ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
+ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182445"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "11192444"
 ---
 # Windows Autopilot pour HoloLens2
 
@@ -223,11 +223,8 @@ Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens2 passe
     
     - Connectez votre appareil avec des adaptateurs «USB-C vers Wifi» pour une connexion Internet sans fil et laissez HoloLens2 compléter l’expérience Autopilot automatiquement.
 
-       > [!NOTE]
-       > L’utilisation de Autopilot impactera le [propriétaire de l’appareil](security-adminless-os.md#device-owner).
-   
-       > [!IMPORTANT]  
-       > Les appareils qui tentent d’utiliser les réseaux Wi-Fi dans l’application OOBE pour Autopilot doivent disposés de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2).
+        > [!IMPORTANT]  
+       > Les appareils qui tentent d’utiliser les réseaux Wi-Fi dans l’application OOBE pour Autopilot doivent disposer de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2).
        >
        > Pour les périphériques utilisant des adaptateurs Ethernet, vous devez connecter le périphérique au réseau avant le démarrage de l’application Out-of-the-Box-Experience (OOBE). L’appareil détermine s’il est configuré en tant qu’appareil Autopilot lorsqu’il est sur le premier écran de l’application OOBE. Si l’appareil ne parvient pas à se connecter au réseau, ou si vous décidez de ne pas configurer l’appareil en tant qu’appareil Autopilot, vous ne pourrez pas utiliser la mise en service Autopilot à une date ultérieure. Au lieu de cela, vous devrez recommencer cette procédure pour configurer l’appareil en tant qu’appareil Autopilot.
 
