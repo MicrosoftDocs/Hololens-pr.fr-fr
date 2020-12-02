@@ -1,10 +1,10 @@
 ---
 title: Problèmes connus avec HoloLens
-description: Voici la liste des problèmes connus qui peuvent affecter les développeurs HoloLens.
+description: Voici la liste des problèmes connus qui peuvent affecter les clients et les développeurs HoloLens.
 keywords: résoudre les problèmes, problèmes connus, aide
 author: mattzmsft
 ms.author: mazeller
-ms.date: 4/20/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.custom:
 - CI 111456
@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 6947fe2232701fb9451291bd07e1c896979861d5
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: e5450cc41406416ec1b6e7c0bd7c8205056cb7d4
+ms.sourcegitcommit: bf9a784d1b5f221d0766c5ae90efa4e9a5979b84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940194"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "11194622"
 ---
 # Problèmes connus avec HoloLens
 
@@ -28,7 +28,7 @@ Voici la liste actuelle des problèmes connus des appareils HoloLens. Activez d�
 
 >[!NOTE]
 > - Si vous rencontrez un problème qui ne se bloque pas, signalez-le sur votre appareil HoloLens via le [Hub de commentaires](hololens-feedback.md).
-> - Si le problème que vous rencontrez vous empêche, dans addtion de classer votre avis, envoyez  [une demande de support](https://aka.ms/hlsupport).
+> - Si le problème que vous rencontrez se bloque, en plus des commentaires concernant le classement, envoyez [une demande d’assistance](https://aka.ms/hlsupport).
 
 - [Problèmes connus pour toutes les générations HoloLens](#known-issues-for-all-hololens-generations)
 - [Problèmes connus pour les appareils HoloLens 2](#known-issues-for-hololens-2-devices)
@@ -45,7 +45,9 @@ Voici la liste actuelle des problèmes connus des appareils HoloLens. Activez d�
 ### WindowsDevicePortal
 
 - La fonctionnalité d’aperçu instantané de la capture d’une réalité mixte risque de présenter plusieurs secondes de latence.
+
 - Sur la page d’entrée virtuelle, les contrôles de mouvement et de défilement situés sous la section gestes virtuels ne fonctionnent pas. L’utilisation de ces dernières n’aura aucun effet. Le clavier virtuel sur la même page fonctionne correctement.
+
 - Après avoir activé le mode développeur dans les paramètres, l’activation de Device Portal peut prendre quelques secondes.
 
 ### Chargement de l’appareil photo OneDrive
@@ -53,10 +55,18 @@ Voici la liste actuelle des problèmes connus des appareils HoloLens. Activez d�
 L’application OneDrive pour HoloLens ne prend pas en charge le chargement de caméra automatique pour les comptes professionnels ou scolaires.
 
 Contournement
+
 - Si vous êtes viable pour votre entreprise, le chargement automatique des caméras est pris en charge sur les comptes Microsoft Consumer. Vous pouvez vous connecter à votre compte Microsoft en plus de votre compte professionnel ou scolaire (l’application OneDrive prend en charge la connexion double). À partir du profil de votre compte Microsoft dans OneDrive, vous pouvez activer le chargement automatique de la pellicule en arrière-plan.
+
 - Si vous ne pouvez pas utiliser en toute sécurité un compte Microsoft pour le chargement automatique de vos photos, vous pouvez télécharger manuellement des photos sur votre compte professionnel ou scolaire à partir de l’application OneDrive. Pour cela, assurez-vous que vous êtes connecté à votre compte professionnel ou scolaire dans l’application OneDrive. Sélectionnez le **+** bouton, puis **Télécharger**. Recherchez les photos ou vidéos que vous voulez charger en accédant à **images > pellicule**. Sélectionnez les photos ou vidéos que vous voulez télécharger, puis cliquez sur le bouton **ouvrir** .
 
 ## Problèmes connus pour les appareils HoloLens 2
+
+### Échec du démarrage de Microsoft Edge
+
+Quelques clients ont signalé un problème au démarrage de Microsoft Edge. Pour ces clients, le problème persiste au redémarrage et ne peut pas être résolu avec des mises à jour de Windows ou de l’application. Si vous rencontrez ce problème et que vous avez vérifié que [Windows est à jour](hololens-updates.md#manually-check-for-updates), vous pouvez le faire à partir de l' [application Hub de commentaires](hololens-feedback.md) en utilisant les catégories et sous-catégories suivantes: installer et mettre à jour > Télécharger, installer et configurer Windows Update.
+
+Il n’existe aucune solution connue, car nous n’avons pas pu provoquer le problème à l’origine du problème. Le classement d’un bogue via le hub de commentaires va vous aider à effectuer notre enquête.
 
 ### Le clavier ne bascule pas en caractères spéciaux
 
@@ -87,8 +97,11 @@ Solutions de contournement:
     - Faire clignoter une version non-Insider. Une des mises à jour mensuelles standard. 
     - Restez sur la version Insider preview
 - Refaire clignoter l’appareil
+
     1. Mettre le [HoloLens 2 en mode clignotant](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) manuellement en le sélectionnant sans être connecté. Puis tout en maintenant le volume enfoncé, appuyez sur le bouton d’alimentation.
+    
     1. Connectez-vous au PC et ouvrez l’Assistant de récupération avancée. 
+    
     1. Éclairez le HoloLens 2 dans la build par défaut.   
 
 ## Problèmes connus pour HoloLens (1er génération)
@@ -106,11 +119,15 @@ Problème: cause profonde: les utilisateurs ayant utilisé Visual Studio 2015 ou
 
 Notre équipe travaille actuellement sur un correctif. Entre-temps, vous pouvez utiliser les étapes suivantes pour contourner le problème et vous aider à débloquer le déploiement et le débogage:  
 
-1. Ouvrir Visual Studio
+1. Ouvrez Visual Studio.
+
 1. Sélectionnez **fichier**  >  **nouveau**  >  **projet**.
+
 1. Sélectionnez **Visual C#**  >  **Windows Desktop**  >  **application de console de bureau Windows Visual C# (.NET Framework)**.
+
 1. Donnez un nom au projet (par exemple, «HoloLensDeploymentFix») et assurez-vous que l’infrastructure est définie sur au moins .NET Framework 4,5, puis sélectionnez **OK**.
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud **références** et ajoutez les références suivantes (sélectionnez la section **Parcourir** , puis sélectionnez **Parcourir**):
+
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud **références** , puis ajoutez les références suivantes (sélectionnez la section **Parcourir** et sélectionnez **Parcourir**):
 
     ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
@@ -122,9 +139,13 @@ Notre équipe travaille actuellement sur un correctif. Entre-temps, vous pouvez 
     > Si vous n’avez pas installé 10.0.18362.0, utilisez la version la plus récente que vous utilisez. 
 
 1. Cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions, puis sélectionnez **Ajouter**un  >  **élément existant**.
+
 1. Accédez à C:\Program Files (x86) \Windows Kits\10\bin\10.0.18362.0\x86 et modifiez le filtre sur **tous les fichiers (\ *. \ *)**.
+
 1. Sélectionnez les SirepClient.dll et SshClient.dll, puis sélectionnez **Ajouter**.
+
 1. Recherchez et sélectionnez les deux fichiers dans l’Explorateur de solutions (ils doivent figurer en bas de la liste des fichiers) et remplacez l’option **copier dans le répertoire de sortie** de la fenêtre **Propriétés** pour pouvoir les **copier toujours**.
+
 1. En haut du fichier, ajoutez ce qui suit à la liste d’instructions existante `using` :
 
     ```console
@@ -145,8 +166,10 @@ Notre équipe travaille actuellement sur un correctif. Entre-temps, vous pouvez 
     ```
 
 1. Sélectionnez **génération**de la  >  **solution**.
+
 1. Ouvrez une fenêtre d’invite de commandes et un CD-ROM dans le dossier qui contient le fichier. exe compilé (par exemple, C:\MyProjects\HoloLensDeploymentFix\bin\Debug).
-1. Exécutez le fichier exécutable et indiquez l’adresse IP de l’appareil en tant qu’argument de la ligne de commande. (Si vous êtes connecté à l’aide de la technologie USB, vous pouvez utiliser 127.0.0.1; sinon, utilisez l’adresse IP Wi-Fi de l’appareil.)  Par exemple, «HoloLensDeploymentFix 127.0.0.1»
+
+1. Exécutez le fichier exécutable et indiquez l’adresse IP de l’appareil en tant qu’argument de la ligne de commande. (Si vous êtes connecté à l’aide de la norme USB, vous pouvez utiliser 127.0.0.1; sinon, utilisez l’adresse IP Wi-Fi de l’appareil.)  Par exemple, «HoloLensDeploymentFix 127.0.0.1».
 
 1. Une fois que l’outil a quitté sans message (cette opération ne doit durer que quelques secondes), vous pouvez maintenant être en mesure de déployer et de déboguer depuis Visual Studio 2017 ou une version ultérieure.  Il n’est pas nécessaire de continuer à utiliser l’outil.
 
@@ -159,8 +182,9 @@ Nous vous fournirons des mises à jour supplémentaires dès qu’ils seront dis
 
 Vous pouvez être rencontré lors de la tentative de lancement du Microsoft Store et des applications sur HoloLens. Nous avons déterminé que le problème survient lorsque des mises à jour de l’application en arrière-plan déploient une nouvelle version des packages d’infrastructure dans des séquences spécifiques alors qu’une ou plusieurs de leurs applications dépendantes sont toujours en cours d’exécution. Dans ce cas, une mise à jour automatique d’application a fourni une nouvelle version de l’infrastructure native .NET (version 10.0.25531 à 10.0.27413), car les applications qui ne sont pas correctement mises à jour pour toutes les applications en cours d’exécution utilisent la version antérieure de l’infrastructure.  Le flux de la mise à jour de l’infrastructure se présente comme suit: 
 
-1. Le nouveau package d’infrastructure est téléchargé à partir du Windows Store et installé
-1. Toutes les applications utilisant l’infrastructure plus ancienne sont «mises à jour» pour utiliser la version la plus récente
+1. Le nouveau package d’infrastructure est téléchargé à partir du Windows Store et installé.
+
+1. Toutes les applications utilisant l’infrastructure plus ancienne sont «mises à jour» pour utiliser la version la plus récente.
 
 Si vous êtes interrompu avant la fin de l’étape 2, toutes les applications pour lesquelles l’infrastructure plus récente n’est pas enregistrée ne seront pas lancées à partir du menu Démarrer.  Nous pensons que toute application sur HoloLens peut être affectée par ce problème.
 
@@ -171,8 +195,11 @@ Le problème est dû au fait que le problème n’est pas à l’origine de la m
 Pour savoir si votre appareil peut procéder à la mise à jour, procédez comme suit:
 
 1. Accédez à l’application paramètres et ouvrez **mise à jour & sécurité**.
+
 1. Sélectionnez **Rechercher les mises à jour**.
-1. Si la mise à jour vers 17763,380 est disponible, veuillez effectuer la mise à jour vers cette version pour recevoir le correctif pour le bogue de blocage de l’application.
+
+1. Si la mise à jour vers 17763,380 est disponible, veuillez mettre à jour vers cette version pour recevoir le correctif pour le bogue de blocage de l’application.
+
 1. Lors de la mise à jour de cette version du système d’exploitation, les applications doivent fonctionner comme prévu.
 
 De plus, comme nous le faisons pour chaque version de système d’exploitation HoloLens, nous avons publié l’image FFU dans le [Centre de téléchargement Microsoft](https://aka.ms/hololensdownload/10.0.17763.380).
@@ -183,18 +210,24 @@ Si vous ne souhaitez pas procéder à la mise à jour, nous avons mis à jour un
 1. Utilisez le geste pour ouvrir le menu.
 1. Tentez d’ouvrir des applications incorrectes auparavant.
 1. S’il ne parvient toujours pas à démarrer, appuyez de façon prolongée sur l’icône de l’application endommagée et sélectionnez Désinstaller.
-1. Resinstall ces applications à partir du Windows Store.
+1. Réinstallez ces applications à partir du Windows Store.
 
 Si votre appareil ne parvient toujours pas à charger des applications, vous pouvez charger une version de l’infrastructure et du Runtime .NET natifs par le biais du centre de téléchargement en procédant comme suit:
 
-1. Téléchargez [ce fichier zip](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) à partir du centre de téléchargement Microsoft. Dézipper génère deux fichiers.  Microsoft. NET. native. Runtime. 1.7. AppX et Microsoft. NET. native. Framework. 1.7. AppX
-1. Veuillez vérifier que votre appareil est déverrouillé.  Si vous ne l’avez pas encore fait [, nous ne](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)vous conseillons pas d’effectuer cette procédure.
+1. Téléchargez [ce fichier zip](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) à partir du centre de téléchargement Microsoft. Dézipper génère deux fichiers.  Microsoft. NET. native. Runtime. 1.7. AppX et Microsoft. NET. native. Framework. 1.7. Appx.
+
+1. Veuillez vérifier que votre appareil est déverrouillé.  Si vous ne l’avez pas encore fait, voir [utilisation de Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) pour obtenir des instructions.
+
 1. Vous pouvez ensuite accéder à Windows Device Portal. Nous vous conseillons de le faire par le biais de la norme USB et vous le feriez en http://127.0.0.1:10080 le tapant dans votre navigateur.
+
 1. Dès lors que vous disposez de Windows Device Portal, nous avons besoin que vous deviez télécharger les deux fichiers que vous avez téléchargés. Pour cela, vous devez descendre dans la barre latérale gauche jusqu’à atteindre la section **applications** et sélectionner **applications**.
+
 1. Un écran semblable au suivant s’affiche.  Vous voulez accéder à la section «installer l' **application** » et accéder à l’emplacement où vous avez compressé ces deux fichiers Appx. Vous pouvez effectuer l’une à la fois, une fois que vous avez sélectionné la première, puis cliqué sur «Go» sous la section déploiement. Procédez ainsi pour le deuxième fichier APPX.
 
-   ![Windows Device Portal pour installer l’application installée hors Windows Store](images/20190322-DevicePortal.png)
+   ![Windows Device Portal pour installer Side-Loaded application](images/20190322-DevicePortal.png)
+   
 1. Pour le moment, nous pensons que vos applications doivent de nouveau fonctionner et que vous pouvez également accéder au Windows Store.
+
 1. Dans certains cas, il est nécessaire d’exécuter l’étape supplémentaire de lancement de l’application de visionneuse 3D avant le lancement des applications concernées. 
 
 Nous vous remercions de votre patience, car nous avons procédé à la résolution de ce problème, et nous serons heureux de continuer à travailler avec notre communauté pour créer des expériences de réalité mélangées réussies.
@@ -206,16 +239,19 @@ Nous vous remercions de votre patience, car nous avons procédé à la résoluti
 ### Visual Studio
 
 - Pour obtenir la version la plus à jour de Visual Studio recommandée pour le développement HoloLens, voir [installer les outils](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) .
+
 - Lors du déploiement d’une application à partir de Visual Studio vers votre HoloLens, le message d’erreur suivant peut s’afficher: **l’opération demandée ne peut pas être effectuée sur un fichier dont la section mappée par l’utilisateur est ouverte. (Exception de HRESULT: 0x800704C8)**. Si tel est le cas, essayez de nouveau et votre déploiement fonctionnera généralement.
 
 ### API
 
 - Dans le cas contraire, l’application positionne le [point de focalisation](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) sur l’utilisateur ou la caméra normale au mode caméra. transférer, les hologrammes n’apparaissent pas dans la réalité mixte capture de photos ou de vidéos. Tant que ce bogue n’a pas été résolu dans Windows, si les applications définissent activement le point de mise au [point](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) , il devrait s’assurer que la normale du plan est définie comme suit.
 
-### Contrôleur sans fil Xbox
+### Manette sans fil Xbox
 
 - Le contrôleur sans fil Xbox doit être mis à jour pour pouvoir être utilisé avec HoloLens. Vérifiez que vous êtes à [jour](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) avant d’essayer de jumeler votre manette avec un HoloLens.
+
 - Si vous redémarrez votre HoloLens alors que le contrôleur sans fil Xbox est connecté, le contrôleur ne se reconnecte pas automatiquement à HoloLens. Le bouton du repère clignote lorsque le contrôleur s’éteint après 3 minutes. Pour reconnecter votre contrôleur immédiatement, allumez le contrôleur en maintenant le bouton de repère enfoncé. Lorsque vous rallumez votre contrôleur, il se reconnecte à HoloLens.
+
 - Si votre HoloLens passe en mode veille alors que le contrôleur sans fil Xbox est connecté, toute entrée sur le contrôleur va sortir du casque HoloLens. Vous pouvez éviter cela en allumant votre manette lorsque vous avez travaillé.
 
 ## Problèmes connus de HoloLens Emulator
