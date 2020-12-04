@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
+ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915942"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195280"
 ---
 # Résolution des problèmes
 
@@ -45,6 +45,17 @@ Si vos hologrammes sont instables, inversement ou ne vous convient pas, essayez 
 - Augmenter la luminosité dans votre salon.
 - Lorsque vous parcourez et regardez votre environnement, le HoloLens peut les analyser plus complètement.
 - Étalonner votre HoloLens pour les yeux. Accédez à **paramètres**  >  **système**  >  **Utilities**. Sous **Étalonnage**, sélectionnez **Ouvrir l'étalonnage**.
+ 
+### Signalement de problèmes instables ou qui ne s’importent pas correctement
+ 
+1. Enregistrez-vous et une [réalité mixte](holographic-photos-and-videos.md#capture-a-mixed-reality-video) de votre problème. Cette vidéo peut être téléchargée par le biais du Hub de commentaires en tant que pièce jointe.  
+1. Activez la télémétrie complète via les **paramètres** de l’application > les diagnostics de **confidentialité**  ->  **& commentaires** et sous les **données de diagnostic facultatives** garantissent que le bouton bascule est défini **sur activé** .
+1. Obtenez les dernières résolutions d’échelle d’hologramme et de stabilité en effectuant la mise à jour vers la dernière version du [système d’exploitation Windows holographique (20H2 ou version ultérieure)](hololens-release-notes.md#windows-holographic-version-20h2). Après la mise à jour, procédez comme suit:
+    1. Supprimez tous les hologrammes grâce aux **paramètres** d’application de l' **application >-**  ->  **Holograms** >, puis sélectionnez **Supprimer tous les hologrammes** et commencer avec un nouveau plan.
+    1. Créez une nouvelle carte de votre espace en utilisant le HoloLens et en vous appuyant sur votre salon et en observant toutes les zones et surfaces de l’espace. Procédez comme suit pour 2-3 minutes.
+    1. Procéder au calibrage IPD. Accédez à **paramètres**  >  **système**  >  **Utilities**. Sous **Étalonnage**, sélectionnez **Ouvrir l'étalonnage**.
+    1. Testez à nouveau le scénario et voyez s’il persiste.
+1. Si la mise à jour ne résout pas le problème, entrez un problème au niveau du [Hub de commentaires](hololens-feedback.md). Après avoir effectué des commentaires, vous pouvez utiliser le bouton **partager** pour créer un lien à partager facile à envoyer lorsque vous contactez le support technique.
 
 ## HoloLens ne répond pas à l’entrée manuelle
 
@@ -76,7 +87,7 @@ Si HoloLens ne peut pas mapper ou charger votre espace, il passe en mode d’aff
 
 Si votre HoloLens ne peut pas identifier et charger l’espace que vous avez automatiquement, vérifiez les éléments suivants:
 
-- Vérifiez que vous êtes connecté au Wi-Fi.
+- Vérifiez que vous êtes connecté à Wi-Fi
 - Assurez-vous que la pièce est suffisamment éclairée
 - Assurez-vous que les changements importants n’ont pas été apportés à l’environnement.
 
