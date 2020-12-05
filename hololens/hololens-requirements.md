@@ -10,13 +10,13 @@ ms.reviewer: aboeger
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/30/2020
-ms.openlocfilehash: b7523b8ab38cfc37795ea6c99f9b22953baffe47
-ms.sourcegitcommit: 30e910348f5d5b68e914219c8eadb34d93770eab
+ms.date: 11/04/2020
+ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11099803"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195587"
 ---
 # HoloLens 2-déploiement et gestion d’entreprise
 
@@ -48,7 +48,7 @@ HoloLens 2 a été conçu spécifiquement pour être géré par des systèmes de
 Microsoft a conçu Windows Update for Business afin d’offrir aux administrateurs informatiques des fonctionnalités de gestion supplémentaires dans WindowsUpdate, telles que la possibilité de déployer des mises à jour sur des groupes d’appareils et de définir des fenêtres de maintenance pour l’installation des mises à jour. Pour plus d’informations sur la gestion des mises à jour de HoloLens 2, consultez la [page suivante](https://docs.microsoft.com/hololens/hololens-updates).
 
 ### Certificats
-HoloLens 2 prend en charge le déploiement de certificats via la gestion des périphériques mobiles si votre environnement nécessite des certificats pour l’authentification du réseau Wi-Fi d’entreprise ou l’accès à d’autres ressources. Certaines configurations d’infrastructure de la gestion des périphériques mobiles doivent être requises pour activer le déploiement de certificats vers HoloLens 2. Découvrez comment [préparer des certificats et des profils réseau pour HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Les informations sur Intune sont accessibles [ici](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+HoloLens 2 prend en charge le déploiement de certificats via la gestion des périphériques mobiles si votre environnement nécessite des certificats pour l’authentification réseau d’entreprise Wi-Fi ou l’accès à d’autres ressources. Certaines configurations d’infrastructure de la gestion des périphériques mobiles doivent être requises pour activer le déploiement de certificats vers HoloLens 2. Découvrez comment [préparer des certificats et des profils réseau pour HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Les informations sur Intune sont accessibles [ici](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## Configurer
 
@@ -75,7 +75,7 @@ Certains services HoloLens 2 courants nécessitant un accès au point de termina
 
 ### Déploiement de certificats
 
-Si des certificats sont requis pour accéder à des réseaux Wi-Fi d’entreprise ou à d’autres services au sein de votre organisation, HoloLens 2 prend en charge le déploiement des certificats d’utilisateur et d’appareil via la gestion des périphériques mobiles. Remarque: votre solution de gestion des périphériques mobiles (GPM) risque de nécessiter une configuration d’infrastructure supplémentaire pour déployer des certificats sur des appareils Windows 10.
+Si des certificats sont nécessaires pour accéder à des réseaux Wi-Fi d’entreprise ou à d’autres services au sein de votre organisation, HoloLens 2 prend en charge le déploiement de certificats d’utilisateur et d’appareil via la gestion des périphériques mobiles. Remarque: votre solution de gestion des périphériques mobiles (GPM) risque de nécessiter une configuration d’infrastructure supplémentaire pour déployer des certificats sur des appareils Windows 10.
 
 ### Examen de la sécurité
 
@@ -88,8 +88,8 @@ Lors du déploiement de périphériques HoloLens 2 vers un environnement d’ent
 | Paramètre d’appareil | Brève description.                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
 | [Restrictions matérielles](hololens-requirements.md#hardware-restrictions)               | Restrictions matérielles réduction de la connectivité et assistance en matière de protection des données.                        |
-| [Profils Wi-Fi](hololens-requirements.md#wi-fi-profiles)               | Configurer des profils Wi-Fi sans aucune intervention ou action de l’utilisateur.                              |
-| [Certificats](hololens-requirements.md#certificates-1)               | Fournissez l’authentification par compte et/ou Wi-Fi, le chiffrement VPN et le chiffrement SSL du contenu Web. |
+| [Profils Wi-Fi](hololens-requirements.md#wi-fi-profiles)               | Configurer des profils d' Wi-Fi sans l’intervention de l’utilisateur.                              |
+| [Certificats](hololens-requirements.md#certificates-1)               | Fournissez l’authentification du compte et/ou de l' Wi-Fi, le chiffrement VPN et le chiffrement SSL du contenu Web. |
 | [Proxy](hololens-requirements.md#proxy)              | Gérer le trafic interne.                                                                        |
 |  [VPN](hololens-requirements.md#vpn)              | Contrôle de l’accès aux applications et aux ressources sur l’intranet de leur entreprise.                               |
 | [Mode plein écran](hololens-requirements.md#kiosk-mode) | Limite les applications présentées aux utilisateurs par le biais de l’interface utilisateur. |
@@ -108,13 +108,13 @@ En savoir plus sur les autres [restrictions d’appareil courantes.](https://doc
 
 #### Profils Wi-Fi
 
-La plupart des réseaux Wi-Fi nécessitent des certificats et d’autres informations complexes pour visant à limiter et à sécuriser l’accès des utilisateurs. Ce type d’informations Wi-Fi est difficile à configurer pour les utilisateurs typiques, mais les systèmes de gestion des appareils mobiles peuvent configurer entièrement ces profils Wi-Fi sans l’intervention de l’utilisateur. Vous pouvez créer plusieurs profils Wi-Fi dans votre système GPM.
+La plupart des réseaux Wi-Fi nécessitent des certificats et d’autres informations complexes pour visant à limiter et à sécuriser l’accès des utilisateurs. Il est difficile de configurer les informations de Wi-Fi avancées pour les utilisateurs typiques, mais les systèmes de gestion des appareils mobiles peuvent configurer entièrement ces profils Wi-Fi sans l’intervention de l’utilisateur. Vous pouvez créer plusieurs profils Wi-Fi dans votre système GPM.
 
-Pour plus d’informations sur les paramètres Wi-Fi pour Windows 10, voir [paramètres WiFi de profil d’entreprise](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
+Pour plus d’informations sur les paramètres de Wi-Fi pour Windows 10, voir [paramètres WiFi de profil d’entreprise](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
 
 #### Certificats
 
-Les certificats permettent d’améliorer la sécurité en fournissant l’authentification de compte, l’authentification Wi-Fi, le chiffrement VPN et le chiffrement SSL du contenu Web. Bien que les administrateurs puissent gérer les certificats sur les appareils manuellement par le biais de la mise en service des packages, il&#39;est préférable d’utiliser votre système de gestion des applications mobiles pour gérer ces certificats tout au long de leur cycle de vie, de l’inscription au renouvellement et de la révocation. Votre système de gestion des périphériques mobiles peut déployer automatiquement ces certificats sur les appareils&#39; les magasins de certificats après l’inscription de l’appareil (à condition que le système GPM prenne en charge les normes de cryptographie par le biais du protocole SCEP ou de clé publique #12 (PKCS # 12). Le GPM peut également rechercher et supprimer des certificats client inscrits ou déclencher une nouvelle demande d’inscription avant l’expiration du certificat actuel.
+Les certificats permettent d’améliorer la sécurité en fournissant une authentification de compte, Wi-Fi l’authentification, le chiffrement VPN et le chiffrement SSL du contenu Web. Bien que les administrateurs puissent gérer les certificats sur les appareils manuellement par le biais de la mise en service des packages, il&#39;est préférable d’utiliser votre système de gestion des applications mobiles pour gérer ces certificats tout au long de leur cycle de vie, de l’inscription au renouvellement et de la révocation. Votre système de gestion des périphériques mobiles peut déployer automatiquement ces certificats sur les appareils&#39; les magasins de certificats après l’inscription de l’appareil (à condition que le système GPM prenne en charge les normes de cryptographie par le biais du protocole SCEP ou de clé publique #12 (PKCS # 12). Le GPM peut également rechercher et supprimer des certificats client inscrits ou déclencher une nouvelle demande d’inscription avant l’expiration du certificat actuel.
 
 En savoir plus sur la [préparation des certificats et des profils réseau pour HoloLens 2.](https://docs.microsoft.com/hololens/hololens-certificates-network)
 
@@ -169,7 +169,7 @@ Microsoft fournira et installera également des mises à jour de sécurité et d
 
 Les clients d’entreprise peuvent gérer l’utilisation et le processus de mise à jour sur HoloLens 2S à l’aide d’un système de gestion des périphériques mobiles. Dans la plupart des cas, les stratégies de gestion du processus de mise à jour s’appliquent aux mises à jour de fonctionnalités et qualité. En savoir plus sur la configuration de la gestion des périphériques mobiles [pour les mises à jour HoloLens](https://docs.microsoft.com/hololens/hololens-updates).
 
-### Gestion des applications 
+### Gestion des applications
 
 Les administrateurs informatiques peuvent contrôler les applications qui peuvent être installées sur le HoloLens 2 et la manière dont elles doivent être mises à jour.
 
@@ -188,3 +188,6 @@ HoloLens 2 prend en charge 3 méthodes d’effacement du périphérique
 **Réinitialisation de l’appareil à partir de paramètres:** Les utilisateurs finaux peuvent réinitialiser manuellement le HoloLens 2 dans l’application paramètres de l’appareil. Efface toutes les données stockées sur l’appareil.
 
 **Compagnon de récupération avancée (ARC):** À partir d’un PC exécutant l’outil ARC, un utilisateur ou un administrateur peut faire clignoter un HoloLens 2 connecté au PC via un câble USB. Efface toutes les données stockées sur l’appareil.
+
+> [!div class="nextstepaction"]
+> [Scénarios de déploiement courants](common-scenarios.md)
