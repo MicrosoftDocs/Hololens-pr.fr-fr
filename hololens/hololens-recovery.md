@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996412"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195597"
 ---
 # Redémarrer, réinitialiser ou récupérer HoloLens 2
 
@@ -57,7 +57,7 @@ Dans certains cas, il se peut que vous deviez réinitialiser manuellement l’ap
 
 4. Connectez l’appareil à l’ordinateur hôte, puis ouvrez le Gestionnaire de périphériques. (Pour Windows10, appuyez sur la touche **Windows**, puis sur la touche**X**, puis sélectionnez **Gestionnaire de périphériques**.) Assurez-vous que l’appareil est répertorié correctement en tant que *MicrosoftHoloLens* comme illustré dans l’image suivante:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Gestionnaire de périphériques HoloLens2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Procédure de réinitialisation matérielle
 
@@ -70,7 +70,7 @@ Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la pr
 4. Connectez l’appareil à l’ordinateur hôte.
 5. Ouvrez le gestionnaire de périphériques (pour Windows10, appuyez sur la touche **Windows**, puis sur la touche**X**, puis sélectionnez **Gestionnaire de périphériques**). Assurez-vous que l’appareil est répertorié correctement en tant que *MicrosoftHoloLens* comme illustré dans l’image suivante:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Gestionnaire de périphériques HoloLens2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Nettoyer l’appareil
 
@@ -81,12 +81,12 @@ Dans de rares cas, il peut être nécessaire de nettoyer l’Hololens2. Veuillez
 - [Surchauffe](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - Les blocages du système d'exploitation (qui sont distincts des blocages de l’application)
 
-Il existe deux méthodes pour nettoyer un appareil HoloLens2. Pour chacune, vous devez commencer par installer [Advanced Recovery Companion à partir du WindowsStore](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+Il existe deux méthodes pour nettoyer un appareil HoloLens2. Pour les deux, vous devez d’abord [installer le Compagnon de récupération avancée à partir du Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Si vous réinitialisez votre appareil, toutes vos données, applications et paramètres personnels seront supprimés, y compris les informations de réinitialisation du TPM.
 
-Par défaut, Advanced Recovery Companion est actuellement paramétré pour télécharger le build de production de fonctionnalités pour [Windows Holographique2004](hololens-release-notes.md#windows-holographic-version-2004). Si besoin, téléchargez la dernière version de la mise à jour FullFlashUpdate (FFU) d’ HoloLens2 pour réinitialiser votre appareil via Advanced Recovery Companion, [ici](https://aka.ms/hololens2download). Cette version est le build le plus récent disponible.
+Par défaut, le Compagnon de récupération avancé est configuré pour télécharger la version la plus récente de publication de la fonctionnalité, consultez cette page pour découvrir nos [Notes de publication](hololens-release-notes.md#) relative à la dernière publication de la fonctionnalité. Pour télécharger la dernière version de package de mise à jour FFU HoloLens2 pour refaire clignoter votre périphérique via le Compagnon de récupération avancé, [cliquez ici pour télécharger la dernière image de Hololens2](https://aka.ms/hololens2download). Cette version est le build le plus récent disponible.
 
 Avant de commencer la procédure de réinitialisation, assurez-vous que l’application est installée et en cours d’exécution sur votre PC Windows10 et qu’elle est prête à détecter l’appareil.
 
@@ -134,8 +134,8 @@ Pour activer le chemin de déploiement, procédez comme suit:
 1. Accédez à [Microsoft Store pour Entreprises](https://businessstore.microsoft.com) et connectez-vous à l’aide d’une identité Azure Active Directory.
 
 1. Accédez à **Gérer – Paramètres**. Activez **Afficher les applications hors connexion** sous **Shopping Experience**. 
-1. Accédez à **Acheter pour mon groupe** et recherchez [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
-1. Définissez le **type de licence** comme***Hors connexion***, puis sélectionnez **Gérer**.
+1. Accédez à la **section acheter pour mon groupe**et recherchez l' [**_Assistant de récupération avancée_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+1. Changez le _*Type de licence** en **_mode hors connexion_*_, puis sélectionnez _*Manage**.
 1. Sous **Télécharger le package pour l’utilisation en mode hors connexion**, sélectionnez le deuxième bouton bleu **Télécharger**. Assurez-vous que l’extension de fichier est *.appxbundle*.
 
     - À ce stade, si le PC de bureau dispose d’un accès à Internet, double-cliquez sur le package pour installer l’application.

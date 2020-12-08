@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 23cac991786c5540d7dadfcaae7ba2fe1d84dc64
-  ms.sourcegitcommit: 58812149a9795b46799845e89f98d4cfd72ded42
+  ms.openlocfilehash: d985c89a3352f1fcd8967970a1211315403dca15
+  ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "11105395"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "11195607"
 landingContent:
 - title: Vue d’ensemble de HoloLens
   linkLists:
@@ -36,6 +36,16 @@ landingContent:
       url: hololens-calibration.md
     - text: Mettre à jour HoloLens
       url: hololens-update-hololens.md
+- title: Guides de déploiement
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Scénarios courants de déploiement
+      url: common-scenarios.md
+    - text: Déploiement à l’échelle d’HoloLens2 connecté au cloud avec RemoteAssist
+      url: hololens2-cloud-connected-overview.md
+    - text: Déploiement sécurisé hors connexion
+      url: hololens-common-scenarios-offline-secure.md
 - title: Préparation
   linkLists:
   - linkListType: get-started
