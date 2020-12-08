@@ -39,11 +39,16 @@
 ## [Mettre à jour HoloLens](hololens-update-hololens.md)
 
 # Préparation
-## Planification du déploiement d’entreprise HoloLens2
-### [Déploiement de HoloLens dans un environnement commercial](hololens-requirements.md)
-### [Scénarios courants de déploiement d’infrastructure](common-scenarios.md)
-## Scénarios courants
-### [Sécurité hors ligne](hololens-common-scenarios-offline-secure.md)
+## [Déploiement de HoloLens dans un environnement commercial](hololens-requirements.md)
+## Scénarios courants de déploiement
+### [Scénarios de déploiement d’infrastructure](common-scenarios.md)
+### Déploiement d’HoloLens2 connecté au cloud avec RemoteAssist
+#### [Vue d’ensemble du déploiement connecté dans le cloud](hololens2-cloud-connected-overview.md)
+#### [Connexion au cloud – Préparation](hololens2-cloud-connected-prepare.md)
+#### [Connexion au cloud – Configuration](hololens2-cloud-connected-configure.md)
+#### [Connexion au cloud – Déploiement](hololens2-cloud-connected-deploy.md)
+#### [Connexion au cloud – Mise à jour](hololens2-cloud-connected-maintain.md)
+### [Sécurité hors connexion](hololens-common-scenarios-offline-secure.md)
 ## Sécurité
 ### [Vue d’ensemble de la sécurité](security-overview.md)
 ### [Architecture](security-architecture.md)
