@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb8ac3b6b74fd6998cde4d32df12dcbd84556597
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 260b195a18ecb7fe05d819fcd3e86d56fc2022bf
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162954"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201338"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -29,33 +29,7 @@ Bienvenue dans la dernière build Insider Preview pour HoloLens. Il est facile d
 
 ## Notes de publication de Windows Insider
 
-### Installer des applications sur HoloLens 2 via le programme d’installation d’application
-Nous vous enverrons la fonctionnalité du programme d’installation de l’application bientôt disponible suite à la mise à jour de Windows holographique, version 20H2. Nous **ajoutons une nouvelle fonctionnalité (programme d’installation de l’application) pour vous permettre d’installer des applications plus en continu** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
-
-Un appareil est considéré comme «géré» si l' **une** des conditions suivantes est vraie:
-- GPM [inscrits](hololens-enroll-mdm.md)
-- Configuré avec le [package de mise en service](hololens-provisioning.md)
-- L' [identité](hololens-identity.md) de l’utilisateur est AAD
-
-Vous pouvez maintenant installer des applications sans avoir besoin d’activer le mode développeur ou Device Portal.  Il vous suffit de télécharger (via câble USB ou via le système) l’ensemble d’applications AppX sur votre appareil et d’accéder à l’ensemble d’applications AppX de l’Explorateur de fichiers pour être invité à démarrer l’installation.  Vous pouvez également [lancer une installation à partir d’une page Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  À l’instar des applications que vous installez à partir du Microsoft Store ou d’charger à l’aide de la fonctionnalité de déploiement d’applications métier de la gestion des applications métier, les applications doivent être signées numériquement à l’aide de l' [outil de signature](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) et le [certificat utilisé pour la signature doit être approuvé](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) par l’appareil HoloLens pour pouvoir déployer l’application.
-
-**Instructions d’installation de l’application.**
-
-1.  Vérifiez que votre appareil n’est pas considéré comme géré.
-1.  Vérifiez que votre appareil HoloLens 2 est allumé et connecté à votre PC.
-1.  Vérifiez que vous êtes connecté à l’appareil HoloLens 2
-1.  Sur votre PC, accédez à votre application personnalisée, puis copiez le fichier VotreApplication. appxbundle sur yourdevicename\Internal Storage\Downloads.   Lorsque vous avez terminé de copier votre fichier, vous pouvez le déconnecter de votre appareil.
-1.  Sur votre appareil HoloLens 2, ouvrez le menu Démarrer, sélectionnez toutes les applications, puis lancez l’application Explorateur de fichiers.
-1.  Accédez au dossier téléchargements. Vous pouvez être amené à vous rendre dans le volet gauche de l’application sélectionnez ce dernier d’abord, puis accéder à téléchargements.
-1.  Sélectionnez le fichier VotreApplication. appxbundle.
-1.  Le programme d’installation de l’application démarre. Sélectionnez le bouton installer pour installer votre application.
-L’application installée s’ouvre automatiquement lors de l’installation.
-
-Vous trouverez des exemples d’applications sur [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) pour tester ce flux.
-
-Apprenez-en davantage sur l' [installation complète des applications sur HoloLens 2 avec le programme d’installation de l’application](app-deploy-app-installer.md).  
-
-![Installation des exemples MRTK via le programme d’installation de l’application](images/hololens-app-installer-picture.jpg)
+Nous avons récemment publiée toutes nos fonctionnalités Windows Insider. Étant donné que ces fonctionnalités sont désormais disponibles, nous vous encourageons à lire nos [notes de publication](hololens-release-notes.md) pour découvrir les dernières fonctionnalités. Revenez à la page suivante pour découvrir les nouvelles fonctionnalités passionnantes à tester.
 
 ## Commencer à recevoir les builds Insider
 

@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176906"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201378"
 ---
 # Notes de publication HoloLens 2
 
@@ -28,6 +28,52 @@ Pour vous assurer que vous disposez d’une satisfaction productive sur vos appa
 
 >[!NOTE]
 > Pour lire les notes de publication de HoloLens Emulator, [consultez l’archive](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+
+## Windows holographique, version 20H2: mise à jour 2020 de décembre
+- Version 19041,1131
+
+### Installer des applications sur HoloLens 2 via le programme d’installation d’application
+
+Nous **ajoutons une nouvelle fonctionnalité (programme d’installation de l’application) pour vous permettre d’installer des applications plus en continu** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
+
+Un appareil est considéré comme «géré» si l' **une** des conditions suivantes est vraie:
+- GPM [inscrits](hololens-enroll-mdm.md)
+- Configuré avec le [package de mise en service](hololens-provisioning.md)
+- L' [identité](hololens-identity.md) de l’utilisateur est Azure ad
+
+Vous pouvez maintenant installer des applications sans avoir besoin d’activer le mode développeur ou Device Portal.  Il vous suffit de télécharger (via câble USB ou via le système) l’ensemble d’applications AppX sur votre appareil et d’accéder à l’ensemble d’applications AppX de l’Explorateur de fichiers pour être invité à démarrer l’installation.  Vous pouvez également [lancer une installation à partir d’une page Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  À l’instar des applications que vous installez à partir du Microsoft Store ou d’charger à l’aide de la fonctionnalité de déploiement d’applications métier de la gestion des applications métier, les applications doivent être signées numériquement à l’aide de l' [outil de signature](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) et le [certificat utilisé pour la signature doit être approuvé](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) par l’appareil HoloLens pour pouvoir déployer l’application.
+
+**Instructions d’installation de l’application.**
+
+1.  Vérifiez que votre appareil n’est pas considéré comme géré.
+1.  Vérifiez que votre appareil HoloLens 2 est allumé et connecté à votre PC.
+1.  Vérifiez que vous êtes connecté à l’appareil HoloLens 2
+1.  Sur votre PC, accédez à votre application personnalisée, puis copiez le fichier VotreApplication. appxbundle sur yourdevicename\Internal Storage\Downloads.   Lorsque vous avez terminé de copier votre fichier, vous pouvez le déconnecter de votre appareil.
+1.  Sur votre appareil HoloLens 2, ouvrez le menu Démarrer, sélectionnez toutes les applications, puis lancez l’application Explorateur de fichiers.
+1.  Accédez au dossier téléchargements. Vous pouvez être amené à vous rendre dans le volet gauche de l’application sélectionnez ce dernier d’abord, puis accéder à téléchargements.
+1.  Sélectionnez le fichier VotreApplication. appxbundle.
+1.  Le programme d’installation de l’application démarre. Sélectionnez le bouton installer pour installer votre application.
+L’application installée s’ouvre automatiquement lors de l’installation.
+
+Vous trouverez des exemples d’applications sur [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) pour tester ce flux.
+
+Apprenez-en davantage sur l' [installation complète des applications sur HoloLens 2 avec le programme d’installation de l’application](app-deploy-app-installer.md).  
+
+![Installation des exemples MRTK via le programme d’installation de l’application](images/hololens-app-installer-picture.jpg)
+
+### Améliorations et correctifs de la mise à jour:
+
+- Le suivi des mains gère désormais le suivi dans de nombreux cas, où la partie aurait été perdue auparavant.  Dans certains de ces nouveaux cas, seule la position de la paume continue d’être mise à jour en fonction de la main réelle de l’utilisateur, tandis que les autres joints sont inférés en fonction d’un type antérieur.  Cette modification permet d’améliorer la cohérence du suivi dans les mouvements tels que slapping, la levée, le scoop et l’frapper dans.  Cela peut également être utile dans les cas où la mains est proche d’une surface ou contenant un objet.  Lorsque les joints de la partie sont déduits, la valeur de [précision conjointe](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) est définie sur «approximatif» au lieu de «High».
+- Correction du problème lié à la réinitialisation du code confidentiel pour les comptes Azure AD indiquant une erreur «un problème est survenu.
+- Les utilisateurs doivent voir beaucoup moins d’applications OOBE après démarrage lors du lancement ET de l’iris à partir de l’application paramètres, d’un nouvel utilisateur ou d’une notification Toast.
+- Le fuseau horaire est requis pour les utilisateurs dans OOBE.
+
+## Windows holographique, version 1903-mise à jour de décembre 2020
+- Version 18362,1088
+
+Cette mise à jour de la qualité mensuelle ne contient aucune modification remarquable, nous vous encourageons à tester notre dernière version de Windows holographique, version 20H2: mise à jour de décembre 2020 et la nouvelle fonctionnalité du programme d’installation d’application ajoutée à la Build.
+
 
 ## Windows holographique, version 20H2
 - Version 19041,1128
@@ -493,11 +539,11 @@ Windows AutoPilot pour HoloLens 2 permet au canal des ventes de l’appareil de 
 
 Après le démarrage du processus de déploiement automatique du pilotage automatique par un utilisateur, le processus effectue les étapes suivantes:
 
-1. Joindre l’appareil à Azure ActiveDirectory (AzureAD).
+1. Joindre l’appareil à AzureActiveDirectory (AzureAD).
 1. Utilisez Azure AD pour inscrire l’appareil dans Microsoft Intune (ou un autre service GPM).
 1. Téléchargez les stratégies, certificats et profils de réseau destinés aux appareils.
 1. Mettez en service l’appareil.
-1. Présentez l’écran de connexion à l’utilisateur.
+1. Présenter l’écran de connexion à l’utilisateur.
 
 Pour plus d’informations, consultez le [Guide d’évaluation de Windows AutoPilot pour HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot).
 

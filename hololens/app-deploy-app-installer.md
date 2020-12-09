@@ -14,22 +14,22 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 53937881d6569e6aaa17d7e60083381b13502b87
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162892"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201368"
 ---
 # Installer des applications sur HoloLens 2 via le programme d’installation d’application
 
 
-Nous vous enverrons la fonctionnalité du programme d’installation de l’application bientôt disponible suite à la mise à jour de Windows holographique, version 20H2. Nous **ajoutons une nouvelle fonctionnalité (programme d’installation de l’application) pour vous permettre d’installer des applications plus en continu** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
+Nous **ajoutons une nouvelle fonctionnalité (programme d’installation de l’application) pour vous permettre d’installer des applications plus en continu** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
 
-> [!IMPORTANT]
-> Pour l’instant, cette fonctionnalité est uniquement disponible dans les builds Windows Insider. En [savoir plus sur l’inscription aux builds Insider pour Windows](hololens-insider.md).
+> [!NOTE]
+> Cette fonctionnalité a été prise en charge dans [Windows holographique, version 20H2: mise à jour 2020 de décembre](hololens-release-notes.md). Assurez-vous que votre appareil est [mis à jour](hololens-update-hololens.md) de façon à utiliser cette fonctionnalité.
 
-Dans notre version de Windows Insider, nous **ajoutons une nouvelle fonctionnalité (programme d’installation d’application) qui vous permet d’installer des applications plus en toute transparence** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
+Nous avons **ajouté une nouvelle fonctionnalité (programme d’installation de l’application) pour vous permettre d’installer des applications plus en continu** sur vos appareils HoloLens 2. Par défaut, la fonctionnalité est **activée pour les appareils non gérés**. Pour éviter toute interruption des entreprises, le programme d’installation d’applications ne sera **pas disponible pour les appareils gérés pour** le moment.  
 
 Un appareil est considéré comme «géré» si l' **une** des conditions suivantes est vraie:
 - GPM [inscrits](hololens-enroll-mdm.md)
