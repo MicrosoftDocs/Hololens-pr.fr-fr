@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
-ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
+ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
+ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "11192444"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205766"
 ---
 # Windows Autopilot pour HoloLens2
 
@@ -93,13 +93,12 @@ Vos appareils doivent être inscrits dans Windows Autopilot avant la première c
 
 Il existe deux méthodes principales pour inscrire des appareils HoloLens: 
 
-1. **Le revendeur peut inscrire des appareils dans l’Espace partenaires lorsque vous passez une commande.** 
- > [!NOTE]  
-   > Il s’agit de la solution recommandée pour ajouter des appareils au service Autopilot. [En savoir plus](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
+ - **Le revendeur peut inscrire des appareils dans l’Espace partenaires lorsque vous passez une commande.** 
 
-   ou
+   > [!NOTE]  
+   > Il s’agit de la solution recommandée pour ajouter des appareils au service Autopilot. [En savoir plus ](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
    
-2. **Récupérez le hachage matériel (également appelé ID matériel) et enregistrez l’appareil manuellement dans le centre d’administration du Gestionnaire de point de terminaison**. 
+ - **Récupérez le hachage du matériel (également connu sous le nom d'ID matériel) et enregistrez l'appareil manuellement dans le centre d'administration MEM**. 
 
 **Récupérer le hachage du matériel**
 
@@ -134,11 +133,13 @@ L’appareil enregistre son hachage au sein d’un fichier CSV lors du processus
 
 1. Sous **Ajouter des appareils Windows Autopilot**, sélectionnez le fichier CSV DeviceHash, puis **Ouvrir**, et enfin **Importer**.  
    
-   ![Utilisez la commande Importer pour importer le hachage matériel.](./images/hololens-ap-hash-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![Utilisez la commande Importer pour importer le hachage matériel.](./images/hololens-ap-hash-import.png)
    
 1. Une fois l’importation terminée, sélectionnez **Appareils** > **Windows** > **Inscription Windows** > **Appareils** > **Synchronisation**. L’exécution du processus peut prendre quelques minutes, en fonction du nombre d’appareils en cours de synchronisation. Pour afficher l’appareil enregistré, sélectionnez **Actualiser**.  
    
-   ![Utilisez les commandes Synchroniser et Actualiser pour afficher la liste des appareils.](./images/hololens-ap-devices-sync.png)  
+   > [!div class="mx-imgBorder"]
+   > ![Utilisez les commandes Synchroniser et Actualiser pour afficher la liste des appareils.](./images/hololens-ap-devices-sync.png)  
 
 ### 3. Créer un groupe d’appareils
 
@@ -168,7 +169,9 @@ L’appareil enregistre son hachage au sein d’un fichier CSV lors du processus
 1. Entrez le nom et la description du profil, puis sélectionnez **Suivant**.  
    Une liste comprenant **HoloLens** doit s’afficher. Si cette option n’est pas disponible, utilisez l’une des options de [Commentaires](hololens2-autopilot.md#feedback-and-support-for-autopilot) pour nous contacter.
 
-   ![Ajoutez le nom et la description du profil](./images/hololens-ap-profile-name.png)
+   > [!div class="mx-imgBorder"]
+   > ![Ajoutez le nom et la description du profil](./images/hololens-ap-profile-name.png)
+   
 1. Dans la page **Out-of-box experience (OOBE)**, la plupart des paramètres sont préconfigurés pour simplifier OOBE dans cette évaluation. Vous pouvez configurer de manière facultative les paramètres suivants:  
 
    - **Langue (région)**: sélectionnez la langue pour l’application OOBE. Nous vous recommandons de sélectionner une langue dans la liste des [Langues prises en charge pour HoloLens 2](hololens2-language-support.md).
@@ -177,7 +180,9 @@ L’appareil enregistre son hachage au sein d’un fichier CSV lors du processus
      > [!NOTE]  
      > Si vous utilisez un modèle de nom d’appareil, l’application OOBE redémarre l’appareil une nouvelle fois après l’application du nom d’appareil et avant qu’il ne joigne l’appareil à Azure AD. Ce redémarrage permet l’application du nouveau nom.  
 
-   ![Configurez les paramètres de l’application OOBE](./images/hololens-ap-profile-oobe.png)
+   > [!div class="mx-imgBorder"]
+   > ![Configurez les paramètres de l’application OOBE](./images/hololens-ap-profile-oobe.png)
+   
 1. Après avoir configuré les paramètres, sélectionnez **Suivant**.
 1. Sur la page **Balises d’étendue**, ajoutez les balises d’étendue que vous voulez appliquer à ce profil si vous le souhaitez. Pour plus d’informations sur les balises d’étendue, voir [Utiliser le contrôle d’accès en fonction du rôle (RBAC) et les balises d’étendue pour l’informatique distribuée](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md). Lorsque vous avez terminé, sélectionnez **Suivant**.
 1. Dans la page **Affectations**, sélectionnez **Groupes sélectionnés** pour les **Attribuer**.
@@ -186,11 +191,13 @@ L’appareil enregistre son hachage au sein d’un fichier CSV lors du processus
   
    Si vous voulez exclure des groupes, sélectionnez **Sélectionner des groupes à exclure**, puis sélectionnez les groupes que vous voulez exclure.
 
-   ![Affectation d’un groupe d’appareils au profil.](./images/hololens-ap-profile-assign-devicegroup.png)
+   > [!div class="mx-imgBorder"]
+   > ![Affectation d’un groupe d’appareils au profil.](./images/hololens-ap-profile-assign-devicegroup.png)
    
 1. Sur la page **Examiner et créer**, examinez les paramètres, puis sélectionnez **Créer** pour créer le profil.  
    
-   ![Examiner et créer](./images/hololens-ap-profile-summ.png)
+   > [!div class="mx-imgBorder"]
+   > ![Examiner et créer](./images/hololens-ap-profile-summ.png)
 
 ### 5. Vérifier la configuration ESP
 

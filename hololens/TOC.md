@@ -99,9 +99,10 @@
 ### [Présentation de la gestion d'applications](app-deploy-overview.md)
 ### [Portail d'entreprise et Intune](app-deploy-intune.md)
 ### [Microsoft Store pour Entreprises](app-deploy-store-business.md)
-### [Package d’approvisionnement](app-deploy-provisioning-package.md)
+### [Paquet d'approvisionnement](app-deploy-provisioning-package.md)
+### [Installateur d'applications](app-deploy-app-installer.md)
 
-# Mise à jour
+# Maintenir
 ## [Gérer les mises à jour de HoloLens](hololens-updates.md)
 ## Corriger les problèmes liés à HoloLens
 ### [Résolution des problèmes](hololens-troubleshooting.md)
@@ -115,7 +116,6 @@
 # Notes de publication HoloLens
 ## [Notes de publication HoloLens 2](hololens-release-notes.md)
 ## [Insider Preview pour MicrosoftHoloLens](hololens-insider.md)
-### [Programme d'installation d'application](app-deploy-app-installer.md)
 ## [Notes de publication HoloLens (1ère génération)](hololens1-release-notes.md)
 
 # [Faites-nous part de vos commentaires](hololens-feedback.md)
