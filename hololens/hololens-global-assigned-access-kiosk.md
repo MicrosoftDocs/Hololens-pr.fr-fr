@@ -66,11 +66,11 @@ Cette fonctionnalité permet à un utilisateur considéré comme «[Propriétair
  
 ## Autres exemples d’accès affectés globaux
 
-Il s’agit d’une borne d’accès affecté global qui, lorsqu’un utilisateur se connecte, dispose d’une borne multi-applications avec l’application Paramètres, le hub de commentaires et Edge.
+Il s’agit d’une borne d’accès affecté global qui, lorsqu’un utilisateur se connecte, dispose d’une borne multi-applications avec l’application Paramètres, le hub de commentaires et Microsoft Edge.
 
 :::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
 
-Il s’agit d’une borne d’accès affecté global qui exclut le propriétaire de l’appareil, lorsque tout autre utilisateur AAD se connecte, il dispose d’une borne multi-applications avec l’application Paramètres, le hub de commentaires et Edge. Ce kiosque inclut également une configuration de kiosque secondaire pour un compte visiteur, auquel tout le monde peut se connecter sur l’écran de verrouillage. Lorsqu’un utilisateur se connecte au compte visiteur, il dispose d’une borne multi-applications qui contient uniquement l’application Hub de commentaires.
+Il s’agit d’une borne d’accès affecté global qui exclut le propriétaire de l’appareil, lorsque tout autre utilisateur AAD se connecte, il dispose d’une borne multi-applications avec l’application Paramètres, le hub de commentaires et Microsoft Edge. Ce kiosque inclut également une configuration de kiosque secondaire pour un compte visiteur, auquel tout le monde peut se connecter sur l’écran de verrouillage. Lorsqu’un utilisateur se connecte au compte visiteur, il dispose d’une borne multi-applications qui contient uniquement l’application Hub de commentaires.
 
 :::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
 
