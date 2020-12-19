@@ -4,7 +4,7 @@ description: Créez des commentaires exploitables pour les développeurs HoloLen
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
-ms.date: 05/14/2020
+ms.date: 12/17/2020
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -17,24 +17,24 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f922104658378239c6f94a20d22913f11a56c347
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
+ms.sourcegitcommit: e44f1f1ab708e5bd6c4c5b85ec449db2bc798be2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828046"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237274"
 ---
 # Commentaires pour HoloLens
 
 Utilisez le hub de commentaires pour nous faire connaître les fonctionnalités qui vous plaisent, les fonctionnalités que vous pouvez utiliser sans cela et la façon dont vous pouvez améliorer l’aspect. L’équipe d’ingénierie utilise le même mécanisme en interne pour suivre et résoudre les bogues, alors veuillez utiliser le hub de commentaires pour signaler les bogues que vous rencontrez. Nous sommes à votre écoute.
 
-Le hub de commentaires est un excellent moyen d’avertir l’équipe d’ingénierie des bogues et de s’assurer que les mises à jour ultérieures sont plus saines et plus cohérentes. Toutefois, le hub de commentaires ne fournit pas de réponse. Si vous avez besoin d’une aide immédiate, veuillez noter le résumé que vous avez fourni pour votre commentaire, puis suivez les conseils relatifs à la [prise en charge du HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
+Le hub de commentaires est un excellent moyen d’avertir l’équipe d’ingénierie des bogues et de s’assurer que les mises à jour ultérieures sont plus saines et plus cohérentes. Toutefois, le hub de commentaires ne fournit pas de réponse. Si vous avez besoin d’une aide immédiate, veuillez noter le résumé que vous avez fourni pour vos commentaires, puis suivi de la [prise en charge de HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -utilisez la fonctionnalité **partager** du Hub de commentaires pour partager un lien direct vers l’URL. Le hub de commentaires obtient un grand nombre de données quotidiennement: l’URL nous aide à identifier rapidement vos commentaires.
 
 > [!NOTE]  
 >  
 > - Vérifiez que vous disposez de la version actuelle du Hub de commentaires. Pour cela, sélectionnez **Démarrer**  >  le**Microsoft Store**, puis sélectionnez les points de suspension (**...**). Ensuite, sélectionnez **téléchargements et mises à jour**pour  >  **obtenir les mises à jour**.  
 >  
-> - Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous conseillons vivement de définir le télémétrie de votre appareil sur **complet**. Vous pouvez définir cette valeur au cours de l’utilisation de OOBE (out-of-Box) ou en utilisant l’application paramètres. Pour cela, dans les paramètres, sélectionnez **Start**  >  **paramètres**  >  **Privacy**  >  **App Diagnostics**  >  **de**démarrage.
+> - Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous conseillons vivement de définir le télémétrie de votre appareil sur **facultatif**. Vous pouvez définir cette valeur au cours de l’utilisation de OOBE (out-of-Box) ou en utilisant l’application paramètres. Pour cela, dans les paramètres, sélectionnez ****  >  **paramètres**  >  ****  >  ****  >  **de**démarrage.
 
 ## Utiliser le hub de commentaires
 
@@ -87,3 +87,5 @@ Le hub de commentaires est un excellent moyen d’avertir l’équipe d’ingén
      1. Cliquez sur **arrêter l’enregistrement**. Une fois l’enregistrement arrêté, vous pouvez voir les données jointes à vos commentaires pour l’équipe d’ingénierie.
 
 1. Vérifiez que vous disposez d’une connexion Internet active pour pouvoir recevoir votre avis. Sélectionnez l’option de **soumission**, et c’est terminé.
+
+1. Utilisez le bouton **partager** pour partager l’URL raccourcie avec le support Microsoft ou vos collègues.
