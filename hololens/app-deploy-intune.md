@@ -17,16 +17,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 55e2b15808e52bb80e8114e215bc0cef52358842
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
+ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016665"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "11247216"
 ---
 # Portail d'entreprise et Intune
 
-La gestion des périphériques mobiles (GPM) vous permet d’utiliser vos propres applications par le biais du [Gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/intune/windows-holographic-for-business) pour le déployer directement sur vos appareils HoloLens. Microsoft Intune est un service basé sur le Cloud qui est axé sur la gestion des périphériques mobiles (GPM) et la gestion des applications mobiles (GAM). Intune est inclus dans la[suite entreprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)de Microsoft, et permet aux utilisateurs d’être productifs tout en conservent la protection des données de votre organisation. Pour en savoir plus sur Intune, voir [qu’est-ce que Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
+La gestion des périphériques mobiles (GPM) vous permet d’utiliser vos propres applications par le biais du [Gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/intune/windows-holographic-for-business) pour le déployer directement sur vos appareils HoloLens. Microsoft Intune est un service basé sur le Cloud qui est axé sur la gestion des périphériques mobiles (GPM) et la gestion des applications mobiles (GAM). Intune est inclus dans la [suite entreprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)de Microsoft, et permet aux utilisateurs d’être productifs tout en conservent la protection des données de votre organisation. Pour en savoir plus sur Intune, voir [qu’est-ce que Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
 
 ## Configuration
 
