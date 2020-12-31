@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165038"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252526"
 ---
 # Améliorer la qualité visuelle et le confort
 
@@ -42,7 +42,7 @@ HoloLens 2 demande à l’utilisateur d’étalonner l’appareil dans les cas s
 
 ![Invite de calibrage pour l’adaptation aux yeux.](./images/07-et-adjust-for-your-eyes.png)
 
-Au cours de ce processus, vous devez regarder un ensemble de cibles (gemmes). Si vous clignotez pendant l’étalonnage, essayez de rester concentré sur les gemmes au lieu d’autres objets dans la salle.  Cela permet à HoloLens d’en savoir plus sur la position de votre œil pour afficher votre univers holographique.
+Au cours de ce processus, vous devez regarder un ensemble de cibles (gemmes). Si vous clignotez pendant l’étalonnage, essayez de rester concentré sur les gemmes au lieu d’autres objets dans la salle.  Le focus sur la gemme permet à HoloLens d’en apprendre davantage sur la position de votre oeil sur l’affichage de votre environnement holographique.
 
 ![Invite de calibration indiquant aux utilisateurs de garder la tête fixe et de suivre les points avec leurs yeux.](./images/07-et-hold-head-still.png)
 
