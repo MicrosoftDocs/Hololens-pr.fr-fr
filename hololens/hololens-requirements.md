@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195587"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253211"
 ---
 # HoloLens 2-déploiement et gestion d’entreprise
 
@@ -140,7 +140,7 @@ Pour plus d’informations sur la configuration d’un HoloLens 2 en mode plein 
 
 ### Inscription de périphériques GPM
 
-Pour les déploiements d’entreprise, il est recommandé d' [inscrire des appareils](https://docs.microsoft.com/hololens/hololens-enroll-mdm) dans la gestion des périphériques mobiles en tant qu’appareils d’entreprise uniquement avec la fonction d’inscription d’Azure ad et l’inscription à la gestion des périphériques mobiles automatiques. Pour cela, vous devez disposer d’Azure AD Premium et prendre en charge l’inscription automatique à plusieurs fournisseurs GPM, y compris Intune.
+Pour les déploiements d’entreprise, il est recommandé d' [inscrire des appareils](https://docs.microsoft.com/hololens/hololens-enroll-mdm) dans la gestion des périphériques mobiles en tant qu’appareils d’entreprise uniquement avec la fonction d’inscription d’Azure ad et l’inscription automatique de la gestion des périphériques mobiles (Azure ad + GPM). Pour cela, vous devez disposer d’Azure AD Premium et prendre en charge l’inscription automatique à plusieurs fournisseurs GPM, y compris Intune.
 
 En savoir plus sur le [pilotage](https://docs.microsoft.com/hololens/hololens2-autopilot)automatique de la méthode d’inscription.
 
@@ -155,7 +155,7 @@ Il existe plusieurs façons de déployer des applications sur des appareils Holo
 > [!NOTE]
 > HoloLens 2 prend en charge l’exécution d’applications ARM64 UWP uniquement.
 
-## Mise à jour
+## Maintenir
 
 Dans les environnements informatiques d’entreprise, le besoin de sécurité et de contrôle des coûts doit être mis en balance avec le désir de fournir aux utilisateurs les technologies les plus récentes. Dans la mesure où cyberattacks est devenu une occurrence quotidienne, il est important de conserver correctement l’état de vos appareils Windows 10. Le service informatique doit contrôler les paramètres de configuration, en veillant bien à leur conformité, et déterminer quels appareils peuvent accéder aux applications internes. HoloLens 2 fournit les fonctionnalités de gestion des opérations mobiles nécessaires pour s’assurer que les appareils sont conformes à la stratégie d’entreprise.
 
@@ -190,4 +190,4 @@ HoloLens 2 prend en charge 3 méthodes d’effacement du périphérique
 **Compagnon de récupération avancée (ARC):** À partir d’un PC exécutant l’outil ARC, un utilisateur ou un administrateur peut faire clignoter un HoloLens 2 connecté au PC via un câble USB. Efface toutes les données stockées sur l’appareil.
 
 > [!div class="nextstepaction"]
-> [Scénarios de déploiement courants](common-scenarios.md)
+> [Scénarios courants de déploiement](common-scenarios.md)

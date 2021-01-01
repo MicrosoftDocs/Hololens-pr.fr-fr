@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0e9222df2c387fab8f61a585d3a7f3966b9ecd31
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196298"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253051"
 ---
 # Préparer-Guide lié au Cloud
 
-À la fin de cet article, vous allez configurer AAD, le GPM et en savoir plus sur l’utilisation des comptes AAD et des exigences réseau. Cette section du guide permettra à vous et à votre organisation de se préparer au déploiement de HoloLens 2 dans le Cloud et à l’aide de Dynamics 365 Remote Assist. L’importance de chaque partie de votre infrastructure ainsi que des liens vers des repères vous aideront à configurer ces pièces selon vos besoins.
+À la fin de cet article, vous allez configurer Azure AD, le GPM et en savoir plus sur l’utilisation des comptes et des exigences réseau d’Azure AD. Cette section du guide permettra à vous et à votre organisation de se préparer au déploiement de HoloLens 2 dans le Cloud et à l’aide de Dynamics 365 Remote Assist. L’importance de chaque partie de votre infrastructure ainsi que des liens vers des repères vous aideront à configurer ces pièces selon vos besoins.
 
 ## Notions fondamentales sur l’infrastructure
 
@@ -40,11 +40,11 @@ Azure AD est un service d’annuaire basé sur le cloud qui offre des fonctionna
 
 Les employés ne peuvent utiliser qu’un seul compte pour initialiser un appareil de sorte qu’il&#39;est impératif que votre organisation contrôle quel compte est activé pour la première fois. Le compte choisi déterminera qui contrôle l’appareil et aura une influence sur vos capacités de gestion.
 
-Dans ce guide, nous avons choisi d’utiliser les comptes AAD ou les comptes Azure Active Directory pour l' [identité](https://docs.microsoft.com/hololens/hololens-identity) utilisée. Il existe plusieurs avantages pour les comptes AAD que nous voulons utiliser, par exemple:
+Dans ce guide, nous avons choisi que pour l' [identité](https://docs.microsoft.com/hololens/hololens-identity) utilisée, nous utiliserons les comptes Azure ad ou les comptes Azure Active Directory. Il existe plusieurs avantages pour les comptes Azure AD que nous voulons utiliser, par exemple:
 
-- Les employés utilisent leur compte Azure AD pour inscrire l’appareil dans Azure AD et l’inscrire automatiquement avec la solution de gestion des périphériques mobiles (AAD + GPM) de l’organisation&#39;.
-- Les comptes AAD prennent en charge l' [authentification unique](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Lorsqu’un utilisateur se connecte à l’assistance à distance, son identité de l’utilisateur connecté dans AAD est reconnue et l’utilisateur est connecté à l’application pour une utilisation rationalisée.
-- Les comptes AAD disposent d' [options d’authentification](https://docs.microsoft.com/hololens/hololens-identity) supplémentaires par le biais [de Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Outre les utilisateurs de l’ouverture de session de l’iris, vous pouvez vous connecter à partir d’un autre appareil ou utiliser des clés de sécurité de l’appareil.
+- Les employés utilisent leur compte Azure AD pour inscrire l’appareil dans Azure AD et l’inscrire automatiquement avec la solution de gestion des appareils mobiles de l’organisation&#39;s (Azure AD + GPM).
+- Les comptes Azure AD prennent en charge l' [authentification unique](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Lorsqu’un utilisateur se connecte à l’assistance à distance, son identité de l’utilisateur signé dans Azure AD est reconnue et l’utilisateur est connecté à l’application pour une utilisation rationalisée.
+- Les comptes Azure AD disposent d' [options d’authentification](https://docs.microsoft.com/hololens/hololens-identity) supplémentaires par le biais [de Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Outre les utilisateurs de l’ouverture de session de l’iris, vous pouvez vous connecter à partir d’un autre appareil ou utiliser des clés de sécurité de l’appareil.
 
 ### Gestion des appareils mobiles
 

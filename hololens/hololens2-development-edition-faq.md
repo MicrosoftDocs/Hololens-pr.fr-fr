@@ -1,5 +1,5 @@
 ---
-title: Forum aux questions sur le développement HoloLens 2
+title: FAQ sur l’édition de développement HoloLens 2
 description: Forum aux questions sur le FAQ de l’édition de développement HoloLens 2.
 keywords: Hololens 2 options d’achat, options HoloLens, édition développeur
 author: evmill
@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7ef5fd06f4d77f541047a934056cffd863962c73
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176866"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252785"
 ---
-# Forum aux questions sur le développement HoloLens 2
+# FAQ sur l’édition de développement HoloLens 2
 
 ## Général
 
@@ -29,7 +29,7 @@ ms.locfileid: "11176866"
 
 Le HoloLens 2 Development Edition inclut un HoloLens 2, $500 dans Azure credits, une période d’essai de 3 mois Unity Pro et une version d’évaluation du plug-in Pixyz 3 mois.
 
-### Quelle est la différence entre HoloLens 2 et HoloLens 2 Development Edition? 
+### Quelle est la différence entre HoloLens 2 et HoloLens 2 Development Edition?
 
 Vous pouvez utiliser l’option HoloLens 2 Development Edition uniquement pour les applications d’entreprise destinées à être utilisées en relation avec le HoloLens 2 (édition commerciale) dans un environnement de production. Dans le cadre de l’achat de l’édition de développement, Microsoft pourra, à sa seule discrétion, vous fournir certaines de vos droits identifiés lors du processus d’extraction, par exemple le droit d’utiliser certains crédits d’escompte ou d’évaluation à certains services ou outils tiers ou tiers pendant une durée limitée. [En savoir plus](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
 
@@ -43,13 +43,13 @@ Vos crédits d’escompte ou accès à la version d’évaluation seront envoyé
 
 ### Est-il possible de mettre à niveau vers l’édition HoloLens 2 de l’appareil de développement HoloLens 2 pour obtenir les crédits d’évaluation?
 
-Non, nous ne proposons pas d’offres de transfert d’appareil. Il n’est pas possible de transférer de n’importe quelle édition vers une autre édition. 
+Non, nous ne proposons pas d’offres de transfert d’appareil. Il n’est pas possible de transférer de n’importe quelle édition vers une autre édition.
 
-### Qu’est-ce que Unity Pro? 
+### Qu’est-ce que Unity Pro?
 
 Unity Pro est une plate-forme 3D en temps réel pour les petites et moyennes entreprises. Ce service est conçu pour les équipes ayant une combinaison de compétences techniques et non techniques. [En savoir plus](https://store.unity.com/products/unity-pro)
 
-### Qu’est-ce que le plug-in Pixyz? 
+### Qu’est-ce que le plug-in Pixyz?
 
 Le plug-in Pixyz lit et convertit quasiment n’importe quel format, optimise et place le module Unity, et le prépare à la fourniture de ressources prêtes à l’emploi pour les applications en temps réel. [En savoir plus](https://unity.com/products/pixyz)
 
@@ -59,7 +59,7 @@ Le financement de l’édition de l’édition HoloLens 2 sera disponible au plu
 
 ### Qui est-ce que je contacte avec des questions sur les habilitations HoloLens 2 Development Edition?
 
-Si vous avez des questions relatives aux droits d’habilitation, veuillez contacter votre représentant commercial sur 866-425-4709, le Lun au vendredi, de 06H00 à 18H00, PST.
+En ce qui concerne les éventuelles questions relatives aux droits d’une personne, contactez votre spécialiste en 866-425-4709, le LUN du mois de 6 h 00, le PST.
 
 ### Ma société peut-elle acheter plusieurs appareils de développement HoloLens 2? 
 
@@ -117,7 +117,7 @@ Obtenez de l’aide [ici.](https://support.serviceshub.microsoft.com/supportforb
 
 ### Qu’est-ce que la version d’évaluation de ma Unity?
 
-Une période d’essai d’un mois d’une période d’essai de 3 mois vous permet d’accéder à une solution complète Unity&#39;. L’essai Unity Pro n’a pas d’échéance d’échange.
+Une période d’essai d’Unity Pro à trois calendriers vous permet d’accéder à une solution complète Unity&#39;. L’essai Unity Pro n’a pas d’échéance d’échange.
 
 Cette offre est destinée aux nouveaux utilisateurs et ne s’applique pas aux abonnements de l’Unity Pro. La version d’évaluation Unity Pro peut être soumise à des conditions supplémentaires qui seront disponibles en échange. Consulter les [ &amp; conditions générales](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) applicables et la [politique de confidentialité](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
@@ -127,8 +127,8 @@ Itinéraires d’échange
 
 1. Rendez-vous sur id.unity.com
 2. Connexion à l’aide de votre ID Unity ou création d’un compte
-3. Cliquez sur &#39;utiliser un code de produit&#39;
-4. Entrez le code du produit, puis cliquez sur &#39;utiliser un code de produit&#39;
+3. Sélectionner &#39;utiliser un code de produit&#39;
+4. Entrez le code du produit, puis sélectionnez &#39;utiliser un code de produit&#39;
 
 Pour [plus d’informations](https://docs.microsoft.com/hololens/hololens2-options?tabs=device) , consultez la documentation HoloLens 2 Development Edition.
 
@@ -138,13 +138,13 @@ Oui, vous pouvez créer des applications avec toutes les versions compatibles de
 
 ### Comment contacter le support Unity?
 
-Pour obtenir de l’aide sur votre ID Unity, votre compte, votre organisation et votre ou vos abonnements, veuillez consulter le site Web support.unity3d.com.
+Pour obtenir de l’aide concernant des questions sur votre ID Unity, votre compte, votre ou vos abonnements, visitez le site Web support.unity3d.com.
 
 ## Pixyz
 
 ### Que comprend la version d’évaluation du plug-in Pixyz?
 
-Une version d’évaluation du plug-in 3 mois de Pixyz, qui permet d’accéder à Pixyz, de créer des ressources prêtes à l’emploi avec des maillages parfaits La version d’évaluation du plug-in Pixyz associé n’a pas de date d’échéance.
+Une version d’évaluation du plug-in Pixyz mois à trois calendriers, qui permet d’accéder à Pixyz, de créer des ressources prêtes à l’emploi avec des maillages parfaits, le nombre de polygones et le nombre d’UV. La version d’évaluation du plug-in Pixyz associé n’a pas de date d’échéance.
 
 Cette offre est destinée aux nouveaux utilisateurs et ne s’empile pas sur les abonnements Pixyz. Le plug-in Pixyz peut être soumis à des conditions supplémentaires qui seront prises en échange. Consulter les [ &amp; conditions générales](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) applicables et la [politique de confidentialité](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 

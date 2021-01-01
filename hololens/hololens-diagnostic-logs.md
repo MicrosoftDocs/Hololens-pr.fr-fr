@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162946"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253151"
 ---
 # Collecter et utiliser des informations de diagnostic sur les appareils HoloLens
 
@@ -34,7 +34,7 @@ Les utilisateurs et administrateurs HoloLens peuvent choisir parmi quatre métho
 - Application Paramètres
 
 > [!IMPORTANT]  
-> Les journaux de diagnostic des appareils contiennent des informations d’identification personnelle, par exemple sur les processus ou applications lancés par l’utilisateur dans le cadre d’opérations typiques. Lorsque plusieurs utilisateurs partagent un appareil HoloLens (par exemple, les utilisateurs se connectent au même appareil à l’aide de différents comptes Microsoft Azure Active Directory (AAD)) les journaux de diagnostic peuvent contenir des informations d’identification personnelle qui s’appliquent à plusieurs utilisateurs. Pour plus d’informations, consultez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+> Les journaux de diagnostic des appareils contiennent des informations d’identification personnelle, par exemple sur les processus ou applications lancés par l’utilisateur dans le cadre d’opérations typiques. Lorsque plusieurs utilisateurs partagent un appareil HoloLens (par exemple, les utilisateurs se connectent au même appareil à l’aide de différents comptes Microsoft Azure Active Directory (Azure AD)) les journaux de diagnostic peuvent contenir des informations d’identification personnelle qui s’appliquent à plusieurs utilisateurs. Pour plus d’informations, consultez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 Le tableau suivant compare les trois méthodes de collection. Les noms de méthode sont liés à des informations plus détaillées dans les sections qui suivent le tableau.
 
@@ -53,7 +53,7 @@ Le tableau suivant compare les trois méthodes de collection. Les noms de métho
 Un utilisateur HoloLens peut utiliser l’application de bureau Hub de commentaires Microsoft pour envoyer des informations de diagnostic au support technique Microsoft. Pour plus d’informations et pour obtenir des instructions complètes, voir [Donnez-nous des commentaires](hololens-feedback.md).  
 
 > [!NOTE]  
-> **Utilisateurs commerciaux ou d’entreprise:** Si vous utilisez l’application Hub de commentaires pour signaler un problème lié à la gestion des périphériques mobiles, la mise en service ou tout autre aspect de la gestion des **Enterprise Management**appareils, remplacez la catégorie application par la  >  **catégorie appareil**de gestion de l’entreprise.
+> **Utilisateurs commerciaux ou d’entreprise:** Si vous utilisez l’application Hub de commentaires pour signaler un problème lié à la gestion des périphériques mobiles, la mise en service ou tout autre aspect de la gestion des **** appareils, remplacez la catégorie application par la  >  **catégorie appareil**de gestion de l’entreprise.
 
 ### Conditions préalables
 
@@ -70,7 +70,7 @@ Le hub de commentaires fournit deux emplacements pour l’utilisateur dans le st
    > [!NOTE]  
    > Ces exigences s’appliquent aux données de toutes les catégories du Hub de commentaires.
 
-- **Appareil HoloLens**. Lors de l’archivage d’un rapport dans le hub de commentaires, l’utilisateur peut sélectionner **enregistrer une copie locale de diagnostics et de pièces jointes créées lors de l’apport de commentaires**. Si l’utilisateur sélectionne cette option, le hub de commentaires stocke une copie des informations de diagnostic sur le périphérique HoloLens. Ces informations sont accessibles à l’utilisateur (ou quiconque utilise ce compte pour se connecter à HoloLens). Pour supprimer ces informations, un utilisateur doit disposer d’autorisations de **propriétaire d’appareil** ou d' **administrateur** sur l’appareil. Un utilisateur disposant des autorisations appropriées peut se connecter au hub de commentaires, sélectionner **Settings**  >  les**journaux d’affichage**des paramètres et supprimer les informations.
+- **Appareil HoloLens**. Lors de l’archivage d’un rapport dans le hub de commentaires, l’utilisateur peut sélectionner **enregistrer une copie locale de diagnostics et de pièces jointes créées lors de l’apport de commentaires**. Si l’utilisateur sélectionne cette option, le hub de commentaires stocke une copie des informations de diagnostic sur le périphérique HoloLens. Ces informations sont accessibles à l’utilisateur (ou quiconque utilise ce compte pour se connecter à HoloLens). Pour supprimer ces informations, un utilisateur doit disposer d’autorisations de **propriétaire d’appareil** ou d' **administrateur** sur l’appareil. Un utilisateur disposant des autorisations appropriées peut se connecter au hub de commentaires, sélectionner ****  >  les**journaux d’affichage**des paramètres et supprimer les informations.
 
 ## Utilitaire de dépannage des paramètres
 

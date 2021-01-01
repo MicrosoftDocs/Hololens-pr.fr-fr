@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: beee64159415c0635812463f81c0b5565e44e4a8
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196294"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252695"
 ---
 # Maintenance-Guide connecté dans le Cloud
 
@@ -33,7 +33,7 @@ L’assistance à distance est une application In-Box, qui peut être mise à jo
 
 ## Plan de support
 
-Un plan d’assistance est un excellent point de départ. Une personne ou un groupe est formé à la résolution des problèmes liés au processus d’inscription sur les appareils HoloLens et à l’utilisation générale du périphérique HoloLens au sein de votre organisation. Pour permettre à vos utilisateurs d’avoir une résolution plus rapide de leurs problèmes, nous vous suggérons de gérer le processus d’escalade comme suit:
+Un plan d’assistance est un excellent point de départ. Une personne ou un groupe est formé à la résolution des problèmes liés au processus d’inscription sur les appareils HoloLens et à l’utilisation générale du périphérique HoloLens au sein de votre organisation. Pour permettre à vos utilisateurs d’avoir une résolution plus rapide de leurs problèmes, nous vous suggérons de traiter le processus de remontée comme suit:
 
 1. Votre support technique.
 2. Votre équipe HoloLens expert

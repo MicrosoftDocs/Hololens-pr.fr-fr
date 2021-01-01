@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
-ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
+ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247216"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252655"
 ---
 # Portail d'entreprise et Intune
 
@@ -32,28 +32,29 @@ La gestion des périphériques mobiles (GPM) vous permet d’utiliser vos propre
 
 1. Téléchargez une application sur une ligne de Business ou téléchargez une application personnalisée sur votre client Intune. Voir aussi: [gestion des applications d’entreprise](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management).
 
-2. [Attribuez votre application à un groupe](https://docs.microsoft.com/mem/intune/apps/apps-deploy). En fonction du type d’affectation que vous choisissez, vous pouvez faire en sorte que l’application soit remise automatiquement ou prête à être facilement récupérée si vous avez une sélection d’applications. 
+2. [Attribuez votre application à un groupe](https://docs.microsoft.com/mem/intune/apps/apps-deploy). En fonction du type d’affectation que vous choisissez, l’application peut être fournie automatiquement ou prête à être facilement récupérée si vous avez une sélection d’applications.
 
-> [!NOTE] 
+> [!NOTE]
 > Lors de la création de votre ensemble d’applications AppX, assurez-vous de prendre en compte l’architecture du ou des périphériques sur lesquels vous effectuez le déploiement. HoloLens 2 est ARM64 et HoloLens (1ère génération) est x86. Vous pouvez inclure les deux dans un seul ensemble d’applications AppX si vous envisagez de disposer d’un environnement d’appareils mixtes.
 
 ## Types d’affectations
 
-Si vous préférez que votre application soit installée automatiquement sur l’appareil après l’inscription, vous devez sélectionner **obligatoire** pour ce ou ces groupes.
-Si vous préférez rendre votre application disponible en téléchargement sur les utilisateurs inscrits via le portail d’entreprise, sélectionnez **disponible pour les appareils inscrits**.
+Pour que votre application soit installée automatiquement sur l’appareil après l’inscription, vous devez sélectionner **obligatoire** pour ce ou ces groupes.
+Pour que votre application soit disponible en téléchargement sur les appareils inscrits via le portail d’entreprise, sélectionnez **disponible pour les appareils inscrits**.
 
-
-## Utilisation de l’utilisateur final
+## End-User d’une connaissance
 
 Après avoir configuré la configuration sur Intune, vous êtes prêt pour que les utilisateurs finaux puissent recevoir vos applications sélectionnées.
 
 Pour obtenir automatiquement vos applications, procédez comme suit:
-1. Inscrivez votre appareil auprès de votre client. 
-2. Une fois que votre appareil a terminé l’inscription, vous devriez recevoir l’application sur votre appareil. 
-3. Si vous ne voyez pas immédiatement votre application, accédez à **paramètres**de  >  **compte**  >  **travail ou établissement d’enseignement**  >  **votrecomptehttp://www.Office.com/redir/xt102780162** et faites défiler vers le bas pour consulter des informations sur l’état des applications installées.
+
+1. Inscrivez votre appareil auprès de votre client.
+2. Une fois que votre appareil a terminé l’inscription, vous devriez recevoir l’application sur votre appareil.
+3. Si vous ne voyez pas immédiatement votre application, accédez à **paramètres**de  >  ****  >  compte**travaillez ou établissement scolaire**  >  , puis faites défiler vers le bas pour consulter des informations sur*l'* état d’une application installée.
 
 Pour accéder aux applications via le portail d’entreprise, procédez comme suit:
-1. Ouvrez le **menu Démarrer** , puis sélectionnez **Microsoft Store**. 
+
+1. Ouvrez le **menu Démarrer** , puis sélectionnez **Microsoft Store**.
 2. Recherchez **portail d’entreprise** et téléchargez l’application.
 3. Connectez-vous à votre compte.
 4. Sélectionnez l’application que vous souhaitez recevoir et télécharger.

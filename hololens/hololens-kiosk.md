@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
-ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
+ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182005"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253031"
 ---
 # Configurer HoloLens en tant que kiosque
 
@@ -82,8 +82,8 @@ Le tableau suivant répertorie les fonctionnalités d’assistance utilisateur d
 
 | &nbsp; |Types d’utilisateurs pris en charge | Connexion automatique | Plusieurs niveaux d’accès |
 | --- | --- | --- | --- |
-|Borne d’application unique |Compte de service géré (MSA) dans Azure Active Directory (AAD) ou un compte local |Oui |Non |
-|Borne à plusieurs applications |Compte AAD |Non |Oui |
+|Borne d’application unique |Compte de service géré (MSA) dans Azure Active Directory (Azure AD) ou un compte local |Oui |Non |
+|Borne à plusieurs applications |Compte Azure AD |Non |Oui |
 
 Pour obtenir des exemples d’utilisation de ces fonctionnalités, consultez le tableau suivant.
 
@@ -143,7 +143,7 @@ Lors de la création du fichier XML ou de l’utilisation de l’interface utili
 En règle générale, l’option Kiosk est activée pour un utilisateur ou un groupe d’utilisateurs. Néanmoins, si vous envisagez d’écrire votre propre borne XML, vous voudrez peut-être envisager un accès global affecté, dans lequel l’application Kiosk est appliquée au niveau de l’appareil quelle que soit l’identité. S’il s’agit d' [informations supplémentaires sur les bornes d’accès globalement affectées.](hololens-global-assigned-access-kiosk.md)
 
 #### Si vous créez un fichier XML:
--   Vous pouvez créer plusieurs profils Kiosk et les attribuer à différents utilisateurs/groupes. Par exemple, un kiosque pour votre groupe AAD qui comporte de nombreuses applications et un visiteur disposant d’une application de plusieurs bornes d’application avec une application au singulier.
+-   Vous pouvez créer plusieurs profils Kiosk et les attribuer à différents utilisateurs/groupes. Par exemple, un kiosque pour votre groupe Azure AD qui comporte de nombreuses applications et un visiteur disposant d’une seule borne d’applications avec une application au singulier.
 -   La configuration de votre kiosque s’appelle un **ID de profil** et possède un GUID.
 -   Vous allez attribuer ce profil dans la section configurations en spécifiant le type d’utilisateur et en utilisant le même GUID pour l' **ID DefaultProfile**.
 - Il est possible de créer un fichier XML tout en le appliquant à un appareil via la gestion des périphériques mobiles via la gestion des périphériques mobiles et de l’appliquer au groupe de périphériques HoloLens à l’aide de la valeur URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
@@ -151,7 +151,7 @@ En règle générale, l’option Kiosk est activée pour un utilisateur ou un gr
 #### Si vous créez une borne dans Intune.
 -   Chaque appareil ne peut recevoir qu’un seul profil Kiosk; sinon, il crée un conflit et ne reçoit pas du tout de configurations Kiosk. 
     -   D’autres types de profils et de stratégies, tels que les restrictions d’appareil qui ne sont pas associées au profil de configuration Kiosk, n’entrent pas en conflit avec le profil de configuration Kiosk.
--   La borne sera activée pour tous les utilisateurs qui font partie du type d’ouverture de session de l’utilisateur, cette personne sera définie avec un utilisateur ou un groupe AAD. 
+-   La borne sera activée pour tous les utilisateurs qui font partie du type d’ouverture de session de l’utilisateur, cette option sera définie avec un utilisateur ou un groupe Azure AD. 
 -   Une fois la configuration Kiosk définie et le **type d’ouverture de session utilisateur** (les utilisateurs qui peuvent se connecter à la borne) et les applications sélectionnées, la configuration de l’appareil doit toujours être affectée à un groupe. Le ou les groupes attribués déterminent les appareils qui reçoivent la configuration de l’appareil Kiosk, mais n’interagissent pas avec si la borne est activée ou non. 
     - Pour plus d’informations sur les effets de l’attribution de profils de configuration dans Intune, voir [affecter des profils utilisateur et d’appareil dans Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
@@ -176,7 +176,7 @@ Le tableau suivant répertorie les fonctionnalités et les avantages de chacune 
 |Déploiement de bornes multi-App    | Non            | Oui                  | Oui  |
 |Déploiement sur les appareils locaux uniquement | Oui           | Oui                  | Non   |
 |Déploiement via le mode développeur |Requis       | Non requis            | Non requis   |
-|Déploiement à l’aide d’Azure Active Directory (AAD)  | Non requis            | Non requis                   | Requis  |
+|Déploiement à l’aide d’Azure Active Directory (Azure AD)  | Non requis            | Non requis                   | Requis  |
 |Déployer automatiquement      | Non            | Non                   | Oui  |
 |Vitesse de déploiement            | Rapide       | Rapide                 | Lent |
 |Déploiement à l’échelle | Déconseillé    | Nos recommandations        | Nos recommandations |
@@ -204,12 +204,12 @@ Pour plus d’informations sur la façon d’inscrire les appareils, voir [inscr
 ### <a id="mdmprofile"></a>MDM, étape 2 &ndash; créer un profil de configuration Kiosk
 
 1. Ouvrez le portail [Azure](https://portal.azure.com/) et connectez-vous à votre compte d’administrateur Intune.
-1. Sélectionnez **Microsoft Intune**  >  **configuration de périphériques Microsoft Intune-profils**  >  **créer le profil**.
+1. Sélectionnez ****  >  **configuration de périphériques Microsoft Intune-profils**  >  **créer le profil**.
 1. Entrez un nom de profil.
-1. Sélectionnez **plateforme**  >  **Windows 10 et versions ultérieures**, puis sélectionnez restrictions d’appareil de **type de profil**  > **Device restrictions**.
+1. Sélectionnez **plateforme**  >  **Windows 10 et versions ultérieures**, puis sélectionnez restrictions d’appareil de **type de profil**  > ****.
 1. Sélectionnez **configurer**  >  un**kiosque**, puis sélectionnez l’une des options suivantes:
    - Pour créer une borne pour une seule application, sélectionnez Kiosk **mode Kiosk**  >  **sur**une seule application.
-   - Pour créer une borne multiapplication, sélectionnez **Kiosk Mode**  >  **Kiosk multi-App**en mode kiosque.
+   - Pour créer une borne multiapplication, sélectionnez ****  >  **Kiosk multi-App**en mode kiosque.
 1. Pour commencer à configurer la borne, sélectionnez **Ajouter**.
 
 Les étapes suivantes diffèrent selon le type de kiosque souhaité. Pour plus d’informations, sélectionnez l’une des options suivantes:  
@@ -230,7 +230,7 @@ Cette section résume les paramètres requis par un kiosque d’application uniq
 1. Sélectionnez **ouverture de session**  >  de l’utilisateur, compte d'**utilisateur local**, puis entrez le nom d’utilisateur du compte local (appareil) ou du compte Microsoft (MSA) qui peut se connecter à la borne.
    > [!NOTE]  
    > Les types de comptes d’utilisateur **Autologon** ne sont pas pris en charge sur Windows holographique pour les entreprises.
-1. Sélectionnez **Application type**application  >  du**magasin**de types d’application, puis sélectionnez une application dans la liste.
+1. Sélectionnez **** application  >  du**magasin**de types d’application, puis sélectionnez une application dans la liste.
 
 L’étape suivante consiste à [affecter](#mdmassign) le profil à un groupe.
 
@@ -243,7 +243,7 @@ Cette section résume les paramètres requis par un kiosque sur plusieurs applic
 - Pour d’autres services de GPM, consultez la documentation de votre fournisseur pour obtenir des instructions. Si vous avez besoin d’utiliser une configuration XML personnalisée pour configurer une borne dans votre service de gestion des périphériques mobiles, [créez un fichier XML qui définit la configuration Kiosk](#ppkioskconfig). Si vous utilisez un fichier XML, veillez à inclure la [mise en page d’accueil](#start-layout-for-hololens).  
 - Vous pouvez éventuellement utiliser une disposition de démarrage personnalisée avec Intune ou d’autres services de gestion des périphériques mobiles. Pour plus d’informations, voir [Démarrer le fichier de disposition pour la gestion des périphériques mobiles (Intune, etc.)](#start-layout-file-for-mdm-intune-and-others).
 
-1. **Pour les appareils en mode S, sélectionnez Target Windows 10**  >  **No**.  
+1. **Pour les appareils en mode S, sélectionnez Target Windows 10**  >  ****.  
    >[!NOTE]  
    > Le mode S n’est pas pris en charge sur Windows holographique pour les entreprises.
 1. Sélectionnez **ouverture de session de l’utilisateur**  >  **Azure ad utilisateur ou groupe** **d’ouverture de session d’utilisateur**  >  **HoloLens visiteur**, puis ajoutez un ou plusieurs groupes d’utilisateurs.  
@@ -390,10 +390,10 @@ Enregistrez l’exemple suivant sous la forme d’un fichier XML. Vous pouvez ut
 
    ![Capture d’écran du champ MultiAppAssignedAccessSettings dans le Concepteur de configuration Windows](./images/multiappassignedaccesssettings.png)
 
-1. **Facultatif**. (Si vous souhaitez appliquer le package de mise à disponibilité après la configuration initiale de l’appareil, et qu’un utilisateur administrateur est déjà disponible sur le périphérique Kiosk, ignorez cette étape.) Sélectionnez utilisateurs de comptes de **paramètres d’exécution** &gt; **Accounts** &gt; **Users**, puis créez un compte d’utilisateur. Entrez un nom d’utilisateur et un mot de passe **UserGroup**, puis sélectionnez  >  **administrateurs**UserGroup.  
+1. **Facultatif**. (Si vous souhaitez appliquer le package de mise à disponibilité après la configuration initiale de l’appareil, et qu’un utilisateur administrateur est déjà disponible sur le périphérique Kiosk, ignorez cette étape.) Sélectionnez utilisateurs de comptes de **paramètres d’exécution** &gt; **** &gt; ****, puis créez un compte d’utilisateur. Entrez un nom d’utilisateur et un mot de passe ****, puis sélectionnez  >  **administrateurs**UserGroup.  
   
      En utilisant ce compte, vous pouvez afficher l’État et les journaux de la mise en service.  
-1. **Facultatif**. (Si vous disposez déjà d’un compte autre que celui de l’administrateur sur votre appareil Kiosk, ignorez cette étape.) Sélectionnez utilisateurs de comptes de **paramètres d’exécution** &gt; **Accounts** &gt; **Users**, puis créez un compte d’utilisateur local. Vérifiez que le nom d’utilisateur est le même que celui que vous spécifiez dans le fichier XML de configuration. Sélectionnez **UserGroup**  >  **utilisateurs standard**UserGroup.
+1. **Facultatif**. (Si vous disposez déjà d’un compte autre que celui de l’administrateur sur votre appareil Kiosk, ignorez cette étape.) Sélectionnez utilisateurs de comptes de **paramètres d’exécution** &gt; **** &gt; ****, puis créez un compte d’utilisateur local. Vérifiez que le nom d’utilisateur est le même que celui que vous spécifiez dans le fichier XML de configuration. Sélectionnez ****  >  **utilisateurs standard**UserGroup.
 1. Sélectionnez **fichier**  >  **Enregistrer**.
 1. Sélectionnez **Exporter**  >  le**package de mise en service**, puis sélectionnez **propriétaire**de l'  >  **administrateur**. Le niveau de priorité de ce package de mise en service est supérieur aux packages de mise en service appliqués à cet appareil à partir d’autres sources.
 1. Sélectionnez **Suivant**.
@@ -475,10 +475,10 @@ Auparavant lors de la mise en application du mode plein écran, HoloLens est uti
 
 ![Image illustrant l’affichage du mode plein écran lors d’une panne.](images/hololens-kiosk-failure-behavior.png )
 
-### Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion
+### Mettre en cache l’appartenance à un groupe Azure AD pour une borne hors connexion
 - Vous pouvez utiliser des bornes hors ligne pour un maximum de 60 jours.
 
-Cette politique détermine le nombre de jours que le cache d’appartenance au groupe AAD est autorisé à utiliser pour les configurations d’accès affectées qui ciblent les groupes AAD pour l’utilisateur connecté. Lorsque la valeur de la stratégie est définie sur valeur supérieure à 0, la mise en cache est utilisée dans le cas contraire.  
+Cette stratégie détermine le nombre de jours pendant lesquels le cache d’appartenance au groupe Azure AD peut être utilisé pour les configurations d’accès affectées ciblant des groupes Azure AD pour l’utilisateur connecté. Lorsque la valeur de la stratégie est définie sur valeur supérieure à 0, la mise en cache est utilisée dans le cas contraire.  
 
 Nom: valeur d’URI AADGroupMembershipCacheValidityInDays:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -486,30 +486,30 @@ Min-0 jours
 Max-60 jours 
 
 Procédure d’utilisation correcte de cette stratégie: 
-1. Créez un profil de configuration d’appareil pour Kiosk ciblant des groupes AAD et attribuez-le à un ou plusieurs appareils HoloLens. 
+1. Créer un profil de configuration d’appareil pour les groupes Azure AD de ciblage de kiosque et l’affecter à des appareils HoloLens. 
 1. Créer une configuration d’appareil basée sur un URI OMA personnalisée qui définit cette valeur de stratégie sur le nombre de jours souhaité (> 0) et de l’affecter à un ou plusieurs appareils HoloLens. 
     1. La valeur d’URI doit être entrée dans la zone de texte de l’URI OMA comme./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. La valeur peut être comprise entre min et max.
 1. Inscrivez les appareils HoloLens et vérifiez que les deux configurations sont appliquées à l’appareil. 
-1. Connexion de l’utilisateur AAD 1 Lorsque Internet est disponible, une fois que l’utilisateur se connecte et que l’appartenance au groupe AAD a été confirmée, le cache est créé. 
-1. Désormais, l’utilisateur AAD 1 peut utiliser HoloLens hors connexion et l’utiliser pour le mode Kiosk tant que la valeur de la stratégie autorise un nombre de jours de X jours. 
-1. Les étapes 4 et 5 peuvent être répétées pour tout autre utilisateur AAD N. point clé voici qu’aucun utilisateur AAD ne doit se connecter à l’appareil à l’aide d’Internet, et au moins une fois que nous pouvons déterminer qu’il est membre du groupe AAD dont la configuration Kiosk est ciblée. 
+1. Autorisation d’Azure AD 1 lors de la connexion à Internet, une fois que l’utilisateur se connecte et qu’une appartenance à un groupe Azure AD est confirmée, le cache est créé. 
+1. À présent, l’utilisateur d’Azure AD 1 peut utiliser HoloLens hors connexion et l’utiliser pour le mode Kiosk tant que la valeur de la stratégie autorise un nombre de jours de X jours. 
+1. Les étapes 4 et 5 peuvent être répétées pour tous les autres utilisateurs d’Azure AD N. point clé Voici que tout utilisateur d’Azure AD doit se connecter à l’appareil à l’aide d’Internet, et au moins une fois que nous pouvons déterminer qu’il est membre du groupe Azure AD dont la configuration Kiosk est ciblée. 
  
 > [!NOTE]
-> Jusqu’à ce que l’étape 4 soit exécutée pour un utilisateur AAD, il est possible de bénéficier du comportement d’échec mentionné dans les environnements «déconnectés». 
+> Jusqu’à ce que l’étape 4 soit effectuée pour un utilisateur d’Azure AD, le comportement d’échec mentionné dans les environnements «déconnectés» s’affiche. 
 
 
 ## Exemples de code de kiosque XML pour HoloLens
 
-### Mode plein écran de plusieurs applications ciblant un groupe AAD. 
-Ce Kiosk déploie une borne pour les utilisateurs du groupe AAD, une Kiosk est activée et inclut les 3 applications: paramètres, assistance à distance et Hub de commentaires. Pour modifier cet exemple pour pouvoir l’utiliser immédiatement, veillez à changer le GUID en surbrillance ci-dessous pour qu’il corresponde à un groupe AAD de votre propre. 
+### Le mode kiosque de plusieurs applications cible une communauté Azure AD. 
+Cette borne déploie une borne pour les utilisateurs du groupe Azure AD, une Kiosk est activée et inclut les 3 applications: Settings, assistance à distance et Hub de commentaires. Pour modifier cet exemple afin qu’il soit utilisé immédiatement, veillez à changer le GUID en surbrillance ci-dessous afin qu’il corresponde au groupe Azure AD de votre choix. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### Compte AAD du mode kiosque de plusieurs applications.
-Ce Kiosk déploie un kiosque pour un utilisateur unique, il dispose d’une Kiosk compatible avec les 3 applications: Settings, assistance à distance et Hub de commentaires. Pour modifier cet exemple afin qu’il soit utilisé immédiatement, veillez à changer le compte en surbrillance ci-dessous pour qu’il corresponde à un compte AAD. 
+### Le mode kiosque de plusieurs applications cible le compte Azure AD.
+Ce Kiosk déploie un kiosque pour un utilisateur unique, il dispose d’une Kiosk compatible avec les 3 applications: Settings, assistance à distance et Hub de commentaires. Pour modifier cet exemple afin qu’il soit utilisé immédiatement, veillez à changer le compte en surbrillance ci-dessous afin qu’il corresponde à un compte Azure AD. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

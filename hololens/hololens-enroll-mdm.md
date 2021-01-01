@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5adc1b48c4603f3a9d3145bef4f1d8aa1867a9d1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 7c17cbf88fc2e7a6dcd9aa600ad6e6910edb29a8
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102323"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253231"
 ---
 # Inscrire HoloLens dans un logiciel de gestion des périphériques mobiles (GPM)
 
@@ -36,9 +36,9 @@ Vous pouvez gérer plusieurs appareils Microsoft HoloLens en même temps à l’
 
 Selon le type d’identité choisi lors de la connexion OOBE ou après l’inscription, il existe différentes méthodes d’inscription. Pour en savoir plus sur chaque type d’identité sur HoloLens, consultez [cette page](hololens-identity.md).
 
-- Si Identity est AAD, vous pouvez le faire au cours de l’utilisation de l' **application**OOBE ou du  ->  bouton**School**  ->  **Connect** .
-    - Pour l’inscription AAD, l’inscription de la gestion des appareils mobiles automatique se produit uniquement si AAD a été configuré avec les URL d’inscription.
-- Si Identity est AAD et que l’appareil a été préconfiguré et qu’il a été enregistré avec un profil de configuration Intune et qu’il est affecté, l’inscription AAD et l’inscription se produiront automatiquement dans OOBE.
+- Si Identity est Azure ad, vous pouvez utiliser le bouton d’accès à l’application dans OOBE ou dans l' **application**  ->  **de bureau ou de scolaires**  ->  **** .
+    - Dans le cas d’Azure AD, l’inscription automatique de la gestion des périphériques mobiles est effectuée uniquement si Azure AD a été configuré avec les URL d’inscription.
+- S’il s’agit d’une identité Azure AD et que l’appareil a été préalablement inscrit auprès du serveur Intune GPM avec un profil de configuration spécifique qui lui est affecté, Azure AD-Join et inscription se produiront automatiquement dans OOBE.
     - Également appelé [flux AutoPilot](hololens2-autopilot.md) disponible dans les [Builds 19041.1103 +](hololens-release-notes.md#windows-holographic-version-2004).
 - Si Identity est MSA, utilisez le bouton d’accès à l' **application paramètres**d’utilisation  ->  **ou de School**  ->  **Connect** .
     - Également appelé flux d’ajout de compte de bureau (AWA).
@@ -49,11 +49,11 @@ Une fois que l’appareil est inscrit auprès de votre serveur de gestion des p�
 
 ## Inscription automatique dans GPM
 
-Si votre organisation utilise Azure ActiveDirectory (Azure AD) et une solution GPM qui accepte un jeton AAD pour l’authentification (uniquement pris en charge pour l’instant dans MicrosoftIntune et AirWatch), votre administrateur informatique peut configurer Azure AD de manière à autoriser automatiquement l’inscription GPM une fois que l’utilisateur s’est connecté avec son compte Azure AD. [Découvrez comment configurer l’inscription Azure AD.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Si votre organisation utilise Azure Active Directory (Azure AD) et une solution GPM qui accepte un jeton Azure AD pour l’authentification (actuellement, uniquement prise en charge dans Microsoft Intune et à l’aide de la fonctionnalité d’aide à la réception), votre administrateur informatique peut configurer Azure AD de manière à ce que l’utilisateur se connecte avec son compte Azure AD. [Découvrez comment configurer l’inscription Azure AD.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 Lorsque l’inscription automatique est activée, aucune inscription manuelle supplémentaire n’est nécessaire. Lorsque l’utilisateur se connecte avec un compte Azure AD, l’appareil est inscrit dans GPM lors de sa première utilisation.
 
-Lorsqu’un appareil est rejoint AAD, il peut affecter les personnes qui ont considéré le propriétaire de l' [appareil](security-adminless-os.md#device-owner).
+Lorsqu’un appareil est une jointure Azure AD, il peut affecter les personnes qui ont considéré le propriétaire de l' [appareil](security-adminless-os.md#device-owner).
 
 ## Désinscrire HoloLens de Intune
 

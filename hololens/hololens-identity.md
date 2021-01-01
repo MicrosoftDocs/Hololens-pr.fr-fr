@@ -1,7 +1,7 @@
 ---
 title: Gérer l’identité utilisation et la connexion pour HoloLens
 description: Gestion de l’identité, de la sécurité et de la connexion des utilisateurs pour HoloLens.
-keywords: HoloLens, utilisateur, compte, AAD, ADFS, compte Microsoft, MSA, informations d’identification, référence
+keywords: HoloLens, utilisateur, compte, AAD, Azure AD, AD FS, compte Microsoft, MSA, informations d’identification, référence
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: 96e3b90a24d297631d39a1eb62888e4f4aa1098e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201358"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253221"
 ---
 # Gérer l’identité utilisation et la connexion pour HoloLens
 
@@ -36,11 +36,11 @@ HoloLens prend en charge plusieurs types d’identités utilisateur. Vous pouvez
 
 | Type d’identité | Comptes par appareil | Options d’authentification |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Fournisseur d’informations d’identification Web Azure</li><li>Application Azure Authenticator</li><li>Biométrique (IRIS) &ndash; HoloLens 2 <sup> 1</sup> </li><li>Code confidentiel &ndash; facultatif pour hololens (1er génération) requis pour hololens 2</li><li>Mot de passe</li></ul> |
+| [Azure Active Directory (AzureAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Fournisseur d’informations d’identification Web Azure</li><li>Application Azure Authenticator</li><li>Biométrique (IRIS) &ndash; HoloLens 2 <sup> 1</sup> </li><li>Code confidentiel &ndash; facultatif pour hololens (1er génération) requis pour hololens 2</li><li>Mot de passe</li></ul> |
 | [Compte Microsoft (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biométrique (IRIS)- &ndash; HoloLens 2 uniquement</li><li>Code confidentiel &ndash; facultatif pour hololens (1er génération) requis pour hololens 2</li><li>Mot de passe</li></ul> |
 | [Compte local](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Mot de passe |
 
-Les comptes connectés au Cloud (AAD et MSA) proposent davantage de fonctionnalités, car ils peuvent utiliser Azure services.  
+Les comptes connectés au Cloud (Azure AD et MSA) proposent davantage de fonctionnalités, car ils peuvent utiliser Azure services.  
 
 > [!NOTE]
 > 1-bien que la prise en charge d’un appareil HoloLens 2 puisse prendre en charge jusqu’à 64 comptes Azure AD, seuls 10 de ces comptes peuvent s’inscrire dans le cadre de l’authentification par Iris. Ce choix est aligné avec d’autres options d’authentification biométrique pour Windows Hello entreprise. [En savoir plus ici.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
@@ -61,16 +61,16 @@ Comme dans la version de bureau de Windows, vous pouvez lier des informations d�
 
 La liaison des comptes ne sépare pas les données utilisateur créées sur l’appareil, telles que les images ou les téléchargements.  
 
-### Configuration de la prise en charge des utilisateurs multiples (AAD uniquement)
+### Configuration de la prise en charge de plusieurs utilisateurs (Azure AD uniquement)
 
-HoloLens prend en charge plusieurs utilisateurs du même client AAD. Pour utiliser cette fonctionnalité, vous devez utiliser un compte qui fait partie de votre organisation pour configurer l’appareil. Par la suite, les autres utilisateurs du même client peuvent se connecter à l’appareil à partir de l’écran de connexion ou en appuyant sur la vignette utilisateur dans le panneau Démarrer. Un seul utilisateur peut être connecté à la fois. Lorsqu’un utilisateur se connecte, le HoloLens déconnecte l’utilisateur précédent. Le premier utilisateur sur l’appareil est considéré comme le propriétaire de l’appareil, sauf dans le cas d’une jointure AAD, [en savoir plus sur les propriétaires d’appareils](security-adminless-os.md#device-owner).
+HoloLens prend en charge plusieurs utilisateurs du même client Azure AD. Pour utiliser cette fonctionnalité, vous devez utiliser un compte qui fait partie de votre organisation pour configurer l’appareil. Par la suite, les autres utilisateurs du même client peuvent se connecter à l’appareil à partir de l’écran de connexion ou en appuyant sur la vignette utilisateur dans le panneau Démarrer. Un seul utilisateur peut être connecté à la fois. Lorsqu’un utilisateur se connecte, le HoloLens déconnecte l’utilisateur précédent. Le premier utilisateur sur l’appareil est considéré comme le propriétaire de l’appareil, sauf dans le cas d’une jointure Azure AD, [en savoir plus sur les propriétaires d’appareils](security-adminless-os.md#device-owner).
 
 Tous les utilisateurs peuvent utiliser les applications installées sur l’appareil. Toutefois, chaque utilisateur possède ses propres données et préférences d’application. La suppression d’une application de l’appareil supprime celle-ci pour tous les utilisateurs.  
 
-Les périphériques configurés avec des comptes AAD n’autorisent pas la connexion à l’appareil avec un compte Microsoft. Tous les comptes utilisés suivants doivent être des comptes AAD du même client que l’appareil. Vous pouvez toujours vous [connecter à l’aide d’un compte Microsoft aux applications](hololens-identity.md#setting-up-multi-user-support-aad-only) qui la prennent en charge (par exemple, Microsoft Store). Pour passer de l’utilisation de comptes AAD aux comptes Microsoft pour vous connecter à l’appareil, vous devez refaire [clignoter le périphérique](hololens-recovery.md#clean-reflash-the-device).
+Les périphériques configurés avec des comptes Azure AD ne permettent pas de se connecter à l’appareil doté d’un compte Microsoft. Tous les comptes utilisés suivants doivent être des comptes Azure AD du même client que l’appareil. Vous pouvez toujours vous [connecter à l’aide d’un compte Microsoft aux applications](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) qui la prennent en charge (par exemple, Microsoft Store). Pour passer de l’utilisation d’un compte Microsoft Azure AD à un compte Microsoft pour se connecter à l’appareil, vous devez refaire [clignoter le périphérique](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
-> **HoloLens (1er génération)** a commencé à prendre en charge plusieurs utilisateurs AAD dans le cadre de la [mise à jour 2018 de Windows 10 d’avril](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) dans le cadre de [Windows holographique pour les entreprises](hololens-upgrade-enterprise.md).
+> **HoloLens (1er génération)** a commencé à prendre en charge plusieurs utilisateurs d’Azure ad dans la [mise à jour 2018 de Windows 10 d’avril](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) dans le cadre de [Windows holographique pour les entreprises](hololens-upgrade-enterprise.md).
 
 ## Supprimer des utilisateurs
 
@@ -100,10 +100,10 @@ Windows Hello entreprise (qui prend en charge l’utilisation d’un code confid
 
 1. Le périphérique HoloLens doit être [géré par MDM](hololens-enroll-mdm.md).
 1. Vous devez activer Windows Hello entreprise pour l’appareil. ([Voir instructions applicables à Microsoft Intune.](https://docs.microsoft.com/intune/windows-hello))
-1. Sur HoloLens, l’utilisateur peut ensuite utiliser **Settings**les  >  **options de connexion**paramètres  >  **Ajouter un code** confidentiel pour configurer un code confidentiel.
+1. Sur HoloLens, l’utilisateur peut ensuite utiliser **** les  >  **options de connexion**paramètres  >  **Ajouter un code** confidentiel pour configurer un code confidentiel.
 
 > [!NOTE]
-> Les utilisateurs qui se connectent à l’aide d’un compte Microsoft peuvent également configurer **Settings**un code confidentiel dans  >  **les options de connexion**paramètres  >  **Ajouter un code confidentiel**. Ce code confidentiel est associé à [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)plutôt qu’à [Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+> Les utilisateurs qui se connectent à l’aide d’un compte Microsoft peuvent également configurer **** un code confidentiel dans  >  **les options de connexion**paramètres  >  **Ajouter un code confidentiel**. Ce code confidentiel est associé à [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)plutôt qu’à [Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
 
 ### Comment l’authentification biométrique par Iris est-elle implémentée sur HoloLens 2?
 

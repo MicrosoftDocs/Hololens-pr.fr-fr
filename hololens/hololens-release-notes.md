@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: e1bdc6292dc016dde78c781db79505e2b64b0d6d
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201378"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253061"
 ---
 # Notes de publication HoloLens 2
 
@@ -97,7 +97,7 @@ Cette dernière version est une mise à jour mensuelle de la version 2004, mais 
 | [Lancement automatique d’une application dans Kiosk multi-App](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Définit une application pour qu’elle s’ouvre automatiquement lors de la connexion au mode plein écran à plusieurs applications.                                                        |
 | [Modification du comportement du mode plein écran pour la gestion des échecs](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | L’échec du mode plein écran comporte désormais une restriction de secours.                                                                                                |
 | [Stratégies HoloLens](hololens-release-notes.md#hololens-policies)                                    | Nouvelles stratégies pour HoloLens.     |
-| [Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | Une nouvelle stratégie permet aux utilisateurs d’utiliser le cache d’appartenance de groupe pour utiliser le mode plein écran pendant un nombre de jours défini.                                        |
+| [Mettre en cache l’appartenance à un groupe Azure AD pour une borne hors connexion](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)         | Une nouvelle stratégie permet aux utilisateurs d’utiliser le cache d’appartenance de groupe pour utiliser le mode plein écran pendant un nombre de jours défini.                                        |
 | [Nouvelles stratégies de restriction d’appareil pour HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Les stratégies de gestion des appareils activées pour HoloLens 2 sont activées.                                                                                |
 | [Nouvelles stratégies d’alimentation pour HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Stratégies récemment prises en charge pour les paramètres de délai d’alimentation.  |
 | [Stratégies de mise à jour](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Stratégies récemment activées permettant le contrôle des mises à jour.           |
@@ -221,7 +221,7 @@ Une fois que le nœud RequireNetworkInOOBE du CSP TenantLockdown est défini sur
 
 Une fois que le nœud RequireNetworkInOOBE du CSP TenantLockdown est défini sur true sur HoloLens2, les opérations suivantes ne sont pas autorisées dans l’application OOBE: 
 - Créer un utilisateur local à l’aide de la configuration de l’exécution 
-- Exécuter une opération de jointure AAD via la configuration de l’exécution 
+- Exécution d’une opération d’intégration d’Azure AD via la mise en service de l’exécution 
 - Sélectionner le propriétaire de l’appareil dans l’application OOBE 
 
 #### Comment définir cette configuration à l’aide de Intune? 
@@ -294,12 +294,12 @@ De nouvelles stratégies de réalité mixte ont été créées pour les appareil
 | MixedReality\MicrophoneDisabled                    | Désactive le microphone de sorte qu’aucun enregistrement audio ne soit possible sur HoloLens 2.                      | 1 Oui, 0 (par défaut)                                                |
 | MixedReality\FallbackDiagnostics                   | Contrôle le comportement du moment où les journaux de diagnostic peuvent être collectés.                               | 0 désactivé, 1 activé pour les propriétaires d’appareils, 2 activés pour All (par défaut) |
 | MixedReality\HeadTrackingMode                      | Réservé pour une utilisation ultérieure.                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | Détermine le nombre de jours d’appartenance au groupe AAD pour le ciblage des kiosques pour les groupes AAD. | Voir ci-dessous.                                                           |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Détermine le nombre de jours pendant lesquels le cache d’appartenance à un groupe Azure AD est utilisé pour cibler les groupes Azure AD. | Voir ci-dessous.                                                           |
 
-### Mise en cache de l’appartenance aux groupes AAD pour Kiosk hors connexion
+### Mettre en cache l’appartenance à un groupe Azure AD pour une borne hors connexion
 - Vous pouvez utiliser des bornes hors ligne pour un maximum de 60 jours.
 
-Cette politique détermine le nombre de jours que le cache d’appartenance au groupe AAD est autorisé à utiliser pour les configurations d’accès affectées qui ciblent les groupes AAD pour l’utilisateur connecté. Lorsque la valeur de la stratégie est définie sur valeur supérieure à 0, la mise en cache est utilisée dans le cas contraire.  
+Cette stratégie détermine le nombre de jours pendant lesquels le cache d’appartenance au groupe Azure AD peut être utilisé pour les configurations d’accès affectées ciblant des groupes Azure AD pour l’utilisateur connecté. Lorsque la valeur de la stratégie est définie sur valeur supérieure à 0, la mise en cache est utilisée dans le cas contraire.  
 
 Nom: valeur d’URI AADGroupMembershipCacheValidityInDays:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -307,17 +307,17 @@ Min-0 jours
 Max-60 jours 
 
 Procédure d’utilisation correcte de cette stratégie: 
-1. Créez un profil de configuration d’appareil pour Kiosk ciblant des groupes AAD et attribuez-le à un ou plusieurs appareils HoloLens. 
+1. Créer un profil de configuration d’appareil pour les groupes Azure AD de ciblage de kiosque et l’affecter à des appareils HoloLens. 
 1. Créer une configuration d’appareil basée sur un URI OMA personnalisée qui définit cette valeur de stratégie sur le nombre de jours souhaité (> 0) et de l’affecter à un ou plusieurs appareils HoloLens. 
     1. La valeur d’URI doit être entrée dans la zone de texte de l’URI OMA comme./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. La valeur peut être comprise entre min et max.
 1. Inscrivez les appareils HoloLens et vérifiez que les deux configurations sont appliquées à l’appareil. 
-1. Connexion de l’utilisateur AAD 1 Lorsque Internet est disponible, une fois que l’utilisateur se connecte et que l’appartenance au groupe AAD a été confirmée, le cache est créé. 
-1. Désormais, l’utilisateur AAD 1 peut utiliser HoloLens hors connexion et l’utiliser pour le mode Kiosk tant que la valeur de la stratégie autorise un nombre de jours de X jours. 
-1. Les étapes 4 et 5 peuvent être répétées pour tout autre utilisateur AAD N. point clé voici qu’aucun utilisateur AAD ne doit se connecter à l’appareil à l’aide d’Internet, et au moins une fois que nous pouvons déterminer qu’il est membre du groupe AAD dont la configuration Kiosk est ciblée. 
+1. Autorisation d’Azure AD 1 lors de la connexion à Internet, une fois que l’utilisateur se connecte et qu’une appartenance à un groupe Azure AD est confirmée, le cache est créé. 
+1. À présent, l’utilisateur d’Azure AD 1 peut utiliser HoloLens hors connexion et l’utiliser pour le mode Kiosk tant que la valeur de la stratégie autorise un nombre de jours de X jours. 
+1. Les étapes 4 et 5 peuvent être répétées pour tous les autres utilisateurs d’Azure AD N. point clé Voici que tout utilisateur d’Azure AD doit se connecter à l’appareil à l’aide d’Internet, et au moins une fois que nous pouvons déterminer qu’il est membre du groupe Azure AD dont la configuration Kiosk est ciblée. 
  
 > [!NOTE]
-> Jusqu’à ce que l’étape 4 soit exécutée pour un utilisateur AAD, il est possible de bénéficier du comportement d’échec mentionné dans les environnements «déconnectés». 
+> Jusqu’à ce que l’étape 4 soit effectuée pour un utilisateur d’Azure AD, le comportement d’échec mentionné dans les environnements «déconnectés» s’affiche. 
 
 ### Nouvelles stratégies de restriction d’appareil pour HoloLens 2
 - Permet aux utilisateurs de gérer des stratégies de gestion des appareils spécifiques, telles que le blocage de l’ajout ou de la suppression des packages de mise en service.
@@ -401,7 +401,7 @@ Ces informations sont à nouveau accessibles [ici](holographic-photos-and-videos
 - Stratégie mise à jour pour désactiver l’énumération des fonctions USB via la gestion des périphériques mobiles (GPM) pour NCM pour AllowUsbConnection.
 - Nous avons résolu un problème qui empêchait un appareil de HoloLens d’apparaître dans l’Explorateur de fichiers sur le protocole MTP (Media Transfer Protocol) quand l’appareil est configuré en tant que [borne d’application unique](hololens-kiosk.md). Notez que le MTP (et la connexion USB en général) peut toujours être désactivé à l’aide de la stratégie [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) .
 - Correction d’un problème de mise à l’échelle des icônes dans le menu Démarrer avec le mode plein écran.
-- Correction d’un problème en raison de la mise en cache HTTP interférant avec le mode plein écran ciblé par les groupes AAD.
+- Correction d’un problème en raison du mise en cache HTTP interférant avec le mode plein écran ciblé par les groupes Azure AD.
 - Correction d’un problème qui empêchait les utilisateurs d’utiliser le bouton paire après l’activation du mode développeur avec les packages de mise en service, sauf s’ils ont désactivé et réactivé le mode développeur.
 
 ## Windows holographique, version 1903-mise à jour de novembre 2020
@@ -491,7 +491,7 @@ Améliorations et correctifs de la mise à jour:
 - L’API HolographicSpace. UserPresence est généralement désactivée pour les applications Unity. Ce comportement évite un problème qui entraînait le arrêt de certaines applications lorsque le Visor était retourné, même si le paramètre «exécuter en arrière-plan» a été activé. L’API est désormais activée pour les versions Unity 2018.4.18 et les versions ultérieures et 2019.3.4 et les versions ultérieures.
 - Lorsque vous accédez à Device Portal sur une connexion Wi-Fi, un navigateur Web peut empêcher l’accès en raison d’un certificat non valide. Le navigateur peut signaler une erreur telle que «ERR_SSL_PROTOCOL_ERROR», même si le certificat d’appareil a été précédemment approuvé. Dans ce cas, vous ne pouvez pas progresser sur Device Portal, car il n’est pas possible d’ignorer les avertissements de sécurité. Cette mise à jour a résolu le problème. Si le certificat d’appareil a déjà été téléchargé et approuvé sur un PC pour supprimer les avertissements de sécurité du navigateur et si l’erreur SSL se produit, le nouveau certificat doit être téléchargé et approuvé pour répondre aux avertissements de sécurité du navigateur.
 - A activé la possibilité de créer un package de déploiement d’exécution qui peut installer une application à l’aide de packages MSIX.
-- Un paramètre a été ajouté dans les **paramètres**d'  >  **System**  >  **hologrammes** système qui permettent aux utilisateurs de supprimer automatiquement tous les hologrammes de la page d’accueil mixte lorsque l’appareil s’arrête.
+- Un paramètre a été ajouté dans les **paramètres**d'  >  ****  >  **hologrammes** système qui permettent aux utilisateurs de supprimer automatiquement tous les hologrammes de la page d’accueil mixte lorsque l’appareil s’arrête.
 - Correction d’un problème qui entraînait des applications HoloLens qui modifiaient leur format de pixel pour afficher en noir dans l’émulateur HoloLens.
 - Correction d’un bogue entraînant un blocage lors de l’ouverture de session en IRIS.
 - Correction d’un problème de téléchargement de magasin répété pour les applications déjà actuelles.
@@ -566,11 +566,11 @@ Pour l’essayer:
 1. Téléchargez la version la plus récente du concepteur de configuration Windows à partir du Windows Store sur votre PC.
 1. Sélectionnez mise en **service de périphériques hololens**pour les  >  **appareils hololens 2**.
 2. Créez votre profil de configuration. Ensuite, copiez tous les fichiers qui ont été créés sur un appareil de stockage USB-C.
-3. Connectez l’appareil USB-C à un casque HoloLens fraîche. Ensuite, appuyez **volume down**sur les  +  boutons**d’alimentation** du volume.
+3. Connectez l’appareil USB-C à un casque HoloLens fraîche. Ensuite, appuyez **** sur les  +  boutons**d’alimentation** du volume.
 
 ### État d’installation d’une application métier
 
-Le déploiement et la gestion des applications GPM pour les applications métier sont essentiels au HoloLens. Les administrateurs et les utilisateurs doivent afficher l’état de l’installation de l’application à des fins d’audit et de diagnostic. Dans cette version, nous avons ajouté des informations supplémentaires dans la **section paramètres**d'  >  **Accounts**  >  **accès aux comptes, professionnel ou scolaire**,  >  cliquez sur les informations de**votre compte**  >  **Info**.
+Le déploiement et la gestion des applications GPM pour les applications métier sont essentiels au HoloLens. Les administrateurs et les utilisateurs doivent afficher l’état de l’installation de l’application à des fins d’audit et de diagnostic. Dans cette version, nous avons ajouté des informations supplémentaires dans la **section paramètres**d'  >  ****  >  **accès aux comptes, professionnel ou scolaire**,  >  cliquez sur les informations de**votre compte**  >  ****.
 
 ### Fournisseurs et stratégies supplémentaires
 
@@ -614,7 +614,7 @@ Cette version inclut plusieurs améliorations de suivi manuel:
 
 ### Mode sombre
 
-De nombreuses applications Windows prennent désormais en charge les modes sombres et clairs. Les utilisateurs HoloLens 2 peuvent choisir le mode par défaut pour les applications qui prennent en charge les deux. Après la mise à jour, le mode d’application par défaut est «sombre», mais vous pouvez facilement modifier ce paramètre: accédez à **paramètres**  >  **System**  >  **couleurs**système  >  **Choisissez votre mode d’application par défaut**. 
+De nombreuses applications Windows prennent désormais en charge les modes sombres et clairs. Les utilisateurs HoloLens 2 peuvent choisir le mode par défaut pour les applications qui prennent en charge les deux. Après la mise à jour, le mode d’application par défaut est «sombre», mais vous pouvez facilement modifier ce paramètre: accédez à **paramètres**  >  ****  >  **couleurs**système  >  **Choisissez votre mode d’application par défaut**. 
 
 Les applications «intégrées» prennent en charge le mode foncé: 
 

@@ -1,7 +1,7 @@
 ---
 title: Paquet d'approvisionnement
-description: application, déploiement de l’application, application d’entreprise demployment, approvisionnement
-keywords: application, déploiement de l’application, application d’entreprise demployment, approvisionnement
+description: déploiement d’applications, de déploiement d’applications, de déploiement d’applications d’entreprise et de mise en service
+keywords: déploiement d’applications, de déploiement d’applications, de déploiement d’applications d’entreprise et de mise en service
 author: evmill
 ms.author: v-evmill
 ms.date: 6/22/2020
@@ -14,23 +14,24 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 60efc454f9e1221372279401da9f8ee918e061e7
-ms.sourcegitcommit: efa3fb7e353c5e56ee467cc7fd94ffdfaf46e2e5
+ms.openlocfilehash: 11bc83be188e1b81959690efcb2bdf26d800aae3
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11219221"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252675"
 ---
 # Paquet d'approvisionnement
 
 Les packages de mise en service peuvent être utilisés pour préparer et configurer des appareils dans un environnement sans accès à la gestion des points de terminaison. Elles peuvent également être déployées sur un appareil quelle que soit l’identité de l’utilisateur, l’état de l’inscription, lors de l’utilisation de OOBE (out-of-Box Experience) ou en [appliquant un package de mise](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)à disponibilité lors de l’installation.
 
 ## Considérations relatives aux packages de mise en service:
+
 * Applications non publiques
 * Télécharger uniquement le bus USB
 * Aucune mise à jour automatique (nécessite des mises à jour manuelles via PPKGs)
 
-Les applications installées par le biais d’un package de mise en service doivent être signées par un certificat dans le magasin de l’ordinateur local. Les packages de mise en service peuvent uniquement installer des certificats sur le magasin de périphériques (ordinateur local), par conséquent l’application et le certificat peuvent être installés par le biais du même package de mise en service. Si vous déployez votre certificat à partir de la gestion des périphériques mobiles ou de l’installation via le [Gestionnaire de certificats](certificate-manager.md), assurez-vous de déployer le certificat dans le magasin d’ordinateurs local pour signer les applications installées de cette manière.
+Les applications installées par le biais d’un package de mise en service doivent être signées par un certificat dans le magasin de l’ordinateur local. Les packages de mise en service peuvent uniquement installer des certificats sur le magasin de périphériques (ordinateur local), par conséquent une application et un certificat peuvent être installés par le biais du même package de mise en service. Si vous déployez votre certificat à partir de la gestion des périphériques mobiles ou d’une installation via le [Gestionnaire de certificats](certificate-manager.md), assurez-vous de déployer le certificat dans le magasin d’ordinateurs local pour signer les applications installées de cette manière.
 
 Pour découvrir les notions de base de la création d’un package de mise à service pour les appareils HoloLens, visitez [approvisionnement HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning). Pour déployer une application, vous devez commencer par la mise en service avancée.
 
@@ -39,21 +40,21 @@ Pour découvrir les notions de base de la création d’un package de mise à se
 
 ## Configuration
 
-Dans le [Concepteur de configuration Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22) , procédez comme suit.
+Dans le [Concepteur de configuration Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22) , procédez comme suit quatre étapes.
 
 1. Définissez ApplicationManagement/AllowAllTrustedApps sur «Yes». Voir: [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 
-2. Sous **UniversalAppInstall**  >  **UserContextAppLicense** Veuillez entrer le **propriété packagefamilyname**. Voir [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall). Voir aussi: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+2. Accédez à **UniversalAppInstall**  >  **UserContextAppLicense** entrez le **propriété packagefamilyname**. Voir [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall). Voir aussi: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
 
    Vous pouvez utiliser Device Portal sur un appareil sur lequel vous avez déjà installé votre application. Accédez à la page applications et examinez la ligne PackageRelativeID, toutes les informations précédant le «!». Est votre **propriété packagefamilyname**.
-    
+
 3. Vous verrez alors que vous avez une nouvelle section **ApplicationFile**. Utilisez cette zone pour télécharger votre bundle Appx.
 
 4. Selon que vous avez acheté votre application ou créé votre propre application métier, vous devrez télécharger le fichier de licence ou le certificat de sécurité.
 
-    - Pour le fichier de licence: sous **UniversalAppInstall**  >  **UserContextAppLience** et naviguez jusqu’à l’emplacement de votre licence et chargez-le. 
-    - Dans le cas d’un fichier de sécurité, accédez à **certificats** et sélectionnez votre certificat à installer avec votre bundle. Appx.
+    - Pour le fichier de licence: accédez à **UniversalAppInstall**  >  **UserContextAppLicence** et naviguez jusqu’à l’emplacement de votre licence et chargez-le.
+    - Pour le fichier de sécurité, accédez à **certificats** et sélectionnez le certificat à installer avec votre ensemble d’applications. Appx.
 
 Veillez à enregistrer votre projet dans un emplacement sécurisé. Ensuite, **exportez** -la en tant que **package de mise en service**.  
-    
-Voir aussi: [appliquer votre package provisiong au HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
+
+Voir aussi: [appliquer votre package de mise en service au HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
