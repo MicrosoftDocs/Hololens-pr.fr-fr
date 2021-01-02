@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b0ed266389ccc5a21117a604a6eb0abd214d4d1
-ms.sourcegitcommit: 1793f53f9e1cc63ac40edc09e65bb4beb80a4575
+ms.openlocfilehash: 3e06540dd7dca8892cd69abaf9a318d46ca0f3f2
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093228"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253141"
 ---
 # Inscription des appareils HoloLens en entreprise dans un environnement Wi-Fi restreignant les adresses MAC
 
@@ -26,7 +26,7 @@ Ce document décrit un scénario courant que nous avons identifié dans les envi
 
 ## Exemple de scénario
 
-Nombre de clients dans des environnements sécurisés appliquent des restrictions sur leur réseau sans fil ou câblé, ce qui permet uniquement aux appareils approuvés (basés sur des adresses MAC) de se connecter (soit avec filtrage d’adresse MAC sur un point d’accès sans fil, soit sur un serveur DHCP). De plus, certains réseaux sans fil peuvent être protégés par PEAP, ce qui exige qu’un certificat soit appliqué sur l’appareil pour pouvoir s’authentifier sur le réseau sans fil.
+De nombreux clients en environnement sécurisé sont soumis à des restrictions sur leurs réseaux sans fil ou câblés, ce qui permet uniquement aux périphériques approuvés (en fonction de leur adresse MAC) de se connecter correctement (avec le filtrage des adresses MAC sur un point d’accès sans fil ou sur un serveur DHCP). De plus, certains réseaux sans fil peuvent être protégés par PEAP, ce qui nécessite qu’un certificat soit appliqué à l’appareil avant de pouvoir authentifier correctement le réseau sans fil.
 
 Deux problèmes clés peuvent se produire avec les appareils HoloLens, qui peuvent entraîner des délais et une intervention manuelle pour connecter les appareils HoloLens au réseau.
 
@@ -41,12 +41,12 @@ Les principaux défis à relever sont les suivants:
 
 ## Solutions
 
-Plusieurs méthodes s’offrent à vous pour améliorer cette situation, en fonction de l’infrastructure disponible au sein de l’environnement.
+Il existe de nombreuses façons d’améliorer cette situation, en fonction de l’infrastructure disponible au sein de l’environnement.
 
 | Solution | Avantages | Conditions requises |
 | --- | --- | --- |
-| Package de configuration avec adaptateur Ethernet | Améliore l’expérience OOBE et accélère l’intervention du technicien. | Concentrateur USB C compatible HoloLens. Le technicien doit continuer à interagir avec l’appareil pour la capture MAC et la finalisation de l’expérience OOBE. |
-| Autopilot avec l’inscription Intune via Ethernet | Connexion et enregistrement de l’appareil à l’environnement client en une étape. La capture MAC peut être effectuée sans interaction avec l’appareil. | Intune activé pour le client AAD du client. Adaptateur réseau compatible USB-C HoloLens |
+| Package de configuration avec adaptateur Ethernet | Améliore l’expérience OOBE et accélère l’intervention du technicien. | Compatible HoloLens USB C HubTechnician continuera à interagir avec la version de capture de l’appareil pour MAC et la finalisation de la version OOBE |
+| Autopilot avec l’inscription Intune via Ethernet | Connexion et enregistrement de l’appareil à l’environnement client en une étape. La capture MAC peut être effectuée sans interaction avec l’appareil. | Intune activé pour le client Azure AD du client. Adaptateur réseau compatible USB-C HoloLens |
 | Création automatique de rapports sur les adresses MAC | Lorsque des appareils ont été enregistrés dans le client Intune, scriptez la notification de l’adresse MAC au technicien. | Commandlets PowerShell pour Intune |
 
 ## Package de configuration avec adaptateur Ethernet
@@ -125,7 +125,7 @@ Des conditions préalables supplémentaires sont requises comme suit:
 
 ### Avantages
 
-Cela permet une expérience de déploiement &quot;sans port sur la tête&quot; pour le technicien. Il peut en effet inscrire l’appareil sur AAD et Intune sans avoir à le porter ni à interagir manuellement avec l’environnement HoloLens.
+Cela permet une expérience de déploiement &quot;sans port sur la tête&quot; pour le technicien. Il peut en effet inscrire l’appareil sur Azure AD et Intune sans avoir à le porter ni à interagir manuellement avec l’environnement HoloLens.
 
 ## Notification des adresses MAC au technicien
 

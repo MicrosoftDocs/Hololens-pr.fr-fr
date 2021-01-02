@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102313"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253081"
 ---
 # Système d’exploitation sans administrateur
 
@@ -34,9 +34,9 @@ Les composants Windows peuvent également profiter du bac à sable AppContainer 
 
 Enfin, l’exécution d’opérations spécifiques à l’ensemble de l’appareil, telles que l’ajout de l’appareil à un client ou la gestion des utilisateurs, n’est autorisée que pour les «propriétaires des appareils». Les utilisateurs de l’appareil sont ajoutés à ce groupe via l’une des étapes suivantes:
   * Le premier utilisateur de l’appareil est toujours désigné comme étant le Propriétaire. 
-    * Il existe une exception à cette règle: si l’appareil est associé à AAD, l’utilisateur ayant effectué cette opération devient le propriétaire de l’appareil. Par exemple, cela s’applique si un appareil est lié à AAD via Autopilot. Dans ce cas, le premier utilisateur à se connecter à l’appareil n’est pas la personne qui a effectué cette association et ne deviendra donc pas propriétaire de l’appareil. Si vous souhaitez en savoir plus sur les personnes nommées propriétaire d’un appareil sur un appareil lié à AAD, consultez la [documentation «Attribuer un administrateur local»](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (mais en gardant à l’esprit que «administrateur local» veut dire «propriétaire de l’appareil» car le rôle d’administrateur n’existe pas sur HoloLens).
+    * Il existe une exception à cette règle: si l’appareil est associé à Azure AD, l’utilisateur ayant effectué cette opération devient le propriétaire de l’appareil. Par exemple, cela s’applique si un appareil est lié à Azure AD via Autopilot. Dans ce cas, le premier utilisateur à se connecter à l’appareil n’est pas la personne qui a effectué cette association et ne deviendra donc pas propriétaire de l’appareil. Si vous souhaitez en savoir plus sur les personnes nommées propriétaire d’un appareil sur un appareil lié à Azure AD, consultez la [documentation «Attribuer un administrateur local»](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (mais en gardant à l’esprit que «administrateur local» veut dire «propriétaire de l’appareil» car le rôle d’administrateur n’existe pas sur HoloLens).
   * Lorsqu’un utilisateur est promu Propriétaire, à partir des paramètres UX, par un autre propriétaire sur l’appareil.
-  * Si le propriétaire de l’appareil n’est plus disponible (s’il quitte l’entreprise par exemple) et que l’appareil est joint à AAD, l’administrateur du client peut remplacer le propriétaire de l’appareil par un nouvel utilisateur dans le portail Azure.
+  * Si le propriétaire de l’appareil n’est plus disponible (s’il quitte l’entreprise par exemple) et que l’appareil est joint à Azure AD, l’administrateur du client peut remplacer le propriétaire de l’appareil par un nouvel utilisateur dans le portail Azure.
 Les administrateurs généraux d’un client Azure AD sont implicitement connectés en tant que propriétaires sur l’appareil et n’ont pas besoin d’effectuer les étapes précédentes. 
 
 Les administrateurs informatiques peuvent gérer les autorisations d’accès des applications via les stratégies de [Confidentialité](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy). 

@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009512"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252971"
 ---
 # Limitation de l’utilisation d’un mot de passe
 
@@ -52,7 +52,7 @@ Lorsqu’une information d’identification WindowsHello est créée, elle étab
 
 Si vous souhaitez obtenir plus d’informations, consultez l’infographie suivante:
 
-  ![Connexion à WindowsHello](images/security-hello-sign-in.png)
+  ![Connexion à Windows Hello](images/security-hello-sign-in.png)
   
 Dans le graphique présenté ci-dessus, notez que nonce signifie «numéro une seule fois» et est un nombre généré de façon aléatoire ou semi-aléatoire. Une fois que les informations d’identification biométrique ou le code PIN WindowsHello sont configurés, il ne quitte jamais l’appareil sur lequel ils sont configurés. Même si le code PIN WindowsHello de l’utilisateur est volé, par exemple par une attaque d’hameçonnage, il est [inutile sans l’appareil physique de l’utilisateur](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password). 
 
@@ -62,17 +62,17 @@ L’authentification par reconnaissance de l’iris fonctionne de la même faço
 
 ## Authentification unique avec le gestionnaire de comptes web 
 
-L’authentification unique (SSO) permet aux utilisateurs sans mot de passe de se connecter à l’appareil, en utilisant leur compte personnel, professionnel ou scolaire. L’utilisateur est automatiquement autorisé avec l’authentification unique sur toutes les applications et tous les services intégrés via les [API du gestionnaire de comptes web](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041).
+L’authentification unique (SSO) permet aux utilisateurs sans mot de passe de se connecter à l’appareil, en utilisant leur compte personnel, professionnel ou scolaire. L’utilisateur est automatiquement autorisé avec l’authentification unique sur toutes les applications et tous les services intégrés via les [API du gestionnaire de comptes web](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 Une fois qu’une identité a été ajoutée via une application, elle peut, avec le consentement de l’utilisateur, devenir disponible pour toutes les applications et tous les services à l’aide de l’intégration au niveau du système. Cela réduit considérablement la charge de connexion à l’application et offre aux utilisateurs une expérience d’identité transparente.
 
 Si vous souhaitez en savoir plus sur l’implémentation des API du gestionnaire de comptes web, accédez à la page [Implémentation des API Web Account Manager](https://docs.microsoft.com/windows/uwp/security/web-account-manager).
 
-  ![Connexion à WindowsHello](images/security-api-img.png)
+  ![API de sécurité](images/security-api-img.png)
   
 Pour les suites d’applications avec des exigences d’authentification spécialisées, l’infrastructure du gestionnaire de comptes web est extensible aux fournisseurs d’identité personnalisées. Les utilisateurs peuvent télécharger le fournisseur d’identité personnalisé, présenté sous la forme d’une application plateforme Windows universelle (UWP) du Microsoft Store, pour activer l’authentification unique sur d’autres applications intégrées à ce fournisseur d’identité. 
 
-Si vous souhaitez en savoir plus sur l’implémentation de fournisseurs d’identité du gestionnaire de comptes web personnalisés, consultez la page [Référence API du fournisseur d’identité du gestionnaire de comptes web personnalisée](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041).
+Si vous souhaitez en savoir plus sur l’implémentation de fournisseurs d’identité du gestionnaire de comptes web personnalisés, consultez la page [Référence API du fournisseur d’identité du gestionnaire de comptes web personnalisée](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 ## Connexion WindowsHello et FIDO2 avec WebAuthn
 
@@ -83,7 +83,7 @@ HoloLens2 peut utiliser les informations d’identification sans mot de passe de
 
 Comme avec WindowsHello, lorsque l’utilisateur crée et enregistre des informations d’identification FIDO2, l’appareil (HoloLens2 ou la clé de sécurité FIDO2), génère une clé privée et une clé publique sur l’appareil. La clé privée est stockée en toute sécurité sur l’appareil et ne peut être utilisée qu’après avoir été déverrouillée à l’aide d’un mouvement local tel qu’un code biométrique ou un code PIN. Lorsque la clé privée est stockée, la clé publique est envoyée au système de compte Microsoft dans le cloud et est enregistrée avec le compte d’utilisateur associé.
 
-Une fois connecté avec un compte MSA et AAD, le système envoie un nombre ou une variable de données généré à HoloLens2 ou à l’appareil FIDO2. Le HoloLens2, ou l’appareil, utilise la clé privée pour signer l’identification. L’identification et les métadonnées signées sont renvoyées au système de compte Microsoft et sont vérifiées à l’aide de la clé publique.
+Une fois connecté avec un compte MSA et Azure AD, le système envoie un nombre ou une variable de données généré à HoloLens2 ou à l’appareil FIDO2. Le HoloLens2, ou l’appareil, utilise la clé privée pour signer l’identification. L’identification et les métadonnées signées sont renvoyées au système de compte Microsoft et sont vérifiées à l’aide de la clé publique.
 
 Les appareils WindowsHello et FIDO2 implémentent des informations d’identification basées sur l’appareil HoloLens, en particulier l’enclave sécurisée Module de plateforme sécurisée (TPM) intégrée. L’enclave TPM stocke la clé privée et nécessite un code biométrique ou un code PIN pour la déverrouiller. De même, une clé de sécurité FIDO2 est un petit appareil externe avec une enclave sécurisée intégrée qui stocke la clé privée et nécessite un code biométrique ou un code PIN pour la déverrouiller.
 
@@ -91,7 +91,7 @@ Les deux options offrent une authentification à 2 facteurs en une seule étape,
 
   ![img FIDO](images/security-fido2-whfb.png)
 
-MSA et AAD font parties des premières parties à s’appuyer sur l’authentification sans mot de passe en implémentant WebAuthn. 
+MSA et Azure AD font parties des premières parties à s’appuyer sur l’authentification sans mot de passe en implémentant WebAuthn. 
 
 Si vous souhaitez en savoir plus sur l’utilisation de WebAuthn avec des applications et/ou des SDK, consultez la page [API WebAuthn pour l’authentification sans mot de passe sur Windows10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
 
