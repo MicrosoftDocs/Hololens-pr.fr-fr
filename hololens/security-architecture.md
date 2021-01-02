@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f8434ffe2442f270d6360018bea4b64064168d0c
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009552"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253251"
 ---
 # Vue d’ensemble et architecture de la sécurité
 
@@ -32,7 +32,7 @@ Windows HoloLens 2 et l’architecture de système d’exploitation proposent le
   
   * **Protection des données**: en cas de perte ou de vol de l’appareil d’un utilisateur, HoloLens 2 empêche les applications non autorisées de lire les informations sensibles en utilisant le chiffrement de données BitLocker. 
   
-  * **Système d’exploitation sans mot de passe**: les anciens systèmes d'exploitation basés sur des mots de passe pouvaient par inadvertance exposer les utilisateurs à des menaces de hameçonnage et étaient souvent responsables de comptes compromis. Windows holographique pour les entreprises élimine l’utilisation des mots de passe pour la connexion MSA et AAD et renforce la protection de l’identité des utilisateurs avec la connexion Windows Hello™ et la connexion FIDO2. 
+  * **Système d’exploitation sans mot de passe**: les anciens systèmes d'exploitation basés sur des mots de passe pouvaient par inadvertance exposer les utilisateurs à des menaces de hameçonnage et étaient souvent responsables de comptes compromis. Windows holographique pour les entreprises élimine l’utilisation des mots de passe pour la connexion MSA et Azure AD et renforce la protection de l’identité des utilisateurs avec la connexion Windows Hello™ et la connexion FIDO2. 
   
     > [!NOTE]
     > Pour bénéficier de la prise en charge de FIDO2, l'appareil doit être sur Build 19041 ou une version ultérieure. 

@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
-ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
+ms.openlocfilehash: 23a850022a686389669e96e987274cc6481b936e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "11205766"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253241"
 ---
 # Windows Autopilot pour HoloLens2
 
@@ -255,7 +255,7 @@ Une fois que le nœud RequireNetworkInOOBE du CSP TenantLockdown est défini sur
 
 Une fois que le nœud RequireNetworkInOOBE du CSP TenantLockdown est défini sur true sur HoloLens2, les opérations suivantes ne sont pas autorisées dans l’application OOBE: 
 - Créer un utilisateur local à l’aide de la configuration de l’exécution 
-- Exécuter une opération de jointure AAD via la configuration de l’exécution 
+- Exécuter une opération de jointure Azure AD via la configuration de l’exécution 
 - Sélectionner le propriétaire de l’appareil dans l’application OOBE 
 
 #### Comment définir cette configuration à l’aide de Intune? 
