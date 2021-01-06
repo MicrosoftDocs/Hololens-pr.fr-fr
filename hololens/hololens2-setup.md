@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996402"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253560"
 ---
 # Préparer votre HoloLens 2 pour utilisation
 
@@ -25,7 +25,7 @@ Les procédures ci-dessous vous aideront à configurer un HoloLens 2 pour la pre
 
 ## Charger votre HoloLens
 
-Raccordez l’alimentation au port de charge à l’aide du câble USB-C (fourni). Branchez le bloc d’alimentation à une prise de courant. Le bloc d’alimentation et le câble USB-C vers C fournis avec l’appareil constituent le meilleur moyen de charger votre HoloLens 2. Le chargeur fournit 18W d’alimentation (9V à 2A).
+Raccordez l’alimentation au port de charge à l’aide du câble USB-C (fourni). Branchez le bloc d’alimentation à une prise de courant. Le bloc d’alimentation et le câble USB-C vers C fournis avec l’appareil constituent le meilleur moyen de charger votre HoloLens 2. Le chargeur fournit 18W d’alimentation (9V à 2A). À l’aide du chargeur mural fourni, les appareils HoloLens 2 peuvent charger la batterie à l’intégralité en moins de 65 minutes lorsque l’appareil est en veille.
 
 Le taux de charge et la vitesse peuvent varier en fonction de l’environnement où l'appareil s'exécute.
 

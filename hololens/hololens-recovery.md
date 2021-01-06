@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195597"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253580"
 ---
 # Redémarrer, réinitialiser ou récupérer HoloLens 2
 
 ## Recharger l’appareil
 
-Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au moins entre 20 et 40%, si possible. Utilisez le chargeur et les câbles USB de typeC fournis avec l’appareil HoloLens2. Le bloc d’alimentation et le câble USB-C vers C fournis avec l’appareil constituent le meilleur moyen de charger votre HoloLens 2. Le chargeur fournit 18W d’alimentation (9V à 2A). Si ces accessoires ne sont pas disponibles, assurez-vous que le chargeur disponible peut supporter au moins 15W de puissance.
+Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au moins entre 20 et 40%, si possible. Utilisez le chargeur et les câbles USB de typeC fournis avec l’appareil HoloLens2. Le bloc d’alimentation et le câble USB-C vers C fournis avec l’appareil constituent le meilleur moyen de charger votre HoloLens 2. Le chargeur fournit 18W d’alimentation (9V à 2A). À l’aide du chargeur mural fourni, les appareils HoloLens 2 peuvent charger la batterie à l’intégralité en moins de 65 minutes lorsque l’appareil est en veille. Si ces accessoires ne sont pas disponibles, assurez-vous que le chargeur disponible peut supporter au moins 15W de puissance.
 
 > [!NOTE]
 > Si possible, évitez d’utiliser un PC pour charger l’appareil par câble USB, ce serait trop lent.
@@ -141,7 +141,7 @@ Pour activer le chemin de déploiement, procédez comme suit:
     - À ce stade, si le PC de bureau dispose d’un accès à Internet, double-cliquez sur le package pour installer l’application.
 
 
-    - Si l’ordinateur de destination n’est pas connecté à Internet, procédez comme suit: 
+    - Si l’ordinateur de destination ne dispose pas d’une connexion Internet, procédez comme suit: 
        1. Sélectionnez la licence non codée, puis sélectionnez **Générer une licence**.
        2. Sous **Infrastructures requises**, sélectionnez **Télécharger**.
        3. Utilisez DISM pour appliquer le package avec la dépendance et la licence. À partir d’une invite de commandes administrateur, exécutez la commande suivante:
