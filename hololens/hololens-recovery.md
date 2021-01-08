@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253580"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254831"
 ---
 # Redémarrer, réinitialiser ou récupérer HoloLens 2
 
@@ -49,6 +49,7 @@ Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observ
 Dans certains cas, il se peut que vous deviez réinitialiser manuellement l’appareil sans utiliser l’interface utilisateurdu logiciel.
 
 ### Procédure standard
+
 1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de typeC.
 
 2. Appuyez de façon prolongée sur le bouton **d’alimentation** pendant 15secondes. Tous les voyants doivent être désactivés.
@@ -88,7 +89,7 @@ Il existe deux méthodes pour nettoyer un appareil HoloLens2. Pour les deux, vou
 
 Par défaut, le Compagnon de récupération avancé est configuré pour télécharger la version la plus récente de publication de la fonctionnalité, consultez cette page pour découvrir nos [Notes de publication](hololens-release-notes.md#) relative à la dernière publication de la fonctionnalité. Pour télécharger la dernière version de package de mise à jour FFU HoloLens2 pour refaire clignoter votre périphérique via le Compagnon de récupération avancé, [cliquez ici pour télécharger la dernière image de Hololens2](https://aka.ms/hololens2download). Cette version est le build le plus récent disponible.
 
-Avant de commencer la procédure de réinitialisation, assurez-vous que l’application est installée et en cours d’exécution sur votre PC Windows10 et qu’elle est prête à détecter l’appareil.
+Avant de commencer la procédure de réinitialisation, assurez-vous que l’application est installée et en cours d’exécution sur votre PC Windows10 et qu’elle est prête à détecter l’appareil. Assurez-vous également que votre HoloLens est chargé à un minimum de 40 %.
 
 ![Capture d’écran de réinitialisation d’HoloLens2](images/ARC1.png)
 
@@ -126,22 +127,21 @@ Si HoloLens2 ne démarre pas correctement, vous devrez peut-être placer l’app
 
 Si l’environnement informatique empêche l’utilisation de l’application WindowsStore ou limite l’accès au Retail Store, l’administrateur informatique peut rendre cette application disponible via un chemin de déploiement «hors connexion».
 
- >[!NOTE] 
+ >[!NOTE]
  > - Les administrateurs informatiques peuvent également distribuer cette application via System Center Configuration Manager (SCCM) ou Intune.
  > - Ce guide se concentre sur l’utilisation d’Advanced Recovery Companion, mais le processus peut également être utilisé pour d’autres applications «hors connexion».
 
 Pour activer le chemin de déploiement, procédez comme suit:
 1. Accédez à [Microsoft Store pour Entreprises](https://businessstore.microsoft.com) et connectez-vous à l’aide d’une identité Azure Active Directory.
 
-1. Accédez à **Gérer – Paramètres**. Activez **Afficher les applications hors connexion** sous **Shopping Experience**. 
+1. Accédez à **Gérer – Paramètres**. Activez **Afficher les applications hors connexion** sous **Shopping Experience**.
 1. Accédez à la **section acheter pour mon groupe**et recherchez l' [**_Assistant de récupération avancée_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 1. Changez le _*Type de licence** en **_mode hors connexion_*_, puis sélectionnez _*Manage**.
 1. Sous **Télécharger le package pour l’utilisation en mode hors connexion**, sélectionnez le deuxième bouton bleu **Télécharger**. Assurez-vous que l’extension de fichier est *.appxbundle*.
 
     - À ce stade, si le PC de bureau dispose d’un accès à Internet, double-cliquez sur le package pour installer l’application.
 
-
-    - Si l’ordinateur de destination ne dispose pas d’une connexion Internet, procédez comme suit: 
+    - Si l’ordinateur de destination ne dispose pas d’une connexion Internet, procédez comme suit:
        1. Sélectionnez la licence non codée, puis sélectionnez **Générer une licence**.
        2. Sous **Infrastructures requises**, sélectionnez **Télécharger**.
        3. Utilisez DISM pour appliquer le package avec la dépendance et la licence. À partir d’une invite de commandes administrateur, exécutez la commande suivante:
@@ -153,7 +153,7 @@ Pour activer le chemin de déploiement, procédez comme suit:
             > Il se peut que le numéro de version dans cet exemple de code ne corresponde pas à la version actuellement disponible. Vous avez peut-être également choisi un autre emplacement de téléchargement que dans l’exemple. Apportez les modifications nécessaires à la commande.
 
 > [!TIP]
-> Lorsque vous envisagez d’utiliser Advanced Recovery Companion pour installer une mise à jourFFU en mode hors connexion, il peut être utile de télécharger votre image flash. [**Télécharger l’image actuelle pour Hololens2**](https://aka.ms/hololens2download). 
+> Lorsque vous envisagez d’utiliser Advanced Recovery Companion pour installer une mise à jourFFU en mode hors connexion, il peut être utile de télécharger votre image flash. [**Télécharger l’image actuelle pour Hololens2**](https://aka.ms/hololens2download).
 
 Autres ressources
 - [Distribuer des applications hors connexion](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
