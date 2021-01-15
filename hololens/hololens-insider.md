@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 06c3faf573adabe158a72a66fc4b8a45afec48fb
-ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
+ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
+ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269395"
+ms.locfileid: "11269479"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -103,7 +103,7 @@ Voici quelques ressources utiles pour en savoir plus sur la gestion des paramèt
 
 ### Nouvelle application Paramètres
 
-Avec cette version, nous introduisons une nouvelle version de l’application Paramètres. La nouvelle application Paramètres inclut de nouvelles fonctionnalités et des paramètres étendus pour HoloLens 2 dans les domaines suivants : périphériques audio d’entrée/sortie, volume d’application individuel, alimentation et veille, adaptateur Ethernet, options d’facilité d’accès, mode avion et applications par défaut.
+Avec cette version, nous introduisons une nouvelle version de l’application Paramètres. La nouvelle application Paramètres inclut de nouvelles fonctionnalités et des paramètres étendus pour HoloLens 2 dans les domaines suivants : son, veille power &, réseau & Internet, applications, comptes, options d’accès faciles, etc.
 
 > [!NOTE]
 > Étant donné que la nouvelle application Paramètres est distincte de l’application Paramètres héritée, toutes les fenêtres Paramètres que vous avez précédemment placées dans votre environnement seront supprimées lors de la mise à jour.
@@ -112,17 +112,18 @@ Avec cette version, nous introduisons une nouvelle version de l’application Pa
 
 **Nouvelles fonctionnalités et nouveaux paramètres**
 - Recherche de paramètres : recherchez les paramètres de la page d’accueil Paramètres à l’aide de mots clés ou du nom du paramètre
-- Son :
+- Son système > :
   - Périphériques audio d’entrée et de sortie : choisissez indépendamment vos périphériques audio d’entrée et de sortie (par exemple, écoutez de l’audio via un casque Bluetooth ou utilisez un microphone USB-C pour l’entrée audio). Remarque : Bluetooth microphones ne sont pas pris en charge par HoloLens 2.
   - Volume d’application : ajuster indépendamment le volume de chaque application
-- Économiseur de batterie : activer manuellement le mode économiseur de batterie ou définir un seuil de batterie à partir duquel le mode économiseur de batterie s’active automatiquement
-- Alimentation & veille : choisir quand l’appareil doit être en veille après une période d’inactivité
-- USB : vous pouvez désactiver les connexions USB par défaut
+- Système > la & veille : choisir le moment où l’appareil doit être en veille après une période d’inactivité
+- Système > batterie : activer manuellement le mode économiseur de batterie ou définir un seuil de batterie à partir duquel le mode économiseur de batterie s’active automatiquement
+- Appareils > USB : vous pouvez désactiver les connexions USB par défaut
 - Réseau & Internet :
   - Les adaptateurs Ethernet USB-C apparaissent désormais dans Le réseau & Internet
   - Les paramètres de l’adaptateur Ethernet USB-C sont désormais disponibles, y compris son adresse IP
   - Vous pouvez désormais activer le mode avion sur HoloLens 2
 - Applications : vous pouvez réinitialiser les applications par défaut utilisées pour les types de fichiers et de liens. Pour plus [d’informations, consultez](#default-app-picker) le s sélectionneur d’application par défaut.
+- Les comptes > autres utilisateurs : les propriétaires d’appareils peuvent ajouter des utilisateurs, mettre à niveau les utilisateurs standard vers les propriétaires d’appareils, rétrograder les propriétaires d’appareils en utilisateurs standard et supprimer des utilisateurs.
 - Facilité d’accès : modifier la taille du texte et certains effets visuels
 
 **Problèmes connus**
