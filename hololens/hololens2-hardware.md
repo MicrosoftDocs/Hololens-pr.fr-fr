@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
+ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134648"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11270721"
 ---
 # Matériel HoloLens2
 
@@ -68,6 +68,11 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Profondeur | Capteur de profondeur de temps de vol d’1 MP |
 | Unité de mesure de l’inertie | Accéléromètre, gyroscope, magnétomètre |
 | Appareil photo | Images fixes 8MP, vidéo 1080p30 |
+
+![Capteurs HoloLens 2](images/hl2-sensors.png)
+
+> [!NOTE]
+> Ne couvrez aucun des capteurs qui sont appelés sur l'image. Les caméras de suivi des têtes ont un champ de vision très large, rien ne doit être autour d'elles en plus de ne pas les couvrir.
 
 ### Fonctions audio et vocales
 
