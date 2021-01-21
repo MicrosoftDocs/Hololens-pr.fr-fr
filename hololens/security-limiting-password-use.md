@@ -1,6 +1,6 @@
 ---
 title: Limitation de l’utilisation d’un mot de passe
-description: limitation de l’utilisation d’un mot de passe pour holoLens
+description: limitation de l’utilisation d’un mot de passe pour HoloLens
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 2d9527c9fee2818dfe8aa1f88a2f193415323bb1
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11252971"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280663"
 ---
 # Limitation de l’utilisation d’un mot de passe
 
@@ -97,8 +97,8 @@ Si vous souhaitez en savoir plus sur l’utilisation de WebAuthn avec des applic
 
 ## Comptes locaux
 
-Un seul compte local peut être configuré pour les déploiements en mode hors ligne. Les comptes locaux ne sont pas activés par défaut et doivent être configurés lors du provisionnement des appareils. Ils doivent se connecter à l’aide d’un mot de passe et ne prennent pas en charge les méthodes d’authentification alternatives (telles que [WindowsHelloEntreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) ou [WindowsHello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)). 
+Un seul compte local peut être configuré pour les déploiements en mode hors ligne. Les comptes locaux ne sont pas activés par défaut et doivent être configurés lors du provisionnement des appareils. Ils doivent se connecter à l’aide d’un mot de passe et ne pas prendre en charge les autres méthodes d’authentification (telles que [Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) Entreprise ou [Windows Hello).](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 
 Si vous souhaitez obtenir plus de détails sur les comptes d’utilisateurs HoloLens, consultez la page [Identité HoloLens](https://docs.microsoft.com/hololens/hololens-identity). 
 
-Les administrateurs informatiques déterminent si l’utilisateur est autorisé à utiliser un compte MSA pour l’authentification et les services de connexion non liés à la messagerie via [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Pour les stratégies de configuration de mot de passe, les stratégies de ralenti et les stratégies d’écran de verrouillage, consultez la page [Verrouillage des appareils](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock). 
+Les administrateurs informatiques déterminent si l’utilisateur est autorisé à utiliser un compte MSA pour l’authentification et les services de connexion non liés à la messagerie via [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Pour les stratégies de configuration de mot de passe, les stratégies d’identisation et les stratégies d’écran de verrouillage, voir [Verrouillage de l’appareil.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) 
