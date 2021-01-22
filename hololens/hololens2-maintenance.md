@@ -1,6 +1,6 @@
 ---
 title: 'Nettoyage HoloLens2: FAQ'
-description: ''
+description: Obtenez des réponses à toutes les questions fréquemment posées pour le nettoyage et la maintenance de votre appareil HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,75 +15,75 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
-ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
+ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888553"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283085"
 ---
 # Nettoyage HoloLens2: FAQ
 
 > [!IMPORTANT]  
-> Microsoft ne peut pas déterminer l’efficacité de tout produit désinfectant pour lutter contre les agents pathogènes tels que COVID-19. Reportez-vous à la rubrique recommandations de votre autorité publique locale pour savoir comment vous protéger de votre éventuelle infection.  
+> Microsoft ne peut pas déterminer l’efficacité d’un produit insérante donné dans des luttes telles que COVID-19. Reportez-vous aux conseils de votre autorité de santé publique locale sur la façon de rester à l’abri d’une infection potentielle.  
 
-## Quelles sont les instructions de nettoyage générales pour les appareils HoloLens 2?
+## Quelles sont les instructions de nettoyage général pour les appareils HoloLens 2 ?
 
 **Pour nettoyer l’appareil**
 
-1. Supprimez toute poussière en utilisant un chiffon Microfiber sans peluche pour essuyer avec soin la surface de l’appareil.
-1. Humidifiez en tirant le chiffon de usingmedical "70%" d’alcool isopropylique, puis utilisez le chiffon humecté pour essuyer en douceur la surface de l’appareil.
+1. Supprimez toute apparence à l’aide d’un microfibre sec et exempt de lint pour effacer légèrement la surface de l’appareil.
+1. Éclaircissez légèrement le papier à l’aide de l’isopropyl « 70 % » médical, puis utilisez-le pour effacer légèrement la surface de l’appareil.
 
    ![Image illustrant le nettoyage de la visière](images/hololens-cleaning-visor.png)
 
-1. Laissez l’appareil sécher complètement.
+1. Laissez l’appareil complètement secs.
 
-**Pour nettoyer le clavier navigateur**
+**Pour nettoyer le clavier de navigateur**
 
-1. Utilisez l’eau et un SOAP antibiotique pour humidifier un chiffon, puis utilisez le chiffon humecté pour réutiliser le clavier de votre navigateur.
-1. Laissez le tapis de navigateur sécher entièrement.
+1. Utilisez de l’eau et un soap d’eau et d’eau pour mouiller un papier à balai, puis utilisez le papier à balai pour effacer le pavé de navigateur.
+1. Laissez le clavier de navigateur s’assoucher complètement.
 
-## Est-ce que je peux utiliser n’importe quel nettoyeur de lentilles pour nettoyer le Visor HoloLens?
+## Puis-je utiliser n’importe quel nettoyage d’objectif pour nettoyer la visière HoloLens ?
 
-Non. Les nettoyants pour lentilles peuvent être abrasifs sur le Visor. Pour nettoyer le Visor, procédez comme suit:  
+Non. Les nettoyeurs d’objectif peuvent être abrasifs pour les bords de la visière. Pour nettoyer la visière, suivez les étapes suivantes :  
 
-1. Supprimez toute poussière en utilisant un chiffon Microfiber exempt de peluches pour essuyer en douceur le visière.
-1. Humidifiez légèrement un chiffon en utilisant une imcoolity de 70%, puis essuyez en douceur le visière.
-1. Laissez le visière sécher entièrement.
+1. Supprimez toute papier à sable à l’aide d’un microfibre en microfibre non secs pour effacer légèrement la visière.
+1. Éclaircissez légèrement un papier à l’aide de l’effet médical « 70 % » d’isopropyl, puis effacez légèrement la visière.
+1. Laissez la visière complètement secs.
 
-## Est-il possible d’utiliser des effacements de désinfection pour nettoyer l’appareil?
+## Puis-je utiliser des effacements pour nettoyer l’appareil ?
 
-Oui, si les effacements ne contiennent pas de blanchiment. Vous pouvez utiliser des effacements de désinfection sans blanchiment pour [effacer en douceur les surfaces HoloLens](#what-are-the-general-cleaning-instructions-for-hololens-2-devices).  
+Oui, si les effacements ne contiennent pas de papier. Vous pouvez utiliser des effacements insérez des effacements non ingrayés pour effacer légèrement [les surfaces HoloLens.](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)  
 
 > [!CAUTION]  
-> Évitez d’utiliser des effacements en désinfection contenant des blanchiments pour nettoyer les surfaces HoloLens. Il est acceptable d’utiliser des effacements de blanchiment dans les situations critiques, lorsque rien d’autre n’est disponible. Toutefois, les blanchiments d’un Visor ou d’autres surfaces pourraient endommager le visière.
+> Évitez d’utiliser des effacements qui contiennent des effacements pour nettoyer les surfaces HoloLens. Il est acceptable d’utiliser des effacements dans les situations critiques, lorsque rien d’autre n’est disponible. Toutefois, l’endommagement peut endommager la visière HoloLens ou d’autres surfaces.
 
-## Est-il possible d’utiliser des alcools pour nettoyer le périphérique?
+## Puis-je utiliser de l’eau pour nettoyer l’appareil ?
 
-Oui. Vous pouvez utiliser une solution de «70%», alcool isopropylique et eau pour nettoyer les surfaces blanches de l’appareil, y compris le visière. Essuyez légèrement le chiffon en utilisant une combinaison d’alcool isopropylique et d’eau, puis essuyez en douceur la surface de l’appareil.
+Oui. Vous pouvez utiliser une solution de « 70 % » d’eau et d’eau isopropyl pour nettoyer les surfaces dures de l’appareil, y compris la visière. Éclaircissez légèrement le papier à l’aide d’une combinaison d’eau et d’eau isopropyl, puis effacez légèrement la surface de l’appareil
 
-## Le BMD est-il remplaçable?
+## Le clavier de navigateur est-il remplaçable ?
 
-Oui. Le clavier de navigateur est fixé à l’appareil par un aimant. Pour le détacher, éloignez-le doucement de la bandeau. Pour le remplacer, remettez-le en place.
+Oui. Le clavier de navigateur est fixé à l’appareil par un aimant. Pour le détacher, éloignez-le légèrement du bandeau. Pour le remplacer, remettez-le en place.
 
 ![Supprimer ou remplacer le clavier de navigateur](images/hololens2-remove-browpad.png)
 
-## Comment puis-je nettoyer le pavé tactile?
+## Comment puis-je nettoyer le clavier de navigateur ?
 
-Pour nettoyer le BMD, essuyez-le en utilisant un chiffon qui est humecté à l’aide d’eau et d’un SOAP antibiotique doux. Laissez le pavé d’affichage sécher entièrement avant de le réutiliser.
+Pour nettoyer le clavier de navigateur, effacez-le à l’aide d’un crayon qui est moisé à l’aide d’une eau et d’un soap. Laissez le clavier de navigateur complètement sec avant de l’utiliser à nouveau.
 
-## Puis-je utiliser le rayonnement ultraviolet pour assainir le périphérique?
+## Puis-je utiliser la lumière UV pour désinfecter l’appareil ?
 
-UVC irradiant avec UVC del, qui fonctionne à 265nm au niveau d’intensité de 0.5-0,6 mW/cm <sup> 2 </sup> et n’émet pas d’ozone, peut être utilisé pour assainir HoloLens2. Suivez les spécifications du fabricant concernant le temps de gestion et d’exposition.
+L’irradiance UVC utilisant UVC LED, qui fonctionne à 265nm au niveau d’intensité de 0.5-0.6mW/cm2 et n’émet pas de rayon, peut être utilisée pour désinfecter <sup> </sup> HoloLens2. Suivez les spécifications du fabricant sur la gestion et le temps d’exposition.
 
 > [!CAUTION]  
-> Les niveaux élevés d’exposition UV-A et UV-B peuvent nuire à la qualité d’affichage de l’appareil et endommager le revêtement du Visor. Les effets de dépassement sur le rayonnement UV-A et UV-B sont les suivants, selon la durée et l’intensité d’exposition:
+> Des niveaux élevés d’exposition UV-A et UV-B peuvent dégrader la qualité d’affichage de l’appareil et endommager la hauteur de la visière. La sur-exposition aux UV-A et UV-B a les effets suivants, par ordre de durée et d’intensité d’exposition :
 >  
-> 1. Le pavé tactile et les fermetures de périphériques sont décolorés.
-> 1. Les défauts apparaissent dans le revêtement anti-reflet sur le visière et dans les fenêtres du capteur.
-> 1. Les défauts apparaissent dans les matériaux de base du Visor et dans les fenêtres du capteur.
-> 1. Afficher les performances détériorées.
+> 1. Le clavier de navigateur et les fermetures de périphériques sont décolorés.
+> 1. Des défauts apparaissent dans l’intérieur anti-reflets sur la visière et sur les fenêtres du capteur.
+> 1. Des défauts apparaissent dans les matériaux de base de la visière et sur les fenêtres du capteur.
+> 1. Les performances d’affichage se dégradent.
 
-## Le pavé ARRIERE est-il remplaçable?
+## Le pavé arrière est-il remplaçable ?
 
 Non.
