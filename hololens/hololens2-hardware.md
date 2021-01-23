@@ -1,6 +1,6 @@
 ---
 title: Matériel HoloLens2
-description: Présentation des composants de Microsoft HoloLens2, la dernière évolution de l’ordinateur holographique sans fil de Microsoft, exécutant Windows10.
+description: Découvrez les composants de Microsoft HoloLens 2, la dernière évolution d’un ordinateur Microsoft holographique non associé exécutant Windows10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
-ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
+ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271167"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283035"
 ---
 # Matériel HoloLens2
 
