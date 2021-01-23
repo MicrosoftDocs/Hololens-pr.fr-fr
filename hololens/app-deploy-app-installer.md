@@ -1,6 +1,6 @@
 ---
 title: Comment charger et installer des applications de manière latérale via le programme d’installation d’application HoloLens 2
-description: Chargement des diapositives et installation d’applications via l’interface utilisateur
+description: Découvrez comment installer et dépanner des applications avec le programme d’installation de l’application et charger et installer des applications de manière latérale via l’interface utilisateur.
 keywords: gestion des applications, application, hololens, programme d’installation d’application
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
-ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
+ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
+ms.sourcegitcommit: af4e222a4f83ab82466a383099897986ddf6b8c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "11280653"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "11297289"
 ---
 # Installer des applications sur HoloLens 2 via le programme d’installation d’application
 
@@ -34,20 +34,21 @@ Un appareil est considéré comme « géré » si **l’une** des valeurs suivan
 - Configuré avec le [package d’approvisionnement](hololens-provisioning.md)
 - [L’identité de l’utilisateur](hololens-identity.md) est Azure AD
 
-Vous pouvez désormais installer des applications sans avoir besoin d’activer le mode développeur ou d’utiliser Device Portal.  Téléchargez (via USB ou Microsoft Edge) l’ensemble d’applications sur votre appareil et accédez à l’ensemble d’applications dans l’Explorateur de fichiers pour être invité à lancer l’installation.  Vous pouvez également [lancer une installation à partir d’une page web.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Tout comme les applications que vous installez à partir du Microsoft Store ou chargez une version [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) de version [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) à l’aide de la fonctionnalité de déploiement d’applications LOB de MDM, les applications doivent être signées numériquement avec l’outil de signature et le certificat utilisé pour la signature doit être approuvé par l’appareil HoloLens avant que l’application puisse être déployée.
+Vous pouvez désormais installer des applications sans avoir besoin d’activer le mode développeur ou d’utiliser Device Portal.  Téléchargez (via USB ou Via Microsoft Edge) le fichier groupé Appx sur votre appareil et accédez à l’ensemble d’applications dans l’Explorateur de fichiers pour être invité à lancer l’installation.  Vous pouvez également [lancer une installation à partir d’une page web.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Tout comme les applications que vous installez à partir du Microsoft Store ou chargez une version [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) de version [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) à l’aide de la fonctionnalité de déploiement d’applications LOB de MDM, les applications doivent être signées numériquement avec l’outil de signature et le certificat utilisé pour la signature doit être approuvé par l’appareil HoloLens avant que l’application puisse être déployée.
 
 ## Conditions requises
 
 ### Pour vos appareils :
 
- est actuellement disponible dans les builds Windows Holographic 20H2 pour les appareils HoloLens 2. Assurez-vous que tous les appareils utilisant cette [méthode sont mis à jour.](hololens-update-hololens.md)
+Cette fonctionnalité est actuellement disponible dans les builds Windows Holographic 20H2 pour les appareils HoloLens 2. Assurez-vous que tous les appareils utilisant cette [méthode sont mis à jour.](hololens-update-hololens.md)
 
-### Pour vos applications : 
+### Pour vos applications :
+
 La configuration de la solution de votre application doit **être** Master ou **Release,** car le programme d’installation d’application utilisera les dépendances du Store. En savoir plus sur [la création de packages d’application.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
 Les applications installées via cette méthode doivent être signées numériquement. Vous devez utiliser un certificat pour signer l’application. Vous pouvez obtenir un certificat à partir de la liste des ca de confiance [MS,](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)auquel cas vous n’aurez pas besoin d’action supplémentaire. Vous pouvez également signer votre propre certificat, mais ce certificat devra être poussée sur l’appareil.
 
-- Comment signer des applications à [l’aide de l’outil De signature.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
+- Comment signer des applications à [l’aide de l’outil Signer.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
 **Options de certificat :**
 
