@@ -1,6 +1,6 @@
 ---
 title: Insider Preview pour MicrosoftHoloLens
-description: Il est simple de commencer avec les builds Insider et de fournir des commentaires précieux pour notre prochaine mise à jour majeure du système d’exploitation pour HoloLens.
+description: Découvrez comment commencer avec les builds Insider et fournir des commentaires précieux pour notre prochaine mise à jour majeure du système d’exploitation pour HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271703"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283195"
 ---
 # Insider Preview pour MicrosoftHoloLens
 
@@ -47,7 +47,7 @@ Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvell
 
 ![Animation du logo Microsoft Edge hérité vers le nouveau logo Microsoft Edge](images/new-edge.gif)
 
-Le nouveau Microsoft Edge adopte le projet [open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) pour améliorer la compatibilité pour les clients et réduire la fragmentation du web pour les développeurs web.
+Le nouveau Microsoft Edge adopte le projet [open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) pour créer une meilleure compatibilité pour les clients et moins de fragmentation du web pour les développeurs web.
 
 Avec cet aperçu Insider, le nouveau Microsoft Edge est disponible pour la première fois pour les clients HoloLens 2 ! Bien que le nouveau Microsoft Edge remplace finalement l’ancien Microsoft Edge sur HoloLens 2, les deux navigateurs sont actuellement disponibles pour les Insiders. Veuillez partager vos commentaires et **** bogues avec notre équipe via la fonctionnalité Envoyer des commentaires dans le nouveau Microsoft Edge ou via [le Hub de commentaires.](hololens-feedback.md)
 
@@ -108,6 +108,15 @@ Voici quelques ressources utiles pour en savoir plus sur la gestion des paramèt
 - La réinitialisation de votre appareil supprimera le nouveau Microsoft Edge
 - L’aperçu de la loupe dans le clavier holographique affiche un contenu incorrect
 
+#### Canaux Microsoft Edge Insider
+
+L’équipe Microsoft Edge met trois canaux d’aperçu à la disposition de la communauté Edge Insider : Bêta, Dev et Canary. L’installation d’un canal d’aperçu ne désinstalle pas la version finale de Microsoft Edge sur votre HoloLens 2, et vous pouvez en installer plusieurs en même temps. 
+
+Visitez la page [d’accueil du Microsoft Edge Insider](https://www.microsoftedgeinsider.com) pour en savoir plus sur la communauté Edge Insider. Pour en savoir plus sur les différents canaux Edge Insider et commencer, visitez la page de téléchargement [Edge Insider.](https://www.microsoftedgeinsider.com/download)
+
+> [!NOTE]
+> Pendant cette prévisualisation de Windows Insider pour HoloLens 2, la version de Microsoft Edge sur votre appareil peut être supérieure à celle disponible dans certains (ou tous) des canaux Microsoft Edge Insider. Cela permet de s’assurer que les nouvelles fonctionnalités et correctifs ciblant spécifiquement le navigateur web sur HoloLens 2 sont en train d’atteindre nos Windows Insiders aussi rapidement que possible. Peu de temps après la publication publique de la prochaine mise à jour Windows, les builds du canal Insider de Microsoft Edge dépasseront et resteront en avance sur la version de Microsoft Edge sur votre HoloLens 2.
+
 ### Nouvelle application Paramètres
 
 Avec cette version, nous introduisons une nouvelle version de l’application Paramètres. La nouvelle application Paramètres inclut de nouvelles fonctionnalités et des paramètres étendus pour HoloLens 2 dans les domaines suivants : son, veille power &, réseau & Internet, applications, comptes, options d’accès faciles, etc.
@@ -118,9 +127,9 @@ Avec cette version, nous introduisons une nouvelle version de l’application Pa
 ![Page d’accueil de l’application Nouveaux paramètres](images/new-settings-app.png)
 
 **Nouvelles fonctionnalités et nouveaux paramètres**
-- Recherche de paramètres : rechercher des paramètres à partir de la page d’accueil Paramètres à l’aide de mots clés ou du nom du paramètre
+- Recherche de paramètres : recherchez les paramètres de la page d’accueil Paramètres à l’aide de mots clés ou du nom du paramètre
 - Son système > :
-  - Périphériques audio d’entrée et de sortie : choisissez indépendamment vos périphériques audio d’entrée et de sortie (par exemple, écoutez du contenu audio via un casque Bluetooth ou utilisez un microphone USB-C pour l’entrée audio). Remarque : Bluetooth microphones ne sont pas pris en charge par HoloLens 2.
+  - Périphériques audio d’entrée et de sortie : choisissez indépendamment vos périphériques audio d’entrée et de sortie (par exemple, écoutez de l’audio via un casque Bluetooth ou utilisez un microphone USB-C pour l’entrée audio). Remarque : Bluetooth microphones ne sont pas pris en charge par HoloLens 2.
   - Volume d’application : ajuster indépendamment le volume de chaque application
 - Système > la & veille : choisir à quel moment l’appareil doit être en veille après une période d’inactivité
 - Système > batterie : activer manuellement le mode économiseur de batterie ou définir un seuil de batterie à partir duquel le mode économiseur de batterie s’active automatiquement
@@ -145,11 +154,11 @@ Lorsque vous activez un lien hypertexte ou ouvrez un type de fichier avec plusie
 
 ![Fenêtre du s picker d’application](images/default-app-picker.png)
 
-Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > applications.** Faites défiler vers le bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
+Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > applications.** Faites défiler jusqu’au bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
 
 ### Office Web App
 
-L’application web Office a été ajoutée à la liste « Toutes les applications » dans le menu Démarrer. Cette application web peut également être épinglée au démarrage ou désinstallée. Étant donné qu’il s’agit d’une application web, sa fonctionnalité correspond exactement à ce que vous ariez fait en visitant https://www.office.com . La fonctionnalité d’Office Web App est disponible uniquement lorsque votre HoloLens 2 dispose d’une connexion Internet active.
+L’application web Office a été ajoutée à la liste « Toutes les applications » dans le menu Démarrer. Cette application web peut également être épinglée au démarrage ou désinstallée. Étant donné qu’il s’agit d’une application web, sa fonctionnalité correspond exactement à ce que vous ariez fait en visitant https://www.office.com . La fonctionnalité d’Application web Office est disponible uniquement lorsque votre HoloLens 2 dispose d’une connexion Internet active.
 
 ### Balayage pour taper
 
@@ -162,7 +171,7 @@ Notez que cette fonctionnalité peut être difficile à utiliser et à maîtrise
 > [!IMPORTANT]
 > Le branchement **d’un micro USB ne le définira**pas automatiquement comme périphérique d’entrée. Lorsque vous branchez un ensemble de casques USB-C, les utilisateurs observent que le casque audio est automatiquement redirigé vers le casque, mais le système d’exploitation HoloLens hiérarchise le groupe de microphones interne au-dessus de tout autre périphérique d’entrée. **Pour utiliser un microphone USB-C, suivez les étapes ci-dessous.**
 
-Les utilisateurs peuvent désormais sélectionner des microphones externes connectés USB-C à l’aide du **panneau** Paramètres sonores. Cela permet aux utilisateurs d’utiliser leur propre microphone connecté mais USB dans l’enregistrement et les applications. Les microphones USB-C sont faciles à activer et à utiliser.
+Les utilisateurs peuvent sélectionner des microphones externes connectés USB-C à l’aide du **panneau** Paramètres sonores. Les microphones USB-C peuvent être utilisés pour les appels, l’enregistrement, etc.
 
 Ouvrez **l’application Paramètres** et sélectionnez **Son**  ->  **système.**
 
@@ -171,7 +180,7 @@ Ouvrez **l’application Paramètres** et sélectionnez **Son**  ->  **système.
 > [!IMPORTANT]
 > Pour utiliser des microphones externes avec **Remote Assist,** les utilisateurs doivent cliquer sur le lien hypertexte « Gérer les périphériques sonores ».
 >
-> Ensuite, utilisez la drop-down pour définir le microphone externe sur **Default ou** **Communications Default.** Le **choix** par défaut signifie que le microphone externe sera utilisé partout.
+> Ensuite, utilisez la drop-down pour définir le microphone externe sur **Default ou** **Communications Default.** Le choix **par** défaut signifie que le microphone externe sera utilisé partout.
 >
 > Choisir **Communications Par** défaut signifie que le microphone externe sera utilisé dans Remote Assist et d’autres applications de communication, mais que le groupe de micros HoloLens peut toujours être utilisé pour d’autres tâches.
 
@@ -189,7 +198,7 @@ Malheureusement, Bluetooth microphones ne sont toujours pas pris en charge actue
 
 N’ignorez pas que certains microphones USB-C se signalent de manière incorrecte en tant que *microphone* et haut-parleur. Il s’agit d’un problème avec le microphone et non avec HoloLens. Lorsque vous branchez l’un de ces microphones dans HoloLens, le son peut être perdu. Heureusement, il existe un correctif simple.  
 
-Dans **settings**System Sound , définissez explicitement les haut-parleurs intégrés  ->  ****  ->  **** **(pilote audio de** fonctionnalité analogique) comme **périphérique par défaut.** HoloLens doit mémoriser ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
+Dans **settings**System Sound , définissez explicitement les haut-parleurs intégrés  ->  ****  ->  ****(pilote audio de fonctionnalité **analogique)** comme **périphérique par défaut.** HoloLens doit mémoriser ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
 
 ![Résolution des problèmes de microphones USB-C](images/usbc-mic-4.png)
 
@@ -231,11 +240,11 @@ Désormais, dans l’application Paramètres, un utilisateur peut configurer le 
 > - La commande vocale « Appareil de redémarrage » fonctionne bien. 
 > - Vous pouvez également choisir le bouton de redémarrage dans Paramètres/Programme Windows Insider.
 >
-> Nous avons rencontré un bogue sur le back end que vous avez peut-être rencontré, ce qui vous permettra de reprendre le suivi.
+> Nous avons rencontré un bogue sur le back-end que vous avez peut-être rencontré, ce qui vous permettra de reprendre le suivi.
 
 Sur un appareil HoloLens 2, sélectionnez Mise à jour des **paramètres**& programme Windows Insider sécurité  >  ****  >  **** et **sélectionnez Commencer.** Liez le compte que vous avez utilisé pour vous inscrire en tant que Windows Insider.
 
-Windows Insider est désormais en train de passer aux canaux. **L’anneau** Rapide deviendra le canal **** dev, **** l’anneau Lent deviendra le canal bêta **et**l’anneau Release **Preview** deviendra le canal d’aperçu de **publication.** Voici à quoi ressemble ce mappage :
+Windows Insider est désormais en train de passer aux canaux. **L’anneau** Fast deviendra le canal dev, **** l’anneau **Lent** deviendra le canal bêta **et**l’anneau Release **Preview** deviendra le canal **d’aperçu de publication.** Voici à quoi ressemble ce mappage :
 
 ![Explication des canaux Windows Insider](images/WindowsInsiderChannels.png)
 
@@ -255,7 +264,7 @@ Pour tester avec une ffu signée par une vol, vous devez d’abord déverrouille
     
 1. Sur HoloLens - Déverrouillage de version d’essai : ouvrez la mise à jour des **paramètres**& programme Windows Insider de sécurité, puis inscrivez-vous,  >  ****  >  **** redémarrez l’appareil.
 
-1. Flash FFU : vous pouvez désormais flasher la FFU signée par la flight à l’aide d’ARC.
+1. Flash FFU : vous pouvez désormais flasher la FFU signée à l’aide d’ARC.
 
 ## Fournir des commentaires et signaler des problèmes
 
@@ -273,7 +282,7 @@ Nous vous invitons et vous encourageons à essayer de développer vos applicatio
 Si vous ne souhaitez plus recevoir de builds Insider de Windows Holographic, vous pouvez refuser [](hololens-recovery.md) lorsque votre HoloLens exécute une build de production, ou vous pouvez récupérer votre appareil à l’aide de l’Advanced Recovery Companion pour récupérer votre appareil vers une version non Insider de Windows Holographic.
 
 > [!CAUTION]
-> Il existe un problème connu dans lequel les utilisateurs qui se désscrivent des builds Insider Preview après avoir réinstallé manuellement une nouvelle version d’aperçu font l’expérience d’un écran bleu. Par la suite, ils doivent récupérer manuellement leur appareil. Pour plus d’informations sur le cas où vous seriez touché ou non, consultez plus d’informations sur [ce problème connu.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Il existe un problème connu dans lequel les utilisateurs qui se désscrivent des builds Insider Preview après avoir réinstallé manuellement une nouvelle version d’aperçu peuvent voir un écran bleu. Par la suite, ils doivent récupérer manuellement leur appareil. Pour plus d’informations sur le cas où vous seriez touché ou non, consultez plus d’informations sur [ce problème connu.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
 Pour vérifier que votre HoloLens exécute une build de production :
 
