@@ -1,6 +1,6 @@
 ---
 title: Préparer un nouveau HoloLens2
-description: Ce guide décrit la configuration initiale et le guide matériel.
+description: Découvrez comment configurer et ajuster votre appareil HoloLens 2 pour la première fois, notamment les conseils en matière d’état de santé et de sécurité et les guides matériels.
 keywords: hololens, lumières, ajustement, confort, pièces
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 8b17ad031cfd49ac7a7553765633bc948bafc01d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253560"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282905"
 ---
 # Préparer votre HoloLens 2 pour utilisation
 

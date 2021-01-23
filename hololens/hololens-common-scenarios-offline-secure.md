@@ -1,6 +1,6 @@
 ---
-title: 'Scénarios courants: sécurité HoloLens 2 hors connexion'
-description: Déploiement de l’application et du déploiement sécurisé hors ligne via la mise en service.
+title: 'Scénarios courants : HoloLens 2 sécurisé hors connexion'
+description: Découvrez comment configurer un déploiement sécurisé hors connexion et un scénario de déploiement d’application avec la mise en service pour les appareils HoloLens.
 keywords: HoloLens, gestion, hors connexion, sécurité hors connexion
 ms.date: 9/25/2020
 manager: yannisle
@@ -14,101 +14,106 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d53f9ce19b020a866770b756dde6ab97b8331362
-ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
+ms.openlocfilehash: 03003995f1e63708652955e6217e506d53555c1b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "11080484"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283415"
 ---
-# Scénarios courants: sécurité HoloLens 2 hors connexion
+# Scénarios courants : HoloLens 2 sécurisé hors connexion
 
-## Présentation
-Ce guide fournit des recommandations pour l’application d’un exemple de package de mise en service qui verrouille un HoloLens 2 pour une utilisation dans les environnements sécurisés avec les restrictions suivantes:
--   Désactiver le WiFi.
--   Désactiver BlueTooth.
--   Désactiver les microphones.
--   Empêche d’ajouter ou de supprimer des packages de mise en service.
--   Aucun utilisateur ne peut activer les composants restreints mentionnés ci-dessus.
+## Vue d’ensemble
 
-## Préparation 
-Configuration d’un PC Windows 10
-1. [Télécharger le dernier fichier HoloLens 2 du système d’exploitation](https://aka.ms/hololens2download) directement sur un PC. 
-   1. La prise en charge de cette configuration est incluse dans la version 19041,1117 et les versions ultérieures.
-1. Télécharger et installer l’outil compagnon de récupération avancée (ARC) du [Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) sur votre PC
-1. Téléchargez et installez la dernière version de l’outil de [configuration de Windows (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) à partir du Microsoft Store sur votre PC.
-1. [Téléchargez le dossier OfflineSecureHL2_Sample avec les fichiers de projet](https://aka.ms/HoloLensDocs-SecureOfflineSample) pour générer le PPKG.
-1. Préparez votre [application métier hors ligne pour le déploiement de PPKG](app-deploy-provisioning-package.md). 
+Ce guide fournit des conseils pour l’application d’un exemple de package d’approvisionnement qui verrouillera un HoloLens 2 pour une utilisation dans des environnements sécurisés avec les restrictions suivantes :
+-   Désactivez le WiFi.
+-   Désactivez BlueTooth.
+-   Désactivez les microphones.
+-   Empêche l’ajout ou la suppression de packages d’approvisionnement.
+-   Aucun utilisateur ne peut activer l’un des composants restreints ci-dessus.
+
+## Préparation
+
+Installation de PC Windows 10
+1. [Téléchargez le dernier fichier de système d’exploitation HoloLens 2](https://aka.ms/hololens2download) directement sur un PC. 
+   1. La prise en charge de cette configuration est incluse dans la build 19041.1117 et les builds supérieures.
+1. Télécharger/installer l’outil Advanced Recovery Companion(ARC) à partir [du Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) sur votre PC
+1. Téléchargez/installez le dernier outil Concepteur de [configuration Windows (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) à partir du Microsoft Store sur votre PC.
+1. [Téléchargez le OfflineSecureHL2_Sample avec les fichiers de projet](https://aka.ms/HoloLensDocs-SecureOfflineSample) pour créer le PPKG.
+1. Préparez votre [application métier hors connexion pour le déploiement PPKG.](app-deploy-provisioning-package.md) 
 
 
 ## Configurer
-Créer un package de mise en service de configuration sécurisée
 
-1. Démarrez l’outil WCD sur votre PC.
-1. Sélectionnez **fichier-> ouvrir Project**.
-  1. Naviguez jusqu’à l’emplacement du dossier OfflineSecureHL2_Sample enregistré précédemment, puis sélectionnez: OfflineSecureHL2_Sample.icdproj.xml
-1. Le projet doit être ouvert et vous devez maintenant disposer d’une liste de personnalisations disponibles: 
+Créer un package d’approvisionnement de configuration sécurisée
+
+1. Lancez l’outil WCD sur votre PC.
+1. Select **File -> Open project**.
+  1. Accédez à l’emplacement du dossier de OfflineSecureHL2_Sample précédemment enregistré, puis sélectionnez : OfflineSecureHL2_Sample.icdproj.xml
+1. Le projet doit s’ouvrir et vous devez maintenant avoir une liste des personnalisations disponibles : 
 
    > [!div class="mx-imgBorder"]
-   > ![Capture d’écran du package de configuration ouvert dans le fichier WCD](images/offline-secure-sample-wcd.png)
+   > ![Capture d’écran du package de configuration ouvert dans WCD](images/offline-secure-sample-wcd.png)
 
-Configurations définies dans ce package de mise en service:
+Configurations définies dans ce package d’approvisionnement :
 
 |     Élément                                                |     Paramètre                       |     Description                                                                                                                    |
 |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-|     Comptes/utilisateurs                                    |     Nom d’utilisateur local & mot de passe    |     Pour ces périphériques hors connexion, un nom d’utilisateur et un mot de passe uniques doivent être définis et partagés par tous les utilisateurs de l’appareil.          |
-|     Première expérimentation/HoloLens/SkipCalibration       |     Vrai                          |     Ignore le calibrage lors de l’installation de l’appareil initial uniquement                                                                             |
-|     Première expérimentation/HoloLens/SkipTraining          |     Vrai                          |     Ignorer la formation sur les appareils lors de la configuration initiale de l’appareil                                                                              |
-|     Première expérimentation/HoloLens/WiFi                  |     Vrai                          |     Ignore la configuration Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
-|     Politiques/connectivité/AllowBluetooth                |     Non                            |     Désactive Bluetooth                                                                                                             |
-|     Politiques/expertise/AllowCortana                    |     Non                            |     Désactive Cortana (pour éliminer les problèmes potentiels, puisque les micros sont désactivés)                                          |
+|     Comptes/Utilisateurs                                    |     Nom d’utilisateur local & mot de passe    |     Pour ces appareils hors connexion, un seul nom d’utilisateur et mot de passe doivent être définies et partagées par tous les utilisateurs de l’appareil.          |
+|     Première expérience / HoloLens / SkipCalibration       |     Vrai                          |     Ignore l’étalonnage lors de la configuration initiale de l’appareil uniquement                                                                             |
+|     Première expérience / HoloLens /SkipTraining          |     Vrai                          |     Ignore la formation sur les appareils lors de la configuration initiale de l’appareil                                                                              |
+|     Première expérience / HoloLens /WiFi                  |     Vrai                          |     Ignore la configuration Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
+|     Stratégies/Connectivité/AllowBluetooth                |     Non                            |     Désactive la Bluetooth                                                                                                             |
+|     Stratégies/Expérience/AllowCortana                    |     Non                            |     Désactive Cortana (pour éliminer les problèmes potentiels car les microphones sont désactivés)                                          |
 |     Policies/MixedReality/MicrophoneDisabled            |     Oui                           |     Désactive le microphone                                                                                                            |
-|     Politiques/confidentialité/LetAppsAccessLocation              |     Forcer le refus                    |     Empêche les applications d’accéder aux données d’emplacement (pour éliminer les problèmes potentiels puisque le suivi d’emplacement est désactivé)    |
-|     Politiques/confidentialité/LetAppsAccessMicrophone            |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux microphones (pour éliminer les problèmes potentiels puisque les micros sont désactivés)           |
-|     Policies/Security/AllowAddProvisioningPackage       |     Non                            |     Empêche tout le monde d’ajouter des packages de mise en service qui peuvent tenter de remplacer les stratégies verrouillées.                         |
-|     Policies/Security/AllowRemoveProvisioningPackage    |     Non                            |     Empêche tout le monde de supprimer ce package de mise en service verrouillé.                                                           |
-|     Policies/System/AllowLocation                       |     Non                            |     Empêche l’appareil d’essayer de suivre les données de géolocalisation.                                                                        |
-|     Politiques/WiFi/AllowWiFi                             |     Non                            |     Désactive le Wi-Fi                                                                                                                 |
+|     Stratégies/Confidentialité/LetAppsAccessLocation              |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux données de géolocalisation (pour éliminer les problèmes potentiels depuis la désactivation du suivi de l’emplacement)    |
+|     Stratégies/Confidentialité/LetAppsAccessMicrophone            |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux microphones (pour éliminer les problèmes potentiels car les microphones sont désactivés)           |
+|     Stratégies/Sécurité/AllowAddProvisioningPackage       |     Non                            |     Empêche toute personne d’ajouter des packages d’approvisionnement qui peuvent tenter de remplacer les stratégies verrouillées.                         |
+|     Stratégies/Sécurité/AllowRemoveProvisioningPackage    |     Non                            |     Empêche tout le monde de supprimer ce package d’approvisionnement verrouillé.                                                           |
+|     Stratégies/Système/AllowLocation                       |     Non                            |     Empêche l’appareil d’essayer de suivre les données d’emplacement.                                                                        |
+|     Policies/WiFi/AllowWiFi                             |     Non                            |     Désactive la Wi-Fi                                                                                                                 |
 
-4. Sous paramètres d’exécution, sélectionnez **comptes/utilisateurs/nom d’utilisateur: Holo/mot de passe** 
-    - Notez le mot de passe, puis réinitialisez si vous le souhaitez.
-5. Accédez à UniversalAppInstall/UserContextApp et [configurez l’application métier](app-deploy-provisioning-package.md) que vous déploierez sur ces appareils.
-
-   > [!div class="mx-imgBorder"]
-   > ![Capture d’écran de l’emplacement d’ajout de votre application dans la boîte de niveau WCD.](images/offline-secure-sample-wcd-usercontextapp.png)
-
-6. Lorsque vous avez terminé, sélectionnez le bouton «Exporter» et suivez les invites que vous avez apportées à la création du package de mise en service.
+4. Sous Paramètres d’runtime, **sélectionnez Comptes/ Utilisateurs / Nom d’utilisateur : Holo / Mot de passe** 
+    - Notez le mot de passe et réinitialisez si vous le souhaitez.
+5. Accédez à UniversalAppInstall/UserContextApp et configurez l’application [LOB](app-deploy-provisioning-package.md) que vous allez déployer sur ces appareils.
 
    > [!div class="mx-imgBorder"]
-   > ![Capture d’écran du bouton Exporter pour ce package dans le dossier WCD.](images/offline-secure-sample-wcd-export.png)
+   > ![Capture d’écran de l’endroit où ajouter votre application dans WCD.](images/offline-secure-sample-wcd-usercontextapp.png)
+
+6. Une fois terminé, sélectionnez le bouton « Exporter » et suivez toutes les invites jusqu’à ce que votre package d’approvisionnement soit créé.
+
+   > [!div class="mx-imgBorder"]
+   > ![Capture d’écran du bouton Exporter pour ce package dans WCD.](images/offline-secure-sample-wcd-export.png)
 
 
 ## Déployer
-1. Branchez le HL2 sur votre PC Windows 10 à l’aide d’un câble USB.
+
+1. Connectez HL2 à votre PC Windows 10 via un câble USB.
 1. Lancer l’outil ARC et sélectionner **HoloLens 2**
 
    <img src=images/offline-secure-arc-1.png alt=arc1 width="577" height="322" />
 
-1. Dans l’écran suivant, sélectionnez **sélection manuelle du package**.
+1. Dans l’écran suivant, sélectionnez **Sélection manuelle du package.**
    
    <img src=images/offline-secure-arc-2.png alt=arc2 width="577" height="322" />
 
-1. Accédez au fichier téléchargé. FFU, puis sélectionnez **ouvrir**.
-1. Sur la page d’avertissement, sélectionnez **Continuer**.
+1. Accédez au fichier .ffu précédemment téléchargé, puis sélectionnez **Ouvrir.**
+1. Dans la page Avertissement, sélectionnez **Continuer.**
 
    <img src=images/offline-secure-arc-3.png alt=arc3 width="577" height="322" />
 
-1. Attendez que l’outil ARC exécute l’installation de système d’exploitation HoloLens 2.
-1. Une fois l’installation terminée, redémarrez votre PC, accédez à l’Explorateur de fichiers, puis copiez le fichier PPKG enregistré précédemment sur le dossier de l’appareil.
+1. Attendez que l’outil ARC termine l’installation du système d’exploitation HoloLens 2.
+1. Une fois que l’appareil a terminé l’installation et a été sauvegardé, à partir de votre PC, accédez à l’Explorateur de fichiers et copiez le fichier PPKG précédemment enregistré dans le dossier de l’appareil.
 
    > [!div class="mx-imgBorder"]
-   > ![PPKG fichier sur PC dans la fenêtre de l’Explorateur de fichiers.](images/offline-secure-file-explorer.png)
+   > ![Fichier PPKG sur PC dans la fenêtre Explorateur de fichiers.](images/offline-secure-file-explorer.png)
 
-1. Sur le HoloLens 2, appuyez sur la combinaison de boutons suivante pour exécuter le package de mise en service: Appuyez sur **baisser le volume** et sur le **bouton d’alimentation** en même temps.
-1. Vous êtes invité à appliquer le package de mise à service, sélectionnez **confirmer**
-1. Lorsque le package de mise en service est terminé, sélectionnez **OK**.
-1. Vous devez alors être invité à vous connecter à l’appareil à l’aide du compte local et du mot de passe partagés.
+1. Sur HoloLens 2, appuyez sur la liste déroulante de **** boutons suivante pour exécuter le package d’approvisionnement : Appuyez sur **Le volume** et sur le bouton d’alimentation en même temps.
+1. Vous serez invité à appliquer le package d’approvisionnement, sélectionnez **Confirmer**
+1. Une fois le package d’approvisionnement terminé, sélectionnez **OK.**
+1. Vous devez ensuite être invité à vous inscrire à l’appareil avec le compte local partagé et le mot de passe.
 
-## Mise à jour
-Dans cette configuration, il est recommandé de redémarrer le processus ci-dessus et de refaire clignoter l’appareil à l’aide de l’outil ARC et d’appliquer un nouveau PPKG pour effectuer les mises à jour apportées au système d’exploitation et/ou aux applications. 
+## Maintenir
+
+Avec cette configuration, il est recommandé de redémarrer le processus ci-dessus, de réessiller l’appareil avec l’outil ARC et d’appliquer un nouveau PPKG pour effectuer des mises à jour du système d’exploitation et/ou des applications. 
 
