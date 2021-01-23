@@ -1,6 +1,6 @@
 ---
 title: 'Positionnement et utilisation confortable de l’HoloLens2: FAQ'
-description: Réponses aux questions les plus fréquemment posées concernant l'installation de votre HoloLens 2.
+description: Restez à jour sur les réponses aux questions fréquemment posées sur l’ajustement de votre HoloLens 2 et profitez confortablement des expériences de reality mixed.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929840"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283835"
 ---
 # Questions fréquentes sur l'ajustement et le confort avec les HoloLens 2
 
