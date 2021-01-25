@@ -1,7 +1,6 @@
 ---
 title: Considérations en matière d’environnement pour HoloLens
-description: Profitez d'une expérience idéale avec vos HoloLens lorsque vous optimisez l’appareil en fonction de vos yeux et de votre environnement. De nombreux facteurs environnementaux différents sont fusionnés pour activer le suivi, mais en tant que développeur de réalité mixte, il existe plusieurs facteurs que vous pouvez garder à l’esprit pour adapter un espace et ainsi optimiser les hologrammes.
-keywords: cadre holographique, champ de vision, angle d’utilisation, étalonnage, espaces, environnement, procédure
+description: Profitez d'une expérience idéale avec vos HoloLens lorsque vous optimisez l’appareil en fonction de vos yeux et de votre environnement.
 author: dorreneb
 ms.author: dobrown
 manager: jarrettr
@@ -10,28 +9,29 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
-ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
+keywords: cadre holographique, champ de vue, fov, étalonnage, espaces, environnement, procédure, HoloLens, réalité mixte, casques de réalité mixte
+ms.openlocfilehash: ae5c039387d247d1a2c795bc65d7ea56867b3843
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993644"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283135"
 ---
 # Considérations en matière d’environnement pour HoloLens
 
-HoloLens combine les hologrammes avec le monde «réel», en plaçant des hologrammes dans votre environnement. Une fenêtre d’application holographique se trouve sur le mur, une ballerine holographique tourne sur le bureau, des oreilles de lapin viennent se poser sur la tête de votre ami qui ne se doute de rien. Lorsque vous utilisez un jeu ou une application immersif, le monde holographique s’étale pour peupler votre environnement, mais vous pourrez toujours voir votre espace et vous déplacer.
+HoloLens combine les hologrammes avec le monde «réel», en plaçant des hologrammes dans votre environnement. Une fenêtre d’application holographique se trouve sur le mur, une ballerine holographique tourne sur le bureau, des oreilles de lapin viennent se poser sur la tête de votre ami qui ne se doute de rien. Lorsque vous utilisez un jeu ou une application immersif, le monde holographique se propage pour remplir votre environnement, mais vous pouvez toujours voir et déplacer l’espace.
 
 Les hologrammes que vous placez resteront là où vous les avez placés, même si vous éteignez votre appareil.
 
 ## Configuration d'un l’environnement
 
-Les appareils HoloLens savent comment placer des hologrammes stables et précis en *suivant* les utilisateurs dans un espace. Sans un suivi approprié, l’appareil ne comprend pas l’environnement ni l’utilisateur au sein de celui-ci, par conséquent les hologrammes risquent d'apparaître dans des endroits incorrects, ne pas apparaître au même emplacement chaque fois, voire ne pas apparaître du tout. Les données utilisées pour suivre les utilisateurs sont représentées dans la *carte spatiale*.  
+Les appareils HoloLens savent comment placer des hologrammes stables et précis en *suivant* les utilisateurs dans un espace. Sans un suivi correct, l’appareil ne comprend pas l’environnement ou l’utilisateur qui s'y trouve. Les hologrammes peuvent s’afficher aux mauvais endroits, ne pas s’afficher au même endroit à chaque fois ou ne pas s’afficher du tout. Les données utilisées pour suivre les utilisateurs sont représentées dans la *carte spatiale*.  
 
 Le suivi des performances est largement influencé par l’environnement où se trouve l’utilisateur et le réglage d’un environnement afin d'assurer un suivi stable et cohérent est un art plus qu’une science. De nombreux facteurs environnementaux différents sont fusionnés pour activer le suivi, mais en tant que développeur de réalité mixte, il existe plusieurs facteurs que vous pouvez garder à l’esprit pour adapter un espace et ainsi optimiser le suivi.
 
 ### Éclairage
 
-WindowsMixedReality utilise la lumière visuelle pour suivre l’emplacement de l’utilisateur. Si un environnement est trop lumineux, les caméras risquent d'être saturées et rien ne s’affichera. Si l’environnement est trop sombre, les caméras ne pourront pas récupérer suffisamment d’informations et rien ne s'affichera. L’éclairage doit être uniforme, suffisamment lumineux pour permettre à un humain de voir sans effort, mais sans éblouir.  
+WindowsMixedReality utilise la lumière visuelle pour suivre l’emplacement de l’utilisateur. Si un environnement est trop lumineux, les caméras risquent d'être saturées et rien ne s’affichera. Si l’environnement est trop sombre, les caméras ne peuvent pas récupérer suffisamment d’informations et rien n’est visible. L’éclairage doit être même et suffisamment lumineux pour qu’un être humain puisse voir sans effort, mais pas si lumineux que la lumière est difficile à regarder.  
 
 Les zones faiblement éclairées où il existe des points de lumière intense sont également problématiques, car la caméra doit s’ajuster chaque fois qu'elle s'approche ou s'éloigne de ces points. Cela pourrait créer une «confusion» pour l'appareil, qui peut considérer qu'un changement d'éclairage équivaut à un changement de lieu. Un éclairage uniforme garantira un meilleur suivi.  
 
@@ -43,7 +43,7 @@ Si vous disposez d'un luxmètre, un éclairage uniforme de 500 à 1000 lux const
 
 Les différents types d'éclairage d'un espace peuvent également influencer le suivi. Ampoules alimentées par l'alimentation secteur: si la fréquence est de 50Hz, l’impulsion de la lumière est à 50Hz. Un humain ne détectera pas une telle impulsion. Toutefois, une caméra HoloLens à 30fps détecte ces variations: ainsi, certaines trames seront bien éclairées tandis que d'autres non, et certaines d'entre elles seront surexposées car la caméra tentera de compenser ces impulsions légères.  
 
-Aux États-unis, la norme de fréquence électrique est de 60Hz, ce qui signifie que les impulsions légères des ampoules correspondent à la fréquence d’images de HoloLens: des impulsions à 60Hz s'alignent sur la fréquence d’images 30 FPS de HoloLens. Toutefois dans de nombreux pays, la norme de fréquence c.a. est de 50Hz, ce qui signifie que certaines trames HoloLens seront prélevées pendant les impulsions, et d’autres non. En particulier, l’éclairage fluorescent en Europe est connu pour causer des problèmes.  
+Aux États-unis, la norme de fréquence électrique est de 60Hz, ce qui signifie que les impulsions légères des ampoules correspondent à la fréquence d’images de HoloLens: des impulsions à 60Hz s'alignent sur la fréquence d’images 30FPS de HoloLens. Toutefois dans de nombreux pays, la norme de fréquence c.a. est de 50Hz, ce qui signifie que certaines trames HoloLens seront prélevées pendant les impulsions, et d’autres non. En particulier, l’éclairage fluorescent en Europe est connu pour causer des problèmes.  
 
 Vous pouvez essayer de résoudre ces problèmes de scintillement de plusieurs manières. La température, l’ancienneté des ampoules et les cycles de préchauffage sont des causes courantes de scintillement et de remplacement des ampoules. Il peut être également utile de vérifier le serrage des ampoules ainsi que la constance du courant.  
 
@@ -99,7 +99,7 @@ Il existe deux paramètres qui permettent aux utilisateurs de «nettoyer» les h
 
 1. **Supprimer les hologrammes à proximité**. Lorsque vous sélectionnez ce paramètre, HoloLens efface tous les hologrammes ancrés et toutes les données cartographiques stockées pour l'espace où se trouve actuellement l’appareil. Une nouvelle section de mappage est créée et stockée dans la base de données pour cet emplacement une fois que les hologrammes sont à nouveau placés dans le même espace.
 
-1. **Supprimer tous les hologrammes**. Si vous sélectionnez ce paramètre, HoloLens efface toutes les données cartographiques et tous les hologrammes ancrés dans l’ensemble des bases de données des espaces. Aucun hologramme ne sera redécouvert et tous les hologrammes devront être replacés pour stocker à nouveau le mappage dans la base de données.
+1. **Supprimer tous les hologrammes.** Si vous sélectionnez ce paramètre, HoloLens efface toutes les données cartographiques et tous les hologrammes ancrés dans l’ensemble des bases de données des espaces. Aucun hologramme ne sera redécouvert et tous les hologrammes devront être replacés pour stocker à nouveau le mappage dans la base de données.
 
 ## Qualité d’hologramme
 

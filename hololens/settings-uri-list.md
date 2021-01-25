@@ -1,6 +1,6 @@
 ---
 title: Visibilité des paramètres de la page
-description: Liste des URI pris en charge par HoloLens pour PageVisibilityList et Guide
+description: Tenez-vous au courant de notre liste d'URI pris en charge pour PageVisibilityList et Guide sur les appareils de réalité mixte HoloLens.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: e4d4936595144f82a468883f26dae6e19eef4f84
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163145"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284115"
 ---
 # Visibilité des paramètres de la page
 
@@ -42,7 +42,8 @@ Cette opération peut être effectuée via Intune à l’aide de OMA-URI.
 1. Lorsque vous sélectionnez le prélèvement de données, sélectionnez: **Chaîne**
 1. Lorsque vous tapez la valeur, utilisez : **AfficherSeulement: réseau-WiFi;réseau-proxy;bluetooth**
 1. Veillez à attribuer la configuration personnalisée de l’appareil au groupe dans lequel l’appareil est destiné.
-Pour plus d’informations sur les groupes Intune et les configurations d’appareils [visitez ici](hololens-mdm-configure.md).
+
+Pour plus d’informations sur les groupes et configurations d’appareils Intune, consultez [Configuration de la gestion des appareils pour HoloLens](hololens-mdm-configure.md).
 
 Quelle que soit la méthode choisie, votre appareil doit maintenant recevoir les modifications et les utilisateurs verront l’application Paramètres suivante. 
 
@@ -126,4 +127,4 @@ Les appareils HoloLens et les appareils Windows10 ont une sélection de pages di
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-Pour obtenir la liste complète des URI des paramètres Windows10, visitez [ici](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
+Pour obtenir la liste complète des URL des paramètres de Windows 10, visitez la documentation [paramètres du lancement](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 

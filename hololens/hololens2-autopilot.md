@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot pour HoloLens2
-description: Comment configurer AutoPilot sur les appareils HoloLens2.
+description: Découvrez comment paramétrer, configurer et dépanner Autopilot sur les appareils HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/13/2020
@@ -13,18 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 98f35c52091a2d477a2f0852f66ad706498ad026
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 23cb3612a633f6747c770d9fd52b137561492426
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253590"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284035"
 ---
 # Windows Autopilot pour HoloLens2
 
-À partir de la version2004 de Windows Holographic, HoloLens2 prend en charge le [mode de déploiement automatique](https://docs.microsoft.com/mem/autopilot/self-deploying) de Windows Autopilot. Les administrateurs peuvent configurer l’OOBE (out-of-Box Experience) dans le Gestionnaire de points de terminaison Microsoft et permettre aux utilisateurs finaux de préparer les appareils pour une utilisation professionnelle avec peu ou pas d’interaction. Ainsi, vous réduisez les frais généraux de gestion des stocks, le coût de préparation des appareils et les appels d’assistance des employés pendant la configuration. Si vous souhaitez en savoir plus sur Windows Autopilot, cliquez [ici](https://docs.microsoft.com/mem/autopilot/windows-autopilot).
+À partir de la version2004 de Windows Holographic, HoloLens2 prend en charge le [mode de déploiement automatique](https://docs.microsoft.com/mem/autopilot/self-deploying) de Windows Autopilot. Les administrateurs peuvent configurer l’OOBE (out-of-Box Experience) dans le Gestionnaire de points de terminaison Microsoft et permettre aux utilisateurs finaux de préparer les appareils pour une utilisation professionnelle avec peu ou pas d’interaction. Ainsi, vous réduisez les frais généraux de gestion des stocks, le coût de préparation des appareils et les appels d’assistance des employés pendant la configuration. Pour plus d’informations, consultez la documentation [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot).
 
-Comme pour les appareils Surface, il est recommandé que les utilisateurs travaillent avec un [fournisseur de solutions cloud](https://partner.microsoft.com/cloud-solution-provider) Microsoft (revendeur ou distributeur) pour obtenir des appareils inscrits auprès du service Autopilot via l’Espace partenaires. D’autres méthodes d’inscription des appareils sont décrites dans [cet article](https://docs.microsoft.com/mem/autopilot/add-devices), même si les partenaires de canal de Microsoft propose la solution de bout en bout la plus efficace.
+Comme pour les appareils Surface, il est recommandé que les utilisateurs travaillent avec un [fournisseur de solutions cloud](https://partner.microsoft.com/cloud-solution-provider) Microsoft (revendeur ou distributeur) pour obtenir des appareils inscrits auprès du service Autopilot via l’Espace partenaires. D’autres méthodes d’inscription d’appareil sont décrites dans la documentation[ajouter un appareil](https://docs.microsoft.com/mem/autopilot/add-devices), mais l’exploitation des partenaires de canal de Microsoft garantit le chemin d’accès de bout en bout le plus efficace.
 
 > [!NOTE]
 > À partir du 20/11/2020, la configuration de Autopilot pour HoloLens dans le Gestionnaire de point de terminaison Microsoft est passée en **Préversion publique**. Les clients n’ont plus besoin de s’inscrire à la préversion privée et tous les clients pourront configurer Autopilot dans le centre d’administration du Gestionnaire de point de terminaison.
@@ -73,7 +73,7 @@ Si vous souhaitez en savoir plus sur l’inscription des appareils et la configu
 
 #### Consultez la configuration requise pour le système d’exploitation HoloLens:
 
-- Les appareils doivent utilisés la [version2004 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) ou une version ultérieure. Pour vérifier la version de la build sur votre appareil ou redémarrez le dernier système d’exploitation, vous pouvez utiliser l’[Outil de récupération avancée](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). Vous trouverez des instructions [ici](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). Notez que les appareils livrés jusqu’à fin septembre2020 disposent de la version1903 préinstallée de Windows Holographic. Veuillez contacter votre revendeur pour vous assurer que les appareils qui vous sont expédiés sont compatibles avec Autopilot.
+- Les appareils doivent utilisés la [version2004 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) ou une version ultérieure. Pour vérifier la version de la build sur votre appareil ou redémarrez le dernier système d’exploitation, utilisez l’[Outil de récupération avancée](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) et nos [instructions pour re-flasher l'appareil](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). Notez que les appareils livrés jusqu’à fin septembre2020 disposent de la version1903 préinstallée de Windows Holographic. Veuillez contacter votre revendeur pour vous assurer que les appareils qui vous sont expédiés sont compatibles avec Autopilot.
 
 - La version2004 de Windows Holographic ne prend en charge Autopilot que via une connexion Ethernet. Assurez-vous que le HoloLens est connecté à Ethernet à l’aide d’un adaptateur USB-C vers Ethernet **avant de l’allumer**. Aucune interaction utilisateur n’est requise lors du démarrage de l’appareil. Si vous envisagez d’utiliser un déploiement Autopilot sur de nombreux appareils HoloLens, nous vous conseillons de planifier l’infrastructure des adaptateurs. Nous déconseillons les concentrateurs USB, car ils nécessitent souvent l’installation de pilotes tiers supplémentaires qui ne sont pas pris en charge sur HoloLens.
 
