@@ -1,7 +1,7 @@
 ---
-title: Guide de déploiement-déploiement d’HoloLens 2 sur le Cloud connecté à la mise à l’échelle via Remote Assist-déploiement
-description: Valider les inscriptions et l’assistance à distance pour les appareils HoloLens sur un réseau connecté sur le Cloud
-keywords: HoloLens, gestion, Cloud connecté, assistance à distance, AAD, Azure AD, GPM, gestion des appareils mobiles
+title: Guide de déploiement – Déploiement HoloLens 2 connecté au cloud à l’échelle avec Remote Assist - Déployer
+description: Découvrez comment valider l’inscription et Remote Assist pour les appareils HoloLens sur un réseau connecté au cloud.
+keywords: HoloLens, gestion, cloud connecté, Remote Assist, AAD, Azure AD, MDM, Gestion des appareils mobiles
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,66 +14,66 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b38f4a76ee088d4f892c86de07d8f5a10d2a3bf
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 4183bde30673f5147683e16b4d625f73b063c529
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253191"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282935"
 ---
-# Déploiement-Guide connecté dans le Cloud
+# Déployer - Guide connecté au cloud
 
-Maintenant que tout est configuré, vous devez être prêt à distribuer les appareils. Néanmoins, c’est maintenant que vous devez valider votre configuration pour la première fois. Tout d’abord, le processus d’inscription d’Azure AD et de GPM doit être validé, puis vérifier qu’un appel d’assistance à distance peut être placé.
+Maintenant que tout est configuré, vous devez être prêt à distribuer des appareils. Toutefois, c’est maintenant que vous devez valider votre configuration pour la première fois. Tout d’abord, le processus azure AD Join et d’inscription MDM doit être validé, puis vérifiez qu’un appel Remote Assist peut être passé.
 
 ## Validation de l’inscription
 
-À présent que tout est configuré correctement pour l’inscription à Azure AD et à la gestion des périphériques mobiles, le reste doit maintenant être un élément d’alignement. Vous&#39;avoir besoin d’une connexion Wi-Fi et de l’appareil HoloLens, ainsi que de l’un des comptes d’utilisateurs AAD déjà configurés.
+Maintenant que tout est correctement configuré pour Azure AD et l’inscription MDM, le reste doit maintenant être un logiciel enfichable. Vous&#39;besoin d’une connexion Wi-Fi et de l’appareil HoloLens, ainsi que de l’un des comptes d’utilisateur AAD précédemment configurés.
 
-Si votre appareil n’est pas&#39;ne se trouve pas dans un état de paramètres d’usine, c’est le moment de refaire [clignoter l’appareil](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device).
+Si votre appareil n&#39;pas actuellement dans un état de paramètres d’usine, il est temps de le [réessaier.](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)
 
-1. Lorsque votre appareil est dans OOBE, vous&#39;devez commencer à interagir et à suivre les invites. 
-1. Vous serez invité à indiquer qui est propriétaire de **ce HoloLens?** Sélectionnez **mon entreprise ou mon établissement scolaire propriétaire** et entrez vos informations d’identification de compte Azure ad.
-1. Lorsque l’inscription est réussie, vous&#39;êtes invité à configurer un code confidentiel. Ce code confidentiel est propre à cet appareil pour cet utilisateur. Vous serez également invité à entrer les paramètres d’examen par Iris, de données audio et de télémétrie, et enfin, vous&#39;découvrir comment ouvrir le menu Démarrer et compléter OOBE.
-1. Lorsque vous débarquez dans la page d’accueil de la réalité, ouvrez le menu démarrer en utilisant le **geste de début** que vous venez d’apprendre.
-1. Sélectionnez l’application **paramètres** , puis **système.** La première information que vous&#39;voir est le nom de votre appareil, qui est utilisé pour votre appareil HoloLens 2, &quot; &quot; suivi d’une chaîne de caractères de six caractères.
+1. Une fois que votre appareil est en OOBE,&#39;devez commencer à interagir et à suivre les invites. 
+1. L’invite critique sera lorsque vous serez invité à **qui appartient ce HoloLens ?** Sélectionnez **Mon entreprise ou mon établissement scolaire et** entrez vos informations d’identification de compte Azure AD.
+1. Lorsque l’inscription réussit,&#39;êtes invité à configurer un code confidentiel. Ce code confidentiel est propre à cet appareil pour cet utilisateur. Vous serez également invité à effectuer des analyses de l’iris, des données vocales et des paramètres de télémétrie. Enfin, vous&#39;serez en mesure d’ouvrir le menu Démarrer et de terminer la OOBE.
+1. Une fois que vous êtes arrivé dans la maison virtuelle, ouvrez le menu Démarrer à l’aide **du** mouvement Démarrer que vous avez appris.
+1. Sélectionnez **l’application Paramètres,** puis **Système.** La première information que vous&#39;voir est le nom de votre appareil, qui pour votre appareil HoloLens 2 sera HOLOLENS suivi d’une chaîne de &quot; &quot; six caractères.
 1. Prenez note de ce nom.
 
-![Paramètres HoloLens 2-à propos de](./images/hololens2-settings-about.jpg)
+![Paramètres HoloLens 2 - À propos de](./images/hololens2-settings-about.jpg)
 
-7. Vous pouvez vérifier que votre appareil est correctement inscrit dans Azure AD au sein de l’application paramètres. Dans **paramètres** , **** sélectionnez  ->  **accès aux comptes professionnel ou scolaire**. À partir de cet écran, vous pouvez vérifier que votre inscription s’est déroulée correctement en vous &quot; connectant à _nameofAAD_&#39;s Azure ad. Connecté par _yourusername_ @ _nameofAAD_. onmicrosoft.com &quot; .
-
-
-Pour valider l’appareil sur Azure ad, nous pouvons vérifier l’annuaire Azure Active Directory sur le [portail](https://portal.azure.com/#home)Azure  ->  **Active Directory**  ->  **périphériques**  ->  **tous les appareils**et rechercher le nom de l’appareil. Vous&#39;être en mesure de voir l’appareil fait partie d’Azure Active Directory.
+7. Vous pouvez vérifier que votre appareil est correctement inscrit dans Azure AD dans l’application Paramètres. Dans **Paramètres,** **sélectionnez Accès**aux  ->  **comptes, scolaire ou scolaire.** À partir de cet écran, vous pouvez vérifier que vous êtes correctement inscrit en voyant &quot; Connected to _nameofAAD_&#39;azure AD. Connecté par _le nom de yourusernameofAAD_ @ __.onmicrosoft.com &quot; .
 
 
-![Azure Active Directory-appareil](./images/aad-enrollment.png)
+Pour vérifier que l’appareil est joint à Azure AD, nous pouvons vérifier Azure Active Directory à partir du portail [Azure](https://portal.azure.com/#home)Active Directory Devices All devices et rechercher le nom  ->  ****  ->  ****  ->  **** de l’appareil. Vous&#39;pouvez voir que l’appareil fait partie d’Azure Active Directory.
 
-Ensuite, vous&#39;devez vous connecter au [Centre d’administration Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home). Connectez-vous et sélectionnez **périphériques** , puis **tous les appareils**. À partir de cet emplacement, vous pouvez effectuer une recherche sur votre appareil HoloLens&#39;nom s. Vous devriez être en mesure de voir votre HoloLens répertorié sur Intune.
 
-![Intune-appareil](./images/endpoint-all-devices-enrolled.png)
+![Azure Active Directory - Appareil](./images/aad-enrollment.png)
 
-## Validation des appels d’assistance à distance
+Ensuite,&#39;devez vous connecter au Centre d’administration [Microsoft Endpoint Manager.](https://endpoint.microsoft.com/#home) Connectez-vous et **sélectionnez Appareils,** **puis Tous les appareils.** À partir de là, vous pouvez rechercher votre appareil HoloLens&#39;nom. Vous devriez être en mesure de voir votre HoloLens répertorié sur Intune.
 
-Une fois que vous avez&#39;vérifié que votre appareil est inscrit à votre application AAD et à la gestion des périphériques mobiles, il&#39;temps de passer un appel de test d’assistance à distance. Dans le cadre de cette validation, vous&#39;devrez disposer du périphérique HoloLens et d’un PC Windows 10, ainsi qu’un second compte d’utilisateur Azure AD pour le PC.
+![Intune - Appareil](./images/endpoint-all-devices-enrolled.png)
+
+## Validation d’appel d’assistance à distance
+
+Une fois que&#39;avez vérifié que votre appareil est inscrit à la fois dans votre AAD et dans la gestion des périphériques de gestion des périphériques, il est&#39;de tester un appel d’assistance à distance. Pour cette validation,&#39;devez avoir l’appareil HoloLens et un PC Windows 10, ainsi qu’un deuxième compte d’utilisateur Azure AD pour le PC.
 
 Cette étape de validation suppose que vous avez déjà effectué la dernière étape de validation et que votre appareil est inscrit et que votre utilisateur Azure AD est sur l’appareil.
 
 
-1. Si Microsoft teams n’est pas installé sur votre ordinateur, vous pouvez [Télécharger teams ici](https://www.microsoft.com/microsoft-365/microsoft-teams/download-app).
-2. Connectez-vous à teams en utilisant le second compte d’utilisateur Azure AD que celui actuellement connecté à votre HoloLens. Lorsque vous êtes connecté (e) à votre ordinateur, vous pouvez recevoir l’appel.
+1. Si Microsoft Teams n’est pas déjà installé sur votre PC, vous pouvez [télécharger Teams ici.](https://www.microsoft.com/microsoft-365/microsoft-teams/download-app)
+2. Connectez-vous à Teams à l’aide du deuxième compte d’utilisateur Azure AD que celui actuellement associé à votre HoloLens. Une fois que vous êtes inscrit sur votre PC, vous êtes prêt à recevoir l’appel.
 3. Déverrouillez votre HoloLens et connectez-vous.
-4. Pour lancer l’application Remote Assist, ouvrez le **menu Démarrer** , puis sélectionnez **assistance à distance**. L’assistance à distance n’est pas seulement une application de boîte de réception, mais elle est épinglée au menu Démarrer de HoloLens 2&#39;. Dans le cas d’un événement que vous n’avez pas&#39;qu’il n’est pas épinglé au menu Démarrer, ouvrez la liste **toutes les applications** pour le Rechercher.
-5. Dès qu’une assistance à distance est lancée, elle doit identifier l’utilisateur de l’appareil via l' [authentification unique](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) et se connecter à l’application.
-6. À partir de l’application, sélectionnez **Rechercher** et recherchez le second utilisateur sur le PC. Sélectionnez l’utilisateur pour démarrer l’appel.
-7. Sur votre PC, répondez à l’appel.
+4. Pour lancer l’application Remote Assist, ouvrez **le menu Démarrer** et sélectionnez Remote **Assist**. Remote Assist n’est pas seulement regroupé en tant qu’application de boîte de réception, mais il est épinglé au menu démarrer&#39;HoloLens 2. Dans un cas où vous ne le&#39;pas épinglé **** au menu Démarrer, ouvrez la liste Toutes les applications pour la rechercher.
+5. Une fois l’assistance à distance démarre, elle doit identifier l’utilisateur de l’appareil via [sso](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) et se connecter à l’application.
+6. À partir de l’application, **sélectionnez Rechercher** et recherchez le deuxième utilisateur sur le PC. Sélectionnez l’utilisateur pour démarrer l’appel.
+7. À partir de votre PC, répondez à l’appel.
 
-Félicitations, vous&#39;que vous avez réussi à vous connecter et à votre appel d’assistance à distance. Prenez soin de tester les fonctionnalités d’assistance à distance spécifiques, telles que l’utilisation de:
+Félicitations, vous&#39;vous êtes connecté et êtes sur votre appel d’assistance à distance. Veillez à tester des fonctionnalités d’assistance à distance spécifiques, telles que l’utilisation de :
 
-- [Annotations d’entrée manuscrite](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/add-annotations-hololens)
-- [Partager un fichier et afficher en environnement mixte](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/display-save-files)
+- [Annotations manuscrites](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/add-annotations-hololens)
+- [Partager un fichier et un affichage en réalité mixte](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/display-save-files)
 - [Obtenir de l’aide dans une autre application HoloLens](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/get-help-hololens-app-hololens)
 
 ## Étape suivante
 
 > [!div class="nextstepaction"]
-> [Déploiement connecté dans le Cloud-maintenance](hololens2-cloud-connected-maintain.md)
+> [Déploiement connecté au cloud : maintenir](hololens2-cloud-connected-maintain.md)

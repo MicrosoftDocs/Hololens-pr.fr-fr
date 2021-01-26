@@ -1,6 +1,6 @@
 ---
-title: Guide de déploiement – HoloLens 2 connecté au cloud avec Remote Assist - Vue d’ensemble
-description: Inscrire des appareils HoloLens sur un réseau connecté au cloud
+title: Vue d’ensemble de HoloLens 2 connecté au cloud avec Remote Assist
+description: Découvrez comment inscrire des appareils HoloLens 2 sur un réseau connecté au cloud à l’aide de Dynamics 365 Remote Assist.
 keywords: HoloLens, gestion, cloud connecté, Remote Assist, AAD, Azure AD, MDM, Gestion des appareils mobiles
 author: evmill
 ms.author: v-evmill
@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271671"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283075"
 ---
 # Guide de déploiement – HoloLens 2 connecté au cloud avec Remote Assist – Vue d’ensemble
 
-Ce guide aide les professionnels de l’informatique à planifier et à déployer des appareils Microsoft HoloLens 2 dans leur organisation avec l’objectif global d’avoir ces appareils connectés à votre organisation avec Dynamics 365 Remote Assist prêt à l’emploi. N’oubliez pas que cela servira de modèle pour les déploiements de preuve de concept dans votre organisation dans divers cas d’utilisation de HoloLens 2.
+Ce guide aide les professionnels de l’informatique à planifier et déployer des appareils Microsoft HoloLens 2 dans leur organisation dans le but global de les connecter à votre organisation avec Dynamics 365 Remote Assist. N’oubliez pas que cela servira de modèle pour les déploiements de preuve de concept dans votre organisation dans divers cas d’utilisation de HoloLens 2.
 
-Au cours du guide, nous allons apprendre à inscrire vos appareils dans la gestion de vos appareils, à appliquer des licences selon vos besoins et à vérifier que vos utilisateurs finaux peuvent immédiatement utiliser Remote Assist lors de la configuration de l’appareil. Pour ce faire, nous allons passer en détail les éléments d’infrastructure importants nécessaires à la mise en place et à l’exécution , en obtenant un déploiement à grande échelle avec HoloLens 2.
+Au cours du guide, nous allons apprendre à inscrire vos appareils dans votre gestion des appareils, à appliquer des licences selon vos besoins et à vérifier que vos utilisateurs finaux peuvent immédiatement utiliser Remote Assist lors de la configuration de l’appareil. Pour ce faire, nous allons passer en détail les éléments d’infrastructure importants nécessaires à la mise en place et à l’exécution , en obtenant un déploiement à grande échelle avec HoloLens 2.
 
 ## Dans ce guide
 
@@ -57,7 +57,7 @@ Préparez :
 > - [Découvrez les éléments essentiels de l’infrastructure pour les appareils HoloLens 2.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
 > - [En savoir plus sur Azure AD et en configurer un si vous ne l&#39;pas.](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [Découvrez la gestion des identités et la meilleure façon de configurer les comptes Azure AD.](hololens2-cloud-connected-prepare.md#identity-management)
-> - [En savoir plus sur la gestion des mdm et configurer avec Intune si vous n'&#39;pas déjà en avoir un.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [En savoir plus sur la gestion des mdm et configurer avec Intune si vous n&#39;en avez pas déjà un.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Découvrez les exigences de mise en réseau de Remote Assist.](hololens2-cloud-connected-prepare.md#network)
 > - [Facultatif : VPN pour se connecter aux ressources organisationnelles](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
@@ -74,7 +74,7 @@ Déployez :
 > - [Configurer votre HoloLens 2 et valider l’inscription.](hololens2-cloud-connected-deploy.md#enrollment-validation)
 > - [Validez que vous pouvez effectuer un appel d’assistance à distance.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
-Maintenez à jour :
+Maintenez :
 
 > [!div class="checklist"]
 > - [Comment mettre à jour Remote Assist à l’aide de l’application Microsoft Store.](hololens2-cloud-connected-maintain.md#updates)
