@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283035"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304967"
 ---
 # Matériel HoloLens2
 
@@ -29,8 +29,10 @@ Microsoft HoloLens 2 est un ordinateur holographique sans fil.  Il parachève le
 
 - **Visière**. Contient les capteurs et affichages HoloLens. Vous pouvez faire pivoter la visière vers le haut pendant que vous utilisez HoloLens.
 - **Arceau**. Pour placer HoloLens sur votre tête, utilisez la molette d’ajustement pour agrandir l’arceau. Lorsque HoloLens est en place, vous pouvez serrer la molette d’ajustement en la faisant tourner vers la droite jusqu’à ce que l’arceau soit confortable.
-- **Boutons de luminosité**. Lorsque vous portez HoloLens, les boutons de luminosité sont situés sur le côté gauche de l’appareil.
-- **Boutons de volume**. Lorsque vous portez HoloLens, les boutons de volume se trouvent sur le côté droit de l’appareil.
+- **Boutons de luminosité**. Lorsque vous portez HoloLens, les boutons de luminosité se trouvent à gauche de la visière.
+- **Boutons de volume**. Lorsque vous portez holoLens, les boutons de volume se trouvent à droite de la visière.
+- **Bouton d’alimentation**. Lorsque vous portez holoLens, le bouton d’alimentation se trouve à droite de la couverture arrière extérieure.
+- **Port USB-C.** Lorsque vous portez HoloLens, le port USB-C se trouve à droite de la couverture arrière extérieure au-dessous du bouton d’alimentation.
 
 ## Dans la boîte
 
