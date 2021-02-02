@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
+ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283855"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "11306653"
 ---
 # FAQ sur l’édition de développement HoloLens 2
 
@@ -31,7 +31,7 @@ HoloLens 2 Development Edition inclut un HoloLens 2, 500 $ en crédits Azure, un
 
 ### Quelle est la différence entre HoloLens 2 et HoloLens 2 Development Edition ?
 
-Vous ne pouvez utiliser HoloLens 2 Development Edition que pour la création et le test internes d’applications d’entreprise à utiliser en connexion avec HoloLens 2 (édition commerciale) dans un paramètre de production. Dans le cadre de l’achat de l’édition Développement, Microsoft peut, à sa seule discrétion, vous fournir certains droits identifiés au cours du processus d’achat, tels que le droit d’échanger certains crédits d’escompte ou l’accès d’évaluation à certains services ou outils Microsoft ou tiers pour une période limitée. [Si vous souhaitez en savoir plus](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+Vous pouvez uniquement utiliser HoloLens 2 Development Edition pour créer et tester des applications d’entreprise internes à utiliser avec HoloLens 2 (édition commerciale) dans un paramètre de production. Dans le cadre de l’achat de l’édition développement, Microsoft peut, à sa seule discrétion, vous fournir certains droits identifiés au cours du processus d’achat. Ces droits incluent le droit d’échanger certains crédits d’escompte ou un accès d’essai à certains services ou outils Microsoft ou tiers pour une période limitée. [Si vous souhaitez en savoir plus](hololens2-options.md#learn-about-the-development-edition)
 
 ### Une édition de HoloLens 2 peut-elle être utilisée pour développer ?
 
@@ -83,7 +83,7 @@ Non, cet appareil est le même du point de vue de la configuration matérielle r
 
 ### Comment puis-je utiliser mixed Reality Shared Computer Toolkit : Unity pour le développement sur mon HoloLens 2 Development Edition ?
 
-MRTK-Unity est un projet piloté par Microsoft qui fournit un ensemble de composants et de fonctionnalités, utilisés pour accélérer le développement d’applications mr sur plusieurs plateformes dans Unity. [Si vous souhaitez en savoir plus](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+MRTK-Unity est un projet piloté par Microsoft qui fournit un ensemble de composants et de fonctionnalités, utilisés pour accélérer le développement d’applications MR sur plusieurs plateformes dans Unity. [Si vous souhaitez en savoir plus](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 
 ### Comment puis-je utiliser mixed Reality Shared Computer Toolkit – Unreal UXT pour le développement sur mon HoloLens 2 Development Edition ?
 
@@ -109,7 +109,7 @@ Consultez la documentation de développement Introduction à la réalité mixte.
 
 Consultez la documentation de présentation de la conception de réalité mixte. [Si vous souhaitez en savoir plus](https://docs.microsoft.com/windows/mixed-reality/design/design)
 
-### Où puis-je obtenir de l’aide pour HoloLens Developer Edition ?
+### Où puis-je obtenir une assistance pour HoloLens Developer Edition ?
 
 Obtenez de [l’aide ici.](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
 
@@ -153,7 +153,7 @@ Cette offre est pour les nouveaux utilisateurs et ne s’empile pas sur les abon
 Instructions d’échange
 
 1. Visiter id.unity.com
-2. Connectez-vous avec votre pixyz ou créez un compte
+2. Connectez-vous avec pixyz ou créez un compte
 3. Cliquez sur &#39;échanger un code de produit&#39;
 4. Entrez le code du produit, puis cliquez sur &#39;échanger un code de produit&#39;
 
