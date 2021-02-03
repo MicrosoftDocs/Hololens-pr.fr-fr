@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
-ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
+ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
+ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304967"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11306922"
 ---
 # Matériel HoloLens2
 
@@ -132,22 +132,23 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 
 ## Logiciels préinstallés
 
-- Système d’exploitation holographique Windows
-- Visionneuse3D
-- Calendrier
-- Cortana
-- Dynamics 365 Guides
-- Dynamics 365 Remote Assist
-- Hub de commentaires
-- Explorateur de fichiers
-- Mail
-- MicrosoftEdge
-- MicrosoftStore
-- Films et TV
-- OneDrive
-- Photos
-- Paramètres
-- Conseils
+|   |   |
+| - | - |
+| Système d’exploitation holographique Windows | Avec Windows Holographic, les utilisateurs de Windows10 pourront utiliser certaines de leurs applications et jeux dans un environnement de réalité mixte via HoloLens2.
+| Visionneuse3D | [La Visionneuse 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) vous permet d’afficher facilement des modèles et des animations 3D en temps réel.|
+| Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), votre assistant de productivité personnelle, vous permet de vous tenir informé des éléments les plus importants et de gagner du temps à trouver ce dont vous avez besoin.  |
+| Dynamics 365 Guides |  [Dynamics365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) permet aux employés d’acquérir de nouvelles compétences plus rapidement sur les appareils HoloLens. |
+| Dynamics365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) permet aux techniciens de collaborer et de résoudre des problèmes avec des collaborateurs distants à l’aide de Microsoft Teams ou de Dynamics365 Remote Assist.  |
+| Hub de commentaires | [Le hub de commentaires](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) vous permet de fournir des commentaires sur Windows et sur les applications en faisant part de vos suggestions ou de vos problèmes.  |
+| Explorateur de fichiers | L’Explorateur de fichiers fournit une interface graphique utilisateur permettant d’accéder aux systèmes de fichiers. |
+| Courrier et calendrier | Les [applications Courrier et calendrier](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) vous permettent de rester à jour sur votre e-mail, de gérer votre planning et de communiquer avec vos contacts. |  
+| MicrosoftEdge | Microsoft Edge offre des performances exceptionnelles avec un niveau de confidentialité plus élevé, une hausse de la productivité et une meilleure valeur ajoutée pendant la navigation. |
+| MicrosoftStore | Le [Microsoft Store](https://www.microsoft.com) constitue votre source d’accès aux applications et aux jeux compatibles avec HoloLens.|
+| Films et TV | [L’application Films et TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) offre les derniers divertissements dans une seule application simple, rapide et élégante. |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) vous permet d’accéder à vos fichiers, puis de les modifier depuis tous vos appareils où que vous soyez.  |
+| Photos| L’application [Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) vous permet d’afficher et de modifier vos photos et vidéos, de créer des films et des albums.  |
+| Paramètres | L’application Paramètres vous permet de personnaliser les détails du fonctionnement de Windows Holographic.  |
+| Conseils | L’application [Conseils](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) vous permet de maîtriser des actions surprenantes et moins connues réalisables dans Windows Holographic. |
 
 ## Certifications d’appareil
 
@@ -172,11 +173,11 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 |     Longueur d’expéditeur externe    |     446,00 mm          |     17,559pouces       |
 |     Largeur d’expéditeur externe     |     257,99 mm          |     10,157 pouces       |
 |     Hauteur d’expéditeur externe     |     172,01 mm          |     6,772 pouces        |
-|     Poids d’expéditeur externe    |     3,284 kg           |     7,240 livres           |
+|     Poids d’expéditeur externe    |     3,284 kg           |     7,240livres           |
 
-Remarques:
-- Unité : La boîte noir de vente au détail dans laquelle HoloLens 2 est vendu.
-- Expéditeur externe : L’emballage de protection autour de l’unité.
+> [!NOTE]
+> - Unité : boîte noire de style commercial dans laquelle nous vendons HoloLens 2.
+> - Expéditeur externe : L’emballage de protection autour de l’unité.
 
 ## Découverte du numéro de série
 
@@ -186,16 +187,16 @@ Le numéro de série des appareils HoloLens2 est imprimé sous la visière.
 1. Vous trouverez le numéro de série près de la charnière. 
 
 
-<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 Le numéro de série se trouve également via un PC connecté:
 
 1. Branchez l’appareil
 1. Accédez à **ce PC** dans l’Explorateur de fichiers
-1. Cliquez avec le bouton droit et sélectionnez les **Propriétés** de l’appareil HoloLens
-1. Cette action permet d’afficher le numéro de série de l’appareil. Comme le montre la capture d’écran ci-dessous.
+1. Cliquez avec le bouton droit, puis sélectionnez **Propriétés** de l’appareil HoloLens
+1. Cela permet d’afficher le numéro de série de l’appareil, comme illustré dans la capture d’écran ci-dessous.
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## Étape suivante
 
