@@ -1,5 +1,5 @@
 ---
-title: Insider Preview pour MicrosoftHoloLens
+title: Insider Preview pour Microsoft HoloLens
 description: Découvrez comment commencer avec les builds Insider et fournir des commentaires précieux pour notre prochaine mise à jour majeure du système d’exploitation pour HoloLens.
 ms.prod: hololens
 ms.sitesec: library
@@ -16,20 +16,25 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
-ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
+ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
+ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311826"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11314005"
 ---
-# Insider Preview pour MicrosoftHoloLens
+# Insider Preview pour Microsoft HoloLens
 
 Bienvenue dans les dernières builds Insider Preview pour HoloLens ! Il est simple de commencer [et](hololens-insider.md#start-receiving-insider-builds) de fournir des commentaires précieux pour notre prochaine mise à jour majeure du système d’exploitation pour HoloLens.
 
 ## Notes de publication de Windows Insider
 
 Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvelles fonctionnalités pour les Windows Insiders. Nous allons faire une version d’essai vers le canal de développement pour les dernières mises à jour. Nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos builds Windows Insider.  Soyez ravis et prêt à combiner ces mises à jour dans votre réalité.
+
+> [!IMPORTANT]
+> Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un autre ID d’application. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
+
+<br>
 
 | Nom de la fonctionnalité                                              | Description courte                                                                      | Disponible dans build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -48,7 +53,7 @@ Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvell
 
 ![Animation du logo Microsoft Edge hérité vers le nouveau logo Microsoft Edge](images/new-edge.gif)
 
-Le nouveau Microsoft Edge adopte le projet [open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) pour améliorer la compatibilité pour les clients et réduire la fragmentation du web pour les développeurs web.
+Le nouveau Microsoft Edge adopte le projet [open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) pour créer une meilleure compatibilité pour les clients et moins de fragmentation du web pour les développeurs web.
 
 Avec cet aperçu Insider, le nouveau Microsoft Edge est disponible pour la première fois pour les clients HoloLens 2 ! Bien que le nouveau Microsoft Edge remplace finalement l’ancien Microsoft Edge sur HoloLens 2, les deux navigateurs sont actuellement disponibles pour les Insiders. Veuillez partager vos commentaires et **** bogues avec notre équipe via la fonctionnalité Envoyer des commentaires dans le nouveau Microsoft Edge ou via [le Hub de commentaires.](hololens-feedback.md)
 
@@ -56,7 +61,7 @@ Avec cet aperçu Insider, le nouveau Microsoft Edge est disponible pour la premi
 
 #### Lancement du nouveau Microsoft Edge
 
-Il existe deux versions de Microsoft Edge disponibles pour les Insiders : la nouvelle icône Microsoft Edge de Microsoft Edge (représentée par une icône bleu et vert de la maison) et l’icône ![ Microsoft Edge héritée (représentée par l’icône « e » ](images/new_edge_logo.png) blanche). Le nouveau Microsoft Edge est épinglé au menu Démarrer et se lance automatiquement lorsque vous activez un lien web. Si vous souhaitez revenir à l’utilisation de Microsoft Edge hérité en tant que navigateur web par défaut, consultez les instructions ci-dessous pour réinitialiser [les applications par défaut.](#default-app-picker)
+Il existe deux versions de Microsoft Edge disponibles pour les Insiders : la nouvelle icône Microsoft Edge de Microsoft Edge (représentée par une icône bleu et vert de la maison) et l’icône ![ Microsoft Edge héritée (représentée par l’icône « e » ](images/new_edge_logo.png) blanche). Le nouveau Microsoft Edge est épinglé au menu Démarrer et se lance automatiquement lorsque vous activez un lien web. Si vous souhaitez revenir à l’utilisation de Microsoft Edge hérité en tant que navigateur web par défaut, consultez les instructions ci-dessous pour réinitialiser les [applications par défaut.](#default-app-picker)
 
 > [!NOTE]
 > Lorsque vous lancez le nouveau Microsoft Edge sur HoloLens 2 pour la première fois, vos paramètres et données sont importés à partir de Microsoft Edge hérité. Si vous continuez à utiliser l’ancien Microsoft Edge après avoir lancé le nouveau Microsoft Edge, ces nouvelles données ne seront pas synchronisées entre l’ancien microsoft Edge et le nouveau Microsoft Edge.
@@ -116,24 +121,24 @@ Visitez la page [d’accueil du Microsoft Edge Insider](https://www.microsoftedg
 
 Il existe quelques méthodes disponibles pour l’installation des canaux Insider de Microsoft Edge sur HoloLens 2 :
 
-**Installation directe sur l’appareil (actuellement disponible uniquement pour les appareils non utilisés)**
-  1. Sur votre HoloLens 2, visitez la [page de téléchargement Edge Insider](https://www.microsoftedgeinsider.com/download)
-  1. Sélectionnez **le bouton Télécharger pour HoloLens 2** pour le canal Edge Insider que vous souhaitez installer
-  1. Lancer le fichier .msix téléchargé à partir de la file d’attente de téléchargement Edge ou du dossier « Téléchargements » de votre appareil (à l’aide de l’Explorateur de fichiers)
-  1. [Le programme d’installation de](app-deploy-app-installer.md) l’application sera lancé
-  1. Sélectionner le **bouton Installer**
-  1. Une fois l’installation réussie, vous trouverez Microsoft Edge Beta, Dev ou Canary comme entrée distincte dans la liste Toutes les applications du menu Démarrer ****
+**Installation directe sur l’appareil (actuellement disponible uniquement pour les appareils nonmanagés)**
+  1. Sur votre HoloLens 2, visitez la [page de téléchargement Edge Insider.](https://www.microsoftedgeinsider.com/download)
+  1. Sélectionnez **le bouton Télécharger pour HoloLens 2** pour le canal Insider Edge que vous souhaitez installer.
+  1. Lancez le fichier .msix téléchargé à partir de la file d’attente de téléchargement Edge ou du dossier « Téléchargements » de votre appareil (à l’aide de l’Explorateur de fichiers).
+  1. [Le programme d’installation](app-deploy-app-installer.md) de l’application se lance.
+  1. Sélectionnez le **bouton** Installer.
+  1. Une fois l’installation réussie, microsoft Edge Beta, Dev ou **** Canary est une entrée distincte dans la liste Toutes les applications du menu Démarrer.
 
-**Installation via PC avec Windows Device Portal (nécessite que le [mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) développeur soit activé sur HoloLens 2)**
-  1. Sur votre PC, visitez la [page de téléchargement Edge Insider](https://www.microsoftedgeinsider.com/download)
-  1. Sélectionnez **le bouton de flèche** vers le bas en haut du bouton « Télécharger pour Windows 10 » pour le canal Insider Edge que vous souhaitez installer
-  1. Sélectionnez **HoloLens 2 dans** le menu déroulant
-  1. Enregistrez le fichier .msix dans le dossier « Téléchargements » de votre PC (ou un autre dossier que vous pouvez facilement trouver)
-  1. Utiliser [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) sur votre PC pour installer le fichier .msix téléchargé sur HoloLens 2
-  1. Une fois l’installation réussie, vous trouverez Microsoft Edge Beta, Dev ou Canary comme entrée distincte dans la liste Toutes les applications du menu Démarrer ****
+**Installer via PC avec Windows Device Portal (nécessite que le [mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) développeur soit activé sur HoloLens 2)**
+  1. Sur votre PC, visitez la [page de téléchargement Edge Insider.](https://www.microsoftedgeinsider.com/download)
+  1. Sélectionnez **le bouton de flèche** vers le bas en haut du bouton « Télécharger pour Windows 10 » pour le canal Edge Insider que vous souhaitez installer.
+  1. Sélectionnez **HoloLens 2 dans** le menu déroulant.
+  1. Enregistrez le fichier .msix dans le dossier « Téléchargements » de votre PC (ou un autre dossier que vous pouvez facilement trouver).
+  1. Utilisez [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) sur votre PC pour installer le fichier .msix téléchargé sur HoloLens 2.
+  1. Une fois l’installation réussie, microsoft Edge Beta, Dev ou **** Canary est une entrée distincte dans la liste Toutes les applications du menu Démarrer.
 
 > [!NOTE]
-> Pendant cette prévisualisation de Windows Insider pour HoloLens 2, la version de Microsoft Edge sur votre appareil peut être supérieure à celle disponible dans certains (ou tous) des canaux Microsoft Edge Insider. Cela permet de s’assurer que les nouvelles fonctionnalités et correctifs ciblant spécifiquement le navigateur web sur HoloLens 2 sont en train d’atteindre nos Windows Insiders aussi rapidement que possible. Peu de temps après la publication publique de la prochaine mise à jour Windows, les builds du canal Insider de Microsoft Edge dépasseront et resteront en avance sur la version de Microsoft Edge sur votre HoloLens 2.
+> Pendant cette prévisualisation de Windows Insider pour HoloLens 2, la version de Microsoft Edge sur votre appareil peut être supérieure à celle disponible dans certains (ou tous) des canaux Microsoft Edge Insider. Cela permet de s’assurer que les nouvelles fonctionnalités et correctifs ciblant spécifiquement le navigateur web sur HoloLens 2 sont en train d’atteindre nos Windows Insiders aussi rapidement que possible. Peu de temps après la publication publique de la prochaine mise à jour Windows, les builds du canal Insider de Microsoft Edge dépassent et restent en avance sur la version de Microsoft Edge sur votre HoloLens 2.
 
 ### WebXR et 360 Viewer
 
@@ -171,9 +176,9 @@ L’extension 360 Viewer repose sur WebXR et s’installe automatiquement avec l
 1. [Appuyez sur](hololens2-basic-usage.md#select-using-air-tap) l’air pour faire monter les contrôles de lecture. Utilisez les rayons de la main et [l’effet d’air](hololens2-basic-usage.md#select-using-air-tap) pour lire/suspendre, ignorer l’avant/l’arrière, activer/désactiver les légendes ou arrêter l’expérience (qui quitte la vue immersive). Les contrôles de lecture disparaîtront après quelques secondes d’inactivité.
 
 #### Principaux problèmes connus de WebXR et de la visionneuse 360
-- Dans les expériences WebXR, les hologrammes peuvent changer ou s’incliner lorsque vous inclinez la tête ou que vous vous déplacez dans votre environnement.
+- Dans les expériences WebXR, les hologrammes peuvent se déplacer ou s’incliner lorsque vous inclinez la tête ou que vous vous déplacez dans votre environnement.
 - En fonction de la complexité de l’expérience WebXR, le framerate peut être bas ou saccadé.
-- Les joints de main formulées ne sont pas encore disponibles dans WebXR.
+- Les joints de main clairement exprimés ne sont pas encore disponibles dans WebXR.
 - Lorsque vous quittez une expérience WebXR ou 360 Viewer, la réapparition des hologrammes dans la maison virtuelle peut prendre au moins 30 secondes.
 - 360 vidéos provenant de sites web autres que YouTube peuvent ne pas fonctionner comme prévu.
 - Si 360 vidéos n’entrent pas en vue immersive (ou si le bouton du casque de réalité mixte n’apparaît pas), essayez d’actualisation de la page.
@@ -196,27 +201,29 @@ Avec cette version, nous introduisons une nouvelle version de l’application Pa
 ![Page d’accueil de l’application Nouveaux paramètres](images/new-settings-app.png)
 
 **Nouvelles fonctionnalités et nouveaux paramètres**
-- Recherche de paramètres : rechercher des paramètres à partir de la page d’accueil Paramètres à l’aide de mots clés ou du nom du paramètre
+- Recherche de paramètres : recherchez les paramètres de la page d’accueil Paramètres à l’aide de mots clés ou du nom du paramètre.
 - Son système > :
-  - Périphériques audio d’entrée et de sortie : choisissez indépendamment vos périphériques audio d’entrée et de sortie (par exemple, écoutez du contenu audio via un casque Bluetooth ou utilisez un microphone USB-C pour l’entrée audio). Remarque : Bluetooth microphones ne sont pas pris en charge par HoloLens 2.
-  - Volume d’application : ajuster indépendamment le volume de chaque application
-- Système > la & veille : choisir le moment où l’appareil doit être en veille après une période d’inactivité
-- Système > batterie : activer manuellement le mode économiseur de batterie ou définir un seuil de batterie à partir duquel le mode économiseur de batterie s’active automatiquement
-- Appareils > USB : vous pouvez désactiver les connexions USB par défaut
+  - Périphériques audio d’entrée et de sortie : choisissez indépendamment vos périphériques audio d’entrée et de sortie (par exemple, écoutez du contenu audio via un casque Bluetooth ou utilisez un microphone USB-C pour l’entrée audio). 
+    > [!NOTE]
+    > Bluetooth microphones ne sont pas pris en charge par HoloLens 2.
+  - Volume d’application : ajustez indépendamment le volume de chaque application.
+- Le système > la & veille : choisissez quand l’appareil doit être en veille après une période d’inactivité.
+- Système > batterie : activez manuellement le mode économiseur de batterie ou définissez un seuil de batterie à partir duquel le mode économiseur de batterie s’active automatiquement.
+- Appareils > USB : vous pouvez désactiver les connexions USB par défaut.
 - Réseau & Internet :
-  - Les adaptateurs Ethernet USB-C apparaissent désormais dans Le réseau & Internet
-  - Les paramètres d’adaptateur Ethernet USB-C sont désormais disponibles, y compris son adresse IP
-  - Vous pouvez désormais activer le mode avion sur HoloLens 2
-- Applications : vous pouvez réinitialiser les applications par défaut utilisées pour les types de fichiers et de liens. Pour plus [d’informations, consultez](#default-app-picker) le s sélectionneur d’application par défaut.
+  - Les adaptateurs Ethernet USB-C apparaissent désormais dans Réseau & Internet.
+  - Les paramètres d’adaptateur Ethernet USB-C sont désormais disponibles, y compris son adresse IP.
+  - Vous pouvez désormais activer le mode avion sur HoloLens 2.
+- Applications : vous pouvez réinitialiser les applications par défaut utilisées pour les types de fichiers et de liens. Pour plus [d’informations, voir S sélectionneur d’application](#default-app-picker) par défaut.
 - Les comptes > autres utilisateurs : les propriétaires d’appareils peuvent ajouter des utilisateurs, mettre à niveau les utilisateurs standard vers les propriétaires d’appareils, rétrograder les propriétaires d’appareils en utilisateurs standard et supprimer des utilisateurs.
-- Facilité d’accès : modifier la taille du texte et certains effets visuels
+- Facilité d’accès : modifier la taille du texte et certains effets visuels.
 
 **Problèmes connus**
-- Les fenêtres Paramètres précédemment placées seront supprimées (voir la remarque ci-dessus)
-- La visite de la page Notifications peut créer un incident sur l’application Paramètres (en cours d’investigation)
-- The Ethernet page currently doesn’t show up (to be fixed soon)
-- Vous ne pouvez plus renommer votre appareil avec l’application Paramètres (les administrateurs informatiques peuvent utiliser des packages d’approvisionnement ou la gestion des périphériques mobiles pour renommer les appareils)
-- L’utilisation de la batterie pour le nouveau Microsoft Edge peut ne pas être exacte, en raison de sa nature en tant qu’application de bureau Win32 prise en charge par une couche d’adaptateur UWP (aucun correctif prévu prochainement)
+- Les fenêtres Paramètres précédemment placées seront supprimées (voir la remarque ci-dessus).
+- La visite de la page Notifications peut créer un incident sur l’application Paramètres (en cours d’investigation).
+- La page Ethernet ne s’affiche actuellement pas (pour être corrigée prochainement).
+- Vous ne pouvez plus renommer votre appareil avec l’application Paramètres (les administrateurs informatiques peuvent utiliser des packages d’approvisionnement ou la gestion des périphériques mobiles pour renommer les appareils).
+- L’utilisation de la batterie pour le nouveau Microsoft Edge peut ne pas être exacte, en raison de sa nature en tant qu’application de bureau Win32 prise en charge par une couche d’adaptateur UWP (aucun correctif prévu prochainement).
 
 ### S sélectionneur d’application par défaut
 
@@ -224,7 +231,7 @@ Lorsque vous activez un lien hypertexte ou ouvrez un type de fichier avec plusie
 
 ![Fenêtre du s picker d’application](images/default-app-picker.png)
 
-Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > Applications.** Faites défiler jusqu’au bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
+Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > applications.** Faites défiler jusqu’au bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
 
 ### Office Web App
 
@@ -232,14 +239,14 @@ L’application web Office a été ajoutée à la liste « Toutes les applicatio
 
 ### Balayage pour taper
 
-Certains clients trouvent plus rapide de « taper » sur des claviers virtuels en faisant glisser la forme du mot qu’ils ont l’intention de taper, et nous prévisualiserons cette fonctionnalité pour le clavier holographique. Vous pouvez balayer un mot à la fois en passant la pointe de votre doigt dans le plan du clavier holographique, en faisant glisser la forme du mot, puis en retirez la pointe de votre doigt du plan du clavier. Vous pouvez balayer les mots de suivi sans avoir à appuyer sur la barre d’espace en supprimant votre doigt du clavier entre les mots. Vous savez que la fonctionnalité fonctionne si vous voyez une trace de balayage après le mouvement de votre doigt sur le clavier.
+Certains clients trouvent plus rapide de « taper » sur des claviers virtuels en balayant la forme du mot qu’ils ont l’intention de taper, et nous prévisualiserons cette fonctionnalité pour le clavier holographique. Vous pouvez balayer un mot à la fois en passant la pointe de votre doigt dans le plan du clavier holographique, en faisant glisser la forme du mot, puis en retirez la pointe de votre doigt du plan du clavier. Vous pouvez balayer les mots de suivi sans avoir à appuyer sur la barre d’espace en supprimant votre doigt du clavier entre les mots. Vous savez que la fonctionnalité fonctionne si vous voyez une trace de balayage après le mouvement de votre doigt sur le clavier.
 
 Notez que cette fonctionnalité peut être difficile à utiliser et à maîtriser en raison de la nature d’un clavier holographique dans lequel vous ne vous sentez pas résistant à votre doigt (contrairement à un affichage de téléphone mobile). Nous évaluons cette fonctionnalité pour la publication publique. Vos commentaires sont donc importants . que vous trouviez la fonctionnalité utile ou que vous avez des commentaires de votre part, faites-le nous savoir via [le Hub de commentaires.](hololens-feedback.md)
 
 ### Prise en charge du microphone externe USB-C
 
 > [!IMPORTANT]
-> Le branchement **d’un micro USB ne le définira**pas automatiquement comme périphérique d’entrée. Lorsque vous branchez un ensemble de casques USB-C, les utilisateurs observent que le casque audio est automatiquement redirigé vers le casque, mais le système d’exploitation HoloLens hiérarchise le groupe de microphones interne au-dessus de tout autre périphérique d’entrée. **Pour utiliser un microphone USB-C, suivez les étapes ci-dessous.**
+> Le branchement **d’un micro USB ne le définira**pas automatiquement comme périphérique d’entrée. Lorsque vous branchez un ensemble de casques USB-C, les utilisateurs observent que l’audio du casque est automatiquement redirigé vers le casque, mais le système d’exploitation HoloLens hiérarchise le groupe de microphones interne au-dessus de tout autre périphérique d’entrée. **Pour utiliser un microphone USB-C, suivez les étapes ci-dessous.**
 
 Les utilisateurs peuvent sélectionner des microphones externes connectés USB-C à l’aide du **panneau** Paramètres sonores. Les microphones USB-C peuvent être utilisés pour les appels, l’enregistrement, etc.
 
@@ -289,7 +296,7 @@ Lors de la modification d’un kiosque pour inclure les nouvelles applications, 
 
 Dans les builds plus anciennes, si un appareil avait une configuration kiosque, qui est une combinaison d’accès affecté global et[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)d’accès affecté au membre du groupe AAD, en cas d’échec de la détermination de l’appartenance au groupe AAD, l’utilisateur ne voit « rien affiché dans le menu Démarrer ».
 
-À partir de la version Windows Insider, l’expérience plein écran se base sur la configuration kiosque globale (si elle est présente) en cas d’échec pendant le mode plein écran du groupe AAD.
+À partir de la version Windows Insider, l’expérience plein écran est de retour à la configuration kiosque globale (le cas présent) en cas de pannes pendant le mode plein écran du groupe AAD.
 
 ### Configuration des diagnostics de retour via l’application Paramètres
 
@@ -310,7 +317,7 @@ Désormais, dans l’application Paramètres, un utilisateur peut configurer le 
 > - La commande vocale « Appareil de redémarrage » fonctionne bien. 
 > - Vous pouvez également choisir le bouton de redémarrage dans Paramètres/Programme Windows Insider.
 >
-> Nous avons rencontré un bogue sur le back-end que vous avez peut-être rencontré, ce qui vous permettra de reprendre le suivi.
+> Nous avons rencontré un bogue sur le back end que vous avez peut-être rencontré, ce qui vous permettra de reprendre le suivi.
 
 Sur un appareil HoloLens 2, sélectionnez Mise à jour des **paramètres**& programme Windows Insider sécurité  >  ****  >  **** et **sélectionnez Commencer.** Liez le compte que vous avez utilisé pour vous inscrire en tant que Windows Insider.
 
@@ -341,7 +348,7 @@ Pour tester avec une ffu signée par une vol, vous devez d’abord déverrouille
 
     1. Téléchargez ffu sur votre PC à partir [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) de .
     
-    1. Installez ARC (Advanced Recovery Companion) à partir du Microsoft Store : [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Installez ARC (Advanced Recovery Companion) à partir du Microsoft Store : [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
     
 1. Sur HoloLens - Déverrouillage de version d’essai : ouvrez la mise à jour des **paramètres**& programme Windows Insider de sécurité, puis inscrivez-vous,  >  ****  >  **** redémarrez l’appareil.
 
@@ -363,7 +370,7 @@ Nous vous invitons et vous encourageons à essayer de développer vos applicatio
 Si vous ne souhaitez plus recevoir de builds Insider de Windows Holographic, vous pouvez refuser [](hololens-recovery.md) lorsque votre HoloLens exécute une build de production, ou vous pouvez récupérer votre appareil à l’aide de l’Advanced Recovery Companion pour récupérer votre appareil vers une version non Insider de Windows Holographic.
 
 > [!CAUTION]
-> Il existe un problème connu dans lequel les utilisateurs qui se désscrivent des builds Insider Preview après avoir réinstallé manuellement une nouvelle version d’aperçu font l’expérience d’un écran bleu. Par la suite, ils doivent récupérer manuellement leur appareil. Pour plus d’informations sur le cas où vous seriez touché ou non, consultez plus d’informations sur [ce problème connu.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Il existe un problème connu dans lequel les utilisateurs qui se désscrivent des builds Insider Preview après avoir réinstallé manuellement une nouvelle version d’aperçu peuvent voir un écran bleu. Par la suite, ils doivent récupérer manuellement leur appareil. Pour plus d’informations sur le cas où vous seriez touché ou non, consultez plus d’informations sur [ce problème connu.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
 Pour vérifier que votre HoloLens exécute une build de production :
 

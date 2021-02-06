@@ -15,22 +15,22 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
-ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
+ms.openlocfilehash: bc46ffd4c980ae14f010a3b45533f8081845c946
+ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313793"
+ms.locfileid: "11313995"
 ---
 # Nettoyage HoloLens 2 : FAQ
 
 > [!IMPORTANT]  
-> Microsoft ne peut pas déterminer l’efficacité d’un produit ingérant donné dans des luttes telles que COVID-19. Reportez-vous aux conseils de votre autorité de santé publique locale sur la façon de rester à l’abri d’une infection potentielle.  
+> Microsoft ne peut pas déterminer l’efficacité d’un produit insérante donné dans des luttes telles que COVID-19. Reportez-vous aux conseils de votre autorité de santé publique locale sur la façon de rester à l’abri d’une infection potentielle.  
 
 ## Quelles sont les instructions de nettoyage général pour les appareils HoloLens 2 ?
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
-## Quelles sont les instructions de nettoyage général pour les appareils HoloLens 2 ?
+
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
 **Pour nettoyer l’appareil**
@@ -52,7 +52,7 @@ ms.locfileid: "11313793"
 Non. Les nettoyeurs d’objectif peuvent être abrasifs pour les bords de la visière. Pour nettoyer la visière, suivez les étapes suivantes :  
 
 1. Supprimez toute papier à sable à l’aide d’un microfibre en microfibre non secs pour effacer légèrement la visière.
-1. Éclaircissez légèrement un papier à l’aide d’une isopropyl médicale « 70 % », puis effacez légèrement la visière.
+1. Éclaircissez légèrement un papier à l’aide de l’effet médical « 70 % » d’isopropyl, puis effacez légèrement la visière.
 1. Laissez la visière complètement secs.
 
 ## Puis-je utiliser des effacements pour nettoyer l’appareil ?
@@ -68,11 +68,11 @@ Oui. Vous pouvez utiliser une solution de « 70 % » d’eau et d’eau isopropy
 
 ## Le clavier de navigateur est-il remplaçable ?
 
-Oui. Le clavier de navigateur est fixé à l’appareil par un aimant. Pour le détacher, retirez-le légèrement de l’en-tête. Pour le remplacer, remettez-le en place.
+Oui. Le clavier de navigateur est fixé à l’appareil par un aimant. Pour le détacher, éloignez-le légèrement du bandeau. Pour le remplacer, remettez-le en place.
 
 ![Supprimer ou remplacer le clavier de navigateur](images/hololens2-remove-browpad.png)
 
-## Comment nettoyer le clavier de navigateur ?
+## Comment puis-je nettoyer le clavier de navigateur ?
 
 Pour nettoyer le clavier de navigateur, effacez-le à l’aide d’un crayon qui est moisé à l’aide d’une eau et d’un soap. Laissez le clavier de navigateur complètement sec avant de l’utiliser à nouveau.
 
