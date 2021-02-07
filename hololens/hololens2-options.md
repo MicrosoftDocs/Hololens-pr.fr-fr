@@ -4,7 +4,7 @@ description: Découvrez comment chaque édition d’appareil HoloLens 2 est iden
 keywords: Options d’achat HoloLens 2, options HoloLens, Developer Edition
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
-ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
+ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
+ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313551"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314268"
 ---
 # Vue d’ensemble de HoloLens 2
 
@@ -106,7 +106,9 @@ Nous avons amélioré, puis repensé HoloLens 2 Industrial Edition avec de nouve
 
 En plus de l’appareil mis à niveau, HoloLens 2 Industrial Edition inclut une garantie de 2 ans et un programme de remplacement rapide.
 
-Si vous souhaitez en savoir plus, veuillez consulter la [FAQ sur HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md).
+![Industrial Edition utilisé dans une salle propre](./images/ie-small-pic.png)
+
+Consultez la [FAQ sur HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md).
 
 #### Nettoyage et manipulation de HoloLens 2
 Vous pouvez nettoyer les surfaces dures de l’appareil HoloLens 2 Industrial Edition, y compris la visière, la protection pour le front et la sangle, à l’aide d’une solution d’alcool isopropylique à 70 %. Si vous souhaitez en savoir plus, veuillez consulter la [FAQ sur le nettoyage de HoloLens2](https://docs.microsoft.com/hololens/hololens2-maintenance). 
@@ -116,7 +118,9 @@ Vous pouvez nettoyer les surfaces dures de l’appareil HoloLens 2 Industrial Ed
 #### En savoir plus sur Trimble XR10
 Trimble XR10 avec HoloLens 2 est le premier appareil créé avec le programme de personnalisation Microsoft HoloLens. Il intègre la toute dernière technologie d’informatique spatiale dans une solution certifiée à utiliser avec un casque pour la sécurité du personnel.
 
-Découvrez [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
+![Trimble SKU](./images/trimble-ed.png)
+
+Découvrez en plus sur [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
 ### **HoloLens2 Development Edition**
 
@@ -131,9 +135,11 @@ HoloLens 2 Development Edition inclut un HoloLens 2, 500dollars en crédits Azur
 |---|---|
 |  [Unity](https://unity.com/) | Plateforme de développement 3D en temps réel.   |
 |  [Plug-in Pixyz pour Unity](https://www.pixyz-software.com/plugin/) | Passerelle de connexion des mondes de la CAO &amp; d’ingénierie au monde du développement.   |
-| [500dollars en crédits Azure pour les services Azure](https://azure.microsoft.com/resources/) | Les crédits Azure inclus dans l’édition de développement HoloLens 2 servent à démarrer rapidement la création et le test des applications de réalité mixte sur Azure. |
+| [500dollars en crédits Azure pour les services Azure](https://azure.microsoft.com/resources/) | Les crédits Azure inclus dans HoloLens 2 Development Edition servent à démarrer rapidement la création et le test des applications de réalité mixte sur Azure. |
 
-#### Échanger vos crédits
+![HoloLens2 Development Edition](./images/hololens-2-dev-ed.png)
+
+#### Échangez vos crédits
 
 ##### Unity
 Vous aurez reçu un code unique. Instructions d’échange de la version d’essai Unity Pro :
