@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bc46ffd4c980ae14f010a3b45533f8081845c946
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
+ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313995"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319278"
 ---
 # Nettoyage HoloLens 2 : FAQ
 
@@ -37,9 +37,6 @@ ms.locfileid: "11313995"
 
 1. Supprimez toute apparence à l’aide d’un microfibre sec et exempt de lint pour effacer légèrement la surface de l’appareil.
 1. Éclaircissez légèrement le papier à l’aide de l’isopropyl « 70 % » médical, puis utilisez-le pour effacer légèrement la surface de l’appareil.
-
-   ![Image illustrant le nettoyage de la visière](images/hololens-cleaning-visor.png)
-
 1. Laissez l’appareil complètement secs.
 
 **Pour nettoyer le clavier de navigateur**
@@ -60,7 +57,7 @@ Non. Les nettoyeurs d’objectif peuvent être abrasifs pour les bords de la vis
 Oui, si les effacements ne contiennent pas de papier. Vous pouvez utiliser des effacements insérez des effacements non ingrayés pour effacer légèrement [les surfaces HoloLens.](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)  
 
 > [!CAUTION]  
-> Évitez d’utiliser des effacements contenant des effacements pour nettoyer les surfaces HoloLens. Il est acceptable d’utiliser des effacements dans les situations critiques, lorsque rien d’autre n’est disponible. Toutefois, l’endommagement peut endommager la visière HoloLens ou d’autres surfaces.
+> Évitez d’utiliser des effacements qui contiennent des effacements pour nettoyer les surfaces HoloLens. Il est acceptable d’utiliser des effacements dans les situations critiques, lorsque rien d’autre n’est disponible. Toutefois, l’endommagement peut endommager la visière HoloLens ou d’autres surfaces.
 
 ## Puis-je utiliser de l’eau pour nettoyer l’appareil ?
 
@@ -74,7 +71,7 @@ Oui. Le clavier de navigateur est fixé à l’appareil par un aimant. Pour le d
 
 ## Comment puis-je nettoyer le clavier de navigateur ?
 
-Pour nettoyer le clavier de navigateur, effacez-le à l’aide d’un crayon qui est moisé à l’aide d’une eau et d’un soap. Laissez le clavier de navigateur complètement sec avant de l’utiliser à nouveau.
+Pour nettoyer le clavier de navigateur, effacez-le à l’aide d’un crayon qui est moisé à l’aide d’une eau et d’un soap de papier à balai. Laissez le clavier de navigateur complètement sec avant de l’utiliser à nouveau.
 
 ## Puis-je utiliser la lumière UV pour désinfecter l’appareil ?
 
