@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 4573f3b2e88af36c397fd1735ec9c6a96b4c52d6
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11314005"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324797"
 ---
 # Insider Preview pour Microsoft HoloLens
 
@@ -29,10 +29,10 @@ Bienvenue dans les dernières builds Insider Preview pour HoloLens ! Il est simp
 
 ## Notes de publication de Windows Insider
 
-Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvelles fonctionnalités pour les Windows Insiders. Nous allons faire une version d’essai vers le canal de développement pour les dernières mises à jour. Nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos builds Windows Insider.  Soyez ravis et prêt à combiner ces mises à jour dans votre réalité.
+Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvelles fonctionnalités pour les Windows Insiders. Nous allons mettre en version d’essai le canal de développement pour les dernières mises à jour. Nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos builds Windows Insider.  Soyez ravis et prêt à combiner ces mises à jour dans votre réalité.
 
 > [!IMPORTANT]
-> Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un autre ID d’application. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
+> Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un ID d’application différent. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
 
 <br>
 
@@ -46,8 +46,11 @@ Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvell
 | [Balayage pour taper](#swipe-to-type)                           | Utilisez la pointe de votre doigt pour « balayer » les mots sur le clavier holographique                        | 20279.1006 |
 | [Prise en charge du microphone externe USB-C](#usb-c-external-microphone-support) | Utilisez des microphones USB-C pour les applications et/ou Remote Assist.| 20279.1006 |
 | [Nouveaux AUMID pour les nouvelles applications en mode plein écran](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs pour les nouvelles applications Paramètres et Edge | 20279.1006 |
-| [Amélioration de l’échec de la remise en mode plein écran](#kiosk-mode-behavior-changes-for-handling-of-failures) | Le mode plein écran recherche l’accès affecté global avant le menu Démarrer vide. | 20279.1006 |
+| [Amélioration du mode plein écran lors de l’échec de la remise](#kiosk-mode-behavior-changes-for-handling-of-failures) | Le mode plein écran recherche l’accès affecté global avant le menu Démarrer vide. | 20279.1006 |
 | [Configurer les diagnostics de retour](#configuring-fallback-diagnostics-via-settings-app) | Définition du comportement de diagnostic de retour dans l’application Paramètres | 20279.1006 |
+| [Partager des éléments avec des appareils à proximité](#share-things-with-nearby-devices) | Partager des fichiers ou DES URL à partir d’un HoloLens sur un PC | 20279.1006 |
+| [Nouvelle résolution des problèmes de mise à jour du système d’exploitation](#new-os-update-troubleshooter) | Nouvel dépannage dans paramètres pour les mises à jour du système d’exploitation | 20279.1006 |
+| [Améliorations et correctifs de la mise à jour](#improvements-and-fixes-in-the-update) | Correctifs supplémentaires dans la mise à jour. | 20279.1006 |
 
 ### Présentation du nouveau Microsoft Edge
 
@@ -94,7 +97,7 @@ Voici quelques ressources utiles pour en savoir plus sur la gestion des paramèt
 - La plupart des fonctionnalités de navigateur (Favoris, Historique, etc.) doivent fonctionner comme prévu.
 - Mode sombre
 - Installation d’applications web sur l’appareil
-- Installation des extensions (n’hésitez pas à nous faire savoir si vous utilisez des extensions qui ne fonctionnent pas correctement sur HoloLens 2)
+- Installation d’extensions (n’hésitez pas à nous faire savoir si vous utilisez des extensions qui ne fonctionnent pas correctement sur HoloLens 2)
 - Affichage et marquage d’un fichier PDF
 - Son spatial à partir d’une seule fenêtre de navigateur
 - Mise à jour automatique et manuelle du navigateur
@@ -106,7 +109,7 @@ Voici quelques ressources utiles pour en savoir plus sur la gestion des paramèt
 
 **Scénarios et fonctionnalités qui ne devraient pas fonctionner :**
 - Son spatial à partir de plusieurs fenêtres avec flux audio simultanés
-- « Regardez- le, dites-le »
+- « Voir, dites-le »
 - Impression
 
 **Principaux problèmes de navigateur connus :**
@@ -121,28 +124,28 @@ Visitez la page [d’accueil du Microsoft Edge Insider](https://www.microsoftedg
 
 Il existe quelques méthodes disponibles pour l’installation des canaux Insider de Microsoft Edge sur HoloLens 2 :
 
-**Installation directe sur l’appareil (actuellement disponible uniquement pour les appareils nonmanagés)**
+**Installation directe sur l’appareil (actuellement disponible uniquement pour les appareils non utilisés)**
   1. Sur votre HoloLens 2, visitez la [page de téléchargement Edge Insider.](https://www.microsoftedgeinsider.com/download)
   1. Sélectionnez **le bouton Télécharger pour HoloLens 2** pour le canal Insider Edge que vous souhaitez installer.
   1. Lancez le fichier .msix téléchargé à partir de la file d’attente de téléchargement Edge ou du dossier « Téléchargements » de votre appareil (à l’aide de l’Explorateur de fichiers).
   1. [Le programme d’installation](app-deploy-app-installer.md) de l’application se lance.
   1. Sélectionnez le **bouton** Installer.
-  1. Une fois l’installation réussie, microsoft Edge Beta, Dev ou **** Canary est une entrée distincte dans la liste Toutes les applications du menu Démarrer.
+  1. Une fois l’installation réussie, vous trouverez Microsoft Edge Beta, Dev ou Canary comme entrée distincte dans la liste **Toutes** les applications du menu Démarrer.
 
-**Installer via PC avec Windows Device Portal (nécessite que le [mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) développeur soit activé sur HoloLens 2)**
+**Installation via PC avec Windows Device Portal (nécessite que le [mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) développeur soit activé sur HoloLens 2)**
   1. Sur votre PC, visitez la [page de téléchargement Edge Insider.](https://www.microsoftedgeinsider.com/download)
-  1. Sélectionnez **le bouton de flèche** vers le bas en haut du bouton « Télécharger pour Windows 10 » pour le canal Edge Insider que vous souhaitez installer.
+  1. Sélectionnez **le bouton de flèche** de la flèche vers le bas à côté du bouton « Télécharger pour Windows 10 » pour le canal Edge Insider que vous souhaitez installer.
   1. Sélectionnez **HoloLens 2 dans** le menu déroulant.
   1. Enregistrez le fichier .msix dans le dossier « Téléchargements » de votre PC (ou un autre dossier que vous pouvez facilement trouver).
   1. Utilisez [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) sur votre PC pour installer le fichier .msix téléchargé sur HoloLens 2.
-  1. Une fois l’installation réussie, microsoft Edge Beta, Dev ou **** Canary est une entrée distincte dans la liste Toutes les applications du menu Démarrer.
+  1. Une fois l’installation réussie, vous trouverez Microsoft Edge Beta, Dev ou Canary comme entrée distincte dans la liste **Toutes** les applications du menu Démarrer.
 
 > [!NOTE]
 > Pendant cette prévisualisation de Windows Insider pour HoloLens 2, la version de Microsoft Edge sur votre appareil peut être supérieure à celle disponible dans certains (ou tous) des canaux Microsoft Edge Insider. Cela permet de s’assurer que les nouvelles fonctionnalités et correctifs ciblant spécifiquement le navigateur web sur HoloLens 2 sont en train d’atteindre nos Windows Insiders aussi rapidement que possible. Peu de temps après la publication publique de la prochaine mise à jour Windows, les builds du canal Insider de Microsoft Edge dépassent et restent en avance sur la version de Microsoft Edge sur votre HoloLens 2.
 
 ### WebXR et 360 Viewer
 
-*Ajouté dans Windows Insider build 20289.1000*
+*Ajouté dans windows Insider build 20289.1000*
 
 Le nouveau Microsoft Edge inclut la prise en charge de WebXR, qui est la nouvelle norme pour la création d’expériences web immersives (en remplaçant WebVR). De nombreuses expériences web immersives ont été conçues avec la vr à l’esprit (elles remplacent votre champ de vue par un environnement virtuel), mais ces expériences sont également pris en charge par HoloLens 2. La norme WebXR permet également des expériences web immersives augmentées et de réalité mixte qui tirent parti de votre environnement physique. À mesure que les développeurs passent plus de temps avec WebXR, nous prévoyons que de nouvelles expériences immersives de réalité mixte et augmentée arriveront pour que les clients HoloLens 2 essaient !
 
@@ -151,7 +154,7 @@ L’extension 360 Viewer repose sur WebXR et s’installe automatiquement avec l
 #### Utilisation de WebXR
 
 1. Accédez à un site web avec la prise en charge WebXR.
-1. Sélectionnez **le bouton Entrer VR** sur le site web. L’emplacement et la représentation visuelle de ce bouton peuvent varier selon le site web, mais il peut ressembler à :
+1. Sélectionnez **le bouton Entrer vr** sur le site web. L’emplacement et la représentation visuelle de ce bouton peuvent varier selon le site web, mais il peut ressembler à :
 
     ![Exemple de bouton Entrer vr](images/75px-enter-vr.png)
 
@@ -175,10 +178,10 @@ L’extension 360 Viewer repose sur WebXR et s’installe automatiquement avec l
 1. La première fois que vous essayez de lancer 360 Viewer sur un domaine spécifique, le navigateur demande son consentement pour entrer une vue immersive. Sélectionnez **Autoriser**.
 1. [Appuyez sur](hololens2-basic-usage.md#select-using-air-tap) l’air pour faire monter les contrôles de lecture. Utilisez les rayons de la main et [l’effet d’air](hololens2-basic-usage.md#select-using-air-tap) pour lire/suspendre, ignorer l’avant/l’arrière, activer/désactiver les légendes ou arrêter l’expérience (qui quitte la vue immersive). Les contrôles de lecture disparaîtront après quelques secondes d’inactivité.
 
-#### Principaux problèmes connus de WebXR et de la visionneuse 360
+#### Principaux problèmes connus de WebXR et de 360 visionneuses
 - Dans les expériences WebXR, les hologrammes peuvent se déplacer ou s’incliner lorsque vous inclinez la tête ou que vous vous déplacez dans votre environnement.
 - En fonction de la complexité de l’expérience WebXR, le framerate peut être bas ou saccadé.
-- Les joints de main clairement exprimés ne sont pas encore disponibles dans WebXR.
+- Les joints de main formulées ne sont pas encore disponibles dans WebXR.
 - Lorsque vous quittez une expérience WebXR ou 360 Viewer, la réapparition des hologrammes dans la maison virtuelle peut prendre au moins 30 secondes.
 - 360 vidéos provenant de sites web autres que YouTube peuvent ne pas fonctionner comme prévu.
 - Si 360 vidéos n’entrent pas en vue immersive (ou si le bouton du casque de réalité mixte n’apparaît pas), essayez d’actualisation de la page.
@@ -227,7 +230,7 @@ Avec cette version, nous introduisons une nouvelle version de l’application Pa
 
 ### S sélectionneur d’application par défaut
 
-Lorsque vous activez un lien hypertexte ou ouvrez un type de fichier avec plusieurs applications installées qui le prend en charge, une nouvelle fenêtre s’ouvre et vous invite à sélectionner l’application installée qui doit gérer le fichier ou le type de lien. Dans cette fenêtre, vous pouvez également choisir que l’application sélectionnée gère le fichier ou le type de lien « Une seule fois » ou « Toujours ».
+Lorsque vous activez un lien hypertexte ou ouvrez un type de fichier avec plusieurs applications installées qui le prend en charge, une nouvelle fenêtre s’ouvre et vous invite à sélectionner l’application installée qui doit gérer le type de fichier ou de lien. Dans cette fenêtre, vous pouvez également choisir que l’application sélectionnée gère le fichier ou le type de lien « Une seule fois » ou « Toujours ».
 
 ![Fenêtre du s picker d’application](images/default-app-picker.png)
 
@@ -304,6 +307,20 @@ Désormais, dans l’application Paramètres, un utilisateur peut configurer le 
 
 > [!NOTE]
 > Si une stratégie de gestion des périphériques de gestion des périphériques est configurée pour l’appareil, l’utilisateur ne peut pas remplacer ce comportement.  
+
+### Partager des éléments avec des appareils à proximité
+
+Partagez des éléments avec les appareils Windows 10 proches, y compris les PC et les autres appareils HoloLens 2 exécutant HoloLens Insider builds 20279.1006+. Vous pouvez l’essayer dans **Paramètres**System Shared Experiences pour partager des fichiers ou DES URL à partir  ->  ****  ->  **** d’un HoloLens sur un PC. Pour plus d’informations, voir comment partager des éléments avec des appareils à proximité [dans Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
+
+Cette fonctionnalité peut être gérée via [Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
+
+### Nouvelle résolution des problèmes de mise à jour du système d’exploitation
+
+Outre les dépannages précédents dans l’application Paramètres, un nouvel dépannage a été ajouté avec l’ajout de la nouvelle application Paramètres pour les mises à jour du système d’exploitation. Accédez à **Paramètres -** Résoudre les problèmes  ->  ** &amp; de**sécurité  ->  **de**  ->  **Windows Update** et sélectionnez **Démarrer.** Cela vous permet de collecter des suivis tout en reproduisant votre problème avec les mises à jour du système d’exploitation pour faciliter la résolution des problèmes avec votre système d’exploitation ou votre support technique.
+
+### Améliorations et correctifs de la mise à jour :
+
+- [Les diagnostics hors connexion incluent](hololens-diagnostic-logs.md#offline-diagnostics) également des informations supplémentaires sur l’appareil pour le numéro de série et la version du système d’exploitation.
 
 
 
