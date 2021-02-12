@@ -6,7 +6,7 @@
 ### [Vue d’ensemble de HoloLens 2](hololens2-options.md)
 ### [Matériel HoloLens2](hololens2-hardware.md)
 ### [Préparer votre HoloLens 2 pour utilisation](hololens2-setup.md)
-### [Configurer votre HoloLens2](hololens2-start.md)
+### [Configurer votre HoloLens 2](hololens2-start.md)
 ### [Positionnement et utilisation confortable de l’HoloLens2: FAQ](hololens2-fit-comfort-faq.md)
 ### [Affichage HoloLens 2](hololens2-display.md)
 ### [Nettoyage HoloLens2: FAQ](hololens2-maintenance.md)
@@ -18,10 +18,10 @@
 
 
 ## Prise en main de HoloLens (1regénération)
-### [Matériel HoloLens (1èregénération)](hololens1-hardware.md)
+### [Matériel HoloLens (1ère génération)](hololens1-hardware.md)
 ### [Préparer votre HoloLens (1re génération)](hololens1-setup.md)
 ### [Installer votre HoloLens (1re génération)](hololens1-start.md)
-### [Positionnement et utilisation confortable de l’HoloLens (1re génération): FAQ](hololens1-fit-comfort-faq.md)
+### [Positionnement et utilisation confortable de l’HoloLens (1re génération) : FAQ](hololens1-fit-comfort-faq.md)
 ### [Installer une version localisée de HoloLens (1ère génération)](hololens1-install-localized.md)
 ### [Savoir maîtriser HoloLens (1re génération)](hololens1-basic-usage.md)
 ### [Utiliser le dispositif de clic HoloLens (1regénération)](hololens1-clicker.md)
@@ -64,9 +64,10 @@
 ### [Chiffrement et protection des données](security-encryption-data-protection.md)
 ### [Sécurité du réseau](security-network-security.md)
 ### [Ingénierie de sécurité ](security-engineering.md)
-### Sécurité sur la 1ère génération HoloLens
+### Sécurité sur la 1ère génération HoloLens 
 #### [Questions de sécurité fréquemment posées sur HoloLens (1ère génération)](hololens1-faq-security.md)
 #### [Chiffrement BitLocker HoloLens (1ère génération)](hololens1-encryption.md)
+### [Déclaration de confidentialité HoloLens2](hololens2-compliance.md)
 ## [Exigences relatives à la licence](hololens-licenses-requirements.md)
 ## Environment
 ### [Considérations en matière d’environnement pour HoloLens](hololens-environment-considerations.md)
