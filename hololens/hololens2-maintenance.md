@@ -1,5 +1,5 @@
 ---
-title: 'Nettoyage HoloLens 2 : FAQ'
+title: 'Nettoyage HoloLens2: FAQ'
 description: Obtenez des réponses à jour à toutes vos questions fréquemment posées pour le nettoyage et la maintenance de votre appareil HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
@@ -15,80 +15,80 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
-ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
+ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
+ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11324780"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327378"
 ---
-# <span data-ttu-id="dfa49-103">Nettoyage HoloLens 2 : FAQ</span><span class="sxs-lookup"><span data-stu-id="dfa49-103">HoloLens 2 cleaning FAQ</span></span>
+# <span data-ttu-id="c3b13-103">Nettoyage HoloLens2: FAQ</span><span class="sxs-lookup"><span data-stu-id="c3b13-103">HoloLens 2 cleaning FAQ</span></span>
 
 > [!IMPORTANT]  
-> <span data-ttu-id="dfa49-104">Microsoft ne peut pas déterminer l’efficacité d’un produit ingérant donné dans des luttes telles que COVID-19.</span><span class="sxs-lookup"><span data-stu-id="dfa49-104">Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19.</span></span> <span data-ttu-id="dfa49-105">Reportez-vous aux conseils de votre autorité de santé publique locale sur la façon de rester à l’abri d’une infection potentielle.</span><span class="sxs-lookup"><span data-stu-id="dfa49-105">Please refer to your local public health authority's guidance about how to stay safe from potential infection.</span></span>  
+> <span data-ttu-id="c3b13-104">Microsoft ne peut pas déterminer l’efficacité d’un produit ingérant donné dans des luttes telles que COVID-19.</span><span class="sxs-lookup"><span data-stu-id="c3b13-104">Microsoft cannot make a determination of the effectiveness of any given disinfectant product in fighting pathogens such as COVID-19.</span></span> <span data-ttu-id="c3b13-105">Reportez-vous aux conseils de votre autorité de santé publique locale sur la façon de rester à l’abri d’une infection potentielle.</span><span class="sxs-lookup"><span data-stu-id="c3b13-105">Please refer to your local public health authority's guidance about how to stay safe from potential infection.</span></span>  
 
-## <span data-ttu-id="dfa49-106">Utilisation et soin de HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="dfa49-106">HoloLens 2 Use and Care</span></span>
+## <span data-ttu-id="c3b13-106">Utilisation et soin de HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="c3b13-106">HoloLens 2 Use and Care</span></span>
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
-**<span data-ttu-id="dfa49-107">Pour nettoyer l’appareil</span><span class="sxs-lookup"><span data-stu-id="dfa49-107">To clean the device</span></span>**
+**<span data-ttu-id="c3b13-107">Pour nettoyer l’appareil</span><span class="sxs-lookup"><span data-stu-id="c3b13-107">To clean the device</span></span>**
 
-1. <span data-ttu-id="dfa49-108">Supprimez toute apparence à l’aide d’un microfibre sec et exempt de lint pour effacer légèrement la surface de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="dfa49-108">Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.</span></span>
+1. <span data-ttu-id="c3b13-108">Supprimez toute apparence à l’aide d’un microfibre sec et exempt de lint pour effacer légèrement la surface de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="c3b13-108">Remove any dust by using a dry, lint-free microfiber cloth to gently wipe the surface of the device.</span></span>
 
    ![Nettoyer tout en maintenant le clavier de navigateur en place](images/hl2-cleaning.png)
 
-2. <span data-ttu-id="dfa49-110">Éclaircissez légèrement le papier à l’aide de l’isopropyl « 70 % » médical, puis utilisez-le pour effacer légèrement la surface de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="dfa49-110">Lightly moisten the cloth by using medical "70%" isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.</span></span>
+2. <span data-ttu-id="c3b13-110">Éclaircissez légèrement le papier à l’aide d’une isopropyl médicale « 70 % », puis utilisez-le pour effacer légèrement la surface de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="c3b13-110">Lightly moisten the cloth by using medical "70%" isopropyl alcohol, and then use the moistened cloth to gently wipe the surface of the device.</span></span>
 
-3. <span data-ttu-id="dfa49-111">Laissez l’appareil complètement secs.</span><span class="sxs-lookup"><span data-stu-id="dfa49-111">Let the device dry completely.</span></span>
+3. <span data-ttu-id="c3b13-111">Laissez l’appareil complètement secs.</span><span class="sxs-lookup"><span data-stu-id="c3b13-111">Let the device dry completely.</span></span>
 
-**<span data-ttu-id="dfa49-112">Pour nettoyer le clavier de navigateur</span><span class="sxs-lookup"><span data-stu-id="dfa49-112">To clean the brow pad</span></span>**
+**<span data-ttu-id="c3b13-112">Pour nettoyer le clavier de navigateur</span><span class="sxs-lookup"><span data-stu-id="c3b13-112">To clean the brow pad</span></span>**
 
-1. <span data-ttu-id="dfa49-113">Utilisez de l’eau et un soap d’eau et d’eau pour mouiller un papier à balai, puis utilisez le papier à balai pour effacer le pavé de navigateur.</span><span class="sxs-lookup"><span data-stu-id="dfa49-113">Use water and a mild, antibiotic soap to moisten a cloth, and then use the moistened cloth to wipe the brow pad.</span></span>
-1. <span data-ttu-id="dfa49-114">Laissez le clavier de navigateur s’assoucher complètement.</span><span class="sxs-lookup"><span data-stu-id="dfa49-114">Let the brow pad dry completely.</span></span>
+1. <span data-ttu-id="c3b13-113">Utilisez de l’eau et un soap d’eau et d’eau pour mouiller un papier à balai, puis utilisez le papier à balai pour effacer le pavé de navigateur.</span><span class="sxs-lookup"><span data-stu-id="c3b13-113">Use water and a mild, antibiotic soap to moisten a cloth, and then use the moistened cloth to wipe the brow pad.</span></span>
+1. <span data-ttu-id="c3b13-114">Laissez le clavier de navigateur s’assoucher complètement.</span><span class="sxs-lookup"><span data-stu-id="c3b13-114">Let the brow pad dry completely.</span></span>
 
-## <span data-ttu-id="dfa49-115">Puis-je utiliser n’importe quel nettoyage d’objectif pour nettoyer la visière HoloLens ?</span><span class="sxs-lookup"><span data-stu-id="dfa49-115">Can I use any lens cleaner for cleaning the HoloLens visor?</span></span>
+## <span data-ttu-id="c3b13-115">Puis-je utiliser n’importe quel nettoyage d’objectif pour nettoyer la visière HoloLens ?</span><span class="sxs-lookup"><span data-stu-id="c3b13-115">Can I use any lens cleaner for cleaning the HoloLens visor?</span></span>
 
-<span data-ttu-id="dfa49-116">Non.</span><span class="sxs-lookup"><span data-stu-id="dfa49-116">No.</span></span> <span data-ttu-id="dfa49-117">Les nettoyeurs d’objectif peuvent être abrasifs pour les bords de la visière.</span><span class="sxs-lookup"><span data-stu-id="dfa49-117">Lens cleaners can be abrasive to the coatings on the visor.</span></span> <span data-ttu-id="dfa49-118">Pour nettoyer la visière, suivez les étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="dfa49-118">To clean the visor, follow these steps:</span></span>  
+<span data-ttu-id="c3b13-116">Non.</span><span class="sxs-lookup"><span data-stu-id="c3b13-116">No.</span></span> <span data-ttu-id="c3b13-117">Les nettoyeurs d’objectif peuvent être abrasifs pour les bords de la visière.</span><span class="sxs-lookup"><span data-stu-id="c3b13-117">Lens cleaners can be abrasive to the coatings on the visor.</span></span> <span data-ttu-id="c3b13-118">Pour nettoyer la visière, suivez les étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="c3b13-118">To clean the visor, follow these steps:</span></span>  
 
-1. <span data-ttu-id="dfa49-119">Supprimez toute papier à sable à l’aide d’un microfibre non secs pour effacer légèrement la visière.</span><span class="sxs-lookup"><span data-stu-id="dfa49-119">Remove any dust by using a dry lint-free microfiber cloth to gently wipe the visor.</span></span>
-1. <span data-ttu-id="dfa49-120">Éclaircissez légèrement un papier à l’aide de l’effet médical « 70 % » d’isopropyl, puis effacez légèrement la visière.</span><span class="sxs-lookup"><span data-stu-id="dfa49-120">Lightly moisten a cloth by using medical "70%" isopropyl alcohol, and then gently wipe the visor.</span></span>
-1. <span data-ttu-id="dfa49-121">Laissez la visière complètement secs.</span><span class="sxs-lookup"><span data-stu-id="dfa49-121">Let the visor dry completely.</span></span>
+1. <span data-ttu-id="c3b13-119">Supprimez toute papier à sable à l’aide d’un microfibre en microfibre non secs pour effacer légèrement la visière.</span><span class="sxs-lookup"><span data-stu-id="c3b13-119">Remove any dust by using a dry lint-free microfiber cloth to gently wipe the visor.</span></span>
+1. <span data-ttu-id="c3b13-120">Éclaircissez légèrement un papier à l’aide de l’effet médical « 70 % » d’isopropyl, puis effacez légèrement la visière.</span><span class="sxs-lookup"><span data-stu-id="c3b13-120">Lightly moisten a cloth by using medical "70%" isopropyl alcohol, and then gently wipe the visor.</span></span>
+1. <span data-ttu-id="c3b13-121">Laissez la visière complètement secs.</span><span class="sxs-lookup"><span data-stu-id="c3b13-121">Let the visor dry completely.</span></span>
 
-## <span data-ttu-id="dfa49-122">Puis-je utiliser des effacements pour nettoyer l’appareil ?</span><span class="sxs-lookup"><span data-stu-id="dfa49-122">Can I use disinfecting wipes to clean the device?</span></span>
+## <span data-ttu-id="c3b13-122">Puis-je utiliser des effacements pour nettoyer l’appareil ?</span><span class="sxs-lookup"><span data-stu-id="c3b13-122">Can I use disinfecting wipes to clean the device?</span></span>
 
-<span data-ttu-id="dfa49-123">Oui, si les effacements ne contiennent pas de papier.</span><span class="sxs-lookup"><span data-stu-id="dfa49-123">Yes, if the wipes do not contain bleach.</span></span> <span data-ttu-id="dfa49-124">Vous pouvez utiliser des effacements insérez des effacements non ingrayés pour effacer légèrement [les surfaces HoloLens.](#hololens-2-use-and-care)</span><span class="sxs-lookup"><span data-stu-id="dfa49-124">You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#hololens-2-use-and-care).</span></span>  
+<span data-ttu-id="c3b13-123">Oui, si les effacements ne contiennent pas de papier.</span><span class="sxs-lookup"><span data-stu-id="c3b13-123">Yes, if the wipes do not contain bleach.</span></span> <span data-ttu-id="c3b13-124">Vous pouvez utiliser des effacements insérez des effacements non ingrayés pour effacer légèrement [les surfaces HoloLens.](#hololens-2-use-and-care)</span><span class="sxs-lookup"><span data-stu-id="c3b13-124">You can use non-bleach disinfecting wipes to [gently wipe the HoloLens surfaces](#hololens-2-use-and-care).</span></span>  
 
 > [!CAUTION]  
-> <span data-ttu-id="dfa49-125">Évitez d’utiliser des effacements contenant des effacements pour nettoyer les surfaces HoloLens.</span><span class="sxs-lookup"><span data-stu-id="dfa49-125">Avoid using disinfecting wipes that contains bleach to clean the HoloLens surfaces.</span></span> <span data-ttu-id="dfa49-126">Il est acceptable d’utiliser des effacements dans les situations critiques, lorsque rien d’autre n’est disponible.</span><span class="sxs-lookup"><span data-stu-id="dfa49-126">It is acceptable to use bleach wipes in critical situations, when nothing else is available.</span></span> <span data-ttu-id="dfa49-127">Toutefois, l’endommagement peut endommager la visière HoloLens ou d’autres surfaces.</span><span class="sxs-lookup"><span data-stu-id="dfa49-127">However, bleach may damage the HoloLens visor or other surfaces.</span></span>
+> <span data-ttu-id="c3b13-125">Évitez d’utiliser des effacements qui contiennent des effacements pour nettoyer les surfaces HoloLens.</span><span class="sxs-lookup"><span data-stu-id="c3b13-125">Avoid using disinfecting wipes that contains bleach to clean the HoloLens surfaces.</span></span> <span data-ttu-id="c3b13-126">Il est acceptable d’utiliser des effacements dans les situations critiques, lorsque rien d’autre n’est disponible.</span><span class="sxs-lookup"><span data-stu-id="c3b13-126">It is acceptable to use bleach wipes in critical situations, when nothing else is available.</span></span> <span data-ttu-id="c3b13-127">Toutefois, l’endommagement peut endommager la visière HoloLens ou d’autres surfaces.</span><span class="sxs-lookup"><span data-stu-id="c3b13-127">However, bleach may damage the HoloLens visor or other surfaces.</span></span>
 
-## <span data-ttu-id="dfa49-128">Puis-je utiliser de l’eau pour nettoyer l’appareil ?</span><span class="sxs-lookup"><span data-stu-id="dfa49-128">Can I use alcohol to clean the device?</span></span>
+## <span data-ttu-id="c3b13-128">Puis-je utiliser de l’eau pour nettoyer l’appareil ?</span><span class="sxs-lookup"><span data-stu-id="c3b13-128">Can I use alcohol to clean the device?</span></span>
 
-<span data-ttu-id="dfa49-129">Oui.</span><span class="sxs-lookup"><span data-stu-id="dfa49-129">Yes.</span></span> <span data-ttu-id="dfa49-130">Vous pouvez utiliser une solution de « 70 % » d’eau et d’eau isopropyl pour nettoyer les surfaces dures de l’appareil, y compris la visière.</span><span class="sxs-lookup"><span data-stu-id="dfa49-130">You can use a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor.</span></span> <span data-ttu-id="dfa49-131">Éclaircissez légèrement le papier à l’aide d’une combinaison d’eau et d’eau isopropyl, puis effacez légèrement la surface de l’appareil</span><span class="sxs-lookup"><span data-stu-id="dfa49-131">Lightly moisten the cloth by using a mix of isopropyl alcohol and water, and then gently wipe the surface of the device</span></span>
+<span data-ttu-id="c3b13-129">Oui.</span><span class="sxs-lookup"><span data-stu-id="c3b13-129">Yes.</span></span> <span data-ttu-id="c3b13-130">Vous pouvez utiliser une solution de « 70 % » d’eau et d’eau isopropyl pour nettoyer les surfaces dures de l’appareil, y compris la visière.</span><span class="sxs-lookup"><span data-stu-id="c3b13-130">You can use a solution of "70%" isopropyl alcohol and water to clean the hard surfaces of the device, including the visor.</span></span> <span data-ttu-id="c3b13-131">Éclaircissez légèrement le papier à l’aide d’une combinaison d’eau et d’eau isopropyl, puis effacez légèrement la surface de l’appareil</span><span class="sxs-lookup"><span data-stu-id="c3b13-131">Lightly moisten the cloth by using a mix of isopropyl alcohol and water, and then gently wipe the surface of the device</span></span>
 
-## <span data-ttu-id="dfa49-132">Le clavier de navigateur est-il remplaçable ?</span><span class="sxs-lookup"><span data-stu-id="dfa49-132">Is the brow pad replaceable?</span></span>
+## <span data-ttu-id="c3b13-132">Le clavier de navigateur est-il remplaçable ?</span><span class="sxs-lookup"><span data-stu-id="c3b13-132">Is the brow pad replaceable?</span></span>
 
-<span data-ttu-id="dfa49-133">Oui.</span><span class="sxs-lookup"><span data-stu-id="dfa49-133">Yes.</span></span> <span data-ttu-id="dfa49-134">Le clavier de navigateur est fixé à l’appareil par un aimant.</span><span class="sxs-lookup"><span data-stu-id="dfa49-134">The brow pad is magnetically attached to the device.</span></span> <span data-ttu-id="dfa49-135">Pour le détacher, éloignez-le légèrement du bandeau.</span><span class="sxs-lookup"><span data-stu-id="dfa49-135">To detach it, pull it gently away from the headband.</span></span> <span data-ttu-id="dfa49-136">Pour le remplacer, remettez-le en place.</span><span class="sxs-lookup"><span data-stu-id="dfa49-136">To replace it, snap it back into place.</span></span>
+<span data-ttu-id="c3b13-133">Oui.</span><span class="sxs-lookup"><span data-stu-id="c3b13-133">Yes.</span></span> <span data-ttu-id="c3b13-134">Le clavier de navigateur est fixé à l’appareil par un aimant.</span><span class="sxs-lookup"><span data-stu-id="c3b13-134">The brow pad is magnetically attached to the device.</span></span> <span data-ttu-id="c3b13-135">Pour le détacher, éloignez-le légèrement du bandeau.</span><span class="sxs-lookup"><span data-stu-id="c3b13-135">To detach it, pull it gently away from the headband.</span></span> <span data-ttu-id="c3b13-136">Pour le remplacer, remettez-le en place.</span><span class="sxs-lookup"><span data-stu-id="c3b13-136">To replace it, snap it back into place.</span></span>
 
 ![Supprimer ou remplacer le clavier de navigateur](images/hololens2-remove-browpad.png)
 
-## <span data-ttu-id="dfa49-138">Comment puis-je nettoyer le clavier de navigateur ?</span><span class="sxs-lookup"><span data-stu-id="dfa49-138">How can I clean the brow pad?</span></span>
+## <span data-ttu-id="c3b13-138">Comment puis-je nettoyer le clavier de navigateur ?</span><span class="sxs-lookup"><span data-stu-id="c3b13-138">How can I clean the brow pad?</span></span>
 
-<span data-ttu-id="dfa49-139">Pour nettoyer le clavier de navigateur, effacez-le à l’aide d’un crayon qui est moisé à l’aide d’une eau et d’un soap de papier à balai.</span><span class="sxs-lookup"><span data-stu-id="dfa49-139">To clean the brow pad, wipe it by using a cloth that's moistened by using water and a mild antibiotic soap.</span></span> <span data-ttu-id="dfa49-140">Laissez le clavier de navigateur complètement sec avant de l’utiliser à nouveau.</span><span class="sxs-lookup"><span data-stu-id="dfa49-140">Let the brow pad dry completely before you use it again.</span></span>
+<span data-ttu-id="c3b13-139">Pour nettoyer le clavier de navigateur, effacez-le à l’aide d’un crayon qui est moisé à l’aide d’une eau et d’un soap.</span><span class="sxs-lookup"><span data-stu-id="c3b13-139">To clean the brow pad, wipe it by using a cloth that's moistened by using water and a mild antibiotic soap.</span></span> <span data-ttu-id="c3b13-140">Laissez le clavier de navigateur complètement sec avant de l’utiliser à nouveau.</span><span class="sxs-lookup"><span data-stu-id="c3b13-140">Let the brow pad dry completely before you use it again.</span></span>
 
-## <span data-ttu-id="dfa49-141">Puis-je utiliser la lumière UV pour désinfecter l’appareil ?</span><span class="sxs-lookup"><span data-stu-id="dfa49-141">Can I use ultraviolet (UV) light to sanitize the device?</span></span>
+## <span data-ttu-id="c3b13-141">Puis-je utiliser la lumière UV pour désinfecter l’appareil ?</span><span class="sxs-lookup"><span data-stu-id="c3b13-141">Can I use ultraviolet (UV) light to sanitize the device?</span></span>
 
-<span data-ttu-id="dfa49-142">L’irradiance UVC à l’aide de LED UVC, qui fonctionne à 265nm au niveau d’intensité de 0,5-0,6mW/cm2 et qui n’émet pas de rayon, peut être utilisée pour désinfecter <sup> </sup> HoloLens2.</span><span class="sxs-lookup"><span data-stu-id="dfa49-142">UVC irradiance using UVC LED, that operates at 265nm at intensity level of 0.5-0.6mW/cm<sup>2</sup>, and does not emit ozone, can be used to sanitize HoloLens2.</span></span> <span data-ttu-id="dfa49-143">Suivez les spécifications du fabricant sur la gestion et le temps d’exposition.</span><span class="sxs-lookup"><span data-stu-id="dfa49-143">Please follow manufacturer’s specifications on handling and exposure time.</span></span>
+<span data-ttu-id="c3b13-142">L’irradiance UVC utilisant UVC LED, qui fonctionne à 265nm au niveau d’intensité de 0.5-0.6mW/cm2 et n’émet pas de rayon, peut être utilisée pour désinfecter <sup> </sup> HoloLens2.</span><span class="sxs-lookup"><span data-stu-id="c3b13-142">UVC irradiance using UVC LED, that operates at 265nm at intensity level of 0.5-0.6mW/cm<sup>2</sup>, and does not emit ozone, can be used to sanitize HoloLens2.</span></span> <span data-ttu-id="c3b13-143">Suivez les spécifications du fabricant sur la gestion et le temps d’exposition.</span><span class="sxs-lookup"><span data-stu-id="c3b13-143">Please follow manufacturer’s specifications on handling and exposure time.</span></span>
 
 > [!CAUTION]  
-> <span data-ttu-id="dfa49-144">Des niveaux élevés d’exposition UV-A et UV-B peuvent dégrader la qualité d’affichage de l’appareil et endommager la hauteur de la visière.</span><span class="sxs-lookup"><span data-stu-id="dfa49-144">High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating.</span></span> <span data-ttu-id="dfa49-145">La sur-exposition aux UV-A et UV-B a les effets suivants, par ordre de durée et d’intensité d’exposition :</span><span class="sxs-lookup"><span data-stu-id="dfa49-145">Over-exposure to UV-A and UV-B radiation has the following effects, in order of the duration and intensity of exposure:</span></span>
+> <span data-ttu-id="c3b13-144">Des niveaux élevés d’exposition UV-A et UV-B peuvent dégrader la qualité d’affichage de l’appareil et endommager la hauteur de la visière.</span><span class="sxs-lookup"><span data-stu-id="c3b13-144">High levels of UV-A and UV-B exposure can degrade the display quality of the device and damage the visor coating.</span></span> <span data-ttu-id="c3b13-145">La sur-exposition aux UV-A et UV-B a les effets suivants, par ordre de durée et d’intensité d’exposition :</span><span class="sxs-lookup"><span data-stu-id="c3b13-145">Over-exposure to UV-A and UV-B radiation has the following effects, in order of the duration and intensity of exposure:</span></span>
 >  
-> 1. <span data-ttu-id="dfa49-146">Le clavier de navigateur et les fermetures de périphériques sont décolorés.</span><span class="sxs-lookup"><span data-stu-id="dfa49-146">The brow pad and device closures become discolored.</span></span>
-> 1. <span data-ttu-id="dfa49-147">Des défauts apparaissent dans l’intérieur anti-reflets sur la visière et sur les fenêtres du capteur.</span><span class="sxs-lookup"><span data-stu-id="dfa49-147">Defects appear in the anti-reflective (AR) coating on the visor and on the sensor windows.</span></span>
-> 1. <span data-ttu-id="dfa49-148">Des défauts apparaissent dans les matériaux de base de la visière et sur les fenêtres du capteur.</span><span class="sxs-lookup"><span data-stu-id="dfa49-148">Defects appear in the base materials of the visor and on the sensor windows.</span></span>
-> 1. <span data-ttu-id="dfa49-149">Les performances d’affichage se dégradent.</span><span class="sxs-lookup"><span data-stu-id="dfa49-149">Display performance degrades.</span></span>
+> 1. <span data-ttu-id="c3b13-146">Le clavier de navigateur et les fermetures de périphériques sont décolorés.</span><span class="sxs-lookup"><span data-stu-id="c3b13-146">The brow pad and device closures become discolored.</span></span>
+> 1. <span data-ttu-id="c3b13-147">Des défauts apparaissent dans l’intérieur anti-reflets sur la visière et sur les fenêtres du capteur.</span><span class="sxs-lookup"><span data-stu-id="c3b13-147">Defects appear in the anti-reflective (AR) coating on the visor and on the sensor windows.</span></span>
+> 1. <span data-ttu-id="c3b13-148">Des défauts apparaissent dans les matériaux de base de la visière et sur les fenêtres du capteur.</span><span class="sxs-lookup"><span data-stu-id="c3b13-148">Defects appear in the base materials of the visor and on the sensor windows.</span></span>
+> 1. <span data-ttu-id="c3b13-149">Les performances d’affichage se dégradent.</span><span class="sxs-lookup"><span data-stu-id="c3b13-149">Display performance degrades.</span></span>
 
-## <span data-ttu-id="dfa49-150">Le pavé arrière est-il remplaçable ?</span><span class="sxs-lookup"><span data-stu-id="dfa49-150">Is the rear pad replaceable?</span></span>
+## <span data-ttu-id="c3b13-150">Le pavé arrière est-il remplaçable ?</span><span class="sxs-lookup"><span data-stu-id="c3b13-150">Is the rear pad replaceable?</span></span>
 
-<span data-ttu-id="dfa49-151">Non.</span><span class="sxs-lookup"><span data-stu-id="dfa49-151">No.</span></span>
+<span data-ttu-id="c3b13-151">Non.</span><span class="sxs-lookup"><span data-stu-id="c3b13-151">No.</span></span>
