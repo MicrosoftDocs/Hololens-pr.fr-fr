@@ -1,5 +1,5 @@
 ---
-title: Insider Preview pour Microsoft HoloLens
+title: Insider Preview pour MicrosoftHoloLens
 description: Découvrez comment commencer avec les builds Insider et fournir des commentaires précieux pour notre prochaine mise à jour majeure du système d’exploitation pour HoloLens.
 ms.prod: hololens
 ms.sitesec: library
@@ -16,20 +16,20 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4573f3b2e88af36c397fd1735ec9c6a96b4c52d6
-ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
+ms.openlocfilehash: 3d7c4b5347019682896bb695690190e633c80677
+ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11324797"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327398"
 ---
-# Insider Preview pour Microsoft HoloLens
+# Insider Preview pour MicrosoftHoloLens
 
 Bienvenue dans les dernières builds Insider Preview pour HoloLens ! Il est simple de commencer [et](hololens-insider.md#start-receiving-insider-builds) de fournir des commentaires précieux pour notre prochaine mise à jour majeure du système d’exploitation pour HoloLens.
 
 ## Notes de publication de Windows Insider
 
-Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvelles fonctionnalités pour les Windows Insiders. Nous allons mettre en version d’essai le canal de développement pour les dernières mises à jour. Nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos builds Windows Insider.  Soyez ravis et prêt à combiner ces mises à jour dans votre réalité.
+Nous sommes ravis de commencer à faire une nouvelle fois une offre de nouvelles fonctionnalités pour les Windows Insiders. Les nouvelles builds seront mises en version d’essai vers le canal de développement pour les dernières mises à jour. Nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos builds Windows Insider.  Soyez ravis et prêt à combiner ces mises à jour dans votre réalité.
 
 > [!IMPORTANT]
 > Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un ID d’application différent. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
@@ -46,7 +46,8 @@ Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvell
 | [Balayage pour taper](#swipe-to-type)                           | Utilisez la pointe de votre doigt pour « balayer » les mots sur le clavier holographique                        | 20279.1006 |
 | [Prise en charge du microphone externe USB-C](#usb-c-external-microphone-support) | Utilisez des microphones USB-C pour les applications et/ou Remote Assist.| 20279.1006 |
 | [Nouveaux AUMID pour les nouvelles applications en mode plein écran](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs pour les nouvelles applications Paramètres et Edge | 20279.1006 |
-| [Amélioration du mode plein écran lors de l’échec de la remise](#kiosk-mode-behavior-changes-for-handling-of-failures) | Le mode plein écran recherche l’accès affecté global avant le menu Démarrer vide. | 20279.1006 |
+| [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | Plus de 20 nouvelles paramètresURIs pour la stratégie Paramètres/PageVisibilityList | 20289.1000 |
+| [Amélioration de l’échec de la remise en mode plein écran](#kiosk-mode-behavior-changes-for-handling-of-failures) | Le mode plein écran recherche l’accès affecté global avant le menu Démarrer vide. | 20279.1006 |
 | [Configurer les diagnostics de retour](#configuring-fallback-diagnostics-via-settings-app) | Définition du comportement de diagnostic de retour dans l’application Paramètres | 20279.1006 |
 | [Partager des éléments avec des appareils à proximité](#share-things-with-nearby-devices) | Partager des fichiers ou DES URL à partir d’un HoloLens sur un PC | 20279.1006 |
 | [Nouvelle résolution des problèmes de mise à jour du système d’exploitation](#new-os-update-troubleshooter) | Nouvel dépannage dans paramètres pour les mises à jour du système d’exploitation | 20279.1006 |
@@ -56,7 +57,7 @@ Nous sommes ravis de commencer à lancer à nouveau la mise en flight de nouvell
 
 ![Animation du logo Microsoft Edge hérité vers le nouveau logo Microsoft Edge](images/new-edge.gif)
 
-Le nouveau Microsoft Edge adopte le projet [open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) pour créer une meilleure compatibilité pour les clients et moins de fragmentation du web pour les développeurs web.
+Le nouveau Microsoft Edge adopte le projet [open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) pour améliorer la compatibilité pour les clients et réduire la fragmentation du web pour les développeurs web.
 
 Avec cet aperçu Insider, le nouveau Microsoft Edge est disponible pour la première fois pour les clients HoloLens 2 ! Bien que le nouveau Microsoft Edge remplace finalement l’ancien Microsoft Edge sur HoloLens 2, les deux navigateurs sont actuellement disponibles pour les Insiders. Veuillez partager vos commentaires et **** bogues avec notre équipe via la fonctionnalité Envoyer des commentaires dans le nouveau Microsoft Edge ou via [le Hub de commentaires.](hololens-feedback.md)
 
@@ -89,15 +90,15 @@ Voici quelques ressources utiles pour en savoir plus sur la gestion des paramèt
 
 #### À quoi s’attendre du nouveau Microsoft Edge sur HoloLens 2
 
-Étant donné que le nouveau Microsoft Edge est une application Win32 native avec une nouvelle couche d’adaptateur UWP qui lui permet de s’exécuter sur des appareils UWP uniquement tels que HoloLens 2, certaines fonctionnalités peuvent ne pas être immédiatement disponibles. Nous allons prendre en charge de nouveaux scénarios et fonctionnalités au cours des prochains mois. Veuillez donc vérifier cet espace pour obtenir des informations à jour.
+Étant donné que le nouveau Microsoft Edge est une application Win32 native avec une nouvelle couche d’adaptateur UWP qui lui permet de s’exécuter sur des appareils UWP uniquement tels que HoloLens 2, certaines fonctionnalités peuvent ne pas être immédiatement disponibles. Nous allons prendre en charge de nouveaux scénarios et fonctionnalités au cours des prochains mois. Vérifiez donc cet espace pour obtenir des informations à jour.
 
 **Scénarios et fonctionnalités qui devraient fonctionner :**
-- Première expérience d’expérience d’utilisateur, la première sign-in au profil et la synchronisation
+- Première expérience d’utilisateur, se connectez au profil et synchronisez
 - Les sites web doivent s’restituer et se comporter comme prévu
 - La plupart des fonctionnalités de navigateur (Favoris, Historique, etc.) doivent fonctionner comme prévu.
 - Mode sombre
 - Installation d’applications web sur l’appareil
-- Installation d’extensions (n’hésitez pas à nous faire savoir si vous utilisez des extensions qui ne fonctionnent pas correctement sur HoloLens 2)
+- Installation des extensions (n’hésitez pas à nous faire savoir si vous utilisez des extensions qui ne fonctionnent pas correctement sur HoloLens 2)
 - Affichage et marquage d’un fichier PDF
 - Son spatial à partir d’une seule fenêtre de navigateur
 - Mise à jour automatique et manuelle du navigateur
@@ -126,11 +127,11 @@ Il existe quelques méthodes disponibles pour l’installation des canaux Inside
 
 **Installation directe sur l’appareil (actuellement disponible uniquement pour les appareils non utilisés)**
   1. Sur votre HoloLens 2, visitez la [page de téléchargement Edge Insider.](https://www.microsoftedgeinsider.com/download)
-  1. Sélectionnez **le bouton Télécharger pour HoloLens 2** pour le canal Insider Edge que vous souhaitez installer.
+  1. Sélectionnez **le bouton Télécharger pour HoloLens 2** pour le canal Edge Insider que vous souhaitez installer.
   1. Lancez le fichier .msix téléchargé à partir de la file d’attente de téléchargement Edge ou du dossier « Téléchargements » de votre appareil (à l’aide de l’Explorateur de fichiers).
   1. [Le programme d’installation](app-deploy-app-installer.md) de l’application se lance.
   1. Sélectionnez le **bouton** Installer.
-  1. Une fois l’installation réussie, vous trouverez Microsoft Edge Beta, Dev ou Canary comme entrée distincte dans la liste **Toutes** les applications du menu Démarrer.
+  1. Une fois l’installation réussie, microsoft Edge Beta, Dev ou Canary est une entrée distincte dans la liste Toutes les applications du menu Démarrer. ****
 
 **Installation via PC avec Windows Device Portal (nécessite que le [mode](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) développeur soit activé sur HoloLens 2)**
   1. Sur votre PC, visitez la [page de téléchargement Edge Insider.](https://www.microsoftedgeinsider.com/download)
@@ -138,16 +139,16 @@ Il existe quelques méthodes disponibles pour l’installation des canaux Inside
   1. Sélectionnez **HoloLens 2 dans** le menu déroulant.
   1. Enregistrez le fichier .msix dans le dossier « Téléchargements » de votre PC (ou un autre dossier que vous pouvez facilement trouver).
   1. Utilisez [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) sur votre PC pour installer le fichier .msix téléchargé sur HoloLens 2.
-  1. Une fois l’installation réussie, vous trouverez Microsoft Edge Beta, Dev ou Canary comme entrée distincte dans la liste **Toutes** les applications du menu Démarrer.
+  1. Une fois l’installation réussie, microsoft Edge Beta, Dev ou Canary est une entrée distincte dans la liste Toutes les applications du menu Démarrer. ****
 
 > [!NOTE]
-> Pendant cette prévisualisation de Windows Insider pour HoloLens 2, la version de Microsoft Edge sur votre appareil peut être supérieure à celle disponible dans certains (ou tous) des canaux Microsoft Edge Insider. Cela permet de s’assurer que les nouvelles fonctionnalités et correctifs ciblant spécifiquement le navigateur web sur HoloLens 2 sont en train d’atteindre nos Windows Insiders aussi rapidement que possible. Peu de temps après la publication publique de la prochaine mise à jour Windows, les builds du canal Insider de Microsoft Edge dépassent et restent en avance sur la version de Microsoft Edge sur votre HoloLens 2.
+> Pendant cette prévisualisation de Windows Insider pour HoloLens 2, la version de Microsoft Edge sur votre appareil peut être supérieure à celle disponible dans certains (ou tous) des canaux Microsoft Edge Insider. Cela permet de s’assurer que les nouvelles fonctionnalités et correctifs ciblant spécifiquement le navigateur web sur HoloLens 2 sont en train d’atteindre nos Windows Insiders aussi rapidement que possible. Peu de temps après la publication publique de la prochaine mise à jour Windows, les builds du canal Insider de Microsoft Edge dépasseront et resteront en avance sur la version de Microsoft Edge sur votre HoloLens 2.
 
 ### WebXR et 360 Viewer
 
-*Ajouté dans windows Insider build 20289.1000*
+*Ajouté dans Windows Insider build 20289.1000*
 
-Le nouveau Microsoft Edge inclut la prise en charge de WebXR, qui est la nouvelle norme pour la création d’expériences web immersives (en remplaçant WebVR). De nombreuses expériences web immersives ont été conçues avec la vr à l’esprit (elles remplacent votre champ de vue par un environnement virtuel), mais ces expériences sont également pris en charge par HoloLens 2. La norme WebXR permet également des expériences web immersives augmentées et de réalité mixte qui tirent parti de votre environnement physique. À mesure que les développeurs passent plus de temps avec WebXR, nous prévoyons que de nouvelles expériences immersives de réalité mixte et augmentée arriveront pour que les clients HoloLens 2 essaient !
+Le nouveau Microsoft Edge inclut la prise en charge de WebXR, qui est la nouvelle norme pour la création d’expériences web immersives (en remplaçant WebVR). De nombreuses expériences web immersives ont été conçues avec la vr à l’esprit (elles remplacent votre champ de vue par un environnement virtuel), mais ces expériences sont également pris en charge par HoloLens 2. La norme WebXR permet également des expériences web immersives augmentées et de réalité mixte qui utilisent votre environnement physique. À mesure que les développeurs passent plus de temps avec WebXR, nous prévoyons que de nouvelles expériences immersives de réalité mixte et augmentée arriveront pour que les clients HoloLens 2 essaient !
 
 L’extension 360 Viewer repose sur WebXR et s’installe automatiquement avec le nouveau Microsoft Edge sur HoloLens 2. Cette extension web vous permet de vous plonger dans des vidéos à 360 degrés. YouTube propose la plus grande sélection de 360 vidéos. Nous vous encourageons donc à commencer par là.
 
@@ -181,7 +182,7 @@ L’extension 360 Viewer repose sur WebXR et s’installe automatiquement avec l
 #### Principaux problèmes connus de WebXR et de 360 visionneuses
 - Dans les expériences WebXR, les hologrammes peuvent se déplacer ou s’incliner lorsque vous inclinez la tête ou que vous vous déplacez dans votre environnement.
 - En fonction de la complexité de l’expérience WebXR, le framerate peut être bas ou saccadé.
-- Les joints de main formulées ne sont pas encore disponibles dans WebXR.
+- Les joints de main clairement exprimés ne sont pas encore disponibles dans WebXR.
 - Lorsque vous quittez une expérience WebXR ou 360 Viewer, la réapparition des hologrammes dans la maison virtuelle peut prendre au moins 30 secondes.
 - 360 vidéos provenant de sites web autres que YouTube peuvent ne pas fonctionner comme prévu.
 - Si 360 vidéos n’entrent pas en vue immersive (ou si le bouton du casque de réalité mixte n’apparaît pas), essayez d’actualisation de la page.
@@ -217,7 +218,7 @@ Avec cette version, nous introduisons une nouvelle version de l’application Pa
   - Les adaptateurs Ethernet USB-C apparaissent désormais dans Réseau & Internet.
   - Les paramètres d’adaptateur Ethernet USB-C sont désormais disponibles, y compris son adresse IP.
   - Vous pouvez désormais activer le mode avion sur HoloLens 2.
-- Applications : vous pouvez réinitialiser les applications par défaut utilisées pour les types de fichiers et de liens. Pour plus [d’informations, voir S sélectionneur d’application](#default-app-picker) par défaut.
+- Applications : vous pouvez réinitialiser les applications par défaut utilisées pour les types de fichiers et de liens. Pour plus d’informations, [voir s’il s’est s’il s’est choisi par défaut.](#default-app-picker)
 - Les comptes > autres utilisateurs : les propriétaires d’appareils peuvent ajouter des utilisateurs, mettre à niveau les utilisateurs standard vers les propriétaires d’appareils, rétrograder les propriétaires d’appareils en utilisateurs standard et supprimer des utilisateurs.
 - Facilité d’accès : modifier la taille du texte et certains effets visuels.
 
@@ -230,11 +231,11 @@ Avec cette version, nous introduisons une nouvelle version de l’application Pa
 
 ### S sélectionneur d’application par défaut
 
-Lorsque vous activez un lien hypertexte ou ouvrez un type de fichier avec plusieurs applications installées qui le prend en charge, une nouvelle fenêtre s’ouvre et vous invite à sélectionner l’application installée qui doit gérer le type de fichier ou de lien. Dans cette fenêtre, vous pouvez également choisir que l’application sélectionnée gère le fichier ou le type de lien « Une seule fois » ou « Toujours ».
+Lorsque vous activez un lien hypertexte ou ouvrez un type de fichier avec plusieurs applications installées, ce qui le prend en charge, une nouvelle fenêtre s’ouvre et vous invite à sélectionner l’application installée qui doit gérer le type de fichier ou de lien. Dans cette fenêtre, vous pouvez également choisir que l’application sélectionnée gère le fichier ou le type de lien « Une seule fois » ou « Toujours ».
 
 ![Fenêtre du s picker d’application](images/default-app-picker.png)
 
-Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > applications.** Faites défiler jusqu’au bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
+Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > Applications.** Faites défiler vers le bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
 
 ### Office Web App
 
@@ -260,7 +261,7 @@ Ouvrez **l’application Paramètres** et sélectionnez **Son**  ->  **système.
 > [!IMPORTANT]
 > Pour utiliser des microphones externes avec **Remote Assist,** les utilisateurs doivent cliquer sur le lien hypertexte « Gérer les périphériques sonores ».
 >
-> Ensuite, utilisez la drop-down pour définir le microphone externe sur **Default ou** **Communications Default.** Le choix **par** défaut signifie que le microphone externe sera utilisé partout.
+> Ensuite, utilisez la drop-down pour définir le microphone externe sur **Default ou** **Communications Default.** Le **choix** par défaut signifie que le microphone externe sera utilisé partout.
 >
 > Choisir **Communications Par** défaut signifie que le microphone externe sera utilisé dans Remote Assist et d’autres applications de communication, mais que le groupe de micros HoloLens peut toujours être utilisé pour d’autres tâches.
 
@@ -278,13 +279,13 @@ Malheureusement, Bluetooth microphones ne sont toujours pas pris en charge actue
 
 N’ignorez pas que certains microphones USB-C se signalent de manière incorrecte en tant que *microphone* et haut-parleur. Il s’agit d’un problème avec le microphone et non avec HoloLens. Lorsque vous branchez l’un de ces microphones dans HoloLens, le son peut être perdu. Heureusement, il existe un correctif simple.  
 
-Dans **settings**System Sound , définissez explicitement les haut-parleurs intégrés  ->  ****  ->  ****(pilote audio de fonctionnalité **analogique)** comme **périphérique par défaut.** HoloLens doit mémoriser ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
+Dans **settings**System Sound , définissez explicitement les haut-parleurs intégrés  ->  ****  ->  **** **(pilote audio de** fonctionnalité analogique) comme **périphérique par défaut.** HoloLens doit mémoriser ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
 
 ![Résolution des problèmes de microphones USB-C](images/usbc-mic-4.png)
 
 ### Utiliser les nouvelles applications Paramètres et Edge en mode plein affichage
 
-Lorsque vous ajoutez des applications dans les [kiosques,](hololens-kiosk.md)un administrateur informatique ajoute souvent l’application au kiosque, mais en utilisant son ID de modèle utilisateur d’application (AUMID). Étant donné que l’application Paramètres et l’application Microsoft Edge sont considérées comme de nouvelles applications et que les anciennes applications Kiosks qui utilisent des AUMID pour ces applications devront être mises à jour pour utiliser le nouvel AUMID.
+Lorsque vous ajoutez des applications dans des [kiosques,](hololens-kiosk.md)un administrateur informatique ajoute souvent l’application au kiosque, mais en utilisant son ID de modèle utilisateur d’application (AUMID). Étant donné que l’application Paramètres et l’application Microsoft Edge sont considérées comme de nouvelles applications et sont différentes des anciennes applications kiosks qui utilisent des AUMID pour ces applications, elles devront être mises à jour pour utiliser le nouvel AUMID.
 
 Lors de la modification d’un kiosque pour inclure les nouvelles applications, nous vous recommandons d’ajouter le nouvel AUMID et de laisser l’ancienne. Cela crée une transition facile lorsque les utilisateurs met à jour le système d’exploitation et n’ont pas besoin de recevoir de nouvelles stratégies pour continuer à utiliser le kiosque comme prévu.
 
@@ -294,6 +295,54 @@ Lors de la modification d’un kiosque pour inclure les nouvelles applications, 
 | Application Nouveaux paramètres       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! Application |
 | Ancienne application Microsoft Edge | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
 | Nouvelle application Microsoft Edge | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe ! MSEDGE    |
+
+### New SettingsURIs for Page Settings Visibility
+
+Dans [Windows Holographic, version 20H2,](hololens-release-notes.md#windows-holographic-version-20h2) nous avons ajouté la stratégie [Paramètres/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) pour limiter les pages visibles dans l’application Paramètres. PageVisibilityList est une stratégie qui permet aux administrateurs informatiques d’empêcher l’affichage ou l’accessibilité de pages spécifiques dans l’application Paramètres système, ou de le faire pour toutes les pages à l’exception de celles spécifiées.
+
+Si vous visitez [La visibilité des paramètres](settings-uri-list.md)de page, vous trouverez des instructions pour utiliser ce CSP et la liste des URIs disponibles dans les versions précédentes.
+
+Dans les builds Windows Insider, nous étendons la liste des URL de paramètres disponibles que les administrateurs informatiques peuvent gérer. Certains de ces URIs sont pour les zones nouvellement disponibles dans la nouvelle application Paramètres. Si vous utilisez la stratégie Paramètres/PageVisibilityList, examinez la liste suivante et ajustez vos pages autorisées ou bloquées selon vos besoins.
+
+> [!NOTE]
+> **Deprecated: ms-settings:network-proxy**
+>
+> Une page de paramètres est dépréciée dans ces builds plus nouvelles. L’ancienne page **& proxy Internet**  >  **** n’est plus disponible en tant que paramètre global. Les nouveaux paramètres de proxy par connexion se trouvent sous Propriétés Réseau **&** Wi-Fi Internet ou Propriétés Réseau  >  ****  >  **** **&**  >  **Internet Ethernet**  >  ****.
+
+<br>
+
+| Page de paramètres                                        | URI                                              |
+|------------------------------------------------------|--------------------------------------------------|
+| Fonctionnalités > applications & applications                               | `ms-settings:appsfeatures`                         |
+| Fonctionnalités > applications & applications > options avancées          | `ms-settings:appsfeatures-app`                     |
+| Applications > cartes hors connexion                                  | `ms-settings:maps`                                 |
+| Applications > cartes hors connexion > télécharger des cartes                  | `ms-settings:maps-downloadmaps`                    |
+| Appareils > souris                                      | `ms-settings:mouse`                                |
+| Appareils > USB                                        | `ms-settings:usb`                                  |
+| Mode & internet > avion                   | `ms-settings:network-airplanemode`                 |
+| Confidentialité > général                                    | `ms-settings:privacy-general`                      |
+| Confidentialité et >'entrée manuscrite & personnalisation de la saisie             | `ms-settings:privacy-speechtyping`                 |
+| Motion de > confidentialité                                     | `ms-settings:privacy-motion`                       |
+| Bordures de la > de confidentialité                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
+| Captures d’écran > confidentialité et applications                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
+| Batterie de > système                                     | `ms-settings:batterysaver`                         |
+| Batterie de > système                                     | `ms-settings:batterysaver-settings`                |
+| Son système >                                       | `ms-settings:sound`                                |
+| Préférences de > système > volume d’application et d’appareil | `ms-settings:apps-volume`                          |
+| Système > son > gérer les périphériques sonores              | `ms-settings:sound-devices`                        |
+| System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
+| Heure et & langue > date & heure                        | `ms-settings:dateandtime`                          |
+| Heure &'> clavier                           | `ms-settings:keyboard`                             |
+| Heure & langue > langue                           | `ms-settings:language`                             |
+| Heure & langue > langue                           | `ms-settings:regionlanguage-languageoptions`       |
+| Mettre à jour & sécurité > réinitialiser & récupération               | `ms-settings:reset`                                |
+
+#### URIs mis à jour
+
+Auparavant, les deux URIs suivants ne bloquaient pas directement un utilisateur dans les pages indiquées, mais bloquaient uniquement la page principale des mises à jour. Les éléments suivants ont été mis à jour pour être directement dans leurs pages :
+
+- `ms-settings:windowsupdate-options`
+- `ms-settings:windowsupdate-restartoptions`
 
 ### Modifications du comportement du mode plein écran pour la gestion des défaillances
 
@@ -316,7 +365,7 @@ Cette fonctionnalité peut être gérée via [Connectivity/AllowConnectedDevices
 
 ### Nouvelle résolution des problèmes de mise à jour du système d’exploitation
 
-Outre les dépannages précédents dans l’application Paramètres, un nouvel dépannage a été ajouté avec l’ajout de la nouvelle application Paramètres pour les mises à jour du système d’exploitation. Accédez à **Paramètres -** Résoudre les problèmes  ->  ** &amp; de**sécurité  ->  **de**  ->  **Windows Update** et sélectionnez **Démarrer.** Cela vous permet de collecter des suivis tout en reproduisant votre problème avec les mises à jour du système d’exploitation pour faciliter la résolution des problèmes avec votre système d’exploitation ou votre support technique.
+Outre les dépannages précédents dans l’application Paramètres, un nouvel dépannage a été ajouté avec l’ajout de la nouvelle application Paramètres pour les mises à jour du système d’exploitation. Accédez à **Paramètres -** Résoudre les problèmes  ->  ** &amp; de**sécurité  ->  **de**  ->  **Windows Update** et sélectionnez **Démarrer.** Cela vous permet de collecter des suivis lors de la reproduction de votre problème avec les mises à jour du système d’exploitation pour faciliter la résolution des problèmes avec votre support technique ou votre système d’exploitation.
 
 ### Améliorations et correctifs de la mise à jour :
 
@@ -338,7 +387,7 @@ Outre les dépannages précédents dans l’application Paramètres, un nouvel d
 
 Sur un appareil HoloLens 2, sélectionnez Mise à jour des **paramètres**& programme Windows Insider sécurité  >  ****  >  **** et **sélectionnez Commencer.** Liez le compte que vous avez utilisé pour vous inscrire en tant que Windows Insider.
 
-Windows Insider est désormais en train de passer aux canaux. **L’anneau** Fast deviendra le canal dev, **** l’anneau **Lent** deviendra le canal bêta **et**l’anneau Release **Preview** deviendra le canal **d’aperçu de publication.** Voici à quoi ressemble ce mappage :
+Windows Insider est désormais en train de passer aux canaux. **L’anneau** Rapide deviendra le canal **** dev, **** l’anneau Lent deviendra le canal bêta **et**l’anneau Release **Preview** deviendra le canal d’aperçu de **publication.** Voici à quoi ressemble ce mappage :
 
 ![Explication des canaux Windows Insider](images/WindowsInsiderChannels.png)
 
