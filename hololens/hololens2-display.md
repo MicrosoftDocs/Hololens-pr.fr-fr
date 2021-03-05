@@ -12,18 +12,18 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 6cb646ec1104952b5ecfe42391c24465fd074771
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163016"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385594"
 ---
-# Affichage HoloLens 2
+# <a name="hololens-2-display"></a>Affichage HoloLens 2
 
 L’affichage HoloLens 2 est une combinaison de guides d’onde et de projecteurs de lumière. Les utilisateurs examinent les guides d’onde à l’intérieur du visière lorsque vous portez le casque. Les projecteurs de lumière se trouvent à l’intérieur du boîtier au-dessus du navigateur. HoloLens 2 utilise la lumière laser pour illuminer l’affichage.
 
-## Résolution des problèmes
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Pour HoloLens 2, procédez comme suit pour garantir une qualité visuelle optimale des hologrammes présentés dans les affichages:
 
@@ -32,15 +32,15 @@ Pour HoloLens 2, procédez comme suit pour garantir une qualité visuelle optima
 * **Décaler la visière vers le bas.** Essayez de déplacer le pavé de navigation de votre front vers le bas, ce qui rapprochera la visière de votre nez.
 * **Exécutez l’étalonnage des yeux.** L’affichage utilise votre distance interpupillaire (IPD) et le pointage de votre regard pour optimiser les images sur l’écran. Si vous n’effectuez pas l’étalonnage de l’œil, la qualité de l’image peut être pire. Pour effectuer l’étalonnage de l’œil, accédez à **Paramètres** > **Système** > **Étalonnage** > **Étalonnage de l’œil**.
 
-## Forum Aux Questions
+## <a name="faq"></a>Forum Aux Questions
 
-### Quels sont les modèles qui clignotent occasionnellement dans les coins inférieurs de l’écran?
+### <a name="what-are-the-patterns-that-occasionally-flash-in-the-bottom-corners-of-the-display"></a>Quels sont les modèles qui clignotent occasionnellement dans les coins inférieurs de l’écran?
 
 Il peut arriver que votre moniteur HoloLens 2 affiche des motifs différents dans les coins inférieur gauche et droit de l’écran. Les exemples ci-dessous (gif animé) sont illustrés ci-dessous. Ce modèle fait partie du fonctionnement normal de votre appareil HoloLens 2 afin d’étalonner l’affichage pour une expérience optimale.
 
 ![Modèle biphase](./images/DAT-Biphase-Fiducial.gif) ![Modèle GEO](./images/DAT-GEO-Fiducial.gif)
 
-### Pourquoi ne puis-je pas prendre une photo précise de mon affichage HoloLens2?
+### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>Pourquoi ne puis-je pas prendre une photo précise de mon affichage HoloLens2?
 
 L’affichage HoloLens 2 est conçu pour être consulté par l’œil humain. Un système de correction de couleur actif s’adapte aux yeux des utilisateurs sur l’appareil. Par rapport à l'œil humain, les appareils photo voient les environnements différemment et voici quelques facteurs qui peuvent avoir une incidence sur toute incohérence entre ce qu'un appareil photo capture et ce qu'un utilisateur voit.
 
@@ -55,27 +55,27 @@ L’affichage HoloLens 2 est conçu pour être consulté par l’œil humain. Un
 
 Il reste néanmoins possible pour les appareils photo industriels spécialisés de capturer des images représentatives à partir de l’affichage HoloLens2. Malheureusement, les appareils photo des smartphones, des consommateurs et des professionnels ne capturent pas des images qui correspondent à ce qu'un utilisateur voit sur HoloLens 2.
 
-### Qu’est-ce que l’étalonnage de l’œil pour afficher la qualité de l’image?
+### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>Qu’est-ce que l’étalonnage de l’œil pour afficher la qualité de l’image?
 
 L’affichage HoloLens2 affiche une couleur active pour corriger les images en fonction de la position des yeux de l’utilisateur. [L’étalonnage de l’œil](hololens-calibration.md) fournit deux entrées importantes: (1) la distance interpupillaire (IPD) de l’utilisateur et (2) la direction de chaque œil. Sans étalonnage de l’œil, le système par défaut est une position oculaire sans mouvement oculaire. La différence entre la correction de couleur active et la non-correction dépend de la physiologie de l’utilisateur proprement dit. Par exemple, les utilisateurs qui ont la même IPD que le système par défaut voient moins d’améliorations de la correction de couleur. Bien que les utilisateurs disposant d’une IPD plus étroite ou plus large que le système par défaut, voient plus de modifications apportées à l’image d’affichage.
 
 Notez qu’une nouvelle fonctionnalité de la [Windows Holographic version20H2](hololens-release-notes.md#windows-holographic-version-20h2) commencera à [détecter automatiquement la position des yeux](hololens-calibration.md#auto-eye-position-support). 
 
-### Quelles sont les différences d’affichage entre HoloLens (1ère génération) et HoloLens2?
+### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>Quelles sont les différences d’affichage entre HoloLens (1ère génération) et HoloLens2?
 
 Parmi les principales demandes que les clients ont adressées à Microsoft après avoir fait l'expérience de l'HoloLens 1, il y avait (1) l'augmentation du champ de vision et (2) l'augmentation de la luminosité. Les développements technologiques ont permis à Microsoft de produire des guides d’onde qui ont doublé la zone de la vue et qui produisent des projecteurs d’éclairage avec un affichage de trois fois plus clair. Le matériel définit la ligne de base pour un trio de compromis pour la qualité de l’image d’affichage: (1) champ-de-vue, (2) luminosité et (3) uniformité des couleurs. L’évolution continue des technologies permet d’améliorer toutes les fonctionnalités sans sacrifier à une autre zone. Au intérimaire, la technologie existante définit les limites disponibles pour ces compromis.
 
-### Quelles améliorations vont améliorer la qualité de l’image HoloLens2?
+### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>Quelles améliorations vont améliorer la qualité de l’image HoloLens2?
 
 Bien que de nombreuses investigations aient commencé à améliorer la qualité de l’image, les éléments suivants sont supposés arriver dans les mises à jour à venir:
 
 * **Position automatique des yeux.** Cette fonctionnalité permet d’effectuer les procédures d’étalonnage de l’œil à l’arrière-plan. Les utilisateurs n’auront plus besoin d’utiliser l’étalonnage de l’œil pour que la correction des couleurs soit active. Au lieu de cela, elle fonctionnera tout simplement.
 * **Améliorations de l’étalonnage des couleurs.** Cette mise à jour se concentre sur les valeurs de couleur des couleurs plus foncées (par exemple, gris foncé). Pour l’instant, les couleurs de l’estompage prennent un ton rouge. Ce problème se produit également lorsque l’affichage est grisé, l’intégralité de l’écran reprend les couleurs rouge. Ce problème est dû à une activité trop importante dans le canal de couleur rouge pour ces couleurs plus foncées. Nous avons caractérisé les courbes d’éclairage laser à ces couleurs de luminosité et nous travaillons à offrir une procédure d’étalonnage de l’utilisateur. Le résultat présente une plus grande précision de couleur au-delà du spectre de luminosité. Il ne modifie pas l’apparence des arrière-plans blancs à la luminosité entière. Nous continuons à conseiller l’utilisation des modèles de conception en mode foncé dans les applications.
-* **Mode Lecture.** Il est possible pour les développeurs d’applications de contourner le champ d’affichage pour obtenir une résolution d’angle supérieure. Les développeurs d’applications peuvent remplacer la matrice de projection de façon à ce que le contenu soit rendu dans la résolution de dessin de l’écran. Cette fonctionnalité entraîne une réduction de 30% de la vue du champ et une augmentation correspondante de la résolution angulaire. Nous avons commencé à présenter cette fonctionnalité au kit de ressources de réalité mixte. Lorsqu’il est disponible, le mode lecture fonctionne sur un système d’exploitation HoloLens 2, car il n’est pas dépendant de la mise à jour du système d’exploitation.
+* **Mode Lecture.** Il est possible pour les développeurs d’applications de contourner le champ d’affichage pour obtenir une résolution d’angle supérieure. Les développeurs d’applications peuvent remplacer la matrice de projection de façon à ce que le contenu soit rendu dans la résolution de dessin de l’écran. Cette fonctionnalité entraîne une réduction de 30% de la vue du champ et une augmentation correspondante de la résolution angulaire. Des travaux sont en cours pour introduire cette fonctionnalité dans le [Kit d’outils de la réalité mixte](https://github.com/Microsoft/MixedRealityToolkit-Unity). Lorsqu’il est disponible, le mode lecture fonctionne sur un système d’exploitation HoloLens 2, car il n’est pas dépendant de la mise à jour du système d’exploitation.
 
 Les mises à jour de système d’exploitation sont automatiquement remises. Vous pouvez également tester les versions antérieures de l’amélioration des logiciels via le programme Insider preview.
 
-### Quelles instructions sont disponibles pour que les développeurs appliquent des principes de conception en mode sombre?
+### <a name="what-guidance-is-available-for-developers-to-apply-dark-mode-design-principles"></a>Quelles instructions sont disponibles pour que les développeurs appliquent des principes de conception en mode sombre?
 
 Les utilisateurs bénéficieront d’une expérience optimale pour éviter les arrière-plans. Le mode sombre est un principe de conception utilisé par les applications pour utiliser des arrière-plans de couleur noire ou sombre. Les paramètres système sont définis par défaut sur le mode sombre. Vous pouvez les ajuster en accédant à **Paramètres** > **Système** > **Couleur**.
 
@@ -86,6 +86,6 @@ Il est recommandé aux développeurs de suivre les conseils de conception en mod
 
 Lorsqu’un hologramme nécessite un arrière-plan blanc, conserver la taille de l’hologramme plus petit que le champ complet de l’affichage. Cette taille permet aux utilisateurs de placer l’hologramme au centre de l’écran.
 
-### Comment nettoyer un affichage HoloLens2?
+### <a name="how-do-you-clean-a-hololens-2-display"></a>Comment nettoyer un affichage HoloLens2?
 
 Utilisez un chiffon en microfibre pour essuyer doucement la visière. Pour désinfecter la visière, utilisez de l'alcool isopropylique à 70 % pour humidifier légèrement un chiffon puis essuyez la visière. Consultez les instructions complètes dans le [Nettoyage HoloLens2: FAQ](hololens2-maintenance.md).

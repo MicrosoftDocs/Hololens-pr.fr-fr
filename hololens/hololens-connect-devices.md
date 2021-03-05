@@ -13,19 +13,19 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
-ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
+ms.openlocfilehash: 728bf8547315be96f879ff94a1290c1e2b3e7bf8
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "11302268"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385489"
 ---
-# Se connecter à des appareils Bluetooth et USB-C
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Se connecter à des appareils Bluetooth et USB-C
 
 > [!NOTE]
 > Les microphones externes ne peuvent pas être utilisés. HoloLens 2 utilise son [réseau de microphones](hololens2-hardware.md#audio-and-speech) intégré.
 
-## Appariement des appareils Bluetooth
+## <a name="pair-bluetooth-devices"></a>Appariement des appareils Bluetooth
 
 HoloLens 2 prend en charge les classes suivantes d’appareils Bluetooth:
 
@@ -37,12 +37,12 @@ HoloLens (1ère génération) prend en charge les classes suivantes d’appareil
 
 - Souris
 - Clavier
-- Cliquez sur HoloLens (1ère génération)
+- [Cliquez sur HoloLens (1ère génération)](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
 > D’autres types d’appareils Bluetooth (haut-parleurs, casques, smartphones et tablettes de jeux, par exemple) peuvent être répertoriés comme disponibles dans les paramètres HoloLens. Toutefois, ces appareils ne sont pas pris en charge sur HoloLens (1ère génération). Pour plus d’informations, voir [Paramètres HoloLens répertorie les appareils disponibles, mais les appareils ne fonctionnent pas](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
 
-### Coupler un clavier ou une souris Bluetooth
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Coupler un clavier ou une souris Bluetooth
 
 1. Activez le clavier ou la souris, et rendez-la détectable. Pour découvrir comment rendre l’appareil détectable, recherchez des informations sur l’appareil (ou sa documentation) ou visitez le site Web du fabricant.
 
@@ -52,21 +52,7 @@ HoloLens (1ère génération) prend en charge les classes suivantes d’appareil
 
 1. Lorsque vous voyez le nom de l’appareil, sélectionnez **Paire**, puis suivez les instructions.
 
-### HoloLens (1ère génération): coupler le clic
-
-1. Utilisez le geste «fleuri» pour accéder à **Démarrer**, puis sélectionnez **Paramètres**.
-
-1. Sélectionnez **Appareils** et assurez-vous que le Bluetooth est activé.
-
-1. Utilisez l’astuce d’un stylet pour appuyer sur le bouton d’appariement de la flèche et le maintenir enfoncé jusqu’à ce que le voyant de l’état du clic clignote. Veillez à maintenir le bouton enfoncé jusqu’à ce que la lumière commence à clignoter.  
-
-   Le bouton jumelage est placé sur le côté du clic, à côté de la boucle de doigt.
-
-   ![Le bouton d’appariement est en regard de la boucle de doigt.](images/use-hololens-clicker-1.png)
-
-1. Sur l'écran d’appairage, sélectionnez **Appairage** > **du dispositif de clic**.
-
-## Désactiver Bluetooth
+## <a name="disable-bluetooth"></a>Désactiver Bluetooth
 
 Cette procédure désactive les composants RF de la radio Bluetooth et désactive toutes les fonctionnalités Bluetooth sur Microsoft HoloLens.
 
@@ -74,7 +60,7 @@ Cette procédure désactive les composants RF de la radio Bluetooth et désactiv
 
 1. Déplacez le curseur de **Bluetooth** vers la position**Désactivée**.
 
-## HoloLens 2: connecter des appareils USB-C
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: connecter des appareils USB-C
 
 HoloLens 2 prend en charge les classes suivantes d’appareils USB-C:
 
@@ -87,11 +73,9 @@ HoloLens 2 prend en charge les classes suivantes d’appareils USB-C:
 - Combinaison de la combinaison de plusieurs moyeux (USB A plus débiter)
 
 > [!NOTE]
-> Certains appareils mobiles disposant de connexions USB-C se présentent eux-mêmes au contrôle HoloLens (adaptateurs Ethernet), et peuvent être utilisés dans une configuration de connexion, à commencer par Windows holographique (version 2004). Les modems LTE USB qui requièrent un pilote distinct et/ou l’application installée pour la configuration ne sont pas pris en charge.
+> En réponse aux commentaires des clients, nous avons activé une prise en charge limitée de la connectivité cellulaire directement liée à HoloLens via USB-C. Consultez [Connexion au cellulaire et à la 5G](hololens-cellular.md) pour plus d’informations.
 
-Suite aux commentaires des clients, nous avons activé une prise en charge limitée de la connectivité cellulaire directement dans le service HoloLens via USB-C.  La connectivité par câble ne fonctionne que pour les appareils qui prennent en charge l'implémentation générique du pilote Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) et qui ne nécessitent pas l'installation d'autres pilotes ou applications.  Cet appareil, une fois connecté, s'affiche automatiquement sous la forme d'une nouvelle connexion Ethernet dans l'interface utilisateur des paramètres réseau HoloLens 2. Pour plus d’informations sur la prise en charge du pilote Microsoft RNDIS générique, consultez le fabricant de votre appareil.
-
-### Hubs USB-C
+### <a name="usb-c-hubs"></a>Hubs USB-C
 
 Certains utilisateurs peuvent avoir besoin de connecter plusieurs appareils à la fois. Pour les utilisateurs qui souhaitent avoir un aperçu d'une fonction Insider et[ utiliser un microphone USB-C avec ](hololens-insider.md#usb-c-external-microphone-support)un autre appareil connecté, les concentrateurs USB-C peuvent répondre au besoin du client. Microsoft n'a pas testé ces appareils, et nous ne pouvons recommander aucune marque spécifique.
 
@@ -100,7 +84,7 @@ Certains utilisateurs peuvent avoir besoin de connecter plusieurs appareils à l
 - Les appareils connectés ne doivent pas nécessiter l'installation d'un pilote.
 - La puissance totale absorbée de tous les appareils connectés doit être inférieure à 4,5 watts.
 
-## Se connecter à Miracast
+## <a name="connect-to-miracast"></a>Se connecter à Miracast
 
 Pour utiliser Miracast, procédez comme suit:
 

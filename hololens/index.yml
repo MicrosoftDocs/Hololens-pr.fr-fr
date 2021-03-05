@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 196162764a236ef2b4d7a6d1337b86066dde7469
-  ms.sourcegitcommit: 5b0f0b5930f138afc6cc0e0b9869c3239f1352b2
+  ms.openlocfilehash: a2c1e27a22525366c4d5ffc4bc06e9931412a54a
+  ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 01/26/2021
-  ms.locfileid: "11301532"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "11385443"
 landingContent:
 - title: Vue d’ensemble de HoloLens
   linkLists:
@@ -26,8 +26,8 @@ landingContent:
       url: hololens2-options.md
     - text: Matériel HoloLens2
       url: hololens2-hardware.md
-    - text: Matériel HoloLens (1èregénération)
-      url: hololens1-hardware.md
+    - text: Microsoft Mesh (préversion)
+      url: /mesh/overview
     - text: Utiliser le menu Démarrer et maison virtuelle
       url: holographic-home.md
     - text: Rechercher, installer et désinstaller des applications
