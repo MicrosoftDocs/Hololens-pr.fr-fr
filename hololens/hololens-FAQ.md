@@ -18,20 +18,20 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51058ddcba10a285b91d7fffedccf19d052d4e04
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388769"
+ms.locfileid: "11393858"
 ---
 # <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>Questions fréquemment posées relatives à HoloLens et aux hologrammes
 
 Cet article fournit des réponses aux questions que vous pouvez vous poser à propos de l’utilisation de HoloLens, y compris le placement d’hologrammes, l’utilisation d’espaces, etc.
 
-Lorsque vous rencontrez des problèmes, assurez-vous que HoloLens est [de l’application HoloLens est chargée](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Essayez de la [redémarrer](hololens-restart-recover.md) pour voir si cela résout votre problème. Veuillez utiliser l’application Commentaires pour nous envoyer des informations sur le problème. Vous trouverez l’application Commentaires sur le [**menu** Démarrer](holographic-home.md).
+Chaque fois que vous avez des problèmes, assurez-vous que HoloLens est [facturé.](https://support.microsoft.com/help/12627/hololens-charge-your-hololens) Essayez de la [redémarrer](hololens-restart-recover.md) pour voir si cela résout votre problème. Veuillez utiliser l’application Commentaires pour nous envoyer des informations sur le problème. Vous trouverez l’application Commentaires sur le [**menu** Démarrer](holographic-home.md).
 
-Pour obtenir des conseils sur la façon de porter votre HoloLens, consultez les [Questions fréquemment posées concernant l'ajustement et le confort de HoloLens (1èregénération)](hololens1-fit-comfort-faq.md).
+Pour obtenir des conseils sur la façon de porter votre HoloLens, voir [HoloLens (1ère génération) ajuster et consoler les questions fréquemment posées.](hololens1-fit-comfort-faq.md)
 
 Cet article aborde les questions et problèmes ci-après:
 <a id="list"></a>
@@ -210,7 +210,7 @@ Vous pouvez jumeler d’autres appareils HID et GATT Bluetooth à votre HoloLens
 
 ## <a name="im-having-problems-using-the-hololens-clicker"></a>Je rencontre des problèmes lors de l’utilisation du dispositif de clic HoloLens
 
-Utilisez le [dispositif de clic](hololens1-clicker.md) pour sélectionner, défiler, déplacer et redimensionner des hologrammes. Les applications physiques peuvent prendre en charge d’autres mouvements du dispositif de clic.
+Utilisez le [dispositif de clic](hololens1-clicker.md) pour sélectionner, défiler, déplacer et redimensionner des hologrammes. Les applications individuelles peuvent prendre en charge des mouvements de clic supplémentaires.
 
 Si vous ne parvenez pas à utiliser le dispositif de clic, assurez-vous qu’il est chargé et jumelé à votre HoloLens. Si la batterie est faible, la lumière de l’indicateur clignote de couleur orange. Pour vérifier que le dispositif de clic est jumelé, accédez à **Paramètres** > **Appareils** pour vérifier sa présence. Pour plus d’informations, voir [Jumeler le dispositif de clic](hololens1-clicker.md).
 
