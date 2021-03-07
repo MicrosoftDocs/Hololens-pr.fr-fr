@@ -15,14 +15,14 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: dd99744dfe27f52bb4ec51ad9fa9af4bfd1f0e96
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f6e3dd8f7dc90cea158d000251973ec75dc76a90
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283325"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11393868"
 ---
-# Utiliser votre voix pour faire fonctionner HoloLens
+# <a name="use-your-voice-to-operate-hololens"></a>Utiliser votre voix pour faire fonctionner HoloLens
 
 Vous pouvez utiliser votre voix pour effectuer presque n’importe quelle action sur HoloLens, par exemple prendre une photo rapidement ou ouvrir une application. De nombreuses commandes vocales sont intégrées à HoloLens, tandis que d’autres sont disponibles par le biais de Cortana.
 
@@ -33,25 +33,25 @@ Cet article vous explique comment commander HoloLens et votre univers holographi
 >  
 > Vous pouvez vérifier la langue d’affichage de Windows en sélectionnant **Paramètres** > **Heure et langue** > **Langue**.
 
-## Commandes vocales prédéfinies
+## <a name="built-in-voice-commands"></a>Commandes vocales prédéfinies
 
 Prenez en main HoloLens plus rapidement grâce à ces commandes de base. Pour pouvoir les utiliser, vous devez activer la reconnaissance vocale lors de la première exécution de l’appareil ou dans **Paramètres** > **Confidentialité** > **Voix**. Vous pouvez toujours vérifier si la reconnaissance vocale est activée en examinant l’État en haut du menu Démarrer. Pour obtenir les meilleurs résultats de reconnaissance vocale, HoloLens 2 utilise les services Cloud de Microsoft. Toutefois, vous pouvez utiliser les paramètres pour désactiver cette fonctionnalité. Pour ce faire, dans paramètres, désactivez la** Reconnaissance vocale en ligne**. Une fois que vous avez modifié ce paramètre, HoloLens 2 traite uniquement les données vocales de façon locale pour reconnaître les commandes et la dictée, et Cortana ne sera pas disponible.
 
-### Commandes vocales générales
+### <a name="general-speech-commands"></a>Commandes vocales générales
 
 Pour une utilisation plus rapide de ces commandes dans Windows Mixed Reality. Certaines commandes utilisent le curseur oculaire. Dites «Sélectionner» pour le faire apparaître.
 
 > [!NOTE]
 > Les rayons émanant de la main ne sont pas pris en charge sur HoloLens (1èregénération).
 
-| Dites | Pour ce faire |
+| Dites | Pour |
 | - | - |
-| «Sélectionner» | Dites «sélectionner» pour afficher le curseur oculaire. Tournez ensuite votre tête pour déplacer le curseur sur l’élément que vous souhaitez sélectionner, et dites «Sélectionner» à nouveau. |
-|Ouvrir le menu Démarrer | «Menu Démarrer» |
-|Fermer le menu Démarrer | «Fermer» |
-|Quitter une application immersive | Dites «Menu Démarrer» pour afficher le menu actions rapides, puis dites «Maison virtuelle». |
-|Masquer et afficher le rayon émanant de la main | «Masquer le rayon émanant de la main»/«Afficher le rayon émanant de la main» |
-|Voir les commandes vocales disponibles | «Que puis-je dire?» |
+| «Sélectionner» | Dites «sélectionner» pour afficher le curseur oculaire. Tournez ensuite la tête pour déplacer le curseur sur l’élément que vous souhaitez sélectionner, puis dites «Sélectionner» à nouveau. |
+| «Menu Démarrer» |  Ouvrir le menu Démarrer |
+| «Fermer»  | Fermer le menu Démarrer |
+| Dites «Menu Démarrer» pour afficher le menu des actions rapides, puis dites «Accueil réalité mixte».  | Quitter une application immersive |
+| «Masquer le rayon émanant de la main»/«Afficher le rayon émanant de la main» | Masquer et afficher le rayon émanant de la main |
+| «Que puis-je dire?»  | Voir les commandes vocales disponibles |
 
 À partir de la version19041.x de HoloLens2, vous pouvez également utiliser les commandes suivantes:
 
@@ -66,7 +66,7 @@ Pour une utilisation plus rapide de ces commandes dans Windows Mixed Reality. Ce
 | «Faire une vidéo» | Démarrer l’enregistrement d’une vidéo de réalité mixte. | 
 | «Arrêter l’enregistrement» | Arrête l’enregistrement vidéo de réalité mixte actuel s’il est en cours. |
 
-### Commandes d’hologramme
+### <a name="hologram-commands"></a>Commandes d’hologramme
 
 Pour utiliser ces commandes, pointez du regard un objet3D, un hologramme ou une fenêtre d’application.
 
@@ -79,13 +79,13 @@ Pour utiliser ces commandes, pointez du regard un objet3D, un hologramme ou une 
 | «Fermer» | Fermer un élément |
 | «Me suivre»/«Arrêter le suivi» | Faire en sorte que l’élément vous suive dans vos déplacements |
 
-### Le voir, le dire
+### <a name="see-it-say-it"></a>Le voir, le dire
 
-De nombreux boutons et autres éléments sur HoloLens répondent également à votre voix (par exemple, **Me suivre** et **Fermer** dans la barre de l’application ou le bouton **Retour** dans Microsoft Edge). Pour savoir si un bouton est activé pour la voix, positionnez le **curseur oculaire**, le **curseur tactile** ou un **rayon manuel** dessus pendant un moment. Si le bouton est activé pour la voix, un conseil vocal apparaît.
+De nombreux boutons et autres éléments sur HoloLens répondent également à votre voix (par exemple, **Me suivre** et **Fermer** dans la barre de l’application ou le bouton **Retour** dans Microsoft Edge). Pour savoir si un bouton est activé pour la voix, maintenez **le curseur du regard**, **le curseur tactile** ou **le rayon émanant de la main** sur celui-ci pendant un instant. Si le bouton est activé pour la voix, un conseil vocal apparaît.
 
-### Mode dictée
+### <a name="dictation-mode"></a>Mode dictée
 
-Vous en avez assez de taper? Basculez vers le mode dictée chaque fois que le clavier holographique est actif. Pour commencer, sélectionnez le bouton de micro ou dites «Démarrer la dictée ». Pour arrêter la dictée, sélectionnez le bouton à nouveau ou dites «Arrêter la dictée». Pour supprimer ce que vous venez de dicter, dites «Supprimer cela». 
+Vous en avez assez de taper? Basculez en mode dictée chaque fois que le clavier holographique est actif. Pour commencer, sélectionnez le bouton de micro ou dites «Démarrer la dictée». Pour arrêter la dictée, sélectionnez le bouton à nouveau ou dites «Arrêter la dictée». Pour supprimer ce que vous venez de dicter, dites «Supprimer cela». 
 
 > [!NOTE]
 > Pour utiliser le mode dictée, vous devez disposer d’une connexion Internet.
@@ -103,9 +103,9 @@ Voici les mots-clés que vous pouvez utiliser:
 
 Il peut parfois être utile d’épeler des éléments tels que les adresses de messagerie. Par exemple, pour dicter exemple@outlook.com, vous devez dire «E X E M P L E à Outlook point com».
 
-## En faire plus avec Cortana
+## <a name="do-more-with-cortana"></a>En faire plus avec Cortana
 
-Cortana peut vous aider à effectuer une vaste série d’actions sur votre HoloLens, mais, en fonction de la version de Windows Holographic que vous utilisez, la fonctionnalités peuvent être différentes. Vous pouvez en apprendre davantage sur les fonctionnalités mises à jour de la dernière version de Cortana [ici](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
+Cortana peut vous aider à faire toutes sortes d’actions sur votre HoloLens, mais selon la version de Windows Holographique utilisées, les fonctionnalités peuvent être différentes. Vous pouvez en savoir plus sur les fonctionnalités mises à jour de la dernière version de Cortana ici: Cortana dans la prochaine version de [Windows10](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/): axée sur votre productivité avec une sécurité et une confidentialité accrues. 
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 
@@ -138,7 +138,7 @@ Si vous utilisez la *version18362.x ou une version antérieure*, vous pouvez ég
 
 Certaines fonctionnalités de Cortana auxquelles vous êtes habitué dans Windows sur votre PC ou votre téléphone (par exemple, rappels ou notifications) ne sont pas prises en charge dans Microsoft HoloLens et l’interface de Cortana peut varier d’une région à l’autre.
 
-### Désactiver Cortana
+### <a name="turn-cortana-off"></a>Désactiver Cortana
 
 Cortana est activée la première fois que vous utilisez HoloLens lorsque vous activez la fonctionnalité vocale. Vous pouvez la désactiver dans les Paramètres de Cortana. Dans la liste **Toutes apps**, sélectionnez  **Cortana** > **Paramètres**. Puis Cortana peut vous fournir des suggestions, des idées, des rappels, des alertes, etc..
 
