@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393878"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400704"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour MicrosoftHoloLens
 
@@ -34,7 +34,7 @@ Nous sommes ravis de commencer à faire une nouvelle fois la mise à l’essai d
 Cette mise à jour de fonctionnalité contient des fonctionnalités pour deux audiences cibles. Fonctionnalités qui peuvent être utilisées par n’importe qui sur un appareil par l’utilisateur final et nouvelles options de gestion des appareils qui peuvent être configurées par les administrateurs informatiques. Le tableau des fonctionnalités ci-dessous précise les audiences avec qui peut utiliser chaque nouvelle fonctionnalité. Si vous êtes un administrateur informatique, consultez notre liste de vérification pour la mise à jour [de l’administrateur informatique](#it-admin---update-checklist)
 
 > [!IMPORTANT]
-> Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un ID d’application différent. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
+> Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un autre ID d’application. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
 
 <br>
 
@@ -69,7 +69,7 @@ Cette liste de vérification vous aidera à connaître les nouveaux éléments a
 
 [**Nouveaux AUMID pour les nouvelles applications en mode plein écran**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
 
-Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un ID d’application différent. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
+Si vous utilisiez précédemment l’application Paramètres ou l’application Microsoft Edge dans un kiosque, nous avons remplacé ces applications par de nouvelles applications qui utilisent un autre ID d’application. Nous vous encourageons vivement à lire les [nouveaux AUMID pour les nouvelles applications en mode plein](#use-the-new-settings-and-edge-apps-in-kiosk-modes) écran ci-dessous. Cela vous permet de continuer à avoir l’application Paramètres dans votre kiosque ou d’inclure la nouvelle application Microsoft Edge.
 
 Ces modifications peuvent être apportées maintenant et déployées sur tous les appareils et permettent une transition plus fluide lors de la mise à jour.
 
@@ -90,6 +90,10 @@ Si vous utilisez actuellement la visibilité des paramètres de [page,](settings
 #### <a name="updates-for-your-wdac-policy"></a>Mises à jour de votre stratégie WDAC
 
 Si vous avez précédemment bloqué Microsoft Edge via WDAC, vous souhaiterez mettre à jour votre stratégie WDAC. Consultez [les informations suivantes](#using-wdac-to-block-new-microsoft-edge) et utilisez l’exemple de code fourni.
+
+#### <a name="enable-new-endpoints-for-edge"></a>Activer de nouveaux points de terminaison pour Edge
+
+Si vous avez une infrastructure qui implique la configuration de points de terminaison réseau tels que le proxy ou le pare-feu, activez ces nouveaux points de terminaison pour la nouvelle [application Microsoft Ege.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>Éléments nouvellement configurables
 
@@ -150,7 +154,7 @@ Voici quelques ressources utiles pour en savoir plus sur la gestion des paramèt
 - La plupart des fonctionnalités de navigateur (Favoris, Historique, etc.) doivent fonctionner comme prévu.
 - Mode sombre
 - Installation d’applications web sur l’appareil
-- Installation des extensions (n’hésitez pas à nous faire savoir si vous utilisez des extensions qui ne fonctionnent pas correctement sur HoloLens 2)
+- Installation d’extensions (n’hésitez pas à nous faire savoir si vous utilisez des extensions qui ne fonctionnent pas correctement sur HoloLens 2)
 - Affichage et marquage d’un fichier PDF
 - Son spatial à partir d’une seule fenêtre de navigateur
 - Mise à jour automatique et manuelle du navigateur
@@ -168,7 +172,7 @@ Voici quelques ressources utiles pour en savoir plus sur la gestion des paramèt
 - L’aperçu de la loupe dans le clavier holographique affiche un contenu incorrect
 - Le défilement peut parfois être ingruyé
 - Les liens Web dans l’application du Microsoft Store peuvent ne pas lancer le navigateur
-- L’audio peut être liffé à partir d’une fenêtre de navigateur erronée si vous avez déjà l’audio d’une autre fenêtre de navigateur
+- L’audio peut être liez à partir d’une fenêtre de navigateur erronée si vous avez déjà l’audio d’une autre fenêtre de navigateur.
 
 #### <a name="microsoft-edge-insider-channels"></a>Canaux Microsoft Edge Insider
 
@@ -202,6 +206,12 @@ Il existe quelques méthodes disponibles pour l’installation des canaux Inside
 Pour les administrateurs informatiques qui souhaitent mettre à jour leur stratégie [WDAC](windows-defender-application-control-wdac.md) pour bloquer la nouvelle application Microsoft Edge, vous devez ajouter les informations suivantes à votre stratégie.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
+
+#### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Gestion des points de terminaison pour le nouveau Microsoft Edge
+
+Certains environnements peuvent avoir des restrictions réseau à prendre en compte à titre de considération. Pour garantir une expérience fluide avec le nouveau edge, veuillez [activer ces points de terminaison Microsoft.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+
+En savoir plus sur les points [de terminaison actuellement disponibles pour HoloLens.](hololens-offline.md)
 
 ### <a name="webxr-and-360-viewer"></a>WebXR et 360 Viewer
 
@@ -299,7 +309,7 @@ Avec ce nouveau paramètre, vous pouvez sélectionner un profil de couleur de re
 #### <a name="how-to-use-display-color-calibration"></a>Utilisation de l’étalonnage de couleur d’affichage
 
 1. Lancez **l’application Paramètres** et accédez **à l’étalonnage > système.**
-1. Sous **Étalonnage des couleurs**d’affichage, sélectionnez **le bouton Exécuter l’étalonnage de couleur d’affichage.**
+1. Sous **Étalonnage de couleur d’affichage,** sélectionnez le **bouton Exécuter l’étalonnage de couleur d’affichage.**
 1. L’expérience d’étalonnage de couleur d’affichage s’affiche et vous encourage à vous assurer que votre visière est à la bonne position.
 1. Une fois que vous avez suivi les boîtes de dialogue d’instructions, votre affichage est automatiquement estommé à 30 % de luminosité.
     > [!TIP]
@@ -339,7 +349,7 @@ Lorsque vous activez un lien hypertexte ou ouvrez un type de fichier avec plusie
 
 ![Fenêtre du s picker d’application](images/default-app-picker.png)
 
-Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > Applications.** Faites défiler vers le bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
+Si vous choisissez « Toujours », mais que vous souhaitez ultérieurement modifier l’application qui gère un fichier ou un type de lien particulier, vous pouvez réinitialiser vos valeurs par défaut enregistrées dans **Paramètres > Applications.** Faites défiler jusqu’au bas **** de la page et sélectionnez le bouton Effacer sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire sur les PC de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
 
 ### <a name="per-app-volume-control"></a>Contrôle de volume par application
 
@@ -407,7 +417,7 @@ Dans le menu Autres utilisateurs, le bouton Autres utilisateurs affiche le derni
 ### <a name="usb-c-external-microphone-support"></a>Prise en charge du microphone externe USB-C
 
 > [!IMPORTANT]
-> Le branchement **d’un micro USB ne le définira**pas automatiquement comme périphérique d’entrée. Lorsque vous branchez un ensemble de casques USB-C, les utilisateurs observent que l’audio du casque est automatiquement redirigé vers le casque, mais le système d’exploitation HoloLens hiérarchise le groupe de microphones interne au-dessus de tout autre périphérique d’entrée. **Pour utiliser un microphone USB-C, suivez les étapes ci-dessous.**
+> Le branchement **d’un micro USB ne le définira**pas automatiquement comme périphérique d’entrée. Lorsque vous branchez un ensemble de casques USB-C, les utilisateurs observent que le casque audio est automatiquement redirigé vers le casque, mais le système d’exploitation HoloLens hiérarchise le groupe de microphones interne au-dessus de tout autre périphérique d’entrée. **Pour utiliser un microphone USB-C, suivez les étapes ci-dessous.**
 
 Les utilisateurs peuvent sélectionner des microphones externes connectés USB-C à l’aide du **panneau** Paramètres sonores. Les microphones USB-C peuvent être utilisés pour les appels, l’enregistrement, etc.
 
@@ -544,7 +554,7 @@ Cette fonctionnalité peut être gérée via [Connectivity/AllowConnectedDevices
 
 ### <a name="new-os-update-troubleshooter"></a>Nouvelle résolution des problèmes de mise à jour du système d’exploitation
 
-Outre les dépannages précédents dans l’application Paramètres, un nouvel dépannage a été ajouté avec l’ajout de la nouvelle application Paramètres pour les mises à jour du système d’exploitation. Accédez à **Paramètres -** Résoudre les problèmes  ->  ** &amp; de**sécurité  >  **de**  >  **Windows Update** et sélectionnez **Démarrer.** Cela vous permet de collecter des suivis lors de la reproduction de votre problème avec les mises à jour du système d’exploitation pour faciliter la résolution des problèmes avec votre support technique ou votre système d’exploitation.
+Outre les dépannages précédents dans l’application Paramètres, un nouvel dépannage a été ajouté avec l’ajout de la nouvelle application Paramètres pour les mises à jour du système d’exploitation. Accédez à **Paramètres -** Résoudre les problèmes  ->  ** &amp; de**sécurité  >  **de**  >  **Windows Update** et sélectionnez **Démarrer.** Cela vous permet de collecter des suivis tout en reproduisant votre problème avec les mises à jour du système d’exploitation pour faciliter la résolution des problèmes avec votre système d’exploitation ou votre support technique.
 
 ### <a name="delivery-optimization-preview"></a>Aperçu de l’optimisation de la distribution
 
