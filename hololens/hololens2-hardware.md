@@ -12,37 +12,36 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
-ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
+ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "11328108"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400694"
 ---
-# Matériel HoloLens2
+# <a name="hololens-2-hardware"></a>Matériel HoloLens2
 
 ![Vue latérale HoloLens 2](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 est un ordinateur holographique sans fil.  Il parachève le parcours de l’informatique holographique initié par HoloLens (1regénération) pour proposer une utilisation plus confortable et immersive avec davantage d’options pour collaborer en réalité mixte.
 
-## Composants HoloLens
+## <a name="hololens-components"></a>Composants HoloLens
 
 - **Visière**. Contient les capteurs et affichages HoloLens. Vous pouvez faire pivoter la visière vers le haut pendant que vous utilisez HoloLens.
-- **Arceau**. Pour placer HoloLens sur votre tête, utilisez la molette d’ajustement pour agrandir l’arceau. Lorsque HoloLens est en place, vous pouvez serrer la molette d’ajustement en la faisant tourner vers la droite jusqu’à ce que l’arceau soit confortable.
+- **Arceau**. Pour placer l’HoloLens, utilisez la molette d’ajustement pour développer l’arceau. Lorsque HoloLens est en place, vous pouvez serrer la molette d’ajustement en la faisant tourner vers la droite jusqu’à ce que l’arceau soit confortable.
 - **Boutons de luminosité**. Lorsque vous portez HoloLens, les boutons de luminosité se trouvent à gauche de la visière à proximité de votre tempe.
 - **Boutons de volume**. Lorsque vous portez holoLens, les boutons de volume se trouve sur le côté droit de la visière près de votre casque.
 - **Bouton d’alimentation**. Lorsque vous portez holoLens, le bouton d’alimentation se trouve à droite de la couverture arrière extérieure.
 - **Port USB-C.** Lorsque vous portez HoloLens, le port USB-C se trouve à droite de la couverture arrière extérieure au-dessous du bouton d’alimentation.
 
-## Dans la boîte
+## <a name="in-the-box"></a>Dans la boîte
 
-- **Clavier de navigateur**. Le cas échéant, vous pouvez supprimer et remplacer le clavier de navigateur.
-- **Sangle**. Lorsque vous portez HoloLens en vous déplaçant, utilisez la sangle pour maintenir l’appareil en place. Lorsque vous portez HoloLens pendant de longues périodes, la sangle peut augmenter le confort de l’appareil.
-- **Câble USB-C**. Utilisez le câble USB-C pour brancher votre HoloLens à l’alimentation afin de le charger ou pour le connecter à votre ordinateur.
-- **Bloc d’alimentation**. Se branche à une prise de courant.
+- **[Clavier de navigateur](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. Le cas échéant, vous pouvez supprimer et remplacer le clavier de navigateur.
+- **[Sangle](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Lorsque vous portez HoloLens en vous déplaçant, utilisez la sangle pour maintenir l’appareil en place. Lorsque vous portez HoloLens pendant de longues périodes, la sangle peut augmenter le confort de l’appareil.
+- **[Chargeur et câble USB-C.](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)** Branchement du bloc d’alimentation sur la prise du courant. Utilisez le câble USB-C pour brancher votre HoloLens à l’alimentation afin de le charger ou pour le connecter à votre ordinateur.
 - **Chiffon en microfibre**. À utiliser pour nettoyer votre visière HoloLens.
 
-### Détails sur l'alimentation
+### <a name="power-supply-details"></a>Détails sur l'alimentation
 
 Le bloc d’alimentation et le câble USB fournis avec l’appareil constituent le meilleur moyen de charge. Le bloc d’alimentation est un chargeur 18W.  Il fournit 9V à 2A.
 
@@ -50,9 +49,9 @@ Le taux de charge et la vitesse peuvent varier en fonction de l’environnement 
 
 Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsque l’appareil est allumé, il doit être raccordé à un chargeur 15W minimum.
 
-## Caractéristiques techniques de l’appareil
+## <a name="device-specifications"></a>Caractéristiques techniques de l’appareil
 
-### Affichage
+### <a name="display"></a>Affichage
 
 |   |   |
 | - | - |
@@ -61,7 +60,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Densité holographique | >2,5k rayons (points lumineux par radian) |
 | Rendu visuel | Optimisation de l’affichage pour la position d’œil 3D |
 
-### Capteurs
+### <a name="sensors"></a>Capteurs
 
 |   |   |
 | - | - |
@@ -69,21 +68,21 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Suivi oculaire | 2 caméras infrarouges |
 | Profondeur | Capteur de profondeur de temps de vol d’1 MP |
 | Unité de mesure de l’inertie | Accéléromètre, gyroscope, magnétomètre |
-| Appareil photo | Images fixes 8MP, vidéo 1080p30 |
+| Caméra | Images fixes 8MP, vidéo 1080p30 |
 
 ![Capteurs HoloLens 2](images/hololens2-front-view.png)
 
 > [!NOTE]
 > Ne couvrez aucun des capteurs mentionnés dans l’image. Les caméras de suivi des têtes ont un champ de vision très large, rien ne doit être autour d'elles en plus de ne pas les couvrir.
 
-### Fonctions audio et vocales
+### <a name="audio-and-speech"></a>Fonctions audio et vocales
 
 |   |   |
 | - | - |
 | Réseau de microphones | 5 canaux |
 | Haut-parleurs | Son spatial intégré |
 
-### Calculs et connectivité
+### <a name="compute-and-connectivity"></a>Calculs et connectivité
 
 |   |   |
 | - | - |
@@ -95,26 +94,26 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Bluetooth | 5.0 |
 | USB | Type USB-C |
 
-### Puissance
+### <a name="power"></a>Puissance
 
 |   |   |
 | - | - |
-| Autonomie de la batterie | 2-3 heures d’utilisation actives. Jusqu’à 2 semaines de temps de veille. |
+| Autonomie de la batterie | 2-3 heures d’utilisation actives. Jusqu’à deux semaines de temps de veille. |
 | Technologie de batterie | [Batteries lithium](https://www.microsoft.com/download/details.aspx?id=43388) |
 | Comportement de charge | Entièrement fonctionnel lors de la charge |
 | Type de refroidissement | Refroidissement passif (aucun ventilateur) |
 | Puissance consommée | Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsque l’appareil est allumé, il doit être raccordé à un chargeur 15W minimum. |
 
-### Ajuster
+### <a name="fit"></a>Ajuster
 
 |   |   |
 | - | - |
 | Dimensions | Taille unique avec arceau réglable.  Peut se porter sur des lunettes correctrices |
 | Épaisseur | 566 grammes |
 
-## Fonctionnalités de l’appareil
+## <a name="device-capabilities"></a>Fonctionnalités de l’appareil
 
-### Compréhension humaine
+### <a name="human-understanding"></a>Compréhension humaine
 
 |   |   |
 | - | - |
@@ -122,7 +121,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Suivi oculaire | Suivi en temps réel |
 | Voix | Commande et contrôle de l’appareil; langage naturel de Cortana avec connectivité Internet |
 
-### Appréhension de l’environnement
+### <a name="environment-understanding"></a>Appréhension de l’environnement
 
 |   |   |
 | - | - |
@@ -130,7 +129,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Cartographie spatiale | Maillage d’environnement en temps réel |
 | MRC (Mixed Reality Capture) | Photos et vidéos de l’environnement physique et hologramme mixte |
 
-## Logiciels préinstallés
+## <a name="pre-installed-software"></a>Logiciels préinstallés
 
 |   |   |
 | - | - |
@@ -141,8 +140,8 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Dynamics365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) permet aux techniciens de collaborer et de résoudre des problèmes avec des collaborateurs distants à l’aide de Microsoft Teams ou de Dynamics365 Remote Assist.  |
 | Hub de commentaires | [Le hub de commentaires](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) vous permet de fournir des commentaires sur Windows et sur les applications en faisant part de vos suggestions ou de vos problèmes.  |
 | Explorateur de fichiers | L’Explorateur de fichiers fournit une interface graphique utilisateur permettant d’accéder aux systèmes de fichiers. |
-| Courrier et calendrier | Les [applications Courrier et calendrier](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) vous permettent de rester à jour sur votre e-mail, de gérer votre planning et de communiquer avec vos contacts. |  
-| MicrosoftEdge | Microsoft Edge offre des performances exceptionnelles avec un niveau de confidentialité plus élevé, une hausse de la productivité et une meilleure valeur ajoutée pendant la navigation. |
+| Courrier et calendrier | Les applications [Courrier et calendrier](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)vous aident à rester à jour sur votre e-mail, à gérer votre programme et à rester en contact avec des personnes. |  
+| Microsoft ro | Microsoft Edge offre des performances exceptionnelles avec un niveau de confidentialité plus élevé, une hausse de la productivité et une meilleure valeur ajoutée pendant la navigation. |
 | MicrosoftStore | Le [Microsoft Store](https://www.microsoft.com) constitue votre source d’accès aux applications et aux jeux compatibles avec HoloLens.|
 | Films et TV | [L’application Films et TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) offre les derniers divertissements dans une seule application simple, rapide et élégante. |
 | OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) vous permet d’accéder à vos fichiers, puis de les modifier depuis tous vos appareils où que vous soyez.  |
@@ -150,19 +149,27 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Paramètres | L’application Paramètres vous permet de personnaliser les détails du fonctionnement de Windows Holographic.  |
 | Conseils | L’application [Conseils](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) vous permet de maîtriser des actions surprenantes et moins connues réalisables dans Windows Holographic. |
 
-## Certifications d’appareil
+## <a name="device-certifications"></a>Certifications d’appareil
 
-### Sécurité
+### <a name="safety"></a>Sécurité
 
 * [Sécurité des produits](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [Instructions et avertissements relatifs à la sécurité des produits](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * Suivi oculaire: HoloLens 2 a été testé; il est conforme aux exigences de protection basique contre les impacts des normes ANSI Z87.1, CSA Z94.3 et EN 166.
 * [Informations R.A.S](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
-### Informations réglementaires
+### <a name="regulatory-information"></a>Informations réglementaires
 [Réglementation HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): comprend des informations sur la température, l’élimination, les interférences radio et TV, et bien plus encore.
 
-## Dimensions du paquet
+## <a name="warranty-information"></a>Informations de garantie
+
+Microsoft HoloLens 2 est livré avec une garantie limitée [standard.](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5) 
+
+L’achat est soumis aux [Conditions d’utilisation et de vente de Microsoft Store.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) 
+
+En achetant HoloLens 2, vous acceptez le [Contrat de licence du logiciel](https://www.microsoft.com/Useterms/).
+
+## <a name="package-dimensions"></a>Dimensions du paquet
 
 |      Mesure               |      Unités métriques     |      Unités impériales     |
 |--------------------------------|-----------------------|-------------------------|
@@ -179,7 +186,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 > - Unité : boîte noire de style commercial dans laquelle nous vendons HoloLens 2.
 > - Expéditeur externe : L’emballage de protection autour de l’unité.
 
-## Découverte du numéro de série
+## <a name="finding-the-serial-number"></a>Découverte du numéro de série
 
 Le numéro de série des appareils HoloLens2 est imprimé sous la visière.
 
@@ -198,7 +205,7 @@ Le numéro de série se trouve également via un PC connecté:
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## Étape suivante
+## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
 > [Configurer et démarrer votre HoloLens 2](hololens2-setup.md)
