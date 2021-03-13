@@ -13,26 +13,26 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e005f04088127a0e38a4dd978cd63e5d4e5c0ab9
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: ebe1d072f36cdf4ad9b3543882e61fa2ed4a0300
+ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284105"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "11406750"
 ---
-# Chiffrement et protection des données
+# <a name="encryption-and-data-protection"></a>Chiffrement et protection des données
 
 Le chiffrement et la protection des données protègent les données en cas de perte ou de vol de l’appareil et empêchent les applications non autorisées d’accéder aux informations sensibles.
 
-## Chiffrement de l’appareil BitLocker
+## <a name="bitlocker-device-encryption"></a>Chiffrement de l’appareil BitLocker
 
 BitLocker est une fonctionnalité de chiffrement à volume complet pour la protection de l’intégrité des médias en lecture seule et la protection de la confidentialité des médias inscriptibles.  Depuis sa création, c’est un bouclier efficace contre l’accès non autorisé aux données lors d’attaques hors ligne. HoloLens2 active par défaut le chiffrement de l’appareil BitLocker (BDE, Device Encryption BitLocker) pour protéger les données contre les accès physiques non autorisés à l’appareil. Microsoft continue d’investir et d’améliorer cette technologie afin de répondre aux besoins du futur, qui évoluent en permanence.
 
 BDE est une fonctionnalité de protection des données qui utilise le chiffrement AES-XTS-256 sur tous les volumes dans la disposition séparée par état de l’appareil. BDE fournit un chiffrement au niveau de l’appareil dans une disposition séparée par état. Le chiffrement de l’appareil BitLocker est activé automatiquement sur le système d’exploitation et les volumes de données fixes et ne peut pas être désactivé, même par les administrateurs informatiques, afin que l’appareil soit toujours protégé.
 
-Les clés de chiffrement BDE sont ensuite utilisées pour déchiffrer de manière transparente les fichiers binaires et les données nécessaires au démarrage de l’appareil. Lorsque le volume hébergeant un système d'exploitation est déverrouillé et qu’un système démarre, les autres volumes deviennent accessibles à l’aide d’une version spécifique du volume du protecteur de déverrouillage automatique. Aucun autre protecteur n’est disponible pour préserver la confidentialité des utilisateurs et le lecteur ne peut être déverrouillé que sur le même appareil. L’application en lecture seule sur les volumes requis est appliquée et mise en place immédiatement, dès le premier démarrage.
+Les clés de chiffrement BDE sont ensuite utilisées pour déchiffrer de manière transparente les fichiers binaires et les données nécessaires au démarrage de l’appareil. Lorsque le volume hébergeant un système d'exploitation est déverrouillé et qu’un système démarre, les autres volumes deviennent accessibles à l’aide d’une version spécifique du volume du protecteur de déverrouillage automatique. Aucun autre protecteur n’est disponible pour préserver la confidentialité des utilisateurs et le lecteur ne peut être déverrouillé que sur le même appareil. L’application en lecture seule sur les volumes requis est appliquée et mise en place immédiatement, dès le premier démarrage. La clé de récupération Bitlocker n’est pas nécessaire dans le cycle de vie HoloLens 2.
 
-## Intégration Azure 
+## <a name="azure-integration"></a>Intégration Azure 
 
 HoloLens2 permet aux clients d’intégrer leurs appareils aux services Azure. Les communications entre les appareils HoloLens2 et Azure utilisent le protocole TLS (Transport Layer Security) pour protéger les données voyageant entre eux et les services cloud, ce qui offre une authentification, une confidentialité des messages et une intégrité renforcées. Tous les services Azure prennent entièrement en charge le protocole TLS1.2 et tous les services dans lesquels les clients utilisent uniquement TLS 1.2 n’acceptent que le trafic TLS 1.2. Les normes de chiffrement Azure pour les données en transit sont détaillées dans la [présentation du chiffrement Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview). Consultez la documentation Azure si vous souhaitez en savoir plus sur les [meilleures pratiques de sécurité et de chiffrement des données Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices). 
 
