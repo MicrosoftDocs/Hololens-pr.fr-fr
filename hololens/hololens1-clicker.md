@@ -10,23 +10,23 @@ ms.sitesec: library
 author: v-miegge
 ms.author: v-miegge
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 13b86c049ba8bb6ed67be202609d27c8d47ffc53
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: HT
+ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828510"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439050"
 ---
-# Utiliser le dispositif de clic HoloLens (1regénération)
+# <a name="use-the-hololens-1st-gen-clicker"></a>Utiliser le dispositif de clic HoloLens (1regénération)
 
 Le dispositif de clic a été conçu spécifiquement pour HoloLens (1ère génération) et vous donne un autre moyen d'interagir avec les hologrammes. Il est livré avec HoloLens (1ère génération), dans une boîte séparée.
 
 Utilisez-le à la place des gestes de la main pour sélectionner, faire défiler, déplacer et redimensionner les applications.
 
-## Matériel et appairage du dispositif de clic
+## <a name="clicker-hardware-and-pairing"></a>Matériel et appairage du dispositif de clic
 
 Le dispositif de clic HoloLens (1ère génération) est doté d'une boucle de doigt pour faciliter la prise en main et d'un voyant lumineux.
 
@@ -34,7 +34,7 @@ Le dispositif de clic HoloLens (1ère génération) est doté d'une boucle de do
 
 ![Le dispositif de clic HoloLens](images/use-hololens-clicker-1.png)
 
-### Voyants lumineux du dispositif de clic
+### <a name="clicker-indicator-lights"></a>Voyants lumineux du dispositif de clic
 
 Voici ce que signifient les lumières sur le dispositif de clic.
 
@@ -44,25 +44,25 @@ Voici ce que signifient les lumières sur le dispositif de clic.
 - **L'ambre clignotant**. La batterie est faible.
 - **Ambre solide**. Le dispositif de clic a rencontré une erreur et vous devrez le redémarrer. Tout en appuyant sur le bouton appairage, cliquez et maintenez-le ainsi pendant 15 secondes.
 
-### Associez le dispositif de clic à votre HoloLens (1ère génération)
+### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>Associez le dispositif de clic à votre HoloLens (1ère génération)
 
 1. Utilisez le mouvement « fleuri » pour aller à **Démarrer**, puis sélectionnez **Paramètres** > **Appareils** et vérifier que le Bluetooth est activé.
 1. Sur le dispositif de clic, appuyez et maintenez le bouton d'appairage jusqu'à ce que la lumière d'état clignote en blanc.
 1. Sur l'écran d’appairage, sélectionnez **Appairage** > **du dispositif de clic**.
 
-### Chargez le dispositif de clic
+### <a name="charge-the-clicker"></a>Chargez le dispositif de clic
 
 Lorsque la pile du dispositif de clic est faible, le voyant de la pile clignote en ambre. Branchez le câble Micro USB à une alimentation USB pour charger l'appareil.
 
-## Utiliser le dispositif de clic avec HoloLens (1ère génération)
+## <a name="use-the-clicker-with-hololens-1st-gen"></a>Utiliser le dispositif de clic avec HoloLens (1ère génération)
 
-### Maintenir le dispositif de clic
+### <a name="hold-the-clicker"></a>Maintenir le dispositif de clic
 
 Pour mettre le dispositif de clic, faites glisser la boucle sur votre bague ou votre majeur de façon à ce que le port Micro USB soit orienté vers votre poignet. Reposez votre pouce dans le renfoncement.
 
 ![Comment tenir le dispositif de clic](images/use-hololens-clicker-2.png)
 
-### Mouvements du dispositif de clic
+### <a name="clicker-gestures"></a>Mouvements du dispositif de clic
 
 Les mouvements du dispositif de clic sont de petites rotations du poignet, et non les grands mouvements utilisés pour les mouvements de la main de l'HoloLens. Et HoloLens reconnaît vos mouvements et clics, même si celui-ci se trouve en dehors du [cadre de mouvement](hololens1-basic-usage.md), afin que vous puissiez maintenir le clic dans la position qui vous convient le mieux.
 
@@ -77,21 +77,21 @@ Les mouvements du dispositif de clic sont de petites rotations du poignet, et no
 > [!TIP]
 > Pour effectuer un zoom avant ou arrière lorsque vous utilisez Microsoft Edge, regardez une page et double-cliquez.
 
-## Redémarrer ou récupérer le dispositif de clic
+## <a name="restart-or-recover-the-clicker"></a>Redémarrer ou récupérer le dispositif de clic
 
 Voici quelques éléments à essayer si le dispositif de clic HoloLens ne répond pas ou ne fonctionne pas bien.
 
-### Redémarrer le dispositif de clic
+### <a name="restart-the-clicker"></a>Redémarrer le dispositif de clic
 
 Utilisez la pointe d'un stylo pour appuyer et maintenir le bouton d'appairage. Dans le même temps, cliquez et maintenez le dispositif de clic pendant 15 secondes. Si le dispositif de clic était déjà connecté à votre HoloLens, il le restera après son redémarrage.
 
 Si le dispositif de clic ne s'allume pas ou ne redémarre pas, essayez de le recharger en utilisant le chargeur HoloLens. Si la batterie est très faible, l’activation du voyant lumineux blanc peut prendre quelques minutes.
 
-### Repairer le dispositif de clic
+### <a name="re-pair-the-clicker"></a>Repairer le dispositif de clic
 
 Sélectionnez **Paramètres** > **Appareils**, puis sélectionnez le dispositif de clic. Sélectionnez **Supprimer**, patientez quelques secondes, puis repairez le dispositif ce clic.
 
-### Récupérer le dispositif de clic
+### <a name="recover-the-clicker"></a>Récupérer le dispositif de clic
 
 Si le redémarrage et la ré-appairage du dispositif de clic ne résolvent pas le problème, l’outil de récupération des périphériques Windows peut vous aider à le récupérer. Le processus de récupération peut prendre un certain temps et il installera la dernière version du logiciel du dispositif de clic. Pour utiliser l’outil, vous avez besoin d'un ordinateur équipé de Windows 10 ou d'une version ultérieure et disposant d'au moins 4 Go d’espace de stockage disponible.
 

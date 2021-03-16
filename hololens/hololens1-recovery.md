@@ -12,18 +12,18 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283915"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439040"
 ---
-# Redémarrer, réinitialiser ou récupérer HoloLens (1ère génération)
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>Redémarrer, réinitialiser ou récupérer HoloLens (1ère génération)
 
 Si vous rencontrez des problèmes avec votre HoloLens, vous pouvez essayer d’effectuer un redémarrage ou de le réinitialiser, voire même de réinstaller le système d’exploitation à l’aide de la récupération d’appareils. Cet article vous guidera à travers les étapes de récupération recommandées.
 
@@ -32,9 +32,9 @@ Si vous cherchez à récupérer votre HoloLens2, consultez[Récupération de l�
 > [!NOTE]
 > Cet article se concentre sur l’appareil et le logiciel HoloLens. Si le rendu de vos hologrammes est mauvais, consultez **[Considérations sur l’environnement HoloLens](hololens-environment-considerations.md)** pour obtenir des informations sur les facteurs qui améliorent la qualité de l’hologramme.
 
-## Redémarrer
+## <a name="restart"></a>Redémarrer
 
-### Effectuer un redémarrage en toute sécurité à l’aide de Cortana
+### <a name="do-a-safe-restart-by-using-cortana"></a>Effectuer un redémarrage en toute sécurité à l’aide de Cortana
 
 Le moyen le plus sûr de redémarrer votre HoloLens consiste à utiliser Cortana, qui est en règle générale la première chose à essayer lorsque vous rencontrez un problème avec HoloLens.
 
@@ -48,7 +48,7 @@ Le moyen le plus sûr de redémarrer votre HoloLens consiste à utiliser Cortana
 2. Dites «Hey Cortana, redémarrez» ou «Hey Cortana, redémarrez».
 3. Cortana vous répondra et vous invitera à confirmer votre choix. Attendez d’entendre un son après la question, puis dites «oui». L’appareil redémarrera.
 
-### Utiliser le bouton d’alimentation pour effectuer un redémarrage en toute sécurité
+### <a name="use-the-power-button-to-do-a-safe-restart"></a>Utiliser le bouton d’alimentation pour effectuer un redémarrage en toute sécurité
 
 Si vous ne parvenez pas à redémarrer votre appareil, essayez de le redémarrer à l’aide du bouton **d’alimentation**:
 
@@ -59,14 +59,14 @@ Si vous ne parvenez pas à redémarrer votre appareil, essayez de le redémarrer
 1. Patientez 1minute pour que l’arrêt soit complet. L’arrêt peut être encore en cours, même si les affichages sont désactivés.
 2. Réactivez l’appareil en maintenant le bouton **d’alimentation** enfoncé pendant 1seconde.
 
-### Effectuer un redémarrage en toute sécurité à l’aide du Portail d’appareil Windows
+### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Effectuer un redémarrage en toute sécurité à l’aide du Portail d’appareil Windows
 
 > [!NOTE]
 > Pour ce faire, HoloLens doit être configuré en tant qu’appareil développeur. Plus d’informations sur [Portail d’appareil Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
 
 Si la procédure précédente ne fonctionne pas, essayez de redémarrer l’appareil à l’aide de du [Portail d’appareil Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). Dans le coin supérieur droit, recherchez l’option permettant de redémarrer ou d’éteindre l’appareil.
 
-### Effectuer un redémarrage forcé non sécurisé
+### <a name="do-an-unsafe-forced-restart"></a>Effectuer un redémarrage forcé non sécurisé
 
 Si les méthodes précédentes n’ont pas redémarré votre HoloLens, forcez un redémarrage. Cette méthode revient à enlever et réinstaller la batterie. Cette procédure est dangereuse, car elle peut endommager votre appareil. Dans ce cas, vous devez flasher votre HoloLens.  
 
@@ -80,7 +80,7 @@ Si les méthodes précédentes n’ont pas redémarré votre HoloLens, forcez un
 1. Appuyez de façon prolongée sur le bouton **d’alimentation** pendant 1secondes.
 1. Si vous rencontrez toujours des problèmes, appuyez sur le bouton **d’alimentation** pendant 4secondes, jusqu’à ce que tous les indicateurs de batterie disparaissent et que l’écran cesse d’afficher les hologrammes. Patientez 1minute, puis appuyez de nouveau sur le bouton **d’alimentation** pour allumer l’appareil.
 
-## Rétablir les paramètres par défaut
+## <a name="reset-to-factory-settings"></a>Rétablir les paramètres par défaut
 
 > [!NOTE]
 > La batterie nécessite au moins 40% de charge pour la réinitialisation.
@@ -95,7 +95,7 @@ Si votre HoloLens rencontre encore un problème, essayez de le réinitialiser à
 1. Confirmez la réinitialisation. L’appareil redémarre et affiche une animation d’engrenages et une barre de progression.
 1. Patientez environ 30 minutes l’exécution de ce processus. Une fois l’opération terminée, l’appareil redémarre «comme neuf».
 
-## Réinstaller le système d’exploitation
+## <a name="reinstall-the-operating-system"></a>Réinstaller le système d’exploitation
 
 Si le problème persiste après le redémarrage et la réinitialisation de l’appareil, vous pouvez utiliser un outil de récupération sur votre ordinateur pour réinstaller le système d’exploitation HoloLens et le microprogramme.  
 
@@ -107,7 +107,7 @@ Le processus de récupération peut prendre du temps. Une fois l’opération te
 
 Pour utiliser l’outil, vous avez besoin d’un ordinateur exécutant Windows10 ou une version ultérieure, avec au moins 4Go d’espace de stockage disponible. Notez que vous ne pouvez pas exécuter cet outil sur une machine virtuelle.
 
-### Récupérer votre HoloLens
+### <a name="recover-your-hololens"></a>Récupérer votre HoloLens
 
 1. Téléchargez et installez [Windows Device Recovery Tool sur votre ordinateur](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
 1. Connectez l’HoloLens (1èregénération) à votre ordinateur à l’aide du câbleUSB fourni avec votre HoloLens.
@@ -115,7 +115,7 @@ Pour utiliser l’outil, vous avez besoin d’un ordinateur exécutant Windows10
 
 Si le système HoloLens (1èregénération) n’est pas détecté automatiquement, sélectionnez **Mon appareil n’a pas été détecté**. Suivez ensuite les instructions pour placer l’appareil en mode de récupération.
 
-### Mode clignotant manuel
+### <a name="manual-flashing-mode"></a>Mode clignotant manuel
 
 Si votre appareil n’est pas détecté, procédez comme suit pour le placer en mode clignotant:
 
