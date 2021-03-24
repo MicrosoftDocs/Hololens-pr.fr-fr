@@ -10,51 +10,55 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 6d11ae0907aa82df71d7c86bb37996dcce71d845
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f1968afe7d450425776bac24532f2d84c4dc3c62
+ms.sourcegitcommit: 9f79ed9f76b930b8ceb97844d5f9eace9316b8a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283975"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442589"
 ---
-# Connecter HoloLens à un réseau
+# <a name="connect-hololens-to-a-network"></a>Connecter HoloLens à un réseau
 
-Pour réaliser la plupart des opérations sur votre HoloLens, vous devez être connecté à un réseau. Ce guide va vous aider:
+Pour réaliser la plupart des opérations sur votre HoloLens, vous devez être connecté à un réseau. HoloLens contient une radio Wi-Fi 2x2 802.11ac et permet de la connecter à un réseau de manière similaire à la connexion d’un ordinateur de bureau Windows10 ou d’un appareil mobile à un réseau Wi-Fi. Ce guide peut vous aider:
 
 - Se connecter à un réseau à l’aide du Wi-Fi ou (pour HoloLens 2 uniquement) Ethernet sur USB-C
 - Désactiver et réactiver le Wi-Fi
 
 En savoir plus sur l’[utilisation de HoloLens hors connexion](hololens-offline.md).
 
-## Se connecter pour la première fois
+## <a name="connecting-for-the-first-time"></a>Se connecter pour la première fois
 
-Lors de la première utilisation de votre HoloLens, vous serez guidé pour vous connecter à un réseau Wi-Fi. Si vous rencontrez des problèmes de connexion à un réseau Wi-Fi lors de l’installation, assurez-vous que votre réseau est un réseau ouvert, protégé par mot de passe ou un réseau de portail captif. Vérifiez que vous n’avez pas besoin d’utiliser un certificat pour vous connecter au réseau. Après la configuration, vous pouvez vous connecter à d’autres types de réseaux Wi-Fi.
+Lors de la première utilisation de votre HoloLens, vous serez guidé pour vous connecter à un réseau Wi-Fi. Si vous rencontrez des problèmes de connexion à un réseau Wi-Fi lors de l’installation, assurez-vous que votre réseau est un réseau ouvert, protégé par mot de passe ou un réseau de portail captif. De plus, confirmez que le réseau ne nécessite pas de certificat pour s’y connecter. Après la configuration, vous pouvez vous connecter à d’autres types de réseauxWi-Fi.
 
-Sur les appareils HoloLens 2, un utilisateur peut également [utiliser une carte USB-C vers Ethernet](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) pour se connecter directement au Wi-Fi afin de vous aider à configurer l’appareil. Une fois l’appareil configuré, l’utilisateur peut continuer à utiliser la carte ou il peut déconnecter l’appareil de la carte et [se connecter au Wi-Fi après avoir configuré](hololens-network.md#connecting-to-wi-fi-after-setup). 
+Sur les appareils HoloLens2, un utilisateur peut également utiliser un adaptateur [USB-C vers Ethernet](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) pour se connecter directement au Wi-Fi afin d’aider à la configuration de l’appareil. Une fois que l’appareil a été installé, un utilisateur peut continuer à utiliser l’adaptateur ou déconnecter l’appareil de l’adaptateur et [se connecter au Wi-Fi après avoir été installé](hololens-network.md#connecting-to-wi-fi-after-setup). 
 
-## Connexion à un réseau Wi-Fi après l’installation
+## <a name="connecting-to-wi-fi-after-setup"></a>Connexion à un réseau Wi-Fi après l’installation
 
 1. Effectuez le **mouvement associé au menu Démarrer**, puis sélectionnez **Paramètres**. L’application Paramètres sera placée automatiquement en face de vous.
 1. Sélectionnez **Réseau et Internet** > **Wi-Fi**. Vérifiez que le Wi-Fi est activé. Si vous ne voyez pas votre réseau, faites défiler la liste.
 1. Sélectionnez un réseau, puis **Connecter**.
 1. Si vous êtes invité à entrer un mot de passe réseau, tapez-le, puis sélectionnez **Suivant**.
 
-HoloLens est muni d'une option Wi-Fi 2x2, compatible 802.11ac. La connexion de HoloLens à un réseau Wi-Fi est semblable à la connexion d’un ordinateur de bureau ou d’un appareil mobile Windows10 à un réseau Wi-Fi.
+![Paramètres Wi-Fi HoloLens](./images/hololens-2-wifi-settings.jpg)
 
-![Paramètres Wi-Fi HoloLens](./images/wifi-hololens-600px.jpg)
-
-Vous pouvez également confirmer que vous êtes connecté à un réseau Wi-Fi en vérifiant l’état du Wi-Fi dans le menu **Démarrer** .
+Pour vérifier que vous êtes connecté à un réseau Wi-Fi, vérifiez l’état Wi-Fi dans le menu **Démarrage**:
 
 1. Ouvrez le menu **Démarrer**.
 1. Dans l’angle supérieur gauche du menu **Démarrer** , recherchez l’état du Wi-Fi. L’état du Wi-Fi et le SSID du réseau connecté sont affichés.
 
-## Résolution des problèmes de connexion à la Wi-Fi
+> [!TIP]
+> Si aucun Wi-Fi n’est disponible, vous pouvez également vous [connecter aux réseaux cellulaires et 5G](https://docs.microsoft.com/hololens/hololens-cellular).
+
+> [!IMPORTANT]
+> Pour des raisons de conception, les utilisateurs ne peuvent pas affiner le comportement d’itinérance Wi-Fi de l’HoloLens2. **La seule façon d’actualiser la liste Wi-Fi consiste à activer et désactiver le Wi-Fi**. Cela permet d’éviter de nombreux problèmes, comme lorsqu’un appareil reste bloqué sur un point d’accès hors de portée.
+
+## <a name="troubleshooting-your-connection-to-wi-fi"></a>Résolution des problèmes de connexion au Wi-Fi
 
 Si vous rencontrez des problèmes lors de la connexion à la Wi-Fi, consultez [Je ne peux pas me connecter à la Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).
 
 Lorsque vous connectez un compte d’entreprise ou organisationnel sur l’appareil, il peut également appliquer une stratégie de gestion des appareils mobiles (GDM), si la stratégie est configurée par votre administrateur informatique.
 
-## Connecter HoloLens au réseau Wi-Fi d’entreprise
+## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>Connecter HoloLens au réseau Wi-Fi d’entreprise
 
 Les profils Wi-Fi d’entreprise utilisent le protocole d’authentification extensible (EAP) pour authentifier les connexions Wi-Fi. Le profil Wi-Fi d’entreprise HoloLens peut être configuré via GPM ou un package de configuration créé par le [Concepteur de configuration Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages).
 
@@ -129,7 +133,7 @@ Ressources supplémentaires:
 - Schéma WLANv1Profile: [[MS-GPWL]: Schéma du profil LAN sans fil v1 | Documents Microsoft](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - Schéma EAP-TLS: [[MS-GPWL]: schéma Microsoft EAP TLS | Documents Microsoft](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-### Résolution des problèmes d’EAP
+### <a name="eap-troubleshooting"></a>Résolution des problèmes d’EAP
 
 1. Vérifiez que les paramètres de votre profil Wi-Fi sont corrects:
    1. Le type EAP est correctement configuré. Types d’EAP communs: EAP-TLS (13), EAP-TTLS (21) et PEAP (25).
@@ -142,10 +146,10 @@ Ressources supplémentaires:
 1. Si le profil d’entreprise est configuré via le package de configuration Wi-Fi, envisagez d’appliquer le package de configuration sur un PC Windows10. Si le problème persiste sur les PC Windows10, suivez le [Guide de résolution des problèmes de l’authentification du client 802.1X](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
 1. Donnez votre avis via le [Hub de commentaires](https://docs.microsoft.com/hololens/hololens-feedback).
 
-### Ressources supplémentaires:
+### <a name="additional-resources"></a>Ressources supplémentaires:
 - [Exporter les paramètres Wi-Fi depuis un appareil Windows](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
 
-## VPN
+## <a name="vpn"></a>VPN
 Le VPN offre une connexion et un accès plus sécurisés au réseau de votre entreprise et à Internet. HoloLens2 prend en charge le client VPN intégré et le plug-in VPN de la plateforme Windows universelle (UWP). 
 
 Protocoles VPN intégrés pris en charge:
@@ -159,7 +163,7 @@ Si l’authentification pour le client VPN intégré fait appel à un certificat
 
 Si vous souhaitez en savoir plus sur [la configuration du VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn), veuillez consulter [ces guides](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
 
-### VPN via une interface utilisateur
+### <a name="vpn-via-ui"></a>VPN via une interface utilisateur
 
 Le VPN n’est pas activé par défaut. Vous pouvez l’activer manuellement en ouvrant l’application **Paramètres**, puis en accédant à **Réseau et Internet -> VPN**.
 1. Sélectionnez un fournisseur VPN.
@@ -172,7 +176,7 @@ Le VPN n’est pas activé par défaut. Vous pouvez l’activer manuellement en 
 
 ![Paramètres du VPN HoloLens](./images/vpn-settings-ui.jpg)
 
-### VPN défini via le package de configuration
+### <a name="vpn-set-via-provisioning-package"></a>VPN défini via le package de configuration
 
 > [!TIP] 
 > Dans la version20H2 de Windows Holographic, nous avons résolu un problème de configuration de proxy pour la connexion VPN. Si vous envisagez d’utiliser ce flux, pensez à mettre à niveau les appareils vers cette version.
@@ -191,7 +195,7 @@ Le VPN n’est pas activé par défaut. Vous pouvez l’activer manuellement en 
 1. Sur HoloLens, appliquez le VPN .ppkg en ouvrant le menu Démarrer, puis en sélectionnant **Paramètres** -> **Compte** -> **Accès professionnel ou scolaire** -> **Ajouter ou supprimer un package de configuration** -> Sélectionnez le package de votre VPN.
 
 
-### Configurer un VPN via Intune
+### <a name="setting-up-vpn-via-intune"></a>Configurer un VPN via Intune
 Il suffit de suivre les documents Intune pour commencer. Lorsque vous suivez ces étapes, n’oubliez pas les protocoles VPN intégrés pris en charge par les appareils HoloLens. 
 
 [Créer des profils VPN pour se connecter aux serveurs VPN dans Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure).
@@ -200,7 +204,7 @@ Il suffit de suivre les documents Intune pour commencer. Lorsque vous suivez ces
 
 Lorsque vous avez terminé, pensez à [affecter le profil](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
 
-### VPN via des solutions GPM tierces
+### <a name="vpn-via-3rd-party-mdm-solutions"></a>VPN via des solutions GPM tierces
 Exemple de connexion VPN tierce:
 ```xml
 <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
@@ -290,9 +294,9 @@ Exemple de VPN IKEv2 natif:
         </Item>
       </Add>
 ```
-## Désactiver le Wi-Fi sur HoloLens (premièregénération)
+## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>Désactiver le Wi-Fi sur HoloLens (premièregénération)
 
-### Utilisation de l’application Paramètres sur HoloLens
+### <a name="using-the-settings-app-on-hololens"></a>Utilisation de l’application Paramètres sur HoloLens
 
 1. Ouvrez le menu **Démarrer**.
 1. Sélectionnez l’application **Paramètres** dans le menu **Démarrer** ou dans la liste **Toutes les applications** à droite du menu **Démarrer**. L’application **Paramètres** sera placée automatiquement en face de vous.
@@ -304,9 +308,9 @@ Exemple de VPN IKEv2 natif:
 
 1. Positionnez le curseur en position **Activé** pour allumer la radio Wi-Fi et restaurer les fonctionnalités Wi-Fi sur Microsoft HoloLens. L’état de l’option Wi-Fi sélectionné (**Activé** ou **Désactivé**) sera conservé en cas de redémarrage.
 
-## Identification de l’adresse IP de votre HoloLens sur le réseau Wi-Fi
+## <a name="identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network"></a>Identification de l’adresse IP de votre HoloLens sur le réseau Wi-Fi
 
-### À l’aide de l’application Paramètres
+### <a name="by-using-the-settings-app"></a>À l’aide de l’application Paramètres
 
 1. Ouvrez le menu **Démarrer**.
 1. Sélectionnez l’application **Paramètres** dans le menu **Démarrer** ou dans la liste **Toutes les applications** à droite du menu **Démarrer**. L’application **Paramètres** sera placée automatiquement en face de vous.
@@ -317,11 +321,11 @@ Exemple de VPN IKEv2 natif:
 
    L’adresse IP apparaît en regard de **adresse IPv4**.
 
-### Via des commandes vocales
+### <a name="by-using-voice-commands"></a>Via des commandes vocales
 
 En fonction de la build de votre appareil, vous pouvez utiliser les commandes vocales intégrées ou Cortana pour afficher votre adresse IP. Sur les builds ultérieures à la [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) demandez «quelle est mon adresse IP?» Celle-ci s’affiche alors. Sur les builds antérieures ou sur HoloLens (1ère génération), dites «Hey Cortana, quelle est mon adresse IP?» Cortana afficher et lit votre adresse IP.
 
-### À l’aide du Portail d’appareil Windows
+### <a name="by-using-windows-device-portal"></a>À l’aide du Portail d’appareil Windows
 
 1. Dans un navigateur Web sur votre PC, ouvrez le [Portail d’appareil](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Accédez à la section **Réseaux**.  
