@@ -6,7 +6,7 @@
 ### [Vue d’ensemble de HoloLens 2](hololens2-options.md)
 ### [Matériel HoloLens2](hololens2-hardware.md)
 ### [Préparer votre HoloLens 2 pour utilisation](hololens2-setup.md)
-### [Configurer votre HoloLens 2](hololens2-start.md)
+### [Configurer votre HoloLens2](hololens2-start.md)
 ### [Positionnement et utilisation confortable de l’HoloLens2: FAQ](hololens2-fit-comfort-faq.md)
 ### [Affichage HoloLens 2](hololens2-display.md)
 ### [Nettoyage HoloLens2: FAQ](hololens2-maintenance.md)
@@ -53,7 +53,13 @@
 #### [Connexion au cloud – Configuration](hololens2-cloud-connected-configure.md)
 #### [Connexion au cloud – Déploiement](hololens2-cloud-connected-deploy.md)
 #### [Connexion au cloud – Mise à jour](hololens2-cloud-connected-maintain.md)
-### [Déploiement de l'HoloLens 2 auprès de clients externes avec assistance à distance](hololens2-deployment-guide.md)
+### [Déploiement de l'HoloLens2 auprès de clients externes avec assistance à distance](hololens2-deployment-guide.md)
+### Déploiement HoloLens2 connecté à l’entreprise avec des guides Dynamique365
+#### [Connexion à l’entreprise: ensemble du déploiement](hololens2-corp-connected-overview.md)
+#### [Connecté à l’entreprise: préparer](hololens2-corp-connected-prepare.md)
+#### [Connecté à l’entreprise: configurer](hololens2-corp-connected-configure.md)
+#### [Connecté à l’entreprise: déployer](hololens2-corp-connected-deploy.md)
+#### [Connecté à l’entreprise: maintenance](hololens2-corp-connected-maintain.md)
 ### [Sécurité hors connexion](hololens-common-scenarios-offline-secure.md)
 ## Sécurité
 ### [Vue d’ensemble de la sécurité](security-overview.md)
