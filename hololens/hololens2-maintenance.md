@@ -1,6 +1,6 @@
 ---
-title: 'Nettoyage HoloLens2: FAQ'
-description: Obtenez des réponses à jour à toutes vos questions fréquemment posées pour le nettoyage et la maintenance de votre appareil HoloLens 2.
+title: FAQ sur le nettoyage de HoloLens 2
+description: Recevez des réponses à jour pour toutes vos questions fréquemment posées sur le nettoyage et la maintenance de votre appareil HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -16,18 +16,18 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327378"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308673"
 ---
-# Nettoyage HoloLens2: FAQ
+# <a name="hololens-2-cleaning-faq"></a>FAQ sur le nettoyage de HoloLens 2
 
 > [!IMPORTANT]  
-> Microsoft ne peut pas déterminer l’efficacité d’un produit ingérant donné dans des luttes telles que COVID-19. Reportez-vous aux conseils de votre autorité de santé publique locale sur la façon de rester à l’abri d’une infection potentielle.  
+> Microsoft ne peut pas déterminer l’efficacité d’un produit désinfectant donné pour combattre les agents pathogènes tels que COVID-19. Reportez-vous à l’aide de votre autorité de santé publique locale pour savoir comment vous protéger contre les infections potentielles.  
 
-## Utilisation et soin de HoloLens 2
+## <a name="hololens-2-use-and-care"></a>HoloLens 2 utilisation et prudence
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
@@ -35,60 +35,60 @@ ms.locfileid: "11327378"
 
 **Pour nettoyer l’appareil**
 
-1. Supprimez toute apparence à l’aide d’un microfibre sec et exempt de lint pour effacer légèrement la surface de l’appareil.
+1. Enlevez les poussières à l’aide d’un chiffon Microfiber sec et exempt de peluche pour essuyer doucement la surface de l’appareil.
 
-   ![Nettoyer tout en maintenant le clavier de navigateur en place](images/hl2-cleaning.png)
+   ![Nettoyer en maintenant le bloc de navigateur](images/hl2-cleaning.png)
 
-2. Éclaircissez légèrement le papier à l’aide d’une isopropyl médicale « 70 % », puis utilisez-le pour effacer légèrement la surface de l’appareil.
+2. Humidifiez légèrement l’chiffon à l’aide de la « 70% » d’alcool isopropylique, puis utilisez le chiffon humidifié pour essuyer doucement la surface de l’appareil.
 
-3. Laissez l’appareil complètement secs.
+3. Laissez l’appareil sécher entièrement.
 
-**Pour nettoyer le clavier de navigateur**
+**Pour nettoyer le bloc de navigateur**
 
-1. Utilisez de l’eau et un soap d’eau et d’eau pour mouiller un papier à balai, puis utilisez le papier à balai pour effacer le pavé de navigateur.
-1. Laissez le clavier de navigateur s’assoucher complètement.
+1. Utilisez de l’eau et un SOAP doux, antibiotique pour humecter un chiffon, puis utilisez l’chiffon humecté pour effacer le panneau de navigateur.
+1. Laissez le pavé de navigateur sécher entièrement.
 
-## Puis-je utiliser n’importe quel nettoyage d’objectif pour nettoyer la visière HoloLens ?
+## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>Puis-je utiliser n’importe quel nettoyeur de lentille pour nettoyer le Visor HoloLens ?
 
-Non. Les nettoyeurs d’objectif peuvent être abrasifs pour les bords de la visière. Pour nettoyer la visière, suivez les étapes suivantes :  
+Non. Les nettoyants pour lentilles peuvent être abrasifs pour les revêtements sur le visière. Pour nettoyer le visière, procédez comme suit :  
 
-1. Supprimez toute papier à sable à l’aide d’un microfibre en microfibre non secs pour effacer légèrement la visière.
-1. Éclaircissez légèrement un papier à l’aide de l’effet médical « 70 % » d’isopropyl, puis effacez légèrement la visière.
-1. Laissez la visière complètement secs.
+1. Retirez les poussières à l’aide d’un chiffon Microfiber exempt de pelucheux pur pour essuyer doucement le visière.
+1. Humidifiez légèrement un chiffon à l’aide de la « 70% » d’alcool isopropylique, puis essuyez doucement le visière.
+1. Laissez la visière sécher entièrement.
 
-## Puis-je utiliser des effacements pour nettoyer l’appareil ?
+## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Puis-je utiliser la désinfection pour nettoyer l’appareil ?
 
-Oui, si les effacements ne contiennent pas de papier. Vous pouvez utiliser des effacements insérez des effacements non ingrayés pour effacer légèrement [les surfaces HoloLens.](#hololens-2-use-and-care)  
-
-> [!CAUTION]  
-> Évitez d’utiliser des effacements qui contiennent des effacements pour nettoyer les surfaces HoloLens. Il est acceptable d’utiliser des effacements dans les situations critiques, lorsque rien d’autre n’est disponible. Toutefois, l’endommagement peut endommager la visière HoloLens ou d’autres surfaces.
-
-## Puis-je utiliser de l’eau pour nettoyer l’appareil ?
-
-Oui. Vous pouvez utiliser une solution de « 70 % » d’eau et d’eau isopropyl pour nettoyer les surfaces dures de l’appareil, y compris la visière. Éclaircissez légèrement le papier à l’aide d’une combinaison d’eau et d’eau isopropyl, puis effacez légèrement la surface de l’appareil
-
-## Le clavier de navigateur est-il remplaçable ?
-
-Oui. Le clavier de navigateur est fixé à l’appareil par un aimant. Pour le détacher, éloignez-le légèrement du bandeau. Pour le remplacer, remettez-le en place.
-
-![Supprimer ou remplacer le clavier de navigateur](images/hololens2-remove-browpad.png)
-
-## Comment puis-je nettoyer le clavier de navigateur ?
-
-Pour nettoyer le clavier de navigateur, effacez-le à l’aide d’un crayon qui est moisé à l’aide d’une eau et d’un soap. Laissez le clavier de navigateur complètement sec avant de l’utiliser à nouveau.
-
-## Puis-je utiliser la lumière UV pour désinfecter l’appareil ?
-
-L’irradiance UVC utilisant UVC LED, qui fonctionne à 265nm au niveau d’intensité de 0.5-0.6mW/cm2 et n’émet pas de rayon, peut être utilisée pour désinfecter <sup> </sup> HoloLens2. Suivez les spécifications du fabricant sur la gestion et le temps d’exposition.
+Oui, si les effaces ne contiennent pas de blanchiment. Vous pouvez utiliser des réinitialisations de désinfection sans blanchiment pour [nettoyer en douceur les surfaces HoloLens](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
-> Des niveaux élevés d’exposition UV-A et UV-B peuvent dégrader la qualité d’affichage de l’appareil et endommager la hauteur de la visière. La sur-exposition aux UV-A et UV-B a les effets suivants, par ordre de durée et d’intensité d’exposition :
+> Évitez d’utiliser des réinitialisations de désinfection qui contiennent des blanchiments pour nettoyer les surfaces HoloLens. Il est acceptable d’utiliser des réinitialisations de blanchiment dans les situations critiques, lorsque rien d’autre n’est disponible. Toutefois, le blanchiment peut endommager le Visor HoloLens ou d’autres surfaces.
+
+## <a name="can-i-use-alcohol-to-clean-the-device"></a>Puis-je utiliser de l’alcool pour nettoyer l’appareil ?
+
+Oui. Vous pouvez utiliser une solution de « 70% » d’alcool isopropylique et d’eau pour nettoyer les surfaces dures de l’appareil, y compris le visière. Humidifiez légèrement la toile en utilisant une combinaison d’alcool et d’eau isopropylique, puis essuyez doucement la surface de l’appareil.
+
+## <a name="is-the-brow-pad-replaceable"></a>Le pavé de navigateur est-il remplaçable ?
+
+Oui. Le panneau navigateur est attaché de façon magnétique à l’appareil. Pour le détacher, tirez-le doucement de l’headband. Pour le remplacer, Réintégrez-le.
+
+![Supprimer ou remplacer le bloc de navigateur](images/hololens2-remove-browpad.png)
+
+## <a name="how-can-i-clean-the-brow-pad"></a>Comment puis-je nettoyer le bloc de navigateur ?
+
+Pour nettoyer le panneau de navigateur, réinitialisez-le à l’aide d’un chiffon humidifié à l’aide d’eau et d’un SOAP antibiotique. Laissez le pavé de navigateur sécher complètement avant de l’utiliser à nouveau.
+
+## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Puis-je utiliser de la lumière ultraviolette (UV) pour assainir l’appareil ?
+
+L’irradiance UVC à l’aide de la del UVC, qui opère au niveau d’intensité de 0,5-0,6 mW/cm<sup>2</sup>et n’émet pas d’ozone, peut être utilisé pour assainir HoloLens2. Veuillez suivre les spécifications du fabricant sur la gestion et le temps d’exposition.
+
+> [!CAUTION]  
+> Les niveaux élevés d’exposition UV-A et UV-B peuvent nuire à la qualité d’affichage de l’appareil et endommager le revêtement du visière. La surexposition aux radiations UV-A et UV-B a les effets suivants, en ordre de la durée et de l’intensité de l’exposition :
 >  
-> 1. Le clavier de navigateur et les fermetures de périphériques sont décolorés.
-> 1. Des défauts apparaissent dans l’intérieur anti-reflets sur la visière et sur les fenêtres du capteur.
-> 1. Des défauts apparaissent dans les matériaux de base de la visière et sur les fenêtres du capteur.
-> 1. Les performances d’affichage se dégradent.
+> 1. Le pavé de navigateur et les fermetures de l’appareil sont décolorés.
+> 1. Les défauts apparaissent dans le revêtement anti-réfléchissant (AR) sur le visière et sur les fenêtres de capteur.
+> 1. Les défauts apparaissent dans les matériaux de base du visière et sur les fenêtres de capteur.
+> 1. Affichez les performances dégradées.
 
-## Le pavé arrière est-il remplaçable ?
+## <a name="is-the-rear-pad-replaceable"></a>Le panneau arrière est-il remplaçable ?
 
 Non.

@@ -1,6 +1,6 @@
 ---
 title: Configurer HoloLens en tant que kiosque
-description: Découvrez comment configurer et utiliser une configuration kiosque pour verrouiller les applications sur les appareils HoloLens.
+description: Découvrez comment configurer et utiliser une configuration de kiosque pour verrouiller les applications sur les appareils HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -18,303 +18,303 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: a043b2f96bec6127d52622b4662279c777df6f8f
-ms.sourcegitcommit: e1dd3d79d763d02d4fe04c82d8f49e8f9d85ee4a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "11445374"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308851"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurer HoloLens en tant que kiosque
 
-Vous pouvez configurer un appareil HoloLens pour qu’il fonctionne comme un appareil à usage fixe, également appelé *kiosque,* en configurant l’appareil pour qu’il s’exécute en mode plein écran. Le mode plein écran limite les applications (ou utilisateurs) disponibles sur l’appareil. Le mode plein écran est une fonctionnalité pratique que vous pouvez utiliser pour dédier un appareil HoloLens aux applications d’entreprise ou pour utiliser l’appareil HoloLens dans une démonstration d’application.
+Vous pouvez configurer un appareil HoloLens pour qu’il fonctionne comme un appareil à usage fixe, également appelé *kiosque*, en configurant l’appareil pour qu’il s’exécute en mode plein écran. Le mode plein écran limite les applications (ou utilisateurs) qui sont disponibles sur l’appareil. Le mode plein écran est une fonctionnalité pratique que vous pouvez utiliser pour dédier un appareil HoloLens à des applications d’entreprise, ou pour utiliser le périphérique HoloLens dans une démonstration d’application.
 
-Cet article fournit des informations sur les aspects de la configuration plein écran spécifiques aux appareils HoloLens. Pour obtenir des informations générales sur les différents types de kiosques Windows et sur leur configuration, voir Configurer des kiosques et des [signes numériques](https://docs.microsoft.com/windows/configuration/kiosk-methods)sur les éditions de bureau Windows.  
+Cet article fournit des informations sur les aspects de la configuration de la kiosque qui sont propres aux appareils HoloLens. Pour obtenir des informations générales sur les différents types de kiosques Windows et sur la façon de les configurer, consultez [configurer des kiosques et des signes numériques sur les éditions Windows Desktop](https://docs.microsoft.com/windows/configuration/kiosk-methods).  
 
 > [!IMPORTANT]  
-> Le mode plein écran détermine les applications disponibles lorsqu’un utilisateur se connecté à l’appareil. Toutefois, le mode plein écran n’est pas une méthode de sécurité. Elle n’empêche pas une application « autorisée » d’ouvrir une autre application non autorisée. Pour empêcher l’ouverture d’applications ou de processus, [utilisez Windows Defender CSP WDAC (Application Control)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) pour créer des stratégies appropriées.
+> Le mode plein écran détermine les applications qui sont disponibles lorsqu’un utilisateur se connecte à l’appareil. Toutefois, le mode plein écran n’est pas une méthode de sécurité. Elle n’empêche pas une application « autorisée » d’ouvrir une autre application qui n’est pas autorisée. Pour bloquer l’ouverture des applications ou des processus, utilisez [le fournisseur de services Windows Defender application Control (WDac)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) pour créer les stratégies appropriées.
 >
-> En savoir plus sur les services Microsoft pour offrir aux utilisateurs un niveau de sécurité avancé utilisé par HoloLens 2, en savoir plus sur la séparation d’état et [l’isolation - Protections Defender](security-state-separation-isolation.md#defender-protections). Vous pouvez également apprendre à utiliser WDAC et Windows PowerShell pour autoriser ou bloquer des applications sur des appareils [HoloLens 2 avec Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)
+> En savoir plus sur les services Microsoft pour fournir aux utilisateurs un niveau de sécurité avancé utilisé par HoloLens 2, en savoir plus sur la [séparation des États et les protections de l’isolation-Defender](security-state-separation-isolation.md#defender-protections). Ou apprenez à [utiliser WDac et Windows PowerShell pour autoriser ou bloquer des applications sur des appareils HoloLens 2 avec Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
-Vous pouvez utiliser le mode plein écran dans une configuration d’application unique ou multi-application, et vous pouvez utiliser l’un des trois processus pour configurer et déployer la configuration kiosque.
+Vous pouvez utiliser le mode plein écran dans une configuration à une ou plusieurs applications, et vous pouvez utiliser l’un des trois processus pour configurer et déployer la configuration de la kiosque.
 
 > [!IMPORTANT]  
-> La suppression de la configuration multi-application supprime les profils de verrouillage utilisateur créés par la fonctionnalité d’accès affecté. Toutefois, il ne retourne pas toutes les modifications de stratégie. Pour rétablir ces stratégies, vous devez rétablir les paramètres d’usine de l’appareil.
+> La suppression de la configuration multi-applications supprime les profils User Lockdown créés par la fonctionnalité accès affecté. Toutefois, il ne restaure pas toutes les modifications de stratégie. Pour rétablir ces stratégies, vous devez réinitialiser les paramètres d’usine de l’appareil.
 
-## <a name="plan-the-kiosk-deployment"></a>Planifier le déploiement kiosque
+## <a name="plan-the-kiosk-deployment"></a>Planifier le déploiement de la borne
 
-Lors de la planification de votre kiosque, vous devez être en mesure de répondre aux questions suivantes. Voici quelques décisions à prendre lors de la lecture de cette page et quelques considérations pour ces questions.
-1. **Qui utilisera votre kiosque et quel [type de compte](hololens-identity.md) utilisera-t-il ?** Il s’agit d’une décision que vous avez probablement déjà prise et qui ne doit pas être ajustée dans le but de votre kiosque, mais qui affectera la façon dont le kiosque sera affecté ultérieurement.
-1. **Avez-vous besoin de kiosques différents par utilisateur/groupe ou d’un kiosque non activé pour certains utilisateurs ?** Si c’est le cas, vous souhaiterez créer votre kiosque via XML. 
-1. **Combien d’applications seront disponibles dans votre kiosque ?** Si vous avez plus d’une application, vous aurez besoin d’un kiosque multi-application. 
-1. **Quelles applications seront dans votre kiosque ?** Veuillez utiliser notre liste d’aumids ci-dessous pour ajouter In-Box applications en plus des vôtres.
-1. **Comment prévoyez-vous de déployer votre kiosque ?** Si vous inscrivez un appareil dans la gestion des périphériques de gestion des périphériques, nous vous suggérons d’utiliser la gestion des périphériques de gestion des périphériques pour déployer votre kiosque. Si vous n’utilisez pas la gestion des données de gestion des données, le déploiement avec le package d’approvisionnement est disponible.  
+Lorsque vous planifiez votre kiosque, vous devez être en mesure de répondre aux questions suivantes. Voici quelques décisions à prendre en compte lors de la lecture de cette page et d’autres éléments à prendre en considération pour ces questions.
+1. **Qui utilisera votre kiosque, et quel [type de compte](hololens-identity.md) utilisera-t-il ?** Il s’agit d’une décision que vous avez probablement déjà faite et ne doit pas être ajustée pour les besoins de votre kiosque, mais elle affectera la façon dont la borne est affectée ultérieurement.
+1. **Avez-vous besoin de plusieurs bornes par utilisateur/groupe ou d’une borne non activée pour certains ?** Si c’est le cas, vous souhaiterez créer votre kiosque via XML. 
+1. **Combien d’applications seront dans votre kiosque ?** Si vous avez plus d’une application, vous avez besoin d’une borne multi-application. 
+1. **Quelles applications seront dans votre kiosque ?** Utilisez notre liste de AUMIDs ci-dessous pour ajouter des applications In-Box en plus de vos propres applications.
+1. **Comment envisagez-vous de déployer votre kiosque ?** Si vous inscrit un appareil dans MDM, nous vous suggérons d’utiliser MDM pour déployer votre kiosque. Si vous n’utilisez pas MDM, le déploiement avec le package de provisionnement est disponible.  
 
-### <a name="kiosk-mode-requirements"></a>Exigences en mode plein écran
+### <a name="kiosk-mode-requirements"></a>Conditions requises pour le mode plein écran
 
 Vous pouvez configurer n’importe quel appareil HoloLens 2 pour utiliser le mode plein écran.
 
 > [!IMPORTANT]
-> Le mode plein écran est disponible uniquement si l’appareil dispose de Windows Holographic for Business. Tous les appareils HoloLens 2 sont produits avec Windows Holographic for Business et il n’existe aucune autre édition. Tous les appareils HoloLens 2 peuvent exécuter le mode plein écran.
+> Le mode plein écran est disponible uniquement si l’appareil a Windows holographique for Business. Tous les appareils HoloLens 2 sont livrés avec Windows holographique for Business et il n’existe aucune autre édition. Tous les appareils HoloLens 2 sont en mesure d’exécuter le mode plein écran.
 >
-> Les appareils HoloLens (1ère génération) doivent être mis à niveau à la fois en termes de build de système d’exploitation et d’édition du système d’exploitation. Voici plus d’informations sur la mise à jour d’un HoloLens (1ère génération) vers [Windows Holographic for Business](hololens1-upgrade-enterprise.md) Edition. Pour mettre à jour un appareil HoloLens (1ère génération) afin d’utiliser le mode plein écran, vous devez d’abord vous assurer que l’appareil exécute Windows 10, version 1803 ou version ultérieure. Si vous avez utilisé l’outil de récupération d’appareil Windows pour récupérer votre appareil HoloLens (1ère génération) à sa version par défaut, ou si vous avez installé les mises à jour les plus récentes, votre appareil est prêt à être configuré.
+> Les appareils HoloLens (1er génération) doivent être mis à niveau en termes de version du système d’exploitation et de version du système d’exploitation. Voici plus d’informations sur la mise à jour d’un HoloLens (1ère génération) vers [Windows holographique for Business](hololens1-upgrade-enterprise.md) Edition. Pour mettre à jour un appareil HoloLens (1er génération) pour utiliser le mode plein écran, vous devez d’abord vous assurer que l’appareil exécute Windows 10, version 1803 ou une version ultérieure. Si vous avez utilisé l’outil de récupération des appareils Windows pour récupérer votre appareil HoloLens (1er génération) à sa version par défaut, ou si vous avez installé les mises à jour les plus récentes, votre appareil est prêt à être configuré.
 
 > [!IMPORTANT]  
-> Pour protéger les appareils qui s’exécutent en mode plein écran, envisagez d’ajouter des stratégies de gestion des appareils qui désactiver des fonctionnalités telles que la connectivité USB. En outre, vérifiez vos paramètres de sonnerie de mise à jour pour vous assurer que les mises à jour automatiques ne se produisent pas pendant les heures d’ouverture.
+> Pour aider à protéger les appareils qui s’exécutent en mode plein écran, pensez à ajouter des stratégies de gestion des appareils qui désactivent les fonctionnalités telles que la connectivité USB. Vérifiez également les paramètres de l’anneau de mise à jour pour vous assurer que les mises à jour automatiques ne se produisent pas pendant les heures de bureau.
 
-### <a name="decide-between-a-single-app-kiosk-or-a-multi-app-kiosk"></a>Choisir entre une borne à application unique ou une borne multi-applications
+### <a name="decide-between-a-single-app-kiosk-or-a-multi-app-kiosk"></a>Choisir entre une borne à une seule application ou une borne à plusieurs applications
 
-Une borne à application unique démarre l’application spécifiée lorsque l’utilisateur se connecté à l’appareil. Le menu Démarrer est désactivé, tout comme Cortana. Un appareil HoloLens 2 ne répond pas au [mouvement de l’écran de](hololens2-basic-usage.md#start-gesture) démarrage. Un appareil HoloLens (1ère génération) ne répond pas au [mouvement](hololens1-basic-usage.md) d’bloom. Étant donné qu’une seule application peut s’exécuter, l’utilisateur ne peut pas placer d’autres applications.
+Une borne à une seule application démarre l’application spécifiée lorsque l’utilisateur se connecte à l’appareil. Le menu Démarrer est désactivé, comme c’est le cas de Cortana. Un appareil HoloLens 2 ne répond pas au geste de [démarrage](hololens2-basic-usage.md#start-gesture) . Un appareil HoloLens (1er génération) ne répond pas au geste de [floraison](hololens1-basic-usage.md) . Étant donné qu’une seule application peut s’exécuter, l’utilisateur ne peut pas placer d’autres applications.
 
-Une borne multi-applications affiche le menu Démarrer lorsque l’utilisateur se connecté à l’appareil. La configuration plein écran détermine les applications disponibles dans le menu Démarrer. Vous pouvez utiliser une borne multi-applications pour offrir une expérience facile à comprendre aux utilisateurs en leur présentant uniquement les éléments qu’ils doivent utiliser et en supprimant les éléments qu’ils n’ont pas besoin d’utiliser.
+Une borne multi-application affiche le menu démarrer lorsque l’utilisateur se connecte à l’appareil. La configuration plein écran détermine les applications qui sont disponibles dans le menu Démarrer. Vous pouvez utiliser une borne multi-application pour offrir une expérience facile à comprendre aux utilisateurs en leur fournissant uniquement les éléments qu’ils doivent utiliser et en supprimant les éléments qu’ils n’ont pas besoin d’utiliser.
 
-Le tableau suivant répertorie les fonctionnalités des différents modes plein affichage.
+Le tableau suivant répertorie les fonctionnalités des fonctionnalités dans les différents modes de kiosque.
 
-| &nbsp; |Menu Démarrer |Menu Actions rapides |Caméra et vidéo |Miracast |Cortana |Commandes vocales prédéfinies |
+| &nbsp; |Menu Démarrer |Menu actions rapides |Caméra et vidéo |Miracast |Cortana |Commandes vocales intégrées |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|Kiosque à application unique |Désactivée |Désactivée   |Désactivée |Désactivée   |Désactivée |Activé <sup> 1</sup> |
-|Borne à plusieurs applications |Activé |Activé <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2, 3</sup>  |Activé <sup> 1</sup> |
+|Borne pour une seule application |Désactivé |Désactivé   |Désactivé |Désactivé   |Désactivé |Activé<sup>1</sup> |
+|Kiosque multi-application |activé |Activé<sup>2</sup> |Disponible<sup>2</sup> |Disponible<sup>2</sup> |<sup>2, 3</sup> disponibles  |Activé<sup>1</sup> |
 
-> <sup>1 </sup> Les commandes vocales liées aux fonctionnalités désactivées ne fonctionnent pas.  
-> <sup>2 Pour plus d’informations sur la configuration de ces fonctionnalités, voir </sup> [Sélectionner des applications kiosque.](#plan-kiosk-apps)  
-> <sup>3 Même si Cortana est désactivée, les commandes </sup> vocales intégrées sont activées.
+> <sup>1</sup> les commandes vocales relatives aux fonctionnalités désactivées ne fonctionnent pas.  
+> <sup>2</sup> pour plus d’informations sur la configuration de ces fonctionnalités, consultez [Sélectionner des applications Kiosk](#plan-kiosk-apps).  
+> <sup>3</sup> même si Cortana est désactivée, les commandes vocales intégrées sont activées.
 
-Le tableau suivant répertorie les fonctionnalités de prise en charge des utilisateurs des différents modes plein affichage.
+Le tableau suivant répertorie les fonctionnalités de prise en charge des utilisateurs des différents modes kiosque.
 
 | &nbsp; |Types d’utilisateurs pris en charge | Connexion automatique | Plusieurs niveaux d’accès |
 | --- | --- | --- | --- |
-|Kiosque à application unique |Compte de service géré (MSA) dans Azure Active Directory (Azure AD) ou un compte local |Oui |Non |
-|Borne à plusieurs applications |Compte Azure AD |Non |Oui |
+|Borne pour une seule application |Compte de service administré (MSA) dans Azure Active Directory (Azure AD) ou compte local |Oui |Non |
+|Kiosque multi-application |Compte Azure AD |Non |Oui |
 
 Pour obtenir des exemples d’utilisation de ces fonctionnalités, consultez le tableau suivant.
 
-|Utilisez une borne à application unique pour : |Utilisez une borne multi-applications pour : |
+|Utilisez une borne à une seule application pour : |Utilisez une borne multi-application pour : |
 | --- | --- |
-|Appareil qui exécute uniquement un guide Dynamics 365 pour les nouveaux employés. |Un appareil qui exécute les guides et l’assistance à distance pour une gamme d’employés. |
-|Appareil qui exécute uniquement une application personnalisée. |Un appareil qui fonctionne comme une borne pour la plupart des utilisateurs (exécutant uniquement une application personnalisée), mais fonctionne comme un appareil standard pour un groupe spécifique d’utilisateurs. |
+|Appareil qui exécute uniquement un guide Dynamics 365 pour les nouveaux employés. |Un appareil qui exécute les deux guides et l’assistance à distance pour une gamme d’employés. |
+|Périphérique qui exécute uniquement une application personnalisée. |Appareil qui fonctionne comme une borne pour la plupart des utilisateurs (exécutant uniquement une application personnalisée), mais fonctionne comme un appareil standard pour un groupe spécifique d’utilisateurs. |
 
-### <a name="plan-kiosk-apps"></a>Planifier des applications kiosque
+### <a name="plan-kiosk-apps"></a>Planifier des applications plein écran
 
-Pour obtenir des informations générales sur la façon de choisir des applications kiosque, voir Recommandations en matière de choix d’une application pour un accès [affecté (mode plein écran).](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app)
+Pour obtenir des informations générales sur la façon de choisir des applications Kiosk, consultez [instructions pour choisir une application pour l’accès affecté (mode plein écran)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app).
 
-Si vous utilisez Windows Device Portal pour configurer une borne à application unique, vous sélectionnez l’application pendant le processus d’installation.  
+Si vous utilisez le portail des appareils Windows pour configurer une borne à une seule application, vous sélectionnez l’application pendant le processus d’installation.  
 
-Si vous utilisez un système de gestion des périphériques mobiles (MDM) ou un package d’approvisionnement pour configurer le mode plein écran, vous utilisez le fournisseur de services de [configuration AssignedAccess (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) pour spécifier des applications. Le CSP utilise les ID de modèle [utilisateur d’application (AUMID)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) pour identifier les applications. Le tableau suivant répertorie les AUMID de certaines applications pré-box que vous pouvez utiliser dans une borne multi-applications.
+Si vous utilisez un système de gestion des appareils mobiles (MDM) ou un package d’approvisionnement pour configurer le mode plein écran, vous utilisez le [fournisseur de services de configuration (CSP) AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) pour spécifier les applications. Le CSP utilise des [ID de modèle d’utilisateur d’application (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) pour identifier les applications. Le tableau suivant répertorie les AUMIDs de certaines applications intégrées que vous pouvez utiliser dans une borne multi-application.
 
 > [!IMPORTANT]
-> Le mode plein écran détermine les applications disponibles lorsqu’un utilisateur se connecté à l’appareil. Toutefois, le mode plein écran n’est pas une méthode de sécurité. Elle n’empêche pas une application « autorisée » d’ouvrir une autre application non autorisée. Étant donné que nous ne limitons pas ce comportement, les applications peuvent toujours être lancées à partir de Edge, de l’Explorateur de fichiers et des applications du Microsoft Store. S’il existe des applications spécifiques que vous ne souhaitez pas lancer à partir d’un kiosque, utilisez le [CSP Windows Defender Application Control (WDAC)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) pour créer des stratégies appropriées. 
+> Le mode plein écran détermine les applications qui sont disponibles lorsqu’un utilisateur se connecte à l’appareil. Toutefois, le mode plein écran n’est pas une méthode de sécurité. Elle n’empêche pas une application « autorisée » d’ouvrir une autre application qui n’est pas autorisée. Étant donné que nous n’avons pas limité ce comportement, les applications peuvent toujours être lancées à partir de Edge, de l’Explorateur de fichiers et des applications Microsoft Store. S’il existe des applications spécifiques que vous ne souhaitez pas lancer à partir d’une borne, utilisez [le CSP Windows Defender application Control (WDac)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) pour créer les stratégies appropriées. 
 > 
-> En outre, la maison virtuelle ne peut pas être définie en tant qu’application kiosque.
+> En outre, la page d’hébergement de la réalité mixte ne peut pas être définie en tant qu’application Kiosk.
 
 <a id="aumids"></a>
 
 |Nom de l’application |AUMID |
 | --- | --- |
-|Visionneuse3D |Microsoft.Microsoft3DViewer\_8wekyb3d8bbwe\! Microsoft.Microsoft3DViewer |
-|Calendrier |microsoft.windowscommunicationsapps\_8wekyb3d8bbwe\!microsoft.windowslive.calendar |
-|Caméra <sup> 1, 2</sup> |HoloCamera\_cw5n1h2txyewy\! HoloCamera |
-|Cortana <sup> 3</sup> |Microsoft.549981C3F5F10\_8wekyb3d8bbwe\! Application |
-|Sélécateur d’appareil sur HoloLens (1ère génération) |HoloDevicesFlow\_cw5n1h2txyewy\! HoloDevicesFlow |
-|Séléateur d’appareil sur HoloLens 2 |Microsoft.Windows.DevicesFlowHost\_cw5n1h2txyewy\! Microsoft.Windows.DevicesFlowHost |
-|Guides Dynamics 365 |Microsoft.Dynamics365.Guides\_8wekyb3d8bbwe\! MicrosoftGuides |
-|Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist\_8wekyb3d8bbwe\! Microsoft.RemoteAssist |
-|Hub de &nbsp; commentaires |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\! Application |
+|Visionneuse 3D |Microsoft. Microsoft3DViewer \_ 8wekyb3d8bbwe \! Microsoft. Microsoft3DViewer |
+|Calendrier |Microsoft. windowscommunicationsapps \_ 8wekyb3d8bbwe \! Microsoft. les. Calendar |
+|Appareil photo<sup>1, 2</sup> |HoloCamera \_ cw5n1h2txyewy \! HoloCamera |
+|Cortana<sup>3</sup> |Application 8wekyb3d8bbwe Microsoft. 549981C3F5F10 \_ \! |
+|Sélecteur d’appareils sur HoloLens (1ère génération) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
+|Sélecteur d’appareils sur HoloLens 2 |Microsoft. Windows. DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft. Windows. DevicesFlowHost |
+|Dynamics 365 Guides |Microsoft. Dynamics365. repères \_ 8wekyb3d8bbwe \! MicrosoftGuides |
+|Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft. RemoteAssist |
+|Hub de commentaires &nbsp; |Application 8wekyb3d8bbwe Microsoft. WindowsFeedbackHub \_ \! |
 |Explorateur de fichiers |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
-|Microsoft ro |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe ! MSEDGE |
-|MicrosoftStore |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
-|Miracast <sup> 4</sup> |&nbsp; |
-|Films et TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\! Microsoft.ZuneVideo |
-|OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\! Application |
-|Photos |Microsoft.Windows.Photos\_8wekyb3d8bbwe\! Application |
-|Paramètres |HolographicSystemSettings\_cw5n1h2txyewy\! Application |
-|Conseils |Microsoft.HoloLensTips\_8wekyb3d8bbwe\! HoloLensTips |
+|Messagerie |microsoft.windowscommunicationsapps_8wekyb3d8bbwe ! Microsoft. les. mail |
+|Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe ! MSEDGE |
+|Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
+|Miracast<sup>4</sup> |&nbsp; |
+|Films et TV |Microsoft. ZuneVideo \_ 8wekyb3d8bbwe \! Microsoft. ZuneVideo |
+|OneDrive |application 8wekyb3d8bbwe Microsoft. microsoftskydrive \_ \! |
+|Photo |Application 8wekyb3d8bbwe Microsoft. Windows. photos \_ \! |
+|Paramètres |\_Application Cw5n1h2txyewy \! HolographicSystemSettings |
+|Conseils |HoloLensTips 8wekyb3d8bbwe Microsoft. HoloLensTips \_ \! |
 
-> <sup>1 Pour activer la capture photo ou vidéo, vous devez activer l’application </sup> Caméra en tant qu’application kiosque.  
-> <sup>2 </sup> Lorsque vous activez l’application Caméra, ez compte des conditions suivantes :
-> - Le menu Actions rapides inclut les boutons Photo et Vidéo.  
-> - Vous devez également activer une application (par exemple, Photos, Courrier ou OneDrive) qui peut interagir avec ou récupérer des images.  
+> <sup>1</sup> pour activer la capture de photos ou de vidéos, vous devez activer l’application d’appareil photo en tant qu’application Kiosk.  
+> <sup>2</sup> lorsque vous activez l’application d’appareil photo, tenez compte des conditions suivantes :
+> - Le menu actions rapides comprend les boutons photo et vidéo.  
+> - Vous devez également activer une application (par exemple, photos, courrier ou OneDrive) qui peut interagir avec les images ou les récupérer.  
 >  
-> <sup>3 Même si vous n’activez pas Cortana en tant qu’application kiosque, les commandes </sup> vocales intégrées sont activées. Toutefois, les commandes liées aux fonctionnalités désactivées n’ont aucun effet.  
-> <sup>4 </sup> Vous ne pouvez pas activer Miracast directement. Pour activer Miracast en tant qu’application kiosque, activez l’application Appareil photo et l’application S picker d’appareil.
+> <sup>3</sup> même si vous n’activez pas Cortana comme application Kiosk, les commandes vocales intégrées sont activées. Toutefois, les commandes associées aux fonctionnalités désactivées n’ont aucun effet.  
+> <sup>4</sup> vous ne pouvez pas activer Miracast directement. Pour activer Miracast en tant qu’application Kiosk, activez l’application Camera et l’application Device Picker.
 
-### <a name="plan-kiosk-profiles-for-users-or-groups"></a>Planifier les profils kiosque pour les utilisateurs ou les groupes
+### <a name="plan-kiosk-profiles-for-users-or-groups"></a>Planifier des profils kiosque pour des utilisateurs ou des groupes
 
-Lors de la création du fichier xml ou de l’utilisation de l’interface utilisateur d’Intune pour configurer un kiosque, vous devez tenir compte des utilisateurs du kiosque. Une configuration Kiosk peut être limitée à un compte individuel ou à des groupes Azure AD. 
+Lors de la création du fichier XML ou de l’utilisation de l’interface utilisateur d’Intune pour configurer une borne, vous devez prendre en compte la personne qui sera l’utilisateur de la borne. Une configuration de kiosque peut être limitée à un compte individuel ou à des groupes de Azure AD. 
 
-En règle générale, les kiosques sont activés pour un utilisateur ou un groupe d’utilisateurs. Toutefois, si vous envisagez d’écrire votre propre kiosque XML, vous pouvez envisager l’accès affecté global, dans lequel le kiosque est appliqué au niveau de l’appareil, quelle que soit l’identité. Si cela vous demande d’en savoir plus sur [les kiosques d’accès affectés globaux.](hololens-global-assigned-access-kiosk.md)
+En général, les bornes sont activées pour un utilisateur ou un groupe d’utilisateurs. Toutefois, si vous prévoyez d’écrire votre propre kiosque XML, vous souhaiterez peut-être envisager un accès global affecté, dans lequel la borne est appliquée au niveau de l’appareil, quelle que soit l’identité. Si vous [y êtes en savoir plus sur les bornes d’accès assignées à l’échelle mondiale.](hololens-global-assigned-access-kiosk.md)
 
-#### <a name="if-you-are-creating-an-xml-file"></a>Si vous créez un fichier XML :
--   Vous créez plusieurs profils Kiosk et vous les affectez à différents utilisateurs/groupes. Par exemple, un kiosque pour votre groupe Azure AD qui possède de nombreuses applications et un visiteur qui dispose d’une borne d’application multiple avec une application unique.
--   La configuration de votre kiosque sera appelée **ID** de profil et aura un GUID.
--   Vous affecterez ce profil dans la section configs en spécifiant le type d’utilisateur et en utilisant le même GUID pour **l’ID DefaultProfile**.
-- Un fichier XML peut être créé, mais toujours appliqué à un appareil via la gestion des périphériques de gestion des périphériques en créant un profil de configuration d’appareil OMA personnalisé et en l’appliquant au groupe d’appareils HoloLens à l’aide de la valeur d’URI : ./Device/Vendor/MSFT/AssignedAccess/Configuration
+#### <a name="if-you-are-creating-an-xml-file"></a>Si vous créez un fichier XML :
+-   Vous pouvez créer plusieurs profils kiosque et les affecter à des utilisateurs/groupes différents. Par exemple, une borne pour votre groupe de Azure AD avec de nombreuses applications et un visiteur qui a plusieurs bornes d’application avec une application unique.
+-   La configuration de votre kiosque sera appelée **ID de profil** et possédera un GUID.
+-   Vous allez attribuer ce profil dans la section configurations en spécifiant le type d’utilisateur et en utilisant le même GUID pour l' **ID DefaultProfile**.
+- Un fichier XML peut être créé mais toujours appliqué à un appareil via MDM en créant un profil de configuration d’appareil URI OMA personnalisé et en l’appliquant au groupe d’appareils HoloLens à l’aide de la valeur d’URI :./Device/Vendor/MSFT/AssignedAccess/Configuration
 
-#### <a name="if-you-are-creating-a-kiosk-in-intune"></a>Si vous créez un kiosque dans Intune.
--   Chaque appareil ne peut recevoir qu’un seul profil Kiosk, sinon il crée un conflit et ne reçoit aucune configuration Kiosk. 
-    -   Les autres types de profils et de stratégies, tels que les restrictions d’appareil qui ne sont pas liées au profil de configuration plein écran, ne sont pas en conflit avec le profil de configuration kiosque.
--   Le kiosque sera activé pour tous les utilisateurs qui font partie du type d’accès utilisateur, ce qui sera activé avec un utilisateur ou un groupe Azure AD. 
--   Une fois la configuration kiosk définie et le **type** de connexion utilisateur (utilisateurs qui peuvent se connecter au kiosque) et les applications sélectionnées, la configuration de l’appareil doit toujours être affectée à un groupe. Le ou les groupes affecté(s) déterminent les appareils qui reçoivent la configuration de l’appareil Kiosk, mais n’interagit pas si le kiosque est activé ou non. 
-    - Pour une discussion complète des effets de l’attribution de profils de configuration dans Intune, voir Attribuer des profils utilisateur et [d’appareil dans Microsoft Intune.](https://docs.microsoft.com/intune/configuration/device-profile-assign)
+#### <a name="if-you-are-creating-a-kiosk-in-intune"></a>Si vous créez une borne dans Intune.
+-   Chaque périphérique peut uniquement recevoir un seul profil Kiosk. sinon, il crée un conflit et ne reçoit aucune configuration de kiosque. 
+    -   D’autres types de profils et de stratégies, tels que les restrictions d’appareil qui ne sont pas associées au profil de configuration Kiosk, ne sont pas en conflit avec le profil de configuration Kiosk.
+-   La borne est activée pour tous les utilisateurs qui font partie du type d’ouverture de session de l’utilisateur, elle est définie avec un utilisateur ou un groupe de Azure AD. 
+-   Une fois la configuration de la kiosque définie et le **type d’ouverture de session** de l’utilisateur (les utilisateurs qui peuvent se connecter à la borne) et les applications sont sélectionnés, la configuration de l’appareil doit toujours être affectée à un groupe. Le ou les groupes affectés déterminent les appareils qui reçoivent la configuration de l’appareil Kiosk, mais n’interagissent pas avec si la borne est activée ou non. 
+    - Pour une présentation complète des effets de l’attribution de profils de configuration dans Intune, consultez [affecter des profils utilisateur et d’appareil dans Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
 ### <a name="select-a-deployment-method"></a>Sélectionner une méthode de déploiement
 
-Vous pouvez sélectionner l’une des méthodes suivantes pour déployer des configurations plein écran :
+Vous pouvez sélectionner l’une des méthodes suivantes pour déployer des configurations de kiosque :
 
-- [Microsoft Intune ou un autre service de gestion des périphériques mobiles (MDM)](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
+- [Microsoft Intune ou un autre service de gestion des appareils mobiles (MDM)](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
 
 - [Package d’approvisionnement](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
-- [WindowsDevicePortal](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
+- [Portail d’appareil Windows](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
 
    > [!NOTE]  
-   > Étant donné que cette méthode nécessite que le mode développeur soit activé sur l’appareil, nous vous recommandons de l’utiliser uniquement pour les démonstrations.
+   > Étant donné que cette méthode exige que le mode développeur soit activé sur l’appareil, nous vous recommandons de l’utiliser uniquement pour les démonstrations.
 
 Le tableau suivant répertorie les fonctionnalités et les avantages de chacune des méthodes de déploiement.
 
-| &nbsp; |Déployer à l’aide de Windows Device Portal |Déployer à l’aide d’un package d’approvisionnement |Déployer à l’aide de la gestion des données de gestion des données |
+| &nbsp; |Déployer à l’aide du portail d’appareils Windows |Déployer à l’aide d’un package d’approvisionnement |Déployer à l’aide de MDM |
 | --------------------------- | ------------- | -------------------- | ---- |
-|Déployer des kiosques à application unique   | Oui           | Oui                  | Oui  |
-|Déployer des kiosques multi-applications    | Non            | Oui                  | Oui  |
+|Déployer des kiosques à une seule application   | Oui           | Oui                  | Oui  |
+|Déployer des kiosques à plusieurs applications    | Non            | Oui                  | Oui  |
 |Déployer sur des appareils locaux uniquement | Oui           | Oui                  | Non   |
-|Déployer à l’aide du mode développeur |Requis       | Non requis            | Non requis   |
-|Déployer à l’aide d’Azure Active Directory (Azure AD)  | Non requis            | Non requis                   | Requis  |
+|Déployer à l’aide du mode développeur |Obligatoire       | Non requis            | Non requis   |
+|Déployer à l’aide de Azure Active Directory (Azure AD)  | Non requis            | Non requis                   | Obligatoire  |
 |Déployer automatiquement      | Non            | Non                   | Oui  |
-|Vitesse de déploiement            | Rapide       | Rapide                 | Lent |
-|Déployer à grande échelle | Non recommandé    | Nos recommandations        | Nos recommandations |
+|Vitesse du déploiement            | Rapide       | Rapides                 | Lentes |
+|Déployer à l’échelle | Non recommandé    | Recommandé        | Recommandé |
 
-## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>Utiliser Microsoft Intune ou un autre mdM pour configurer une borne à application unique ou multi-application
+## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>Utiliser Microsoft Intune ou d’autres MDM pour configurer une borne à une seule application ou à plusieurs applications
 
-Pour configurer le mode plein écran à l’aide de Microsoft Intune ou d’un autre système MDM, suivez ces étapes.
+Pour configurer le mode plein écran à l’aide d’Microsoft Intune ou d’un autre système MDM, procédez comme suit.
 
-1. [Préparez-vous à inscrire les appareils.](#mdmenroll)
-1. [Créez un profil de configuration kiosque.](#mdmprofile)
-1. Configurez le kiosque.
-   - [Configurez les paramètres d’une borne à application unique.](#mdmconfigsingle)
-   - [Configurez les paramètres d’une borne multi-applications.](#mdmconfigmulti)
-1. [Affectez le profil de configuration kiosque à un groupe.](#mdmassign)
+1. [Préparez l’inscription des appareils](#mdmenroll).
+1. [Créez un profil de configuration de kiosque](#mdmprofile).
+1. Configurez l’kiosque.
+   - [Configurez les paramètres d’une borne pour une seule application](#mdmconfigsingle).
+   - [Configurez les paramètres d’une borne multi-application](#mdmconfigmulti).
+1. [Affectez le profil de configuration Kiosk à un groupe](#mdmassign).
 1. Déployez les appareils.
-   - [Déployez une borne à application unique.](#mdmsingledeploy)
-   - [Déployez une borne multi-applications.](#mdmmultideploy)
+   - [Déployez une borne pour une seule application](#mdmsingledeploy).
+   - [Déployez une borne multi-application](#mdmmultideploy).
 
-### <a name="mdm-step-1-ndash-prepare-to-enroll-the-devices"></a><a id="mdmenroll"></a>Gestion des périphériques mobiles, étape 1 &ndash; Préparer l’inscription des appareils
+### <a name="mdm-step-1-ndash-prepare-to-enroll-the-devices"></a><a id="mdmenroll"></a>MDM, étape 1 &ndash; préparer l’inscription des appareils
 
-Vous pouvez configurer votre système de gestion des périphériques mobiles pour inscrire automatiquement les appareils HoloLens lorsque l’utilisateur se connecté pour la première fois, ou faire en sorte que les utilisateurs inscrivent les appareils manuellement. Les appareils doivent également être joints à votre domaine Azure AD et affectés aux groupes appropriés.
+Vous pouvez configurer votre système MDM pour inscrire automatiquement des appareils HoloLens lorsque l’utilisateur se connecte pour la première fois, ou demander aux utilisateurs d’inscrire des appareils manuellement. Les appareils doivent également être joints à votre domaine Azure AD et être affectés aux groupes appropriés.
 
-Pour plus d’informations sur l’inscription des appareils, voir Inscrire [HoloLens](hololens-enroll-mdm.md) dans la gestion des périphériques mobiles et les méthodes d’inscription [Intune pour les appareils Windows.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods)
+Pour plus d’informations sur l’inscription des appareils, consultez [inscrire HoloLens dans](hololens-enroll-mdm.md) les méthodes d’inscription MDM et [Intune pour les appareils Windows](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods).
 
-### <a name="mdm-step-2-ndash-create-a-kiosk-configuration-profile"></a><a id="mdmprofile"></a>MdM, étape 2 &ndash; Créer un profil de configuration plein écran
+### <a name="mdm-step-2-ndash-create-a-kiosk-configuration-profile"></a><a id="mdmprofile"></a>MDM, étape 2 &ndash; créer un profil de configuration plein écran
 
-1. Ouvrez [le portail Azure](https://portal.azure.com/) et connectez-vous à votre compte d’administrateur Intune.
-1. Select **Microsoft Intune**  >  **Device configuration - Profiles**Create  >  **profile**.
+1. Ouvrez le portail [Azure](https://portal.azure.com/) et connectez-vous à votre compte d’administrateur Intune.
+1. Sélectionnez **Microsoft Intune**  >  **configuration de l’appareil-profils**  >  **créer un profil**.
 1. Entrez un nom de profil.
-1. Sélectionnez ****  >  **Plateforme Windows 10 et ultérieures,** puis sélectionnez Restrictions d’appareil de **type**  > **profil.**
-1. Sélectionnez **Configurer**  >  **Kiosk,** puis l’une des sélections suivantes :
-   - Pour créer une borne à application unique, sélectionnez **Kiosque en mode**plein  >  **écran.**
-   - Pour créer une borne multi-applications, sélectionnez **Kiosk Mode**  >  **Multi-app Kiosk.**
-1. Pour commencer à configurer le kiosque, sélectionnez **Ajouter.**
+1. Sélectionnez **plateforme**  >  **Windows 10 et versions ultérieures**, puis sélectionnez **type de profil** restrictions de l'  > **appareil**.
+1. Sélectionnez **configurer**  >  une **borne**, puis sélectionnez l’une des options suivantes :
+   - Pour créer une borne pour une seule application, sélectionnez kiosque **en mode plein**  >  **écran**.
+   - Pour créer une borne multi-application, sélectionnez kiosque  >  **multi-application** en mode plein écran.
+1. Pour démarrer la configuration de la borne, sélectionnez **Ajouter**.
 
-Les étapes suivantes varient en fonction du type de kiosque que vous souhaitez. Pour plus d’informations, sélectionnez l’une des options suivantes :  
+Les étapes suivantes varient en fonction du type d’kiosque que vous souhaitez. Pour plus d’informations, sélectionnez l’une des options suivantes :  
 
-- [Kiosque à application unique](#mdmconfigsingle)
-- [Borne à plusieurs applications](#mdmconfigmulti)
+- [Borne pour une seule application](#mdmconfigsingle)
+- [Kiosque multi-application](#mdmconfigmulti)
 
-Pour plus d’informations sur la création d’un profil de configuration kiosque, voir les paramètres d’appareil Windows 10 et Windows Holographic for Business à exécuter en tant que borne dédiée à l’aide [d’Intune.](https://docs.microsoft.com/intune/configuration/kiosk-settings)
+Pour plus d’informations sur la création d’un profil de configuration plein écran, voir paramètres de l' [appareil Windows 10 et Windows holographique for Business pour s’exécuter en tant que kiosque dédié à l’aide d’Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
-### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>GESTION DES APPLICATIONS, étape 3 (application unique) Configurer les paramètres d’une borne &ndash;  à application unique
+### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>MDM, étape 3 (application unique) &ndash;  configurer les paramètres pour une borne d’application unique
 
-Cette section récapitule les paramètres dont une borne à application unique a besoin. Pour plus d’informations, voir les articles suivants :
+Cette section résume les paramètres requis par une borne d’application unique. Pour plus d’informations, consultez les articles suivants :
 
-- Pour plus d’informations sur la configuration d’un profil de configuration kiosque dans Intune, voir Comment configurer le mode plein écran à l’aide [de Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
-- Pour plus d’informations sur les paramètres disponibles pour les kiosques à application unique dans Intune, voir Kiosques d’application [en](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks) plein écran
-- Si vous souhaitez en savoir plus sur les autres services de GPM, veuillez consulter la documentation de votre fournisseur. Si vous devez utiliser une configuration XML personnalisée pour configurer une borne dans votre service MDM, créez un fichier XML qui définit la [configuration kiosque.](#ppkioskconfig)
+- Pour plus d’informations sur la configuration d’un profil de configuration Kiosk dans Intune, consultez [Comment configurer le mode plein écran à l’aide de Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- Pour plus d’informations sur les paramètres disponibles pour les kiosques à une seule application dans Intune, consultez [kiosques d’applications en plein écran uniques](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
+- Pour les autres services MDM, consultez la documentation de votre fournisseur pour obtenir des instructions. Si vous devez utiliser une configuration XML personnalisée pour configurer une borne dans votre service MDM, [créez un fichier XML qui définit la configuration de la borne](#ppkioskconfig).
 
-1. Sélectionnez Compte d’utilisateur de **type**d’utilisateur local, puis entrez le nom d’utilisateur du compte local (appareil) ou du compte  >  **** Microsoft (MSA) qui peut se connecter à la borne.
+1. Sélectionnez **connexion utilisateur type**  >  **compte d’utilisateur local**, puis entrez le nom d’utilisateur du compte local (périphérique) ou du compte Microsoft (MSA) qui peut se connecter à la borne.
    > [!NOTE]  
-   > Les types **de compte d’utilisateur autologon** ne sont pas pris en charge sur Windows Holographic for Business.
-1. Sélectionnez **application du Store de types**  >  **d’applications,** puis sélectionnez une application dans la liste.
+   > Les types de comptes d’utilisateur **Ouverture de session automatique** ne sont pas pris en charge sur Windows Holographic for Business.
+1. Sélectionnez application du magasin de **types d’applications**  >  , puis sélectionnez une application dans la liste.
 
-L’étape suivante consiste [à affecter](#mdmassign) le profil à un groupe.
+L’étape suivante consiste à [attribuer](#mdmassign) le profil à un groupe.
 
-### <a name="mdm-step-3-multi-app-ndash-configure-the-settings-for-a-multi-app-kiosk"></a><a id="mdmconfigmulti"></a>GESTION DES APPLICATIONS, étape 3 (multi-application) Configurer les paramètres d’une borne &ndash; multi-applications
+### <a name="mdm-step-3-multi-app-ndash-configure-the-settings-for-a-multi-app-kiosk"></a><a id="mdmconfigmulti"></a>MDM, étape 3 (multi-application) &ndash; configurer les paramètres pour une borne multi-application
 
-Cette section récapitule les paramètres dont une borne multi-applications a besoin. Pour plus d’informations, consultez les articles suivants :
+Cette section résume les paramètres requis par une borne multi-application. Pour plus d’informations, voir les articles suivants :
 
-- Pour plus d’informations sur la configuration d’un profil de configuration kiosque dans Intune, voir Comment configurer le mode plein écran à l’aide [de Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
-- Pour plus d’informations sur les paramètres disponibles pour les kiosques multi-applications dans Intune, voir [kiosques multi-applications](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
-- Si vous souhaitez en savoir plus sur les autres services de GPM, veuillez consulter la documentation de votre fournisseur. Si vous avez besoin d’utiliser une configuration XML personnalisée pour configurer une borne dans votre service mdM, créez un fichier XML qui définit la [configuration kiosque.](#ppkioskconfig) Si vous utilisez un fichier XML, veillez à inclure la disposition [de l’démarrer.](#start-layout-for-hololens)  
-- Vous pouvez éventuellement utiliser une disposition de l’écran de démarrage personnalisée avec Intune ou d’autres services MDM. Pour plus d’informations, voir fichier de disposition de l’démarrer pour la gestion des données de gestion [des données (Intune, etc.).](#start-layout-file-for-mdm-intune-and-others)
+- Pour plus d’informations sur la configuration d’un profil de configuration Kiosk dans Intune, consultez [Comment configurer le mode plein écran à l’aide de Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- Pour plus d’informations sur les paramètres disponibles pour les bornes multi-applications dans Intune, consultez [bornes multi-applications](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks) .
+- Pour les autres services MDM, consultez la documentation de votre fournisseur pour obtenir des instructions. Si vous devez utiliser une configuration XML personnalisée pour configurer une borne dans votre service MDM, [créez un fichier XML qui définit la configuration de la borne](#ppkioskconfig). Si vous utilisez un fichier XML, veillez à inclure la [disposition de démarrage](#start-layout-for-hololens).  
+- Vous pouvez éventuellement utiliser une disposition de démarrage personnalisée avec Intune ou d’autres services MDM. Pour plus d’informations, consultez [fichier de disposition de démarrage pour MDM (Intune et autres)](#start-layout-file-for-mdm-intune-and-others).
 
-1. Sélectionnez **Cibler Windows 10 en mode S non**  >  ****.  
+1. Sélectionnez **target Windows 10 dans les appareils en mode S**  >  **non**.  
    >[!NOTE]  
-   > Le mode S n’est pas pris en charge sur Windows Holographic for Business.
-1. Sélectionnez **le type**d’utilisateur ou de groupe Azure AD ou le type de logo  >  **** **utilisateur**  >  **HoloLens**visiteur, puis ajoutez un ou plusieurs groupes d’utilisateurs ou comptes.  
+   > Le mode S n’est pas pris en charge sur Windows Holographic for Business.
+1. Sélectionnez **type d’ouverture de session de l’utilisateur**  >  **Azure ad utilisateur ou groupe** ou **utilisateur type d’ouverture de session**  >  **HoloLens visiteur**, puis ajoutez un ou plusieurs groupes d’utilisateurs ou comptes.  
 
-   Seuls les utilisateurs qui appartiennent aux groupes ou comptes que vous spécifiez dans le **type d’accès utilisateur** peuvent utiliser l’expérience kiosque.
+   Seuls les utilisateurs qui appartiennent aux groupes ou aux comptes que vous spécifiez dans **type d’ouverture de session** de l’utilisateur peuvent utiliser l’expérience plein écran.
 
-1. Sélectionnez une ou plusieurs applications à l’aide des options suivantes :
-   - Pour ajouter une application métier téléchargée, sélectionnez Ajouter une application du **Store,** puis l’application de votre choix.
-   - Pour ajouter une application en spécifiant son AUMID, sélectionnez Ajouter par **AUMID,** puis entrez l’AUMID de l’application. [Voir la liste des AUMID disponibles](#aumids)
+1. Sélectionnez une ou plusieurs applications à l’aide des options suivantes :
+   - Pour ajouter une application métier chargée, sélectionnez **Ajouter une application** du Windows Store, puis sélectionnez l’application souhaitée.
+   - Pour ajouter une application en spécifiant son identifiant AUMID, sélectionnez **Ajouter par identifiant aumid** , puis entrez le identifiant aumid de l’application. [Voir la liste des AUMIDs disponibles](#aumids)
 
-L’étape suivante consiste [à affecter](#mdmassign) le profil à un groupe.
+L’étape suivante consiste à [attribuer](#mdmassign) le profil à un groupe.
 
-### <a name="mdm-step-4-ndash-assign-the-kiosk-configuration-profile-to-a-group"></a><a id="mdmassign"></a>MdM, étape 4 &ndash; Affecter le profil de configuration kiosque à un groupe
+### <a name="mdm-step-4-ndash-assign-the-kiosk-configuration-profile-to-a-group"></a><a id="mdmassign"></a>MDM, étape 4 &ndash; attribuer le profil de configuration Kiosk à un groupe
 
-Utilisez la page **Affectations** du profil de configuration kiosque pour définir l’endroit où vous souhaitez que la configuration kiosque soit déployée. Dans le cas le plus simple, vous affectez le profil de configuration plein écran à un groupe qui contiendra l’appareil HoloLens lorsque l’appareil s’inscrit dans la gestion des périphériques de gestion des périphériques.
+Utilisez la page **affectations** du profil de configuration plein écran pour définir l’emplacement où vous souhaitez déployer la configuration de la kiosque. Dans le cas le plus simple, vous affectez le profil de configuration Kiosk à un groupe qui contiendra l’appareil HoloLens lorsque l’appareil s’inscrit dans MDM.
 
-### <a name="mdm-step-5-single-app-ndash-deploy-a-single-app-kiosk"></a><a id="mdmsingledeploy"></a>MDM, étape 5 (application unique) &ndash; Déployer une borne à application unique
+### <a name="mdm-step-5-single-app-ndash-deploy-a-single-app-kiosk"></a><a id="mdmsingledeploy"></a>MDM, étape 5 (application unique) &ndash; déployer une borne à une seule application
 
-Lorsque vous utilisez un système MDM, vous pouvez inscrire l’appareil dans la gestion des périphériques de gestion des périphériques en cours de la première utilisation. Une fois L’OOBE terminé, il est facile de se connecté à l’appareil.
+Lorsque vous utilisez un système MDM, vous pouvez inscrire l’appareil dans MDM pendant l’OOBE. Une fois l’exécution d’OOBE terminée, il est facile de se connecter à l’appareil.
 
-Durant la OOBE, suivez les étapes suivantes :
+Pendant l’OOBE, procédez comme suit :
 
-1. Connectez-vous à l’aide du compte que vous avez spécifié dans le profil de configuration plein écran.
-1. Inscrivez l’appareil. Assurez-vous que l’appareil est ajouté au groupe à qui le profil de configuration kiosque est affecté.
-1. Attendez la fin de la OOBE, le téléchargement et l’installation de l’application du Store, ainsi que l’application des stratégies. Redémarrez ensuite l’appareil.
+1. Connectez-vous à l’aide du compte que vous avez spécifié dans le profil de configuration de kiosque.
+1. Inscrivez le périphérique. Assurez-vous que l’appareil est ajouté au groupe auquel le profil de configuration plein écran est affecté.
+1. Attendez la fin de l’exécution d’OOBE, pour le téléchargement et l’installation de l’application Windows Store et pour l’application des stratégies. Ensuite, redémarrez l’appareil.
 
-La prochaine fois que vous vous connectez à l’appareil, l’application kiosque doit démarrer automatiquement.
+La prochaine fois que vous vous connectez à l’appareil, l’application Kiosk doit démarrer automatiquement.
 
-Si vous ne voyez pas la configuration de votre kiosque à ce stade, [vérifiez l’état de l’affectation.](https://docs.microsoft.com/intune/configuration/device-profile-monitor)
+Si vous ne voyez pas la configuration de votre kiosque à ce stade, [Vérifiez l’état de l’attribution](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
 
-### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM, étape 5 (multi-application) &ndash; Déployer une borne multi-application
+### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM, étape 5 (multi-application) &ndash; déployer une borne multi-application
 
-Lorsque vous utilisez un système DE GESTION DES PÉRIPHÉRIQUES, vous pouvez joindre l’appareil à votre client Azure AD et inscrire l’appareil dans la gestion des périphériques de gestion des périphériques multi-appareils pendant la période OOBE. Si nécessaire, fournissez les informations d’inscription aux utilisateurs afin qu’ils les disposent pendant le processus OOBE.
+Lorsque vous utilisez un système MDM, vous pouvez joindre l’appareil à votre locataire Azure AD et inscrire l’appareil dans MDM au cours de l’OOBE. Le cas échéant, fournissez les informations d’inscription aux utilisateurs afin qu’ils soient disponibles pendant le processus OOBE.
 
 > [!NOTE]  
-> Si vous avez affecté le profil de configuration kiosque à un groupe qui contient des utilisateurs, assurez-vous que l’un de ces comptes d’utilisateur est le premier compte à se connecter à l’appareil.
+> Si vous avez attribué le profil de configuration Kiosk à un groupe qui contient des utilisateurs, assurez-vous que l’un de ces comptes d’utilisateur est le premier compte à se connecter à l’appareil.
 
-Pendant la OOBE, suivez les étapes suivantes :
+Pendant l’OOBE, procédez comme suit :
 
-1. Connectez-vous à l’aide du compte qui appartient au groupe de **types d’inscription utilisateur.**
-1. Inscrivez l’appareil.
-1. Attendez le téléchargement et l’installation des applications faisant partie du profil de configuration plein écran. En outre, attendez que les stratégies soient appliquées.  
-1. Une fois L’OOBE terminé, vous pouvez installer des applications supplémentaires à partir du Microsoft Store ou par chargement de version secondaire. [Applications requises](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) pour le groupe que l’appareil appartient à installer automatiquement.
-1. Une fois l’installation terminé, redémarrez l’appareil.
+1. Connectez-vous à l’aide du compte qui appartient au groupe **type d’ouverture de session** de l’utilisateur.
+1. Inscrivez le périphérique.
+1. Attendez que toutes les applications qui font partie du profil de configuration Kiosk soient téléchargées et installées. En outre, attendez que les stratégies soient appliquées.  
+1. Une fois OOBE terminé, vous pouvez installer des applications supplémentaires à partir du Microsoft Store ou de chargement. [Applications requises](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) pour le groupe auquel appartient l’appareil pour qu’il s’installe automatiquement.
+1. Une fois l’installation terminée, redémarrez l’appareil.
 
-La prochaine fois que vous vous connectez à l’appareil à l’aide d’un compte qui appartient au type de logo **utilisateur,** l’application kiosque doit se lancer automatiquement.
+La prochaine fois que vous vous connectez à l’appareil à l’aide d’un compte qui appartient au **type d’ouverture de session** de l’utilisateur, l’application Kiosk doit être lancée automatiquement.
 
-Si vous ne voyez pas la configuration de votre kiosque à ce stade, [vérifiez l’état de l’affectation.](https://docs.microsoft.com/intune/configuration/device-profile-monitor)
+Si vous ne voyez pas la configuration de votre kiosque à ce stade, [Vérifiez l’état de l’attribution](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
 
-## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Utiliser un package d’approvisionnement pour configurer une borne à application unique ou multi-application
+## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Utiliser un package d’approvisionnement pour configurer une borne à application unique ou plusieurs applications
 
-Pour configurer le mode plein écran à l’aide d’un package d’approvisionnement, suivez ces étapes.
+Pour configurer le mode plein écran à l’aide d’un package d’approvisionnement, procédez comme suit.
 
-1. [Créez un fichier XML qui définit la configuration plein écran.](#ppkioskconfig), y compris une [disposition de l’écran de démarrage.](#start-layout-for-hololens)
+1. [Créez un fichier XML qui définit la configuration de la kiosque](#ppkioskconfig), y compris une [disposition de démarrage](#start-layout-for-hololens).
 2. [Ajoutez le fichier XML à un package d’approvisionnement.](#ppconfigadd)
 3. [Appliquez le package d’approvisionnement à HoloLens.](#ppapply)
 
-### <a name="provisioning-package-step-1-ndash-create-a-kiosk-configuration-xml-file"></a><a id="ppkioskconfig"></a>Package d’approvisionnement, étape 1 &ndash; Créer un fichier XML de configuration kiosque
+### <a name="provisioning-package-step-1-ndash-create-a-kiosk-configuration-xml-file"></a><a id="ppkioskconfig"></a>Package d’approvisionnement, étape 1 &ndash; créer un fichier XML de configuration de kiosque
 
-Suivez [les instructions générales pour créer un](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)fichier XML de configuration kiosque pour le bureau Windows, sauf pour les suivants :
+Suivez [les instructions générales pour créer un fichier XML de configuration de kiosque pour Windows Desktop](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file), à l’exception des éléments suivants :
 
-- N’incluez pas les applications Windows classiques (Win32). HoloLens ne prend pas en charge ces applications.
-- Utilisez le [XML de disposition de l’espace réservé](#start-layout-for-hololens) de démarrage pour HoloLens.
-- Facultatif : ajouter l’accès invité à la configuration plein écran
+- N’incluez pas d’applications Windows classiques (Win32). HoloLens ne prend pas en charge ces applications.
+- Utilisez le [XML de disposition de début de l’espace réservé](#start-layout-for-hololens) pour HoloLens.
+- Facultatif : ajouter un accès invité à la configuration de la borne
 
-#### <a name="optional-add-guest-access-to-the-kiosk-configuration"></a><a id="ppkioskguest"></a>Facultatif : ajouter l’accès invité à la configuration plein écran
+#### <a name="optional-add-guest-access-to-the-kiosk-configuration"></a><a id="ppkioskguest"></a>Facultatif : ajouter un accès invité à la configuration de la borne
 
-Dans la section [ **Configs** du fichier XML,](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs)vous pouvez configurer un groupe spécial nommé **Visiteur** pour autoriser les invités à utiliser le kiosque. Lorsque la borne est configurée pour prendre**** en charge le groupe spécial Visiteur, une option « Invité » est ajoutée à la page de signature. **** Le **compte Invité** ne nécessite pas de mot de passe et toutes les données associées au compte sont supprimées lorsque le compte se dése dédesse.
+Dans la [section **configurations** du fichier XML](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs), vous pouvez configurer un groupe spécial nommé **visiteur** pour autoriser les invités à utiliser la borne. Lorsque la borne est configurée pour prendre en charge le groupe spécial **visiteur** , une option «**invité**» est ajoutée à la page de connexion. Le compte **invité** ne nécessite pas de mot de passe et toutes les données associées au compte sont supprimées lorsque le compte se déconnecte.
 
-Pour activer le **compte Invité,** ajoutez l’extrait de code suivant à votre code XML de configuration plein écran :
+Pour activer le compte **invité** , ajoutez l’extrait de code suivant à votre fichier XML de configuration de kiosque :
 
 ```xml
 <Configs>
@@ -325,17 +325,17 @@ Pour activer le **compte Invité,** ajoutez l’extrait de code suivant à votre
 </Configs>  
 ```
 
-#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Disposition de l’espace réservé de démarrage pour HoloLens
+#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Disposition de démarrage de l’espace réservé pour HoloLens
 
-Si vous utilisez un [package d’approvisionnement](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) pour configurer une borne multi-applications, la procédure nécessite une disposition de l’démarrer. La personnalisation de la disposition de l’ordinateur de démarrage n’est pas prise en charge dans Windows Holographic for Business. Par conséquent, vous devez utiliser une disposition de l’espace réservé de l’espace réservé.
-
-> [!NOTE]  
-> Étant donné qu’une borne à application unique démarre l’application kiosque lorsqu’un utilisateur se ouvre, elle n’utilise pas de menu Démarrer et n’a pas besoin de disposition de l’démarrer.
+Si vous utilisez un [package d’approvisionnement](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) pour configurer une borne multi-application, la procédure requiert une disposition de démarrage. La personnalisation de la disposition de démarrage n’est pas prise en charge dans Windows holographique for Business. Par conséquent, vous devrez utiliser la disposition de démarrage d’un espace réservé.
 
 > [!NOTE]  
-> Si vous utilisez [la gestion des](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) applications multi-applications pour configurer une borne multi-applications, vous pouvez éventuellement utiliser une disposition de l’écran de démarrage. Pour plus d’informations, voir fichier de disposition de l’espace réservé pour la gestion des données de gestion des données [(Intune, etc.).](#start-layout-file-for-mdm-intune-and-others)
+> Étant donné qu’une borne à une seule application démarre l’application Kiosk quand un utilisateur se connecte, elle n’utilise pas de menu Démarrer et n’a pas besoin d’avoir une disposition de départ.
 
-Pour la disposition de l’démarrer, ajoutez la section **StartLayout** suivante au fichier XML d’approvisionnement kiosque :
+> [!NOTE]  
+> Si vous utilisez [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) pour configurer une borne à plusieurs applications, vous pouvez éventuellement utiliser une disposition de démarrage. Pour plus d’informations, consultez [espace réservé pour le fichier de disposition de démarrage pour MDM (Intune et autres)](#start-layout-file-for-mdm-intune-and-others).
+
+Pour la disposition Démarrer, ajoutez la section **StartLayout** suivante au fichier XML de provisionnement Kiosk :
 
 ```xml
 <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
@@ -357,12 +357,12 @@ Pour la disposition de l’démarrer, ajoutez la section **StartLayout** suivant
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ```
 
-#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>Fichier de disposition de l’espace réservé à l’espace réservé pour la gestion des données de gestion des données (Intune, etc.)
+#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>Fichier de disposition de début d’espace réservé pour MDM (Intune et autres)
 
-Enregistrez l’exemple suivant en tant que fichier XML. Vous pouvez utiliser ce fichier lorsque vous configurez la borne multi-applications dans Microsoft Intune (ou dans un autre service MDM qui fournit un profil kiosque).
+Enregistrez l’exemple suivant sous la forme d’un fichier XML. Vous pouvez utiliser ce fichier lorsque vous configurez le kiosque à plusieurs applications dans Microsoft Intune (ou dans un autre service MDM qui fournit un profil Kiosk).
 
 > [!NOTE]
-> Si vous devez utiliser un paramètre personnalisé et une configuration XML complète pour configurer une borne dans votre service MDM, utilisez les instructions de disposition de l’écran de démarrage pour un [package d’approvisionnement.](#start-layout-for-hololens)
+> Si vous devez utiliser un paramètre personnalisé et une configuration XML complète pour configurer une borne dans votre service MDM, utilisez les [instructions de mise en page de démarrage pour un package d’approvisionnement](#start-layout-for-hololens).
 
 ```xml
 <LayoutModificationTemplate
@@ -380,69 +380,69 @@ Enregistrez l’exemple suivant en tant que fichier XML. Vous pouvez utiliser ce
  </LayoutModificationTemplate>
 ```
 
-### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. package, étape 2 Ajouter le fichier XML de configuration kiosque &ndash; à un package d’approvisionnement
+### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prouva. package, étape 2 : &ndash; Ajouter le fichier XML de configuration de kiosque à un package d’approvisionnement
 
-1. Ouvrez [le Concepteur de configuration Windows.](https://www.microsoft.com/store/apps/9nblggh4tx22)
-1. Sélectionnez **approvisionnement avancé,** entrez un nom pour votre projet, puis sélectionnez **Suivant**.
-1. Sélectionnez **Windows 10 Holographique,** puis sélectionnez **Suivant**.
-1. Sélectionnez **Terminer.** L’espace de travail de votre package s’ouvre.
-1. Sélectionnez **Paramètres d’runtime**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**.
-1. Dans le volet central, sélectionnez **Parcourir** pour rechercher et sélectionner le fichier XML de configuration kiosque que vous avez créé.
+1. Ouvrez le [Concepteur de configuration Windows](https://www.microsoft.com/store/apps/9nblggh4tx22).
+1. Sélectionnez **approvisionnement avancé**, entrez un nom pour votre projet, puis sélectionnez **suivant**.
+1. Sélectionnez **Windows 10 holographique**, puis **suivant**.
+1. Sélectionnez **Terminer**. L’espace de travail de votre package s’ouvre.
+1. Sélectionnez **paramètres d’exécution**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**.
+1. Dans le volet central, sélectionnez **Parcourir** pour rechercher et sélectionner le fichier XML de configuration de kiosque que vous avez créé.
 
-   ![Capture d’écran du champ MultiAppAssignedAccessSettings dans le Concepteur de configuration Windows](./images/multiappassignedaccesssettings.png)
+   ![Capture d’écran du champ MultiAppAssignedAccessSettings dans le concepteur de configuration Windows](./images/multiappassignedaccesssettings.png)
 
-1. **Facultatif**. (Si vous souhaitez appliquer le package d’approvisionnement après la configuration initiale de l’appareil et qu’un utilisateur administrateur est déjà disponible sur l’appareil kiosque, ignorez cette étape.) Sélectionnez **Utilisateurs des comptes de** &gt; **paramètres** d’runtime, &gt; **** puis créez un compte d’utilisateur. Fournissez un nom d’utilisateur et un mot de passe, puis sélectionnez **Administrateurs du groupe**  >  **d’utilisateurs.**  
+1. **Facultatif**. (Si vous souhaitez appliquer le package d’approvisionnement après l’installation initiale de l’appareil et qu’un utilisateur administrateur est déjà disponible sur l’appareil plein écran, ignorez cette étape.) Sélectionnez **paramètres d’exécution** &gt; **comptes** &gt; **utilisateurs**, puis créez un compte d’utilisateur. Fournissez un nom d’utilisateur et un mot de passe, puis sélectionnez  >  **administrateurs** UserGroup.  
   
-     À l’aide de ce compte, vous pouvez afficher l’état de mise en service et les journaux.  
-1. **Facultatif**. (Si vous avez déjà un compte non administrateur sur l’appareil kiosque, ignorez cette étape.) Sélectionnez **Utilisateurs des comptes de paramètres d’runtime,** &gt; **** &gt; **** puis créez un compte d’utilisateur local. Assurez-vous que le nom d’utilisateur est le même que pour le compte que vous spécifiez dans le XML de configuration. Sélectionnez **UserGroup**  >  **Standard Users**.
-1. Sélectionnez ****  >  **Enregistrer un fichier.**
-1. Sélectionnez **Exporter**  >  **le package d’approvisionnement,** puis **sélectionnez Administrateur**informatique  >  **propriétaire.** Cela définit la priorité de ce package d’approvisionnement plus élevée que les packages d’approvisionnement qui sont appliqués à cet appareil à partir d’autres sources.
+     À l’aide de ce compte, vous pouvez afficher l’État et les journaux d’approvisionnement.  
+1. **Facultatif**. (Si vous disposez déjà d’un compte non-administrateur sur l’appareil plein écran, ignorez cette étape.) Sélectionnez **paramètres d’exécution** &gt; **comptes** &gt; **utilisateurs**, puis créez un compte d’utilisateur local. Assurez-vous que le nom d’utilisateur est le même que pour le compte que vous spécifiez dans le fichier XML de configuration. Sélectionnez   >  **utilisateurs standard** d’UserGroup.
+1. Sélectionnez **fichier**  >  **Enregistrer**.
+1. Sélectionnez **Exporter**  >  le **package de provisionnement**, puis sélectionnez **propriétaire**  >  **administrateur informatique**. Cela permet de définir la priorité de ce package d’approvisionnement plus élevée que les packages d’approvisionnement appliqués à cet appareil à partir d’autres sources.
 1. Sélectionnez **Suivant**.
-1. Dans la page **Sécurité du package** d’approvisionnement, sélectionnez une option de sécurité.
+1. Sur la page **sécurité du package d’approvisionnement** , sélectionnez une option de sécurité.
    > [!IMPORTANT]  
-   > Si vous **sélectionnez Activer la signature de package,** vous devez également sélectionner un certificat valide à utiliser pour signer le package. Pour ce faire, **sélectionnez Parcourir** et sélectionnez le certificat que vous souhaitez utiliser pour signer le package.
+   > Si vous sélectionnez **activer la signature de package**, vous devez également sélectionner un certificat valide à utiliser pour la signature du package. Pour ce faire, sélectionnez **Parcourir** et sélectionnez le certificat que vous souhaitez utiliser pour signer le package.
    
    > [!CAUTION]  
-   > Ne sélectionnez pas **Activer le chiffrement de package.** Sur les appareils HoloLens, ce paramètre entraîne l’échec de l’approvisionnement.
+   > Ne sélectionnez pas **activer le chiffrement du package**. Sur les appareils HoloLens, ce paramètre entraîne l’échec de l’approvisionnement.
 1. Sélectionnez **Suivant**.
-1. Spécifiez l’emplacement de sortie où vous souhaitez que le package d’approvisionnement soit mis en place lorsqu’il est créé. Par défaut, le Concepteur de configuration Windows utilise le dossier de projet comme emplacement de sortie. Si vous souhaitez modifier l’emplacement de sortie, sélectionnez **Parcourir.** Lorsque vous avez terminé, sélectionnez **Suivant.**
-1. Sélectionnez **Build** pour commencer à créer le package. La génération du package d'approvisionnement est rapide. La page de build affiche les informations du projet et la barre de progression indique l’état de la build.
+1. Spécifiez l’emplacement de sortie où vous souhaitez que le package de configuration se trouve lors de sa génération. Par défaut, le concepteur de configuration Windows utilise le dossier du projet comme emplacement de sortie. Si vous souhaitez modifier l’emplacement de sortie, sélectionnez **Parcourir**. Quand vous avez terminé, cliquez sur **Suivant**.
+1. Sélectionnez **Build** pour commencer à générer le package. La génération du package d’approvisionnement est rapide. La page générer affiche les informations du projet et la barre de progression indique l’état de la Build.
 
-### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>Package d’approvisionnement, étape 3 &ndash; Appliquer le package d’approvisionnement à HoloLens
+### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>Package d’approvisionnement, étape 3 : &ndash; appliquer le package d’approvisionnement à HoloLens
 
-L’article « Configurer HoloLens à l’aide d’un package d’approvisionnement » fournit des instructions détaillées pour appliquer le package d’approvisionnement dans les circonstances suivantes :
+L’article « configurer HoloLens à l’aide d’un package d’approvisionnement » fournit des instructions détaillées pour appliquer le package d’approvisionnement dans les circonstances suivantes :
 
-- Vous pouvez [initialement appliquer un package d’approvisionnement à HoloLens lors de l’installation.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
+- Vous pouvez initialement [appliquer un package d’approvisionnement à HoloLens au cours de l’installation](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- Vous pouvez également [appliquer un package d’approvisionnement à HoloLens après l’installation.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup)
+- Vous pouvez également [appliquer un package d’approvisionnement à HoloLens après l’installation](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup).
 
-## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Utiliser Windows Device Portal pour configurer une borne à application unique
+## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Utiliser le portail de périphériques Windows pour configurer une borne pour une seule application
 
-Pour configurer le mode plein écran à l’aide de Windows Device Portal, suivez ces étapes.
+Pour configurer le mode plein écran à l’aide du portail des appareils Windows, procédez comme suit.
 
-1. [Configurer l’appareil HoloLens pour utiliser Windows Device Portal.](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal) Le Device Portal est un serveur Web situé sur l'appareil auquel vous pouvez vous connecter depuis un navigateur Web sur votre PC.
+1. [Configurez l’appareil HoloLens pour utiliser le portail d’appareils Windows](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). Le Device Portal est un serveur Web situé sur l'appareil auquel vous pouvez vous connecter depuis un navigateur Web sur votre PC.
 
     > [!CAUTION]
-    > Lorsque vous définissez HoloLens pour utiliser Device Portal, vous devez activer le mode développeur sur l’appareil. Le mode développeur sur un appareil qui dispose de Windows Holographic for Business vous permet de charger des applications de façon indépendant. Toutefois, ce paramètre crée un risque qu’un utilisateur puisse installer des applications qui n’ont pas été certifiées par le Microsoft Store. Les administrateurs peuvent bloquer la possibilité d’activer le mode développeur à l’aide du paramètre Deverrouillage **ApplicationManagement/AllowDeveloper** dans le programme [CSP De stratégie.](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) [En savoir plus sur le mode développeur.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    > Quand vous configurez HoloLens pour utiliser le portail de l’appareil, vous devez activer le mode développeur sur l’appareil. Le mode développeur sur un appareil doté de Windows holographique for Business vous permet de charger des applications de manière autonome. Toutefois, ce paramètre crée un risque qu’un utilisateur puisse installer des applications qui n’ont pas été certifiées par le Microsoft Store. Les administrateurs peuvent bloquer la possibilité d’activer le mode développeur à l’aide du paramètre de **déverrouillage ApplicationManagement/AllowDeveloper** dans le [fournisseur de services de chiffrement de stratégie](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider). [En savoir plus sur le mode développeur.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
-1. Sur un ordinateur, connectez-vous à HoloLens à l’aide du [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) ou [usb.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)
+1. Sur un ordinateur, connectez-vous au HoloLens à l’aide d’un [réseau Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) ou [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb).
 
-1. Effectuez l'une des opérations suivantes:
-   - Si vous vous connectez à Windows Device Portal pour la première fois, créez un [nom d’utilisateur et](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password) un mot de passe
-   - Entrez le nom d’utilisateur et le mot de passe que vous avez précédemment configurer.
+1. Effectuez l’une des opérations suivantes :
+   - Si vous vous connectez au portail des appareils Windows pour la première fois, [créez un nom d’utilisateur et un mot de passe](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
+   - Entrez le nom d’utilisateur et le mot de passe que vous avez configurés précédemment.
 
     > [!TIP]
     > Si une erreur de certificat s'affiche dans le navigateur, [procédez comme suit pour résoudre le problème](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#security_certificate).
 
-1. Dans Windows Device Portal, sélectionnez **Mode plein écran.**
+1. Dans le portail de périphériques Windows, sélectionnez **mode plein écran**.
 
-1. Sélectionnez **Activer le mode**plein écran, sélectionnez une application à exécuter au démarrage de l’appareil, puis sélectionnez **Enregistrer.**
+1. Sélectionnez **activer le mode plein écran**, sélectionnez une application à exécuter au démarrage de l’appareil, puis sélectionnez **Enregistrer**.
 
     ![Mode plein écran](images/kiosk.png)
-1. Redémarrez HoloLens. Si votre page Device Portal est toujours ouverte, vous pouvez sélectionner **Redémarrer** en haut de la page.
+1. Redémarrez HoloLens. Si la page du portail de votre appareil est toujours ouverte, vous pouvez sélectionner **redémarrer** en haut de la page.
 
 > [!NOTE]
-> Le mode plein écran peut être paramétrant via l’API REST de Device Portal en faisant une requête POST vers /api/holographic/kioskmode/settings avec un paramètre de chaîne de requête requis (« kioskModeEnabled » avec la valeur « true » ou « false ») et un paramètre facultatif (« startupApp » avec la valeur d’un nom de package). N’oubliez pas que Device Portal est destiné aux développeurs uniquement et ne doit pas être activé sur les appareils non-développeurs. L’API REST peut faire l’objet de changements dans les futures mises à jour/mises à jour.
+> Le mode plein écran peut être défini via l’API REST du portail de l’appareil en procédant à une publication sur/API/Holographic/KioskMode/Settings avec un paramètre de chaîne de requête obligatoire (« kioskModeEnabled » avec la valeur « true » ou « false ») et un paramètre facultatif (« startupApp » avec une valeur de nom de package). N’oubliez pas que le portail des appareils est destiné uniquement aux développeurs et qu’il ne doit pas être activé sur des appareils non-développeur. L’API REST est susceptible de changer dans les futures mises à jour/versions.
 
 ## <a name="more-information"></a>Plus d’informations
 
@@ -450,17 +450,17 @@ Pour configurer le mode plein écran à l’aide de Windows Device Portal, suive
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-### <a name="global-assigned-access--kiosk-mode"></a>Accès affecté global – Mode plein écran
-- Gestion réduite des identités pour Kiosk, en activant une nouvelle méthode Kiosk qui applique le mode plein écran au niveau du système.
+### <a name="global-assigned-access--kiosk-mode"></a>Accès global affecté – mode plein écran
+- Réduction de la gestion des identités pour les bornes, en activant la nouvelle méthode Kiosk qui applique le mode plein écran au niveau du système.
 
-Cette nouvelle fonctionnalité permet à un administrateur informatique de configurer un appareil HoloLens 2 pour le mode plein écran de plusieurs applications, qui s’applique au niveau du système, n’a aucune affinité avec une identité sur le système et s’applique à toutes les personnes qui se sont connectés à l’appareil. Pour plus [d’informations sur](hololens-global-assigned-access-kiosk.md) cette nouvelle fonctionnalité, voir la documentation de kiosque à accès affecté global HoloLens.
+Cette nouvelle fonctionnalité permet à un administrateur informatique de configurer un appareil HoloLens 2 pour le mode plein écran de plusieurs applications, applicable au niveau du système, n’a aucune affinité avec une identité sur le système et s’applique à tous les utilisateurs qui se connectent à l’appareil. Pour plus d’informations sur cette nouvelle fonctionnalité, consultez la documentation sur la [borne d’accès assignée globale HoloLens](hololens-global-assigned-access-kiosk.md) .
 
-### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Lancement automatique d’une application en mode plein écran multi-application 
-- Expérience axée sur le lancement automatique d’application, ce qui augmente davantage l’interface utilisateur et les sélections d’applications choisies pour les expériences en mode plein écran.
+### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Lancement automatique d’une application en mode plein écran à plusieurs applications 
+- Expérience ciblée avec le lancement automatique d’applications, ce qui améliore davantage l’interface utilisateur et les sélections d’applications choisies pour les expériences en mode plein écran.
 
-S’applique uniquement au mode plein écran de plusieurs applications et une seule application peut être désignée pour le lancement automatique à l’aide de l’attribut en surbrillation ci-dessous dans la configuration Accès affecté. 
+S’applique uniquement au mode plein écran à plusieurs applications et seule une application peut être désignée pour être lancée automatiquement à l’aide de l’attribut en surbrillance ci-dessous dans la configuration d’accès affectée. 
 
-L’application est lancée automatiquement lorsque l’utilisateur se ouvre. 
+L’application est automatiquement lancée lorsque l’utilisateur se connecte. 
 
 ```xml
 <AllowedApps>                     
@@ -470,47 +470,47 @@ L’application est lancée automatiquement lorsque l’utilisateur se ouvre.
 
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Modifications du comportement du mode plein écran pour la gestion des défaillances
-- Mode plein écran plus sécurisé en éliminant les applications disponibles en cas de défaillance du mode plein écran. 
+- Mode plein écran sécurisé en éliminant les applications disponibles en cas de défaillance du mode plein écran. 
 
-Précédemment, lors de la rencontre d’échecs dans l’application du mode plein écran, HoloLens a utilisé pour afficher toutes les applications dans le menu Démarrer. Désormais, dans Windows Holographique version 20H2 en cas d’échec, aucune application ne s’affiche dans le menu Démarrer comme ci-dessous : 
+Précédemment, en cas d’échec lors de l’application du mode plein écran, HoloLens était utilisé pour afficher toutes les applications dans le menu Démarrer. Désormais, dans Windows holographique version 20H2 en cas de défaillance, aucune application ne sera affichée dans le menu Démarrer comme indiqué ci-dessous : 
 
-![Image de l’apparence du mode plein écran en cas d’échec.](images/hololens-kiosk-failure-behavior.png )
+![Image du mode plein écran à présent en cas d’échec.](images/hololens-kiosk-failure-behavior.png )
 
-### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>Mettre en cache l’appartenance au groupe Azure AD pour kiosk hors connexion
-- Activé l’utilisation des kiosques hors connexion avec les groupes Azure AD pendant 60 jours.
+### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>Appartenance au groupe de Azure AD de cache pour une borne en mode hors connexion
+- Activez les bornes hors connexion à utiliser avec les groupes de Azure AD pendant jusqu’à 60 jours.
 
-Cette stratégie contrôle le nombre de jours pendant combien de jours, le cache d’appartenance aux groupes Azure AD est autorisé à être utilisé pour les configurations d’accès affecté ciblant des groupes Azure AD pour l’utilisateur signé. Une fois que cette valeur de stratégie est définie sur une valeur supérieure à 0 uniquement, le cache n’est pas utilisé dans le cas contraire.  
+Cette stratégie détermine le nombre de jours pendant lesquels le cache d’appartenance au groupe Azure AD peut être utilisé pour les configurations d’accès affectées ciblant les groupes de Azure AD pour l’utilisateur connecté. Une fois que cette valeur de stratégie est définie sur une valeur supérieure à 0, alors le cache est utilisé dans le cas contraire.  
 
-Name: AADGroupMembershipCacheValidityInDays URI value: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+Nom : AADGroupMembershipCacheValidityInDays URI value :./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
-Min - 0 jour  
-Max - 60 jours 
+Min-0 jours  
+Max-60 jours 
 
-Étapes pour utiliser cette stratégie correctement : 
-1. Créez un profil de configuration d’appareil pour un kiosque ciblant des groupes Azure AD et affectez-le à des appareils HoloLens. 
-1. Créez une configuration d’appareil OMA URI personnalisée qui définit cette valeur de stratégie sur le nombre de jours souhaité (> 0) et affectez-la à des appareils HoloLens. 
-    1. La valeur de l’URI doit être entrée dans la zone de texte OMA-URI en tant que ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
-    1. La valeur peut être entre min /max autorisée.
-1. Inscrivez les appareils HoloLens et vérifiez que les deux configurations sont appliquées à l’appareil. 
-1. Laissez l’utilisateur Azure AD 1 se connecter lorsqu’Internet est disponible, une fois que l’utilisateur s’est connecté et que l’appartenance au groupe Azure AD a été confirmée, le cache est créé. 
-1. Désormais, l’utilisateur Azure AD 1 peut déconnecter HoloLens et l’utiliser en mode plein écran tant que la valeur de stratégie autorise X nombre de jours. 
-1. Les étapes 4 et 5 peuvent être répétées pour n’importe quel autre utilisateur Azure AD N. Ici, tout utilisateur Azure AD doit se connecter à l’appareil à l’aide d’Internet. Nous pouvons donc déterminer au moins une fois qu’ils sont membres du groupe Azure AD auquel la configuration Kiosk est ciblée. 
+Étapes pour utiliser cette stratégie correctement : 
+1. Créez un profil de configuration d’appareil pour le ciblage de bornes Azure AD des groupes et affectez-le à un ou plusieurs appareils HoloLens. 
+1. Créer une configuration d’appareil basée sur un URI OMA personnalisée qui définit cette valeur de stratégie sur le nombre de jours souhaité (> 0) et l’assigner au (x) appareil (s) HoloLens. 
+    1. La valeur de l’URI doit être entrée dans la zone de texte OMA-URI en tant que./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. La valeur peut être comprise entre min/maximum autorisé.
+1. Inscrire des appareils HoloLens et vérifier que les deux configurations sont appliquées à l’appareil. 
+1. Autoriser Azure AD utilisateur 1 à se connecter quand Internet est disponible, une fois que l’utilisateur se connecte et que Azure AD appartenance au groupe est confirmée avec succès, le cache est créé. 
+1. Désormais, Azure AD utilisateur 1 peut mettre HoloLens hors connexion et l’utiliser pour le mode plein écran tant que la valeur de la stratégie autorise un nombre de jours de X. 
+1. Les étapes 4 et 5 peuvent être répétées pour tout autre Azure AD l’utilisateur N. point clé ici : tout utilisateur Azure AD doit se connecter à l’appareil à l’aide d’Internet, de sorte qu’au moins une fois, nous pouvons déterminer qu’ils sont membres du groupe Azure AD auquel la configuration de kiosque est destinée. 
  
 > [!NOTE]
-> Jusqu’à ce que l’étape 4 soit effectuée pour un utilisateur Azure AD, le comportement d’échec mentionné dans les environnements « déconnectés » se produit. 
+> Tant que l’étape 4 n’est pas exécutée pour un Azure AD utilisateur rencontre un comportement d’échec mentionné dans les environnements « déconnectés ». 
 
 
-## <a name="xml-kiosk-code-samples-for-hololens"></a>Exemples de code kiosque XML pour HoloLens
+## <a name="xml-kiosk-code-samples-for-hololens"></a>Exemples de code Kiosk XML pour HoloLens
 
-### <a name="multiple-app-kiosk-mode-targeting-an-azure-ad-group"></a>Plusieurs applications en mode plein écran ciblant un groupe Azure AD. 
-Cette borne déploie un kiosque qui, pour les utilisateurs du groupe Azure AD, aura un kiosque activé qui inclut les 3 applications : Paramètres, Assistance à distance et Hub de commentaires. Pour modifier cet exemple afin qu’il soit utilisé immédiatement, veillez à modifier le GUID mis en évidence ci-dessous pour qu’il corresponde à votre propre groupe Azure AD. 
+### <a name="multiple-app-kiosk-mode-targeting-an-azure-ad-group"></a>Mode plein écran d’applications ciblant un groupe de Azure AD. 
+Ce kiosque déploie une borne qui est activée pour les utilisateurs du groupe Azure AD, avec un kiosque activé qui comprend les 3 applications : paramètres, assistance à distance et Hub de commentaires. Pour modifier cet exemple et l’utiliser immédiatement, veillez à modifier le GUID mis en surbrillance ci-dessous pour qu’il corresponde à un groupe de Azure AD de votre choix. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### <a name="multiple-app-kiosk-mode-targeting-azure-ad-account"></a>Mode plein écran de plusieurs applications ciblant un compte Azure AD.
-Cette borne déploie un kiosque pour un seul utilisateur, avec un kiosque activé qui inclut les 3 applications : Paramètres, Assistance à distance et Hub de commentaires. Pour modifier cet exemple afin qu’il soit utilisé immédiatement, veillez à modifier le compte mis en évidence ci-dessous pour qu’il corresponde à votre propre compte Azure AD. 
+### <a name="multiple-app-kiosk-mode-targeting-azure-ad-account"></a>Le mode plein écran à plusieurs applications ciblant Azure AD compte.
+Ce kiosque déploie une borne pour un seul utilisateur. une borne est activée et comprend les 3 applications : paramètres, assistance à distance et Hub de commentaires. Pour modifier cet exemple et l’utiliser immédiatement, veillez à modifier le compte mis en surbrillance ci-dessous pour qu’il corresponde à un compte Azure AD de votre choix. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

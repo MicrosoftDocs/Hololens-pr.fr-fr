@@ -1,6 +1,6 @@
 ---
-title: Faites-nous part de vos commentaires
-description: Créez des commentaires exploitables pour les développeurs HoloLens et Windows Mixed Reality en utilisant le hub de commentaires.
+title: Envoyer vos commentaires
+description: Créez des commentaires actionnables pour les développeurs HoloLens et Windows Mixed Reality à l’aide du Hub de commentaires.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -11,81 +11,81 @@ ms.custom:
 audience: ITPro
 ms.prod: hololens
 ms.topic: article
-keywords: Commentaires, bogue, problème, erreur, résolution des problèmes, aide
+keywords: Commentaires, bogue, problème, erreur, dépannage, aide
 manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
-ms.sourcegitcommit: e44f1f1ab708e5bd6c4c5b85ec449db2bc798be2
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "11237274"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308875"
 ---
-# Commentaires pour HoloLens
+# <a name="feedback-for-hololens"></a>Commentaires pour HoloLens
 
-Utilisez le hub de commentaires pour nous faire connaître les fonctionnalités qui vous plaisent, les fonctionnalités que vous pouvez utiliser sans cela et la façon dont vous pouvez améliorer l’aspect. L’équipe d’ingénierie utilise le même mécanisme en interne pour suivre et résoudre les bogues, alors veuillez utiliser le hub de commentaires pour signaler les bogues que vous rencontrez. Nous sommes à votre écoute.
+Utilisez le hub de commentaires pour nous indiquer les fonctionnalités que vous aimez, les fonctionnalités que vous pourriez faire sans, et la façon dont une solution pourrait être améliorée. L’équipe d’ingénierie utilise le même mécanisme en interne pour suivre et corriger les bogues. par conséquent, utilisez le hub de commentaires pour signaler les bogues que vous voyez. Nous sommes à l’écoute !
 
-Le hub de commentaires est un excellent moyen d’avertir l’équipe d’ingénierie des bogues et de s’assurer que les mises à jour ultérieures sont plus saines et plus cohérentes. Toutefois, le hub de commentaires ne fournit pas de réponse. Si vous avez besoin d’une aide immédiate, veuillez noter le résumé que vous avez fourni pour vos commentaires, puis suivi de la [prise en charge de HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -utilisez la fonctionnalité **partager** du Hub de commentaires pour partager un lien direct vers l’URL. Le hub de commentaires obtient un grand nombre de données quotidiennement: l’URL nous aide à identifier rapidement vos commentaires.
+Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingénierie des bogues et de s’assurer que les futures mises à jour seront plus saines et plus cohérentes en termes de bogues. Toutefois, le hub de commentaires ne fournit pas de réponse. Si vous avez besoin d’une aide immédiate, veuillez nous faire part de vos commentaires, notez le résumé que vous avez fourni pour vos commentaires, puis suivez la [prise en charge de HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -utilisez la fonctionnalité **partager** dans Feedback Hub pour partager un lien direct vers l’URL. Le hub de commentaires reçoit un grand nombre de données quotidiennement : l’URL nous aide à identifier vos commentaires rapidement.
 
 > [!NOTE]  
 >  
-> - Vérifiez que vous disposez de la version actuelle du Hub de commentaires. Pour cela, sélectionnez **Démarrer**  >  le**Microsoft Store**, puis sélectionnez les points de suspension (**...**). Ensuite, sélectionnez **téléchargements et mises à jour**pour  >  **obtenir les mises à jour**.  
+> - Assurez-vous que vous disposez de la version actuelle du Hub de commentaires. Pour ce faire, sélectionnez **Démarrer**  >  **Microsoft Store**, puis sélectionnez les points de suspension (**...**). Ensuite, sélectionnez **téléchargements et mises à jour**  >  **récupérer les mises à jour**.  
 >  
-> - Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous conseillons vivement de définir le télémétrie de votre appareil sur **facultatif**. Vous pouvez définir cette valeur au cours de l’utilisation de OOBE (out-of-Box) ou en utilisant l’application paramètres. Pour cela, dans les paramètres, sélectionnez ****  >  **paramètres**  >  ****  >  ****  >  **de**démarrage.
+> - Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous recommandons vivement de définir la télémétrie de votre appareil sur **facultatif**. Vous pouvez définir cette valeur pendant l’expérience OOBE (out-of-Box-Experience) ou à l’aide de l’application paramètres. Pour ce faire, à l’aide des paramètres, sélectionnez  >  **paramètres**  >  de démarrage **confidentialité**  >  de l'**application Diagnostics**  >  **sur**.
 
-## Utiliser le hub de commentaires
+## <a name="use-the-feedback-hub"></a>Utiliser le hub de commentaires
 
-1. Utilisez le geste de **début** pour ouvrir le menu **Démarrer** , puis sélectionnez **Hub de commentaires**. L’application s’ouvre dans votre environnement.
+1. Utilisez le geste **Démarrer** pour ouvrir le menu **Démarrer** , puis sélectionnez **Hub de commentaires**. L’application s’ouvre dans votre environnement.
 
-   ![Application de commentaires sur le menu Démarrer de HoloLens](./images/hololens2-feedbackhub-tile.png)
+   ![Application de commentaires sur le menu Démarrer HoloLens](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Si vous ne voyez pas **Hub de commentaires**, sélectionnez **toutes les applications** pour afficher la liste complète des applications sur l’appareil.
 
-1. Pour voir si quelqu’un d’autre a donné un retour similaire, entrez quelques mots clés sur le sujet dans la zone de recherche de **Commentaires** .
-1. Si vous trouvez un retour similaire, sélectionnez-le, ajoutez d’autres informations dans la zone **rédiger un commentaire** , puis sélectionnez **vote**.
-1. Si vous ne trouvez pas de commentaires similaires, sélectionnez **Ajouter un nouveau commentaire**.
+1. Pour voir si quelqu’un d’autre a donné un commentaire similaire, entrez quelques mots clés sur la rubrique dans la zone de recherche de **Commentaires** .
+1. Si vous trouvez des commentaires similaires, sélectionnez-les, ajoutez toutes les informations dont vous disposez dans la zone **écrire un commentaire** , puis sélectionnez **vote**.
+1. Si vous ne trouvez pas de commentaires similaires, sélectionnez **ajouter de nouveaux commentaires**.
 
-   ![Ajouter un nouveau commentaire](./images/hololens-feedback-1.png)
+   ![Ajouter un commentaire](./images/hololens-feedback-1.png)
 
-1. Dans **résumer votre avis**, entrez un bref résumé de vos commentaires. Ajoutez ensuite les détails dans la zone **expliquer plus en détail** . Plus vous fournissez de détails, par exemple pour reproduire ce problème et l’effet qu’il a, plus vous avez de commentaires. Lorsque vous avez terminé, cliquez sur **suivant**.
+1. Dans **résumer vos commentaires**, entrez un bref résumé de vos commentaires. Ajoutez ensuite les détails dans la zone **expliquer plus en détail** . Plus vous fournissez de détails, tels que la façon de reproduire ce problème et son impact, plus vos commentaires sont utiles. Quand vous avez terminé, cliquez sur **Suivant**.
 
-1. Sélectionnez une rubrique dans sélectionner **une catégorie**, puis sélectionnez une sous-catégorie dans **Sélectionner une**sous-catégorie. Le tableau suivant décrit les catégories disponibles dans la catégorie Windows holographique.
+1. Sélectionnez une rubrique dans **choisir une catégorie**, puis sélectionnez une sous-catégorie dans **Sélectionner une** sous-catégorie. Le tableau suivant décrit les catégories qui sont disponibles dans la catégorie Windows holographique.
 
    > [!NOTE]  
-   > **Clients commerciaux**: pour signaler un bogue lié à la gestion des périphériques mobiles, la mise en service ou tout autre aspect de la gestion des appareils, sélectionnez la catégorie **gestion d’entreprise** et la sous-catégorie de **périphérique** .
+   > **Clients commerciaux**: pour signaler un bogue lié à MDM, approvisionnement ou tout autre aspect de la gestion des périphériques, sélectionnez la catégorie **gestion** de l’entreprise et la sous-catégorie de l' **appareil** .
 
-   |Catégorie |Description |
+   |Category |Description |
    | --- | --- |
-   |Suivi oculaire |Commentaires sur le suivi visuel, la connexion par Iris ou le calibrage. |
-   |Fiabilité, stabilité et précision des hologrammes |Commentaires sur l’affichage des hologrammes dans l’espace. |
-   |Lancement, placement, ajustement et fermeture des applications |Commentaires sur le démarrage ou l’arrêt d’applications 2D ou 3D. |
+   |Eye-tracking |Commentaires sur le suivi oculaire, la connexion iris ou l’étalonnage. |
+   |Précision, stabilité et fiabilité des hologrammes |Commentaires sur l’apparence des hologrammes dans l’espace. |
+   |Lancement, placement, ajustement et sortie d’applications |Commentaires sur le démarrage ou l’arrêt des applications 2D ou 3D. |
    |Miracast |Commentaires sur Miracast. |
    |Espaces et persistance |Commentaires sur la façon dont HoloLens reconnaît les espaces et conserve les hologrammes dans l’espace. |
-   |Menu Démarrer et liste de toutes les applications |Commentaires sur le menu **Démarrer** et la liste toutes les applications. |
-   |Mappage de surface |Commentaires sur le mappage de surface. |
-   |Prise de photos et de vidéos |Commentaires sur les captures de réalité mixte. |
-   |Lecture d’hologramme vidéo |Commentaires sur la lecture d’un hologramme vidéo. |
-   |Tous les autres problèmes |Tout autre problème. |
+   |Liste menu Démarrer et toutes les applications |Commentaires sur le menu **Démarrer** et la liste de toutes les applications. |
+   |Placage de surface |Commentaires sur le mappage des surfaces. |
+   |Capture d’images et de vidéos |Commentaires sur les captures de réalité mixte. |
+   |Lecture d’hologramme vidéo |Commentaires sur la lecture d’hologramme vidéo. |
+   |Tous les autres problèmes |Tous les autres problèmes. |
 
-1. Vous pouvez être invité à rechercher des commentaires similaires. Si votre problème ressemble aux commentaires d’autres utilisateurs, sélectionnez ce commentaire. Dans le cas contraire, sélectionnez **Nouveau commentaire** , puis sélectionnez **suivant**.
+1. Vous pouvez être invité à rechercher des commentaires similaires. Si votre problème ressemble aux commentaires des autres utilisateurs, sélectionnez ces commentaires. Dans le cas contraire, sélectionnez **Nouveau commentaire** , puis sélectionnez **suivant**.
 
 1. Si vous y êtes invité, sélectionnez la meilleure description du problème.
 
-1. Joignez des données pertinentes à vos commentaires ou reproduisez le problème. Vous pouvez sélectionner l’une des options suivantes:
+1. Joignez toutes les données pertinentes à vos commentaires ou reproduisez le problème. Vous pouvez sélectionner les options suivantes :
 
-   - **Joindre une capture d’écran**. Sélectionnez cette option pour ajouter une capture d’écran illustrant la situation que vous décrivez.
-   - **Joindre un fichier**. Sélectionnez cette option pour joindre des fichiers de données. Si vous avez des fichiers pertinents pour votre problème ou si vous nous aidez à reproduire votre problème, joignez-les.
-   - **Recréez le problème**. Sélectionnez cette option si vous pouvez reproduire le problème vous-même. Après avoir sélectionné **recréer mon problème**, procédez comme suit:  
+   - **Joindre une capture d’écran**. Sélectionnez cette option pour joindre une capture d’écran qui illustre la situation que vous décrivez.
+   - **Joindre un fichier**. Sélectionnez cette option pour attacher les fichiers de données. Si vous avez des fichiers qui sont pertinents pour votre problème ou qui peuvent nous aider à reproduire votre problème, attachez-les.
+   - **Recréer mon problème**. Sélectionnez cette option si vous pouvez reproduire le problème vous-même. Après avoir sélectionné **recréer mon problème**, procédez comme suit :  
 
-     1. Sélectionnez **inclure les données** et assurez-vous que les types de données les plus appropriés apparaissent. Dans la plupart des cas, les sélections par défaut sont basées sur la catégorie et sous-catégorie que vous avez sélectionnées pour votre commentaire.  
+     1. Sélectionnez **inclure les données à propos** de et assurez-vous que les types de données les plus pertinents sont répertoriés. Dans la plupart des cas, les sélections par défaut sont basées sur la catégorie et la sous-catégorie que vous avez sélectionnées pour vos commentaires.  
      1. Sélectionnez **Démarrer l’enregistrement**.
 
-     1. Reproduire votre problème. Ne vous inquiétez pas si cela signifie que vous devez entrer une application immersive. Lorsque vous avez terminé, revenez à la page commentaires.
-     1. Cliquez sur **arrêter l’enregistrement**. Une fois l’enregistrement arrêté, vous pouvez voir les données jointes à vos commentaires pour l’équipe d’ingénierie.
+     1. Reproduisez votre problème. Ne vous inquiétez pas si cela signifie que vous devez entrer une application immersive. Lorsque vous avez terminé, vous revenez à la page de commentaires.
+     1. Sélectionnez **arrêter l’enregistrement**. Après l’arrêt de l’enregistrement, vous pouvez voir les données jointes à vos commentaires pour l’équipe d’ingénierie.
 
-1. Vérifiez que vous disposez d’une connexion Internet active pour pouvoir recevoir votre avis. Sélectionnez l’option de **soumission**, et c’est terminé.
+1. Assurez-vous que vous disposez d’une connexion Internet active pour pouvoir recevoir vos commentaires. Sélectionnez **Envoyer** et vous avez terminé.
 
-1. Utilisez le bouton **partager** pour partager l’URL raccourcie avec le support Microsoft ou vos collègues.
+1. Utilisez le bouton **partager** pour partager l’URL abrégée avec le support technique Microsoft ou vos collègues.

@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour HoloLens
-description: Découvrez comment vérifier votre numéro de build HoloLens, tenir à jour les mises à jour des appareils, rejoindre le programme Insiders et revenir aux mises à jour.
-keywords: how-to, update, roll back, HoloLens, check build, build number
+description: Découvrez comment vérifier votre numéro de build HoloLens, tenir à jour les mises à jour des appareils, joindre le programme Insiders et restaurer les mises à jour.
+keywords: Comment, mettre à jour, restaurer, HoloLens, vérifier la build, numéro de build
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,82 +16,82 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ef1721c60aca82d20e60636cbf4301de81c0177c
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283935"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308811"
 ---
-# Mettre à jour HoloLens
+# <a name="update-hololens"></a>Mettre à jour HoloLens
 
-HoloLens utilise Windows Update, comme les autres appareils Windows 10. Votre HoloLens télécharge et installe automatiquement les mises à jour système chaque fois qu’il est branché et connecté à Internet, même lorsqu’il est en veille.
+HoloLens utilise Windows Update, tout comme les autres appareils Windows 10. Votre HoloLens télécharge et installe automatiquement les mises à jour système chaque fois qu’il est connecté à Power et connecté à Internet, même lorsqu’il est en veille.
 
-Cet article décrit les outils HoloLens pour :
+Cet article passe en revue les outils HoloLens pour :
 
-- affichage de la version actuelle de votre système d’exploitation (numéro de build)
-- vérification des mises à jour ;
+- affichage de la version actuelle du système d’exploitation (numéro de version)
+- recherche de mises à jour
 - mise à jour manuelle de HoloLens
-- revenir à une mise à jour plus ancienne
+- restauration d’une mise à jour antérieure
 
-## Vérifier la version de votre système d’exploitation (numéro de build)
+## <a name="check-your-operating-system-version-build-number"></a>Vérifier la version de votre système d’exploitation (numéro de version)
 
-Vous pouvez vérifier le numéro de version du système (numéro de build) en ouvrant l’application Paramètres et en sélectionnant **System**  >  **About**.
+Vous pouvez vérifier le numéro de version du système (numéro de Build) en ouvrant l’application paramètres et en sélectionnant **système**  >  **à propos** de.
 
-## Vérifier les mises à jour et les mettre à jour manuellement
+## <a name="check-for-updates-and-manually-update"></a>Rechercher les mises à jour et les mettre à jour manuellement
 
-Vous pouvez vérifier les mises à jour à tout moment dans les paramètres.  Pour voir les mises à jour disponibles et vérifier les nouvelles mises à jour :
+Vous pouvez rechercher des mises à jour à tout moment dans paramètres.  Pour afficher les mises à jour disponibles et rechercher les nouvelles mises à jour :
 
-1. Ouvrez **l’application Paramètres.**
-1. Accédez à **Mettre à jour & sécurité**Windows  >  **Update**.
-1. Sélectionnez **Vérifier les mises à jour.**
+1. Ouvrez l’application **Paramètres**.
+1. Accédez à **mettre à jour &**  >  **Windows Update** de sécurité.
+1. Sélectionnez **Rechercher des mises à jour**.
 
-Si une mise à jour est disponible, elle commence à télécharger la nouvelle version. Une fois le téléchargement terminé, sélectionnez le bouton **Redémarrer maintenant** pour déclencher l’installation. Si votre appareil est inférieur à 40 % et qu’il n’est pas branché, le redémarrage ne démarre pas l’installation de la mise à jour.
+Si une mise à jour est disponible, le téléchargement de la nouvelle version est lancé. Une fois le téléchargement terminé, sélectionnez le bouton **redémarrer maintenant** pour déclencher l’installation. Si votre appareil est inférieur à 40% et qu’il n’est pas branché, le redémarrage ne démarrera pas l’installation de la mise à jour.
 
-Pendant que votre HoloLens installe la mise à jour, il affiche des engrenages de rotation et un indicateur de progression. Ne pas désactiver votre HoloLens pendant cette période. Il redémarre automatiquement une fois l’installation terminée.
+Pendant l’installation de la mise à jour, votre HoloLens affiche des engrenages et un indicateur de progression. Ne désactivez pas votre HoloLens pendant cette période. Il redémarrera automatiquement une fois l’installation terminée.
 
-HoloLens applique une mise à jour à la fois.  Si votre HoloLens est plus d’une version derrière la dernière version, vous devrez peut-être exécuter le processus de mise à jour plusieurs fois pour le mettre entièrement à jour.
+HoloLens applique une mise à jour à la fois.  Si votre HoloLens est plus d’une version derrière la version la plus récente, vous devrez peut-être exécuter plusieurs fois le processus de mise à jour pour le mettre à jour.
 
-## Revenir à une version précédente - HoloLens 2
+## <a name="go-back-to-a-previous-version---hololens-2"></a>Revenir à une version précédente-HoloLens 2
 
-Dans certains cas, vous souhaiterez peut-être revenir à une version antérieure du logiciel HoloLens. Pour ce faire, utilisez l’Outil de récupération avancée (Advanced Recovery Companion) pour réinitialiser votre HoloLens à la version antérieure.
+Dans certains cas, vous souhaiterez peut-être revenir à une version précédente du logiciel HoloLens. Pour ce faire, vous pouvez utiliser l’Assistant de récupération avancé pour réinitialiser votre HoloLens à la version antérieure.
 
 > [!NOTE]
-> En revenir à une version antérieure, vous supprimez vos fichiers et paramètres personnels.
+> En revenons à une version antérieure, vous supprimez vos fichiers et paramètres personnels.
 
-Pour revenir à une version antérieure de HoloLens 2, procédez comme suit:
+Pour revenir à une version précédente de HoloLens 2, procédez comme suit :
 
-1. Assurez-vous que vous n’avez pas de téléphones ou d’appareils Windows branchés sur votre PC.
-1. Sur votre PC, téléchargez [l’Outil](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) de récupération avancée à partir du Microsoft Store.
+1. Assurez-vous que vous n’avez aucun téléphone ou appareil Windows branché sur votre PC.
+1. Sur votre PC, téléchargez l' [Assistant de récupération avancée](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) à partir du Microsoft Store.
 1. Téléchargez la [version la plus récente de HoloLens 2](https://aka.ms/hololens2download).
-1. Une fois ces téléchargements terminés, ouvrez **l’Explorateur**  >  **de fichiers.** Cliquez avec le bouton droit sur le dossier compressé que vous venez de télécharger, puis sélectionnez **Extraire tout** > **Extraire** pour le décompresser.
-1. Connectez votre HoloLens à votre PC à l’aide d’un câble USB-A à USB-C. Même si vous avez utilisé d’autres câbles pour connecter votre HoloLens, celui-ci fonctionne mieux.
-1. Advanced Recovery Companion détecte automatiquement votre HoloLens. Sélectionnez la vignette **Microsoft HoloLens**.
-1. Dans l’écran suivant, sélectionnez Sélection manuelle du **package,** puis sélectionnez le fichier d’installation contenu dans le dossier que vous avez décompressé à l’étape 4. (Recherchez un fichier avec l’extension .ffu.)
-1. Sélectionnez **Installer le**logiciel et suivez les instructions.
+1. Une fois ces téléchargements terminés, ouvrez l' **Explorateur de fichiers**  >  **téléchargements**. Cliquez avec le bouton droit sur le dossier compressé que vous venez de télécharger, puis sélectionnez **extraire tout**  >  **extraire** pour le décompresser.
+1. Connectez votre HoloLens à votre PC à l’aide d’un câble USB-A à USB-C. (Même si vous avez utilisé d’autres câbles pour connecter votre HoloLens, celui-ci fonctionne mieux.)
+1. L’Assistant de récupération avancée détecte automatiquement votre HoloLens. Sélectionnez la vignette **Microsoft HoloLens** .
+1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages** , puis sélectionnez le fichier d’installation contenu dans le dossier que vous avez décompressé à l’étape 4. (Recherchez un fichier avec l’extension. FFU.)
+1. Sélectionnez **installer le logiciel** et suivez les instructions.
 
-## Revenir à une version précédente : HoloLens (1ère génération)
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>Revenir à une version précédente-HoloLens (1ère génération)
 
-Dans certains cas, vous souhaiterez peut-être revenir à une version antérieure du logiciel HoloLens. Vous pouvez le faire à l’aide de l’outil de récupération d’appareil Windows pour réinitialiser votre HoloLens à la version antérieure.
-
-> [!NOTE]
-> En revenir à une version antérieure, vous supprimez vos fichiers et paramètres personnels.
-
-Pour revenir à une version précédente de HoloLens 1, suivez les étapes suivantes :
-
-1. Assurez-vous que vous n’avez pas de téléphones ou d’appareils Windows branchés sur votre PC.
-1. Sur votre PC, téléchargez [l’outil de récupération d’appareil Windows (WDRT).](https://support.microsoft.com/help/12379)
-1. Téléchargez le [package de récupération de mise à jour anniversaire HoloLens](https://aka.ms/hololensrecovery).
-1. Une fois les téléchargements terminés, ouvrez **l’Explorateur**  >  **de fichiers.** Cliquez avec le bouton droit sur le dossier compressé que vous avez téléchargé, puis sélectionnez **Extraire tout**  >  **l’extraction** pour le déziper.
-1. Connectez votre HoloLens à votre PC à l’aide du câble micro-USB qu’il a utilisé. Même si vous avez utilisé d’autres câbles pour connecter votre HoloLens, celui-ci fonctionne mieux.
-1. Le WDRT détecte automatiquement votre HoloLens. Sélectionnez la vignette **Microsoft HoloLens**.
-1. Dans l’écran suivant, sélectionnez Sélection manuelle du **package** et choisissez le fichier d’installation contenu dans le dossier décompressé à l’étape 4. (Recherchez un fichier avec l’extension .ffu.)
-1. Sélectionnez **Installer le**logiciel et suivez les instructions.
+Dans certains cas, vous souhaiterez peut-être revenir à une version précédente du logiciel HoloLens. Pour ce faire, vous pouvez utiliser l’outil de récupération de périphérique de Windows pour réinitialiser votre HoloLens à la version antérieure.
 
 > [!NOTE]
-> Si le WDRT ne détecte pas votre HoloLens, essayez de redémarrer votre PC. Si cela ne fonctionne pas, sélectionnez **Mon appareil n’a pas été détecté**, sélectionnez **Microsoft HoloLens**, puis suivez les instructions.
+> En revenons à une version antérieure, vous supprimez vos fichiers et paramètres personnels.
 
-## Programme Windows Insider sur HoloLens
+Pour revenir à une version précédente de HoloLens 1, procédez comme suit :
 
-Vous souhaitez voir les dernières fonctionnalités de HoloLens ?  Si c’est le cas, rejoignez le programme Windows Insider ; Vous aurez accès aux builds d’aperçu des mises à jour logicielles HoloLens avant qu’elles ne soit disponibles pour le grand public.
+1. Assurez-vous que vous n’avez aucun téléphone ou appareil Windows branché sur votre PC.
+1. Sur votre PC, téléchargez l' [outil de récupération d’appareils Windows (WDRT)](https://support.microsoft.com/help/12379).
+1. Téléchargez le [package de récupération de la mise à jour de l’anniversaire HoloLens](https://aka.ms/hololensrecovery).
+1. Une fois les téléchargements terminés, ouvrez l' **Explorateur de fichiers**  >  . Cliquez avec le bouton droit sur le dossier compressé que vous venez de télécharger, puis sélectionnez **extraire tout**  >  **extraire** pour le décompresser.
+1. Connectez votre HoloLens à votre PC à l’aide du câble micro-USB avec lequel il a été fourni. (Même si vous avez utilisé d’autres câbles pour connecter votre HoloLens, celui-ci fonctionne mieux.)
+1. Le WDRT détectera automatiquement votre HoloLens. Sélectionnez la vignette **Microsoft HoloLens** .
+1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages** et choisissez le fichier d’installation contenu dans le dossier que vous avez décompressé à l’étape 4. (Recherchez un fichier avec l’extension. FFU.)
+1. Sélectionnez **installer le logiciel** et suivez les instructions.
 
-[Obtenir la prévisualisation de Windows Insider pour Microsoft HoloLens.](hololens-insider.md)
+> [!NOTE]
+> Si le WDRT ne détecte pas votre HoloLens, essayez de redémarrer votre ordinateur. Si cela ne fonctionne pas, sélectionnez **mon appareil n’a pas été détecté**, sélectionnez **Microsoft HoloLens**, puis suivez les instructions.
+
+## <a name="windows-insider-program-on-hololens"></a>Programme Windows Insider sur HoloLens
+
+Vous souhaitez afficher les fonctionnalités les plus récentes dans HoloLens ?  Si c’est le cas, participez au programme Windows Insider. vous pouvez accéder à des versions préliminaires des mises à jour logicielles HoloLens avant qu’elles ne soient disponibles pour le grand public.
+
+[Obtenir la version préliminaire de Windows Insider pour Microsoft HoloLens](hololens-insider.md).
