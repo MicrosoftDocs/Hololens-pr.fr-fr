@@ -27,13 +27,13 @@ ms.locfileid: "11385489"
 
 ## <a name="pair-bluetooth-devices"></a>Appariement des appareils Bluetooth
 
-HoloLens 2 prend en charge les classes suivantes d’appareils Bluetooth:
+HoloLens 2 prend en charge les classes suivantes d’appareils Bluetooth :
 
 - Souris
 - Clavier
 - Périphériques de sortie audio Bluetooth (A2DP)
 
-HoloLens (1ère génération) prend en charge les classes suivantes d’appareils Bluetooth:
+HoloLens (1ère génération) prend en charge les classes suivantes d’appareils Bluetooth :
 
 - Souris
 - Clavier
@@ -60,9 +60,9 @@ Cette procédure désactive les composants RF de la radio Bluetooth et désactiv
 
 1. Déplacez le curseur de **Bluetooth** vers la position**Désactivée**.
 
-## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: connecter des appareils USB-C
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2 : connecter des appareils USB-C
 
-HoloLens 2 prend en charge les classes suivantes d’appareils USB-C:
+HoloLens 2 prend en charge les classes suivantes d’appareils USB-C :
 
 - Périphériques de stockage de grande capacité (par exemple, lecteurs miniatures)
 - Cartes Ethernet (notamment la charge Ethernet plus)
@@ -86,12 +86,12 @@ Certains utilisateurs peuvent avoir besoin de connecter plusieurs appareils à l
 
 ## <a name="connect-to-miracast"></a>Se connecter à Miracast
 
-Pour utiliser Miracast, procédez comme suit:
+Pour utiliser Miracast, procédez comme suit :
 
-1. Effectuez l'une des opérations suivantes:  
+1. Effectuez l'une des opérations suivantes :  
 
    - Ouvrez le menu **Démarrer**, puis sélectionnez l’icône Afficher.
-   - Dites «se connecter» lorsque vous pointez le menu **Démarrer**.  
+   - Dites « se connecter » lorsque vous pointez le menu **Démarrer**.  
 
 1. Dans la liste des appareils qui s’affiche, sélectionnez un appareil disponible.
 

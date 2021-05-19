@@ -6,7 +6,7 @@ ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
-keywords: sécurité, hololens, hololens2, hololens2 Security, présentation de la sécurité, architecture de sécurité, architecture, architecture hololens2
+keywords: sécurité, hololens, hololens 2, hololens2 Security, présentation de la sécurité, architecture de sécurité, architecture, architecture hololens 2
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -26,15 +26,15 @@ L'architecture de sécurité HoloLens 2 a été conçue et mise au point d'embl�
 
 HoloLens 2 combine le matériel, les logiciels, les réseaux et les services pour offrir une sécurité de bout en bout, tout en offrant à l'utilisateur une expérience optimale. Avec HoloLens 2, une grande majorité des fonctionnalités de sécurité sont désormais activées automatiquement, ce qui permet de minimiser l’effort nécessaire pour installer et configurer correctement le système d’exploitation.
 
-Windows HoloLens 2 et l’architecture de système d’exploitation proposent les fonctionnalités de sécurité innovantes suivantes:
+Windows HoloLens 2 et l’architecture de système d’exploitation proposent les fonctionnalités de sécurité innovantes suivantes :
 
-  * **La séparation et l’isolation d’état**:cette nouvelle architecture protège les parties critiques du système d’exploitation Hololens2 contre toutes modifications comme celles requises pour que le système d’exploitation démarre dans un état approuvé. La technologie d’isolation est utilisée pour limiter les applications non fiables dans une zone de bac à sable (sandbox), afin de s’assurer qu’elles ne peuvent pas influer sur la sécurité du système. Tout le système d’exploitation est segmenté en sections sécurisées, chaque section étant protégée par une combinaison de différentes technologies de sécurité.
+  * **La séparation et l’isolation d’état** :cette nouvelle architecture protège les parties critiques du système d’exploitation Hololens 2 contre toutes modifications comme celles requises pour que le système d’exploitation démarre dans un état approuvé. La technologie d’isolation est utilisée pour limiter les applications non fiables dans une zone de bac à sable (sandbox), afin de s’assurer qu’elles ne peuvent pas influer sur la sécurité du système. Tout le système d’exploitation est segmenté en sections sécurisées, chaque section étant protégée par une combinaison de différentes technologies de sécurité.
   
   * **Protection des données**: en cas de perte ou de vol de l’appareil d’un utilisateur, HoloLens 2 empêche les applications non autorisées de lire les informations sensibles en utilisant le chiffrement de données BitLocker. 
   
-  * **Système d’exploitation sans mot de passe**: les anciens systèmes d'exploitation basés sur des mots de passe pouvaient par inadvertance exposer les utilisateurs à des menaces de hameçonnage et étaient souvent responsables de comptes compromis. Windows holographique pour les entreprises élimine l’utilisation des mots de passe pour la connexion MSA et Azure AD et renforce la protection de l’identité des utilisateurs avec la connexion Windows Hello™ et la connexion FIDO2. 
+  * **Système d’exploitation sans mot de passe** : les anciens systèmes d'exploitation basés sur des mots de passe pouvaient par inadvertance exposer les utilisateurs à des menaces de hameçonnage et étaient souvent responsables de comptes compromis. Windows holographique pour les entreprises élimine l’utilisation des mots de passe pour la connexion MSA et Azure AD et renforce la protection de l’identité des utilisateurs avec la connexion Windows Hello™ et la connexion FIDO2. 
   
     > [!NOTE]
     > Pour bénéficier de la prise en charge de FIDO2, l'appareil doit être sur Build 19041 ou une version ultérieure. 
 
-  * **Sécurité réseau**: HoloLens 2 offre à l’utilisateur une sécurité réseau accrue via des protocoles améliorés et des paramètres par défaut.
+  * **Sécurité réseau** : HoloLens 2 offre à l’utilisateur une sécurité réseau accrue via des protocoles améliorés et des paramètres par défaut.

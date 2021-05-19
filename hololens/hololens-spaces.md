@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7cedf2af90744477c33736087c85a43168167707
-ms.sourcegitcommit: 6f2ec9ced776166f96eddcd601bef5de715703a5
+ms.openlocfilehash: 992b17160eb6ba6ca2f6c8b12e112b98ab154774
+ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931836"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10828244"
 ---
 # Mapper des espaces physiques avec HoloLens
 
@@ -80,7 +80,7 @@ Il faut entre 15 et 20 minutes pour que l'HoloLens puisse être entièrement map
 
 ## Erreurs possibles dans la carte spatiale
 
-Les erreurs dans les données de cartographie spatiale sont classées en plusieurs catégories:
+Les erreurs dans les données de cartographie spatiale sont classées en plusieurs catégories :
 
 - *des trous*: les surfaces réelles sont absentes des données de cartographie spatiale.
 - *Allusions*: Les surfaces existent dans les données cartographiques spatiales qui n'existent pas dans le monde réel.
@@ -102,7 +102,7 @@ Il existe deux options pour supprimer des données cartographiques dans **Param�
 - Pour supprimer les hologrammes proches, sélectionnez **Supprimer les hologrammes proches**. Cette commande efface les données cartographiques et les hologrammes ancrées pour l’espace actuel. Si vous continuez à utiliser l’appareil dans le même espace, il crée et stocke une toute nouvelle section de carte pour remplacer les informations supprimées.
 
    > [!NOTE]
-   > Les hologrammes «proches» sont des hologrammes ancrées dans la même section de carte de l’espace actuel.
+   > Les hologrammes « proches » sont des hologrammes ancrées dans la même section de carte de l’espace actuel.
 
    Par exemple, vous pouvez utiliser cette option pour effacer les données cartographiques liées au travail sans affecter les données cartographiques liées au domicile.
 
@@ -119,4 +119,4 @@ Tant que le Wi-Fi est activé, HoloLens met en corrélation les données cartogr
 
 ## Rubriques connexes
 
-- [Conception de cartographie spatiale](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
+- [Conception de cartographie spatiale](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)

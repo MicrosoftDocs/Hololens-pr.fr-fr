@@ -1,6 +1,6 @@
 ---
-title: Matériel HoloLens2
-description: Découvrez les composants de Microsoft HoloLens 2, la dernière évolution d’un ordinateur Microsoft holographique non associé exécutant Windows10.
+title: Matériel HoloLens 2
+description: Découvrez les composants de Microsoft HoloLens 2, la dernière évolution d’un ordinateur Microsoft holographique non associé exécutant Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: hololens
@@ -19,11 +19,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/13/2021
 ms.locfileid: "11408414"
 ---
-# <a name="hololens-2-hardware"></a>Matériel HoloLens2
+# <a name="hololens-2-hardware"></a>Matériel HoloLens 2
 
 ![Vue latérale HoloLens 2](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 est un ordinateur holographique sans fil.  Il parachève le parcours de l’informatique holographique initié par HoloLens (1regénération) pour proposer une utilisation plus confortable et immersive avec davantage d’options pour collaborer en réalité mixte. Un compte d’utilisateur est requis pour utiliser HoloLens 2.
+Microsoft HoloLens 2 est un ordinateur holographique sans fil.  Il parachève le parcours de l’informatique holographique initié par HoloLens (1re génération) pour proposer une utilisation plus confortable et immersive avec davantage d’options pour collaborer en réalité mixte. Un compte d’utilisateur est requis pour utiliser HoloLens 2.
 
 ## <a name="hololens-components"></a>Composants HoloLens
 
@@ -43,11 +43,11 @@ Microsoft HoloLens 2 est un ordinateur holographique sans fil.  Il parachève le
 
 ### <a name="power-supply-details"></a>Détails sur l'alimentation
 
-Le bloc d’alimentation et le câble USB fournis avec l’appareil constituent le meilleur moyen de charge. Le bloc d’alimentation est un chargeur 18W.  Il fournit 9V à 2A.
+Le bloc d’alimentation et le câble USB fournis avec l’appareil constituent le meilleur moyen de charge. Le bloc d’alimentation est un chargeur 18 W.  Il fournit 9 V à 2 A.
 
 Le taux de charge et la vitesse peuvent varier en fonction de l’environnement où l'appareil s'exécute.
 
-Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsque l’appareil est allumé, il doit être raccordé à un chargeur 15W minimum.
+Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsque l’appareil est allumé, il doit être raccordé à un chargeur 15 W minimum.
 
 ## <a name="device-specifications"></a>Caractéristiques techniques de l’appareil
 
@@ -57,7 +57,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | - | - |
 | Optique | Lentilles holographiques transparentes (guides d’ondes) |
 | Résolution holographique | Moteurs lumière 3:2 2k |
-| Densité holographique | >2,5k rayons (points lumineux par radian) |
+| Densité holographique | >2,5 k rayons (points lumineux par radian) |
 | Rendu visuel | Optimisation de l’affichage pour la position d’œil 3D |
 
 ### <a name="sensors"></a>Capteurs
@@ -68,7 +68,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Suivi oculaire | 2 caméras infrarouges |
 | Profondeur | Capteur de profondeur de temps de vol d’1 MP |
 | Unité de mesure de l’inertie | Accéléromètre, gyroscope, magnétomètre |
-| Caméra | Images fixes 8MP, vidéo 1080p30 |
+| Caméra | Images fixes 8 MP, vidéo 1080p30 |
 
 ![Capteurs HoloLens 2](images/hololens2-front-view.png)
 
@@ -89,7 +89,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Système sur processeur | [Détails](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) de la plateforme de calcul Qualcomm Snapdragon 850 |
 | Unité de traitement holographique | Unité de traitement holographique de deuxième génération personnalisée |
 | Mémoire | DRAM système LPDDR4x 4 Go |
-| Stockage | UFS2.1 64Go |
+| Stockage | UFS 2.1 64 Go |
 | WiFi | 802.11ac 2x2 |
 | Bluetooth | 5.0 |
 | USB | Type USB-C |
@@ -102,7 +102,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | Technologie de batterie | [Batteries lithium](https://www.microsoft.com/download/details.aspx?id=43388) |
 | Comportement de charge | Entièrement fonctionnel lors de la charge |
 | Type de refroidissement | Refroidissement passif (aucun ventilateur) |
-| Puissance consommée | Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsque l’appareil est allumé, il doit être raccordé à un chargeur 15W minimum. |
+| Puissance consommée | Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsque l’appareil est allumé, il doit être raccordé à un chargeur 15 W minimum. |
 
 ### <a name="fit"></a>Ajuster
 
@@ -119,7 +119,7 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 | - | - |
 | Suivi des mains | Modèle entièrement articulé à deux branches, manipulation directe |
 | Suivi oculaire | Suivi en temps réel |
-| Voix | Commande et contrôle de l’appareil; langage naturel de Cortana avec connectivité Internet |
+| Voix | Commande et contrôle de l’appareil ; langage naturel de Cortana avec connectivité Internet |
 
 ### <a name="environment-understanding"></a>Appréhension de l’environnement
 
@@ -133,16 +133,16 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 
 |   |   |
 | - | - |
-| Système d’exploitation holographique Windows | Avec Windows Holographic, les utilisateurs de Windows10 pourront utiliser certaines de leurs applications et jeux dans un environnement de réalité mixte via HoloLens2.
-| Visionneuse3D | [La visionneuse 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) vous permet d’afficher facilement des modèles et des animations 3D en temps réel.|
+| Système d’exploitation holographique Windows | Avec Windows Holographic, les utilisateurs de Windows 10 pourront utiliser certaines de leurs applications et jeux dans un environnement de réalité mixte via HoloLens 2.
+| Visionneuse 3D | [La visionneuse 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) vous permet d’afficher facilement des modèles et des animations 3D en temps réel.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), votre assistant de productivité personnelle, vous permet de vous tenir informé des éléments les plus importants et de gagner du temps à trouver ce dont vous avez besoin.  |
-| Dynamics 365 Guides |  [Dynamics365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) permet aux employés d’acquérir de nouvelles compétences plus rapidement sur les appareils HoloLens. |
-| Dynamics365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) permet aux techniciens de collaborer et de résoudre des problèmes avec des collaborateurs distants à l’aide de Microsoft Teams ou de Dynamics365 Remote Assist.  |
+| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) permet aux employés d’acquérir de nouvelles compétences plus rapidement sur les appareils HoloLens. |
+| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) permet aux techniciens de collaborer et de résoudre des problèmes avec des collaborateurs distants à l’aide de Microsoft Teams ou de Dynamics 365 Remote Assist.  |
 | Hub de commentaires | [Le hub de commentaires](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) vous permet de fournir des commentaires sur Windows et sur les applications en faisant part de vos suggestions ou de vos problèmes.  |
 | Explorateur de fichiers | L’Explorateur de fichiers fournit une interface graphique utilisateur permettant d’accéder aux systèmes de fichiers. |
 | Courrier et calendrier | Les applications [Courrier et calendrier](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)vous aident à rester à jour sur votre e-mail, à gérer votre programme et à rester en contact avec des personnes. |  
 | Microsoft ro | Microsoft Edge offre des performances exceptionnelles avec un niveau de confidentialité plus élevé, une hausse de la productivité et une meilleure valeur ajoutée pendant la navigation. |
-| MicrosoftStore | Le [Microsoft Store](https://www.microsoft.com) constitue votre source d’accès aux applications et aux jeux compatibles avec HoloLens.|
+| Microsoft Store | Le [Microsoft Store](https://www.microsoft.com) constitue votre source d’accès aux applications et aux jeux compatibles avec HoloLens.|
 | Films et TV | [L’application Films et TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) offre les derniers divertissements dans une seule application simple, rapide et élégante. |
 | OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) vous permet d’accéder à vos fichiers, puis de les modifier depuis tous vos appareils où que vous soyez.  |
 | Photos| L’application [Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) vous permet d’afficher et de modifier vos photos et vidéos, de créer des films et des albums.  |
@@ -155,11 +155,11 @@ Afin de maintenir/avancer le pourcentage de charge interne de la batterie lorsqu
 
 * [Sécurité des produits](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [Instructions et avertissements relatifs à la sécurité des produits](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* Suivi oculaire: HoloLens 2 a été testé; il est conforme aux exigences de protection basique contre les impacts des normes ANSI Z87.1, CSA Z94.3 et EN 166.
+* Suivi oculaire : HoloLens 2 a été testé ; il est conforme aux exigences de protection basique contre les impacts des normes ANSI Z87.1, CSA Z94.3 et EN 166.
 * [Informations R.A.S](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>Informations réglementaires
-[Réglementation HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): comprend des informations sur la température, l’élimination, les interférences radio et TV, et bien plus encore.
+[Réglementation HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information) : comprend des informations sur la température, l’élimination, les interférences radio et TV, et bien plus encore.
 
 ## <a name="warranty-information"></a>Informations de garantie
 
@@ -176,14 +176,14 @@ Non destiné aux enfants de moins de 13 ans.
 
 |      Mesure               |      Unités métriques     |      Unités impériales     |
 |--------------------------------|-----------------------|-------------------------|
-|     Longueur de l’unité                |     378,97mm          |     14,920pouces       |
-|     Largeur de l’unité                 |     247,90mm          |     9,760pouces        |
-|     Hauteur de l’unité                 |     163,07mm          |     6,420pouces        |
-|     Poids de l’unité                |     2,878kg           |     6,344 livres           |
-|     Longueur d’expéditeur externe    |     446,00mm          |     17,559pouces       |
-|     Largeur d’expéditeur externe     |     257,99mm          |     10,157 pouces       |
-|     Hauteur d’expéditeur externe     |     172,01mm          |     6,772 pouces        |
-|     Poids d’expéditeur externe    |     3,284kg           |     7,240livres           |
+|     Longueur de l’unité                |     378,97 mm          |     14,920 pouces       |
+|     Largeur de l’unité                 |     247,90 mm          |     9,760 pouces        |
+|     Hauteur de l’unité                 |     163,07 mm          |     6,420 pouces        |
+|     Poids de l’unité                |     2,878 kg           |     6,344 livres           |
+|     Longueur d’expéditeur externe    |     446,00 mm          |     17,559 pouces       |
+|     Largeur d’expéditeur externe     |     257,99 mm          |     10,157 pouces       |
+|     Hauteur d’expéditeur externe     |     172,01 mm          |     6,772 pouces        |
+|     Poids d’expéditeur externe    |     3,284 kg           |     7,240 livres           |
 
 > [!NOTE]
 > - Unité : boîte noire de style commercial dans laquelle nous vendons HoloLens 2.
@@ -191,7 +191,7 @@ Non destiné aux enfants de moins de 13 ans.
 
 ## <a name="finding-the-serial-number"></a>Découverte du numéro de série
 
-Le numéro de série des appareils HoloLens2 est imprimé sous la visière.
+Le numéro de série des appareils HoloLens 2 est imprimé sous la visière.
 
 1. Soulevez la visière de l’appareil.
 1. Regardez près de la protection pour le front.
@@ -199,7 +199,7 @@ Le numéro de série des appareils HoloLens2 est imprimé sous la visière.
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
-Le numéro de série se trouve également via un PC connecté:
+Le numéro de série se trouve également via un PC connecté :
 
 1. Branchez l’appareil
 1. Accédez à **ce PC** dans l’Explorateur de fichiers

@@ -1,6 +1,6 @@
 ---
 title: Exigences relatives à la licence
-description: Restez à jour avec toutes les exigences de licence et les instructions dont vous avez besoin pour la gestion des appareils mobiles, HoloLens et RemoteAssist.
+description: Restez à jour avec toutes les exigences de licence et les instructions dont vous avez besoin pour la gestion des appareils mobiles, HoloLens et Remote Assist.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -35,7 +35,7 @@ Si vous envisagez d’utiliser Intune comme MDM, consultez la [liste des suites]
 
 Vous devez peut-être mettre à niveau votre appareil HoloLens (1ère génération) vers Windows Holographic pour Entreprises. (Voir [Fonctionnalités commerciales de HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions) pour déterminer si vous avez besoin d'une mise à niveau).
 
- Si c’est le cas, vous devez effectuer les opérations suivantes:
+ Si c’est le cas, vous devez effectuer les opérations suivantes :
 
 - Acquérir un fichier XML de licence HoloLens Enterprise
 - Appliquer le fichier XML au HoloLens. Pour ce faire, vous pouvez utiliser un [Package d’approvisionnement ](hololens-provisioning.md) ou via votre [Gestionnaire des appareils mobiles ](https://docs.microsoft.com/intune/configuration/holographic-upgrade)
@@ -56,5 +56,5 @@ Si vous envisagez de mettre en œuvre **[ce scénario entre tenants](https://doc
 Consultez les [licences et les appareils requis mis à jour](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
 
 1. [Licence Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. [PowerBI](https://powerbi.microsoft.com/desktop/)
+1. [Power BI](https://powerbi.microsoft.com/desktop/)
 1. [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)

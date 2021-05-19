@@ -23,15 +23,15 @@ ms.locfileid: "11283545"
 ---
 # Améliorer la qualité visuelle et le confort
 
-HoloLens 2 et HoloLens (1regénération) fonctionnent mieux lorsqu’ils sont étalonnés en fonction de vos yeux.
+HoloLens 2 et HoloLens (1re génération) fonctionnent mieux lorsqu’ils sont étalonnés en fonction de vos yeux.
 
-Même si ces deux appareils doivent être étalonnés pour offrir la meilleure qualité d’affichage des hologrammes, ils utilisent différentes technologies et techniques d’étalonnage.  Accédez à [Étalonnage HoloLens2](#calibrating-your-hololens-2) ou [Étalonnage HoloLens (1regénération)](#calibrating-your-hololens-1st-gen).
+Même si ces deux appareils doivent être étalonnés pour offrir la meilleure qualité d’affichage des hologrammes, ils utilisent différentes technologies et techniques d’étalonnage.  Accédez à [Étalonnage HoloLens 2](#calibrating-your-hololens-2) ou [Étalonnage HoloLens (1re génération)](#calibrating-your-hololens-1st-gen).
 
 ## Étalonner votre HoloLens 2
 
 HoloLens 2 utilise une technologie de suivi visuel pour améliorer votre utilisation et interagir avec l’environnement virtuel. Le fait d’étalonner HoloLens 2 garantit qu’il peut effectuer un suivi précis des yeux (et des yeux d’autres personnes qui utilisent l’appareil). Il vous aide également à utiliser le confort de l’utilisateur, l’alignement de l’hologramme et le suivi de main. Après l’étalonnage, les hologrammes s’affichent correctement même lorsque la visière se déplace sur votre tête.
 
-HoloLens 2 demande à l’utilisateur d’étalonner l’appareil dans les cas suivants:
+HoloLens 2 demande à l’utilisateur d’étalonner l’appareil dans les cas suivants :
 
 - L’utilisateur utilise l’appareil pour la première fois
 - L’utilisateur a précédemment désactivé le processus d’étalonnage
@@ -68,9 +68,9 @@ Plusieurs utilisateurs peuvent partager un appareil HoloLens 2 sans qu’il soit
 
 ### Prise en charge automatique de la position des yeux
 
-Dans HoloLens2, les positions oculaires permettent un positionnement précis des hologrammes, une expérience d’affichage confortable et une qualité d’affichage améliorée. Les positions des yeux se calculent en interne lors du calcul du suivi oculaire. Toutefois, cela nécessite que chaque utilisateur parcourt le calibrage du suivi oculaire, même lorsque l’utilisation ne nécessite pas le pointage du regard.
+Dans HoloLens 2, les positions oculaires permettent un positionnement précis des hologrammes, une expérience d’affichage confortable et une qualité d’affichage améliorée. Les positions des yeux se calculent en interne lors du calcul du suivi oculaire. Toutefois, cela nécessite que chaque utilisateur parcourt le calibrage du suivi oculaire, même lorsque l’utilisation ne nécessite pas le pointage du regard.
 
-La **position automatique des yeux** permet, dans ces scénarios, de calculer sans interaction la position des yeux de l’utilisateur. La position automatique des yeux commence à fonctionner automatiquement en arrière-plan dès que l’utilisateur met l’appareil sous tension. Si l’utilisateur n’a pas encore effectué de suivi oculaire, la fonctionnalité de position automatique des yeux commencera à fournir la position des yeux de l’utilisateur au système d’affichage après un temps de traitement de 20 à 30secondes. L’appareil ne conserve pas les données utilisateur, et ce processus se répète si l’utilisateur met l’appareil hors tension, puis de nouveau sous tension ou si l’appareil redémarre ou sort du mode veille.
+La **position automatique des yeux** permet, dans ces scénarios, de calculer sans interaction la position des yeux de l’utilisateur. La position automatique des yeux commence à fonctionner automatiquement en arrière-plan dès que l’utilisateur met l’appareil sous tension. Si l’utilisateur n’a pas encore effectué de suivi oculaire, la fonctionnalité de position automatique des yeux commencera à fournir la position des yeux de l’utilisateur au système d’affichage après un temps de traitement de 20 à 30 secondes. L’appareil ne conserve pas les données utilisateur, et ce processus se répète si l’utilisateur met l’appareil hors tension, puis de nouveau sous tension ou si l’appareil redémarre ou sort du mode veille.
 
 Il existe certaines modifications de comportement système avec la fonctionnalité de position automatique des yeux quand un utilisateur n’ayant pas effectué de calibrage utilise l’appareil. Dans ce contexte, le terme d’utilisateur non étalonné fait référence à une personne qui n’a pas déjà suivi le processus d’étalonnage du suivi oculaire sur l’appareil.
 
@@ -94,11 +94,11 @@ Avec la fonction de position automatique des yeux, la boîte de dialogue d’inv
 
 Si l’utilisateur choisit de lancer la Calibration du Suivi Oculaire, la mise au point retourne à l’application d’origine après le calibrage. 
 
-### Résolution des problèmes de calibrage de HoloLens2
+### Résolution des problèmes de calibrage de HoloLens 2
 
 L’étalonnage devrait fonctionner pour la plupart des personnes, mais ce n’est pas toujours le cas.
   
-Voici quelques raisons potentielles d’échec de l’étalonnage:
+Voici quelques raisons potentielles d’échec de l’étalonnage :
 
 - Si vous êtes distrait et que vous ne suivez pas les cibles d’étalonnage
 - La visière est sale, rayée ou elle n’est pas positionnée correctement
@@ -106,9 +106,9 @@ Voici quelques raisons potentielles d’échec de l’étalonnage:
 - Certains types de lentilles de contact ou de lunettes (lentilles de contact colorées, certains lentilles de contact toriques, lunettes de blocage infrarouge, certains lunettes correctrices fortes, lunettes de soleil ou similaires)
 - Maquillage plus prononcé et extensions de cils
 - Cheveux ou montures de lunettes épaisses si ceux-ci empêchent l’appareil de voir vos yeux
-- Certaines physiologies d’yeux, maladies ophtalmiques ou chirurgies oculaires. Exemples: yeux étroits, longs cils, amblyopie, nystagmus, certains cas de LASIK ou autres types de chirurgie oculaire
+- Certaines physiologies d’yeux, maladies ophtalmiques ou chirurgies oculaires. Exemples : yeux étroits, longs cils, amblyopie, nystagmus, certains cas de LASIK ou autres types de chirurgie oculaire
 
-Si l’étalonnage ne fonctionne pas correctement, procédez comme suit:
+Si l’étalonnage ne fonctionne pas correctement, procédez comme suit :
 
 - Nettoyez la visière de l’appareil
 - Nettoyez les lunettes
@@ -120,7 +120,7 @@ Si vous avez suivi toutes les recommandations et que l’étalonnage a échoué,
 
 Consultez également les informations relatives à la [résolution des problèmes de couleur ou de luminosité de l’image.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-La configuration de la DIP ne s’applique pas à HoloLens2, car le système calcule les positions oculaires. 
+La configuration de la DIP ne s’applique pas à HoloLens 2, car le système calcule les positions oculaires. 
 
 ### Données d’étalonnage et sécurité
 
@@ -132,7 +132,7 @@ Les informations d’étalonnage peuvent toujours être supprimées de l’appar
 
 ### Désactiver l’étalonnage
 
-Vous pouvez également désactiver l’invite d’étalonnage en procédant comme suit:
+Vous pouvez également désactiver l’invite d’étalonnage en procédant comme suit :
 
 1. Sélectionnez **Paramètres** > **Système** > **Étalonnage**.
 1. Désactivez l’option **Quand une nouvelle personne utilise ce HoloLens, demander automatiquement un étalonnage des yeux**.
@@ -140,7 +140,7 @@ Vous pouvez également désactiver l’invite d’étalonnage en procédant comm
 > [!IMPORTANT]
 > Ce paramètre risque de nuire à la qualité et au confort du rendu des hologrammes.  Lorsque vous désactivez ce paramètre, les fonctionnalités qui dépendent du suivi oculaire (par exemple, le défilement du texte) ne fonctionnent plus dans les applications immersives.
 
-### Technologie de suivi oculaire de HoloLens2
+### Technologie de suivi oculaire de HoloLens 2
 
 L’appareil utilise sa technologie de suivi oculaire pour améliorer la qualité d’affichage et garantir que tous les hologrammes sont positionnés de manière précise et confortable pour un affichage en 3D. Étant donné qu’il utilise les yeux comme points de repère, l’appareil peut s’ajuster à chaque utilisateur et adapter ses visuels si le casque se déplace légèrement en cours d’utilisation.  Tous les ajustements sont effectués à la volée, sans nécessiter d’ajustement manuel.
 > [!NOTE]
@@ -152,7 +152,7 @@ Les applications HoloLens utilisent le suivi visuel pour suivre la direction de 
 
 HoloLens (1ère génération) ajuste l’affichage des hologrammes en fonction de votre [distance interpupillaire](https://en.wikipedia.org/wiki/Interpupillary_distance) (DIP) Si la DIP n’est pas précise, les hologrammes peuvent apparaître instables ou à une distance incorrecte. Vous pouvez améliorer la qualité de vos visuels en étalonnant l’appareil selon votre distance interpupillaire (DIP).
 
-Lorsque vous définissez votre appareil HoloLens (1ère génération), il vous invite à étalonner vos visuels une fois que Cortana s’est présentée. Nous vous recommandons de réaliser la procédure d’étalonnage au cours de cette phase d’installation. Néanmoins, vous pouvez l’ignorer en attendant que Cortana vous y invite, puis en indiquant «Ignorer».
+Lorsque vous définissez votre appareil HoloLens (1ère génération), il vous invite à étalonner vos visuels une fois que Cortana s’est présentée. Nous vous recommandons de réaliser la procédure d’étalonnage au cours de cette phase d’installation. Néanmoins, vous pouvez l’ignorer en attendant que Cortana vous y invite, puis en indiquant « Ignorer ».
 
 Pendant le processus d’étalonnage, HoloLens vous demande d’aligner votre doigt avec une série de six cibles par œil. HoloLens utilise ce processus pour définir correctement l’écart pupillaire de vos yeux.
 
@@ -162,7 +162,7 @@ Pendant le processus d’étalonnage, HoloLens vous demande d’aligner votre do
 
 Si vous avez besoin de mettre à jour l’étalonnage ou si un nouvel utilisateur doit l’ajuster, vous pouvez exécuter l’application d’étalonnage manuellement à tout moment. L’application d’étalonnage est installée par défaut. Vous pouvez y accéder à l’aide du menu **Démarrer** ou de l’application Paramètres.
 
-Pour exécuter l’application Étalonnage à l’aide du menu **Démarrer**, procédez comme suit:
+Pour exécuter l’application Étalonnage à l’aide du menu **Démarrer**, procédez comme suit :
 
 1. Utilisez le geste [écarter les doigts paume vers le haut](hololens1-basic-usage.md) pour ouvrir le menu **Démarrer**.
 1. Pour afficher toutes les applications, sélectionnez **+**.
@@ -172,7 +172,7 @@ Pour exécuter l’application Étalonnage à l’aide du menu **Démarrer**, pr
 
 ![Application d’étalonnage affichée sous la forme d’un cube dynamique après son lancement](./images/calibration-livecube-200px.png)
 
-Pour utiliser l’application Paramètres pour exécuter l’application Étalonnage, procédez comme suit:
+Pour utiliser l’application Paramètres pour exécuter l’application Étalonnage, procédez comme suit :
 
 1. Utilisez le geste [écartement des doigts paume vers le haut](hololens1-basic-usage.md) pour ouvrir le menu **Démarrer**.
 1. Si **Paramètres** n’est pas épinglé sur le menu **Démarrer**, sélectionnez **+** pour afficher toutes les applications.

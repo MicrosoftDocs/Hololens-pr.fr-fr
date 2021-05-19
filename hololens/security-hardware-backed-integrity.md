@@ -37,7 +37,7 @@ Le module de plateforme sécurisée (TPM) est une puce spécialisée sur un appa
 
 L'objectif de la plupart des cyberattaques est de maintenir un accès persistant à un appareil. Pour la cybercriminalité, maintenir cette persistance permet à un appareil Windows compromis de rejoindre un botnet, de vendre l’accès à l’appareil ou à d’autres utilisateurs de malveillants, ou d’autoriser un vol de données répété. Dans le monde des attaques ciblées, la persistance est essentielle à la réussite d'une cyberattaque, que ce soit sur un appareil ou (plus communément) sur un réseau entier.  
 
-En fait, des attaques ciblées sont considérées comme une «menace persistante avancée», en raison de leur besoin stratégique de maintenir l’accès à un appareil ou à un réseau cible. Pour cette raison, Windows holographique pour les entreprises considère la défense contre la persistance absolument cruciale et utilise la technologie anti-persistance pour faire une promesse de sécurité à toute épreuve aux clients.
+En fait, des attaques ciblées sont considérées comme une « menace persistante avancée », en raison de leur besoin stratégique de maintenir l’accès à un appareil ou à un réseau cible. Pour cette raison, Windows holographique pour les entreprises considère la défense contre la persistance absolument cruciale et utilise la technologie anti-persistance pour faire une promesse de sécurité à toute épreuve aux clients.
 
 ### Démarrage sécurisé
 

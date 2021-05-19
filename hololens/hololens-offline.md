@@ -31,7 +31,7 @@ Certains composants, applications et services connexes HoloLens transfèrent des
 
 ## Configuration quasiment hors connexion
 
-HoloLens prend en charge un nombre limité d’expériences hors connexion pour les clients soumis à des restrictions d’environnement réseau. Toutefois, HoloLens nécessite une connexion réseau pour passer par la configuration initiale de l’appareil. En outre, vous devez activer les URL suivantes:
+HoloLens prend en charge un nombre limité d’expériences hors connexion pour les clients soumis à des restrictions d’environnement réseau. Toutefois, HoloLens nécessite une connexion réseau pour passer par la configuration initiale de l’appareil. En outre, vous devez activer les URL suivantes :
 
 | Objectif | URL |
 |------|------|
@@ -95,9 +95,9 @@ En plus de la liste ci-dessus, vous devez activer les points de terminaison suiv
 | Licences                                           | licensing.mp.microsoft.com                                          |   |   |   |
 | Compte Microsoft                                   | login.msa.akadns6.net                                               |   |   |   |
 |                                                     | us.configsvc1.Live.com.akadns.NET                                   |   |   |   |
-| MicrosoftEdge                                      | iecvlist.microsoft.com                                              |   |   |   |
+| Microsoft Edge                                      | iecvlist.microsoft.com                                              |   |   |   |
 | Service de redirection de liaison montante Microsoft (FWLink) | go.microsoft.com                                                    |   |   |   |
-| MicrosoftStore                                     | *.wns.windows.com                                                   |   |   |   |
+| Microsoft Store                                     | *.wns.windows.com                                                   |   |   |   |
 |                                                     | storecatalogrevocation.storequality.microsoft.com                   |   |   |   |
 |                                                     | img-prod-cms-rt-microsoft-com*                                      |   |   |   |
 |                                                     | store-images.microsoft.com                                          |   |   |   |
@@ -128,7 +128,7 @@ En plus de la liste ci-dessus, vous devez activer les points de terminaison suiv
 | Paramètres                                            | cy2.settings.data.microsoft.com.akadns.net                          |   |   |   |
 |                                                     | settings.data.microsoft.com                                         |   |   |   |
 |                                                     | settings-win.data.microsoft.com                                     |   |   |   |
-| WindowsDefender                                    | wdcp.microsoft.com                                                  |   |   |   |
+| Windows Defender                                    | wdcp.microsoft.com                                                  |   |   |   |
 |                                                     | definitionupdates.microsoft.com                                     |   |   |   |
 |                                                     | go.microsoft.com                                                    |   |   |   |
 |                                                     | * smartscreen.microsoft.com                                          |   |   |   |
@@ -139,7 +139,7 @@ En plus de la liste ci-dessus, vous devez activer les points de terminaison suiv
 |                                                     | g.msn.com*                                                          |   |   |   |
 |                                                     | query.prod.cms.rt.microsoft.com                                     |   |   |   |
 |                                                     | ris.api.iris.microsoft.com                                          |   |   |   |
-| WindowsUpdate                                      | *.prod.do.dsp.mp.microsoft.com                                      |   |   |   |
+| Windows Update                                      | *.prod.do.dsp.mp.microsoft.com                                      |   |   |   |
 |                                                     | cs9.wac.phicdn.net                                                  |   |   |   |
 |                                                     | emdl.ws.microsoft.com                                               |   |   |   |
 |                                                     | *.dl.delivery.mp.microsoft.com                                      |   |   |   |
@@ -159,7 +159,7 @@ En plus de la liste ci-dessus, vous devez activer les points de terminaison suiv
 - [Gérer les connexions des composants du système d’exploitation Windows 10 aux services Microsoft à l’aide du serveur GPM Microsoft Intune](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 - [Configuration réseau requise et bande passante pour Intune](https://docs.microsoft.com/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
 - [Points de terminaison réseau pour Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/intune-endpoints)
-- [URL et plages d’adressesIP Office365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+- [URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 - [Conditions préalables pour Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
 

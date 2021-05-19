@@ -70,7 +70,7 @@ HoloLens (1re génération) est doté de deux options de gestion des licences, l
 |[Démarrage sécurisé](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |
 |**Maintenance et support** | | | |
 |Mises à jour système automatiques à mesure qu’elles arrivent |✔️ |✔️ |✔️ |
-|[WindowsUpdate pour Entreprise](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) | |✔️ |✔️ |
+|[Windows Update pour Entreprise](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) | |✔️ |✔️ |
 |Canal de maintenance à long terme (LTSC) | |✔️ |✔️ |
 
 ## Activation des fonctionnalités commerciales
@@ -79,7 +79,7 @@ L’administrateur informatique de votre organisation peut installer des fonctio
 
 ## Articles associés
 
-- [MicrosoftHoloLens](index.yml)
+- [Microsoft HoloLens](index.yml)
 - [Mode plein écran](hololens-kiosk.md)
 - [Fournisseurs de solutions Cloud pris en charge sur les appareils HoloLens](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [Microsoft Store pour Entreprises et applications cœur de métier](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)

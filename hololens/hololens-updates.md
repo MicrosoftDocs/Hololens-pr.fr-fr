@@ -45,7 +45,7 @@ Vous pouvez configurer les paramètres de Windows Update pour Entreprise pour Ho
 Pour plus d’informations sur l’utilisation de Intune pour configurer Windows Update pour Entreprise, voir [Gérer les mises à jour logicielles Windows 10 dans Intune](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure). Pour plus d’informations sur les fonctionnalités Intune spécifiques prises en charge par HoloLens, consultez [Fonctions de gestion des mises à jour Intune prises en charge par HoloLens](#intune-update-management-functions-that-hololens-supports).
 
 > [!IMPORTANT]  
-> Intune fournit deux types de stratégie pour gérer les mises à jour: *Sonnerie de mise à jour Windows 10* et *Mise à jour de fonctionnalités Windows 10*. Le type de stratégie de mise à jour des fonctionnalités de Windows 10 est en aperçu public pour le moment et n'est pas pris en charge pour HoloLens.
+> Intune fournit deux types de stratégie pour gérer les mises à jour : *Sonnerie de mise à jour Windows 10* et *Mise à jour de fonctionnalités Windows 10*. Le type de stratégie de mise à jour des fonctionnalités de Windows 10 est en aperçu public pour le moment et n'est pas pris en charge pour HoloLens.
 
 >  
 > Vous pouvez utiliser les stratégies périphériques de mise à jour de Windows 10 Update pour gérer les mises à jour de HoloLens 2.
@@ -54,7 +54,7 @@ Pour plus d’informations sur l’utilisation de Intune pour configurer Windows
 
 Cette section décrit les stratégies que vous pouvez utiliser pour gérer les mises à jour de HoloLens 2 ou HoloLens (1ère génération). Pour plus d’informations sur les fonctionnalités disponibles pour HoloLens 2, voir [Planifier et configurer les mises à jour de HoloLens 2](#plan-and-configure-update-rollouts-for-hololens-2).
 
-[Stratégie CSP: mise à jour](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) définit les stratégies qui configurent Windows Update pour Entreprise.
+[Stratégie CSP : mise à jour](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) définit les stratégies qui configurent Windows Update pour Entreprise.
 
 > [!NOTE]  
 > Pour obtenir la liste des fournisseurs de services de configuration de stratégie spécifiques qui sont pris en charge par les éditions spécifiques de HoloLens, consultez [Stratégie fournisseurs de services cryptographiques pris en charge par les appareils HoloLens](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices).
@@ -64,37 +64,37 @@ Cette section décrit les stratégies que vous pouvez utiliser pour gérer les m
 Vous pouvez utiliser la **Stratégie de mise à jour / Autoriser la mise à jour automatique** pour gérer le comportement de mise à jour automatique, tel que l’analyse, le téléchargement et l’installation des mises à jour. Pour plus d’informations sur les paramètres disponibles pour cette stratégie, voir [Mise à jour / Autoriser la mise à jour automatique](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
 
 > [!NOTE]  
-> Dans Microsoft Intune, vous pouvez utiliser **Comportement de mise à jour automatique** pour modifier cette stratégie. Pour plus d’informations, consultez [Gérer les mises à jour logicielles Windows10 dans Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure).
+> Dans Microsoft Intune, vous pouvez utiliser **Comportement de mise à jour automatique** pour modifier cette stratégie. Pour plus d’informations, consultez [Gérer les mises à jour logicielles Windows 10 dans Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure).
 
 #### Configurer une planification de mise à jour
 
-Pour configurer les modalités d’application des mises à jour, utilisez les stratégies suivantes:
+Pour configurer les modalités d’application des mises à jour, utilisez les stratégies suivantes :
 
 - [Mise à jour / ScheduledInstallDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday)  
-  - Valeurs: **0**–**7** (0 = tous les jours, 1 = Dimanche, 7 = Samedi)
-  - Valeur par défaut: **0** (tous les jours)
+  - Valeurs : **0**–**7** (0 = tous les jours, 1 = Dimanche, 7 = Samedi)
+  - Valeur par défaut : **0** (tous les jours)
 - [Mise à jour / ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
-  - Valeurs: 0–23 (0 = minuit, 23 = 11h00)
-  - Valeur par défaut: 15h00
+  - Valeurs : 0–23 (0 = minuit, 23 = 11h00)
+  - Valeur par défaut : 15h00
 
 #### Configurer les heures d’activité
-À partir de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), un administrateur informatique peut spécifier la plage des heures d’activité pour les appareils HoloLens2.
+À partir de la [version 20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), un administrateur informatique peut spécifier la plage des heures d’activité pour les appareils HoloLens 2.
 
 Les heures d’activité identifie la période lors de laquelle l’appareil est censé être utilisé. Les redémarrages automatiques suite à une mise à jour surviennent en dehors des heures d’activité. La plage spécifiée est calculée dès l’heure de début des heures d’activité. Vous pouvez utiliser GPM, comme décrit dans la section [Configurer les heures d’activité avec GPM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). GPM utilise les paramètres Update/ActiveHoursStart, Update/ActiveHoursEnd et Update/ActiveHoursMaxRange dans le CSP de la stratégie pour configurer les heures d’activité.
 
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend): cette valeur définit l’heure de fin. 12heures maximum sont possibles entre l’heure de début et l’heure de fin.
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) : cette valeur définit l’heure de fin. 12 heures maximum sont possibles entre l’heure de début et l’heure de fin.
     -   Les valeurs prises en charge sont comprises entre 0 et 23. 0 correspond à minuit, 1 correspond à 1h du matin, etc.
     -   La valeur par défaut est 17 (17:00).
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange): cette valeur définit le nombre maximal d’heures d’activités depuis l’heure de début.
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) : cette valeur définit le nombre maximal d’heures d’activités depuis l’heure de début.
     -   Les valeurs prises en charge sont comprises entre 8 et 18.
     -   La valeur par défaut est 18 (heures).
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart): cette valeur définit l’heure de début. 12heures maximum sont possibles entre l’heure de début et l’heure de fin.
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) : cette valeur définit l’heure de début. 12 heures maximum sont possibles entre l’heure de début et l’heure de fin.
     -   Les valeurs prises en charge sont comprises entre 0 et 23. 0 correspond à minuit, 1 correspond à 1h du matin, etc.
     -   La valeur par défaut est 8 (8:00).
 
-#### Pour les appareils fonctionnant avec la version1607 de Windows10 uniquement
+#### Pour les appareils fonctionnant avec la version 1607 de Windows 10 uniquement
 
-Vous pouvez utiliser les stratégies de mise à jour suivantes pour configurer les appareils de façon à obtenir les mises à jour à partir du service WSUS (Windows Server Update Service) au lieu de Windows Update:
+Vous pouvez utiliser les stratégies de mise à jour suivantes pour configurer les appareils de façon à obtenir les mises à jour à partir du service WSUS (Windows Server Update Service) au lieu de Windows Update :
 
 - [Service de mise à jour / Autorisation de mise à jour](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Mise à jour / Demande d'approbation de la mise à jour](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
@@ -130,30 +130,30 @@ Vous pouvez configurer différents reports pour les mises à jour de fonctionnal
 
 |Catégorie |Stratégie |Report maximal |
 | --- | --- | --- |
-|Mises à jour des fonctionnalités |DeferFeatureUpdatesPeriodInDays |365jours |
-|Mises à jour qualité |DeferQualityUpdatesPeriodInDays |30jours |
+|Mises à jour des fonctionnalités |DeferFeatureUpdatesPeriodInDays |365 jours |
+|Mises à jour qualité |DeferQualityUpdatesPeriodInDays |30 jours |
 
 #### Suspendre les mises à jour via l’appareil
 
-Si un utilisateur n’a pas accès à GPM, il peut suspendre individuellement les mises à jour pendant jusqu’à 35jours manuellement sur un appareil HoloLens2 sur la [version2004 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-2004) ou les versions ultérieures. Les utilisateurs peuvent accéder à ce paramètre en accédant à **Paramètres -> Mise à jour et sécurité -> Options avancées**. Faites défiler vers le bas pour **Suspendre les mises à jour**, puis sélectionnez la date jusqu’à laquelle celles-ci peuvent être suspendues. Une fois la date limite de suspension atteinte, l’appareil doit obtenir de nouvelles mises à jour, car l’utilisateur peut de nouveau les suspendre. 
+Si un utilisateur n’a pas accès à GPM, il peut suspendre individuellement les mises à jour pendant jusqu’à 35 jours manuellement sur un appareil HoloLens 2 sur la [version 2004 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-2004) ou les versions ultérieures. Les utilisateurs peuvent accéder à ce paramètre en accédant à **Paramètres -> Mise à jour et sécurité -> Options avancées**. Faites défiler vers le bas pour **Suspendre les mises à jour**, puis sélectionnez la date jusqu’à laquelle celles-ci peuvent être suspendues. Une fois la date limite de suspension atteinte, l’appareil doit obtenir de nouvelles mises à jour, car l’utilisateur peut de nouveau les suspendre. 
 
-À partir de la [version20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), cette fonctionnalité de suspension de mises à jour peut être gérée pour les appareils HoloLens2. 
+À partir de la [version 20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), cette fonctionnalité de suspension de mises à jour peut être gérée pour les appareils HoloLens 2. 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
-    - 0 (par défaut): activé
-    - 1: désactivé
+    - 0 (par défaut) : activé
+    - 1 : désactivé
 
 #### Fonctionnalités de gestion des mises à jour Intune prises en charge par HoloLens
 
 Vous pouvez utiliser les fonctions suivantes de gestion des mises à jour d'Intune pour gérer les mises à jour pour HoloLens.
 
-- **Créer** et **Attribuer**: ces fonctions ajoutent une sonnerie de mise à jour de Windows10 à la liste des anneaux de mise à jour. Pour plus d’informations, consultez [Créer et attribuer des anneaux de mise à jour](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings).
+- **Créer** et **Attribuer**: ces fonctions ajoutent une sonnerie de mise à jour de Windows 10 à la liste des anneaux de mise à jour. Pour plus d’informations, consultez [Créer et attribuer des anneaux de mise à jour](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings).
 
-- **Suspendre**: si vous rencontrez un problème lorsque vous déployez une mise à jour de fonctionnalité ou de qualité, vous pouvez suspendre la mise à jour de 35 jours (à partir d’une date spécifique). Cette pause empêche d’autres appareils d’installer la mise à jour jusqu’à ce que vous résolviez ou éliminiez le problème. Si vous suspendez une mise à jour de fonctionnalité, les mises à jour de qualité sont encore proposées aux appareils pour s’assurer qu’ils restent sécurisés. Lorsqu'un type de mise à jour est en pause, le volet Aperçu de cette sonnerie affiche le nombre de jours restants avant que ce type de mise à jour ne reprenne. Une fois l’heure spécifiée écoulée, la pause expire automatiquement et le processus de mise à jour reprend.
+- **Suspendre** : si vous rencontrez un problème lorsque vous déployez une mise à jour de fonctionnalité ou de qualité, vous pouvez suspendre la mise à jour de 35 jours (à partir d’une date spécifique). Cette pause empêche d’autres appareils d’installer la mise à jour jusqu’à ce que vous résolviez ou éliminiez le problème. Si vous suspendez une mise à jour de fonctionnalité, les mises à jour de qualité sont encore proposées aux appareils pour s’assurer qu’ils restent sécurisés. Lorsqu'un type de mise à jour est en pause, le volet Aperçu de cette sonnerie affiche le nombre de jours restants avant que ce type de mise à jour ne reprenne. Une fois l’heure spécifiée écoulée, la pause expire automatiquement et le processus de mise à jour reprend.
 
-  Lorsque la sonnerie de mise à jour est suspendue, vous pouvez sélectionner l’une des options suivantes:
+  Lorsque la sonnerie de mise à jour est suspendue, vous pouvez sélectionner l’une des options suivantes :
 
-  - **Prolonger**: prolonger la période de pause d’un type de mise à jour pour 35 jours.
-  - **Résumé**: pour restaurer les mises à jour de cette sonnerie pour l’opération active. Vous pouvez suspendre la sonnerie de mise à jour si nécessaire.
+  - **Prolonger** : prolonger la période de pause d’un type de mise à jour pour 35 jours.
+  - **Résumé** : pour restaurer les mises à jour de cette sonnerie pour l’opération active. Vous pouvez suspendre la sonnerie de mise à jour si nécessaire.
 
   > [!NOTE]  
   > L’opération **Désinstaller** pour les sonneries de mise à jour n’est pas prise en charge pour les appareils HoloLens 2.
@@ -175,7 +175,7 @@ Vous pouvez annuler les mises à jour et revenir à une version précédente de 
 > [!NOTE]
 > La restauration d’une version antérieure supprime vos fichiers et paramètres personnels.
 
-Pour revenir à une version antérieure de HoloLens 2, procédez comme suit:
+Pour revenir à une version antérieure de HoloLens 2, procédez comme suit :
 
 1. Assurez-vous que vous n’avez pas de téléphone ou d’appareil Windows branché sur votre ordinateur.
 1. Sur votre ordinateur, téléchargez l’ [Assistant de récupération avancée (Advanced Recovery Companion, en anglais](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab))[](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) à partir du Microsoft Store.
@@ -194,7 +194,7 @@ Vous pouvez annuler les mises à jour et revenir à une version précédente de 
 > [!NOTE]
 > La restauration d’une version HoloLens antérieure supprime vos fichiers et paramètres personnels.
 
-Pour revenir à une version antérieure de HoloLens (1ère génération), procédez comme suit:
+Pour revenir à une version antérieure de HoloLens (1ère génération), procédez comme suit :
 
 1. Assurez-vous que vous n’avez pas de téléphone ou d’appareil Windows branché sur votre ordinateur.
 1. Téléchargez et installez l’ [Outil de récupération des appareils Windows (Windows Device Recovery Tool, en anglais](https://support.microsoft.com/help/12379))[](https://support.microsoft.com/help/12379) sur votre ordinateur.
@@ -213,6 +213,6 @@ Si WDRT ne détecte pas votre appareil HoloLens, essayez de redémarrer votre or
 ## Articles connexes
 
 - [Notes de publication HoloLens 2](https://docs.microsoft.com/hololens/hololens-release-notes)
-- [Qu’est-ce que Windows Update pour Entreprise?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
-- [Affecter des appareils aux canaux de maintenance pour les mises à jour Windows10](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
+- [Qu’est-ce que Windows Update pour Entreprise ?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- [Affecter des appareils aux canaux de maintenance pour les mises à jour Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
 - [Gérer les mises à jour du logiciel Windows 10 dans Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)

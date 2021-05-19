@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: MicrosoftHoloLens
-summary: MicrosoftHoloLens est le premier ordinateur holographique entièrement autonome exécutant Windows10. À présent, avec l'introduction de HoloLens 2, chaque appareil HoloLens offre des fonctionnalités de gestion commerciale prête à l'emploi, qui sont renforcée par la fiabilité, la sécurité et l'évolutivité des services de cloud et d'IA de Microsoft.
+title: Microsoft HoloLens
+summary: Microsoft HoloLens est le premier ordinateur holographique entièrement autonome exécutant Windows 10. À présent, avec l'introduction de HoloLens 2, chaque appareil HoloLens offre des fonctionnalités de gestion commerciale prête à l'emploi, qui sont renforcée par la fiabilité, la sécurité et l'évolutivité des services de cloud et d'IA de Microsoft.
 metadata:
-  title: MicrosoftHoloLens
+  title: Microsoft HoloLens
   description: Page d’accueil Microsoft HoloLens.
   ms.prod: hololens
   ms.subservice: subservice
@@ -22,9 +22,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Vue d’ensemble de HoloLens2
+    - text: Vue d’ensemble de HoloLens 2
       url: hololens2-options.md
-    - text: Matériel HoloLens2
+    - text: Matériel HoloLens 2
       url: hololens2-hardware.md
     - text: Microsoft Mesh (préversion)
       url: /mesh/overview
@@ -42,9 +42,9 @@ landingContent:
     links:
     - text: Scénarios courants de déploiement
       url: common-scenarios.md
-    - text: Déploiement à l’échelle d’HoloLens2 connecté au cloud avec RemoteAssist
+    - text: Déploiement à l’échelle d’HoloLens 2 connecté au cloud avec Remote Assist
       url: hololens2-cloud-connected-overview.md
-    - text: Déploiement d’HoloLens2 connecté à l’entreprise avec les guides Dynamics 365
+    - text: Déploiement d’HoloLens 2 connecté à l’entreprise avec les guides Dynamics 365
       url: hololens2-corp-connected-overview.md
     - text: Guide de déploiement des clients externes
       url: hololens2-deployment-guide.md
@@ -86,7 +86,7 @@ landingContent:
     links:
     - text: Inscrire HoloLens dans GPM
       url: hololens-enroll-mdm.md
-    - text: Windows Autopilot pour HoloLens2
+    - text: Windows Autopilot pour HoloLens 2
       url: hololens2-autopilot.md
     - text: Présentation de la gestion d'applications
       url: app-deploy-overview.md
@@ -118,7 +118,7 @@ landingContent:
     links:
     - text: Notes de publication HoloLens 2
       url: hololens-release-notes.md
-    - text: Insider Preview pour MicrosoftHoloLens
+    - text: Insider Preview pour Microsoft HoloLens
       url: hololens-insider.md
     - text: Faites-nous part de vos commentaires
       url: hololens-feedback.md
@@ -136,7 +136,7 @@ landingContent:
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
   - linkListType: how-to-guide
     links:
-    - text: Qu’est-ce que la réalité mixte?
+    - text: Qu’est-ce que la réalité mixte ?
       url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
     - text: Commencer la conception et le prototypage
       url: https://docs.microsoft.com/windows/mixed-reality/design

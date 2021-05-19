@@ -28,10 +28,10 @@ De la même manière que l’expérience PC Windows commence par le Bureau, Wind
 
 Le menu Démarrer sur HoloLens vous permet d’ouvrir des applications, d’afficher des informations d’état importantes et d’accéder à des outils tels que la caméra.
 
-Où que vous soyez dans HoloLens, vous pouvez toujours ouvrir le menu Démarrer grâce au **mouvement associé au menu Démarrer**.  Sur HoloLens (1re génération) le mouvement associé au menu Démarrer est le geste [écarter les doigts paume vers le haut](https://support.microsoft.com/help/12644/hololens-use-gestures). Sur HoloLens2, le [mouvement associé au menu Démarrer](hololens2-basic-usage.md#start-gesture) consiste à appuyer sur l’icône de démarrage qui apparaît sur votre poignet.  Vous pouvez également ouvrir le menu Démarrer à l’aide de votre voix en disant «Ouvrir le menu Démarrer».
+Où que vous soyez dans HoloLens, vous pouvez toujours ouvrir le menu Démarrer grâce au **mouvement associé au menu Démarrer**.  Sur HoloLens (1re génération) le mouvement associé au menu Démarrer est le geste [écarter les doigts paume vers le haut](https://support.microsoft.com/help/12644/hololens-use-gestures). Sur HoloLens 2, le [mouvement associé au menu Démarrer](hololens2-basic-usage.md#start-gesture) consiste à appuyer sur l’icône de démarrage qui apparaît sur votre poignet.  Vous pouvez également ouvrir le menu Démarrer à l’aide de votre voix en disant « Ouvrir le menu Démarrer ».
 
 > [!TIP]
-> Lorsque le menu Démarrer est ouvert, utilisez le mouvement associé au menu Démarrer pour le fermer ou regardez le menu Démarrer et dites «Fermer».
+> Lorsque le menu Démarrer est ouvert, utilisez le mouvement associé au menu Démarrer pour le fermer ou regardez le menu Démarrer et dites « Fermer ».
 
 Des indicateurs d’état du Wi-Fi, de la batterie, du volume et une horloge apparaissent en haut du menu Démarrer. Sur HoloLens 2, il existe également un indicateur d’écoute qui indique si l’appareil est compatible avec la reconnaissance vocale et qu’il écoute les commandes vocales. En bas, vous trouverez les boutons **Photo** et **Vidéo** qui vous permettent de prendre des photos et des enregistrements vidéo.  Il existe également un bouton de **connexion** qui vous permet de projeter ce que vous voyez sur un autre appareil à l’aide de Miracast.
 
@@ -52,7 +52,7 @@ Dans les deux listes d’applications, utilisez les boutons **Page précédente*
 
 Pour ouvrir une application à partir du menu Démarrer, il vous suffit de **sélectionner** une **vignette d’application**. Vous pouvez également indiquer le nom d’une application pour l’ouvrir.
 
-Lorsque vous ouvrez une application à partir du menu Démarrer, l’une des situations suivantes se produit, selon la façon dont l’application est conçue:
+Lorsque vous ouvrez une application à partir du menu Démarrer, l’une des situations suivantes se produit, selon la façon dont l’application est conçue :
 
 - Une **fenêtre d’application** est placée. L’application est alors chargée dans la fenêtre et vous pouvez l’utiliser comme un écran tactile.
 - Un **lanceur d’applications 3D** pour une application immersive est placé. Vous devez ensuite **Sélectionner** le lanceur pour ouvrir l’application immersive.
@@ -69,7 +69,7 @@ Les applications sur HoloLens peuvent utiliser la vue de fenêtre d’applicatio
 
 ### Utiliser les fenêtres d’application
 
-Sur HoloLens (1regénération), les fenêtres d’application sont placées et utilisées dans la maison virtuelle, où vous pouvez les [déplacer, redimensionner et faire pivoter](hololens1-basic-usage.md#move-resize-and-rotate-apps) comme vous le souhaitez. Outre le pointage du regard et le mouvement, vous pouvez également utiliser les fenêtres d’application avec une souris et un clavier Bluetooth connectés.
+Sur HoloLens (1re génération), les fenêtres d’application sont placées et utilisées dans la maison virtuelle, où vous pouvez les [déplacer, redimensionner et faire pivoter](hololens1-basic-usage.md#move-resize-and-rotate-apps) comme vous le souhaitez. Outre le pointage du regard et le mouvement, vous pouvez également utiliser les fenêtres d’application avec une souris et un clavier Bluetooth connectés.
 
 Sur HoloLens 2, en plus d’utiliser des fenêtres d’application dans la maison virtuelle, vous pouvez également utiliser une fenêtre d’application à la fois dans une application immersive. Vous pouvez également mettre une fenêtre d’application en mode **Me suivre**. Celle-ci restera alors face à vous lorsque vous vous déplacerez. Lorsque vous ouvrez une fenêtre d’application au sein d’une application immersive, celle-ci s’ouvre automatiquement dans le mode **Me suivre** . Vous pouvez [déplacer, redimensionner et faire pivoter](hololens2-basic-usage.md#move-resize-and-rotate-holograms) des fenêtres d’application directement avec vos mains dans la maison virtuelle et au sein d’une application immersive.
 
@@ -81,7 +81,7 @@ Sur HoloLens 2, en plus d’utiliser des fenêtres d’application dans la maiso
 
 ### Fermer des applications
 
-Pour fermer une application qui utilise une fenêtre d’application, fermez simplement la fenêtre de l’application à l’aide du bouton **Fermer** dans la barre de titre.  Vous pouvez également regarder la fenêtre et dire «Fermer».
+Pour fermer une application qui utilise une fenêtre d’application, fermez simplement la fenêtre de l’application à l’aide du bouton **Fermer** dans la barre de titre.  Vous pouvez également regarder la fenêtre et dire « Fermer ».
 
 Pour quitter une application qui utilise le mode immersive, utilisez le mouvement associé au menu Démarrer pour afficher le **menu Démarrer**, puis sélectionnez le bouton **Maison virtuelle** .
 

@@ -23,7 +23,7 @@ ms.locfileid: "11283385"
 ---
 # Configurer votre réseau pour HoloLens
 
-Cette section du document nécessite l'intervention des personnes suivantes:
+Cette section du document nécessite l'intervention des personnes suivantes :
 
 1. Administrateur réseau ayant les autorisations pour modifier le proxy/pare-feu
 2. Administrateur Azure Active Directory
@@ -33,7 +33,7 @@ Cette section du document nécessite l'intervention des personnes suivantes:
 
 HoloLens est le principal d’un appareil mobile Windows intégré à Azure.  Il fonctionne de façon optimale dans les environnements commerciaux avec la disponibilité du réseau sans fil (Wi-Fi) et l’accès aux services Microsoft.
 
-Les services cloud critiques incluent:
+Les services cloud critiques incluent :
 
 - Azure Active Directory (Azure AD)
 - Windows Update (WU)
@@ -59,8 +59,8 @@ Vérifiez que [cette liste](hololens-offline.md) de points de terminaison est au
 
 ### Configuration réseau spécifique à Remote Assist
 
-1. La bande passante recommandée pour des performances optimales de Remote Assist est de 1,5Mbits/s. Si vous souhaitez en savoir plus, veuillez consulter la liste détaillée des [conditions requises pour le réseau](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
-**(Veuillez noter que si la vitesse de votre réseau n’est pas de 1,5Mbits/s au minimum, Remote Assist continuera de fonctionner. La qualité peut toutefois être affectée).**
+1. La bande passante recommandée pour des performances optimales de Remote Assist est de 1,5 Mbits/s. Si vous souhaitez en savoir plus, veuillez consulter la liste détaillée des [conditions requises pour le réseau](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
+**(Veuillez noter que si la vitesse de votre réseau n’est pas de 1,5 Mbits/s au minimum, Remote Assist continuera de fonctionner. La qualité peut toutefois être affectée).**
 1. Vérifiez que ces ports et URL sont autorisés sur votre pare-feu réseau pour permettre le fonctionnement de Microsoft Teams. Restez à jour avec la [dernière liste de ports.](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 - En savoir plus sur les [exigences spécifiques du réseau pour l’assistance à distance](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements). 
@@ -91,15 +91,15 @@ Si vous souhaitez en savoir plus sur l’ajout d’utilisateur, veuillez consult
 Si vous souhaitez en savoir plus sur l’attribution de licences, veuillez suivre ces [instructions](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).
 
 1. Ne procédez à cette étape que si les utilisateurs doivent inscrire leur appareil HoloLens/Mobile auprès de vous (trois options sont possibles). Ces étapes permettent de vérifier que les utilisateurs de votre entreprise (ou un groupe d’utilisateurs) peuvent ajouter des appareils.
-    1. **Option1:** accordez à tous les utilisateurs l’autorisation de joindre des appareils sur Azure AD.
+    1. **Option 1 :** accordez à tous les utilisateurs l’autorisation de joindre des appareils sur Azure AD.
 **Connectez-vous au Portail Microsoft Azure en tant qu’administrateur** > **Azure Active Directory** > **Appareils** > **Paramètres de l’appareil** >
 **Configurer les utilisateurs pouvant joindre des appareils sur Azure AD sur *Tous***
 
-    1. **Option2:** accordez aux utilisateurs ou groupes l’autorisation de joindre des appareils sur Azure AD **Se connecter au Portail Microsoft Azure en tant qu’administrateur** > **Azure Active Directory** > **Appareils** > **Paramètres de l’appareil** >
+    1. **Option 2 :** accordez aux utilisateurs ou groupes l’autorisation de joindre des appareils sur Azure AD **Se connecter au Portail Microsoft Azure en tant qu’administrateur** > **Azure Active Directory** > **Appareils** > **Paramètres de l’appareil** >
 **Configurer des utilisateurs pouvant joindre des appareils à Azure AD sur* Sélectionné***
 ![ Image illustrant la configuration des appareils joints Azure AD.](images/azure-ad-image.png)
 
-    1. **Option 3:** vous pouvez empêcher tous les utilisateurs de joindre leurs appareils au domaine. Cela signifie que tous les appareils doivent être enregistrés manuellement.
+    1. **Option 3 :** vous pouvez empêcher tous les utilisateurs de joindre leurs appareils au domaine. Cela signifie que tous les appareils doivent être enregistrés manuellement.
 
 ## Indications sur le gestionnaire de périphériques mobiles
 
@@ -132,14 +132,14 @@ En savoir plus sur [la configuration des anneaux de mise à jour avec Intune](ht
 
 ### Gestion des applications
 
-Gérer les applications HoloLens via:
+Gérer les applications HoloLens via :
 
-1. MicrosoftStore  
+1. Microsoft Store  
   Microsoft Store constitue la meilleure façon de distribuer et de consommer des applications sur HoloLens.  Un ensemble d’applications HoloLens principales est déjà disponible dans le Store ou vous pouvez [publier la vôtre](https://docs.microsoft.com/windows/uwp/publish/).  
   Toutes les applications du Store sont accessibles à tous, mais si ce n’est pas le cas, rendez-vous sur Microsoft Store pour Entreprises.  
 
 1. [Microsoft Store pour Entreprises](https://docs.microsoft.com/microsoft-store/)  
-  MicrosoftStore pour Entreprises et Éducation est une boutique personnalisée pour votre environnement d’entreprise.  Il vous permet d’utiliser le Microsoft Store intégré à Windows 10 et HoloLens afin de rechercher, d’acquérir, de distribuer et de gérer des applications pour votre organisation.  Il vous permet également de déployer des applications propres à votre environnement commercial, mais pas au monde.
+  Microsoft Store pour Entreprises et Éducation est une boutique personnalisée pour votre environnement d’entreprise.  Il vous permet d’utiliser le Microsoft Store intégré à Windows 10 et HoloLens afin de rechercher, d’acquérir, de distribuer et de gérer des applications pour votre organisation.  Il vous permet également de déployer des applications propres à votre environnement commercial, mais pas au monde.
 
 1. Déploiement et gestion des applications via Intune ou une autre solution de gestion des appareils mobiles  
   La plupart des solutions de gestion des appareils mobiles, notamment Intune, permettent de déployer des applications métier directement dans un groupe d’appareils inscrits.  Consultez cet article pour [l’installation des applications Intune](https://docs.microsoft.com/intune/apps-deploy).
@@ -168,15 +168,15 @@ Vous trouverez des instructions sur la mise à niveau vers la suite commerciale 
 
 1. Vérifier les paramètres de votre application
     1. Connectez-vous à votre compte professionnel Microsoft Store
-    1. **Gérer > Produits et Services > Applications et logiciels > Sélectionner l’application à synchroniser > Disponibilité du magasin privé > Sélectionner «Tous» ou «Groupes spécifiques»**
+    1. **Gérer > Produits et Services > Applications et logiciels > Sélectionner l’application à synchroniser > Disponibilité du magasin privé > Sélectionner « Tous » ou « Groupes spécifiques »**
         >[!NOTE]
-        >Si vous ne voyez pas l’application souhaitée, vous devez «obtenir» l’application en recherchant votre application dans le Store. **Cliquez sur la barre «Rechercher» dans le coin supérieur droit > tapez le nom de l’application > cliquez sur l’application > sélectionnez «obtenir»**.
+        >Si vous ne voyez pas l’application souhaitée, vous devez « obtenir » l’application en recherchant votre application dans le Store. **Cliquez sur la barre « Rechercher » dans le coin supérieur droit > tapez le nom de l’application > cliquez sur l’application > sélectionnez « obtenir »**.
     1. Si vos applications ne sont pas affichées dans **Intune > Applications clientes > Applications**vous devrez peut-être [ synchroniser vos applications](https://docs.microsoft.com/intune/apps/windows-store-for-business#synchronize-apps) de nouveau.
 
 1. [Créer un profil d’appareil pour mode plein écran](https://docs.microsoft.com/intune/configuration/kiosk-settings#create-the-profile)
 
 > [!NOTE]
-> Vous pouvez configurer plusieurs utilisateurs pour qu’ils aient accès à différentes expériences du mode plein écran en utilisant «Azure AD» comme «type d’ouverture de session utilisateur». Toutefois, cette option n’est disponible qu’en mode plein écran multi-applications. Le mode multi-applications plein écran fonctionne avec une seule application aussi bien qu'avec plusieurs applications.
+> Vous pouvez configurer plusieurs utilisateurs pour qu’ils aient accès à différentes expériences du mode plein écran en utilisant « Azure AD » comme « type d’ouverture de session utilisateur ». Toutefois, cette option n’est disponible qu’en mode plein écran multi-applications. Le mode multi-applications plein écran fonctionne avec une seule application aussi bien qu'avec plusieurs applications.
 
 ![Image affichant la configuration du mode plein écran dans Intune](images/aad-kioskmode.png)
 
@@ -184,9 +184,9 @@ Si vous souhaitez en savoir plus sur les autres services de GPM, veuillez consul
 
 ## Certificats et authentification
 
-Les certificats peuvent être déployés à l’aide de la gestion des appareils mobiles (voir «certificats» dans la [section GPM](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). Les certificats peuvent également être déployés à HoloLens au travers du positionnement de package. Pour plus d’informations, consultez le [Positionnement HoloLens](hololens-provisioning.md).
+Les certificats peuvent être déployés à l’aide de la gestion des appareils mobiles (voir « certificats » dans la [section GPM](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). Les certificats peuvent également être déployés à HoloLens au travers du positionnement de package. Pour plus d’informations, consultez le [Positionnement HoloLens](hololens-provisioning.md).
 
 ### Autres liens rapides Intune
 
-1. [Créer des profils: ](https://docs.microsoft.com/intune/configuration/device-profile-create) les profils vous permettent d’ajouter et de configurer des paramètres qui font l'objet d'un push vers les appareils de votre organisation.
+1. [Créer des profils : ](https://docs.microsoft.com/intune/configuration/device-profile-create) les profils vous permettent d’ajouter et de configurer des paramètres qui font l'objet d'un push vers les appareils de votre organisation.
 

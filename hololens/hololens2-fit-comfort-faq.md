@@ -1,5 +1,5 @@
 ---
-title: 'Positionnement et utilisation confortable de l’HoloLens2: FAQ'
+title: 'Positionnement et utilisation confortable de l’HoloLens 2 : FAQ'
 description: Restez à jour sur les réponses aux questions fréquemment posées sur l’ajustement de votre HoloLens 2 et profitez confortablement des expériences de reality mixed.
 ms.prod: hololens
 ms.sitesec: library
@@ -27,11 +27,11 @@ Voici quelques conseils pour une utilisation confortable et une expérience opti
 Pour des instructions détaillées et une vidéo de mise en place et d’ajustement de votre appareil, consultez [Préparer votre HoloLens 2](hololens2-setup.md).
 
 > [!NOTE]
-> Dans cette rubrique, les conseils relatifs au positionnement et au confort sont fournis à titre indicatif seulement. Ils ne remplacent pas les législations ou réglementations, ni votre discernement lors de l’utilisation d’HoloLens. Préservez votre sécurité et amusez-vous!
+> Dans cette rubrique, les conseils relatifs au positionnement et au confort sont fournis à titre indicatif seulement. Ils ne remplacent pas les législations ou réglementations, ni votre discernement lors de l’utilisation d’HoloLens. Préservez votre sécurité et amusez-vous !
 
 Voici quelques conseils pour une utilisation confortable et une expérience optimale avec votre HoloLens.
 
-## Je ressens un malaise lorsque j’utilise mon appareil. Que dois-je faire?
+## Je ressens un malaise lorsque j’utilise mon appareil. Que dois-je faire ?
 
 Si vous ressentez un malaise, faites une pause jusqu’à vous sentir mieux. Asseyez-vous dans une pièce bien éclairée et reposez-vous quelques instants. La fois suivante, utilisez votre HoloLens pendant une durée plus courte.
 
@@ -43,7 +43,7 @@ Pour voir le bord supérieur du cadre holographique, placez l’appareil plus ha
 
 ## Je dois regarder vers le haut ou vers le bas pour voir les hologrammes
 
-Essayez d’ajuster la position du viseur de votre appareil de sorte que le cadre holographique corresponde naturellement à votre regard. Voici comment procéder:
+Essayez d’ajuster la position du viseur de votre appareil de sorte que le cadre holographique corresponde naturellement à votre regard. Voici comment procéder :
 
 - **Je dois regarder vers le haut ou vers le bas pour voir les hologrammes**. Tout d’abord, décalez l’arrière de l'arceau un peu plus haut sur votre tête. Ensuite, utilisez une main pour maintenir le bandeau en place, et l’autre main pour faire pivoter légèrement le viseur de manière à bien visualiser le cadre holographique.
 - **Je dois regarder vers le bas ou vers le bas pour voir les hologrammes**. Tout d’abord, décalez l’arrière de l'arceau un peu plus bas sur votre tête. Ensuite, placez vos pouces sous les branches de l’appareil, et vos index sur le haut du bandeau. Pressez légèrement avec vos pouces pour faire pivoter le viseur de manière à bien visualiser le cadre holographique.
@@ -56,13 +56,13 @@ Consultez les [étapes de dépannage de l’affichage](hololens2-display.md) Hol
 
 Le serre-tête facilite le maintien de l’HoloLens sur votre tête, particulièrement lorsque vous vous déplacez beaucoup. Il vous permet également de desserrer un peu le bandeau. [Découvrez comment l’utiliser.](hololens2-setup.md#adjust-fit).
 
-Faites des essais avec le positionnement du bandeau: selon la taille et la forme de votre tête, vous devrez peut-être le faire glisser vers le haut ou vers le bas pour le repositionner sur votre front.
+Faites des essais avec le positionnement du bandeau : selon la taille et la forme de votre tête, vous devrez peut-être le faire glisser vers le haut ou vers le bas pour le repositionner sur votre front.
 
-## Comment puis-je régler l’HoloLens pour le port de mes lunettes?
+## Comment puis-je régler l’HoloLens pour le port de mes lunettes ?
 
 Vous pouvez incliner la visière afin d'ajuster les lunettes.
 
-## Mon bras se fatigue lorsque j’utilise les mouvements. Que puis-je faire?
+## Mon bras se fatigue lorsque j’utilise les mouvements. Que puis-je faire ?
 
 Lorsque vous utilisez les mouvements, inutile d’étendre votre bras loin de votre corps. Gardez-le plus près du corps pour plus de confort et moins de fatigue. Vous pouvez également utiliser des rayons émanant de la main pour interagir avec des hologrammes sans lever les bras [En savoir plus sur les gestes et les rayons émanant de la main](hololens2-basic-usage.md#the-hand-tracking-frame).
 

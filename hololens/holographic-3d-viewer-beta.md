@@ -73,7 +73,7 @@ Si vous avez des difficultés après avoir lu ces sujets, voir [la section Dépa
 - Animation squelettique (truquée) avec écorchage
   - Maximum de 4 influences par sommet
 
-### Matériaux:
+### Matériaux :
 
 - Les matériaux Lambert et Phong sont pris en charge avec des paramètres réglables
 - Propriétés de matériel prises en charge pour Lambert
@@ -97,8 +97,8 @@ Si vous avez des difficultés après avoir lu ces sujets, voir [la section Dépa
 Il existe des limites strictes quant à la taille des fichiers, ainsi qu'au nombre de modèles, de sommets et de maillages pouvant être ouverts simultanément dans la version bêta de 3D Viewer :
 
 - taille de fichier maximale de 500 Mo par modèle
-- Sommets: 600 000 combinés sur tous les modèles ouverts
-- Maillages: 1 600 combinés sur tous les modèles ouverts
+- Sommets : 600 000 combinés sur tous les modèles ouverts
+- Maillages : 1 600 combinés sur tous les modèles ouverts
 - Maximum de 40 modèles ouverts en même temps
 
 ## Optimisation des modèles 3D pour la version bêta de 3D Viewer

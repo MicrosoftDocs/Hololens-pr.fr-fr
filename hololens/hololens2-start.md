@@ -1,5 +1,5 @@
 ---
-title: Configurer votre HoloLens2
+title: Configurer votre HoloLens 2
 description: Découvrez comment configurer votre réseau HoloLens 2 pour la première fois sur Wi-Fi avec un compte Microsoft (MSA) ou Azure Active Directory (AAD).
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 9/17/2019
@@ -19,15 +19,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "11385603"
 ---
-# <a name="set-up-your-hololens-2"></a>Configurer votre HoloLens2
+# <a name="set-up-your-hololens-2"></a>Configurer votre HoloLens 2
 
-Lorsque vous allumerez votre HoloLens pour la première fois, vous serez guidé pour la configuration de votre appareil, la connexion avec un compte d’utilisateur et l’étalonnage de HoloLens pour vos yeux.  Cette section décrit la configuration initiale de HoloLens2.
+Lorsque vous allumerez votre HoloLens pour la première fois, vous serez guidé pour la configuration de votre appareil, la connexion avec un compte d’utilisateur et l’étalonnage de HoloLens pour vos yeux.  Cette section décrit la configuration initiale de HoloLens 2.
 
-Dans la section suivante, vous découvrirez comment utiliser HoloLens et interagir avec des hologrammes. Pour passer directement à cet article, voir [Prendre en main HoloLens2](hololens2-basic-usage.md).
+Dans la section suivante, vous découvrirez comment utiliser HoloLens et interagir avec des hologrammes. Pour passer directement à cet article, voir [Prendre en main HoloLens 2](hololens2-basic-usage.md).
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-Avant de commencer, assurez-vous de disposer des éléments suivants:
+Avant de commencer, assurez-vous de disposer des éléments suivants :
 
 **Une connexion réseau**. Vous devez connecter votre HoloLens à un réseau pour le configurer. Avec HoloLens 2, vous pouvez vous connecter à un réseau Wi-Fi ou utiliser Ethernet (vous avez besoin d’un adaptateur USB-C-to-Ethernet). La première fois que vous le connectez, vous avez besoin d’un réseau ouvert ou protégé par mot de passe qui ne nécessite pas l’accès à un site Web ou l’utilisation de certificats pour se connecter. [En savoir plus sur les sites Web utilisés par HoloLens](hololens-offline.md).
 
@@ -43,7 +43,7 @@ La première fois que vous démarrez votre HoloLens 2, votre première tâche co
 
 ![Premier écran au cours du premier démarrage](images/01-magic-moment.png)
 
-HoloLens 2 vous guide au cours des étapes suivantes:
+HoloLens 2 vous guide au cours des étapes suivantes :
 
 1. Sélectionnez votre langue.
     ![Sélectionner la langue](images/04-language.png)
@@ -53,7 +53,7 @@ HoloLens 2 vous guide au cours des étapes suivantes:
 
 1. Étalonnez HoloLens pour vos yeux.  Si vous choisissez d’ignorer l’étalonnage, vous serez invité à l’effectuer lors de votre prochaine connexion.
 
-    Pour étalonner, vous examinez un ensemble de cibles (appelées «gemme»). Vous pouvez cligner des yeux ou les fermer lors de l’étalonnage, mais vous ne pouvez pas regarder d’autres objets dans la pièce ou dans l’espace physique. HoloLens utilise ce processus pour détecter la position de vos yeux et ainsi améliorer le rendu de votre univers holographique. Après l’étalonnage, les hologrammes s’affichent correctement même lorsque la visière se déplace sur votre tête.
+    Pour étalonner, vous examinez un ensemble de cibles (appelées « gemme »). Vous pouvez cligner des yeux ou les fermer lors de l’étalonnage, mais vous ne pouvez pas regarder d’autres objets dans la pièce ou dans l’espace physique. HoloLens utilise ce processus pour détecter la position de vos yeux et ainsi améliorer le rendu de votre univers holographique. Après l’étalonnage, les hologrammes s’affichent correctement même lorsque la visière se déplace sur votre tête.
 
     Les informations d’étalonnage sont stockées localement sur l’appareil et ne sont associées à aucune information de compte. Pour plus d’informations, voir [Données d’étalonnage et sécurité](hololens-calibration.md#calibration-data-and-security).
 
@@ -87,13 +87,13 @@ HoloLens 2 vous guide au cours des étapes suivantes:
      ![Niveau de télémétrie](images/24-telemetry.png)
 
 1. Découvrez comment utiliser le mouvement associé au menu Démarrer sur HoloLens 2.
-     ![Découvrez comment utiliser le mouvement associé au menu Démarrer, image1](images/26-01-startmenu-learning.png) ![Apprenez à utiliser le mouvement associé au menu Démarrer, image2](images/26-02-startmenu-learning.png)
+     ![Découvrez comment utiliser le mouvement associé au menu Démarrer, image 1](images/26-01-startmenu-learning.png) ![Apprenez à utiliser le mouvement associé au menu Démarrer, image 2](images/26-02-startmenu-learning.png)
 
-Félicitations!  La configuration est terminée et vous êtes prêt à utiliser HoloLens.
+Félicitations !  La configuration est terminée et vous êtes prêt à utiliser HoloLens.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. Commencez à interagir immédiatement avec la réalité mixte et naviguez sur Windows 10 sur votre HoloLens : consultez l’application **Conseils** pour des didacticiels pratiques pour les interactions avec la main. Utilisez le mouvement de démarrage pour accéder à Démarrer ou dites «Accéder au démarrage», puis sélectionnez Conseils. 
+1. Commencez à interagir immédiatement avec la réalité mixte et naviguez sur Windows 10 sur votre HoloLens : consultez l’application **Conseils** pour des didacticiels pratiques pour les interactions avec la main. Utilisez le mouvement de démarrage pour accéder à Démarrer ou dites « Accéder au démarrage », puis sélectionnez Conseils. 
 1. Cliquez ci-dessous pour continuer à lire sur la mise en place de HoloLens 2.
 
 > [!div class="nextstepaction"]

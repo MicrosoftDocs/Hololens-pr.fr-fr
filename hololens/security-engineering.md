@@ -1,24 +1,23 @@
 ---
 title: Ingénierie de sécurité
 description: Ingénierie de sécurité
-author: evmill
-ms.author: v-evmill
-ms.reviewer: tagran
+author: jbennett
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sécurité, hololens, Sécurité, ingénierie
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-manager: yannisle
+ms.reviewer: ''
+manager: yannisl
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cecc556841033ee394f36915f4cae8839dad08df
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 60b11e93ec68e7899403aeec17bba0da7f2ca391
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009532"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865724"
 ---
 # Ingénierie de sécurité
 
@@ -32,6 +31,6 @@ Microsoft dispose de plusieurs ressources et équipes pour optimiser les protoco
 
 Les mises à jour et les correctifs de sécurité sont publiés le deuxième mardi de chaque mois. Pour comprendre les critères utilisés par Microsoft pour évaluer les prochaines étapes d’une vulnérabilité signalée, consultez la [page des critères de maintenance](https://www.microsoft.com/msrc/windows-security-servicing-criteria) du Centre de réponse aux problèmes de sécurité Microsoft. 
 
-Pour obtenir des instructions sur la gestion des mises à jour HoloLens 2 via la gestion des appareils mobiles, consultez [Gérer les mises à jour de HoloLens](https://docs.microsoft.com/hololens/hololens-updates). La cadence de mise à jour du système d'exploitation pour HoloLens 2 correspond à celle de Windows10 ; il y a deux mises à jour par an, l'une ayant lieu au printemps et l'autre à l'automne. Pour plus d’informations sur la façon dont les appareils sont sécurisés pendant les mises à jour du système d’exploitation, consultez [Séparation et isolation d’état](security-state-separation-isolation.md). 
+Pour obtenir des instructions sur la gestion des mises à jour HoloLens 2 via la gestion des appareils mobiles, consultez [Gérer les mises à jour de HoloLens](https://docs.microsoft.com/hololens/hololens-updates). La cadence de mise à jour du système d'exploitation pour HoloLens 2 correspond à celle de Windows 10 ; il y a deux mises à jour par an, l'une ayant lieu au printemps et l'autre à l'automne. Pour plus d’informations sur la façon dont les appareils sont sécurisés pendant les mises à jour du système d’exploitation, consultez [Séparation et isolation d’état](security-state-separation-isolation.md). 
 
 Les administrateurs informatiques peuvent en apprendre davantage sur la stratégie de mise à jour via [Fournisseur de services de configuration Policy - mise à jour](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update). 

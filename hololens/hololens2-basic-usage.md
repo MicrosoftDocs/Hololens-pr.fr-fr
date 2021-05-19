@@ -1,5 +1,5 @@
 ---
-title: Naviguer dans HoloLens2
+title: Naviguer dans HoloLens 2
 description: Découvrez la réalité mixte et découvrez ce guide sur l’utilisation d’appareils HoloLens 2 avec vos mains.
 ms.assetid: 5f791a5c-bdb2-4c5d-bf46-4a198de68f21
 ms.date: 9/17/2019
@@ -19,11 +19,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "11282945"
 ---
-# Naviguer dans HoloLens2
+# Naviguer dans HoloLens 2
 
-Vous êtes prêt à découvrir le monde des hologrammes?
+Vous êtes prêt à découvrir le monde des hologrammes ?
 
-Ce guide constitue une introduction aux éléments suivants:
+Ce guide constitue une introduction aux éléments suivants :
 
 - Interaction avec la réalité mixte
 - Utilisation des mains et de la voix pour interagir avec des hologrammes sur HoloLens 2
@@ -31,7 +31,7 @@ Ce guide constitue une introduction aux éléments suivants:
 
 ## Découvrir la réalité mixte
 
-Sur HoloLens, les hologrammes combinent le monde numérique avec votre environnement physique comme s’ils faisaient partie de votre univers. Même lorsque les hologrammes se trouvent autour de vous, vous pouvez toujours voir votre environnement, vous déplacer librement et interagir avec les personnes et les objets. Nous appelons cette interface «réalité mixte».
+Sur HoloLens, les hologrammes combinent le monde numérique avec votre environnement physique comme s’ils faisaient partie de votre univers. Même lorsque les hologrammes se trouvent autour de vous, vous pouvez toujours voir votre environnement, vous déplacer librement et interagir avec les personnes et les objets. Nous appelons cette interface « réalité mixte ».
 
 Le cadre holographique positionne vos hologrammes là où vos yeux sont les plus sensibles et les lentilles de vision dégagent le champ de vision périphérique. Grâce au son spatial, vous pouvez localiser un hologramme en écoutant, même s’il se trouve derrière vous. Dans la mesure où HoloLens comprend votre environnement physique, vous pouvez placer des hologrammes sur des objets réels comme des tables et des murs.
 
@@ -41,7 +41,7 @@ Lorsque vous maîtriserez ces interactions de base, la navigation sur HoloLens d
 
 > [!TIP]
 > Si vous avez un HoloLens à portée de main, l’application **Astuces** propose des didacticiels pratiques pour les interactions avec les mains sur HoloLens.  
-> Utilisez le mouvement associé au menu Démarrer pour accéder à **Démarrer** ou dites «Menu Démarrer», puis sélectionnez **Astuces**.
+> Utilisez le mouvement associé au menu Démarrer pour accéder à **Démarrer** ou dites « Menu Démarrer », puis sélectionnez **Astuces**.
 
 ## Cadre de suivi de la main
 
@@ -51,7 +51,7 @@ HoloLens est doté de capteurs qui peuvent voir à quelques centimètres autour 
 
 ## Interaction tactile avec des hologrammes à proximité
 
-Lorsqu’un hologramme se trouve proche de vous, approchez votre main de celui-ci: un anneau blanc doit apparaître sur la pointe de votre index.  Il s’agit du **curseur tactile** qui vous permet de toucher et d’interagir avec des hologrammes précisément. Pour **sélectionner** un objet, il vous suffit de le **toucher** avec le curseur tactile. **Faites défiler** le contenu en effectuant un mouvement de **balayage** sur la surface du contenu avec votre doigt, comme si vous utilisiez un écran tactile.
+Lorsqu’un hologramme se trouve proche de vous, approchez votre main de celui-ci : un anneau blanc doit apparaître sur la pointe de votre index.  Il s’agit du **curseur tactile** qui vous permet de toucher et d’interagir avec des hologrammes précisément. Pour **sélectionner** un objet, il vous suffit de le **toucher** avec le curseur tactile. **Faites défiler** le contenu en effectuant un mouvement de **balayage** sur la surface du contenu avec votre doigt, comme si vous utilisiez un écran tactile.
 
 Pour **saisir** un hologramme près de vous, resserrez votre **pouce** et votre **index** sur l’hologramme et maintenez-le. Pour relâcher l’hologramme, écartez vos doigts. Servez-vous de ce **mouvement de saisir** pour déplacer, redimensionner et faire pivoter des objets 3D et des fenêtres d’application dans maison virtuelle.
 
@@ -64,11 +64,11 @@ Pour afficher un **menu contextuel**, que vous trouvez par exemple sur une vigne
 S’il n’y a pas d’hologrammes à proximité de vos mains, le **curseur tactile** s’affiche automatiquement et les **rayons émanant de la main** surgissent de la paume de vos mains. Les rayons émanant de la main vous permettent d’interagir avec des hologrammes à distance.
 
 > [!TIP]
-> Si vous trouvez des rayons émanant de la main gênants, vous pouvez les masquer en disant «Masquer les rayons manuels». Pour les faire réapparaître, dites «Afficher les rayons manuels».
+> Si vous trouvez des rayons émanant de la main gênants, vous pouvez les masquer en disant « Masquer les rayons manuels ». Pour les faire réapparaître, dites « Afficher les rayons manuels ».
 
 ### Sélectionner à l’aide de cliquer dans l’air
 
-Pour sélectionner un objet à l’aide d’un **rayon émanant de la main**, procédez comme suit:
+Pour sélectionner un objet à l’aide d’un **rayon émanant de la main**, procédez comme suit :
 
 1. Utilisez un rayon émanant de votre paume pour cibler l’élément. Vous n’avez pas besoin de soulever tout le bras, vous pouvez garder le coude en position basse et confortable.
 1. Pointez votre index vers le haut en direction du plafond.
@@ -82,7 +82,7 @@ Pour sélectionner un objet à l’aide d’un **rayon émanant de la main**, pr
 
 Pour saisir un hologramme ou faire défiler le contenu d’une fenêtre de l’application à l’aide d’un **rayon émanant de la main**, commencez par un **clic aérien**, mais serrez vos doigts au lieu de les écarter.
 
-Pour effectuer les opérations suivantes avec le rayon émanant de la main, **cliquez longuement dans l’air**:
+Pour effectuer les opérations suivantes avec le rayon émanant de la main, **cliquez longuement dans l’air** :
 
 - **Faire défiler**. Pour faire défiler le contenu de la fenêtre de l’application, cliquez longuement dans l’air sur celui-ci, puis déplacez votre rayon émanant de la main vers le haut et le bas ou d’un côté à l’autre.
 - **Saisir**. Pour saisir une fenêtre d’application ou un hologramme, ciblez la barre de titre de l’application ou l’hologramme avec votre rayon émanant de la main, puis cliquez longuement dans l’air.
@@ -103,14 +103,14 @@ Le mouvement associé au menu Démarrer ouvre le **menu Démarrer**.  Pour effec
 
 ![Image illustrant l’icône Démarrer et le mouvement associé au menu Démarrer](./images/hololens-2-start-gesture.png)
 
-Pour **fermer** le menu Démarrer, effectuez le mouvement associé au menu Démarrer lorsque le menu Démarrer est ouvert.  Vous pouvez également regarder le menu Démarrer et dire «Fermer».
+Pour **fermer** le menu Démarrer, effectuez le mouvement associé au menu Démarrer lorsque le menu Démarrer est ouvert.  Vous pouvez également regarder le menu Démarrer et dire « Fermer ».
 
 ### Mouvement associé au menu Démarrer d’une main
 
 > [!IMPORTANT]
-> Pour que le mouvement mouvement associé au menu Démarrer fonctionne:
+> Pour que le mouvement mouvement associé au menu Démarrer fonctionne :
 >
-> 1. Vous devez installer la mise à jour de novembre 2019 (Build18363.1039) ou version ultérieure.
+> 1. Vous devez installer la mise à jour de novembre 2019 (Build 18363.1039) ou version ultérieure.
 > 1. Vos yeux doivent être étalonnés sur l’appareil, de telle sorte que le suivi visuel fonctionne correctement. Si vous ne voyez pas les points en orbite autour de l’icône de démarrage lorsque le regardez, cela signifie que vos yeux ne sont pas [étalonnés](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2) sur l’appareil.
 
 Vous pouvez également effectuer le mouvement associé au menu Démarrer d’une seule main. Pour cela, tendez votre main avec la paume vers vous et regardez l’**icône Démarrer**sur l’intérieur de votre poignet. **Tout en gardant votre œil sur l’icône**, resserrez le pouce et l’index.
@@ -119,7 +119,7 @@ Vous pouvez également effectuer le mouvement associé au menu Démarrer d’une
 
 ## Menu Démarrer, maison virtuelle et applications
 
-Êtes-vous prêt à tester toutes les interactions avec vos mains?
+Êtes-vous prêt à tester toutes les interactions avec vos mains ?
 
 Vous trouverez vos applications installées dans le [menu Démarrer](holographic-home.md), ainsi que d’autres applications pour HoloLens sur le [Microsoft Store](holographic-store-apps.md).
 
@@ -133,7 +133,7 @@ Vous pouvez à présent rouvrir le **menu Démarrer** et sélectionner la vignet
 
 Astuces est un exemple d’**application immersive**. Une application immersive vous éloigne de la maison de la vie privée lorsque celle-ci s’exécute et devient la seule application que vous voyez.  Pour la fermer, vous devez ouvrir le menu Démarrer et sélectionner le bouton **maison virtuelle** en bas.
 
-[Accédez à cette page pour en savoir plus](holographic-home.md) sur le menu Démarrer et sur la maison virtuelle et trouver des informations sur l’utilisation et la gestion des applications sur HoloLens2.
+[Accédez à cette page pour en savoir plus](holographic-home.md) sur le menu Démarrer et sur la maison virtuelle et trouver des informations sur l’utilisation et la gestion des applications sur HoloLens 2.
 
 ## Déplacer, redimensionner et faire pivoter des hologrammes
 
@@ -141,7 +141,7 @@ Dans la maison virtuelle, vous pouvez déplacer, redimensionner et faire pivoter
 
 ### Déplacement d’hologrammes
 
-Pour déplacer un hologramme ou une application, procédez comme suit:
+Pour déplacer un hologramme ou une application, procédez comme suit :
 
 1. Saisissez l’hologramme en resserrant votre index et votre pouce dessus ou, main avec la paume vers le bas, fermez votre poing dessus.  Saisissez un hologramme 3D n’importe où dans sa zone de délimitation bleue.  Dans le cas d’une fenêtre d’application, saisissez sa barre de titre.
 1. Sans relâcher, déplacez votre main pour positionner l’hologramme. Lorsque vous déplacez une fenêtre d’application de cette manière, la fenêtre de l’application se tourne pour vous faire face lorsque vous la déplacez, ce qui facilite son utilisation au nouvel emplacement.  
@@ -165,7 +165,7 @@ Pour les hologrammes 3D, saisissez et utilisez les poignées de rotation qui app
 
 Pour les fenêtres d’application, le déplacement d’une fenêtre d’application entraîne la rotation automatique de celle-ci, qui vous fait face.
 
-Vous pouvez également utiliser une fenêtre d’hologramme 3D ou d’application avec **les deux mains** (ou un rayon émanant de la main) à la fois, puis:
+Vous pouvez également utiliser une fenêtre d’hologramme 3D ou d’application avec **les deux mains** (ou un rayon émanant de la main) à la fois, puis :
 
 - Rapprocher ou éloigner vos mains pour redimensionner l’hologramme.
 - Rapprocher et éloigner les mains de votre corps pour faire pivoter l’hologramme.
@@ -180,17 +180,17 @@ Vous pouvez utiliser votre voix pour effectuer la plupart des opérations que vo
 
 | Pour | Dites |
 | - | - |
-| Ouvrir le menu Démarrer | «Menu Démarrer» |
-| Sélectionner | Dites «sélectionner» pour afficher le curseur oculaire. Ensuite, tournez la tête pour placer le curseur sur l’élément que vous voulez sélectionner, puis dites «Sélectionner» une nouvelle fois. |
-| Voir les commandes vocales disponibles | «Que puis-je dire?» |
+| Ouvrir le menu Démarrer | « Menu Démarrer » |
+| Sélectionner | Dites « sélectionner » pour afficher le curseur oculaire. Ensuite, tournez la tête pour placer le curseur sur l’élément que vous voulez sélectionner, puis dites « Sélectionner » une nouvelle fois. |
+| Voir les commandes vocales disponibles | « Que puis-je dire ? » |
 
  [Afficher d’autres commandes vocales et modes d’utilisation de la fonctionnalité vocale avec HoloLens](hololens-cortana.md)
 
 ## Étapes suivantes
 
-Félicitations! Vous êtes prêt à utiliser HoloLens 2!
+Félicitations ! Vous êtes prêt à utiliser HoloLens 2 !
 
-Vous pouvez maintenant configurer votre HoloLens 2 en fonction de vos besoins spécifiques.  Vous pouvez également essayer les opérations suivantes:
+Vous pouvez maintenant configurer votre HoloLens 2 en fonction de vos besoins spécifiques.  Vous pouvez également essayer les opérations suivantes :
 
 - [Connexion d’appareils Bluetooth tels qu’une souris et un clavier](hololens-connect-devices.md)
 - [Installer des applications à partir du Store](holographic-store-apps.md)
