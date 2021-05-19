@@ -1,30 +1,30 @@
-# [MicrosoftHoloLens](index.yml)
+# [Microsoft HoloLens](index.yml)
 
 # Vue d'ensemble
 
-## Prendre en main HoloLens2
+## Prendre en main HoloLens 2
 ### [Vue d’ensemble de HoloLens 2](hololens2-options.md)
-### [Matériel HoloLens2](hololens2-hardware.md)
+### [Matériel HoloLens 2](hololens2-hardware.md)
 ### [Préparer votre HoloLens 2 pour utilisation](hololens2-setup.md)
-### [Configurer votre HoloLens2](hololens2-start.md)
-### [Positionnement et utilisation confortable de l’HoloLens2: FAQ](hololens2-fit-comfort-faq.md)
+### [Configurer votre HoloLens 2](hololens2-start.md)
+### [Positionnement et utilisation confortable de l’HoloLens 2 : FAQ](hololens2-fit-comfort-faq.md)
 ### [Affichage HoloLens 2](hololens2-display.md)
-### [Nettoyage HoloLens2: FAQ](hololens2-maintenance.md)
+### [Nettoyage HoloLens 2 : FAQ](hololens2-maintenance.md)
 ### [Langues prises en charge pour HoloLens 2](hololens2-language-support.md)
-### [Savoir maîtriser HoloLens2](hololens2-basic-usage.md)
-### [FAQ sur HoloLens2 Development Edition](hololens2-development-edition-faq.md)
+### [Savoir maîtriser HoloLens 2](hololens2-basic-usage.md)
+### [FAQ sur HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 ### [FAQ sur HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
 
 
 
-## Prise en main de HoloLens (1regénération)
+## Prise en main de HoloLens (1re génération)
 ### [Matériel HoloLens (1ère génération)](hololens1-hardware.md)
 ### [Préparer votre HoloLens (1re génération)](hololens1-setup.md)
 ### [Installer votre HoloLens (1re génération)](hololens1-start.md)
 ### [Positionnement et utilisation confortable de l’HoloLens (1re génération) : FAQ](hololens1-fit-comfort-faq.md)
 ### [Installer une version localisée de HoloLens (1ère génération)](hololens1-install-localized.md)
 ### [Savoir maîtriser HoloLens (1re génération)](hololens1-basic-usage.md)
-### [Utiliser le dispositif de clic HoloLens (1regénération)](hololens1-clicker.md)
+### [Utiliser le dispositif de clic HoloLens (1re génération)](hololens1-clicker.md)
 ### [Utiliser la visionneuse 3D sur HoloLens (1ère génération)](holographic-3d-viewer-beta.md)
 ### [Gérer les applications personnalisées pour HoloLens](holographic-custom-apps.md)
 
@@ -47,19 +47,19 @@
 ## [Déploiement de HoloLens dans un environnement commercial](hololens-requirements.md)
 ## Scénarios courants de déploiement
 ### [Scénarios de déploiement d’infrastructure](common-scenarios.md)
-### Déploiement d’HoloLens2 connecté au cloud avec RemoteAssist
+### Déploiement d’HoloLens 2 connecté au cloud avec Remote Assist
 #### [Vue d’ensemble du déploiement connecté dans le cloud](hololens2-cloud-connected-overview.md)
 #### [Connexion au cloud – Préparation](hololens2-cloud-connected-prepare.md)
 #### [Connexion au cloud – Configuration](hololens2-cloud-connected-configure.md)
 #### [Connexion au cloud – Déploiement](hololens2-cloud-connected-deploy.md)
 #### [Connexion au cloud – Mise à jour](hololens2-cloud-connected-maintain.md)
-### [Déploiement de l'HoloLens2 auprès de clients externes avec assistance à distance](hololens2-deployment-guide.md)
-### Déploiement HoloLens2 connecté à l’entreprise avec des guides Dynamique365
-#### [Connexion à l’entreprise: ensemble du déploiement](hololens2-corp-connected-overview.md)
-#### [Connecté à l’entreprise: préparer](hololens2-corp-connected-prepare.md)
-#### [Connecté à l’entreprise: configurer](hololens2-corp-connected-configure.md)
-#### [Connecté à l’entreprise: déployer](hololens2-corp-connected-deploy.md)
-#### [Connecté à l’entreprise: maintenance](hololens2-corp-connected-maintain.md)
+### [Déploiement de l'HoloLens 2 auprès de clients externes avec assistance à distance](hololens2-deployment-guide.md)
+### Déploiement HoloLens 2 connecté à l’entreprise avec des guides Dynamique 365
+#### [Connexion à l’entreprise : ensemble du déploiement](hololens2-corp-connected-overview.md)
+#### [Connecté à l’entreprise : préparer](hololens2-corp-connected-prepare.md)
+#### [Connecté à l’entreprise : configurer](hololens2-corp-connected-configure.md)
+#### [Connecté à l’entreprise : déployer](hololens2-corp-connected-deploy.md)
+#### [Connecté à l’entreprise : maintenance](hololens2-corp-connected-maintain.md)
 ### [Sécurité hors connexion](hololens-common-scenarios-offline-secure.md)
 ## Sécurité
 ### [Vue d’ensemble de la sécurité](security-overview.md)
@@ -74,7 +74,7 @@
 ### Sécurité sur la 1ère génération HoloLens 
 #### [Questions de sécurité fréquemment posées sur HoloLens (1ère génération)](hololens1-faq-security.md)
 #### [Chiffrement BitLocker HoloLens (1ère génération)](hololens1-encryption.md)
-### [Déclaration de confidentialité HoloLens2](hololens2-compliance.md)
+### [Déclaration de confidentialité HoloLens 2](hololens2-compliance.md)
 ## [Exigences relatives à la licence](hololens-licenses-requirements.md)
 ## Environment
 ### [Considérations en matière d’environnement pour HoloLens](hololens-environment-considerations.md)
@@ -87,9 +87,9 @@
 ### [Configurez l’aperçu des CSPs et Gestion des Périphériques](hololens-csp-policy-overview.md)
 ### [Configurer HoloLens à l'aide de packages d'approvisionnement](hololens-provisioning.md)
 ### [Utilisation de MDM pour gérer les appareils HoloLens](hololens-mdm-configure.md)
-### [Limites des PériphériquesCommunes](hololens-common-device-restrictions.md)
+### [Limites des Périphériques Communes](hololens-common-device-restrictions.md)
 ### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)
-### [Accès global affecté: kiosque](hololens-global-assigned-access-kiosk.md)
+### [Accès global affecté : kiosque](hololens-global-assigned-access-kiosk.md)
 ### [Contrôle de l’application Windows Defender (WDAC)](windows-defender-application-control-wdac.md)
 ### [CSP Paramètres de page et URI de HoloLens](settings-uri-list.md)
 ## Identité
@@ -107,7 +107,7 @@
 # Déployer
 ## Inscription
 ### [Inscrire HoloLens dans GPM](hololens-enroll-mdm.md)
-### [Windows Autopilot pour HoloLens2](hololens2-autopilot.md) 
+### [Windows Autopilot pour HoloLens 2](hololens2-autopilot.md) 
 ### [Inscrivez-vous à l'environnement Wi-Fi restreint par adresse MAC](mac-address-options.md)
 ## Applications
 ### [Présentation de la gestion d'applications](app-deploy-overview.md)
@@ -120,7 +120,7 @@
 ## [Gérer les mises à jour de HoloLens](hololens-updates.md)
 ## Corriger les problèmes liés à HoloLens
 ### [Résolution des problèmes](hololens-troubleshooting.md)
-### [Redémarrer, réinitialiser ou récupérer HoloLens2](hololens-recovery.md)
+### [Redémarrer, réinitialiser ou récupérer HoloLens 2](hololens-recovery.md)
 ### [Redémarrer, réinitialiser ou récupérer HoloLens (1ère génération) ](hololens1-recovery.md)
 ### [Forum Aux Questions](hololens-faq.md)
 ### [Problèmes connus avec HoloLens](hololens-known-issues.md)
@@ -129,7 +129,7 @@
 
 # Notes de publication HoloLens
 ## [Notes de publication HoloLens 2](hololens-release-notes.md)
-## [Insider Preview pour MicrosoftHoloLens](hololens-insider.md)
+## [Insider Preview pour Microsoft HoloLens](hololens-insider.md)
 ## [Notes de publication HoloLens (1ère génération)](hololens1-release-notes.md)
 
 # Faites-nous part de vos commentaires
