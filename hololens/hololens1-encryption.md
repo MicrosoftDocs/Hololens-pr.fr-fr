@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308546"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397280"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (1er génération) chiffrement BitLocker
 

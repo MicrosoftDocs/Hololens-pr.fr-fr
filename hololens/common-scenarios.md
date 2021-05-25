@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4b9bd4335e45180276d69af2ce5f33a38ecb800f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 30a35fb0fe5d5b669249df25ebff0228b552596c
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308787"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397416"
 ---
 # <a name="common-infrastructure-deployment-scenarios-overview"></a>Vue d’ensemble des scénarios courants de déploiement d’infrastructure
 
@@ -27,10 +27,12 @@ Les informations suivantes fournissent une vue d’ensemble de l’architecture 
 
 ## <a name="scenarios"></a>Scénarios
 
-Le diagramme ci-dessous représente trois scénarios typiques pour les déploiements HoloLens 2.
-![Diagramme de scénarios](images/scenarios.jpg)
+Le diagramme ci-dessous représente deux scénarios managés typiques pour les déploiements HoloLens 2.
+ 
 
-### <a name="scenario-a-deploy-to-cloud-connect-devices"></a>Scénario A : déployer sur des appareils Cloud Connect
+Il existe également un troisième scénario qui permet des déploiements sécurisés hors connexion.
+
+### <a name="scenario-a-deploy-to-cloud-connected-devices"></a>Scénario A : déployer sur des appareils connectés au Cloud
 
 HoloLens 2 est déployé pour une utilisation principalement dans des environnements externes à un réseau d’entreprise. Les ressources d’entreprise ne sont pas accessibles ou peuvent être limitées par le biais du VPN. Ce déploiement est similaire à celui des appareils mobiles gérés au sein d’une entreprise.
  * Configurations courantes de base
@@ -41,13 +43,19 @@ HoloLens 2 est déployé pour une utilisation principalement dans des environnem
    * Différents niveaux de configurations de verrouillage de périphérique sont appliqués en fonction de cas d’usage spécifiques, de l’ouverture complète à la borne d’application unique.
    * Une ou plusieurs applications sont déployées via MDM
 
+
+
 * Défis courants
    * Détermination des configurations MDM à appliquer à HoloLens 2 en fonction des spécifications du scénario.
 
-Pour obtenir un guide de déploiement similaire au scénario A, consultez notre guide pour le [Cloud Connected HoloLens 2 avec l’assistance à distance](hololens2-cloud-connected-overview.md).
+[![Diagramme ](images/deployment-guides-revised-scenario-a.png) de scénario](images/deployment-guides-revised-scenario-a.png#lightbox)
+
+Pour obtenir un guide de déploiement similaire à ce scénario, consultez notre guide du Guide de déploiement d’un [environnement connecté au Cloud](hololens2-cloud-connected-overview.md).
 
 > [!div class="nextstepaction"]
-> [Guide de déploiement – connexion Cloud HoloLens 2 avec assistance à distance](hololens2-cloud-connected-overview.md)
+> [Guide de déploiement de l’environnement connecté au Cloud](hololens2-cloud-connected-overview.md)
+> [!div class="nextstepaction"]
+> [Guide de déploiement de l’environnement connecté au Cloud (clients externes)](hololens2-deployment-guide.md)
 
 ### <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scénario B : déployer à l’intérieur du réseau de votre organisation
 
@@ -67,8 +75,14 @@ HoloLens 2 est déployé pour être principalement utilisé sur le réseau d’e
    * Étant donné que HoloLens 2 est un premier appareil Cloud, il s’appuie fortement sur Internet et les services connectés au Cloud pour l’authentification des utilisateurs, les mises à jour du système d’exploitation, la gestion MDM, etc. Lors de la connexion à un réseau d’entreprise, il est probable que les règles de proxy/pare-feu doivent être ajustées pour permettre l’accès à HoloLens 2 et aux applications qui s’y exécutent.
    * La connectivité des Wi-Fi d’entreprise requiert généralement des certificats pour authentifier l’appareil ou l’utilisateur sur le réseau. L’infrastructure ou les paramètres requis pour déployer des certificats sur des appareils Windows 10 via MDM peuvent être difficiles à configurer.
 
+[![Diagramme ](images/deployment-guides-revised-scenario-b-01-1.png) du scénario B1](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+
+[![Diagramme ](images/deployment-guides-revised-scenario-b-02-1.png) du scénario B2](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+Pour obtenir un guide de déploiement similaire à ce scénario, consultez notre guide du Guide de déploiement d’un [réseau d’entreprise](hololens2-corp-connected-overview.md).
+
 > [!div class="nextstepaction"]
-> [Guide de déploiement – connexion d’entreprise HoloLens 2 avec Dynamics 365 guides](hololens2-corp-connected-overview.md)
+> [Guide de déploiement du réseau d’entreprise](hololens2-corp-connected-overview.md)
 
 ### <a name="scenario-c-deploy-in-secure-offline-environment"></a>Scénario C : déployer dans un environnement hors connexion sécurisé
 
@@ -86,7 +100,9 @@ HoloLens 2 est déployé pour une utilisation hors connexion principale sans acc
    * Les services Cloud ne peuvent pas être utilisés, limitant ainsi les fonctionnalités HoloLens 2.
    * Plus grande surcharge administrative, car ces appareils doivent être configurés, configurés et mis à jour manuellement.
 
-Pour obtenir un guide de déploiement similaire à ce scénario, consultez notre [Guide de déploiement sécurisé en mode hors connexion](hololens-common-scenarios-offline-secure.md).
+[![Diagramme sécurisé hors connexion 1 ](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+
+Pour obtenir un guide de déploiement similaire à ce scénario, consultez notre guide de déploiement de l' [environnement sécurisé en mode hors connexion](hololens-common-scenarios-offline-secure.md).
 
 > [!div class="nextstepaction"]
-> [Guide de déploiement-sécurité HoloLens 2 en mode hors connexion](hololens-common-scenarios-offline-secure.md)
+> [Guide de déploiement de l’environnement sécurisé hors connexion](hololens-common-scenarios-offline-secure.md)

@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9d221321adcb8062206695e3e610d35dee14523e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f9dcf98cbd200ac54cd786648fdfe286bff1aa00
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308626"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397450"
 ---
 # <a name="certificate-manager"></a>Gestionnaire de certificats
 
@@ -46,6 +46,8 @@ L’installation de certificat prend actuellement en charge les fichiers. cer et
 Le certificat doit maintenant être installé sur l’appareil.
 
 ## <a name="to-remove-a-certificate"></a>Pour supprimer un certificat : 
+>[!WARNING]
+> Bien que vous puissiez afficher les certificats déployés via MDM dans le gestionnaire de certificats, vous ne pouvez pas les désinstaller dans le gestionnaire de certificats. Vous devez les désinstaller via MDM.
 1. Accédez à **paramètres application > mise à jour et sécurité > certificats**.
 1. Recherchez le certificat par son nom dans la zone de recherche.
 1. Sélectionnez le certificat.
@@ -53,6 +55,7 @@ Le certificat doit maintenant être installé sur l’appareil.
 1. Lorsque vous êtes invité à confirmer l’opération, sélectionnez **Oui**.
 
 
-![Visionneuse de certificats dans l’application paramètres sous Ceritifcates](images/certificate-viewer-device.jpg)
+
+![Visionneuse de certificats dans l’application paramètres sous certificats](images/certificate-viewer-device.jpg)
 
 ![Image illustrant l’utilisation de l’interface utilisateur de certificat pour installer un certificat dans les paramètres.](images/certificate-device-install.jpg)

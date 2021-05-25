@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b22baa62488bbdf6d2a8a43b6487bbe5ec3277cb
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: cf2abe249e40e522b4d8993449b9f19033a64744
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308967"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397400"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Configurer HoloLens à l’aide d’un package d’approvisionnement
 
@@ -212,10 +212,10 @@ En associant le lancement automatique de l’approvisionnement à partir des pé
 
 Votre appareil est maintenant configuré et affiche l’écran de réussite de l’approvisionnement.
 
-## <a name="apply-a-provisioning-package-to-hololens-after-setup"></a>Appliquer un package d’approvisionnement à HoloLens après l’installation
+## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>Appliquer/supprimer un package d’approvisionnement à HoloLens après l’installation
 
 > [!NOTE]
-> Ces étapes s’appliquent uniquement à Windows 10, version 1809.
+> Ces étapes s’appliquent à tous les appareils HoloLens 2 et aux appareils HoloLens (1er génération) sur Windows holographique, version 1809 et versions ultérieures.
 
 Sur votre PC, procédez comme suit :
 1. Créez un package d’approvisionnement comme décrit dans [créer un package d’approvisionnement pour HoloLens à l’aide de l’Assistant hololens](hololens-provisioning.md).

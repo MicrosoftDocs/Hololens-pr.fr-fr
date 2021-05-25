@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3041a31e6a4f8b51385fa02dfddc21d56993721d
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308932"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397196"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Guide de déploiement-connexion d’entreprise HoloLens 2 avec Dynamics 365 guides-vue d’ensemble
 
@@ -52,9 +52,11 @@ L’infrastructure suivante doit déjà être en place :
 - Power BI Desktop
 - Connectivité réseau
 
-![Diagramme du réseau connecté à l’entreprise](./images/corpconnected-diagHL2-guides.png)
+[![Diagramme du réseau connecté à l’entreprise, étape 1 ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-## <a name="stages-of-deployment"></a>Phases de déploiement
+[![Diagramme du réseau connecté à l’entreprise, étape 2 ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+## <a name="in-this-guide-you-will"></a>Dans ce guide, vous allez :
 ### <a name="prepare"></a>Préparation
 > [!div class="checklist"]
 >- [En savoir plus sur les éléments essentiels de l’infrastructure pour les appareils HoloLens 2.](hololens2-corp-connected-prepare.md#infrastructure-essentials)

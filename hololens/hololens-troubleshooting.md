@@ -13,14 +13,14 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogue, dépannage, correction, aide, support, HoloLens
-ms.openlocfilehash: f57aea52337f7ca7e15bda1363f73a3a7265a025
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 1039af533b5039eb4eef6599c7cbb480955b0661
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308812"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397260"
 ---
-# <a name="troubleshooting"></a>Dépannage
+# <a name="troubleshoot-common-issues"></a>Résolution des problèmes courants
 
 Cet article explique comment résoudre plusieurs problèmes courants liés à HoloLens.
 

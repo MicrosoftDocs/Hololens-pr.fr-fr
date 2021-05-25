@@ -11,12 +11,14 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 9458a6fd02cf96dd265580cb099e39fa221d4206
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens 2
+ms.openlocfilehash: e6aebfca076294de34068cd075d954220d7f4686
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308817"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397220"
 ---
 # <a name="hololens-2-enterprise-deployment-and-management"></a>Gestion et déploiement de l’entreprise HoloLens 2
 
