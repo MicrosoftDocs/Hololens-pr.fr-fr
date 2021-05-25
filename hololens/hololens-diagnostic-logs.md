@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4a360e99a45b855957e36dd6ba31ede3da9631ba
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: c1d5205d4faa4384600c489167c9581de8e4b62c
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308912"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397840"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Collecter et utiliser les informations de diagnostic des appareils HoloLens
 
@@ -46,7 +46,7 @@ Le tableau suivant compare différentes méthodes de collection. Les noms de mé
 |[Fournisseur CSP DiagnosticLog](#diagnosticlog-csp) |Connexion réseau<br /><br />Environnement MDM qui prend en charge le CSP DiagnosticLog |L’administrateur configure les emplacements de stockage |Dans l’environnement managé, l’utilisateur accepte implicitement l’accès administrateur aux données.<br /><br />L’administrateur configure les autorisations et les rôles d’accès. | Les données sont conservées dans le stockage cloud et l’administrateur configure la stratégie de rétention. |
 |[Diagnostics hors connexion](#offline-diagnostics) |Configuration de l’appareil :<ul><li>Sous tension et connecté à l’ordinateur</li><li>Les boutons d’alimentation et de volume fonctionnent</li></ul> |Appareil HoloLens<br /><br />Ordinateur connecté |L’utilisateur stocke les données, et seul l’utilisateur accède aux données (sauf si l’utilisateur partage spécifiquement les données avec un autre utilisateur). |Les données sont conservées sur l’appareil jusqu’à ce que l’utilisateur le supprime. |
 
-- L’utilisateur final est chargé de partager les journaux de manière responsable avec une autre personne. Ces fichiers sont principalement utiles pour contacter le service clientèle et le support technique.  
+* L’utilisateur final est chargé de partager les journaux de manière responsable avec une autre personne. Ces fichiers sont principalement utiles pour contacter le service clientèle et le support technique.  
 
 ## <a name="feedback-hub"></a>Hub de commentaires
 
@@ -55,6 +55,8 @@ Un utilisateur HoloLens peut utiliser l’application de bureau Microsoft Feedba
 > [!NOTE]  
 > **Utilisateurs commerciaux ou d’entreprise :** Si vous utilisez l’application Hub de commentaires pour signaler un problème lié à MDM, à la configuration ou à tout autre aspect de la gestion des périphériques, remplacez la catégorie d’application par catégorie de périphérique de gestion d' **entreprise**  >  .
 
+>[!IMPORTANT]
+> Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous recommandons vivement de définir la télémétrie de votre appareil sur **facultatif**. Vous pouvez définir cette valeur pendant l’expérience OOBE (out-of-Box-Experience) ou à l’aide de l’application **paramètres** . Pour ce faire, à l’aide des paramètres, sélectionnez **démarrer > paramètres > confidentialité > Diagnostics de l’application > sur**.
 ### <a name="prerequisites"></a>Prérequis
 
 - L’appareil est connecté à un réseau.
@@ -67,6 +69,7 @@ En acceptant les conditions d’utilisation du Hub de commentaires, l’utilisat
 Le hub de commentaires fournit deux emplacements permettant à l’utilisateur de stocker les informations de diagnostic :
 
 - **Le Cloud Microsoft**. Les données que l’utilisateur charge à l’aide de l’application Hub de commentaires sont stockées pendant le nombre de jours qui est compatible avec les exigences de la confidentialité de la prochaine génération (NGP). Les employés de Microsoft peuvent utiliser une visionneuse compatible NGP pour accéder aux informations pendant cette période.
+
    > [!NOTE]  
    > Ces exigences s’appliquent aux données de toutes les catégories de hub de commentaires.
 
@@ -74,16 +77,23 @@ Le hub de commentaires fournit deux emplacements permettant à l’utilisateur d
 
 ## <a name="settings-troubleshooter"></a>Résolution des problèmes de paramètres
 
-Un utilisateur HoloLens peut utiliser l’application paramètres sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour ce faire, procédez comme suit :
+Un utilisateur HoloLens peut utiliser l’application **paramètres** sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour ce faire, procédez comme suit :
 
 1. Ouvrez l’application paramètres et sélectionnez **mettre à jour &**  >  page **résolution des problèmes** de sécurité.
 1. Sélectionnez la zone appropriée, puis cliquez sur **Démarrer**.
 1. Reproduisez le problème.
 1. Une fois que vous avez reproduit le problème, revenez aux paramètres, puis sélectionnez **arrêter**.
 
+Un utilisateur peut également configurer le comportement des diagnostics de secours à partir de l’application **paramètres** . Accédez à **confidentialité-> la page de résolution des problèmes** pour configurer ce paramètre.
+> [!NOTE]
+> Si une stratégie MDM est configurée pour l’appareil, l’utilisateur ne sera pas en mesure de remplacer ce comportement.
+
+### <a name="os-update-troubleshooter"></a>Dépannage des mises à jour du système d’exploitation
+Sur les builds [Windows holographique, version 21H1 et versions ](hololens-release-notes.md#windows-holographic-version-21h1) ultérieures :
+- En plus des dépannages précédents dans l’application paramètres, un nouvel utilitaire de résolution des problèmes a été ajouté avec l’ajout de la nouvelle application de paramètres pour les mises à jour du système d’exploitation. Accédez à **paramètres-> mettre à jour & sécurité-> résoudre les problèmes-> Windows Update** et sélectionnez **Démarrer**. Cela vous permet de collecter des traces tout en reproduisant votre problème avec les mises à jour du système d’exploitation afin d’améliorer la résolution des problèmes avec votre service informatique ou votre support technique.
 ### <a name="prerequisites"></a>Prérequis
 
-- L’application paramètres est installée sur l’appareil et est disponible pour l’utilisateur.
+- L’application **paramètres** est installée sur l’appareil et est disponible pour l’utilisateur.
 
 ### <a name="data-locations-access-and-retention"></a>Emplacements, accès et rétention des données
 
@@ -122,7 +132,7 @@ L’administrateur informatique utilise le CSP DiagnosticLog pour configurer les
 - Autorisations qui contrôlent l’accès aux informations de diagnostic.
 
 ## <a name="offline-diagnostics"></a>Diagnostics hors connexion
-Dans les situations où l’appareil n’est pas en mesure de collecter des diagnostics via le hub de commentaires ou l’utilitaire de résolution des problèmes de configuration, vous pouvez collecter les diagnostics manuellement. Cela est nécessaire lorsque l’appareil ne peut pas se connecter à Wi-Fi ou que vous ne pouvez pas accéder à d’autres méthodes mentionnées ci-dessus. Les diagnostics collectent les vidages sur incident et les journaux de l’appareil qui aident un ingénieur du support technique Microsoft à isoler les problèmes.
+Dans les situations où l’appareil n’est pas en mesure de collecter des diagnostics via le hub de commentaires ou l’utilitaire de résolution des problèmes de paramètres, vous pouvez collecter les diagnostics manuellement. Cela est nécessaire lorsque l’appareil ne peut pas se connecter à Wi-Fi ou que vous ne pouvez pas accéder à d’autres méthodes mentionnées ci-dessus. Les diagnostics collectent les vidages sur incident et les journaux de l’appareil qui aident un ingénieur du support technique Microsoft à isoler les problèmes.
 
 Cela fonctionne lorsque l’appareil s’affiche dans l’Explorateur de fichiers après l’avoir connecté à un PC via un câble USB.
 
@@ -152,4 +162,4 @@ Pour collecter les Diagnostics, procédez comme suit :
 7.  Copiez les fichiers ZIP de diagnostics et partagez-les avec l’équipe du support technique Microsoft.
 
 > [!NOTE]
-> Certains fichiers ZIP de diagnostic peuvent contenir des informations d’identification personnelle.
+> Certains fichiers ZIP de diagnostic peuvent contenir des PII.

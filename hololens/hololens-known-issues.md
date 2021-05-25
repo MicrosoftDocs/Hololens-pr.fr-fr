@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 54bc090352983e814c64deea8f1f401c24e3261b
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: bc1d399a07a6a0622c953178cad7be1b8a018fdb
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308847"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397780"
 ---
 # <a name="known-issues-for-hololens"></a>Problèmes connus pour HoloLens
 
@@ -46,7 +46,7 @@ Voici la liste actuelle des problèmes connus pour les appareils HoloLens. Véri
 
 - La fonctionnalité d’aperçu instantané de la capture de la réalité mixte peut présenter plusieurs secondes de latence.
 
-- Sur la page d’entrée virtuelle, les contrôles de mouvement et de défilement sous la section des mouvements virtuels ne sont pas fonctionnels. Leur utilisation n’aura aucun effet. Le clavier virtuel sur la même page fonctionne correctement.
+- Sur la page d’entrée virtuelle, les contrôles de mouvement et de défilement sous la section des mouvements virtuels ne sont pas fonctionnels. Leur utilisation n’aura aucun effet. Le clavier virtuel sur la page d’entrée virtuelle fonctionne correctement.
 
 - Après l’activation du mode développeur dans les paramètres, l’activation du commutateur Device Portal peut prendre quelques secondes.
 
@@ -62,7 +62,29 @@ Solutions de contournement :
 
 ## <a name="known-issues-for-hololens-2-devices"></a>Problèmes connus pour les appareils HoloLens 2
 
+### <a name="device-using-auto-login-asks-for-log-in"></a>L’appareil utilisant la connexion automatique demande une connexion
+
+Un appareil HoloLens 2 peut être configuré pour se connecter automatiquement à via les **paramètres**  ->    ->  **options de connexion** de comptes-> et sous **obligatoire** , définissez la valeur sur **jamais**. Certains utilisateurs peuvent être amenés à se connecter à nouveau à l’appareil lors de la mise à jour d’un appareil avec une mise à jour substantielle, telle qu’une mise à jour de fonctionnalité.
+
+Exemple de cas de figure :
+
+- Mise à jour d’un appareil à partir de Windows holographique, version 2004 (Build 19041. xxxx) vers Windows holographique, version 21H1 (Build 20346. xxxx)
+- Mise à jour d’un appareil pour effectuer une mise à jour importante sur la même version majeure, par exemple Windows holographique, version 2004 vers Windows holographique, version 20H2
+- Mise à jour d’un appareil à partir d’une image de fabrique vers la dernière image
+
+Cela ne doit pas se produire pendant :
+
+- Appareils effectuant une mise à jour de maintenance mensuelle
+
+Contourner les méthodes :
+
+- Méthodes de connexion telles que PIN, mot de passe, IRIS, authentification Web ou clés FIDO2.
+- Si le code PIN de l’appareil ne peut pas être mémorisé et que d’autres méthodes d’authentification ne sont pas disponibles, un utilisateur peut utiliser le mode de reverrouillage [Manuel](hololens-recovery.md#manual-procedure).
+
 ### <a name="microsoft-edge-fails-to-launch"></a>Échec du lancement de Microsoft Edge
+
+> [!NOTE]
+> Ce problème a été créé à l’origine avec la version d’expédition de Microsoft Edge à l’esprit. Ce problème peut être résolu dans le [nouveau Microsoft Edge](hololens-new-edge.md). Si ce n’est pas le cas, veuillez envoyer un commentaire.
 
 Quelques clients ont signalé un problème où le lancement de Microsoft Edge a échoué. Pour ces clients, le problème persiste via le redémarrage et n’est pas résolu avec les mises à jour de Windows ou d’application. Si vous rencontrez ce problème et que vous avez confirmé que [Windows est à jour](hololens-updates.md#manually-check-for-updates), veuillez signaler un bogue à partir de l' [application Hub de commentaires](hololens-feedback.md) avec la catégorie et la sous-catégorie suivantes : installer et mettre à jour > le téléchargement, l’installation et la configuration de Windows Update.
 
@@ -70,39 +92,39 @@ Il n’existe aucune solution de contournement connue, car nous n’avons pas pu
 
 ### <a name="keyboard-does-not-switch-to-special-characters"></a>Le clavier ne bascule pas vers les caractères spéciaux
 
-Il y a un problème au cours de l’OOBE, où une fois que l’utilisateur a choisi un compte professionnel ou scolaire et qu’il entre son mot de passe, en tentant de basculer vers les caractères spéciaux du clavier en appuyant sur le bouton &123 ne devient pas un caractère spécial. 
+Il y a un problème au cours de l’OOBE, où une fois que l’utilisateur a choisi un compte professionnel ou scolaire et qu’il entre son mot de passe, en tentant de basculer vers les caractères spéciaux du clavier en appuyant sur le bouton &123 ne devient pas un caractère spécial.
 
 Solution de contournement :
 -   Fermez le clavier et rouvrez-le en appuyant sur le champ de texte.
 -   Entrez votre mot de passe de manière incorrecte. La prochaine fois que le clavier est relancé, il fonctionnera comme prévu.
-- Authentification Web, fermez le clavier et sélectionnez **se connecter à partir d’un autre appareil**. 
+- Authentification Web, fermez le clavier et sélectionnez **se connecter à partir d’un autre appareil**.
 -   Si vous entrez uniquement des chiffres, un utilisateur peut appuyer sur certaines touches et les maintenir enfoncé pour ouvrir un menu développé.
 -   À l’aide d’un clavier USB.
 
 Cela n’affecte pas les éléments suivants :
 - Utilisateurs qui choisissent d’utiliser un compte personnel.
 
-### <a name="blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build"></a>L’écran bleu s’affiche après annulation de l’inscription des builds Insider Preview sur un appareil qui a été reflashé avec une build Insider
+### <a name="blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-an-insider-build"></a>L’écran bleu s’affiche après annulation de l’inscription des builds d’Insider Preview sur un appareil qui a été reflashé avec une build Insider
 
-Il s’agit d’un problème affectant les utilisateurs qui se trouvaient sur une version d’évaluation d’Insider, de rééclairer HoloLens 2 avec une nouvelle build Insider Preview, puis désinscrit du programme Insider. 
+Il s’agit d’un problème affectant les utilisateurs qui se trouvaient sur une version d’évaluation d’Insider, de rééclairer HoloLens 2 avec une nouvelle build Insider Preview, puis désinscrit du programme Insider.
 
 Cela n’affecte pas les éléments suivants :
 - Utilisateurs qui ne sont pas inscrits à Windows Insider 
 - Insiders
     - Si un appareil a été inscrit depuis la version des builds Insider 18362. x
-    - S’ils ont flashé une build 19041. x signée à l’intérieur et restent inscrits dans le programme d’Insider 
+    - S’ils ont flashé une build 19041. x signée à l’intérieur et restent inscrits dans le programme d’Insider
 
 Solution de contournement : 
 - Éviter le problème 
-    - Flashez une génération non Insider. L’une des mises à jour mensuelles régulières. 
+    - Flashez une génération non Insider. L’une des mises à jour mensuelles régulières.
     - Restez sur la version préliminaire d’Insider
 - Refaire clignoter l’appareil
 
     1. Mettez manuellement le [HoloLens 2 en mode clignotant](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) en l’arrêtant tout en étant connecté. Puis, tout en maintenant le volume enfoncé, appuyez sur le bouton d’alimentation.
     
-    1. Connectez-vous à l’ordinateur et ouvrez le compagnon de récupération avancée. 
+    1. Connectez-vous à l’ordinateur et ouvrez le compagnon de récupération avancée.
     
-    1. Flasher HoloLens 2 à la build par défaut.   
+    1. Flasher HoloLens 2 à la build par défaut.
 
 ## <a name="known-issues-for-hololens-1st-gen"></a>Problèmes connus pour HoloLens (1ère génération)
 
@@ -111,7 +133,7 @@ Solution de contournement :
 > [!NOTE]
 > Dernière mise à jour : 8/8 @ 5:23 H 00-Visual Studio a publié VS 2019 version 16,2, qui inclut un correctif pour ce problème. Nous vous recommandons d’effectuer la mise à jour vers cette version la plus récente pour éviter d’avoir à rencontrer cette erreur.
 
-Visual Studio a publié VS 2019 version 16,2, qui inclut un correctif pour résoudre ce problème. Nous vous recommandons d’effectuer la mise à jour vers cette version la plus récente pour éviter d’avoir à rencontrer cette erreur.
+Visual Studio a publié VS 2019 version 16,2, qui inclut un correctif pour ce problème. Nous vous recommandons d’effectuer la mise à jour vers cette version la plus récente pour éviter d’avoir à rencontrer cette erreur.
 
 Origine du problème : les utilisateurs qui utilisaient Visual Studio 2015 ou les versions antérieures de Visual Studio 2017 pour déployer et déboguer des applications sur leur HoloLens, puis utilisaient ensuite les dernières versions de Visual Studio 2017 ou Visual Studio 2019 avec le même HoloLens seront affectés. Les nouvelles versions de Visual Studio déploient une nouvelle version d’un composant, mais les fichiers de la version antérieure sont conservés sur l’appareil, ce qui entraîne l’échec de la version plus récente.  Le message d’erreur suivant s’affiche : DEP0100 : Assurez-vous que le mode développeur est activé pour l’appareil cible. Impossible d’obtenir une licence de développeur sur \<ip\> en raison de l’erreur 80004005.
 
@@ -178,9 +200,9 @@ Nous fournirons d’autres mises à jour dès qu’elles seront disponibles.
 ### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problèmes lors du lancement du Microsoft Store et des applications sur HoloLens
 
 > [!NOTE]
-> Dernière mise à jour : 4/2 @ 10-problème résolu. 
+> Dernière mise à jour : 4/2 @ 10-problème résolu.
 
-Vous pouvez rencontrer des problèmes lors de la tentative de lancement du Microsoft Store et des applications sur HoloLens. Nous avons déterminé que le problème se produit lorsque les mises à jour d’applications en arrière-plan déploient une version plus récente des packages d’infrastructure dans des séquences spécifiques alors qu’une ou plusieurs de leurs applications dépendantes sont toujours en cours d’exécution. Dans ce cas, une mise à jour d’application automatique a fourni une nouvelle version de l’infrastructure .NET Native (version 10.0.25531 vers 10.0.27413), a provoqué les applications qui exécutent pour qu’elles ne soient pas correctement mises à jour pour toutes les applications en cours d’exécution qui utilisent la version antérieure du Framework.  Le Flow pour la mise à jour du Framework est le suivant : 
+Vous pouvez rencontrer des problèmes lors de la tentative de lancement du Microsoft Store et des applications sur HoloLens. Nous avons déterminé que le problème se produit lorsque les mises à jour d’applications en arrière-plan déploient une version plus récente des packages d’infrastructure dans des séquences spécifiques alors qu’une ou plusieurs de leurs applications dépendantes sont toujours en cours d’exécution. Dans ce cas, une mise à jour d’application automatique a fourni une nouvelle version de l’infrastructure .NET Native (version 10.0.25531 vers 10.0.27413), a provoqué les applications qui exécutent pour qu’elles ne soient pas correctement mises à jour pour toutes les applications en cours d’exécution qui utilisent la version antérieure du Framework.  Le Flow pour la mise à jour du Framework est le suivant :
 
 1. Le nouveau package d’infrastructure est téléchargé à partir du Store et installé.
 
@@ -188,11 +210,11 @@ Vous pouvez rencontrer des problèmes lors de la tentative de lancement du Micro
 
 Si l’étape 2 est interrompue avant la fin, toutes les applications pour lesquelles l’infrastructure récente n’a pas été inscrite ne pourront pas être lancées à partir du menu Démarrer.  Nous pensons que toute application sur HoloLens pourrait être affectée par ce problème.
 
-Certains utilisateurs ont signalé que la fermeture des applications bloquées et le lancement d’autres applications telles que le hub de commentaires, la visionneuse 3D ou les photos résout le problème pour eux &mdash; , mais cela ne fonctionne pas 100% du temps.
+Certains utilisateurs ont signalé que la fermeture des applications bloquées et le lancement d’autres applications telles que le hub de commentaires, la visionneuse 3D ou les photos résout le problème pour eux, mais cela ne fonctionne pas 100% du temps.
 
 La racine a provoqué que ce problème n’a pas provoqué la mise à jour elle-même, mais un bogue dans le système d’exploitation qui a entraîné la gestion incorrecte de la mise à jour .NET Native Framework. Nous sommes heureux de vous annoncer que nous avons identifié un correctif et que vous avez publié une mise à jour (version 17763,380) contenant le correctif.  
 
-Pour voir si votre appareil peut effectuer la mise à jour, procédez comme suit :
+Pour voir si votre appareil peut effectuer la mise à jour :
 
 1. Accédez à l’application paramètres et ouvrez **mise à jour & sécurité**.
 

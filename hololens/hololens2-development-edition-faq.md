@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f7ee1849e51132f0e3d30585cfed6a89ecfee2a9
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308558"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397630"
 ---
 # <a name="hololens-2-development-edition-faq"></a>FAQ sur l’édition de développement HoloLens 2
 
@@ -31,7 +31,7 @@ L’édition de développement HoloLens 2 comprend un HoloLens 2, $500 dans les 
 
 ### <a name="what-is-the-difference-between-hololens-2-and-hololens-2-development-edition"></a>Quelle est la différence entre HoloLens 2 et l’édition de développement HoloLens 2 ?
 
-Vous pouvez uniquement utiliser l’édition de développement HoloLens 2 pour créer et tester des applications d’entreprise internes à utiliser avec HoloLens 2 (édition commerciale) dans un paramètre de production. Dans le cadre de l’achat de l’édition Development, Microsoft peut, à sa seule discrétion, vous fournir certains droits identifiés pendant le processus de validation. Ces droits incluent le droit d’échanger certains crédits de remise ou d’essai à certains services ou outils Microsoft ou tiers pendant une période limitée. [En savoir plus](hololens2-options.md#learn-about-the-development-edition)
+Vous pouvez uniquement utiliser l’édition de développement HoloLens 2 pour créer et tester des applications d’entreprise internes à utiliser avec HoloLens 2 (édition commerciale) dans un paramètre de production. Dans le cadre de l’achat de l’édition Development, Microsoft peut, à sa seule discrétion, vous fournir certains droits identifiés pendant le processus de validation. Ces droits incluent le droit d’échanger certains crédits de remise ou d’essai à certains services ou outils Microsoft ou tiers pendant une période limitée. [En savoir plus](hololens2-options-dev-edition.md)
 
 ### <a name="can-any-edition-of-hololens-2-be-used-to-develop"></a>Une édition de HoloLens 2 peut-elle être utilisée pour développer ?
 
@@ -53,9 +53,9 @@ Unity Pro est une plateforme 3D en temps réel pour les Studios/entreprises de p
 
 Le plug-in Pixyz lit et convertit presque n’importe quel format, l’optimise et le met en Unity, et le met en phase pour fournir des ressources prêtes à l’emploi pour les applications en temps réel. [En savoir plus](https://unity.com/products/pixyz)
 
-### <a name="when-will-financing-for-the-hololens-2-development-edition-be-available"></a>Quand le financement de l’édition de développement HoloLens 2 sera-t-il disponible ?
+### <a name="is-financing-for-the-hololens-2-development-edition--available"></a>Le financement de l’édition de développement HoloLens 2 est-il disponible ?
 
-Le financement de l’édition de développement HoloLens 2 sera disponible au début du 2021.
+Oui, le [financement de l’édition de développement HoloLens 2](https://ms.liftforward.com/hololens?product=hololens-development-edition) est désormais disponible uniquement dans le États-Unis. 
 
 ### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>Qui dois-je contacter avec des questions sur mes habilitations de l’édition de développement HoloLens 2 ?
 

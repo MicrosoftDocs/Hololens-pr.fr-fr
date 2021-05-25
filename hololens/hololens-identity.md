@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2d84658ef76ff2c5d8ef7dabe857892e7129a965
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f8dcc8619715871db0aaba306dd19d252d73ac47
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308976"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397830"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gérer l’identité et la connexion des utilisateurs pour HoloLens
 
@@ -71,6 +71,20 @@ Les appareils configurés avec des comptes de Azure AD ne permettent pas de se c
 
 > [!NOTE]
 > **HoloLens (1ère génération)** a commencé à prendre en charge plusieurs utilisateurs Azure ad dans la [mise à jour 2018 de Windows 10 avril](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) dans le cadre de [Windows holographique for Business](hololens-upgrade-enterprise.md).
+
+### <a name="multiple-users-listed-on-sign-in-screen"></a>Plusieurs utilisateurs sont listés sur l’écran de connexion
+
+Auparavant, l’écran de connexion affichait uniquement l’utilisateur connecté le plus récemment, ainsi que le point d’entrée « autre utilisateur ». Nous avons reçu des commentaires des clients qui ne suffisent pas si plusieurs utilisateurs se sont connectés à l’appareil. Ils devaient encore retaper leur nom d’utilisateur, etc.
+
+Introduite dans [Windows holographique, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), lors de la sélection d’un **autre utilisateur** situé à droite du champ d’entrée de code confidentiel, l’écran de connexion affiche plusieurs utilisateurs ayant déjà été connectés à l’appareil. Cela permet aux utilisateurs de sélectionner leur profil utilisateur, puis de se connecter à l’aide de leurs informations d’identification Windows Hello. Un nouvel utilisateur peut également être ajouté à l’appareil à partir de la page autres utilisateurs via le bouton **Ajouter un compte** .
+
+Quand vous êtes dans le menu autres utilisateurs, le bouton autres utilisateurs affiche le dernier utilisateur connecté à l’appareil. Sélectionnez ce bouton pour revenir à l’écran de connexion de cet utilisateur.
+
+![Valeur par défaut de l’écran de connexion](./images/multiusers1.jpg)
+
+<br>
+
+![Écran de connexion d’autres utilisateurs](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>Suppression des utilisateurs
 

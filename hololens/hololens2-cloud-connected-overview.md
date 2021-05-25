@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 43fbcc3a841f6c3f15006f285188e55d22f10599
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308565"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397650"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guide de déploiement – connexion Cloud HoloLens 2 avec l’assistance à distance-vue d’ensemble
 
@@ -27,8 +27,7 @@ Ce guide aide les professionnels de l’informatique à planifier et déployer d
 
 Au cours du guide, nous allons aborder l’inscription de vos appareils dans la gestion des appareils, appliquer des licences en fonction des besoins et vérifier que vos utilisateurs finaux sont en mesure d’utiliser immédiatement l’assistance à distance lors de la configuration de l’appareil. Pour ce faire, nous allons passer en revue les éléments importants de l’infrastructure nécessaire à la configuration et à l’exécution du déploiement à l’échelle avec HoloLens 2.
 
-![Bannière Cloud connecté](./images/cloud-connected-hololens-large.png)
-
+[![Scénario ](./images/deployment-guides-revised-scenario-a.png) connecté au Cloud](./images/deployment-guides-revised-scenario-a.png#lightbox)
 ## <a name="in-this-guide"></a>Dans ce guide
 
 Ce guide a pour objectif de configurer l’assistance à distance au sein de votre organisation sur vos appareils HoloLens. Nous aborderons les indispensables pour atteindre cet objectif. Afin de conserver le focus sur cet objectif, certaines préparations et configurations seront présélectionnées afin d’optimiser ce déploiement ou de réduire les éléments nécessaires à la configuration. Vous êtes informé de ces choix et pouvez personnaliser votre déploiement en fonction des besoins de votre entreprise.
@@ -41,7 +40,7 @@ Il s’agit d’une configuration similaire au [scénario a : déploiement sur 
   - Un ou plusieurs utilisateurs par appareil pris en charge
 - Différents niveaux de configurations de verrouillage de périphérique sont appliqués en fonction de cas d’usage spécifiques, de l’ouverture complète à la borne d’application unique
 
-![Scénario connecté au Cloud](./images/cloud-connected-guide-diagram.png)
+
 
 Aucune autre restriction ou configuration d’appareil ne sera appliquée dans ce guide. Toutefois, nous vous encourageons à explorer ces options après avoir terminé.
 

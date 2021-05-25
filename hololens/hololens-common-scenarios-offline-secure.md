@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eb084d3de222581fd2b97eaa1c1e2812310810c
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8828444a69d7e5d46293340ff771f97eb5eb01e6
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308570"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397880"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Scénarios courants – sécurité en mode hors connexion, HoloLens 2
 
@@ -32,6 +32,8 @@ Ce guide fournit des conseils pour l’application d’un exemple de package de 
 -   Désactivez les microphones.
 -   Empêche l’ajout ou la suppression de packages de provisionnement.
 -   Aucun utilisateur ne peut activer les composants restreints ci-dessus.
+
+[![Scénario ](./images/deployment-guides-revised-scenario-c-01.png) de sécurité hors connexion](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## <a name="prepare"></a>Préparation
 
@@ -64,15 +66,15 @@ Créer un package d’approvisionnement de configuration sécurisé
    |     Première expérience/HoloLens/SkipCalibration       |     Vrai                          |     Ignore l’étalonnage lors de l’installation initiale de l’appareil uniquement                                                                             |
    |     Première expérience/HoloLens/SkipTraining          |     Vrai                          |     Ignore la formation des appareils lors de la configuration initiale de l’appareil                                                                              |
    |     Première expérience/HoloLens/WiFi                  |     Vrai                          |     Ignore la configuration de Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
-   |     Stratégies/connectivité/AllowBluetooth                |     Non                            |     Désactive Bluetooth                                                                                                             |
-   |     Stratégies/expérience/AllowCortana                    |     Non                            |     Désactive Cortana (pour éliminer les problèmes potentiels puisque les microphones sont désactivés)                                          |
-   |     Stratégies/MixedReality/MicrophoneDisabled            |     Oui                           |     Désactive le microphone                                                                                                            |
+   |     Stratégies/connectivité/AllowBluetooth                |     No                            |     Désactive Bluetooth                                                                                                             |
+   |     Stratégies/expérience/AllowCortana                    |     No                            |     Désactive Cortana (pour éliminer les problèmes potentiels puisque les microphones sont désactivés)                                          |
+   |     Stratégies/MixedReality/MicrophoneDisabled            |     Yes                           |     Désactive le microphone                                                                                                            |
    |     Stratégies/confidentialité/LetAppsAccessLocation              |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux données d’emplacement (afin d’éliminer les problèmes potentiels puisque le suivi d’emplacement est désactivé)    |
    |     Stratégies/confidentialité/LetAppsAccessMicrophone            |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux micros (pour éliminer les problèmes potentiels puisque les microphones sont désactivés)           |
-   |     Stratégies/sécurité/AllowAddProvisioningPackage       |     Non                            |     Empêche quiconque d’ajouter des packages de configuration qui peuvent tenter de remplacer les stratégies verrouillées.                         |
-   |     Stratégies/sécurité/AllowRemoveProvisioningPackage    |     Non                            |     Empêche quiconque de supprimer ce package d’approvisionnement verrouillé.                                                           |
-   |     Stratégies/système/AllowLocation                       |     Non                            |     Empêche l’appareil d’essayer d’effectuer le suivi des données d’emplacement.                                                                        |
-   |     Stratégies/WiFi/AllowWiFi                             |     Non                            |     Désactive Wi-Fi                                                                                                                 |
+   |     Stratégies/sécurité/AllowAddProvisioningPackage       |     No                            |     Empêche quiconque d’ajouter des packages de configuration qui peuvent tenter de remplacer les stratégies verrouillées.                         |
+   |     Stratégies/sécurité/AllowRemoveProvisioningPackage    |     No                            |     Empêche quiconque de supprimer ce package d’approvisionnement verrouillé.                                                           |
+   |     Stratégies/système/AllowLocation                       |     No                            |     Empêche l’appareil d’essayer d’effectuer le suivi des données d’emplacement.                                                                        |
+   |     Stratégies/WiFi/AllowWiFi                             |     No                            |     Désactive Wi-Fi                                                                                                                 |
 
 1. Sous paramètres d’exécution, sélectionnez **comptes/utilisateurs/nom d’utilisateur : Holo/mot de passe**.
 

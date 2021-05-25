@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a043b2f96bec6127d52622b4662279c777df6f8f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 347501c3ac8f1b115b0d537332a17938a99d3257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308851"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397800"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurer HoloLens en tant que kiosque
 
@@ -70,8 +70,8 @@ Une borne multi-application affiche le menu démarrer lorsque l’utilisateur se
 Le tableau suivant répertorie les fonctionnalités des fonctionnalités dans les différents modes de kiosque.
 
 | &nbsp; |Menu Démarrer |Menu actions rapides |Caméra et vidéo |Miracast |Cortana |Commandes vocales intégrées |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|Borne pour une seule application |Désactivé |Désactivé   |Désactivé |Désactivé   |Désactivé |Activé<sup>1</sup> |
+| --- | --- | --- | --- | --- | --- | --- | 
+|Borne pour une seule application |Désactivé |Désactivé |Désactivé |Désactivé   |Désactivé |Activé<sup>1</sup> |
 |Kiosque multi-application |activé |Activé<sup>2</sup> |Disponible<sup>2</sup> |Disponible<sup>2</sup> |<sup>2, 3</sup> disponibles  |Activé<sup>1</sup> |
 
 > <sup>1</sup> les commandes vocales relatives aux fonctionnalités désactivées ne fonctionnent pas.  
@@ -120,13 +120,15 @@ Si vous utilisez un système de gestion des appareils mobiles (MDM) ou un packag
 |Hub de commentaires &nbsp; |Application 8wekyb3d8bbwe Microsoft. WindowsFeedbackHub \_ \! |
 |Explorateur de fichiers |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
 |Messagerie |microsoft.windowscommunicationsapps_8wekyb3d8bbwe ! Microsoft. les. mail |
-|Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe ! MSEDGE |
+|Ancienne version de Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
+|Nouveau Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe ! MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast<sup>4</sup> |&nbsp; |
 |Films et TV |Microsoft. ZuneVideo \_ 8wekyb3d8bbwe \! Microsoft. ZuneVideo |
 |OneDrive |application 8wekyb3d8bbwe Microsoft. microsoftskydrive \_ \! |
 |Photo |Application 8wekyb3d8bbwe Microsoft. Windows. photos \_ \! |
-|Paramètres |\_Application Cw5n1h2txyewy \! HolographicSystemSettings |
+|Anciens paramètres |HolographicSystemSettings_cw5n1h2txyewy ! Lancement |
+|Nouveaux paramètres |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy ! Lancement |
 |Conseils |HoloLensTips 8wekyb3d8bbwe Microsoft. HoloLensTips \_ \! |
 
 > <sup>1</sup> pour activer la capture de photos ou de vidéos, vous devez activer l’application d’appareil photo en tant qu’application Kiosk.  
@@ -164,7 +166,7 @@ Vous pouvez sélectionner l’une des méthodes suivantes pour déployer des con
 
 - [Package d’approvisionnement](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
-- [Portail d’appareil Windows](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
+- [Portail de périphériques Windows](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
 
    > [!NOTE]  
    > Étant donné que cette méthode exige que le mode développeur soit activé sur l’appareil, nous vous recommandons de l’utiliser uniquement pour les démonstrations.
@@ -245,8 +247,9 @@ Cette section résume les paramètres requis par une borne multi-application. Po
 - Vous pouvez éventuellement utiliser une disposition de démarrage personnalisée avec Intune ou d’autres services MDM. Pour plus d’informations, consultez [fichier de disposition de démarrage pour MDM (Intune et autres)](#start-layout-file-for-mdm-intune-and-others).
 
 1. Sélectionnez **target Windows 10 dans les appareils en mode S**  >  **non**.  
-   >[!NOTE]  
-   > Le mode S n’est pas pris en charge sur Windows Holographic for Business.
+>[!NOTE]  
+> Le mode S n’est pas pris en charge sur Windows Holographic for Business.
+
 1. Sélectionnez **type d’ouverture de session de l’utilisateur**  >  **Azure ad utilisateur ou groupe** ou **utilisateur type d’ouverture de session**  >  **HoloLens visiteur**, puis ajoutez un ou plusieurs groupes d’utilisateurs ou comptes.  
 
    Seuls les utilisateurs qui appartiennent aux groupes ou aux comptes que vous spécifiez dans **type d’ouverture de session** de l’utilisateur peuvent utiliser l’expérience plein écran.
@@ -324,6 +327,31 @@ Pour activer le compte **invité** , ajoutez l’extrait de code suivant à votr
   </Config>  
 </Configs>  
 ```
+#### <a name="enable-visitor-autologon"></a>Activer le logo automatique des visiteurs
+
+Sur les builds [Windows holographique, version 21H1 et versions](hololens-release-notes.md#windows-holographic-version-21h1) ultérieures :
+- Les configurations AAD et non-ADD prennent en charge les comptes de visiteur pour lesquels la connexion automatique est activée pour les modes plein écran.
+
+##### <a name="non-aad-configuration"></a>Configuration non AAD
+
+1. Créez un package d’approvisionnement qui :
+    1. Configure les paramètres d’exécution/AssignedAccess pour autoriser les comptes de visiteur.
+    1. Inscrit éventuellement l’appareil dans MDM (paramètres d’exécution/espace de travail/inscriptions) afin qu’il puisse être géré ultérieurement.
+    1. Ne pas créer de compte local
+2. [Appliquez le package d’approvisionnement](https://docs.microsoft.com/hololens/hololens-provisioning).
+
+##### <a name="aad-configuration"></a>Configuration AAD
+
+Les appareils joints à AAD configurés pour le mode plein écran peuvent se connecter à un compte visiteur à l’aide d’un appui sur un bouton à partir de l’écran de connexion. Une fois connecté au compte du visiteur, l’appareil ne demande pas de connexion tant que le visiteur n’est pas explicitement déconnecté du menu Démarrer ou que l’appareil n’a pas été redémarré.
+
+L’ouverture de session automatique des visiteurs peut être gérée par le biais d' [une stratégie OMA-URI personnalisée](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10):
+
+- Valeur de l’URI :./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
+
+
+| Stratégie |Description |Configurations 
+| --------------------------- | ------------- | -------------------- |
+| MixedReality/VisitorAutoLogon | Permet à un visiteur de se connecter automatiquement à une borne. | 1 (oui), 0 (non, valeur par défaut.) |
 
 #### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Disposition de démarrage de l’espace réservé pour HoloLens
 
@@ -414,7 +442,7 @@ L’article « configurer HoloLens à l’aide d’un package d’approvisionne
 
 - Vous pouvez initialement [appliquer un package d’approvisionnement à HoloLens au cours de l’installation](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- Vous pouvez également [appliquer un package d’approvisionnement à HoloLens après l’installation](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup).
+- Vous pouvez également [appliquer un package d’approvisionnement à HoloLens après l’installation](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
 ## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Utiliser le portail de périphériques Windows pour configurer une borne pour une seule application
 
@@ -427,7 +455,7 @@ Pour configurer le mode plein écran à l’aide du portail des appareils Window
     
 1. Sur un ordinateur, connectez-vous au HoloLens à l’aide d’un [réseau Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) ou [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb).
 
-1. Effectuez l’une des opérations suivantes :
+1. Effectuez l’une des actions suivantes :
    - Si vous vous connectez au portail des appareils Windows pour la première fois, [créez un nom d’utilisateur et un mot de passe](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
    - Entrez le nom d’utilisateur et le mot de passe que vous avez configurés précédemment.
 
@@ -470,13 +498,19 @@ L’application est automatiquement lancée lorsque l’utilisateur se connecte.
 
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Modifications du comportement du mode plein écran pour la gestion des défaillances
-- Mode plein écran sécurisé en éliminant les applications disponibles en cas de défaillance du mode plein écran. 
+En cas d’échec lors de l’application du mode plein écran, le comportement suivant s’affiche :
 
-Précédemment, en cas d’échec lors de l’application du mode plein écran, HoloLens était utilisé pour afficher toutes les applications dans le menu Démarrer. Désormais, dans Windows holographique version 20H2 en cas de défaillance, aucune application ne sera affichée dans le menu Démarrer comme indiqué ci-dessous : 
+- Avant Windows holographique, version 20H2-HoloLens affiche toutes les applications dans le menu Démarrer.
+- Windows holographique, version 20H2 : si un appareil possède une configuration de kiosque qui est une combinaison de l’accès global affecté et de l’accès affecté au membre du groupe AAD, si la détermination de l’appartenance au groupe AAD échoue, l’utilisateur verra le menu « rien ne s’affiche dans le menu Démarrer ».
 
 ![Image du mode plein écran à présent en cas d’échec.](images/hololens-kiosk-failure-behavior.png )
 
+
+- À compter de [Windows holographique, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), le mode plein écran recherche un accès global affecté avant d’illustrer un menu Démarrer vide. Le mode plein écran permet de revenir à une configuration de kiosque globale (le cas échéant) en cas de défaillances pendant le mode plein écran du groupe AAD.
+
 ### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>Appartenance au groupe de Azure AD de cache pour une borne en mode hors connexion
+
+- Mode plein écran sécurisé en éliminant les applications disponibles en cas de défaillance du mode plein écran.
 - Activez les bornes hors connexion à utiliser avec les groupes de Azure AD pendant jusqu’à 60 jours.
 
 Cette stratégie détermine le nombre de jours pendant lesquels le cache d’appartenance au groupe Azure AD peut être utilisé pour les configurations d’accès affectées ciblant les groupes de Azure AD pour l’utilisateur connecté. Une fois que cette valeur de stratégie est définie sur une valeur supérieure à 0, alors le cache est utilisé dans le cas contraire.  

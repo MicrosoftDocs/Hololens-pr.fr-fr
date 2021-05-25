@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 86ef4328869c15517732eedf3dfb9e2a8252e713
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 178dff5d8a30fdd9c5012e2d14f5d4683d6cc23e
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308594"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397500"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Créer des photos et des vidéos de réalité mixte
 
@@ -121,7 +121,7 @@ Une fois que l’application est configurée avec votre HoloLens, sélectionnez 
 
 ## <a name="view-your-mixed-reality-photos-and-videos"></a>Affichez vos photos et vidéos de réalité mixte
 
-Les photos et vidéos de réalité mixte sont enregistrées dans le « rouleau d’appareil photo » de l’appareil. Vous pouvez parcourir le contenu de ce dossier sur votre HoloLens avec l’application Explorateur de fichiers (accédez à images > pellicule).
+Les photos et vidéos de réalité mixte sont enregistrées dans le « rouleau d’appareil photo » de l’appareil. Vous pouvez parcourir le contenu de ce dossier sur votre HoloLens avec l’application Explorateur de fichiers (accédez à **images > pellicule**).
 
 Vous pouvez également afficher vos photos et vidéos de réalité mixte dans l’application photos, qui est pré-installée sur HoloLens. Pour épingler une photo dans votre monde, sélectionnez-la dans l’application photos et choisissez **placer dans un monde mixte**. Vous pouvez déplacer la photo dans le monde entier une fois qu’elle a été placée.
 
@@ -145,21 +145,24 @@ Conseils :
 
 ## <a name="share-your-mixed-reality-photos-and-videos"></a>Partager vos photos et vidéos de réalité mixte
 
-Une fois que vous avez capturé une photo ou une vidéo en réalité mixte, un aperçu s’affiche. Sélectionnez l’icône de **partage** au-dessus de l’Aperçu pour afficher l’Assistant partage. À partir de là, vous pouvez sélectionner le point de terminaison vers lequel vous souhaitez partager cette photo ou cette vidéo.
+Avant [Windows holographique, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), après avoir capturé une photo ou une vidéo en réalité mixte, un aperçu s’affiche. Sélectionnez l’icône de **partage** au-dessus de l’Aperçu pour afficher l’Assistant partage. À partir de là, vous pouvez sélectionner le point de terminaison vers lequel vous souhaitez partager cette photo ou cette vidéo.
 
-Vous pouvez également partager des photos et des vidéos de réalité mixte à partir de OneDrive, en chargeant automatiquement vos photos et vidéos de réalité mixte. Ouvrez l’application OneDrive sur HoloLens et connectez-vous avec un [compte Microsoft](https://account.microsoft.com) personnel si vous ne l’avez pas déjà fait. Sélectionnez l’icône des **paramètres** , puis choisissez l’option chargement de l' **appareil photo**. Activez le chargement de l’appareil photo. Vos photos et vidéos de réalité mixte seront maintenant téléchargées sur OneDrive chaque fois que vous lancerez l’application sur HoloLens.
+Avec Windows holographique, version 21H1, après avoir capturé une photo ou une vidéo en réalité mixte, un aperçu s’affiche. Sélectionnez l’icône de **partage** au-dessus de l’Aperçu pour afficher l’Assistant partage. À partir de là, vous pouvez sélectionner le point de terminaison (mail, OneDrive, etc.) sur lequel vous souhaitez partager cette photo ou cette vidéo. Vous pouvez également autoriser votre HoloLens à partager avec des appareils proches en accédant à **paramètres-> les expériences partagées > système**. Pour plus d’informations, consultez [partager des éléments avec des appareils proches dans Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+
+> [!TIP] 
+> Vous pouvez également partager des photos et des vidéos de réalité mixte à partir de OneDrive en chargeant automatiquement vos photos et vidéos de réalité mixte. Ouvrez l’application OneDrive sur HoloLens et connectez-vous avec **un [compte Microsoft](https://account.microsoft.com)personnel**, si vous ne l’avez pas déjà fait. Sélectionnez l’icône des **paramètres** , puis choisissez l’option chargement de l' **appareil photo**. Activez le chargement de l’appareil photo. Vos photos et vidéos de réalité mixte seront maintenant téléchargées sur OneDrive chaque fois que vous lancerez l’application sur HoloLens.
 
 > [!NOTE]
 > Vous pouvez uniquement activer le chargement de l’appareil photo dans OneDrive si vous êtes connecté à OneDrive avec un compte Microsoft personnel. Si vous configurez HoloLens avec un compte professionnel ou scolaire, vous pouvez ajouter une compte Microsoft personnelle dans l’application OneDrive pour activer cette fonctionnalité.
 
 ## <a name="limitations-of-mixed-reality-capture"></a>Limitations de la capture de la réalité mixte
 
-- Lors de l’utilisation de la capture de réalité mixte, la cadence de HoloLens sera divisée en deux à 30 Hz.
+- Lors de l’utilisation de la capture de réalité mixte, la fréquence d’images de HoloLens sera divisée en deux à 30 Hz.
 - La résolution des photos et des vidéos peut être réduite si la caméra photo/vidéo est déjà utilisée par une autre application, pendant la diffusion en continu ou lorsque les ressources système sont insuffisantes.
 
 ### <a name="maximum-recording-length"></a>Longueur maximale d’enregistrement
 
-Sur les appareils HoloLens 2 avant Windows holographique, les vidéos de la version 20H2 enregistrées sur l’appareil étaient limitées à la durée maximale de cinq minutes.
+Sur les appareils HoloLens 2 avant Windows holographique, la version 20H2, les vidéos enregistrées sur l’appareil étaient limitées à une durée maximale de cinq minutes.
 
 En raison des commentaires des clients, nous avons augmenté la durée d’enregistrement des [captures de réalité mixte](holographic-photos-and-videos.md). Les captures de réalité mixte ne seront plus limitées à 5 minutes par défaut, mais elles calculeront la longueur maximale d’enregistrement en fonction de l’espace disque disponible. L’appareil estime la durée maximale d’enregistrement vidéo en fonction de l’espace disque disponible, jusqu’à 80% de l’espace disque total.
 
@@ -172,14 +175,14 @@ En raison des commentaires des clients, nous avons augmenté la durée d’enreg
 
 ### <a name="default-photo-format-and-resolution"></a>Format et résolution de photos par défaut
 
-|  Appareil  |  Format  |  Extension  |  Résolution  |
+|  Périphérique  |  Format  |  Extension  |  Résolution  |
 |----------|----------|----------|----------|
 | HoloLens 2 | [GIF](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
 | HoloLens (1ère génération) | [GIF](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
 ### <a name="recorded-video-format-and-resolution"></a>Format et résolution vidéo enregistrés
 
-| Appareil | Format | Extension | Résolution | Vitesse | Audio |
+| Périphérique | Format | Extension | Résolution | Vitesse | Audio |
 |----------|----------|----------|----------|----------|----------|
 | HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | Stéréo 48 kHz |
 | HoloLens (1ère génération) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | Stéréo 48 kHz |
