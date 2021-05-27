@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens est le premier ordinateur holographique entièrement autonome exécutant Windows 10. À présent, avec l'introduction de HoloLens 2, chaque appareil HoloLens offre des fonctionnalités de gestion commerciale prête à l'emploi, qui sont renforcée par la fiabilité, la sécurité et l'évolutivité des services de cloud et d'IA de Microsoft.
+summary: Microsoft HoloLens est le premier ordinateur holographique entièrement autonome exécutant Windows 10. Avec l’introduction de HoloLens 2, chaque appareil HoloLens offre maintenant des fonctionnalités de gestion commerciale prête à l’emploi, qui sont renforcées par la fiabilité, la sécurité et la scalabilité des services cloud et d’IA de Microsoft.
 metadata:
   title: Microsoft HoloLens
-  description: Page d’accueil Microsoft HoloLens.
+  description: Page d’accueil de Microsoft HoloLens.
   ms.prod: hololens
   ms.subservice: subservice
   ms.topic: landing-page
@@ -11,56 +11,56 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 3dfac30e9ce4ecd20f4bfbee6c25b21ef009de3b
-  ms.sourcegitcommit: d7c86ccad7be32f7223d4b801083798454fda740
+  ms.openlocfilehash: 040e353d42c97aa6387e5611a3479464cf5ae2e8
+  ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "11448482"
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "110397890"
 landingContent:
 - title: Vue d’ensemble de HoloLens
   linkLists:
   - linkListType: overview
     links:
-    - text: Vue d’ensemble de HoloLens 2
+    - text: Vue d’ensemble de HoloLens 2
       url: hololens2-options.md
-    - text: Matériel HoloLens 2
+    - text: Matériel HoloLens 2
       url: hololens2-hardware.md
     - text: Microsoft Mesh (préversion)
       url: /mesh/overview
-    - text: Utiliser le menu Démarrer et maison virtuelle
+    - text: Utiliser le menu Démarrer et l’accueil réalité mixte
       url: holographic-home.md
     - text: Rechercher, installer et désinstaller des applications
       url: holographic-store-apps.md
     - text: Améliorer la qualité visuelle et le confort
       url: hololens-calibration.md
-    - text: Mettre à jour HoloLens
+    - text: Guide pratique pour mettre à jour HoloLens
       url: hololens-update-hololens.md
 - title: Guides de déploiement
   linkLists:
   - linkListType: deploy
     links:
-    - text: Scénarios courants de déploiement
+    - text: Scénarios de déploiement courants
       url: common-scenarios.md
-    - text: Déploiement à l’échelle d’HoloLens 2 connecté au cloud avec Remote Assist
+    - text: Déploiement d’HoloLens 2 connecté au cloud avec Remote Assist
       url: hololens2-cloud-connected-overview.md
-    - text: Déploiement d’HoloLens 2 connecté à l’entreprise avec les guides Dynamics 365
+    - text: Déploiement d’HoloLens 2 connecté à l’entreprise avec Dynamics 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Guide de déploiement des clients externes
       url: hololens2-deployment-guide.md
-    - text: Déploiement sécurisé hors connexion
+    - text: Déploiement sécurisé hors connexion
       url: hololens-common-scenarios-offline-secure.md
 - title: Préparation
   linkLists:
   - linkListType: get-started
     links:
-    - text: Déploiement de HoloLens dans un environnement commercial
+    - text: Déployer HoloLens dans un environnement commercial
       url: hololens-requirements.md
-    - text: Vue d’ensemble de la sécurité
+    - text: Présentation de la sécurité
       url: security-overview.md
-    - text: Exigences relatives à la licence
+    - text: 'Conditions de licence :'
       url: hololens-licenses-requirements.md
-    - text: Considérations en matière d’environnement pour HoloLens
+    - text: Considérations liées à l’environnement HoloLens
       url: hololens-environment-considerations.md
     - text: Fonctionnalités commerciales
       url: hololens-commercial-features.md
@@ -68,15 +68,15 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Gérer l’identité utilisation et la connexion pour HoloLens
+    - text: Gérer les identités et les connexions des utilisateurs pour HoloLens
       url: hololens-identity.md
     - text: Configurer votre réseau pour HoloLens
       url: hololens-commercial-infrastructure.md
     - text: Connecter HoloLens à un réseau
       url: hololens-network.md
-    - text: Gérer les points de terminaison de connexion de HoloLens
+    - text: Gérer les points de terminaison de connexion pour HoloLens
       url: hololens-offline.md
-    - text: Configurer HoloLens à l'aide de packages d'approvisionnement
+    - text: Configurer HoloLens à l’aide de packages de provisionnement
       url: hololens-provisioning.md
     - text: Configurer HoloLens en tant que kiosque
       url: hololens-kiosk.md
@@ -88,27 +88,27 @@ landingContent:
       url: hololens-enroll-mdm.md
     - text: Windows Autopilot pour HoloLens 2
       url: hololens2-autopilot.md
-    - text: Présentation de la gestion d'applications
+    - text: Vue d’ensemble de la gestion d’applications
       url: app-deploy-overview.md
-    - text: Portail d'entreprise et Intune
+    - text: Intune et le portail d’entreprise
       url: app-deploy-intune.md
     - text: Microsoft Store pour Entreprises
       url: app-deploy-store-business.md
-    - text: Package d’approvisionnement
+    - text: Package de provisionnement
       url: app-deploy-provisioning-package.md
-- title: Guide de maintenance et de dépannage
+- title: Guide de maintenance et de résolution des problèmes
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Résoudre des problèmes avec HoloLens
+    - text: Résoudre les problèmes liés à HoloLens
       url: hololens-troubleshooting.md
-    - text: Redémarrer, réinitialiser ou récupérer HoloLens 2
+    - text: Redémarrer, réinitialiser ou récupérer HoloLens 2
       url: hololens-recovery.md
-    - text: Redémarrer, réinitialiser ou récupérer HoloLens (1ère génération)
+    - text: Redémarrer, réinitialiser ou récupérer HoloLens (1re génération)
       url: hololens1-recovery.md
-    - text: Problèmes connus avec HoloLens
+    - text: Problèmes connus liés à HoloLens
       url: hololens-known-issues.md
-    - text: Collecter et utiliser des informations de diagnostic sur les appareils HoloLens
+    - text: Collecter et utiliser des informations de diagnostic sur des appareils HoloLens
       url: hololens-diagnostic-logs.md
     - text: Gérer les mises à jour de HoloLens
       url: hololens-updates.md
@@ -116,45 +116,37 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Notes de publication HoloLens 2
+    - text: Notes de publication de HoloLens 2
       url: hololens-release-notes.md
-    - text: Insider Preview pour Microsoft HoloLens
+    - text: Insider Preview pour Microsoft HoloLens
       url: hololens-insider.md
-    - text: Faites-nous part de vos commentaires
+    - text: Envoyer vos commentaires
       url: hololens-feedback.md
-- title: Autres services
+- title: Plus de services
   linkLists:
   - linkListType: reference
     links:
-    - text: Documents Dynamics 365 Remote Assist
+    - text: Documentation Dynamics 365 Remote Assist
       url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
-    - text: Découvrir Dynamics 365 Remote Assist
+    - text: Découvrir Dynamics 365 Remote Assist
       url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
-    - text: Dynamics 365 Guides
+    - text: Dynamics 365 Guides
       url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-    - text: Microsoft Dynamics 365 Mixed Reality
+    - text: Microsoft Dynamics 365 Mixed Reality
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
   - linkListType: how-to-guide
     links:
-    - text: Qu’est-ce que la réalité mixte ?
+    - text: Qu’est-ce que la réalité mixte ?
       url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
-    - text: Commencer la conception et le prototypage
+    - text: Commencer à concevoir et à créer des prototypes
       url: https://docs.microsoft.com/windows/mixed-reality/design
-    - text: Présentation du développement de la réalité mixte
+    - text: Introduction au développement de réalité mixte
       url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
     - text: Vue d’ensemble des services cloud
       url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-- title: Support
+- title: Guide pratique
   linkLists:
   - linkListType: reference
     links:
-    - text: Acheter HoloLens
-      url: https://www.microsoft.com/hololens/buy
-    - text: Support des communautés
-      url: https://holodevelopersslack.azurewebsites.net/
-    - text: Support technique
-      url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
-    - text: Microsoft Store - Support d’Office
-      url: https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637
-    - text: Prise en charge des demandes d'information relatives au Store et aux achats
-      url: https://www.microsoft.com/store/b/business
+    - text: Options d’aide et de support pour HoloLens 2
+      url: hololens2-support.md
