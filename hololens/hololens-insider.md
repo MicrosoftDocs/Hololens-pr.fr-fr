@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924364"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977232"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -29,10 +29,14 @@ Bienvenue dans les dernières versions préliminaires d’Insider pour HoloLens�
 
 ## <a name="windows-insider-release-notes"></a>Notes de publication de Windows Insider
 
-Nous sommes ravis de commencer à effectuer le vol de nouvelles fonctionnalités vers Windows Insider. Les nouvelles builds feront l’d’un vol vers les canaux dev et bêta pour les dernières mises à jour. Nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos builds Windows Insider. Soyez enthousiaste et prêt à mélanger ces mises à jour dans votre réalité. 
+Nous sommes ravis de commencer à effectuer le vol de nouvelles fonctionnalités vers Windows Insider. Les nouvelles builds feront l’d’un vol vers les canaux dev et bêta pour les dernières mises à jour. Nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos builds Windows Insider. Soyez enthousiaste et prêt à mélanger ces mises à jour dans votre réalité.
+
+| Fonctionnalité                 | Description                | Utilisateurs cible | Build introduite |
+|-------------------------|----------------------------|--------------|------------------|
+| Modifications du CSP sur HoloLens | Nouveaux fournisseurs de services de chiffrement pour l’interrogation des données | Administrateurs informatiques    | 20348,1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>Modifications du CSP sur HoloLens
- 
+
 - Présenté dans la version Windows Insider, 20348,1403
 
 #### <a name="devdetail-csp"></a>Fournisseur CSP DevDetail
