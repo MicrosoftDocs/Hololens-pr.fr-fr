@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 5963be84a5fbb186c77965d9bbf112713fea8242
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397690"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923514"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Redémarrer, réinitialiser ou récupérer HoloLens (1ère génération)
 
 Si vous rencontrez des problèmes avec votre HoloLens, vous pouvez essayer d’effectuer un redémarrage ou une réinitialisation, ou même de relancer l’appareil à l’aide de la récupération de l’appareil. Cet article vous guide tout au long des étapes de récupération recommandées dans l’ordre.
 
-Si vous envisagez de récupérer un HoloLens 2, consultez récupération [d’un hololens 2](https://docs.microsoft.com/hololens/hololens-recovery), car ce processus diffère.
+Si vous envisagez de récupérer un HoloLens 2, consultez récupération [d’un hololens 2](hololens-recovery.md), car ce processus diffère.
 
 > [!NOTE]
 > Cet article se concentre sur le périphérique et le logiciel HoloLens. Si vos hologrammes ne sont pas corrects, consultez **[considérations relatives à l’environnement HoloLens](hololens-environment-considerations.md)** pour plus d’informations sur les facteurs qui améliorent la qualité de l’hologramme.
@@ -79,6 +79,27 @@ Si les méthodes précédentes n’ont pas redémarré votre HoloLens, forcez un
 1. Relâchez le bouton et attendez 2-3 secondes.
 1. Appuyez sur le bouton **d’alimentation** et maintenez-le enfoncé pendant 1 seconde.
 1. Si vous rencontrez toujours des problèmes, appuyez sur le bouton **d’alimentation** pendant 4 secondes, jusqu’à ce que tous les indicateurs de la batterie disparaisse et que l’écran cesse d’afficher les hologrammes. Attendez 1 minute, puis appuyez à nouveau sur le bouton **d’alimentation** pour allumer l’appareil.
+
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>Revenir à une version précédente-HoloLens (1ère génération)
+
+Dans certains cas, vous souhaiterez peut-être revenir à une version précédente du logiciel HoloLens. Pour ce faire, vous pouvez utiliser l’outil de récupération de périphérique de Windows pour réinitialiser votre HoloLens à la version antérieure.
+
+> [!NOTE]
+> En revenons à une version antérieure, vous supprimez vos fichiers et paramètres personnels.
+
+Pour revenir à une version précédente de HoloLens 1, procédez comme suit :
+
+1. Assurez-vous que vous n’avez aucun téléphone ou appareil Windows branché sur votre PC.
+1. Sur votre PC, téléchargez l' [outil de récupération d’appareils Windows (WDRT)](https://support.microsoft.com/help/12379).
+1. Téléchargez le [package de récupération de la mise à jour de l’anniversaire HoloLens](https://aka.ms/hololensrecovery).
+1. Une fois les téléchargements terminés, ouvrez l' **Explorateur de fichiers**  >  . Cliquez avec le bouton droit sur le dossier compressé que vous venez de télécharger, puis sélectionnez **extraire tout**  >  **extraire** pour le décompresser.
+1. Connectez votre HoloLens à votre PC à l’aide du câble micro-USB avec lequel il a été fourni. (Même si vous avez utilisé d’autres câbles pour connecter votre HoloLens, celui-ci fonctionne mieux.)
+1. Le WDRT détectera automatiquement votre HoloLens. Sélectionnez la vignette **Microsoft HoloLens** .
+1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages** et choisissez le fichier d’installation contenu dans le dossier que vous avez décompressé à l’étape 4. (Recherchez un fichier avec l’extension. FFU.)
+1. Sélectionnez **installer le logiciel** et suivez les instructions.
+
+> [!NOTE]
+> Si le WDRT ne détecte pas votre HoloLens, essayez de redémarrer votre ordinateur. Si cela ne fonctionne pas, sélectionnez **mon appareil n’a pas été détecté**, sélectionnez **Microsoft HoloLens**, puis suivez les instructions.
 
 ## <a name="reset-to-factory-settings"></a>Rétablir les paramètres d’usine
 

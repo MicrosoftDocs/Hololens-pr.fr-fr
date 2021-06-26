@@ -1,10 +1,10 @@
 ---
-title: Problèmes connus pour HoloLens
+title: Problèmes connus pour HoloLens (1ère génération)
 description: Restez à jour avec notre liste de problèmes connus et de solutions de contournement susceptibles d’affecter les clients et les développeurs HoloLens à l’aide d’Unity et du portail de périphériques Windows.
 keywords: résolution des problèmes, problème connu, aide
 author: mattzmsft
 ms.author: mazeller
-ms.date: 11/30/2020
+ms.date: 6/15/2021
 ms.topic: article
 ms.custom:
 - CI 111456
@@ -14,15 +14,14 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-- HoloLens 2
-ms.openlocfilehash: bc1d399a07a6a0622c953178cad7be1b8a018fdb
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 558eba8c2260b24a228e957b27927d508a077ec4
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397780"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923548"
 ---
-# <a name="known-issues-for-hololens"></a>Problèmes connus pour HoloLens
+# <a name="known-issues-for-hololens-1st-gen"></a>Problèmes connus pour HoloLens (1ère génération)
 
 Voici la liste actuelle des problèmes connus pour les appareils HoloLens. Vérifiez ici d’abord si vous constatez un comportement étrange. Cette liste est mise à jour à mesure que de nouveaux problèmes sont détectés ou signalés, ou lorsque des problèmes sont résolus dans les futures mises à jour logicielles HoloLens.
 
@@ -30,10 +29,9 @@ Voici la liste actuelle des problèmes connus pour les appareils HoloLens. Véri
 > - Si vous découvrez un problème qui ne bloque pas, signalez-le sur votre appareil HoloLens via le [Hub de commentaires](hololens-feedback.md).
 > - Si le problème auquel vous êtes confronté vous empêche, en plus de déposer des commentaires, veuillez envoyer [une demande de support](https://aka.ms/hlsupport).
 
+
 - [Problèmes connus pour toutes les générations HoloLens](#known-issues-for-all-hololens-generations)
-- [Problèmes connus pour les appareils HoloLens 2](#known-issues-for-hololens-2-devices)
 - [Problèmes connus pour HoloLens (1ère génération)](#known-issues-for-hololens-1st-gen)
-- [Problèmes connus de l’émulateur HoloLens](#known-issues-for-hololens-emulator)
 
 ## <a name="known-issues-for-all-hololens-generations"></a>Problèmes connus pour toutes les générations HoloLens
 
@@ -59,72 +57,6 @@ Solutions de contournement :
 - Si vous êtes viable pour votre entreprise, le chargement automatique de l’appareil photo est pris en charge sur les comptes Microsoft. Vous pouvez vous connecter à votre compte Microsoft en plus de votre compte professionnel ou scolaire (l’application OneDrive prend en charge la connexion double). À partir de votre profil de compte Microsoft dans OneDrive, vous pouvez activer le chargement automatique de l’appareil photo en arrière-plan.
 
 - Si vous ne pouvez pas utiliser un compte Microsoft consommateur en toute sécurité pour télécharger vos photos automatiquement, vous pouvez charger manuellement des photos sur votre compte professionnel ou scolaire à partir de l’application OneDrive. Pour ce faire, assurez-vous que vous êtes connecté à votre compte professionnel ou scolaire dans l’application OneDrive. Sélectionnez le **+** bouton et choisissez **Télécharger**. Recherchez les photos ou vidéos que vous souhaitez télécharger en accédant à **images > pellicule**. Sélectionnez les photos ou vidéos que vous souhaitez télécharger, puis cliquez sur le bouton **ouvrir** .
-
-## <a name="known-issues-for-hololens-2-devices"></a>Problèmes connus pour les appareils HoloLens 2
-
-### <a name="device-using-auto-login-asks-for-log-in"></a>L’appareil utilisant la connexion automatique demande une connexion
-
-Un appareil HoloLens 2 peut être configuré pour se connecter automatiquement à via les **paramètres**  ->    ->  **options de connexion** de comptes-> et sous **obligatoire** , définissez la valeur sur **jamais**. Certains utilisateurs peuvent être amenés à se connecter à nouveau à l’appareil lors de la mise à jour d’un appareil avec une mise à jour substantielle, telle qu’une mise à jour de fonctionnalité.
-
-Exemple de cas de figure :
-
-- Mise à jour d’un appareil à partir de Windows holographique, version 2004 (Build 19041. xxxx) vers Windows holographique, version 21H1 (Build 20346. xxxx)
-- Mise à jour d’un appareil pour effectuer une mise à jour importante sur la même version majeure, par exemple Windows holographique, version 2004 vers Windows holographique, version 20H2
-- Mise à jour d’un appareil à partir d’une image de fabrique vers la dernière image
-
-Cela ne doit pas se produire pendant :
-
-- Appareils effectuant une mise à jour de maintenance mensuelle
-
-Contourner les méthodes :
-
-- Méthodes de connexion telles que PIN, mot de passe, IRIS, authentification Web ou clés FIDO2.
-- Si le code PIN de l’appareil ne peut pas être mémorisé et que d’autres méthodes d’authentification ne sont pas disponibles, un utilisateur peut utiliser le mode de reverrouillage [Manuel](hololens-recovery.md#manual-procedure).
-
-### <a name="microsoft-edge-fails-to-launch"></a>Échec du lancement de Microsoft Edge
-
-> [!NOTE]
-> Ce problème a été créé à l’origine avec la version d’expédition de Microsoft Edge à l’esprit. Ce problème peut être résolu dans le [nouveau Microsoft Edge](hololens-new-edge.md). Si ce n’est pas le cas, veuillez envoyer un commentaire.
-
-Quelques clients ont signalé un problème où le lancement de Microsoft Edge a échoué. Pour ces clients, le problème persiste via le redémarrage et n’est pas résolu avec les mises à jour de Windows ou d’application. Si vous rencontrez ce problème et que vous avez confirmé que [Windows est à jour](hololens-updates.md#manually-check-for-updates), veuillez signaler un bogue à partir de l' [application Hub de commentaires](hololens-feedback.md) avec la catégorie et la sous-catégorie suivantes : installer et mettre à jour > le téléchargement, l’installation et la configuration de Windows Update.
-
-Il n’existe aucune solution de contournement connue, car nous n’avons pas pu générer le problème jusqu’à présent. L’enregistrement d’un bogue via Feedback Hub vous aide à effectuer notre investigation.
-
-### <a name="keyboard-does-not-switch-to-special-characters"></a>Le clavier ne bascule pas vers les caractères spéciaux
-
-Il y a un problème au cours de l’OOBE, où une fois que l’utilisateur a choisi un compte professionnel ou scolaire et qu’il entre son mot de passe, en tentant de basculer vers les caractères spéciaux du clavier en appuyant sur le bouton &123 ne devient pas un caractère spécial.
-
-Solution de contournement :
--   Fermez le clavier et rouvrez-le en appuyant sur le champ de texte.
--   Entrez votre mot de passe de manière incorrecte. La prochaine fois que le clavier est relancé, il fonctionnera comme prévu.
-- Authentification Web, fermez le clavier et sélectionnez **se connecter à partir d’un autre appareil**.
--   Si vous entrez uniquement des chiffres, un utilisateur peut appuyer sur certaines touches et les maintenir enfoncé pour ouvrir un menu développé.
--   À l’aide d’un clavier USB.
-
-Cela n’affecte pas les éléments suivants :
-- Utilisateurs qui choisissent d’utiliser un compte personnel.
-
-### <a name="blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-an-insider-build"></a>L’écran bleu s’affiche après annulation de l’inscription des builds d’Insider Preview sur un appareil qui a été reflashé avec une build Insider
-
-Il s’agit d’un problème affectant les utilisateurs qui se trouvaient sur une version d’évaluation d’Insider, de rééclairer HoloLens 2 avec une nouvelle build Insider Preview, puis désinscrit du programme Insider.
-
-Cela n’affecte pas les éléments suivants :
-- Utilisateurs qui ne sont pas inscrits à Windows Insider 
-- Insiders
-    - Si un appareil a été inscrit depuis la version des builds Insider 18362. x
-    - S’ils ont flashé une build 19041. x signée à l’intérieur et restent inscrits dans le programme d’Insider
-
-Solution de contournement : 
-- Éviter le problème 
-    - Flashez une génération non Insider. L’une des mises à jour mensuelles régulières.
-    - Restez sur la version préliminaire d’Insider
-- Refaire clignoter l’appareil
-
-    1. Mettez manuellement le [HoloLens 2 en mode clignotant](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) en l’arrêtant tout en étant connecté. Puis, tout en maintenant le volume enfoncé, appuyez sur le bouton d’alimentation.
-    
-    1. Connectez-vous à l’ordinateur et ouvrez le compagnon de récupération avancée.
-    
-    1. Flasher HoloLens 2 à la build par défaut.
 
 ## <a name="known-issues-for-hololens-1st-gen"></a>Problèmes connus pour HoloLens (1ère génération)
 
@@ -158,7 +90,7 @@ Notre équipe travaille actuellement sur un correctif. En attendant, vous pouvez
     ```
 
     > [!NOTE]
-    > Si 10.0.18362.0 n’est pas installé, utilisez la version la plus récente que vous avez. 
+    > Si 10.0.18362.0 n’est pas installé, utilisez la version la plus récente que vous avez.
 
 1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le projet, puis sélectionnez **Ajouter** un  >  **élément existant**.
 
@@ -189,7 +121,7 @@ Notre équipe travaille actuellement sur un correctif. En attendant, vous pouvez
 
 1. Sélectionnez **Générer** > **Générer la solution**.
 
-1. Ouvrez une fenêtre d’invite de commandes et un CD-ROM vers le dossier qui contient le fichier. exe compilé (par exemple, C:\MyProjects\HoloLensDeploymentFix\bin\Debug).
+1. Ouvrez une fenêtre d’invite de commandes et un CD-ROM vers le dossier qui contient le fichier .exe compilé (par exemple, C:\MyProjects\HoloLensDeploymentFix\bin\Debug).
 
 1. Exécutez l’exécutable et fournissez l’adresse IP de l’appareil en tant qu’argument de ligne de commande. (Si vous êtes connecté à l’aide de la norme USB, vous pouvez utiliser 127.0.0.1, sinon, utiliser l’adresse IP de Wi-Fi de l’appareil.)  Par exemple, « HoloLensDeploymentFix 127.0.0.1 ».
 
@@ -247,10 +179,10 @@ Si votre appareil n’est toujours pas en mesure de charger des applications, vo
 1. Un écran similaire à celui ci-dessous s’affiche.  Vous souhaitez accéder à la section qui indique **installer l’application** et accéder à l’emplacement où vous avez décompressé ces deux fichiers Appx. Vous ne pouvez effectuer qu’un seul à la fois. par conséquent, après avoir sélectionné le premier, cliquez sur « Go » sous la section déployer. Effectuez ensuite cette opération pour le deuxième fichier APPX.
 
    ![Portail de périphériques Windows pour installer Side-Loaded application](images/20190322-DevicePortal.png)
-   
+
 1. À ce stade, nous pensons que vos applications doivent commencer à fonctionner à nouveau et que vous pouvez également accéder au Store.
 
-1. Dans certains cas, il est nécessaire d’exécuter l’étape supplémentaire de lancement de l’application de visionneuse 3D avant le lancement des applications affectées. 
+1. Dans certains cas, il est nécessaire d’exécuter l’étape supplémentaire de lancement de l’application de visionneuse 3D avant le lancement des applications affectées.
 
 Nous vous remercions de votre patience, car nous avons passé en revue le processus de résolution de ce problème. nous sommes impatients de continuer à travailler avec notre communauté pour créer des expériences de réalité mixte fructueuses.
 
@@ -276,8 +208,3 @@ Nous vous remercions de votre patience, car nous avons passé en revue le proces
 
 - Si votre HoloLens passe en mode veille alors que le contrôleur sans fil Xbox est connecté, toute entrée sur le contrôleur sort le contrôle HoloLens. Vous pouvez éviter cela en éteignant votre contrôleur lorsque vous avez fini de l’utiliser.
 
-## <a name="known-issues-for-hololens-emulator"></a>Problèmes connus de l’émulateur HoloLens
-
-- Toutes les applications dans le Microsoft Store ne sont pas compatibles avec l’émulateur. Par exemple, les Conker et les fragments de Young ne sont pas lisibles sur l’émulateur.
-- Vous ne pouvez pas utiliser la webcam de l’ordinateur dans l’émulateur.
-- La fonctionnalité d’aperçu instantané du portail de périphériques Windows ne fonctionne pas avec l’émulateur. Vous pouvez toujours capturer des vidéos et des images de réalité mixte.

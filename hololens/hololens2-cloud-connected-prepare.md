@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 21132ed5d1e84d92a877747ac9a4c090b177ca08
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308686"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924568"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Préparer-Guide connecté au Cloud
 
@@ -34,7 +34,7 @@ Pour les scénarios de déploiement personnel et d’entreprise, un système MDM
 Azure AD est un service d’annuaire basé sur le cloud qui offre des fonctionnalités de gestion des accès et de l’identité. Les organisations qui utilisent Microsoft Office 365 ou Intune utilisent déjà Azure AD, qui possède trois éditions : gratuite, Premium P1 et Premium P2 (voir [éditions Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-editions)). Toutes les éditions prennent en charge l’inscription des appareils Azure AD, mais Premium P1 est nécessaire pour activer l’inscription automatique MDM que nous utiliserons ultérieurement dans ce guide.
 
 > [!IMPORTANT]
-> Il est essentiel de disposer d’un Azure Active Directory car les appareils HoloLens ne prennent pas en charge la jointure AD locale. Si vous ne disposez pas d’un Azure Active Directory de configuration de&#39;t, suivez les instructions de ce lien pour commencer et [créer un locataire dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> Il est essentiel de disposer d’un Azure Active Directory car les appareils HoloLens ne prennent pas en charge la jointure AD locale. Si vous n’avez pas déjà Azure Active Directory Configuration de l'&#39;, accédez à [créer un nouveau locataire dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Gestion des identités
 

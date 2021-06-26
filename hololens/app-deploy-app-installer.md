@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308641"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924126"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installer des applications sur HoloLens 2 via le programme d’installation d’application
 
@@ -36,7 +36,7 @@ Un appareil est considéré comme « géré » si l' **une** des conditions su
 
 Vous êtes maintenant en mesure d’installer des applications sans avoir à activer le mode développeur ou à l’aide du portail des appareils.  Téléchargez (sur USB ou via Microsoft Edge) le bundle AppX sur votre appareil et accédez au Bundle AppX dans l’Explorateur de fichiers pour être invité à lancer l’installation.  Vous pouvez également [lancer une installation à partir d’une page Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Tout comme les applications que vous installez à partir de la Microsoft Store ou chargement à l’aide de la fonctionnalité de déploiement d’applications métier MDM, les applications doivent être signées numériquement avec l' [outil Sign](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) et le [certificat utilisé pour signer doit être approuvé](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) par l’appareil HoloLens avant que l’application puisse être déployée.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 ### <a name="for-your-devices"></a>Pour vos appareils :
 
@@ -107,8 +107,6 @@ L’application s’installe désormais sur l’appareil. Pour Rechercher l’ap
 
 ## <a name="sample-apps"></a>Exemples d’applications
 
-Pour essayer le programme d’installation d’application avec quelques exemples d’applications, consultez certains de nos exemples disponibles :
-
-- [Hub d’exemples MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [Surfaces](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [Exemples d’applications UWP pouvant être utilisés à des fins de test](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+Essayez le programme d’installation de l’application avec l’un de nos exemples d’applications disponibles. 
+> [!div class="nextstepaction"]
+> [Exemples d’application](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)

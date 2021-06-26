@@ -1,5 +1,5 @@
 ---
-title: Notes de publication de HoloLens 2
+title: Notes de publication de HoloLens 2
 description: Restez à jour avec toutes les mises à jour de chaque nouvelle version de HoloLens 2.
 author: scooley
 ms.author: scooley
@@ -8,23 +8,98 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/16/2021
+ms.date: 06/17/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 554dc796ee793a3f7e81108c6eb614a9555f10d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 16aec0e60fde40f0a2bffefa871a7a3774b1eb2e
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397340"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924534"
 ---
-# <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
+# <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
 Pour vous assurer que vous disposez d’une expérience productive avec vos appareils HoloLens, nous continuons à publier les mises à jour des fonctionnalités, des bogues et de la sécurité. Sur cette page, vous pouvez voir les nouveautés de HoloLens chaque mois. Pour obtenir la dernière mise à jour de HoloLens 2, vous pouvez [Rechercher des mises à jour et mettre à jour manuellement](hololens-update-hololens.md#check-for-updates-and-manually-update) ou obtenir la mise à jour Flash complète (FFU) pour [flasher votre appareil via le compagnon de récupération avancé](hololens-recovery.md#clean-reflash-the-device). Le [Téléchargement](https://aka.ms/hololens2download) est mis à jour et fournit la version la plus récente de la mise à la disposition générale.
+
+> [!NOTE]
+> L’annonce récente de Windows 11 était axée sur la version PC de Windows. Nous avons récemment lancé une [mise à jour majeure du système d’exploitation](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) vers HoloLens 2 en mai 2021 et nous travaillons sur une prochaine version en fonction des commentaires des clients.
+
+> [!IMPORTANT]
+> En raison d’un [problème connu dans notre Build 21H1 qui affecte les utilisateurs de l’assistance à distance](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), nous suspendons actuellement l’offre Windows holographique, version 21H1 updates. Nous avons également modifié la build compagnon de récupération avancée par défaut pour qu’elle soit la [mise à jour Windows holographique, version 20H2-juin 2021](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update), qui est la dernière version 20H2.
+>
+> Bien que nous puissions réduire la disponibilité de 21H1 pour atténuer l’impact de ce problème, nous comprenons que certains clients peuvent toujours vouloir effectuer la mise à jour vers 21H1. Pour les clients qui souhaitent effectuer une mise à jour vers 21H1, deux chemins d’accès différents sont disponibles :
+>
+> - [Inscrire vos appareils en tant que Windows Insiders](hololens-insider.md#start-receiving-insider-builds) et sélectionner le **canal bêta**, cela permettra à ces appareils de se mettre à jour vers 21H1 et d’avoir des builds fiables.
+> - [Téléchargez la dernière version de FFU sur votre PC](https://aka.ms/hololens2download) , puis [flashez votre appareil via le compagnon de récupération avancé](hololens-recovery.md#clean-reflash-the-device).
+
+## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows holographique, version 21H1-mise à jour de juin 2021
+- Build 20348,1007
+
+### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>Chargement par progression de l’appareil photo de OneDrive entreprise ou scolaire
+
+Nous avons ajouté une nouvelle fonctionnalité à l’application paramètres HoloLens 2, qui permet aux clients de charger automatiquement des photos et des vidéos de réalité mixte à partir des images de l’appareil > dossier pellicule vers le dossier OneDrive for Work ou School correspondant. Cette fonctionnalité s’adresse à un [écart de fonctionnalités au sein de l’application OneDrive](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) sur HoloLens 2, qui prend uniquement en charge le chargement automatique du rouleau de la caméra sur le compte Microsoft personnel d’un client (et non sur son compte professionnel ou scolaire).
+
+**Fonctionnement**
+
+- Visitez **paramètres > système > appareil photo de la réalité mixte** pour activer le « chargement de l’appareil photo ».
+- En définissant cette fonctionnalité sur la position **on** , toutes les photos ou vidéos de réalité mixte capturées sur votre appareil seront automatiquement mises en file d’attente pour téléchargement dans le dossier images > pellicule de votre compte OneDrive entreprise ou établissement scolaire.
+    >[!NOTE]
+    >Les photos et vidéos capturées avant l’activation de cette fonctionnalité *ne seront pas* mises en file d’attente pour le téléchargement et devront tout de même être chargées manuellement.
+- Un message d’État sur la page paramètres affiche le nombre de fichiers en attente de chargement (ou la lecture de « OneDrive est à jour » lorsque tous les fichiers en attente ont été téléchargés).
+- Si vous vous inquiétez de la bande passante ou souhaitez « suspendre » le téléchargement pour une raison quelconque, vous pouvez faire passer la fonctionnalité à la position **off** . La désactivation temporaire de la fonctionnalité garantit que la file d’attente de téléchargement continuera à augmenter lorsque vous ajouterez de nouveaux fichiers au dossier pellicule, mais que les fichiers ne seront pas téléchargés tant que vous n’aurez pas réactivé la fonctionnalité.
+- Les fichiers les plus récents seront téléchargés en premier (dernière connexion, premier sorti).
+- Si votre compte OneDrive rencontre des problèmes (par exemple, après la modification de votre mot de passe), un bouton **corriger maintenant** s’affiche sur la page Paramètres.
+- Il n’y a pas de taille de fichier maximale, mais notez que le chargement des fichiers volumineux prendra plus de temps (surtout si votre bande passante de chargement est limitée). Si vous « suspendez » ou si vous désactivez le téléchargement pendant le chargement d’un fichier volumineux, le téléchargement partiel est préservé. Si le téléchargement est réactivé dans plusieurs heures après avoir été « suspendu » ou désactivé, le téléchargement se poursuivra là où il s’était arrêté. Toutefois, si le chargement est réactivé après plusieurs heures, le chargement du fichier volumineux redémarrera à partir du début.
+
+**Problèmes connus et avertissements**
+
+- Ce paramètre n’a pas de limitation intégrée basée sur l’utilisation de la bande passante actuelle. Si vous avez besoin d’optimiser la bande passante pour un autre scénario, désactivez manuellement le paramètre. Le chargement sera suspendu, mais la fonctionnalité continuera à surveiller les fichiers récemment ajoutés à la pellicule. Réactivez le téléchargement lorsque vous êtes prêt à continuer.
+- Cette fonctionnalité doit être activée pour chaque compte d’utilisateur sur l’appareil, et elle peut uniquement charger activement des fichiers pour l’utilisateur actuellement connecté à l’appareil.
+- Si vous prenez des photos ou des vidéos tout en regardant le nombre de téléchargements dans la page paramètres en temps réel, Notez que le nombre de fichiers en attente peut ne pas changer tant que le téléchargement du fichier actuel n’est pas terminé.
+- Le chargement s’interrompt si votre appareil est en veille ou hors tension. Pour vous assurer que vos chargements en attente sont terminés, utilisez activement l’appareil jusqu’à ce que la page des paramètres indique « OneDrive est à jour » ou ajustez les paramètres de veille de votre **& d’alimentation** .
+### <a name="added-support-for-some-telemetry-policies"></a>Ajout de la prise en charge de certaines stratégies de télémétrie
+
+Les stratégies de télémétrie suivantes sont désormais prises en charge sur HoloLens 2 :
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+System\AllowTelemetry et System\ConfigureTelemetryOptInSettingsUx doivent être utilisés ensemble pour avoir un contrôle total sur la télémétrie et le comportement dans l’application paramètres.
+
+Améliorations et correctifs de la mise à jour :
+- Corrige une corruption vidéo importante avec l’étalonnage des couleurs.
+- Résout un problème où le texte peut être tronqué dans le menu de l’alimentation.
+- Active la prise en charge de la stratégie RequirePrivateStoreOnly.
+
+## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows holographique, version 20H2-mise à jour de juin 2021
+- Build 19041,1154
+
+### <a name="added-support-for-some-telemetry-policies"></a>Ajout de la prise en charge de certaines stratégies de télémétrie
+
+Les stratégies de télémétrie suivantes sont désormais prises en charge sur HoloLens 2 :
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+System\AllowTelemetry et System\ConfigureTelemetryOptInSettingsUx doivent être utilisés ensemble pour avoir un contrôle total sur la télémétrie et le comportement dans l’application paramètres.
+
+Nous vous encourageons à essayer notre dernière version, Windows holographique, version 21H1.
+
+## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows holographique, version 1903-mise à jour du 2021 du 1er juin
+- Build 18362,1116
+
+Améliorations et correctifs de la mise à jour :
+- Cette mise à jour de qualité mensuelle ne contient pas de modifications notables, nous vous encourageons à essayer notre dernière version, Windows holographique, version 21H1.
+
+>[!IMPORTANT]
+> Cette Build ne sera plus en service.
 
 ## <a name="windows-holographic-version-21h1"></a>Windows holographique, version 21H1
 - Build 20346,1002
@@ -309,9 +384,9 @@ Si vous choisissez « toujours », mais que vous souhaitez ultérieurement mod
 
 Maintenant, dans cette version de Windows, les utilisateurs peuvent ajuster manuellement le niveau de volume de chaque application. Cela permet aux utilisateurs de mieux se concentrer sur les applications dont ils ont besoin, ou de mieux les entendre lors de l’utilisation de plusieurs applications. Par exemple, la nécessité de désactiver le volume d’une application lors de l’appel d’une autre personne pour l’assistance à distance dans une autre.
 
-Pour définir le volume d’une application individuelle, accédez à **paramètres**  ->    ->  **sons** système, puis sous options de son avancées, sélectionnez le volume de l' **application et les préférences de l’appareil**.
+Pour définir le volume d’une application individuelle, accédez à **paramètres**  ->    ->  **sons** système, puis sous options de son avancées, sélectionnez le volume de l' **application et les préférences de l’appareil**.<br/><br/>
 
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 #### <a name="swipe-to-type"></a>Faire glisser vers le type
 
@@ -327,13 +402,13 @@ Nouveau menu qui permet à l’utilisateur de se déconnecter, d’arrêter et d
 
 1. Ouvrez l’écran de démarrage de HoloLens à l’aide du [mouvement de début](hololens2-basic-usage.md#start-gesture) ou dites « aller à démarrer ».
 
-2. Notez l’icône de points de suspension (...) en regard de l’image du profil utilisateur :
+2. Notez l’icône de points de suspension (...) en regard de l’image du profil utilisateur :<br/><br/>
 
    <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Sélectionnez l’image de profil utilisateur à l’aide de vos mains ou de la commande vocale « Power ».
 
-4. Un menu s’affiche avec les options de déconnexion, de redémarrage ou d’arrêt de l’appareil :
+4. Un menu s’affiche avec les options de déconnexion, de redémarrage ou d’arrêt de l’appareil :<br/><br/>
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
@@ -905,7 +980,7 @@ Précédemment, en cas d’échec lors de l’application du mode plein écran, 
 
 De nouvelles stratégies de réalité mixte ont été créées pour les appareils HoloLens 2 sur Windows holographique version 20H2. Les nouveaux paramètres contrôlables incluent : définition de la luminosité, définition du volume, désactivation de l’enregistrement audio dans les captures de réalité mixte, définition du moment où les diagnostics peuvent être collectés et mise en cache de l’appartenance au groupe AAD.  
 
-| Nouvelle stratégie HoloLens                                | Description                                                                               | Notes                                                                |
+| Nouvelle stratégie HoloLens                                | Description                                                                               | Remarques                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | Permet de désactiver les boutons de luminosité afin que le fait de cliquer dessus ne change pas de luminosité.       | 1 Oui, 0 non (par défaut)                                                |
 | MixedReality\VolumeButtonDisabled                  | Permet de désactiver les boutons de volume afin que le fait d’appuyer sur le volume ne change pas.               | 1 Oui, 0 non (par défaut)                                                |
@@ -956,7 +1031,7 @@ Ces deux nouvelles stratégies pour AllowAddProvisioningPackage et AllowRemovePr
 
 Ces stratégies permettent aux administrateurs de contrôler les États d’alimentation, tels que le délai d’inactivité. Pour en savoir plus sur chaque stratégie individuelle, cliquez sur le lien correspondant à cette stratégie.
 
-|     Lien vers la documentation sur les stratégies                |     Notes                                                                                                                                       |
+|     Lien vers la documentation sur les stratégies                |     Remarques                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 |     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Exemple de valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
 |     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Exemple de valeur à utiliser dans le concepteur de configuration Windows, c.-à-d.,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |

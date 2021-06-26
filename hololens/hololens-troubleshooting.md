@@ -1,5 +1,5 @@
 ---
-title: Dépannage
+title: Résolution des problèmes des appareils HoloLens
 description: Restez à jour sur les solutions les plus courantes aux problèmes liés aux appareils HoloLens et aux techniques de dépannage.
 author: mattzmsft
 ms.author: mazeller
@@ -12,24 +12,200 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-keywords: problèmes, bogue, dépannage, correction, aide, support, HoloLens
-ms.openlocfilehash: 1039af533b5039eb4eef6599c7cbb480955b0661
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+keywords: problèmes, bogue, dépannage, correction, aide, support, HoloLens, émulateur
+ms.openlocfilehash: b69dddf04ac31b69f0b2f8759d095806189f33ab
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397260"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924619"
 ---
-# <a name="troubleshoot-common-issues"></a>Résolution des problèmes courants
+# <a name="device-troubleshooting"></a>Dépannage des appareils
 
 Cet article explique comment résoudre plusieurs problèmes courants liés à HoloLens.
 
-## <a name="my-hololens-is-unresponsive-or-wont-start"></a>Mon HoloLens ne répond pas ou ne démarre pas
+>[!IMPORTANT]
+> Avant de commencer une procédure de résolution des problèmes, assurez-vous que votre appareil est facturé à **20 à 40%** de la capacité de la batterie, si possible. Les [voyants](hololens2-setup.md#lights-that-indicate-the-battery-level) de la batterie situés sous le bouton d’alimentation constituent un moyen rapide de vérifier la capacité de la batterie sans se connecter à l’appareil.
+
+<a id="list"></a>
+
+**Problèmes connus**
+- [La vidéo assistance à distance se fige après 20 minutes](#remote-assist-video-freezes-after-20-minutes)
+- [La connexion automatique demande une connexion](#auto-login-asks-for-log-in)
+- [Échec du lancement de Microsoft Edge](#microsoft-edge-fails-to-launch)
+- [Le clavier ne bascule pas vers les caractères spéciaux](#keyboard-doesnt-switch-to-special-characters)
+- [Le téléchargement des fichiers verrouillés n’affiche pas d’erreur](#downloading-locked-files-doesnt-error)
+- [Délai de chargement/téléchargement du fichier du portail de l’appareil](#device-portal-file-uploaddownload-times-out)
+- [Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+- [OneDrive ne charge pas automatiquement les images](#onedrive-doesnt-automatically-upload-pictures)
+
+**Général**
+- [HoloLens ne répond pas ou ne démarre pas](#hololens-is-unresponsive-or-wont-start)
+- [Erreur « espace disque insuffisant »](#low-disk-space-error)
+- [Échec de l’étalonnage](#calibration-fails)
+- [Impossible de se connecter, car mon HoloLens a été configuré précédemment pour quelqu’un d’autre](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
+- [Unity ne fonctionne pas](#unity-isnt-working)
+- [Le portail des appareils Windows ne fonctionne pas correctement](#windows-device-portal-isnt-working-correctly)
+- [L’émulateur HoloLens ne fonctionne pas](#the-hololens-emulator-isnt-working)
+
+**Input**
+- [Les commandes vocales ne fonctionnent pas](#voice-commands-arent-working)
+- [L’entrée manuelle ne fonctionne pas](#hand-input-isnt-working)
+
+**Connectivité**
+- [Impossible de se connecter au Wi-Fi](#cant-connect-to-wi-fi)
+
+**Périphériques externes** 
+- [Les appareils Bluetooth ne sont pas couplés](#bluetooth-devices-arent-pairing)
+- [Le microphone USB-C ne fonctionne pas](#usb-c-microphone-isnt-working)
+- [Les appareils listés comme disponibles dans les paramètres ne fonctionnent pas](#devices-listed-as-available-in-settings-dont-work)
+
+## <a name="remote-assist-video-freezes-after-20-minutes"></a>La vidéo assistance à distance se fige après 20 minutes
+
+> [!NOTE]
+> En raison de la gravité de ce problème connu, nous avons actuellement suspendu la disponibilité de Windows holographique, version 21H1. Si vous souhaitez toujours mettre à jour vos appareils vers 21H1, reportez-vous aux [instructions figurant dans les notes de publication en haut de la page.](hololens-release-notes.md)
+
+Sur la dernière version de [Windows holographique, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), certains utilisateurs de l’assistance à distance ont subi une congélation vidéo pendant les appels de plus de 20 minutes. Il s’agit d’un **problème connu**.
+
+### <a name="workarounds"></a>Solutions de contournement
+
+#### <a name="restart-in-between-calls"></a>Redémarrer entre les appels
+
+Si vos appels repassent une durée de 20 minutes et que vous rencontrez ce problème, essayez de redémarrer votre appareil. Le redémarrage de votre appareil entre les appels d’assistance à distance permet d’actualiser votre appareil et de le remettre dans un état correct.
+
+Pour redémarrer rapidement un appareil sur [Windows holographique, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) Ouvrez le menu Démarrer, sélectionnez l’icône utilisateur, puis sélectionnez **redémarrer**.
+
+#### <a name="revert-to-an-older-build"></a>Revenir à une version antérieure
+
+Certains clients ont découvert qu’en restaurant une version antérieure du système d’exploitation, ils ne rencontrent plus ce problème. Si vous avez détecté que vos appareils rencontrent ce problème, essayez les étapes suivantes :
+
+
+Solutions de contournement :
+
+- Si vous êtes viable pour votre entreprise, le chargement automatique de l’appareil photo est pris en charge sur les comptes Microsoft. Vous pouvez vous connecter à votre compte Microsoft en plus de votre compte professionnel ou scolaire (l’application OneDrive prend en charge la connexion double). À partir de votre profil de compte Microsoft dans OneDrive, vous pouvez activer le chargement automatique de l’appareil photo en arrière-plan.
+
+- Si vous ne pouvez pas utiliser un compte Microsoft consommateur en toute sécurité pour télécharger vos photos automatiquement, vous pouvez charger manuellement des photos sur votre compte professionnel ou scolaire à partir de l’application OneDrive. Pour ce faire, assurez-vous que vous êtes connecté à votre compte professionnel ou scolaire dans l’application OneDrive. Sélectionnez le **+** bouton et choisissez **Télécharger**. Recherchez les photos ou vidéos que vous souhaitez télécharger en accédant à **images > pellicule**. Sélectionnez les photos ou vidéos que vous souhaitez télécharger, puis cliquez sur le bouton **ouvrir** .
+
+
+1. [Télécharger la build pour Windows holographique, version 20H2 – mai 2021 Update](https://aka.ms/hololens2download/10.0.19041.1146)
+1. Suivez les [instructions pour revenir à une version précédente du système d’exploitation](hololens-update-hololens.md#go-back-to-a-previous-version)
+1. [Suspendez les mises à jour du système d’exploitation sur l’appareil manuellement](hololens-updates.md#pause-updates-via-device) ou, pour de nombreux appareils, utilisez le [Report via MDM](hololens-updates.md#configure-an-update-deferral-policy).
+
+[Retour à la liste](#list)
+
+## <a name="auto-login-asks-for-log-in"></a>La connexion automatique demande une connexion
+
+Un appareil HoloLens 2 peut être configuré pour se connecter automatiquement à via les **paramètres**  ->    ->  **options de connexion** de comptes-> et sous **obligatoire** , définissez la valeur sur **jamais**. Certains utilisateurs peuvent être amenés à se connecter à nouveau à l’appareil lors de la mise à jour d’un appareil avec une mise à jour substantielle, telle qu’une mise à jour de fonctionnalité. Il s’agit d’un **problème connu**.
+
+Exemple de cas de figure :
+
+- Mise à jour d’un appareil à partir de Windows holographique, version 2004 (Build 19041. xxxx) vers Windows holographique, version 21H1 (Build 20346. xxxx)
+- Mise à jour d’un appareil pour effectuer une mise à jour importante sur la même version majeure, par exemple Windows holographique, version 2004 vers Windows holographique, version 20H2
+- Mise à jour d’un appareil à partir d’une image de fabrique vers la dernière image
+
+Cela ne doit pas se produire pendant :
+
+- Appareils effectuant une mise à jour de maintenance mensuelle
+
+Contourner les méthodes :
+
+- Méthodes de connexion telles que PIN, mot de passe, IRIS, authentification Web ou clés FIDO2.
+- Si le code PIN de l’appareil ne peut pas être mémorisé et que d’autres méthodes d’authentification ne sont pas disponibles, un utilisateur peut utiliser le mode de reverrouillage [Manuel](hololens-recovery.md#manual-procedure).
+
+[Retour à la liste](#list)
+
+## <a name="microsoft-edge-fails-to-launch"></a>Échec du lancement de Microsoft Edge
+
+> [!NOTE]
+> Ce problème a été créé à l’origine avec la version d’expédition de Microsoft Edge à l’esprit. Ce problème peut être résolu dans le [nouveau Microsoft Edge](hololens-new-edge.md). Si ce n’est pas le cas, veuillez envoyer un commentaire.
+
+Quelques clients ont signalé un problème où le lancement de Microsoft Edge a échoué. Pour ces clients, le problème persiste via le redémarrage et n’est pas résolu avec les mises à jour de Windows ou d’application. Si vous rencontrez ce problème et que vous avez confirmé que [Windows est à jour](hololens-updates.md#manually-check-for-updates), veuillez signaler un bogue à partir de l' [application Hub de commentaires](hololens-feedback.md) avec la catégorie et la sous-catégorie suivantes : installer et mettre à jour > le téléchargement, l’installation et la configuration de Windows Update.
+
+Il n’existe aucune solution de contournement connue, car nous n’avons pas pu générer le problème jusqu’à présent. L’enregistrement d’un bogue via Feedback Hub vous aide à effectuer notre investigation. Il s’agit d’un **problème connu**.
+
+[Retour à la liste](#list)
+
+## <a name="keyboard-doesnt-switch-to-special-characters"></a>Le clavier ne bascule pas vers les caractères spéciaux
+
+Il y a un problème au cours de l’OOBE, où une fois que l’utilisateur a choisi un compte professionnel ou scolaire et qu’il entre son mot de passe, en tentant de basculer vers les caractères spéciaux du clavier en appuyant sur le bouton &123 ne devient pas un caractère spécial. Il s’agit d’un **problème connu**.
+
+Solution de contournement :
+-   Fermez le clavier et rouvrez-le en appuyant sur le champ de texte.
+-   Entrez votre mot de passe de manière incorrecte. La prochaine fois que le clavier est relancé, il fonctionnera comme prévu.
+- Authentification Web, fermez le clavier et sélectionnez **se connecter à partir d’un autre appareil**.
+-   Si vous entrez uniquement des chiffres, un utilisateur peut appuyer sur certaines touches et les maintenir enfoncé pour ouvrir un menu développé.
+-   À l’aide d’un clavier USB.
+
+Cela n’affecte pas les éléments suivants :
+- Utilisateurs qui choisissent d’utiliser un compte personnel.
+
+[Retour à la liste](#list)
+
+
+## <a name="downloading-locked-files-doesnt-error"></a>Le téléchargement des fichiers verrouillés n’est pas une erreur
+> ! Notez qu’il s’agit d’un **problème connu** qui est résolu dans Windows Insider Build, version 20348,1403.
+
+
+Dans les versions précédentes de Windows holographique, lorsque vous tentez de télécharger un fichier verrouillé, le résultat est une page d’erreur HTTP. Dans Windows holographique, version 21H1 Update, si vous tentez de télécharger un fichier verrouillé, rien n’est visible : le fichier n’est pas téléchargé et il n’y a pas d’erreur. 
+
+[Retour à la liste](#list)
+
+## <a name="device-portal-file-uploaddownload-times-out"></a>Délai de chargement/téléchargement du fichier du portail de l’appareil
+> ! Notez qu’il s’agit d’un **problème connu** qui est résolu dans Windows Insider Build, version 20348,1403. Si vous avez précédemment désactivé la connexion SSL dans le cadre de la solution de contournement, nous vous recommandons vivement de la réactiver.
+
+
+Certains clients ont trouvé, lors de la tentative de chargement ou de téléchargement de fichiers, l’opération peut sembler bloquée, puis expirer ou ne jamais se terminer. Cela est indépendant du[problème connu « fichier verrouillé »](#downloading-locked-files-doesnt-error) . cela affecte les versions 2004, 20H2 et 21H1 de Windows holographique. Le problème est dû à un bogue dans la gestion par le portail de l’appareil de certaines demandes et est le plus souvent utilisé lors de l’utilisation du protocole HTTPS, qui est la valeur par défaut. 
+
+### <a name="workaround"></a>Solution de contournement
+
+Cette solution de contournement, qui s’applique également à Wi-Fi et UsbNcm, consiste à désactiver l’option « obligatoire » sous « connexion SSL ». Pour ce faire, accédez au portail de l’appareil, au **système**, puis sélectionnez la page **Préférences** . Dans la section sécurité de l' **appareil** , localisez la **connexion SSL**, puis désactivez la case à cocher **.**
+
+L’utilisateur doit ensuite accéder à http://, et non https://(adresse IP) et des fonctionnalités telles que le chargement et le téléchargement de fichiers fonctionnent.
+
+[Retour à la liste](#list)
+
+## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider
+
+Il s’agit d’un problème affectant les utilisateurs qui se trouvaient sur une version d’évaluation d’Insider, de rééclairer HoloLens 2 avec une nouvelle build Insider Preview, puis désinscrit du programme Insider. Il s’agit d’un **problème connu**.
+
+Cela n’affecte pas les éléments suivants :
+- Utilisateurs qui ne sont pas inscrits à Windows Insider 
+- Insiders
+    - Si un appareil a été inscrit depuis la version des builds Insider 18362. x
+    - S’ils ont flashé une build 19041. x signée à l’intérieur et restent inscrits dans le programme d’Insider
+
+Solution de contournement : 
+- Éviter le problème 
+    - Flashez une génération non Insider. L’une des mises à jour mensuelles régulières.
+    - Restez sur la version préliminaire d’Insider
+- Refaire clignoter l’appareil
+
+    1. Mettez manuellement le [HoloLens 2 en mode clignotant](hololens-recovery.md) en l’arrêtant tout en étant connecté. Puis, tout en maintenant le volume enfoncé, appuyez sur le bouton d’alimentation.
+    
+    1. Connectez-vous à l’ordinateur et ouvrez le compagnon de récupération avancée.
+    
+    1. Flasher HoloLens 2 à la build par défaut.
+
+[Retour à la liste](#list)
+
+## <a name="onedrive-doesnt-automatically-upload-pictures"></a>OneDrive ne charge pas automatiquement les images
+
+L’application OneDrive pour HoloLens ne prend pas en charge le chargement automatique de l’appareil photo pour les comptes professionnels ou scolaires. Il s’agit d’un **problème connu**.
+
+Solutions de contournement :
+
+- Si vous êtes viable pour votre entreprise, le chargement automatique de l’appareil photo est pris en charge sur les comptes Microsoft. Vous pouvez vous connecter à votre compte Microsoft en plus de votre compte professionnel ou scolaire (l’application OneDrive prend en charge la connexion double). À partir de votre profil de compte Microsoft dans OneDrive, vous pouvez activer le chargement automatique de l’appareil photo en arrière-plan.
+
+- Si vous ne pouvez pas utiliser un compte Microsoft consommateur en toute sécurité pour télécharger vos photos automatiquement, vous pouvez charger manuellement des photos sur votre compte professionnel ou scolaire à partir de l’application OneDrive. Pour ce faire, assurez-vous que vous êtes connecté à votre compte professionnel ou scolaire dans l’application OneDrive. Sélectionnez le **+** bouton et choisissez **Télécharger**. Recherchez les photos ou vidéos que vous souhaitez télécharger en accédant à **images > pellicule**. Sélectionnez les photos ou vidéos que vous souhaitez télécharger, puis cliquez sur le bouton **ouvrir** .
+
+[Retour à la liste](#list)
+
+## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens ne répond pas ou ne démarre pas
 
 Si votre HoloLens ne démarre pas :
 
-- Si les voyants situés à côté du bouton d’alimentation ne s’allument pas, ou si un seul LED clignote brièvement, vous devrez peut-être [charger votre HoloLens.](hololens-recovery.md#charge-the-device)
-- Si les voyants s’allument lorsque vous appuyez sur le bouton d’alimentation mais que vous ne voyez rien dans les affichages, [Préformez une réinitialisation matérielle de l’appareil](hololens-recovery.md#hard-reset-procedure).
+- Si les voyants situés à côté du bouton d’alimentation ne s’allument pas, ou si un seul LED clignote brièvement, vous devrez peut-être [charger votre HoloLens.](hololens2-charging.md#charging-the-device)
+- Si les voyants s’allument lorsque vous appuyez sur le bouton d’alimentation mais que vous ne voyez rien dans les affichages, [effectuez une réinitialisation matérielle de l’appareil](hololens-recovery.md#hard-reset-procedure).
 
 Si votre HoloLens est gelé ou ne répond pas :
 
@@ -37,27 +213,102 @@ Si votre HoloLens est gelé ou ne répond pas :
 
 Si ces étapes ne fonctionnent pas, vous pouvez essayer [de récupérer votre appareil hololens 2 ou votre](hololens-recovery.md) [appareil hololens (1er génération).](hololens1-recovery.md)
 
-## <a name="holograms-dont-look-good"></a>Les hologrammes ne sont pas corrects
+[Retour à la liste](#list)
 
-Si vos hologrammes sont instables, sautent ou ne semblent pas corrects, essayez :
+## <a name="low-disk-space-error"></a>Erreur « espace disque insuffisant »
 
-- Nettoyage de votre visière d’appareil et de la barre de capteur à l’avant de votre HoloLens.
-- En accroissant la lumière dans votre salle.
-- Vous pouvez vous pencher sur votre environnement pour que HoloLens puisse les analyser plus complètement.
-- Étalonnage de votre HoloLens pour vos yeux. Accédez à **paramètres**  >  **système**  >  **utilitaires**. Sous **étalonnage**, sélectionnez **ouvrir l’étalonnage**.
- 
-### <a name="reporting-issues-where-holograms-are-unstable-or-dont-look-right"></a>Signalement de problèmes où les hologrammes sont instables ou ne semblent pas corrects
- 
-1. Veuillez enregistrer et une [réalité mixte pour capturer la vidéo](holographic-photos-and-videos.md#capture-a-mixed-reality-video) du problème. Cette vidéo peut être téléchargée ultérieurement via le hub de commentaires sous forme de fichier joint.  
-1. Activez la télémétrie complète via les **paramètres** application- **> confidentialité**  ->  **Diagnostics & commentaires** et sous données de **diagnostic facultatives** , vérifiez que le bouton bascule est défini **sur activé** .
-1. Procurez-vous les dernières mises à l’échelle et stabilité des hologrammes en mettant à jour le [système d’exploitation Windows holographique le plus récent (20H2 ou version ultérieure)](hololens-release-notes.md#windows-holographic-version-20h2). Après la mise à jour, procédez comme suit :
-    1. Retirez tous les hologrammes via les **paramètres** application ->  ->  **hologrammes** du système-> puis sélectionnez **Supprimer tous les hologrammes** et commencez avec un nouveau mappage.
-    1. Créez un nouveau mappage de votre espace en portant la carte HoloLens et en vous reportant à l’ensemble des zones et des surfaces dans l’espace. Procédez ainsi pendant 2-3 minutes.
-    1. Effectuez un étalonnage IPD. Accédez à **paramètres**  >  **système**  >  **utilitaires**. Sous **étalonnage**, sélectionnez **ouvrir l’étalonnage**.
-    1. Testez à nouveau le scénario et voyez s’il persiste.
-1. Si la mise à jour ne résout pas le problème, veuillez envoyer un [problème au hub de commentaires](hololens-feedback.md). Une fois que vous avez rempli vos commentaires, vous pouvez utiliser le bouton **partager** pour créer un lien facile à partager qui peut être envoyé lorsque vous contactez le support technique.
+Vous devez libérer de l’espace de stockage en exécutant une ou plusieurs des opérations suivantes :
 
-## <a name="hololens-doesnt-respond-to-hand-input"></a>HoloLens ne répond pas à l’entrée manuelle
+- Supprimez des espaces inutilisés. Accédez à **paramètres**  >    >  **espaces** système, sélectionnez un espace dont vous n’avez plus besoin, puis sélectionnez **supprimer**.
+- Retirez certains des hologrammes que vous avez placés.
+- Supprimez des images et des vidéos de l’application photos.
+- Désinstallez des applications de votre HoloLens. Dans la liste **toutes les applications** , appuyez sur l’application que vous souhaitez désinstaller, maintenez-la enfoncée, puis sélectionnez **désinstaller**.
+
+[Retour à la liste](#list)
+
+## <a name="calibration-fails"></a>Échec de l’étalonnage
+
+L’étalonnage doit fonctionner pour la plupart des gens, mais dans certains cas, l’étalonnage échoue.
+  
+Les raisons possibles de l’échec de l’étalonnage sont les suivantes :
+
+- Se détourner et ne pas suivre les objectifs d’étalonnage
+- Visière d’appareil sale ou rayé ou visière d’appareil non positionné correctement
+- Verres sale ou rayé
+- Certains types de lentilles et de lunettes de contact (lentilles de contact colorées, certaines lentilles de contact Toric, lunettes de blocage IR, des verres de prescription élevés, des lunettes de soleil ou similaires)
+- Composition plus prononcée et certaines extensions cils
+- Des cheveux ou des montures de lunettes épaisses s’ils empêchent l’appareil de voir vos yeux
+- Une certaine physiologie, des conditions oculaires ou une chirurgie oculaire comme des yeux étroits, des cils longs, amblyopia, nystagmus, certains cas de LASIK ou d’autres Surgeries oculaires
+
+Si l’étalonnage échoue, essayez :
+
+- Nettoyage de votre visière d’appareils
+- Nettoyage de vos lunettes
+- Poussez vos visières d’appareils aussi près que possible de vos yeux
+- Déplacement d’objets dans votre visière (par exemple, cheveux)
+- Activation d’une lumière dans votre pièce ou déplacement hors du soleil
+
+Si vous avez suivi toutes les instructions et que l’étalonnage est toujours en échec, vous pouvez désactiver l’invite d’étalonnage dans paramètres. Faites-nous également part de vos commentaires dans le [Hub de commentaires](hololens-feedback.md).
+
+Consultez également les informations connexes pour la [résolution des problèmes de couleur d’image ou de luminosité.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
+
+La définition de IPD n’est pas applicable à HoloLens 2, car les positions oculaires sont calculées par le système. 
+
+[Retour à la liste](#list)
+
+## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>Impossible de se connecter, car mon HoloLens a été configuré précédemment pour quelqu’un d’autre
+
+Vous pouvez [mettre l’appareil en **mode clignotant** et utiliser le compagnon de récupération avancé](hololens-recovery.md#clean-reflash-the-device) pour récupérer l’appareil.
+
+[Retour à la liste](#list)
+
+
+## <a name="unity-isnt-working"></a>Unity ne fonctionne pas
+
+- Consultez [installer les outils](/windows/mixed-reality/install-the-tools) pour la version la plus à jour d’Unity recommandée pour le développement HoloLens.
+- Les problèmes connus avec Unity HoloLens Technical Preview sont documentés dans les [Forums Hololens Unity](https://forum.unity3d.com/threads/known-issues.394627/).
+
+[Retour à la liste](#list)
+
+## <a name="windows-device-portal-isnt-working-correctly"></a>Le portail des appareils Windows ne fonctionne pas correctement
+
+- La fonctionnalité d’aperçu instantané de la capture de la réalité mixte peut présenter plusieurs secondes de latence.
+
+- Sur la page d’entrée virtuelle, les contrôles de mouvement et de défilement sous la section des mouvements virtuels ne sont pas fonctionnels. Leur utilisation n’aura aucun effet. Le clavier virtuel sur la page d’entrée virtuelle fonctionne correctement.
+
+- Après l’activation du mode développeur dans les paramètres, l’activation du commutateur Device Portal peut prendre quelques secondes.
+
+[Retour à la liste](#list)
+
+## <a name="emulator"></a>Émulateur
+### <a name="the-hololens-emulator-isnt-working"></a>L’émulateur HoloLens ne fonctionne pas
+
+Des informations sur l’émulateur HoloLens se trouvent dans la documentation du développeur.  En savoir plus sur [le dépannage de l’émulateur HoloLens](/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
+
+
+- Toutes les applications dans le Microsoft Store ne sont pas compatibles avec l’émulateur. Par exemple, les Conker et les fragments de Young ne sont pas lisibles sur l’émulateur.
+- Vous ne pouvez pas utiliser la webcam de l’ordinateur dans l’émulateur.
+- La fonctionnalité d’aperçu instantané du portail de périphériques Windows ne fonctionne pas avec l’émulateur. Vous pouvez toujours capturer des vidéos et des images de réalité mixte.
+
+[Retour à la liste](#list)
+
+## <a name="i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator"></a>Je ne trouve pas ou n’utilise pas le clavier pour taper dans l’émulateur HoloLens 2
+
+*À venir*
+
+[Retour à la liste](#list)
+
+## <a name="voice-commands-arent-working"></a>Les commandes vocales ne fonctionnent pas
+
+Si Cortana ne répond pas à vos commandes vocales, vérifiez que Cortana est activé. Dans la liste toutes les applications, sélectionnez  >    >  paramètres du **bloc-notes**  >   du menu Cortana pour apporter des modifications. Pour en savoir plus sur ce que vous pouvez prononcer, consultez [utiliser votre voix avec HoloLens](hololens-cortana.md).
+
+Sur HoloLens (1re génération), la reconnaissance vocale intégrée n’est pas configurable. Il est toujours activé. Sur HoloLens 2, vous pouvez choisir d’activer la reconnaissance vocale et Cortana pendant la configuration de l’appareil.
+
+Si votre HoloLens 2 ne répond pas à votre voix, vérifiez que la reconnaissance vocale est activée. Accédez à paramètres de **démarrage**  >    >    >  **voix** sur la confidentialité et activez la **reconnaissance vocale**.
+
+[Retour à la liste](#list)
+
+## <a name="hand-input-isnt-working"></a>L’entrée manuelle ne fonctionne pas
 
 Pour vous assurer que HoloLens peut voir vos mains, vous devez les conserver dans le cadre de mouvement.  La page d’hébergement de la réalité mixte fournit des commentaires qui vous permettent de savoir quand vos mains sont suivies.  Les commentaires sont différents sur les différentes versions de HoloLens :
 - Sur HoloLens (1re génération), le curseur en regard passe d’un point à un anneau
@@ -69,43 +320,47 @@ Si vous portez des gants, Notez que certains types de gants ne fonctionnent pas 
 
 Si votre visière présente des empreintes digitales ou des traînées, utilisez le chiffon de nettoyage microfiber fourni avec le HoloLens pour nettoyer doucement votre visière.
 
-## <a name="hololens-doesnt-respond-to-my-voice-commands"></a>HoloLens ne répond pas à mes commandes vocales
+[Retour à la liste](#list)
 
-Si Cortana ne répond pas à vos commandes vocales, vérifiez que Cortana est activé. Dans la liste toutes les applications, sélectionnez  >    >  paramètres du **bloc-notes**  >   du menu Cortana pour apporter des modifications. Pour en savoir plus sur ce que vous pouvez prononcer, consultez [utiliser votre voix avec HoloLens](hololens-cortana.md).
+## <a name="cant-connect-to-wi-fi"></a>Impossible de se connecter à Wi-Fi
 
-## <a name="i-cant-place-holograms-or-see-holograms-that-i-previously-placed"></a>Je ne peux pas placer d’hologrammes ou voir les hologrammes que j’ai placés précédemment
+Voici quelques points à essayer si vous ne pouvez pas connecter votre HoloLens à un réseau Wi-Fi :
 
-Si HoloLens ne peut pas mapper ou charger votre espace, il passe en mode limité et vous ne pouvez pas placer d’hologrammes ni voir les hologrammes que vous avez placés. Voici quelques points à essayer :
+- Assurez-vous que Wi-Fi est activé. Pour vérifier, utilisez le mouvement Démarrer, puis sélectionnez **paramètres**  >  **réseau &amp; Internet**  >  **Wi-Fi**. Si Wi-Fi est activé, essayez de le mettre hors tension puis de nouveau sous tension.
+- Rapprochez-vous du routeur ou du point d’accès.
+- Redémarrez votre routeur Wi-Fi, puis [Redémarrez HoloLens](hololens-recovery.md). Réessayez de vous connecter.
+- Si aucun de ces éléments ne fonctionne, assurez-vous que votre routeur utilise le microprogramme le plus récent. Vous pouvez trouver ces informations sur le site Web du fabricant.
 
-- Assurez-vous qu’il y a suffisamment de lumière dans votre environnement pour que HoloLens puisse voir et mapper l’espace.
-- Assurez-vous que vous êtes connecté à un réseau Wi-Fi. Si vous n’êtes pas connecté au Wi-Fi, HoloLens ne peut pas identifier et charger un espace connu.
-- Si vous avez besoin de créer un nouvel espace, connectez-vous au Wi-Fi, puis redémarrez votre HoloLens.
-- Pour voir si l’espace correct est actif ou pour charger manuellement un espace, accédez à **paramètres**  >    >  **espaces** système.
-- Si l’espace correct est chargé et que vous rencontrez toujours des problèmes, l’espace est peut-être endommagé. Pour résoudre ce problème, sélectionnez l’espace, puis sélectionnez **supprimer**. Une fois que vous avez supprimé l’espace, HoloLens commence à mapper votre environnement et à créer un nouvel espace.
+[Retour à la liste](#list)
+## <a name="bluetooth-devices-arent-pairing"></a>Les appareils Bluetooth ne sont pas couplés
 
-## <a name="my-hololens-cant-tell-what-space-im-in"></a>Mon HoloLens ne peut pas indiquer l’espace dans lequel je suis
+Si vous rencontrez des problèmes pour [associer un périphérique Bluetooth](hololens-connect-devices.md), essayez les opérations suivantes :
 
-Si votre HoloLens ne parvient pas à identifier et à charger l’espace dont vous disposez automatiquement, vérifiez les facteurs suivants :
+- Accédez à **paramètres**  >  **appareils**, puis assurez-vous que Bluetooth est activé. Si c’est le cas, éteignez-le et réactivez-le.
+- Assurez-vous que votre appareil Bluetooth est entièrement débité ou qu’il contient des piles neuves.
+- Si vous ne pouvez toujours pas vous connecter, [Redémarrez HoloLens](hololens-recovery.md).
 
-- Assurez-vous que vous êtes connecté à Wi-Fi
-- Assurez-vous qu’il y a beaucoup de lumière dans la pièce
-- Assurez-vous que les modifications majeures n’ont pas été apportées à l’environnement.
+[Retour à la liste](#list)
 
-Vous pouvez également charger un espace manuellement ou gérer vos espaces en accédant à **paramètres**  >    >  **espaces** système.
+## <a name="usb-c-microphone-isnt-working"></a>Le microphone USB-C ne fonctionne pas
+Sachez que certains microtéléphones USB-C se signalent incorrectement comme un microphone *et* un orateur. Il s’agit d’un problème avec le microphone et non avec HoloLens. Lors du branchement de l’un de ces microphones dans HoloLens, le son peut être perdu. Heureusement, il existe un correctif simple.  
 
-## <a name="im-getting-a-low-disk-space-error"></a>J’obtiens une erreur « espace disque insuffisant »
+Dans **paramètres**  ->    ->  **sons** système, définissez explicitement les haut-parleurs intégrés **(pilote audio de fonctionnalité analogique)** comme **périphérique par défaut**. HoloLens doit se souvenir de ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
 
-Vous devez libérer de l’espace de stockage en exécutant une ou plusieurs des opérations suivantes :
+![Résolution des problèmes de microphones USB-C](images/usbc-mic-4.png)
 
-- Supprimez des espaces inutilisés. Accédez à **paramètres**  >    >  **espaces** système, sélectionnez un espace dont vous n’avez plus besoin, puis sélectionnez **supprimer**.
-- Retirez certains des hologrammes que vous avez placés.
-- Supprimez des images et des vidéos de l’application photos.
-- Désinstallez des applications de votre HoloLens. Dans la liste **toutes les applications** , appuyez sur l’application que vous souhaitez désinstaller, maintenez-la enfoncée, puis sélectionnez **désinstaller**.
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>Les appareils listés comme disponibles dans les paramètres ne fonctionnent pas
 
-## <a name="my-hololens-cant-create-a-new-space"></a>Mon HoloLens ne peut pas créer d’espace
+HoloLens (1re génération) ne prend pas en charge les profils audio Bluetooth. Les périphériques audio Bluetooth, tels que les haut-parleurs et les casques, peuvent apparaître comme étant disponibles dans les paramètres HoloLens, mais ils ne sont pas pris en charge.
 
-Le problème le plus probable est que vous manquez d’espace de stockage. Essayez l’une des [astuces précédentes](#im-getting-a-low-disk-space-error) pour libérer de l’espace disque.
+HoloLens 2 prend en charge le profil audio Bluetooth A2DP pour la lecture stéréo. Le profil mains libres Bluetooth qui active la capture du microphone à partir d’un périphérique Bluetooth n’est pas pris en charge sur HoloLens 2.
 
-## <a name="the-hololens-emulator-isnt-working"></a>L’émulateur HoloLens ne fonctionne pas
+Si vous rencontrez des problèmes lors de l’utilisation d’un périphérique Bluetooth, assurez-vous qu’il s’agit d’un appareil pris en charge. Les appareils pris en charge sont les suivants :
 
-Des informations sur l’émulateur HoloLens se trouvent dans la documentation du développeur.  En savoir plus sur [le dépannage de l’émulateur HoloLens](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
+- Claviers Bluetooth QWERTY en langue anglaise (vous pouvez les utiliser partout où vous utilisez le clavier holographique).
+- Souris Bluetooth.
+- [Clicker de HoloLens](hololens1-clicker.md).
+
+Vous pouvez associer d’autres périphériques HID et du GATT Bluetooth à votre HoloLens. Toutefois, vous devrez peut-être installer les applications auxiliaires correspondantes à partir de Microsoft Store pour utiliser réellement les appareils.
+
+[Retour à la liste](#list)
