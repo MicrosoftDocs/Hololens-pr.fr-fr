@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86d36275d5cf1296ca3e9fec90684a188a29f3f0
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635124"
+ms.locfileid: "113639758"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guide de déploiement – Cloud connected HoloLens 2 avec l’assistance à distance – vue d’ensemble
 
-ce guide aide les professionnels de l’informatique à planifier et à déployer des appareils Microsoft HoloLens 2 avec l’assistance à distance pour leur organisation. cela servira de modèle pour les déploiements de preuve de concept dans votre organisation, dans une large gamme de cas d’utilisation HoloLens 2. Le programme d’installation est similaire au [scénario A : déployer sur des appareils Cloud Connect](https://docs.microsoft.com/hololens/common-scenarios#scenario-a). 
+ce guide aide les professionnels de l’informatique à planifier et à déployer des appareils Microsoft HoloLens 2 avec l’assistance à distance pour leur organisation. cela servira de modèle pour les déploiements de preuve de concept dans votre organisation dans plusieurs cas d’utilisation HoloLens 2. Le programme d’installation est similaire au [scénario A : déployer sur des appareils Cloud Connect](common-scenarios.md#scenario-a). 
 
 Dans le cadre de ce guide, nous allons aborder l’inscription de vos appareils dans la gestion des appareils, appliquer des licences en fonction des besoins et vérifier que vos utilisateurs finaux sont en mesure d’utiliser immédiatement l’assistance à distance lors de la configuration de l’appareil. Pour ce faire, nous allons passer en revue les éléments importants de l’infrastructure nécessaire à la configuration et à l’exécution, ce qui permet un déploiement à grande échelle avec HoloLens 2. Aucune autre restriction ou configuration d’appareil ne sera appliquée dans ce guide. Toutefois, nous vous encourageons à explorer ces options après avoir terminé.
 
@@ -31,10 +31,10 @@ Dans le cadre de ce guide, nous allons aborder l’inscription de vos appareils 
 
 L’infrastructure suivante doit être en place pour déployer le HoloLens 2. Si ce n’est pas le cas, la configuration d’Azure et d’Intune est incluse dans ce guide :
 
-Il s’agit d’une configuration similaire au [scénario a : déploiement sur des appareils Cloud Connect](/hololens/common-scenarios#scenario-a), qui est une bonne option pour de nombreux déploiements de preuve de concept, notamment :
+Il s’agit d’une configuration similaire au [scénario a : déploiement sur des appareils Cloud Connect](/hololens/common-scenarios#scenario-a), qui est une bonne option pour de nombreux déploiements de preuve de concept, à savoir :
 
 - Les réseaux Wi-Fi sont généralement entièrement ouverts sur Internet et les services de Cloud Computing
-- Azure AD rejoindre avec l’inscription automatique MDM--MDM (Intune) géré
+- Azure AD rejoindre avec l’inscription automatique MDM — gérée par MDM (Intune)
 - Les utilisateurs se connectent avec leur propre compte d’entreprise (Azure AD)
     - Un ou plusieurs utilisateurs par appareil sont pris en charge.
 
@@ -43,14 +43,14 @@ Il s’agit d’une configuration similaire au [scénario a : déploiement sur 
 
 ## <a name="learn-about-remote-assist"></a>En savoir plus sur l’assistance à distance
 
-L’assistance à distance permet la maintenance et la réparation collaboratives, l’inspection à distance, ainsi que le partage des connaissances et la formation. En connectant des personnes dans des rôles et des emplacements différents, un technicien utilisant l’assistance à distance peut se connecter à un collaborateur distant sur Microsoft Teams. Ils peuvent combiner des vidéos, des captures d’écran et des annotations pour résoudre les problèmes en temps réel, même lorsqu’ils ne sont pas&#39;t au même emplacement. Les collaborateurs distants peuvent insérer des images de référence, des schémas et d’autres informations utiles que le technicien&#39;de l’espace physique pour qu’ils puissent faire référence au schéma tout en récapitulant les mains et les mains libres sur HoloLens.
+L’assistance à distance permet la maintenance et la réparation collaboratives, l’inspection à distance, ainsi que le partage des connaissances et la formation. En connectant des personnes à des rôles et des emplacements différents, un technicien qui utilise l’assistance à distance peut se connecter à un collaborateur distant sur Microsoft Teams. Ils peuvent combiner des vidéos, des captures d’écran et des annotations pour résoudre les problèmes en temps réel, même lorsqu’ils ne se trouvent pas au même emplacement. Les collaborateurs distants peuvent insérer des images de référence, des schémas et d’autres informations utiles à l’espace physique du technicien, afin qu’ils puissent faire référence au schéma tout en récapitulant les mains et les mains sur HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="remote-assist-licensing-and-requirements"></a>Licences et exigences de l’assistance à distance
 
 - Compte Azure AD (requis pour l’achat de l’abonnement et l’attribution de licences)
-- [Abonnement à distance Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (ou [essai d’assistance à distance](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- [Abonnement à distance Assist](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (ou [essai d’assistance à distance](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### <a name="dynamics-365-remote-assist-user"></a>utilisateur Dynamics 365 Remote Assist
 
@@ -62,7 +62,7 @@ L’assistance à distance permet la maintenance et la réparation collaborative
 - Microsoft Teams ou [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Connectivité réseau
 
-Si vous envisagez d’implémenter ce [scénario inter-clients](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), vous aurez peut-être besoin d’une licence de barrières d’information. Consultez [cet article](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) pour déterminer si une licence de cloisonnement des informations est requise.
+Si vous envisagez d’implémenter ce [scénario inter-clients](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), vous aurez peut-être besoin d’une licence de barrières d’information. pour déterminer si une licence de barrière des informations est requise, consultez [fournisseurs et clients utiliser les fonctionnalités de Dynamics 365 Remote Assist complètes](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation).
 
 ## <a name="in-this-guide-you-will"></a>Dans ce guide, vous allez :
 

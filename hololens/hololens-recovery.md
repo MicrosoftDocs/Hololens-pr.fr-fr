@@ -1,8 +1,8 @@
 ---
-title: Redémarrer, réinitialiser ou récupérer HoloLens
+title: Redémarrer, réinitialiser ou récupérer HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
-description: Comment utiliser l’Assistant Récupération avancée pour flasher une image dans HoloLens 2.
-keywords: procédure de réinitialisation, de réinitialisation, de récupération, de réinitialisation matérielle, de réinitialisation à chaud, de cycle de démarrage, HoloLens, arrêt, arc, compagnon de récupération avancée
+description: Utiliser l’Assistant Récupération avancée pour flasher une image dans HoloLens 2.
+keywords: procédure de réinitialisation, de réinitialisation, de récupération, de réinitialisation matérielle, de réinitialisation à chaud, de cycle de démarrage, HoloLens, arrêt, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
@@ -14,147 +14,169 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: b5b9568bab5afebe4ac3e9d57645c18837c71cb6
-ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
+appliesto:
+- HoloLens 2
+ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408424"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923633"
 ---
-# <a name="restart-reset-or-recover-hololens-2"></a>Redémarrer, réinitialiser ou récupérer HoloLens 2
+# <a name="restart-reset-or-recover-hololens-2"></a>Redémarrer, réinitialiser ou récupérer HoloLens 2
 
-## <a name="charge-the-device"></a>Recharger l’appareil
+>[!IMPORTANT]
+> Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au minimum entre **20 et 40 %** , si possible. Les [témoins](hololens2-setup.md#lights-that-indicate-the-battery-level) situés sous le bouton d'alimentation permettent de vérifier rapidement la capacité de la batterie sans se connecter à l'appareil.
 
-Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au moins entre 20 et 40%, si possible. Utilisez le [chargeur et le câble USB Type C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) qui sont associés à l’appareil HoloLens 2. Le bloc d’alimentation et le câble USB-C vers C fournis avec l’appareil constituent le meilleur moyen de charger votre HoloLens 2. Le chargeur fournit 18 W d’alimentation (9V à 2A). À l’aide du chargeur mural fourni, les appareils HoloLens 2 peuvent charger la batterie à l’intégralité en moins de 65 minutes lorsque l’appareil est en veille. Si ces accessoires ne sont pas disponibles, assurez-vous que le chargeur disponible peut supporter au moins 15 W de puissance.
+Utilisez le [chargeur et le câble de type USB-C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) fournis avec l’HoloLens 2 pour charger votre appareil de manière optimale. Le chargeur fournit 18 W d’alimentation (9V à 2A). À l'aide du chargeur mural fourni, l'HoloLens 2 peut recharger complètement sa batterie en moins de 65 minutes lorsqu'il est en veille. Si ces accessoires ne sont pas disponibles, assurez-vous que le chargeur mis à disposition peut supporter au moins 15 W de puissance.
 
 > [!NOTE]
-> Si possible, évitez d’utiliser un PC pour charger l’appareil par câble USB, ce serait trop lent.
+> Si possible, évitez d’utiliser un PC pour charger l’appareil par câble USB car ce processus est lent.
 
-Si l’appareil est correctement initialisé et en cours d’exécution, trois méthodes s’offrent à vous pour vérifier le niveau de charge de la batterie :
+Si l’appareil est correctement initialisé et en cours d’exécution, trois méthodes s’offrent à vous pour vérifier le niveau de charge de la batterie :
 
 - Dans le menu principal de l’interface utilisateur de l’appareil HoloLens.
-- Regardez le voyant près du bouton d’alimentation (pour un débit de 40%, vous devriez voir au moins deux voyants pleins).
+- Regardez le voyant situé près du bouton d’alimentation (pour une charge de 40 %, vous devriez voir au moins deux voyants pleins).
     - Lorsque l’appareil est en charge, l’indicateur de batterie s’allume pour indiquer le niveau de charge actuel.  Le dernier voyant clignote lentement pour indiquer que l’appareil est en charge.
     - Lorsque votre HoloLens est allumé, le témoin de la batterie affiche le niveau de la batterie par cinq incréments.
-    - Lorsqu’un seul des cinq voyants est allumé, le niveau de batterie est inférieur à 20 %.
-    - Si le niveau de batterie est extrêmement faible et que vous essayez d’allumer l’appareil, un voyant clignote brièvement, puis s’éteint.
-- Sur votre ordinateur hôte, ouvrez la fenêtre de l’**Explorateur de fichiers** et recherchez votre appareil HoloLens 2 sur le côté gauche sous **Ce PC**. Cliquez avec le bouton droit sur l’appareil, puis sélectionnez **Propriétés**. Une boîte de dialogue indique le niveau de charge de la batterie.
+    - Lorsqu’un seul des cinq voyants est allumé, le niveau de la batterie est inférieur à 20 %.
+    - Si le niveau de la batterie est extrêmement faible et que vous essayez d’allumer l’appareil, un voyant clignote brièvement, puis s’éteint.
+- Sur votre ordinateur hôte, ouvrez l’**Explorateurs de fichiers** et recherchez votre appareil HoloLens 2 sur le côté gauche sous **Ce PC**. Cliquez avec le bouton droit sur l’appareil, puis sélectionnez **Propriétés**. Une boîte de dialogue indique le niveau de charge de la batterie.
 
-   ![Un écran Propriétés HoloLens 2 affiche le niveau de charge de la batterie](images/ResetRecovery2.png)
+   ![Un écran Propriétés HoloLens 2 affiche le niveau de charge de la batterie](images/ResetRecovery2.png)
 
-Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](https://docs.microsoft.com/hololens/hololens-troubleshooting). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une [procédure de réinitialisation matérielle](hololens-recovery.md#hard-reset-procedure) avec l’appareil connecté à l’alimentation, et non à votre PC hôte. Patientez au moins une heure pour le chargement de l’appareil.
+Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](hololens-troubleshooting.md). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une [procédure de réinitialisation matérielle](hololens-recovery.md#hard-reset-procedure) avec l’appareil connecté à l’alimentation, et non à votre PC hôte. Patientez au moins une heure pour le chargement de l’appareil.
 
-## <a name="reset-the-device"></a>Réinitialisez l’appareil
+## <a name="reset-the-device"></a>Réinitialisation de l’appareil
 
-Dans certains cas, il se peut que vous deviez réinitialiser manuellement l’appareil sans utiliser l’interface utilisateur du logiciel.
+Vous pouvez être amené à réinitialiser manuellement l’appareil sans utiliser l’interface utilisateur du logiciel.
 
 ### <a name="standard-procedure"></a>Procédure standard
 
-1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
+1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
 
-2. Appuyez de façon prolongée sur le bouton **d’alimentation** pendant 15 secondes. Tous les voyants doivent être désactivés.
+2. Appuyez de façon prolongée sur le bouton d’**alimentation** pendant 15 secondes. Tous les voyants doivent être désactivés.
 
-3. Attendez 2-3 secondes, puis appuyez de façon brève sur le bouton **d’alimentation**. Les voyants situés près du bouton d’alimentation s’allument, et l’appareil commence à démarrer.
+3. Attendez 2 à 3 secondes, puis appuyez brièvement sur le bouton d’**alimentation**. Les voyants situés près du bouton d’alimentation s’allument, et l’appareil commence à démarrer.
 
-4. Connectez l’appareil à l’ordinateur hôte, puis ouvrez le Gestionnaire de périphériques. (Pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X**, puis sélectionnez **Gestionnaire de périphériques**.) Assurez-vous que l’appareil est répertorié correctement en tant que *Microsoft HoloLens* comme illustré dans l’image suivante :
+4. Connectez l’appareil à l’ordinateur hôte, puis ouvrez le Gestionnaire de périphériques. (Pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X** et sélectionnez **Gestionnaire de périphériques**.) Assurez-vous que l’appareil est répertorié correctement en tant que *Microsoft HoloLens* comme le montre l’image suivante :
 
-   ![Gestionnaire de périphériques HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Gestionnaire de périphériques HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-reset-procedure"></a>Procédure de réinitialisation matérielle
 
-Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la procédure de réinitialisation matérielle :
+Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la procédure de réinitialisation matérielle :
 
-1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
+1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
 
-2. Maintenez enfoncées les touches **baisser le volume** +  et **alimentation** pendant 15 secondes. L’appareil redémarre automatiquement.
+2. Maintenez les boutons **baisser le volume** + **alimentation** enfoncés pendant 15 secondes. L’appareil redémarre automatiquement.
 
 4. Connectez l’appareil à l’ordinateur hôte.
-5. Ouvrez le gestionnaire de périphériques (pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X**, puis sélectionnez **Gestionnaire de périphériques**). Assurez-vous que l’appareil est répertorié correctement en tant que *Microsoft HoloLens* comme illustré dans l’image suivante :
 
-   ![Gestionnaire de périphériques HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+5. Ouvrez le Gestionnaire de périphériques (pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X** et sélectionnez , puis sélectionnez **Gestionnaire de périphériques**). Assurez-vous que l’appareil est répertorié correctement en tant que *Microsoft HoloLens* comme le montre l’image suivante :
 
-## <a name="clean-reflash-the-device"></a>Nettoyer l’appareil
+   ![Gestionnaire de périphériques HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
-Dans de rares cas, il peut être nécessaire de nettoyer l’Hololens 2. Veuillez noter que la réinstallation rapide n’est pas susceptible d’affecter les problèmes suivants :
+## <a name="clean-reflash-the-device"></a>Réinitialiser l’appareil
+
+Dans de rares cas, il peut être nécessaire de réinitialiser l’Hololens 2. Notez qu’une telle opération n’a pas d’incidence sur les problèmes suivants :
 - [Uniformiser la couleur d’affichage](hololens2-display.md)
 - Démarrage avec un son, mais pas de sortie d’affichage
-- [1-3-5-Modèle LED](hololens2-setup.md#lights-to-indicate-problems)
+- [Modèle LED 1-3-5](hololens2-setup.md#lights-to-indicate-problems)
 - [Surchauffe](hololens-environment-considerations.md#temperature-and-regulatory-information) 
-- Les blocages du système d'exploitation (qui sont distincts des blocages de l’application)
+- Blocages du système d'exploitation (différents des blocages d’application)
 
-Il existe deux méthodes pour nettoyer un appareil HoloLens 2. Pour les deux, vous devez d’abord [installer le Compagnon de récupération avancée à partir du Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+Il existe deux méthodes pour réinitialiser un appareil HoloLens 2. Pour ces deux méthodes, vous devez d’abord [installer Advanced Recovery Companion à partir du Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Si vous réinitialisez votre appareil, toutes vos données, applications et paramètres personnels seront supprimés, y compris les informations de réinitialisation du TPM.
 
-Par défaut, le Compagnon de récupération avancé est configuré pour télécharger la version la plus récente de publication de la fonctionnalité, consultez cette page pour découvrir nos [Notes de publication](hololens-release-notes.md#) relative à la dernière publication de la fonctionnalité. Pour télécharger la dernière version de package de mise à jour FFU HoloLens 2 pour refaire clignoter votre périphérique via le Compagnon de récupération avancé, [cliquez ici pour télécharger la dernière image de Hololens 2](https://aka.ms/hololens2download). Cette version est le build le plus récent disponible.
+Par défaut, Advanced Recovery Companion est configuré pour télécharger la version la plus récente de publication de la fonctionnalité, consultez cette page pour accéder à nos [Notes de publication](hololens-release-notes.md#) relative à la dernière publication de la fonctionnalité. Pour télécharger la dernière version de package de mise à jour FFU (Full Flash Update) HoloLens 2 afin de réinitialiser votre appareil via Advanced Recovery Companion, [cliquez ici et téléchargez la dernière image mensuelle HoloLens 2](https://aka.ms/hololens2download). Cette version correspond à la build le plus récente disponible.
 
-Avant de commencer la procédure de réinitialisation, assurez-vous que l’application est installée et en cours d’exécution sur votre PC Windows 10 et qu’elle est prête à détecter l’appareil. Assurez-vous également que votre HoloLens est chargé à un minimum de 40 %.
+Avant de commencer la procédure de réinitialisation, assurez-vous que l’application est installée, en cours d’exécution sur votre PC Windows 10 et prête à détecter l’appareil. Assurez-vous également que votre HoloLens est chargé à un minimum de 40 %.
 
-![Capture d’écran de réinitialisation d’HoloLens 2](images/ARC1.png)
+![Capture d’écran de réinitialisation d’HoloLens 2](images/ARC1.png)
 
 ### <a name="normal-procedure"></a>Procédure normale
 
-1. Lorsque l’appareil HoloLens est en marche, connectez-le au PC Windows 10 sur lequel vous avez déjà ouvert l’application Advanced Recovery Companion.
+1. Lorsque l’appareil HoloLens est en marche, connectez-le au PC Windows 10 sur lequel vous avez déjà ouvert l’application Advanced Recovery Companion.
  
-   L’appareil est détecté automatiquement, et l’interface utilisateur de l’application Advanced Recovery Companion démarre le processus de mise à jour :
+   L’appareil est automatiquement détecté, et l’interface utilisateur de l’application Advanced Recovery Companion démarre le processus de mise à jour :
 
-   ![Écran initial de réinitialisation d’HoloLens 2](images/ARC2.png)
+   ![Écran initial de réinitialisation d’HoloLens 2](images/ARC2.png)
 
-3. Sélectionnez l’appareil HoloLens 2 dans l’interface utilisateur de l’application Advanced Recovery Companion et suivez les instructions pour effectuer la réinitialisation.
+3. Sélectionnez l’appareil HoloLens 2 dans l’interface utilisateur de l’application Advanced Recovery Companion et suivez les instructions pour effectuer la réinitialisation.
 
 ### <a name="manual-procedure"></a>Procédure manuelle
 
-Si HoloLens 2 ne démarre pas correctement, vous devrez peut-être placer l’appareil en mode de récupération :
+Si HoloLens 2 ne démarre pas correctement ou si Advanced Recovery Companion ne parvient pas à détecter l’appareil, vous devrez peut-être placer l’appareil en mode de récupération :
 
-1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
+1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
 
-2. Appuyez de façon prolongée sur le bouton **d’alimentation** pendant 15 secondes. Tous les voyants doivent s’éteindre.
+2. Appuyez de façon prolongée sur le bouton d’**alimentation** pendant 15 secondes. Tous les voyants doivent s’éteindre.
 
-3. Tout en appuyant sur le bouton pour **augmenter le volume**, appuyez sur le bouton **d’alimentation** pour démarrer l’appareil. Patientez 15 secondes avant de relâcher le bouton **d’augmentation du volume**. Parmi les cinq voyants lumineux, seul celui du milieu s’allume.
+3. Tout en appuyant sur le bouton pour **monter le volume**, appuyez sur le bouton d’**alimentation** pour démarrer l’appareil. Patientez 15 secondes avant de relâcher le bouton pour **monter le volume**. Parmi les cinq voyants lumineux, seul celui du milieu s’allume.
 
-4. Connectez l’appareil à l’ordinateur hôte, puis ouvrez le Gestionnaire de périphériques. (Pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X**, puis sélectionnez **Gestionnaire de périphériques**.) Assurez-vous que l’appareil est répertorié correctement en tant que Microsoft HoloLens comme illustré dans l’image suivante :
+4. Connectez l’appareil à l’ordinateur hôte, puis ouvrez le Gestionnaire de périphériques. (Pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X** et sélectionnez **Gestionnaire de périphériques**.) Assurez-vous que l’appareil est répertorié correctement en tant que Microsoft HoloLens comme le montre l’image suivante :
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
-   L’appareil est détecté automatiquement, et l’interface utilisateur de l’application Advanced Recovery Companion démarre le processus de mise à jour :
+   L’appareil est automatiquement détecté, et l’interface utilisateur de l’application Advanced Recovery Companion démarre le processus de mise à jour :
 
-   ![Écran de réinitialisation d’HoloLens 2](images/ARC2.png)
+   ![Écran de réinitialisation HoloLens 2](images/ARC2.png)
 
 6. Sélectionnez l’appareil HoloLens 2 dans l’interface utilisateur de l’application Advanced Recovery Companion, puis suivez les instructions pour terminer la réinitialisation.
 
-## <a name="download-arc-without-using-the-app-store"></a>Télécharger ARC sans utiliser l’App Store
+## <a name="troubleshoot-advanced-recovery-companion"></a>Résoudre les problèmes liés à l’application Advanced Recovery Companion
 
-Si l’environnement informatique empêche l’utilisation de l’application Windows Store ou limite l’accès au Retail Store, l’administrateur informatique peut rendre cette application disponible via un chemin de déploiement « hors connexion ».
+1. Assurez-vous que votre appareil est chargé à un minimum de 40 % avant de tenter une réinitialisation.
+
+2. Vérifiez que votre appareil est déverrouillé.
+
+3. Si Advanced Recovery Companion ne détecte pas votre appareil, assurez-vous que vous pouvez vous connecter à celui-ci via l’Explorateur de fichiers sur votre ordinateur. Dans le cas contraire,
+
+    1.  Il est possible que votre appareil présente des stratégies USB qui désactivent cette connexion. Si tel est le cas, essayez le [mode de réinitialisation manuelle](hololens-recovery.md#manual-procedure).
+    2.  En l’absence de stratégies, essayez un autre câble USB.
+
+1. Vérifiez que votre appareil n’affiche pas un [modèle LED 1-3-5](hololens2-setup.md#lights-to-indicate-problems).
+
+## <a name="download-arc-without-using-the-app-store"></a>Télécharger Advanced Recovery Companion sans utiliser l’App Store
+
+Si l’environnement informatique empêche l’utilisation de l’application Windows Store ou limite l’accès au Retail Store, l’administrateur informatique peut rendre cette application disponible via un chemin de déploiement « hors connexion ».
 
  >[!NOTE]
  > - Les administrateurs informatiques peuvent également distribuer cette application via System Center Configuration Manager (SCCM) ou Intune.
- > - Ce guide se concentre sur l’utilisation d’Advanced Recovery Companion, mais le processus peut également être utilisé pour d’autres applications « hors connexion ».
+ > - Ce guide se concentre sur l’utilisation d’Advanced Recovery Companion, mais le processus peut également être utilisé pour d’autres applications « hors connexion ».
 
-Pour activer le chemin de déploiement, procédez comme suit :
+Pour activer le chemin de déploiement, procédez comme suit :
+
 1. Accédez à [Microsoft Store pour Entreprises](https://businessstore.microsoft.com) et connectez-vous à l’aide d’une identité Azure Active Directory.
 
-1. Accédez à **Gérer – Paramètres**. Activez **Afficher les applications hors connexion** sous **Shopping Experience**.
-1. Accédez à la section **acheter pour mon groupe**et recherchez l' [**_Assistant de récupération avancée_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
-1. Changez le **Type de licence** en **_mode hors connexion_*_, puis sélectionnez _* Gérer**.
-1. Sous **Télécharger le package pour l’utilisation en mode hors connexion**, sélectionnez le deuxième bouton bleu **Télécharger**. Assurez-vous que l’extension de fichier est *.appxbundle*.
+1. Accédez à **Gérer - Paramètres**. Activez **Afficher les applications hors connexion** sous **Expérience d’achat**.
+
+1. Accédez à **Acheter pour mon groupe** et recherchez [**_Advanced Recovery Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+
+1. Remplacez le **type de licence** par **_hors connexion_ *_, puis sélectionnez _* Gérer**.
+
+1. Sous **Télécharger le package pour une utilisation hors connexion**, sélectionnez le deuxième bouton bleu **Télécharger**. Assurez-vous que le fichier porte l’extension *.appxbundle*.
 
     - À ce stade, si le PC de bureau dispose d’un accès à Internet, double-cliquez sur le package pour installer l’application.
 
-    - Si l’ordinateur de destination ne dispose pas d’une connexion Internet, procédez comme suit :
-       1. Sélectionnez la licence non codée, puis sélectionnez **Générer une licence**.
-       2. Sous **Infrastructures requises**, sélectionnez **Télécharger**.
-       3. Utilisez DISM pour appliquer le package avec la dépendance et la licence. À partir d’une invite de commandes administrateur, exécutez la commande suivante :
+    - Si l’ordinateur de destination ne dispose pas d’une connexion Internet, procédez comme suit :
+       1. Sélectionnez la licence non codée, puis **Générer une licence**.
+       2. Sous **Frameworks requis**, sélectionnez **Télécharger**.
+       3. Utilisez DISM pour appliquer le package avec la dépendance et la licence. À partir d’une invite de commandes administrateur, exécutez la commande suivante :
 
           ```console
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
-            > [!NOTE]
-            > Il se peut que le numéro de version dans cet exemple de code ne corresponde pas à la version actuellement disponible. Vous avez peut-être également choisi un autre emplacement de téléchargement que dans l’exemple. Apportez les modifications nécessaires à la commande.
+          > [!NOTE]
+          > Le numéro de version de cet exemple de code peut ne pas correspondre à la version actuellement disponible. Vous avez peut-être également choisi un autre emplacement de téléchargement que dans l’exemple. Apportez les modifications nécessaires à la commande.
 
 > [!TIP]
-> Lorsque vous envisagez d’utiliser Advanced Recovery Companion pour installer une mise à jour FFU en mode hors connexion, il peut être utile de télécharger votre image flash. [**Télécharger l’image actuelle pour Hololens 2**](https://aka.ms/hololens2download).
+> Lorsque vous envisagez d’utiliser Advanced Recovery Companion pour installer une mise à jour FFU en mode hors connexion, il peut s’avérer utile de télécharger votre image flash. [**Téléchargez l’image actuelle pour HoloLens 2**](https://aka.ms/hololens2download).
 
-Autres ressources
-- [Distribuer des applications hors connexion](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
-- [Options de ligne de commande de service de package d’application DISM (.appx ou .appxbundle)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
+
+Autres ressources :
+- [Distribuer des applications hors connexion](/microsoft-store/distribute-offline-apps) 
+- [Options de ligne de commande de service de package d’application DISM (.appx ou .appxbundle)](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)

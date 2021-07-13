@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f747a2893ed3551e91a81bdbf5971deefbf6ce46
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637130"
+ms.locfileid: "113639656"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Préparer-Guide connecté au Cloud
 
@@ -34,7 +34,7 @@ pour les scénarios de déploiement personnel et d’entreprise, un système MDM
 Azure AD est un service d’annuaire basé sur le cloud qui offre des fonctionnalités de gestion des accès et de l’identité. les organisations qui utilisent Microsoft Office 365 ou Intune utilisent déjà Azure AD, qui dispose de trois éditions : gratuite, Premium P1 et Premium P2 (voir les [éditions de Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-editions)). toutes les éditions prennent en charge l’inscription des appareils Azure AD, mais Premium P1 est nécessaire pour activer l’inscription automatique MDM que nous utiliserons dans ce guide plus tard.
 
 > [!IMPORTANT]
-> il est essentiel de disposer d’un Azure Active Directory, car les appareils HoloLens ne prennent pas en charge la jointure AD locale. si vous n’avez pas déjà Azure Active Directory configuration de l'&#39;, accédez à [créer un nouveau locataire dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> il est essentiel de disposer d’un Azure Active Directory, car les appareils HoloLens ne prennent pas en charge la jointure AD locale. si vous n’avez pas déjà Azure Active Directory configuration de l'&#39;, accédez à [créer un nouveau locataire dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Gestion des identités
 

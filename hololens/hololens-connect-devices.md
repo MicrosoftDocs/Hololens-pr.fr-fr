@@ -1,6 +1,6 @@
 ---
-title: Se connecter à des appareils Bluetooth et USB-C
-description: Prise en main de la connexion aux appareils et accessoires Bluetooth et USB-C à partir de vos appareils HoloLens de réalité mixte.
+title: Se connecter à des appareils Bluetooth et USB-C
+description: Familiarisez-vous avec la connexion aux appareils et accessoires Bluetooth et USB-C à partir de vos appareils HoloLens de réalité mixte.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
 ms.sitesec: library
@@ -13,86 +13,123 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 728bf8547315be96f879ff94a1290c1e2b3e7bf8
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385489"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924177"
 ---
-# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Se connecter à des appareils Bluetooth et USB-C
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Se connecter à des appareils Bluetooth et USB-C
 
-> [!NOTE]
-> Les microphones externes ne peuvent pas être utilisés. HoloLens 2 utilise son [réseau de microphones](hololens2-hardware.md#audio-and-speech) intégré.
+## <a name="pair-bluetooth-devices"></a>Coupler des appareils Bluetooth
 
-## <a name="pair-bluetooth-devices"></a>Appariement des appareils Bluetooth
+HoloLens 2 prend en charge les classes d’appareils Bluetooth suivantes :
 
-HoloLens 2 prend en charge les classes suivantes d’appareils Bluetooth :
+- [HID](https://docs.microsoft.com/windows-hardware/drivers/hid/) :
+    - Souris
+    - Clavier
+- Périphériques de sortie audio (A2DP)
+
+HoloLens 2 prend en charge les API Bluetooth suivantes :
+- [Serveur](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server) et [Client](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client) GATT
+- [RFCOMM](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
+>[!IMPORTANT]
+> Vous devrez peut-être installer les applications compagnes correspondantes à partir du Microsoft Store pour utiliser les appareils HID et GATT.
+
+HoloLens (1ère génération) prend en charge les classes d’appareils Bluetooth suivantes :
 
 - Souris
 - Clavier
-- Périphériques de sortie audio Bluetooth (A2DP)
-
-HoloLens (1ère génération) prend en charge les classes suivantes d’appareils Bluetooth :
-
-- Souris
-- Clavier
-- [Cliquez sur HoloLens (1ère génération)](https://docs.microsoft.com/hololens/hololens1-clicker)
+- [Dispositif de clic HoloLens (1ère génération)](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
-> D’autres types d’appareils Bluetooth (haut-parleurs, casques, smartphones et tablettes de jeux, par exemple) peuvent être répertoriés comme disponibles dans les paramètres HoloLens. Toutefois, ces appareils ne sont pas pris en charge sur HoloLens (1ère génération). Pour plus d’informations, voir [Paramètres HoloLens répertorie les appareils disponibles, mais les appareils ne fonctionnent pas](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
+> D’autres types d’appareils Bluetooth (haut-parleurs, casques, smartphones et tablettes de jeux, par exemple) peuvent être répertoriés comme disponibles dans les paramètres HoloLens. Toutefois, ces appareils ne sont pas pris en charge sur HoloLens (1ère génération). Pour plus d’informations, consultez [Les paramètres HoloLens répertorient des appareils disponibles, mais ceux-ci ne fonctionnent pas](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work).
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Coupler un clavier ou une souris Bluetooth
 
-1. Activez le clavier ou la souris, et rendez-la détectable. Pour découvrir comment rendre l’appareil détectable, recherchez des informations sur l’appareil (ou sa documentation) ou visitez le site Web du fabricant.
+1. Activez le clavier ou la souris pour permettre sa détection. Pour savoir comment rendre l’appareil détectable, recherchez des informations sur l’appareil (ou sa documentation) ou rendez-vous sur le site web du fabricant.
 
-1. Utilisez le geste fleuri (HoloLens (1ère génération)) ou le geste de départ (HoloLens 2) pour accéder à **Démarrer**, puis sélectionnez **Paramètres**.
+1. Utilisez l’écartement des doigts paume vers le haut (HoloLens (1ère génération)) ou le mouvement associé au menu Démarrer (HoloLens 2) pour accéder à **Démarrer**, puis sélectionnez **Paramètres**.
 
-1. Sélectionnez **Appareils** et assurez-vous que le Bluetooth est activé.  
+1. Sélectionnez **Appareils** et assurez-vous que Bluetooth est activé.  
 
-1. Lorsque vous voyez le nom de l’appareil, sélectionnez **Paire**, puis suivez les instructions.
+1. Une fois le nom de l’appareil affiché, sélectionnez **Coupler**, puis suivez les instructions.
 
 ## <a name="disable-bluetooth"></a>Désactiver Bluetooth
 
-Cette procédure désactive les composants RF de la radio Bluetooth et désactive toutes les fonctionnalités Bluetooth sur Microsoft HoloLens.
+Cette procédure désactive les composants RF de la radio Bluetooth, de même que toutes les fonctionnalités Bluetooth sur Microsoft HoloLens.
 
-1. Utilisez le geste fleuri (HoloLens (1ère génération)) ou le geste de démarrage (HoloLens 2) pour accéder à **Démarrer**, puis sélectionnez **Paramètres** > **Appareils**.
+1. Utilisez l’écartement des doigts paume vers le haut (HoloLens (1ère génération)) ou le mouvement associé au menu Démarrer (HoloLens 2) pour accéder à **Démarrer**, puis sélectionnez **Paramètres** > **Appareils**.
 
-1. Déplacez le curseur de **Bluetooth** vers la position**Désactivée**.
+1. Déplacez le curseur de **Bluetooth** vers la position **Off**.
 
-## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2 : connecter des appareils USB-C
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2 : connecter des appareils USB-C
 
-HoloLens 2 prend en charge les classes suivantes d’appareils USB-C :
+HoloLens 2 prend en charge les classes d’appareils USB-C suivantes :
 
-- Périphériques de stockage de grande capacité (par exemple, lecteurs miniatures)
+- Dispositifs de stockage de masse (lecteurs miniatures, par exemple)
 - Cartes Ethernet (notamment la charge Ethernet plus)
-- Cartes audio numériques USB-C à 3,5 mm
+- Cartes audio numériques USB-C à 3,5 mm
 - Casques audio numériques USB-C (y compris les adaptateurs de casque et les débits de chargement)
+- Microphones externes USB-C ([Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) ou ultérieure)
 - Souris filaire
 - Clavier câblé
-- Combinaison de la combinaison de plusieurs moyeux (USB A plus débiter)
+- Combinaison de hubs PD (chargement PD plus USB A)
+
 
 > [!NOTE]
-> En réponse aux commentaires des clients, nous avons activé une prise en charge limitée de la connectivité cellulaire directement liée à HoloLens via USB-C. Consultez [Connexion au cellulaire et à la 5G](hololens-cellular.md) pour plus d’informations.
+> En réponse aux commentaires des clients, nous avons activé une prise en charge limitée de la connectivité cellulaire directement liée à HoloLens via USB-C. Pour plus d’informations, consultez [Se connecter à un réseau cellulaire et à la 5G](hololens-cellular.md) .
+
+### <a name="usb-c-external-microphone-support"></a>Prise en charge du microphone externe USB-C
+
+> [!IMPORTANT]
+> Le raccordement d'**un microphone USB ne le définit pas automatiquement en tant que périphérique d’entrée**. En cas de raccordement à un casque USB-C, les utilisateurs pourront constater que le son du casque est automatiquement redirigé vers le casque, mais que le système d’exploitation HoloLens priorise le réseaux de microphones internes par rapport à tout autre périphérique d’entrée. **Pour utiliser un microphone USB-C, suivez les étapes ci-dessous.**
+
+> [!NOTE]
+> Les microphones externes ne peuvent pas être utilisés dans les builds antérieures à [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) ou ultérieure. 
+
+Les utilisateurs peuvent sélectionner des microphones externes connectés par USB-C à l’aide du panneau des paramètres **Son** . Les microphones USB-C peuvent être utilisés pour appeler, enregistrer, etc.
+
+Ouvrez l’application **Paramètres** et sélectionnez **Système** > **Son**.
+
+![Paramètres audio](images/usbc-mic-1.jpg)
+
+> [!IMPORTANT]
+> Pour utiliser des microphones externes avec **Remote Assist**, les utilisateurs doivent cliquer sur le lien hypertexte « Gérer les périphériques audio ».
+>
+> La liste déroulante leur permet ensuite de définir le microphone externe sur **Par défaut** ou **Communications par défaut**. **Par défaut** signifie que le microphone externe sera utilisé partout.
+>
+> **Communications par défaut** signifie que le microphone externe sera utilisé avec Remote Assist et autres applications de communications, mais que le réseau de microphones HoloLens restera disponible pour d’autres tâches.
+
+![Gérer les périphériques audio](images/usbc-mic-2.png)
+
+<br>
+
+![Définir le microphone par défaut](images/usbc-mic-3.jpg)
+
+#### <a name="what-about-bluetooth-microphone-support"></a>Prise en charge des microphones Bluetooth
+
+Malheureusement, les microphones Bluetooth ne sont pas encore pris en charge par l’HoloLens 2.
 
 ### <a name="usb-c-hubs"></a>Hubs USB-C
 
-Certains utilisateurs peuvent avoir besoin de connecter plusieurs appareils à la fois. Pour les utilisateurs qui souhaitent avoir un aperçu d'une fonction Insider et[ utiliser un microphone USB-C avec ](hololens-insider.md#usb-c-external-microphone-support)un autre appareil connecté, les concentrateurs USB-C peuvent répondre au besoin du client. Microsoft n'a pas testé ces appareils, et nous ne pouvons recommander aucune marque spécifique.
+Certains utilisateurs peuvent avoir besoin de connecter plusieurs appareils à la fois. Les hubs USB-C peuvent répondre aux besoins des utilisateurs qui souhaitent utiliser un [microphone USB-C](#usb-c-external-microphone-support) et un autre appareil connecté. Microsoft n'a pas testé ces appareils, et nous ne pouvons recommander aucune marque spécifique.
 
-**Exigences pour les concentrateurs USB-C et les appareils connectés :**
+**Exigences relatives aux hubs USB-C et appareils connectés :**
 
 - Les appareils connectés ne doivent pas nécessiter l'installation d'un pilote.
-- La puissance totale absorbée de tous les appareils connectés doit être inférieure à 4,5 watts.
+- La puissance totale absorbée de tous les appareils connectés doit être inférieure à 4,5 watts.
 
 ## <a name="connect-to-miracast"></a>Se connecter à Miracast
 
-Pour utiliser Miracast, procédez comme suit :
+Pour utiliser Miracast, procédez comme suit :
 
-1. Effectuez l'une des opérations suivantes :  
+1. Effectuez l’une des opérations suivantes :  
 
-   - Ouvrez le menu **Démarrer**, puis sélectionnez l’icône Afficher.
-   - Dites « se connecter » lorsque vous pointez le menu **Démarrer**.  
+   - Ouvrez le menu **Démarrer**, puis sélectionnez l’icône **Afficher**.
+   - Dites « Se connecter » lorsque vous pointez le menu **Démarrer**.  
 
 1. Dans la liste des appareils qui s’affiche, sélectionnez un appareil disponible.
 
-1. Terminez l’appariement pour commencer la projection.
+1. Terminez le couplage pour commencer la projection.

@@ -1,6 +1,6 @@
 ---
-title: Connexion au cellulaire et à la 5G
-description: Connexion aux réseaux cellulaires à partir de vos appareils HoloLens de réalité mixte.
+title: Se connecter à un réseau cellulaire et à la 5G
+description: Connexion aux réseaux cellulaires à partir de vos appareils de réalité mixte HoloLens
 ms.assetid: f1aaadce-8762-41f8-bfeb-3b6067a2ec78
 ms.prod: hololens
 ms.sitesec: library
@@ -12,47 +12,47 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3fd5f6baf05277bcbf2bf4152ba4735ca91e5bd0
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385639"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397490"
 ---
-# <a name="connect-to-cellular-and-5g"></a>Connexion au cellulaire et à la 5G
+# <a name="connect-to-cellular-and-5g"></a>Se connecter à un réseau cellulaire et à la 5G
 
-HoloLens 2 prend en charge deux méthodes de connexion aux réseaux cellulaires et 5G :
+L'HoloLens 2 prend en charge deux méthodes de connexion aux réseaux cellulaires et 5G :
 
-- Un réseau WiFi ad hoc fourni par le périphérique cellulaire, communément appelé « point d’accès »
-- Prise en charge limitée des appareils connectés à l’USB-C
+- Un réseau Wi-Fi ad hoc fourni par l'appareil cellulaire, communément appelé « point d'accès »
+- Une prise en charge limitée des appareils utilisant le partage de connexion USB-C
 
-## <a name="hotspot-wifi"></a>Point d’accès (WiFi)
+## <a name="hotspot-wifi"></a>Point d'accès (WiFi)
 
-La plupart des besoins de connectivité cellulaire peuvent être satisfaits avec un point d’accès. Le WiFi HoloLens 2 prend en charge 802.11ac, qui peut fournir les besoins en bande passante et en latence nécessaires pour les cas d’utilisation les plus courants. Le WiFi est également sans câble et offre une compatibilité avec le plus grand nombre d’appareils cellulaires.
+Un point d'accès permet de satisfaire la plupart des besoins de connectivité cellulaire. Le Wi-Fi de l'HoloLens 2 prend en charge la norme 802.11ac, qui permet de fournir la bande passante et la latence nécessaires à la plupart des cas d'usage courants. Le Wi-Fi est également sans câble et offre une compatibilité avec un très grand nombre d'appareils cellulaires.
 
-### <a name="connecting-to-a-hotspot"></a>Connexion à un point d’accès
+### <a name="connecting-to-a-hotspot"></a>Connexion à un point d'accès
 
-1. Consultez le manuel de votre appareil pour savoir comment activer le mode point d’accès.
-1. Activez le mode point d’accès, en fournissant un nom pour le réseau ainsi qu’un mot de passe connu.
-1. Dans les paramètres réseau HoloLens 2, recherchez le réseau WiFi créé à l’étape 2 et connectez-vous.
+1. Consultez le manuel de votre appareil pour savoir comment activer le mode point d'accès.
+1. Activez le mode point d'accès, en fournissant un nom pour le réseau ainsi qu'un mot de passe connu.
+1. Dans les paramètres réseau de l'HoloLens 2, recherchez le réseau Wi-Fi créé à l'étape 2 et rejoignez-le.
 
-## <a name="usb-c-tethering"></a>Connexion USB-C
+## <a name="usb-c-tethering"></a>Partage de connexion USB-C
 
-La connexion USB-C peut fournir une latence moindre pour les charges de travail avancées qui en ont besoin. Le [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering), par exemple, peut bénéficier de la connexion. Notez que la connexion nécessite un câble entre le périphérique cellulaire et HoloLens, et la connexion est prise en charge par un nombre limité d’appareils.
+Le partage de connexion USB-C peut fournir une latence plus faible pour les charges de travail avancées qui en ont besoin. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering), par exemple, peut en tirer parti. Notez que le partage de connexion requiert un câble entre l'appareil cellulaire et l'HoloLens, et que seul un nombre limité d'appareils le prend en charge.
 
 ### <a name="usb-c-compatibility"></a>Compatibilité USB-C
 
-Les appareils qui se présentent en tant qu’adaptateur ethernet peuvent être utilisés avec Windows Holographic version 2004 et ultérieures.
+Un nombre limité d'appareils qui se présentent en tant qu'adaptateurs Ethernet peuvent être utilisés avec Windows Holographic 2004 et versions ultérieures.
 
-Les appareils qui ne se présentent pas en tant qu’adaptateur ethernet doivent prendre en charge le pilote [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) Microsoft générique. Veuillez consulter le fabricant de votre appareil pour plus d’informations sur la capacité de l’appareil à prendre en charge le pilote RNDIS Microsoft générique.
+Les appareils qui ne se présentent pas en tant qu'adaptateurs Ethernet doivent prendre en charge le pilote Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) générique. Toutefois, seul un nombre limité de ces appareils est compatible avec HoloLens 2. Veuillez contacter le fabricant de votre appareil pour savoir s'il prend en charge le pilote Microsoft RNDIS générique.
 
-Les appareils qui ne sont pas compatibles au RNDIS ou qui nécessitent l’installation d’un pilote ou d’une application ne sont pas pris en charge.
+Les appareils qui ne sont pas compatibles avec RNDIS ou qui nécessitent l'installation d'un pilote ou d'une application ne sont pas pris en charge.
 
-Bien que Microsoft ne conserve pas la liste des appareils compatibles, il existe une discussion de la communauté sur la rubrique [ici](https://aka.ms/HLCommunityCell).
+Microsoft ne tient pas de liste des appareils compatibles, mais une discussion communautaire sur le sujet est disponible [ici](https://aka.ms/HLCommunityCell).
 
-### <a name="connecting-to-a-tethered-device"></a>Connexion à un appareil connecté
+### <a name="connecting-to-a-tethered-device"></a>Connexion à un appareil utilisant le partage de connexion
 
-1. Consultez le manuel de votre appareil pour l’activation du partage de données sur USB. Ce paramètre est souvent appelé « connexion USB », « Partage de données » ou « Modem USB ».
-1. Activer le partage de données sur USB.
-1. Connectez votre appareil au port USB-C HoloLens.
-1. Dans les paramètres réseau HoloLens 2, l’appareil s’affiche automatiquement en tant que connexion Ethernet.
+1. Consultez le manuel de votre appareil pour savoir comment activer le partage de données USB. Ce paramètre est souvent appelé « partage de connexion USB », « partage de données » ou « modem USB ».
+1. Activez le partage de données USB.
+1. Connectez votre appareil au port USB-C de l'HoloLens.
+1. Dans les paramètres réseau de l'HoloLens 2, l'appareil apparaît automatiquement comme une connexion Ethernet.
