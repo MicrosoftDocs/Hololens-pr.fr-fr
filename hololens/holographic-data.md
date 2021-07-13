@@ -1,7 +1,7 @@
 ---
 title: Rechercher et enregistrer des fichiers sur HoloLens
-description: Découvrez comment utiliser l’Explorateur de fichiers sur HoloLens pour ouvrir, afficher et gérer des fichiers sur votre appareil de réalité mixte.
-keywords: procédure, sélecteur de fichiers, fichiers, photos, vidéos, images, OneDrive, stockage, Explorateur de fichiers, hololens
+description: découvrez comment utiliser l’explorateur de fichiers sur HoloLens pour ouvrir, afficher et gérer des fichiers sur votre appareil de réalité mixte.
+keywords: procédure, sélecteur de fichiers, fichiers, photos, vidéos, images, OneDrive, stockage, explorateur de fichiers, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
 ms.author: mazeller
@@ -16,28 +16,28 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2d979b2cffd20589ddef7f11db5c7206eaea23cb
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 18dc962b869dafaea9ff9c605eef51fcbb35bfb2
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308597"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636178"
 ---
 # <a name="find-open-and-save-files-on-hololens"></a>Rechercher, ouvrir et enregistrer des fichiers sur HoloLens
 
-Les fichiers que vous créez sur HoloLens, y compris les photos et les vidéos, sont enregistrés directement sur votre appareil HoloLens. Affichez et gérez-les de la même façon que vous gérez les fichiers sur Windows 10 :
+les fichiers que vous créez sur HoloLens, y compris les photos et les vidéos, sont enregistrés directement sur votre appareil HoloLens. Affichez et gérez-les de la même façon que vous gérez les fichiers sur Windows 10 :
 
 - Utilisation de l’application de l’Explorateur de fichiers pour accéder aux dossiers locaux.
 - Dans le stockage d’une application.
 - Dans un dossier spécial (tel que la bibliothèque vidéo ou musicale).
 - Utilisation d’un service de stockage qui comprend un sélecteur d’application et de fichier (par exemple, OneDrive).
-- À l’aide d’un ordinateur de bureau connecté à votre HoloLens à l’aide d’un câble USB, en prenant en charge MTP (Media Transfer Protocol).
+- à l’aide d’un ordinateur de bureau connecté à votre HoloLens à l’aide d’un câble USB, utilisez la prise en charge MTP (Media Transfer Protocol).
 
-## <a name="view-files-on-hololens-using-file-explorer"></a>Afficher les fichiers sur HoloLens à l’aide de l’Explorateur de fichiers
+## <a name="view-files-on-hololens-using-file-explorer"></a>afficher les fichiers sur HoloLens à l’aide de l’explorateur de fichiers
 
-> S’applique à tous les appareils HoloLens 2 et à HoloLens (1re génération) à partir de la [mise à jour 2018 d’avril de Windows 10 (RS4) pour HoloLens](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018).
+> s’applique à tous les appareils HoloLens 2 et HoloLens (1er génération) à partir de la [Windows 10 mise à jour 2018 d’avril (RS4) pour HoloLens](/windows/mixed-reality/release-notes-april-2018).
 
-Utilisez l’Explorateur de fichiers sur HoloLens pour afficher et gérer les fichiers sur votre appareil, y compris les objets 3D, les documents et les images. Accédez à **Démarrer** l'   >  Explorateur de fichiers de **tous les applications**   >   pour commencer.
+utilisez l’explorateur de fichiers sur HoloLens pour afficher et gérer les fichiers sur votre appareil, notamment les objets 3d, les documents et les images. Accédez à **Démarrer** l'   >  Explorateur de fichiers de **tous les applications**   >   pour commencer.
 
 > [!TIP]
 > Si aucun fichier n’est répertorié dans l’Explorateur de fichiers, sélectionnez **ce périphérique** dans le volet supérieur gauche.
@@ -48,27 +48,27 @@ Si vous ne voyez aucun fichier dans l’Explorateur de fichiers, le filtre « r
 
 La [capture de réalité mixte](holographic-photos-and-videos.md) vous permet de prendre des photos et des vidéos de réalité mixte sur HoloLens.  Ces photos et vidéos sont enregistrées dans le dossier pellicule de l’appareil.
 
-Vous pouvez accéder aux photos et vidéos prises avec HoloLens en :
+vous pouvez accéder aux photos et vidéos prises avec HoloLens en :
 
-- accès à l’appareil photo directement par le biais de l' [application photos](holographic-photos-and-videos.md).
+- l’accès à la caméra passe directement par l' [application Photos](holographic-photos-and-videos.md).
 - Téléchargement de photos et de vidéos dans le stockage cloud en synchronisant vos photos et vidéos sur OneDrive.
-- à l’aide de la page de capture de la réalité mixte du [portail de périphériques Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
+- à l’aide de la page Capture de la réalité mixte du [portail des appareils Windows](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
 
 ### <a name="photos-app"></a>Application Photos
 
-L’application photos est l’une des applications par défaut dans le menu **Démarrer** et est intégrée avec HoloLens. En savoir plus sur [l’utilisation de l’application photos pour afficher le contenu](holographic-photos-and-videos.md).
+l’application Photos est l’une des applications par défaut dans le menu **démarrer** et est intégrée avec HoloLens. en savoir plus sur l' [utilisation de l’application Photos pour afficher le contenu](holographic-photos-and-videos.md).
 
-Vous pouvez également installer l' [application OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) à partir de la Microsoft Store pour synchroniser des photos avec d’autres appareils.
+vous pouvez également installer l' [application OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) à partir du Microsoft Store pour synchroniser des photos avec d’autres appareils.
 
-### <a name="onedrive-app"></a>Application OneDrive
+### <a name="onedrive-app"></a>application OneDrive
 
-[OneDrive](https://onedrive.live.com/) vous permet d’accéder, de gérer et de partager vos photos et vidéos avec n’importe quel appareil et avec n’importe quel utilisateur. Pour accéder aux photos et vidéos capturées sur HoloLens, téléchargez l' [application OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) à partir du Microsoft Store sur votre hololens. Une fois le téléchargement terminé, ouvrez l’application OneDrive et sélectionnez **paramètres**  >  **appareil photo Télécharger**, puis activez l’option chargement de l' **appareil photo**.
+[OneDrive](https://onedrive.live.com/) vous permet d’accéder, de gérer et de partager vos photos et vidéos avec n’importe quel appareil et avec n’importe quel utilisateur. pour accéder aux photos et vidéos capturées sur HoloLens, téléchargez l' [application OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) à partir du Microsoft Store sur votre HoloLens. une fois le téléchargement terminé, ouvrez l’application OneDrive et sélectionnez **Paramètres** le  >  **chargement** de la caméra, puis activez le chargement de l' **appareil photo**.
 
-### <a name="connect-to-a-pc"></a>Se connecter à un PC
+### <a name="connect-to-a-pc"></a>Connecter à un PC
 
-Si votre HoloLens exécute la [mise à jour 2018 de Windows 10 avril](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) ou une version ultérieure, vous pouvez connecter votre hololens à un PC Windows 10 à l’aide d’un câble USB pour parcourir les photos et les vidéos sur l’appareil à l’aide du protocole MTP (Media Transfer Protocol). Vous devrez vous assurer que l’appareil est déverrouillé pour parcourir les fichiers si vous avez configuré un code confidentiel ou un mot de passe sur votre appareil.  
+si votre HoloLens exécute la [mise à jour Windows 10 avril 2018](/windows/mixed-reality/release-notes-april-2018) ou une version ultérieure, vous pouvez connecter votre HoloLens à un PC Windows 10 à l’aide d’un câble USB pour parcourir les photos et les vidéos sur l’appareil à l’aide du protocole MTP (media transfer protocol). Vous devrez vous assurer que l’appareil est déverrouillé pour parcourir les fichiers si vous avez configuré un code confidentiel ou un mot de passe sur votre appareil.  
 
-Si vous avez activé le [portail de périphériques Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), vous pouvez l’utiliser pour parcourir, récupérer et gérer les photos et vidéos stockées sur votre appareil.
+si vous avez activé le [portail des appareils Windows](/windows/mixed-reality/using-the-windows-device-portal), vous pouvez l’utiliser pour parcourir, récupérer et gérer les photos et vidéos stockées sur votre appareil.
 
 ## <a name="access-files-within-an-app"></a>Accéder aux fichiers dans une application
 
@@ -76,29 +76,29 @@ Si une application enregistre des fichiers sur votre appareil, vous pouvez utili
 
 ### <a name="requesting-files-from-another-app"></a>Demande de fichiers à partir d’une autre application
 
-Une application peut demander l’enregistrement d’un fichier ou l’ouverture d’un fichier à partir d’une autre application à l’aide de [sélecteurs de fichiers](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers).
+Une application peut demander l’enregistrement d’un fichier ou l’ouverture d’un fichier à partir d’une autre application à l’aide de [sélecteurs de fichiers](/windows/mixed-reality/app-model#file-pickers).
 
 ### <a name="known-folders"></a>Dossiers connus
 
-HoloLens prend en charge un certain nombre de [dossiers connus](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) auxquels les applications peuvent demander une autorisation d’accès.
+HoloLens prend en charge un certain nombre de [dossiers connus](/windows/mixed-reality/app-model#known-folders) auxquels les applications peuvent demander une autorisation d’accès.
 
-## <a name="view-hololens-files-on-your-pc"></a>Afficher des fichiers HoloLens sur votre PC
+## <a name="view-hololens-files-on-your-pc"></a>afficher les fichiers de HoloLens sur votre PC
 
-À l’instar des autres appareils mobiles, connectez HoloLens à votre ordinateur de bureau à l’aide du protocole MTP (Media Transfer Protocol) et ouvrez l’Explorateur de fichiers sur le PC pour accéder à vos bibliothèques HoloLens en vue de faciliter le transfert.
+à l’instar des autres appareils mobiles, connectez HoloLens à votre ordinateur de bureau à l’aide du protocole MTP (Media Transfer Protocol) et ouvrez l’explorateur de fichiers sur le pc pour accéder à vos bibliothèques HoloLens en vue de les transférer facilement.
 
-Pour afficher vos fichiers HoloLens dans l’Explorateur de fichiers sur votre ordinateur :
+pour afficher vos fichiers HoloLens dans l’explorateur de fichiers sur votre ordinateur :
 
-1. Connectez-vous à HoloLens, puis branchez-le sur le PC à l’aide du câble USB fourni avec le HoloLens.
+1. connectez-vous à HoloLens, puis branchez-le sur le PC à l’aide du câble USB fourni avec le HoloLens.
 
 1. Sélectionnez **ouvrir l’appareil pour afficher les fichiers avec l’Explorateur de fichiers** ou ouvrez l’Explorateur de fichiers sur le PC et accédez à l’appareil.
 
-Pour afficher des informations sur votre HoloLens, cliquez avec le bouton droit sur le nom de l’appareil dans l’Explorateur de fichiers sur votre ordinateur, puis sélectionnez **Propriétés**.
+pour afficher des informations sur votre HoloLens, cliquez avec le bouton droit sur le nom de l’appareil dans l’explorateur de fichiers sur votre ordinateur, puis sélectionnez **propriétés**.
 
 > [!NOTE]
 > HoloLens (1re génération) ne prend pas en charge la connexion à des disques durs externes ou à des cartes SD.
 
 ## <a name="sync-to-the-cloud"></a>Synchroniser avec le Cloud
 
-Pour synchroniser des photos et d’autres fichiers entre votre HoloLens et le Cloud, installez et configurez OneDrive sur HoloLens. Pour obtenir OneDrive, recherchez-le dans le Microsoft Store sur votre HoloLens.
+pour synchroniser des photos et d’autres fichiers de votre HoloLens dans le cloud, installez et configurez OneDrive sur HoloLens. pour obtenir OneDrive, recherchez-le dans le Microsoft Store sur votre HoloLens.
 
-HoloLens ne sauvegarde pas les fichiers et les données de l’application. il est donc judicieux d’enregistrer vos éléments importants sur OneDrive. De cette façon, si vous réinitialisez votre appareil ou que vous désinstallez une application, vos informations seront sauvegardées.
+HoloLens ne sauvegarde pas les fichiers et les données de l’application, il est judicieux d’enregistrer vos éléments importants sur OneDrive. De cette façon, si vous réinitialisez votre appareil ou que vous désinstallez une application, vos informations seront sauvegardées.

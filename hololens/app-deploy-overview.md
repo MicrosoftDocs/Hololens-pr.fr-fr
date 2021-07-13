@@ -14,20 +14,20 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 951c79e49d67c1a0308e236e4283ffa498a7139f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308645"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635549"
 ---
 # <a name="app-management-overview"></a>Gestion des applications : vue d’ensemble
 
-Vous pouvez déployer des applications sur quatre chemins différents : la **gestion des appareils mobiles (MDM)**, **Microsoft Store pour les entreprises**, les **Microsoft Store**, ou en les installant par le biais de l' **approvisionnement**.
+vous pouvez déployer des applications sur quatre chemins différents : **gestion des appareils mobiles (MDM)**, **Microsoft Store pour Entreprises**, **Microsoft Store** ou en les installant via la **configuration**.
 
 ## <a name="mobile-device-management-mdm"></a>Gestion des appareils mobiles
 
-Une solution de gestion des appareils mobiles permet aux décideurs informatiques et aux administrateurs d’installer automatiquement (push) leurs applications métier internes ou d’acheter des applications dans le Store pour un groupe d’utilisateurs. Les appareils HoloLens fonctionnent mieux avec Microsoft Endpoint Manager (Intune) pour la [gestion des applications](app-deploy-intune.md). Intune offre également aux utilisateurs un contrôle plus affiné sur les applications gérées par le service informatique grâce à l’expérience téléchargeable Portail d’entreprise.
+Une solution de gestion des appareils mobiles permet aux décideurs informatiques et aux administrateurs d’installer automatiquement (push) leurs applications métier internes ou d’acheter des applications dans le Store pour un groupe d’utilisateurs. les appareils HoloLens fonctionnent mieux avec Microsoft Endpoint Manager (Intune) pour la [gestion des applications](app-deploy-intune.md). Intune offre également aux utilisateurs un contrôle plus affiné sur les applications gérées par le service informatique grâce à l’expérience téléchargeable Portail d’entreprise.
 
 > [!NOTE]
 > Les instructions suivantes sont destinées aux utilisateurs qui souhaitent gérer leurs applications avec Intune. Microsoft recommande l’utilisation d’Intune pour la gestion des applications et des appareils.
@@ -36,32 +36,32 @@ La gestion des appareils mobiles (MDM) s’applique aux éléments suivants :
 
 * MDM déployé + Portail d’entreprise
 * Applications métier (non publiques)
-* Installation manuelle des applications disponibles via Portail d’entreprise
+* installation manuelle des applications disponibles via Portail d’entreprise
 * Push administrateur via la stratégie MDM
 * Mise à jour automatique via MDM
 
 ## <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
 
-Le [Microsoft Store pour les entreprises](app-deploy-store-business.md) fournit aux décideurs et aux administrateurs informatiques des entreprises pour trouver, acquérir, gérer et distribuer des applications gratuites et payantes. Les administrateurs informatiques peuvent gérer des applications Microsoft Store et des applications métier privées dans un même inventaire, ainsi qu’attribuer et réutiliser des licences en fonction des besoins. Pour plus d’informations, consultez [Configuration requise pour l’utilisation de l’Microsoft Store pour les entreprises](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business).
+l' [Microsoft Store pour Entreprises](app-deploy-store-business.md) fournit aux décideurs informatiques et aux administrateurs dans les entreprises la recherche, l’acquisition, la gestion et la distribution d’applications gratuites et payantes. les administrateurs informatiques peuvent gérer des applications Microsoft Store et des applications métier privées dans un même inventaire, ainsi qu’attribuer et réutiliser des licences en fonction des besoins. pour plus d’informations, consultez [configuration requise pour l’utilisation de l’Microsoft Store pour Entreprises](/microsoft-store/prerequisites-microsoft-store-for-business).
 
-Les Microsoft Store pour les entreprises s’appliquent aux éléments suivants :
+le Microsoft Store pour Entreprises s’applique aux éléments suivants :
 
 * Applications publiques ou métier
 * Installation automatique des applications requises par le biais de l’Association MDM
 * L’utilisateur télécharge manuellement les applications
 * Mise à jour automatique
 
-## <a name="microsoft-store-apps"></a>Applications de Microsoft Store
+## <a name="microsoft-store-apps"></a>Applications du Microsoft Store
 
-L’Microsoft Store fournit aux décideurs et aux administrateurs informatiques des entreprises pour rechercher, acquérir, gérer et distribuer des applications publiques.
+l’Microsoft Store fournit aux décideurs et aux administrateurs informatiques des entreprises pour rechercher, acquérir, gérer et distribuer des applications publiques.
 
-Cette Microsoft Store s’applique aux éléments suivants :
+cette Microsoft Store s’applique aux éléments suivants :
 
 * Applications publiques uniquement
 * L’utilisateur télécharge manuellement les applications
 * Mise à jour automatique en cas de connexion à Internet
 
-Pour plus d’informations, consultez [applications du Store holographiques](https://docs.microsoft.com/hololens/holographic-store-apps).
+Pour plus d’informations, consultez [applications du Store holographiques](/hololens/holographic-store-apps).
 
 ## <a name="install-via-provisioning-packages"></a>Installer via des packages d’approvisionnement
 
@@ -74,9 +74,9 @@ L’installation via des packages de configuration s’applique aux éléments s
 * Chargement côté USB uniquement
 * Aucune mise à jour automatique (nécessite des mises à jour manuelles via le package d’approvisionnement)
 
-## <a name="install-apps-on-hololens-2-via-app-installer"></a>Installer des applications sur HoloLens 2 via le programme d’installation d’application
+## <a name="install-apps-on-hololens-2-via-app-installer"></a>installer des applications sur HoloLens 2 via le programme d’installation d’application
 
-L’utilisation des utilisateurs du [programme d’installation d’application](app-deploy-app-installer.md) peut avoir une expérience simple pour l’installation d’applications sur des appareils locaux ou le partage d’une application avec une autre personne qui ne connaît pas les autres méthodes d’installation d’applications sur HoloLens. Pour ce faire, vous devez activer le mode développeur ou utiliser le portail de l’appareil. Il s’agit d’une méthode simple pour distribuer une application entièrement générée. Quelle que soit la façon dont vous souhaitez simplement faire une démonstration de votre application pour un autre utilisateur avec un HoloLens, ou vous souhaitez déployer votre application, cette méthode fonctionne facilement.
+L’utilisation des utilisateurs du [programme d’installation d’application](app-deploy-app-installer.md) peut avoir une expérience simple pour l’installation d’applications sur des appareils locaux ou le partage d’une application avec une autre personne qui ne connaît pas les autres méthodes d’installation d’applications sur HoloLens. Pour ce faire, vous devez activer le mode développeur ou utiliser le portail de l’appareil. Il s’agit d’une méthode simple pour distribuer une application entièrement générée. quelle que soit la façon dont vous souhaitez simplement démo votre application pour un autre utilisateur avec un HoloLens, ou vous souhaitez déployer votre application, cette méthode fonctionne facilement.
 
 L’installation via le programme d’installation d’application s’applique à :
 

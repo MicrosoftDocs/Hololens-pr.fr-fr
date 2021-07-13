@@ -7,75 +7,77 @@ description: Options de prise en charge de la réalité mixte pour les petites e
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 18178e35e93005f386c3d6f2fa6c637694bc60cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398768"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636212"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quelles sont les options d’aide et de prise en charge de la réalité mixte ?
 
-Souhaitez-vous être débloqué lors du développement de votre application ou rencontrez-vous un problème avec votre casque HoloLens 2 ou Windows Mixed Reality ? Vous utilisez peut-être un service de réalité mixte Azure et vous avez une question technique. 
+souhaitez-vous être débloqué lors du développement de votre application ou rencontrez-vous un problème avec votre HoloLens 2 ou Windows Mixed Reality casque ? Vous utilisez peut-être un service de réalité mixte Azure et vous avez une question technique. 
 
 Vous trouverez ici les options de support pour les options suivantes, qui vous permettent de vous connecter au bon endroit. Nous abordons également les ressources de la communauté et les options de contenu libre-service que vous pouvez explorer :
 
-- [Options de l’aide de la communauté pour les développeurs](#community-help-options)
-- [Obtenir de l’aide pour l’utilisation et la configuration de votre appareil HoloLens 2](#help-with-technical-support-for-your-hololens-2)
-- [Obtenir de l’aide pour l’achat d’un appareil HoloLens 2](#help-with-commercial-store-support-for-your-hololens-2)
-- [Obtenir de l’aide pour la programmation d’un appareil HoloLens 2 ou d’un casque immersif](#help-with-technical-support-for-your-hololens-2) 
+- [Community les options d’aide pour les développeurs](#community-help-options)
+- [obtenir de l’aide pour l’utilisation et la configuration de votre appareil HoloLens 2](#help-with-technical-support-for-your-hololens-2)
+- [obtenir de l’aide pour l’achat d’un appareil HoloLens 2](#help-with-commercial-store-support-for-your-hololens-2)
+- [obtenir de l’aide pour la programmation d’un appareil HoloLens 2 ou d’un casque immersif](#help-with-technical-support-for-your-hololens-2) 
 - [Obtenir de l’aide sur les services Azure Mixed Reality](#azure-mixed-reality-services-support)
 
-## <a name="community-help-options"></a>Options de l’aide de la communauté
+## <a name="community-help-options"></a>options d’aide Community
 
 ### <a name="post-a-question-on-microsoft-qa"></a>Poster une question sur Microsoft Q&A
 <div class='icon is-large'>
-    <img alt='Azure Q&A' src='https://docs.microsoft.com/media/logos/logo_azure.svg'>
+    <img alt='Azure Q&A' src='/media/logos/logo_azure.svg'>
 </div><br/>
-Pour obtenir des réponses rapides et fiables à vos questions sur la réalité mixte Azure et la programmation HoloLens 2 des ingénieurs Microsoft, des MVP (Most Valuable Professionals) ou de notre communauté d’experts, contactez-nous sur Microsoft Q&A, la destination préférée de Microsoft pour le support de la communauté.
+pour obtenir des réponses rapides et fiables sur vos questions relatives à la réalité mixte et à la HoloLens 2 de la programmation de microsoft, des ingénieurs microsoft, des mvp (most valuable professionals) ou de notre communauté d’experts, contactez-nous sur microsoft Q&A, la destination préférée de microsoft pour le support de la communauté.
 
 Si vous ne trouvez pas la réponse à votre problème à l’aide de la fonctionnalité de recherche, envoyez une nouvelle question à Microsoft Q&A. Utilisez l’un des mots clés suivants quand vous posez votre question :
-- [Azure Spatial Anchors](https://docs.microsoft.com/answers/topics/azure-spatial-anchors.html)
-- [Azure Remote Rendering](https://docs.microsoft.com/answers/topics/azure-remote-rendering.html)
-- [Azure Object Anchors](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
-- [Programmation HoloLens](https://docs.microsoft.com/answers/topics/hololens-development.html)
-- [Produits Windows](https://docs.microsoft.com/answers/products/windows)
+
+- [Azure Spatial Anchors](/answers/topics/azure-spatial-anchors.html)
+- [Azure Remote Rendering](/answers/topics/azure-remote-rendering.html)
+- [Azure Object Anchors](/answers/topics/azure-object-anchors.html)
+- [HoloLens Langage](/answers/topics/hololens-development.html)
+- [Windows Produits](/answers/products/windows)
 
 
 ### <a name="post-a-question-on-stack-overflow"></a>Poser une question sur Stack Overflow
 <div class='icon is-large'>
-    <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
+    <img alt='Stack Overflow' src='/media/logos/logo_stackoverflow.svg'>
 </div><br/>
 
 Pour obtenir des réponses à vos questions de développeur auprès du plus grand écosystème de développeurs de la communauté, posez votre question sur Stack Overflow.
 
 Si vous envoyez une nouvelle question à Stack Overflow, utilisez un ou plusieurs des mots clés suivants quand vous formulez votre question :
 
-- [Programmation HoloLens](https://stackoverflow.com/questions/tagged/hololens)
+- [HoloLens Langage](https://stackoverflow.com/questions/tagged/hololens)
 - [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 - [Azure Spatial Anchors](https://stackoverflow.com/questions/tagged/azure-spatial-anchors)
 - [Azure Remote Rendering](https://stackoverflow.com/questions/tagged/azure-remote-rendering)
 - [Azure Object Anchors](https://stackoverflow.com/questions/tagged/azure-object-anchors)
 - [Mixed Reality Toolkit (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
-#### <a name="other-communities"></a>Autres communautés : 
-- [Slack HoloDevelopers](https://holodevelopersslack.azurewebsites.net/)
-- [Casques Reddit de Windows Mixed Reality](https://www.reddit.com/r/WindowsMR/)
-- [Reddit HoloLens](https://www.reddit.com/r/HoloLens/)
+#### <a name="other-communities"></a>Autres communautés :
 
-## <a name="hololens-2-support"></a>Prise en charge de HoloLens 2
+- [Slack HoloDevelopers](https://holodevelopersslack.azurewebsites.net/)
+- [Windows Mixed Reality Casques Reddit](https://www.reddit.com/r/WindowsMR/)
+- [HoloLens Reddit](https://www.reddit.com/r/HoloLens/)
+
+## <a name="hololens-2-support"></a>HoloLens 2 Supporter
 
 ### <a name="help-with-technical-support-for-your-hololens-2"></a>Aide sur le support technique de votre HoloLens 2
 
-- Obtenir l’aide de la programmation HoloLens 2 de la communauté chez [Microsoft Q&A](#post-a-question-on-microsoft-qa)
+- recevez HoloLens 2 aide de la programmation de la communauté sur [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - En savoir plus sur aide + support et l’intégrité du service de vos [services Azure de réalité mixte](#azure-mixed-reality-services-support)
-- Créer une demande de support pour HoloLens 2 ou la programmation d’un casque immersif à la [prise en charge de Mr](https://aka.ms/mrsupport) 
-- Créer une demande de support pour les problèmes de périphérique HoloLens 2, notamment le matériel, l’utilisation & la configuration à la [prise en charge des appareils hololens 2](https://aka.ms/hlsupport) 
+- créer une demande de support pour la programmation de HoloLens 2 ou de casque immersif chez le [support technique](https://aka.ms/mrsupport) 
+- créer une demande de support pour HoloLens 2 problèmes liés aux appareils, notamment le matériel, la configuration & de l’utilisation à [HoloLens 2 prise en charge des appareils](https://aka.ms/hlsupport) 
 
 
-### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Aide sur le support du magasin commercial pour votre HoloLens 2
+### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Aide sur la prise en charge du magasin commercial pour votre HoloLens 2
 
-- [Acheter hololens 2](https://www.microsoft.com/hololens/buy) Utilisez cette option pour en savoir plus sur la tarification et les options HoloLens 2
+- [acheter HoloLens 2](https://www.microsoft.com/hololens/buy) utilisez cette option pour en savoir plus sur la tarification et les options de HoloLens 2
 - Consultez la liste ci-dessous pour connaître les numéros de Business Desk à contacter avec nos collègues du support commercial si vous avez besoin d’aide via le support téléphonique
 
 ### <a name="commercial-store-support-numbers"></a>Numéros de support du magasin commercial
@@ -142,7 +144,7 @@ Pour ouvrir un ticket de support technique sur le Portail Azure pour les ancres 
 
 ### <a name="provide-documentation-content-feedback"></a>Fournir des commentaires sur le contenu de la documentation
 
-En bas de chaque article de contenu, vous avez la possibilité d’ouvrir un problème GitHub et de fournir des commentaires sur le contenu dans n’importe quel référentiel de documentation de réalité mixte. 
+en bas de chaque article de contenu, vous avez la possibilité d’ouvrir un GitHub problème et de fournir des commentaires sur le contenu dans n’importe quel référentiel de documentation de réalité mixte. 
 
 ### <a name="provide-product-feedback"></a>Indiquer des commentaires sur le produit
 
@@ -151,15 +153,15 @@ En bas de chaque article de contenu, vous avez la possibilité d’ouvrir un pro
 
 Pour nous faire part de vos commentaires, partager une idée ou des suggestions pour les services de la réalité mixte Microsoft, ou voter sur les idées que d’autres utilisateurs ont soumises, visitez : 
 
-- [Commentaires sur le produit HoloLens 2](https://docs.microsoft.com/hololens/hololens-feedback)
-- [Commentaires sur le produit d’application Microsoft Mesh](https://docs.microsoft.com/hololens/hololens-feedback)
+- [HoloLens 2 Commentaires sur le produit](/hololens/hololens-feedback)
+- [Commentaires sur le produit d’application Microsoft Mesh](/hololens/hololens-feedback)
 - [Commentaires sur le rendu distant Azure](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Commentaires sur les ancrages spatiaux Azure](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
 ### <a name="faqs--troubleshooting"></a>FAQ & résolution des problèmes
 
-- HoloLens 2, consultez la page de [résolution des problèmes hololens](../hololens/hololens-troubleshooting.md)
-- Windows Mixed Reality, consultez la page [Forum aux questions](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-- Rendu distant Azure, consultez la page [Forum aux questions](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot)
-- Les ancres spatiales Azure, consultez la page [Forum aux questions](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq)
-- Les ancres d’objets Azure, consultez la page [Forum aux questions](https://docs.microsoft.com/azure/object-anchors/faq)
+- HoloLens 2, consultez la page de [résolution des problèmes de HoloLens](../hololens/hololens-troubleshooting.md)
+- Windows Mixed Reality, consultez la page [forum aux questions](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+- Rendu distant Azure, consultez la page [Forum aux questions](/azure/remote-rendering/resources/troubleshoot)
+- Les ancres spatiales Azure, consultez la page [Forum aux questions](/azure/spatial-anchors/spatial-anchor-faq)
+- Les ancres d’objets Azure, consultez la page [Forum aux questions](/azure/object-anchors/faq)

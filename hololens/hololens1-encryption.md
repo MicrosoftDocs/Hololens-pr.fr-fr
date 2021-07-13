@@ -1,6 +1,6 @@
 ---
-title: Chiffrement BitLocker de HoloLens
-description: Découvrez comment activer le chiffrement de périphérique BitLocker pour protéger des fichiers stockés sur vos appareils de réalité mixte HoloLens.
+title: HoloLens Chiffrement BitLocker
+description: découvrez comment activer le chiffrement de périphérique BitLocker pour protéger des fichiers stockés sur votre HoloLens des appareils de réalité mixte.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,26 +13,26 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397280"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635243"
 ---
-# <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (1er génération) chiffrement BitLocker
+# <a name="hololens-1st-gen-bitlocker-encryption"></a>Chiffrement BitLocker HoloLens (1re génération)
 
-HoloLens (1re génération) et HoloLens 2 prennent en charge le chiffrement des appareils à l’aide de BitLocker. Toutefois, BitLocker est toujours activé sur HoloLens 2.
+HoloLens (1re génération) et HoloLens 2 prennent en charge le chiffrement des appareils à l’aide de bitlocker. toutefois, bitlocker est toujours activé sur HoloLens 2.
 
-Cet article vous aidera à activer et à gérer BitLocker sur HoloLens (1ère génération).
+cet article vous aidera à activer et à gérer BitLocker sur HoloLens (1ère génération).
 
-Sur HoloLens (1re génération), vous pouvez activer le chiffrement de l’appareil BitLocker manuellement ou à l’aide de la gestion des appareils mobiles (MDM). Suivez ces instructions pour activer le [chiffrement d’appareil BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) afin de protéger les fichiers et les informations stockés sur le HoloLens. Le chiffrement de l’appareil vous aide à protéger vos données à l’aide de la méthode de chiffrement AES-CBC 128, qui est équivalente à la [méthode EncryptionMethodByDriveType 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) dans le fournisseur de services de configuration (CSP) BitLocker. Le personnel qui a la clé de chiffrement correcte (par exemple, un mot de passe) peut le déchiffrer ou effectuer une récupération de données.
+sur HoloLens (1re génération), vous pouvez activer le chiffrement de l’appareil BitLocker manuellement ou à l’aide de la gestion des appareils mobiles (MDM). Suivez ces instructions pour activer le [chiffrement d’appareil BitLocker](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) afin de protéger les fichiers et les informations stockés sur le HoloLens. Le chiffrement de l’appareil vous aide à protéger vos données à l’aide de la méthode de chiffrement AES-CBC 128, qui est équivalente à la [méthode EncryptionMethodByDriveType 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) dans le fournisseur de services de configuration (CSP) BitLocker. Le personnel qui a la clé de chiffrement correcte (par exemple, un mot de passe) peut le déchiffrer ou effectuer une récupération de données.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Activer le chiffrement de l’appareil à l’aide de MDM
 
-Vous pouvez utiliser votre fournisseur de gestion des appareils mobiles (MDM) pour appliquer une stratégie qui requiert le chiffrement de l’appareil. La stratégie à utiliser est le [paramètre Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) dans le fournisseur de services de chiffrement de stratégie.
+Vous pouvez utiliser votre fournisseur de gestion des appareils mobiles (MDM) pour appliquer une stratégie qui requiert le chiffrement de l’appareil. La stratégie à utiliser est le [paramètre Security/RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) dans le fournisseur de services de chiffrement de stratégie.
 
-[Consultez les instructions pour activer le chiffrement de l’appareil à l’aide de Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[Consultez les instructions pour activer le chiffrement de l’appareil à l’aide de Microsoft Intune.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 Pour d’autres outils MDM, consultez la documentation de votre fournisseur MDM pour obtenir des instructions. Si votre fournisseur MDM requiert un URI personnalisé pour le chiffrement de l’appareil, utilisez la configuration suivante :
 
@@ -44,9 +44,9 @@ Pour d’autres outils MDM, consultez la documentation de votre fournisseur MDM 
 
 ## <a name="enable-device-encryption-using-a-provisioning-package"></a>Activer le chiffrement de l’appareil à l’aide d’un package d’approvisionnement
 
-Les packages d’approvisionnement sont des fichiers créés par l’outil concepteur de configuration Windows qui appliquent une configuration spécifiée à un appareil. 
+les packages de provisionnement sont des fichiers créés par l’outil concepteur de configuration Windows qui appliquent une Configuration spécifiée à un appareil. 
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Créer un package de mise en service qui met à niveau l’édition Windows holographique et active le chiffrement
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>créer un package de mise en service qui met à niveau le Windows édition holographique et active le chiffrement
 
 1. [Créez un package d’approvisionnement pour HoloLens.](hololens-provisioning.md)
 1. Accédez à **paramètres d’exécution**  >  **stratégies**  >  **sécurité**, puis sélectionnez **RequireDeviceEncryption**.
@@ -84,7 +84,7 @@ Les packages d’approvisionnement sont des fichiers créés par l’outil conce
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Appliquer le package d’approvisionnement à HoloLens
 
-1. Connectez l’appareil via USB à un PC et démarrez-le, mais ne continuez pas **la page de l’installation** initiale (la première page avec la boîte bleue).
+1. Connecter l’appareil USB à un PC et démarrer l’appareil, mais ne continuez pas **la page de l’installation** initiale (la première page avec la boîte bleue).
 1. Appuyez brièvement sur les boutons **Baisser le volume** et **Alimentation** en même temps, puis relâchez-les.
 1. HoloLens s’affiche comme périphérique dans l’Explorateur de fichiers du PC.
 1. Dans l’Explorateur de fichiers, faites glisser-déplacer le package d’approvisionnement (.ppkg) sur l'espace de stockage de l’appareil.
@@ -97,8 +97,8 @@ Les packages d’approvisionnement sont des fichiers créés par l’outil conce
 
 ## <a name="verify-device-encryption"></a>Vérifier le chiffrement de l’appareil
 
-Le chiffrement est silencieux sur HoloLens. Pour vérifier l’état du chiffrement de l’appareil :
+Le chiffrement est en mode silencieux sur HoloLens. Pour vérifier l’état du chiffrement de l’appareil :
 
-- Sur HoloLens, accédez à **paramètres**  >  **système**  >  **à propos** de. **BitLocker** est **activé** si l’appareil est chiffré. 
+- sur HoloLens, accédez à **Paramètres**  >  **système**  >  **à propos** de. **BitLocker** est **activé** si l’appareil est chiffré. 
 
     ![À propos de l’écran indiquant que BitLocker est activé](images/about-encryption.png)

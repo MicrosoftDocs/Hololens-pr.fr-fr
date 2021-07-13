@@ -1,7 +1,7 @@
 ---
 title: Microsoft Store pour Entreprises
-description: Apprenez à utiliser le Microsoft Store pour entreprise afin de publier vos applications de réalité mixte sur votre entreprise.
-keywords: Microsoft Store pour entreprises, msfb, déploiement d’applications, Store
+description: apprenez à utiliser le Microsoft Store pour Entreprises pour publier vos applications de réalité mixte sur votre entreprise.
+keywords: Microsoft Store pour Entreprises, msfb, déploiement d’applications, Store
 author: evmill
 ms.author: v-evmill
 ms.date: 6/22/2020
@@ -11,30 +11,31 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: 52036b9e17fe6685bd05693b06e3120b4655c863
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308637"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635532"
 ---
 # <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
 
-Le Microsoft Store pour les entreprises est principalement conçu pour les décideurs informatiques et les administrateurs dans les entreprises ou les organisations disposant d’un moyen flexible de rechercher, d’acquérir, de gérer et de distribuer des applications gratuites et payantes dans certains marchés sur des appareils Windows 10 en volume. 
+le Microsoft Store pour Entreprises est principalement conçu pour les décideurs informatiques et les administrateurs dans les entreprises ou les organisations disposant d’un moyen flexible de rechercher, d’acquérir, de gérer et de distribuer des applications gratuites et payantes dans select markets pour Windows 10 appareils en volume. 
 
-Vous pouvez gérer des applications Microsoft Store et des applications métier privées dans un même inventaire, et attribuer et réutiliser des licences en fonction des besoins. Vous pouvez également choisir la meilleure méthode de distribution pour votre organisation : attribuer directement des applications à des personnes et des équipes, publier des applications sur des pages privées dans Microsoft Store ou vous connecter à des solutions de gestion pour obtenir davantage d’options.
+vous pouvez gérer des applications Microsoft Store et des applications métier privées dans un même inventaire, et attribuer et réutiliser des licences en fonction des besoins. vous pouvez également choisir la meilleure méthode de distribution pour votre organisation : attribuer directement des applications à des personnes et des équipes, publier des applications sur des pages privées dans Microsoft Store ou vous connecter à des solutions de gestion pour obtenir davantage d’options.
 
-Lorsque Microsoft Store pour entreprise est utilisé par un utilisateur final, il lance l’application Microsoft Store. Une fois lancé, l’utilisateur est en mesure de sélectionner l’onglet avec le nom de son organisation. les applications qui lui sont disponibles ou ce périphérique sont alors présentées.
+lorsque Microsoft Store pour Entreprises est utilisé par un utilisateur final, il lance l’application Microsoft Store. Une fois lancé, l’utilisateur est en mesure de sélectionner l’onglet avec le nom de son organisation. les applications qui lui sont disponibles ou ce périphérique sont alors présentées.
 
 > [!Note] 
-> Les Microsoft Store pour entreprises ne téléchargent pas automatiquement les applications (push) sur les appareils. Toutefois, les applications du Microsoft Store pour entreprise peuvent être associées à votre serveur de gestion des appareils (MDM) pour cibler et synchroniser des applications sur des appareils.
+> Microsoft Store pour Entreprises ne télécharge pas automatiquement les applications (push) sur les appareils. toutefois, les applications du Microsoft Store pour Entreprises peuvent être associées à votre serveur de gestion des appareils (MDM) pour cibler et synchroniser des applications sur des appareils.
 
-Visitez les pages suivantes pour en savoir plus sur l’utilisation de l’Microsoft Store pour les entreprises :
-* [Niveaux d’autorisations utilisés pour l’installation d’applications](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
-* [Comment ajouter une application à votre Store pour entreprises](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
-* [Comment affecter des applications à des groupes d’employés](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)
+visitez les pages suivantes pour en savoir plus sur l’utilisation de l’Microsoft Store pour Entreprises :
 
-Pour associer votre Microsoft Store pour les entreprises, consultez [associer votre Microsoft Store pour entreprises à Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune).
+* [Niveaux d’autorisations utilisés pour l’installation d’applications](/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
+* [Comment ajouter une application à votre Store pour entreprises](/mem/intune/apps/store-apps-windows)
+* [Comment affecter des applications à des groupes d’employés](/mem/intune/apps/windows-store-for-business)
 
-> [!Tip] 
-> En savoir plus sur la [distribution d’applications hors connexion](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) quand vous utilisez des applications telles que l’Assistant de récupération avancé (ARC) et le concepteur de configuration Windows (WCD).
+pour associer votre Microsoft Store pour Entreprises, consultez [associer votre Microsoft Store pour Entreprises à Intune](/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune).
+
+> [!Tip]
+> en savoir plus sur la [distribution d’applications hors connexion](/microsoft-store/distribute-offline-apps) lors de l’utilisation d’applications telles que le compagnon de récupération avancé (ARC) et le concepteur de Configuration Windows (WCD).

@@ -1,6 +1,6 @@
 ---
-title: Package d’approvisionnement
-description: En savoir plus sur l’empaquetage d’applications, l’approvisionnement, le déploiement et le déploiement d’applications d’entreprise pour les appareils HoloLens.
+title: Package de provisionnement
+description: en savoir plus sur l’empaquetage d’applications, l’approvisionnement, le déploiement et le déploiement d’applications d’entreprise pour les appareils HoloLens.
 keywords: application, déploiement d’applications, déploiement d’applications d’entreprise, approvisionnement
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9c73b03e6a8dca6baf6c58fed091df96994c3780
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 5aa554f9e7fdc09c3112b628e0978ac3332bc57d
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308733"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635515"
 ---
-# <a name="provisioning-package"></a>Package d’approvisionnement
+# <a name="provisioning-package"></a>Package de provisionnement
 
-Les packages de configuration peuvent être utilisés pour préparer et configurer des appareils dans un environnement sans accès à la gestion des points de terminaison. Ils peuvent également être déployés sur un appareil, quelle que soit l’identité de l’utilisateur, l’état de l’inscription, pendant l’expérience OOBE (out of Box Experience) ou l' [application d’un package de configuration pendant l’installation](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
+Les packages de configuration peuvent être utilisés pour préparer et configurer des appareils dans un environnement sans accès à la gestion des points de terminaison. Ils peuvent également être déployés sur un appareil, quelle que soit l’identité de l’utilisateur, l’état de l’inscription, pendant l’expérience OOBE (out of Box Experience) ou l' [application d’un package de configuration pendant l’installation](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
 ## <a name="provisioning-packages-considerations"></a>Considérations sur les packages d’approvisionnement :
 
@@ -33,18 +33,18 @@ Les packages de configuration peuvent être utilisés pour préparer et configur
 
 Les applications installées à l’aide d’un package d’approvisionnement doivent être signées par un certificat dans le magasin de l’ordinateur local. Les packages d’approvisionnement peuvent uniquement installer des certificats sur le magasin de l’appareil (ordinateur local). par conséquent, une application et un certificat peuvent être installés par le biais du même package de configuration. Si vous déployez votre certificat à partir de MDM ou que vous installez via le [Gestionnaire de certificats](certificate-manager.md), veillez à déployer le certificat dans le magasin de l’ordinateur local pour signer les applications installées de cette manière.
 
-Pour découvrir les principes de base de la création d’un package d’approvisionnement pour les appareils HoloLens, consultez [approvisionnement de hololens](https://docs.microsoft.com/hololens/hololens-provisioning). Pour déployer une application, vous devez commencer par l’approvisionnement avancé.
+pour découvrir les principes de base de la création d’un Package d’approvisionnement pour HoloLens appareils, consultez [configuration HoloLens](/hololens/hololens-provisioning). Pour déployer une application, vous devez commencer par l’approvisionnement avancé.
 
 > [!NOTE]
-> HoloLens (1ère génération) a limité la prise en charge de l’installation d’applications (**UniversalAppInstall**) à l’aide d’un package d’approvisionnement. Les appareils HoloLens (1er génération) prennent uniquement en charge l’installation d’une application via PPKG uniquement au cours de l’installation OOBE et uniquement avec les installations de contexte utilisateur.
+> HoloLens (1re génération) a limité la prise en charge de l’installation d’applications (**UniversalAppInstall**) à l’aide d’un package d’approvisionnement. les appareils HoloLens (1er génération) prennent uniquement en charge l’installation d’une application via PPKG uniquement au cours de l’installation OOBE et uniquement avec les installations de contexte utilisateur.
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
-Dans le [Concepteur de configuration Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22) , suivez les quatre étapes ci-dessous.
+dans [Windows concepteur de Configuration](https://www.microsoft.com/store/productId/9NBLGGH4TX22) , effectuez les quatre étapes suivantes.
 
-1. Définissez ApplicationManagement/AllowAllTrustedApps sur « Oui ». Voir : [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
+1. Définissez ApplicationManagement/AllowAllTrustedApps sur « Oui ». Voir : [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 
-2. Accédez à **UniversalAppInstall**  >  **UserContextAppLicense** entrez le **PackageFamilyName**. Consultez [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall). Voir aussi : [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+2. Accédez à **UniversalAppInstall**  >  **UserContextAppLicense** entrez le **PackageFamilyName**. Consultez [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall). Voir aussi : [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
 
    Vous pouvez utiliser le portail des appareils sur un appareil sur lequel vous avez déjà installé votre application. Accédez à la page applications, puis examinez la ligne PackageRelativeID, toutes les informations avant le «  ! » Est votre **PackageFamilyName**.
 
@@ -57,4 +57,4 @@ Dans le [Concepteur de configuration Windows](https://www.microsoft.com/store/pr
 
 Veillez à enregistrer votre projet dans un emplacement sécurisé. Ensuite, **exportez** -le en tant que **package d’approvisionnement**.  
 
-Voir aussi : [appliquez votre package d’approvisionnement à HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
+Voir aussi : [appliquez votre package d’approvisionnement à HoloLens](/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).

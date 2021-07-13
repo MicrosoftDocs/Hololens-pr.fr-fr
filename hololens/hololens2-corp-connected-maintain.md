@@ -1,7 +1,7 @@
 ---
-title: Guide de déploiement – connexion d’entreprise HoloLens 2 avec Dynamics 365 guides-gérer
-description: Découvrez comment gérer des appareils HoloLens 2 sur un réseau connecté à l’entreprise avec des guides Dynamics 365.
-keywords: HoloLens, gestion, connecté à l’entreprise, Dynamics 365 guides, AAD, Azure AD, MDM, gestion des appareils mobiles
+title: Guide de déploiement – connexion à l’entreprise HoloLens 2 avec Dynamics 365 Guides-Maintain
+description: apprenez à gérer les appareils HoloLens 2 sur un réseau connecté à l’entreprise avec Dynamics 365 Guides.
+keywords: HoloLens, gestion, connecté à l’entreprise, Dynamics 365 Guides, AAD, Azure AD, MDM, gestion des appareils mobiles
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f231e65e17ab053e34e7174e1ed7ff6e7a0a56b8
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308800"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636994"
 ---
 # <a name="maintain---corporate-connected-guide"></a>Maintenance-Guide connecté à l’entreprise
 
@@ -29,11 +29,11 @@ Microsoft a conçu Windows Update for Business afin d’offrir aux administrateu
 
 Une méthode courante de gestion des mises à jour consiste à effectuer un report des fonctionnalités de 30 jours. Les administrateurs peuvent ainsi mettre à jour et prévisualiser de nouvelles fonctionnalités, obtenir de la première connaissance et informer votre support technique de toute nouvelle modification.
 
-Découvrez comment [gérer les mises à jour HoloLens](https://docs.microsoft.com/hololens/hololens-updates), y compris les jours planifiés, l’heure planifiée et la définition des heures actives sur l’appareil, afin qu’elles soient mises à jour en dehors des heures de travail.
+découvrez comment [gérer les mises à jour HoloLens](/hololens/hololens-updates), y compris les jours planifiés, l’heure planifiée et la définition des heures actives sur l’appareil, afin qu’elles soient mises à jour en dehors des heures de travail.
 
-## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>Comment mettre à jour les guides Dynamics 365 (et les autres applications du Windows Store)
+## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>comment mettre à jour Dynamics 365 Guides (et d’autres applications du windows store)
 
-Dynamics 365 guides est un In-Box application et peut être mis à jour via l’application Microsoft Store. Pour toutes les applications téléchargées par le biais du Microsoft Store, elles peuvent être [mises à jour manuellement via l’application Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) elle-même.
+Dynamics 365 Guides est une application In-Box et peut être mise à jour par le biais de l’application Microsoft Store. pour toutes les applications téléchargées par le biais du Microsoft Store, elles peuvent être [mises à jour manuellement via l’application Microsoft Store](/hololens/holographic-store-apps#update-apps) elle-même.
 
 ## <a name="how-to-update-lob-apps"></a>Comment mettre à jour des applications métier
 
@@ -44,38 +44,38 @@ Les applications métier peuvent être mises à jour de la même façon qu’ell
 3. Pour la valeur de &quot; Sélectionner le fichier à mettre à jour &quot; , sélectionnez votre fichier.
 4. À partir de là, utilisez le menu contextuel pour ouvrir votre Explorateur de fichiers et télécharger la version la plus récente de l’application métier. Veillez à inclure les dépendances en fonction des besoins.
 
-En savoir plus : [déploiement d’applications Intune pour HoloLens](https://docs.microsoft.com/hololens/app-deploy-intune)
+En savoir plus : [déploiement d’applications Intune pour HoloLens](/hololens/app-deploy-intune)
 
 ## <a name="development-plan"></a>Plan de développement
 
 Une fois votre appareil inscrit, vous êtes maintenant prêt à déployer d’autres applications métier sur vos appareils. Pour la durée de ce guide, nous utilisons un exemple d’application, mais il est plus probable que vous souhaitiez utiliser des applications personnalisées conçues pour les besoins de votre organisation.
 
-Si vous disposez déjà d’une application métier, vous êtes prêt à [déployer votre application via MDM](https://docs.microsoft.com/hololens/app-deploy-intune). Si vous préférez une autre méthode, consultez la [vue d’ensemble du déploiement d’applications pour HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) afin d’en savoir plus sur les méthodes de déploiement de votre application métier sur vos appareils.
+Si vous disposez déjà d’une application métier, vous êtes prêt à [déployer votre application via MDM](/hololens/app-deploy-intune). si vous préférez une autre méthode, consultez la [vue d’ensemble du déploiement d’application pour HoloLens 2](/hololens/app-deploy-overview) pour en savoir plus sur les méthodes de déploiement de votre application métier sur vos appareils.
 
-Si vous n’avez pas encore créé votre propre application métier ou que vous êtes en train de créer, passez en revue nos documents de développement de réalité mixte pour [commencer à concevoir et](https://docs.microsoft.com/windows/mixed-reality/design/design) à créer des prototypes ou à apprendre les concepts fondamentaux pour commencer [à utiliser le développement de la réalité mixte.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
+Si vous n’avez pas encore créé votre propre application métier ou que vous êtes en train de créer, passez en revue nos documents de développement de réalité mixte pour [commencer à concevoir et](/windows/mixed-reality/design/design) à créer des prototypes ou à apprendre les concepts fondamentaux pour commencer [à utiliser le développement de la réalité mixte.](/windows/mixed-reality/discover/get-started-with-mr)
 
 ## <a name="support-plan"></a>Plan de support
 
-Un plan de support est un excellent élément à mettre en place. Avoir une personne, ou un groupe, a formé la résolution des problèmes du processus d’inscription sur les appareils HoloLens et l’utilisation générale de l’appareil HoloLens au sein de votre organisation est utile. Pour permettre aux utilisateurs de résoudre plus rapidement leurs problèmes, nous vous suggérons de traiter votre processus d’escalade de la même manière :
+Un plan de support est un excellent élément à mettre en place. avoir une personne, ou un groupe, a formé la résolution des problèmes du processus d’inscription sur les appareils HoloLens et l’utilisation générale de l’appareil HoloLens au sein de votre organisation est utile. Pour permettre aux utilisateurs de résoudre plus rapidement leurs problèmes, nous vous suggérons de traiter votre processus d’escalade de la même manière :
 
 1. Votre support technique.
-2. Votre équipe d’experts HoloLens
-3. [Documents HoloLens](https://docs.microsoft.com/hololens/)  /  [Documentation sur la résolution des problèmes HoloLens](https://docs.microsoft.com/hololens/hololens-troubleshooting)
+2. votre équipe d’experts HoloLens
+3. [documentation HoloLens](/hololens/)  /  [documentation sur la résolution des problèmes HoloLens](/hololens/hololens-troubleshooting)
 4. [Contacter le support](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 ## <a name="device-management"></a>Gestion des appareils
 
 Ce guide a abordé la configuration de la gestion des appareils mobiles (MDM) et l’a utilisé pour configurer des configurations d’appareils et appliquer des paramètres pour autoriser l’accès en termes de Wi-Fi certificats et proxy. Toutefois, la gestion des appareils mobiles peut également être utilisée pour appliquer des restrictions d’appareil via des fournisseurs de services de chiffrement et des stratégies.
 
-Dans de nombreux cas, les appareils peuvent avoir des restrictions de connectivité, telles que Bluetooth, VPN, USB ou même désactiver l’accès à l’appareil photo ou au microphone. Si l’un de ces avantages vous intéresse, nous vous invitons à lire notre [page des restrictions](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)de l’appareil.
+dans de nombreux cas, les appareils peuvent avoir des restrictions de connectivité, telles que Bluetooth, VPN, USB ou même désactiver l’accès à l’appareil photo ou au microphone. Si l’un de ces avantages vous intéresse, nous vous invitons à lire notre [page des restrictions](/hololens/hololens-common-device-restrictions)de l’appareil.
 
 Il existe d’autres restrictions d’appareil plus complexes que vous pouvez utiliser. Par exemple :
 
-- Limitation des pages qui peuvent être affichées dans l’application paramètres à l’aide de [SettingsPageVisibility](https://docs.microsoft.com/hololens/settings-uri-list), ce qui permet aux utilisateurs d’accéder uniquement aux paramètres qu’ils doivent ajuster, tels que la modification de leur connexion Wi-Fi.
-- Utilisez le [mode plein écran](https://docs.microsoft.com/hololens/hololens-kiosk) pour limiter l’interface utilisateur présentée aux utilisateurs sur un appareil. Vous pouvez définir des bornes pour afficher une seule application ou plusieurs applications avec une page de démarrage personnalisée. Les kiosques peuvent également présenter différentes expériences à différents utilisateurs.
-- [Contrôle d’application Windows (WDac)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) pour empêcher l’exécution complète d’applications ou de processus spécifiques.
+- limitation des pages qui peuvent être affichées dans l’application Paramètres à l’aide de [SettingsPageVisibility](/hololens/settings-uri-list), ce qui permet aux utilisateurs d’accéder uniquement aux paramètres qu’ils doivent ajuster, tels que la modification de leur connexion Wi-Fi.
+- Utilisez le [mode plein écran](/hololens/hololens-kiosk) pour limiter l’interface utilisateur présentée aux utilisateurs sur un appareil. Vous pouvez définir des bornes pour afficher une seule application ou plusieurs applications avec une page de démarrage personnalisée. Les kiosques peuvent également présenter différentes expériences à différents utilisateurs.
+- [le contrôle d’Application Windows (WDAC)](/hololens/windows-defender-application-control-wdac) pour empêcher l’exécution complète d’applications ou de processus spécifiques.
 
-Si vous souhaitez en savoir plus sur les autres méthodes de gestion des appareils ou sur les restrictions de l’appareil, effectuez l’étape suivante et lisez notre [vue d’ensemble](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)de la gestion des appareils.
+Si vous souhaitez en savoir plus sur les autres méthodes de gestion des appareils ou sur les restrictions de l’appareil, effectuez l’étape suivante et lisez notre [vue d’ensemble](/hololens/hololens-csp-policy-overview)de la gestion des appareils.
 
 
 
