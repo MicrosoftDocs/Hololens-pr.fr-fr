@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 97f3bbdfec85e64d2895dfb5482ee9dc692c5e4c
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637271"
+  ms.locfileid: "113639690"
 title: Questions fréquentes (FAQ) sur HoloLens 2 Development Edition
 summary: ''
 sections:
@@ -93,15 +93,15 @@ sections:
   - question: >
       où puis-je en savoir plus sur l’édition HoloLens 2 Development ?
     answer: >
-      visitez la page de documentation de HoloLens 2 Development Edition. [En savoir plus](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      visitez la page de documentation de HoloLens 2 Development Edition. [En savoir plus](hololens2-options.md?tabs=device)
   - question: >
       Où puis-je en savoir plus sur le développement de solutions de réalité mixte ?
     answer: >
-      Consultez la documentation Introduction à la mise en place de la réalité mixte. [En savoir plus](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+      Consultez la documentation Introduction à la mise en place de la réalité mixte. [En savoir plus](/windows/mixed-reality/develop/development?tabs=unity)
   - question: >
       Où puis-je en savoir plus sur la conception de solutions de réalité mixte ?
     answer: >
-      Consultez la documentation Introduction à la conception de la réalité mixte. [En savoir plus](https://docs.microsoft.com/windows/mixed-reality/design/design)
+      Consultez la documentation Introduction à la conception de la réalité mixte. [En savoir plus](/windows/mixed-reality/design/design)
   - question: >
       où puis-je obtenir un support technique pour HoloLens édition developer ?
     answer: >
@@ -130,7 +130,7 @@ sections:
       4. Entrez le code du produit, puis sélectionnez &#39;échanger un code produit&#39;
 
 
-      visitez la documentation de HoloLens 2 Development Edition pour [en savoir plus](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      visitez la documentation de HoloLens 2 Development Edition pour [en savoir plus](hololens2-options.md?tabs=device)
   - question: >
       Puis-je créer des applications avec des versions d’Unity autres que la licence PRO ?
     answer: >
@@ -163,7 +163,7 @@ sections:
       4. Entrez le code du produit, puis cliquez sur &#39;échanger un code produit&#39;
 
 
-      visitez la documentation de HoloLens 2 Development Edition pour [en savoir plus](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      visitez la documentation de HoloLens 2 Development Edition pour [en savoir plus](hololens2-options.md?tabs=device)
   - question: >
       Comment faire contacter le support Pixyz ?
     answer: >
@@ -190,4 +190,4 @@ sections:
       Avec vos crédits Azure, vous pouvez commencer à créer avec un ensemble de services Cloud Microsoft&#39;. les crédits Azure inclus avec l’édition HoloLens 2 Development sont de permettre aux clients de commencer rapidement à créer et à tester des applications de réalité mixte sur Azure. Pour obtenir des informations détaillées sur la création sur Azure, visitez les [ressources Azure](https://azure.microsoft.com/en-us/resources/)
   - question: >
       Où puis-je en savoir plus sur les services Azure Mixed Reality ?
-    answer: Microsoft propose un ensemble de services de réalité mixte pour permettre aux développeurs de créer et de tester des solutions de réalité mixte. [En savoir plus](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+    answer: Microsoft propose un ensemble de services de réalité mixte pour permettre aux développeurs de créer et de tester des solutions de réalité mixte. [En savoir plus](/windows/mixed-reality/develop/mixed-reality-cloud-services)
