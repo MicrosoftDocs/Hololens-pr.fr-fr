@@ -2,7 +2,7 @@
 title: HoloLens 2 Industrial Edition
 description: Découvrez HoloLens 2 Industrial Edition et la procédure à suivre après l'avoir acquis.
 keywords: Options d'achat de l'HoloLens 2, options de l'HoloLens, Industrial Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df18c64487645ebe5381d853de7e32780c4fccad
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398832"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639571"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -40,11 +40,11 @@ Consultez les [Questions fréquentes (FAQ) sur HoloLens 2 Industrial Edition](
 
 ## <a name="cleaning-and-handling-hololens-2"></a>Nettoyage et manipulation de l'HoloLens 2
 
-Vous pouvez nettoyer les surfaces dures de l'appareil HoloLens 2 Industrial Edition, y compris la visière, la protection pour le front et le serre-tête, à l'aide d'alcool isopropylique à 70 %. Pour plus d'informations, consultez les [Questions fréquentes (FAQ) sur le nettoyage de l'HoloLens 2](https://docs.microsoft.com/hololens/hololens2-maintenance).
+Vous pouvez nettoyer les surfaces dures de l'appareil HoloLens 2 Industrial Edition, y compris la visière, la protection pour le front et le serre-tête, à l'aide d'alcool isopropylique à 70 %. Pour plus d'informations, consultez les [Questions fréquentes (FAQ) sur le nettoyage de l'HoloLens 2](/hololens/hololens2-maintenance).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. Commencez sans plus attendre à interagir avec Mixed Reality et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
+1. Commencez sans plus attendre à interagir avec la réalité mixte et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
 1. Cliquez sur les liens ci-dessous pour en savoir plus sur l'HoloLens 2.
 
 > [!div class="nextstepaction"]

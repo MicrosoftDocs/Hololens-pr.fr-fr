@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397490"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635838"
 ---
 # <a name="connect-to-cellular-and-5g"></a>Se connecter à un réseau cellulaire et à la 5G
 
@@ -44,7 +44,7 @@ Le partage de connexion USB-C peut fournir une latence plus faible pour les char
 
 Un nombre limité d'appareils qui se présentent en tant qu'adaptateurs Ethernet peuvent être utilisés avec Windows Holographic 2004 et versions ultérieures.
 
-Les appareils qui ne se présentent pas en tant qu'adaptateurs Ethernet doivent prendre en charge le pilote Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) générique. Toutefois, seul un nombre limité de ces appareils est compatible avec HoloLens 2. Veuillez contacter le fabricant de votre appareil pour savoir s'il prend en charge le pilote Microsoft RNDIS générique.
+Les appareils qui ne se présentent pas en tant qu'adaptateurs Ethernet doivent prendre en charge le pilote Microsoft [RNDIS](/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) générique. Toutefois, seul un nombre limité de ces appareils est compatible avec HoloLens 2. Veuillez contacter le fabricant de votre appareil pour savoir s'il prend en charge le pilote Microsoft RNDIS générique.
 
 Les appareils qui ne sont pas compatibles avec RNDIS ou qui nécessitent l'installation d'un pilote ou d'une application ne sont pas pris en charge.
 

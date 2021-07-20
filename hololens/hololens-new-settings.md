@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: bf1a2080c15346843b9ea9b2d0dc93154e185107
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398853"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640166"
 ---
 # <a name="new-settings-app"></a>Nouvelle application Paramètres
 
@@ -47,7 +47,7 @@ Une nouvelle version de l'application Paramètres est introduite avec [Windows H
 
 **Problèmes connus**
 - Les fenêtres Paramètres précédemment placées seront supprimées (voir la note ci-dessus).
-- Vous ne pouvez plus renommer votre appareil avec l'application Paramètres. Les administrateurs informatiques peuvent renommer les appareils à l'aide du modèle de nom d'appareil [Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) ou du nœud GPM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
+- Vous ne pouvez plus renommer votre appareil avec l'application Paramètres. Les administrateurs informatiques peuvent renommer les appareils à l'aide du modèle de nom d'appareil [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) ou du nœud GPM [DevDetail CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
 - La page Ethernet affiche en permanence un périphérique Ethernet virtuel (« UsbNcm »).
 - L'utilisation de la batterie pour le nouveau navigateur Microsoft Edge peut ne pas être précise, en raison de sa nature d'application de bureau Win32 prise en charge par une couche d'adaptation UWP (aucun correctif prévu dans l'immédiat).
 

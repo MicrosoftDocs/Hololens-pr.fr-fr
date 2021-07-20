@@ -2,7 +2,7 @@
 title: HoloLens 2 Development Edition
 description: Découvrez HoloLens 2 Development Edition et la procédure à suivre après l'avoir acquis.
 keywords: Options d'achat de l'HoloLens 2, options de l'HoloLens, Developer Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924466"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639673"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -61,7 +61,7 @@ Pour plus d'informations, consultez [Utiliser votre licence Pixyz](https://www.p
 
 ### <a name="azure"></a>Azure
 Voici quelques [produits Azure pour Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) pour lesquels vous souhaiterez peut-être utiliser votre crédit Azure.
-Procédure à suivre pour utiliser vos crédits Azure : pour profiter de vos 500 dollars (USD) de crédits Azure, utilisez votre code promo Pass Azure, puis activez votre abonnement. [En savoir plus.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+Procédure à suivre pour utiliser vos crédits Azure : pour profiter de vos 500 dollars (USD) de crédits Azure, utilisez votre code promo Pass Azure, puis activez votre abonnement. [En savoir plus.](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [Découvrez comment Azure Spatial Anchors peut vous aider à créer des applications qui mappent, partagent et conservent du contenu 3D](https://azure.microsoft.com/services/spatial-anchors/)
 - [Découvrez comment Azure Remote Rendering peut afficher du contenu 3D interactif de haute qualité, puis le diffuser sur vos appareils en temps réel](https://azure.microsoft.com/services/remote-rendering/)
@@ -72,24 +72,24 @@ Choisissez votre moteur, téléchargez vos outils et dépoussiérez votre clavie
 
 |     Point de contrôle                              |     Résultat                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Commencer à concevoir et à créer des prototypes](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Entamez la conception d'applications Mixed Reality en découvrant des concepts de base, des modèles d'interaction et des éléments de l'interface utilisateur.     |
-|     [Commencer à développer pour Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Choisissez votre moteur, téléchargez vos outils, ajoutez des blocs de construction de base et commencez à créer dès aujourd'hui.                                  |
-|     [Explorez Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Créez des expériences immersives convaincantes avec Azure Remote Rendering et Azure Spatial Anchors.                                 |
+|     [Commencer à concevoir et à créer des prototypes](/windows/mixed-reality/design/design)         |     Entamez la conception d'applications Mixed Reality en découvrant des concepts de base, des modèles d'interaction et des éléments de l'interface utilisateur.     |
+|     [Commencer à développer pour Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Choisissez votre moteur, téléchargez vos outils, ajoutez des blocs de construction de base et commencez à créer dès aujourd'hui.                                  |
+|     [Explorez Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Créez des expériences immersives convaincantes avec Azure Remote Rendering et Azure Spatial Anchors.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Ressources supplémentaires de l'édition Developer Edition
 
-- [Questions fréquentes (FAQ) sur HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
-- [Veillez à installer les outils de développement HoloLens.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [Apprenez à développer pour HoloLens 2 avec Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-- [Apprenez à combiner MRTK avec Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [Questions fréquentes (FAQ) sur HoloLens 2 Development Edition](hololens2-development-edition-faq.yml)
+- [Veillez à installer les outils de développement HoloLens.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Apprenez à développer pour HoloLens 2 avec Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Apprenez à combiner MRTK avec Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started).
 - [Apprenez à déployer les applications que vous avez créées](app-deploy-overview.md).
-- [Explorez toutes les possibilités de Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
-- [Apprenez à développer pour HoloLens 2 avec Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Explorez toutes les possibilités de Mixed Reality](/windows/mixed-reality/).
+- [Apprenez à développer pour HoloLens 2 avec Unreal.](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Communiquez avec vos collègues développeurs sur notre canal Slack HoloDevelopers](https://holodevelopersslack.azurewebsites.net/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. Commencez sans plus attendre à interagir avec Mixed Reality et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
+1. Commencez sans plus attendre à interagir avec la réalité mixte et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
 1. Cliquez sur les liens ci-dessous pour en savoir plus sur l'HoloLens 2.
 
 > [!div class="nextstepaction"]

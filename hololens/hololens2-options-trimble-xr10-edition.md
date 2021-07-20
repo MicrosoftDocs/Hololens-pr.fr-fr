@@ -2,7 +2,7 @@
 title: Trimble XR10 avec HoloLens 2
 description: Découvrez le Trimble XR10 avec HoloLens 2 et la procédure à suivre après l'avoir acheté.
 keywords: Options d'achat de l'HoloLens 2, options de l'HoloLens, Trimble XR10
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b52b675faa81a9d713f035fec8a533093a7a8580
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: cd3b122de155efeb59acb86bfc56264c3da4bd44
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398847"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639452"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>Trimble XR10 avec HoloLens 2
 
@@ -35,7 +35,7 @@ Découvrez-en plus sur le [Trimble XR10](https://fieldtech.trimble.com/en/produc
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. Commencez sans plus attendre à interagir avec Mixed Reality et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
+1. Commencez sans plus attendre à interagir avec la réalité mixte et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
 1. Cliquez sur les liens ci-dessous pour en savoir plus sur l'HoloLens 2.
 
 > [!div class="nextstepaction"]

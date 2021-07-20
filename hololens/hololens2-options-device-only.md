@@ -2,7 +2,7 @@
 title: HoloLens 2 Device-only
 description: Découvrez HoloLens 2 Device-only et la procédure à suivre après l'avoir acquis.
 keywords: Options d'achat de l'HoloLens 2, options de l'HoloLens, Developer Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c4dd6e751c5f178b31bf86c0c8a98c52a1e781a3
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: bbb99b37ab20d6ac8c593045265de29c0481a0d5
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398833"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639605"
 ---
 # <a name="hololens-2-device-only-edition"></a>HoloLens 2 Device-only Edition
 
@@ -32,11 +32,11 @@ Dans un environnement commercial, vos appareils HoloLens 2 peuvent constituer d
 
 ## <a name="heres-what-to-do-next-with-the-hololens-2"></a>Prochaine action à effectuer avec l'HoloLens 2
 
-1. Regardez cette vidéo sur [l'utilisation et l'entretien de l'HoloLens 2](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
-1. [Préparez votre appareil](https://docs.microsoft.com/hololens/hololens2-setup), puis [configurez-le](https://docs.microsoft.com/hololens/hololens2-start).
-1. [Familiarisez-vous avec l'HoloLens 2](https://docs.microsoft.com/hololens/holographic-home).
-1. Une fois que vous êtes à l'aise, [prenez des photos ou des vidéos en réalité mixte](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
-1. Parcourez toutes les [applications disponibles pour l'HoloLens 2 dans la boutique d'applications Microsoft](https://docs.microsoft.com/hololens/holographic-store-apps).
+1. Regardez cette vidéo sur [l'utilisation et l'entretien de l'HoloLens 2](/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
+1. [Préparez votre appareil](/hololens/hololens2-setup), puis [configurez-le](/hololens/hololens2-start).
+1. [Familiarisez-vous avec l'HoloLens 2](/hololens/holographic-home).
+1. Une fois que vous êtes à l'aise, [prenez des photos ou des vidéos en réalité mixte](/hololens/holographic-photos-and-videos).
+1. Parcourez toutes les [applications disponibles pour l'HoloLens 2 dans la boutique d'applications Microsoft](/hololens/holographic-store-apps).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

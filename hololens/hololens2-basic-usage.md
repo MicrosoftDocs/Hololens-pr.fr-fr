@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: d2804742fdcf9d6562fce0c693552d4a9241398f
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924585"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635209"
 ---
 # <a name="getting-around-hololens-2"></a>Explorer HoloLens 2
 
@@ -111,7 +111,7 @@ Pour **fermer** le menu Démarrer, effectuez le mouvement associé au menu Déma
 > Pour que le mouvement associé au menu Démarrer fonctionne :
 >
 > 1. Vous devez installer la mise à jour de novembre 2019 (Build 18363.1039) ou ultérieure.
-> 1. Vos yeux doivent être étalonnés sur l’appareil pour permettre le bon fonctionnement du suivi visuel. Si vous ne voyez pas les points en orbite autour de l’icône Démarrer lorsque le regardez, cela signifie que vos yeux ne sont pas [étalonnés](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2) sur l’appareil.
+> 1. Vos yeux doivent être étalonnés sur l’appareil pour permettre le bon fonctionnement du suivi visuel. Si vous ne voyez pas les points en orbite autour de l’icône Démarrer lorsque le regardez, cela signifie que vos yeux ne sont pas [étalonnés](/hololens/hololens-calibration#calibrating-your-hololens-2) sur l’appareil.
 
 Vous pouvez également effectuer le mouvement associé au menu Démarrer d’une seule main. Pour cela, tendez votre main avec la paume vers vous et regardez l’**icône Démarrer** sur l’intérieur de votre poignet. **Sans quitter l’icône des yeux**, resserrez le pouce et l’index.
 

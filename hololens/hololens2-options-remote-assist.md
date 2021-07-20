@@ -2,7 +2,7 @@
 title: HoloLens 2 avec Remote Assist
 description: Découvrez HoloLens 2 avec Remote Assist et la procédure à suivre après l'avoir acquis.
 keywords: Options d'achat de l'HoloLens 2, options de l'HoloLens, Remote Assist
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b10bdb55a5d9cb3c059cb85c29a0ed4f4cf7c7d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398829"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639469"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 avec Remote Assist
 
@@ -37,14 +37,14 @@ Nous avons créé un guide spécifique pour vous aider à déployer des appareil
 
 | Point de contrôle  | Résultat                                |
 |-------------|----------------------------------------|
-| [Prise en main](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Commencez à utiliser Remote Assist.        |
-| [License](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Obtenez une licence pour Remote Assist.      |
-| [Connexion](https://docs.microsoft.com/hololens/hololens-network)     | Connectez vos appareils au Wi-Fi.       |
-| [Inscrire](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Inscrivez vos appareils auprès de votre organisation. |
+| [Prise en main](/dynamics365/mixed-reality/remote-assist/overview-hololens) | Commencez à utiliser Remote Assist.        |
+| [License](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Obtenez une licence pour Remote Assist.      |
+| [Connexion](/hololens/hololens-network)     | Connectez vos appareils au Wi-Fi.       |
+| [Inscrire](/hololens/hololens-enroll-mdm)      | Inscrivez vos appareils auprès de votre organisation. |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. Commencez sans plus attendre à interagir avec Mixed Reality et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
+1. Commencez sans plus attendre à interagir avec la réalité mixte et à naviguer dans Windows 10 sur votre HoloLens : consultez l'application **Astuces** pour accéder à des tutoriels pratiques sur les interactions avec la main. Utilisez le mouvement associé au menu Démarrer ou dites « Menu Démarrer », puis sélectionnez Astuces.
 1. Cliquez sur les liens ci-dessous pour en savoir plus sur l'HoloLens 2.
 
 > [!div class="nextstepaction"]
