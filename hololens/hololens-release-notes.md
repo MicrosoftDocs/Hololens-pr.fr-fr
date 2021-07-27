@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1de9687174bf9c1de2e2b15ee03aa841254b0b82
-ms.sourcegitcommit: 2988afb1d7792c9e4bae15485cd52d6eff7e27c8
+ms.openlocfilehash: b7ce9f94fb6d3074f8b7f517af6bd70c78462ddc
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113685046"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659537"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -38,7 +38,6 @@ pour vous assurer que vous disposez d’une expérience productive avec vos appa
 Améliorations et correctifs de la mise à jour :
 
 - Le portail des appareils offre des méthodes améliorées pour avertir le client lorsque l’Explorateur de fichiers rencontre des problèmes lors de l’ouverture de fichiers verrouillés.
-- lors de l’utilisation de la HoloLens 2 Emulator sur un PC avec des cartes graphiques intégrées et discrètes, l’émulateur peut, dans la plupart des cas, être en mesure d’activer l’accélération graphique matérielle, bien qu’il puisse utiliser l’adaptateur intégré moins puissant.  Auparavant, l’accélération matérielle n’a pas pu être activée, ce qui signalait souvent une défaillance graphique avec le code 43.  Dans certains cas, l’émulateur ne démarre pas correctement, mais ce n’est pas le cas.
 - Le chargement, le téléchargement, le changement de nom et la suppression de fichiers sont désormais résolus lors de l’utilisation de https dans tous les navigateurs pris en charge.
 - correction du problème où le proxy Wi-Fi ne peut pas être enregistré lorsque Wi-Fi interface utilisateur des propriétés est lancée à partir des propriétés Paramètres de & d’état > Internet > de **> réseau**.
 - Nous avons résolu un problème lors de la suppression des certificats eSIM sur les mises à jour du système d’exploitation. Ce correctif garantit que les certificats eSIM et les composants associés sont supprimés lors de la mise à jour vers la version 21H1.
@@ -49,8 +48,8 @@ Améliorations et correctifs de la mise à jour :
 - Build 19041,1157
 
 Améliorations et correctifs de la mise à jour :
+
 - Le portail des appareils offre des méthodes améliorées pour avertir le client lorsque l’Explorateur de fichiers rencontre des problèmes lors de l’ouverture de fichiers verrouillés. 
-- lors de l’utilisation de la HoloLens 2 Emulator sur un PC avec des cartes graphiques intégrées et discrètes, l’émulateur peut, dans la plupart des cas, être en mesure d’activer l’accélération graphique matérielle, bien qu’il puisse utiliser l’adaptateur intégré moins puissant.  Auparavant, l’accélération matérielle n’a pas pu être activée, ce qui signalait souvent une défaillance graphique avec le code 43.  Dans certains cas, l’émulateur ne démarre pas correctement, mais maintenant.
 - Le chargement, le téléchargement, le changement de nom et la suppression de fichiers sont désormais résolus lors de l’utilisation de https dans tous les navigateurs pris en charge.
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holographique, version 21H1-mise à jour de juin 2021
@@ -1329,7 +1328,7 @@ Ces applications « intégrées » prennent en charge le mode sombre :
 
 - Paramètres 
 - Microsoft Store 
-- Messagerie 
+- Mail 
 - Calendrier 
 - Explorateur de fichiers 
 - Hub de commentaires 
@@ -1385,7 +1384,7 @@ de nombreuses applications Windows prennent en charge les modes dark et light. H
 Ces applications « intégrées » prennent en charge le mode sombre :
 - Paramètres
 - Microsoft Store
-- Messagerie
+- Mail
 - Calendrier
 - Explorateur de fichiers
 - Hub de commentaires

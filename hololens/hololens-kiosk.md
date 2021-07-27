@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9d9e521f3e337b3a48a60c19e52bfeb3186507af
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640353"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659588"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurer HoloLens en tant que kiosque
 
@@ -72,7 +72,7 @@ Le tableau suivant répertorie les fonctionnalités des fonctionnalités dans le
 | &nbsp; |Menu Démarrer |Menu actions rapides |Caméra et vidéo |Miracast |Cortana |Commandes vocales intégrées |
 | --- | --- | --- | --- | --- | --- | --- | 
 |Borne pour une seule application |Désactivé |Désactivé |Désactivé |Désactivé   |Désactivé |Activé<sup>1</sup> |
-|Kiosque multi-application |Permis |Activé<sup>2</sup> |Disponible<sup>2</sup> |Disponible<sup>2</sup> |<sup>2, 3</sup> disponibles  |Activé<sup>1</sup> |
+|Kiosque multi-application |activé |Activé<sup>2</sup> |Disponible<sup>2</sup> |Disponible<sup>2</sup> |<sup>2, 3</sup> disponibles  |Activé<sup>1</sup> |
 
 > <sup>1</sup> les commandes vocales relatives aux fonctionnalités désactivées ne fonctionnent pas.  
 > <sup>2</sup> pour plus d’informations sur la configuration de ces fonctionnalités, consultez [Sélectionner des applications Kiosk](#plan-kiosk-apps).  
@@ -82,7 +82,7 @@ Le tableau suivant répertorie les fonctionnalités de prise en charge des utili
 
 | &nbsp; |Types d’utilisateurs pris en charge | Connexion automatique | Plusieurs niveaux d’accès |
 | --- | --- | --- | --- |
-|Borne pour une seule application |compte de Service administré (MSA) dans Azure Active Directory (Azure AD) ou compte local |Oui |Non |
+|Borne pour une seule application | compte Microsoft (MSA) dans Azure Active Directory (Azure AD) ou compte local |Oui |Non |
 |Kiosque multi-application |Compte Azure AD |Non |Oui |
 
 Pour obtenir des exemples d’utilisation de ces fonctionnalités, consultez le tableau suivant.
@@ -119,7 +119,7 @@ Si vous utilisez un système de gestion des appareils mobiles (MDM) ou un packag
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Hub de commentaires &nbsp; |Application 8wekyb3d8bbwe Microsoft. WindowsFeedbackHub \_ \! |
 |Explorateur de fichiers |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Messagerie |microsoft.windowscommunicationsapps_8wekyb3d8bbwe ! Microsoft. les. mail |
+|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe ! Microsoft. les. mail |
 |Ancien Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
 |Nouvelle Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe ! MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
@@ -472,7 +472,7 @@ pour configurer le mode plein écran à l’aide de l’Windows le portail de l�
 > [!NOTE]
 > Le mode plein écran peut être défini via l’API REST du portail de l’appareil en procédant à une publication sur/API/Holographic/KioskMode/Settings avec un paramètre de chaîne de requête obligatoire (« kioskModeEnabled » avec la valeur « true » ou « false ») et un paramètre facultatif (« startupApp » avec une valeur de nom de package). N’oubliez pas que le portail des appareils est destiné uniquement aux développeurs et qu’il ne doit pas être activé sur des appareils non-développeur. L’API REST est susceptible de changer dans les futures mises à jour/versions.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations complémentaires
 
 ### <a name="watch-how-to-configure-a-kiosk-by-using-a-provisioning-package"></a>Regardez comment configurer une borne à l’aide d’un package d’approvisionnement.  
 

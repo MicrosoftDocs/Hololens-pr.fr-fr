@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4d959d99b65085aea2a776725abdb36e27b43b81
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1081ed512183592e66e65f2e69323752b822f1c1
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640387"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659180"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gérer les identités et les connexions des utilisateurs pour HoloLens
 
@@ -45,7 +45,7 @@ Les comptes connectés au Cloud (Azure AD et MSA) offrent davantage de fonctionn
 > 1-Azure AD Premium n’est pas nécessaire pour la connexion à l’appareil. Toutefois, elle est requise pour d’autres fonctionnalités d’un déploiement Cloud faiblement tactile, comme l’inscription automatique et Autopilot.
 
 > [!NOTE]
-> 2-si un appareil HoloLens 2 peut prendre en charge jusqu’à 64 comptes Azure AD, seuls 10 de ces comptes peuvent s’inscrire à l’authentification Iris. cela est aligné avec d’autres [options d’authentification biométrique pour Windows Hello pour l’entreprise](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
+> 2-même si un appareil HoloLens 2 peut prendre en charge jusqu’à 64 comptes Azure AD, seuls 31 de ces comptes peuvent s’inscrire à l’authentification Iris. cela est aligné avec d’autres [options d’authentification biométrique pour Windows Hello pour l’entreprise](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
 ## <a name="setting-up-users"></a>Configuration des utilisateurs
 

@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635668"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659112"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>contribution à la documentation HoloLens
 
@@ -53,11 +53,16 @@ utilisez le flux de travail suivant pour mettre à jour *un article existant* vi
 
 1. Accédez à l’article que vous souhaitez modifier dans le dossier « Mixed-Real-docs ».
 
-2. Sélectionnez le bouton modifier (icône en forme de crayon) dans le coin supérieur droit, qui dupliquera automatiquement une branche jetable en dehors de la branche « master ».
+2. Cliquez sur le bouton modifier (icône crayon) dans le coin supérieur droit.
 
    ![Modifier un article.](images/editpage.png)
+
+   Cela permet de dupliquer automatiquement une branche jetable en dehors de la branche par défaut, _Master_.
+
+   > [!NOTE]
+   > Cet article contient des références à _Master_, un terme que Microsoft n’utilise plus. Lorsque le terme sera supprimé du logiciel, nous le supprimerons de cet article.
    
-3. Modifiez le contenu de l’article en fonction des [« principes de base »](#markdown-basics).
+3. Modifiez le contenu de l’article conformément aux principes de base de la [démarque](#markdown-basics).
 
 4. Mettez à jour les métadonnées en haut de chaque article :
 
@@ -70,7 +75,7 @@ utilisez le flux de travail suivant pour mettre à jour *un article existant* vi
    
 5. Lorsque vous avez terminé les modifications de votre article, faites défiler la liste vers le dessous et sélectionnez **proposer une modification de fichier**.
 
-6. Sur la page suivante, sélectionnez **créer une demande de tirage (pull Request** ) pour fusionner votre branche créée automatiquement dans « Master ».
+6. Sur la page suivante, sélectionnez **créer une demande de tirage (pull Request** ) pour fusionner votre branche créée automatiquement dans la branche par défaut, _maître_.
 
 7. Répétez les étapes ci-dessus pour le prochain article que vous souhaitez modifier.
 
@@ -94,7 +99,7 @@ Pour ajouter une redirection à .openpublishing.redirection.jssur, ajoutez une e
 
 - `redirect_url`Est l’URL publique relative de l’ancien article vers le nouvel article. Assurez-vous que cette URL **ne** contient `mixed-reality-docs` `.md` pas ou, car elle fait référence à l’URL publique et non au chemin d’accès au référentiel. La liaison à une section dans le nouvel article à l’aide de `#section` est autorisée. Vous pouvez également utiliser un chemin d’accès absolu à un autre site, si nécessaire.
 
-- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. La valeur par défaut est `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui couvre uniquement une partie du même contenu.
+- `redirect_document_id` indique si vous souhaitez conserver l’ID du document dans le fichier précédent. Par défaut, il s’agit de `false`. Utilisez `true` si vous souhaitez conserver la `ms.documentid` valeur d’attribut de l’article Redirigé. Si vous conservez l’ID de document, les données, telles que les affichages de page et les classements, seront transférées vers l’article cible. Procédez ainsi si la redirection est principalement un changement de nom, et non un pointeur vers un autre article qui ne couvre qu’une partie du même contenu.
 
 Si vous ajoutez une redirection, veillez à supprimer également l’ancien fichier.
 
@@ -102,9 +107,12 @@ Si vous ajoutez une redirection, veillez à supprimer également l’ancien fich
 
 utilisez le flux de travail suivant pour *créer de nouveaux articles* dans la documentation référentiel via GitHub dans un navigateur web :
 
-1. Créez une fourche à partir de la branche « master » MicrosoftDocs/de la réalité mixte (à l’aide du bouton de **branchement** dans le coin supérieur droit).
+1. Créez un embranchement de la branche par défaut, _Master_, de MicrosoftDocs/Mixed-realing en utilisant **le bouton de branchement dans** le coin supérieur droit.
 
-   ![Dupliquez la branche principale.](images/forkbranch.png)
+   ![Dupliquer la branche par défaut, actuellement nommée « Master ».](images/forkbranch.png)
+
+   > [!NOTE]
+   > Cet article contient des références à _Master_, un terme que Microsoft n’utilise plus. Lorsque le terme sera supprimé du logiciel, nous le supprimerons de cet article.
    
 2. Dans le dossier « Mixed-Real-docs », sélectionnez **créer un fichier** dans le coin supérieur droit.
 
@@ -129,15 +137,15 @@ utilisez le flux de travail suivant pour *créer de nouveaux articles* dans la d
    ---
    ```
 
-5. Renseignez les champs de métadonnées pertinents conformément aux instructions de la [section ci-dessus](#editing-an-existing-article).
+5. Renseignez les champs de métadonnées pertinents comme décrit précédemment dans la rubrique [modification d’un article existant](#editing-an-existing-article).
 
-6. Écrivez le contenu de l’article à l’aide des [principes fondamentaux](#markdown-basics).
+6. Écrivez le contenu de l’article à l’aide des [principes de base](#markdown-basics).
 
 7. Ajoutez une `## See also` section au bas de l’article avec des liens vers d’autres articles pertinents.
 
 8. Lorsque vous avez terminé, sélectionnez **valider le nouveau fichier**.
 
-9. Sélectionnez **nouvelle demande de tirage (pull Request** ) et fusionnez la branche principale de votre branche dans MicrosoftDocs/Mixed-Reality’Master' (Assurez-vous que la flèche pointe vers la bonne voie).
+9. Sélectionnez **nouvelle demande de tirage (pull Request** ) et fusionnez la branche _principale_ de votre fourche dans le _maître_ MicrosoftDocs/de la réalité mixte (Assurez-vous que la flèche pointe vers la destination correcte).
 
    ![Créer une requête de tirage (pull request) à partir de votre fourche dans MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
@@ -150,7 +158,7 @@ Les ressources suivantes vous permettront d’apprendre à modifier la documenta
 
 ### <a name="adding-tables"></a>Ajout de tables
 
-En raison de la façon dont les tableaux de styles docs.microsoft.com, ils n’ont pas de bordures ou de styles personnalisés, même si vous essayez le style CSS en ligne. Il semblera fonctionner pendant une période de temps limitée, mais la plateforme finira par supprimer le style de la table. Vous devez donc anticiper et garder vos tables simples. [Voici un site qui simplifie les tableaux de démarques](https://www.tablesgenerator.com/markdown_tables).
+En raison de la façon dont les tableaux de styles docs.microsoft.com, ils n’ont pas de bordures ou de styles personnalisés, même si vous essayez le style CSS en ligne. Il semblera fonctionner pendant une période de temps limitée, mais la plateforme finira par supprimer le style de la table. Vous devez donc anticiper et garder vos tables simples. Voici un site qui simplifie les tables de démarques : [générateur de tables]] ( https://www.tablesgenerator.com/markdown_tables) .
 
 l' [Extension Docs de démarque pour Visual Studio Code](/teamblog/docs-extension) facilite également la génération de table si vous utilisez [Visual Studio Code (voir ci-dessous)](#using-visual-studio-code) pour modifier la documentation.
 
@@ -164,7 +172,7 @@ Vous devez charger vos images dans le dossier « Mixed-Real-docs/images » dan
 >1. A fait la duplication du référentiel MicrosoftDocs/Mixed-Reality.
 >2. Modification de l’article dans votre fourche.
 >3. Téléchargez les images que vous référencez dans votre article dans le dossier « Mixed-Real-docs/images » de votre fourche.
->4. Création d’une **requête de tirage** pour fusionner votre fourche dans la branche « master » MicrosoftDocs/de la réalité mixte.
+>4. Création d’une **requête de tirage** pour fusionner votre fourche dans la branche _principale_ MicrosoftDocs/de réalité mixte.
 >
 >Pour savoir comment configurer vos propres référentiel dupliqués, suivez les instructions de création d' [un nouvel article](#creating-a-new-article).
 
@@ -175,7 +183,7 @@ pendant la modification de GitHub via un navigateur web, vous pouvez sélectionn
 >[!NOTE]
 >L’aperçu de vos modifications sur review.docs.microsoft.com est uniquement disponible pour les employés de Microsoft
 
-Employés de Microsoft : une fois vos contributions fusionnées dans la branche principale, vous pouvez passer en revue le contenu avant qu’il ne soit public sur </hololens ? Branch = Master>. Recherchez votre article à l’aide de la table des matières de la colonne de gauche.
+Employés de Microsoft : lorsque vos contributions ont été fusionnées dans la branche par défaut, _maître_, vous pouvez passer en revue le contenu avant qu’il ne soit public sur </hololens ? Branch = Master>. Recherchez votre article à l’aide de la table des matières dans la colonne de gauche.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Modification dans le navigateur et modification avec un client Desktop
 
@@ -191,7 +199,7 @@ si vous préférez ne pas traiter ces problèmes, utilisez un client de bureau c
 
 Pour les raisons mentionnées [ci-dessus](#editing-in-the-browser-vs-editing-with-a-desktop-client), vous préférerez peut-être utiliser un client de bureau pour modifier la documentation au lieu d’un navigateur Web. Nous vous recommandons d’utiliser [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Programme d’installation
+### <a name="setup"></a>Installation
 
 procédez comme suit pour configurer Visual Studio Code pour qu’il fonctionne avec ce référentiel :
 
@@ -216,7 +224,7 @@ Utilisez le flux de travail suivant pour apporter des modifications à la docume
 
 1. Assurez-vous que votre fourche cloné est à jour avec la référentiel officielle.
 
-   1. Dans un navigateur Web, créez une requête de tirage pour synchroniser les modifications récentes des autres contributeurs de MicrosoftDocs/Mixed-Reality’Master’sur votre fourche (Assurez-vous que la flèche pointe vers la bonne voie).
+   1. Dans un navigateur Web, créez une requête de tirage pour synchroniser les modifications récentes des autres contributeurs dans la branche par défaut de MicrosoftDocs/Mixed-Reality, _Master_, sur votre fourche (Assurez-vous que la flèche pointe vers la destination appropriée).
       
       ![Synchroniser les modifications de MicrosoftDocs/Mixed-Reality avec votre fourche](images/sync-repos.png)
       
@@ -240,7 +248,7 @@ Utilisez le flux de travail suivant pour apporter des modifications à la docume
       
       ![Cliquez sur le bouton synchroniser.](images/sync-back.png)
       
-3. Dans un navigateur Web, créez une requête de tirage pour synchroniser les modifications apportées à votre fourche en MicrosoftDocs/Mixed-Reality’Master' (Assurez-vous que la flèche pointe vers la bonne voie).
+3. Dans un navigateur Web, créez une requête de tirage pour synchroniser les modifications apportées à votre fourche avec MicrosoftDocs/Mixed-Real- _Master_ (Assurez-vous que la flèche pointe vers la destination correcte).
 
    ![Créer une requête de tirage (pull request) à partir de votre fourche dans MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 

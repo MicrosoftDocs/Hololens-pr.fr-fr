@@ -12,7 +12,6 @@
 ### [Development Edition](hololens2-options-dev-edition.md)
 #### [Questions fréquentes (FAQ) sur HoloLens 2 Development Edition](hololens2-development-edition-faq.yml)
 ### [Édition Trimble XR10](hololens2-options-trimble-xr10-edition.md)
-### [Fonctionnalités commerciales](hololens-commercial-features.md)
 
 # Utilisation de votre HoloLens
 ## Première utilisation
@@ -110,6 +109,7 @@
 ## [Réinitialiser HoloLens 2](hololens-recovery.md)
 
 # Ressources
+## [Où acheter HoloLens 2](hololens2-purchase.md)
 ## [Options d’aide et de support](hololens2-support.md)
 ## [Demandes de support Autopilot](hololens2-autopilot-registration-support.md)
 ## [Notes de publication de HoloLens 2](hololens-release-notes.md)
