@@ -18,25 +18,25 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1081ed512183592e66e65f2e69323752b822f1c1
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e2c5c98eb62f9e8ec19306b2cb460004eb8ae8dd
+ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659180"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991421"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gérer les identités et les connexions des utilisateurs pour HoloLens
 
 > [!NOTE]
 > Cet article est une référence technique pour les professionnels de l’informatique et les passionnés de technologies. si vous recherchez des instructions de configuration de HoloLens, consultez «[configuration de votre HoloLens (1er génération)](hololens1-start.md)» ou «[configuration de votre HoloLens 2](hololens2-start.md)».
 
-comme les autres appareils Windows, HoloLens fonctionne toujours dans un contexte utilisateur. Il y a toujours une identité d’utilisateur. HoloLens traite l’identité de la même façon que les autres Windows 10 appareils. cet article est une référence approfondie de l’identité sur HoloLens, et se concentre sur la façon dont HoloLens diffère des autres appareils Windows 10.
+comme les autres appareils Windows, HoloLens fonctionne toujours dans un contexte utilisateur. Il y a toujours une identité d’utilisateur. HoloLens traite l’identité de la même façon que les autres Windows appareils. cet article est une référence approfondie de l’identité sur HoloLens, et se concentre sur la façon dont HoloLens diffère des autres appareils Windows.
 
 HoloLens prend en charge plusieurs types d’identités utilisateur. Vous pouvez utiliser un ou plusieurs comptes d’utilisateur pour vous connecter. Voici une vue d’ensemble des types d’identité et des options d’authentification sur HoloLens :
 
 | Type d'identité | Comptes par appareil | Options d’authentification |
 | --- | --- | --- |
-| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Fournisseur d’informations d’identification Web Azure</li><li>application Azure Authenticator</li><li>biométrique (Iris) &ndash; HoloLens 2 uniquement<sup>2</sup> </li><li>PIN &ndash; facultatif pour HoloLens (1er génération), requis pour HoloLens 2</li><li>Mot de passe</li></ul> |
+| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Fournisseur d’informations d’identification Web Azure</li><li>application Azure Authenticator</li><li>biométrique (Iris) &ndash; HoloLens 2 uniquement<sup>2</sup> </li><li>Clé de sécurité FIDO2</li><li>PIN &ndash; facultatif pour HoloLens (1er génération), requis pour HoloLens 2</li><li>Mot de passe</li></ul> |
 | [Compte Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>biométrique (Iris) &ndash; HoloLens 2 uniquement</li><li>PIN &ndash; facultatif pour HoloLens (1er génération), requis pour HoloLens 2</li><li>Mot de passe</li></ul> |
 | [Compte local](/windows/security/identity-protection/access-control/local-accounts) | 1 | Mot de passe |
 
@@ -49,11 +49,11 @@ Les comptes connectés au Cloud (Azure AD et MSA) offrent davantage de fonctionn
 
 ## <a name="setting-up-users"></a>Configuration des utilisateurs
 
-la méthode la plus courante pour configurer un nouvel utilisateur est le HoloLens OOBE (out-of-box experience). au cours de l’installation, HoloLens demande à un utilisateur de se connecter en utilisant le compte qu’il souhaite utiliser sur l’appareil. Ce compte peut être un consommateur compte Microsoft ou un compte d’entreprise qui a été configuré dans Azure. consultez configuration de votre [HoloLens (1re génération)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
-
-comme Windows sur d’autres appareils, la connexion lors de l’installation crée un profil utilisateur sur l’appareil. Le profil utilisateur stocke les applications et les données. le même compte fournit également l’authentification unique pour les applications, telles que Edge ou le Microsoft Store, à l’aide des api du gestionnaire de comptes Windows.  
+Il existe deux façons de configurer un nouvel utilisateur sur le HoloLens. la méthode la plus courante est la HoloLens OOBE (out-of-box experience). si vous utilisez Azure Active Directory, [les autres utilisateurs peuvent se connecter](#setting-up-multi-user-support-azure-ad-only) après OOBE à l’aide de leurs informations d’identification Azure AD. les appareils HoloLens qui sont initialement configurés avec un compte MSA ou un compte local pendant OOBE ne prennent pas en charge plusieurs utilisateurs. consultez configuration de votre [HoloLens (1re génération)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
 
 si vous utilisez un compte d’entreprise ou professionnel pour vous connecter à HoloLens, HoloLens s’inscrit dans l’infrastructure informatique de l’organisation. Cette inscription permet à votre administrateur informatique de configurer la gestion des appareils mobiles (MDM) pour envoyer des stratégies de groupe à votre HoloLens.
+
+comme Windows sur d’autres appareils, la connexion lors de l’installation crée un profil utilisateur sur l’appareil. Le profil utilisateur stocke les applications et les données. le même compte fournit également l’authentification unique pour les applications, telles que Edge ou le Microsoft Store, à l’aide des api du gestionnaire de comptes Windows. 
 
 par défaut, comme pour les autres appareils Windows 10, vous devez vous reconnecter lorsque HoloLens redémarre ou reprend à partir de la mise en veille. vous pouvez utiliser l’application Paramètres pour modifier ce comportement, ou le comportement peut être contrôlé par la stratégie de groupe.
 
@@ -65,7 +65,10 @@ La liaison de comptes ne sépare pas les données utilisateur créées sur l’a
 
 ### <a name="setting-up-multi-user-support-azure-ad-only"></a>Configuration de la prise en charge multi-utilisateur (Azure AD uniquement)
 
-HoloLens prend en charge plusieurs utilisateurs du même locataire Azure AD. Pour utiliser cette fonctionnalité, vous devez utiliser un compte qui appartient à votre organisation pour configurer l’appareil. Par la suite, les autres utilisateurs du même locataire peuvent se connecter à l’appareil à partir de l’écran de connexion ou en appuyant sur la vignette de l’utilisateur dans le panneau Démarrer. Un seul utilisateur peut être connecté à la fois. lorsqu’un utilisateur se connecte, HoloLens déconnecte l’utilisateur précédent. Le premier utilisateur sur l’appareil est considéré comme le propriétaire de l’appareil, sauf dans le cas de Azure AD Join, [en savoir plus sur les propriétaires d’appareils](security-adminless-os.md#device-owner).
+HoloLens prend en charge plusieurs utilisateurs du même locataire Azure AD. Pour utiliser cette fonctionnalité, vous devez utiliser un compte qui appartient à votre organisation pour configurer l’appareil. Par la suite, les autres utilisateurs du même locataire peuvent se connecter à l’appareil à partir de l’écran de connexion ou en appuyant sur la vignette de l’utilisateur dans le panneau Démarrer. Un seul utilisateur peut être connecté à la fois. lorsqu’un utilisateur se connecte, HoloLens déconnecte l’utilisateur précédent. 
+
+>[!IMPORTANT]
+> Le premier utilisateur sur l’appareil est considéré comme le propriétaire de l’appareil, sauf dans le cas de Azure AD Join, [en savoir plus sur les propriétaires d’appareils](security-adminless-os.md#device-owner).
 
 Tous les utilisateurs peuvent utiliser les applications installées sur l’appareil. Toutefois, chaque utilisateur possède ses propres données d’application et ses préférences. La suppression d’une application de l’appareil supprime celle-ci pour tous les utilisateurs.  
 
@@ -123,9 +126,24 @@ Windows Hello pour les entreprises (qui prend en charge l’utilisation d’un c
 
 ### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>Comment l’authentification biométrique Iris est-elle implémentée sur HoloLens 2 ?
 
-HoloLens 2 prend en charge l’authentification par Iris. Iris est basé sur la technologie Windows Hello et est pris en charge pour une utilisation par les comptes Azure Active Directory et Microsoft. Iris est implémenté de la même façon que les autres technologies de Windows Hello, et atteint la sécurité de la biométrie à une distance de 1/100 000.
+HoloLens 2 prend en charge l’authentification par Iris. Iris est basé sur la technologie Windows Hello et est pris en charge pour une utilisation par les comptes Azure Active Directory et Microsoft. Iris est implémenté de la même façon que les autres technologies de Windows Hello, et atteint la [sécurité de la biométrie à une distance de 1/100](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello)000.
 
 pour plus d’informations, consultez les [spécifications et spécifications biométriques pour Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) . en savoir plus sur les [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) et les [Windows Hello pour les entreprises](/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
+
+### <a name="where-is-iris-biometric-information-stored"></a>Où sont stockées les informations biométriques IRIS ?
+
+les informations biométriques de l’Iris sont stockées localement sur chaque HoloLens par [Windows Hello spécifications](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). Il n’est pas partagé et est protégé par deux couches de chiffrement. Il n’est pas accessible aux autres utilisateurs, même à un administrateur, car il n’existe aucun compte d’administrateur sur un HoloLens.
+
+### <a name="do-i-have-to-use-iris-authentication"></a>Dois-je utiliser l’authentification IRIS ?
+Non, vous pouvez ignorer cette étape lors de l’installation. 
+
+![Configurer IRIS](./images/setup-iris.png)
+
+HoloLens 2 fournit de nombreuses options pour l’authentification, notamment les clés de sécurité FIDO2.
+
+### <a name="can-iris-information-be-removed-from-the-hololens"></a>Les informations de l’iris peuvent-elles être supprimées de la HoloLens ?
+oui, vous pouvez le supprimer manuellement dans Paramètres.
+
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>Comment le type de compte affecte-t-il le comportement de connexion ?
 
