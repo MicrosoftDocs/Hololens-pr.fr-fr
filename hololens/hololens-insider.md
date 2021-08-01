@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
-ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
+ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114696318"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009338"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -39,7 +39,8 @@ nous sommes ravis de commencer à utiliser de nouvelles fonctionnalités pour Wi
 | [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage | 20348,1405 |
 | [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
 | [Utiliser uniquement des applications de magasin privé pour Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configurer l’application du Windows Store pour afficher uniquement les applications de l’Organisation | IT Admin | 20348,1408 |
-| [Correctifs et améliorations](hololens-insider.md#fixes-and-improvements) | Correctifs et améliorations pour HoloLens. | Tous | 20348,1408 |
+| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | IT Admin | 20348,1412 |
+| [Correctifs et améliorations](hololens-insider.md#fixes-and-improvements) | Correctifs et améliorations pour HoloLens. | Tous | 20348,1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>modifications du CSP pour la création de rapports HoloLens détails
 
@@ -130,13 +131,16 @@ La stratégie RequirePrivateStoreOnly a été activée pour HoloLens. cette stra
 
 En savoir plus sur [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
+### <a name="low-storage-log-collection-improvements"></a>Améliorations de la collecte des journaux de faible capacité de stockage
+
+Dans les scénarios où un appareil semble manquer d’espace disque lors de la collecte des journaux de diagnostic, un rapport supplémentaire nommé **StorageDiagnostics.zip** est créé. le seuil de stockage faible est déterminé automatiquement par Windows [sens du stockage](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
 ### <a name="fixes-and-improvements"></a>Correctifs et améliorations
 
 - Correction d’un [problème connu pour le portail des appareils où aucune invite n’a été téléchargée pour le téléchargement des fichiers verrouillés.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Correction d’un [problème connu pour le portail des appareils avec délais de chargement et de téléchargement de fichiers.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - résout les problèmes liés à la création de rapports sur les propriétés de conformité des appareils HoloLens ; un redémarrage peut être nécessaire pour que les rapports corrects soient déclenchés sur les builds Insider.  
 - Mise à jour de la version intégrée de l’assistance à distance qui est installée sur des clignotements actualisés.
-
 
 ## <a name="start-receiving-insider-builds"></a>Commencer à recevoir des builds Insider
 
