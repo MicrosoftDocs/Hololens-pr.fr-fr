@@ -1,6 +1,6 @@
 ---
-title: 'Positionnement et utilisation confortable de l’HoloLens 2 : FAQ'
-description: Restez à jour sur les réponses aux questions fréquemment posées sur l’ajustement de votre HoloLens 2 et profitez confortablement des expériences de reality mixed.
+title: Questions fréquentes (FAQ) sur l’ajustement et le confort de HoloLens 2
+description: Restez à jour sur les réponses aux questions fréquemment posées sur l’ajustement de votre HoloLens 2 et profitez confortablement des expériences de réalité mixte.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,57 +13,57 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 9edcf4e49d92bbdcab523206e4685f2d7a8d8b0e2c2ccf8391ea2b32e304201f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659796"
 ---
-# Questions fréquentes sur l'ajustement et le confort avec les HoloLens 2
+# <a name="hololens-2-fit-and-comfort-frequently-asked-questions"></a>Questions fréquentes sur l’ajustement et le confort avec le HoloLens 2
 
 Voici quelques conseils pour une utilisation confortable et une expérience optimale avec votre HoloLens.
 
-Pour des instructions détaillées et une vidéo de mise en place et d’ajustement de votre appareil, consultez [Préparer votre HoloLens 2](hololens2-setup.md).
+Pour des instructions détaillées et une vidéo de positionnement et d’ajustement de votre appareil, consultez [Préparer votre HoloLens 2 pour l’utiliser](hololens2-setup.md).
 
 > [!NOTE]
-> Dans cette rubrique, les conseils relatifs au positionnement et au confort sont fournis à titre indicatif seulement. Ils ne remplacent pas les législations ou réglementations, ni votre discernement lors de l’utilisation d’HoloLens. Préservez votre sécurité et amusez-vous !
+> Dans cette rubrique, les conseils relatifs au positionnement et au confort sont fournis à titre indicatif seulement. Ils ne remplacent pas les législations ou réglementations, ni votre discernement lors de l’utilisation d’HoloLens. Préservez votre sécurité et amusez-vous !
 
 Voici quelques conseils pour une utilisation confortable et une expérience optimale avec votre HoloLens.
 
-## Je ressens un malaise lorsque j’utilise mon appareil. Que dois-je faire ?
+## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>Je ressens un malaise lorsque j’utilise mon appareil. Que dois-je faire ?
 
-Si vous ressentez un malaise, faites une pause jusqu’à vous sentir mieux. Asseyez-vous dans une pièce bien éclairée et reposez-vous quelques instants. La fois suivante, utilisez votre HoloLens pendant une durée plus courte.
+Si vous ressentez un malaise, faites une pause jusqu’à ce que vous vous sentiez mieux. Asseyez-vous dans une pièce bien éclairée et reposez-vous quelques instants. La fois suivante, utilisez votre HoloLens pendant une durée plus courte.
 
-Pour plus d’informations, consultez l’article [Santé et sécurité avec les HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661).
+Pour plus d’informations, consultez [Santé et sécurité sur HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
-## Je ne vois pas l’intégralité du cadre holographique ou mes hologrammes sont coupés.
+## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>Je ne vois pas l’intégralité du cadre holographique ou mes hologrammes sont coupés.
 
-Pour voir le bord supérieur du cadre holographique, placez l’appareil plus haut sur votre tête ou orientez le bandeau légèrement vers le haut à l’avant. Pour voir le bord inférieur, placez l’appareil plus bas sur votre tête ou orientez le bandeau légèrement vers le bas à l’avant. Si les bords gauche ou droit du cadre d’affichage ne sont pas visibles, assurez-vous que le viseur HoloLens est centré sur votre front.
+Pour voir le bord supérieur du cadre holographique, placez l’appareil plus haut sur votre tête ou orientez l’arceau légèrement vers le haut à l’avant. Pour voir le bord inférieur, placez l’appareil plus bas sur votre tête ou orientez l’arceau légèrement vers le bas à l’avant. Si les bords gauche ou droit du cadre d’affichage ne sont pas visibles, vérifiez que la visière de l’HoloLens est centrée sur votre front.
 
-## Je dois regarder vers le haut ou vers le bas pour voir les hologrammes
+## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>Je dois regarder vers le haut ou vers le bas pour voir les hologrammes
 
-Essayez d’ajuster la position du viseur de votre appareil de sorte que le cadre holographique corresponde naturellement à votre regard. Voici comment procéder :
+Essayez d’ajuster la position de la visière de votre appareil de sorte que le cadre holographique corresponde naturellement à votre regard. Voici comment procéder :
 
-- **Je dois regarder vers le haut ou vers le bas pour voir les hologrammes**. Tout d’abord, décalez l’arrière de l'arceau un peu plus haut sur votre tête. Ensuite, utilisez une main pour maintenir le bandeau en place, et l’autre main pour faire pivoter légèrement le viseur de manière à bien visualiser le cadre holographique.
-- **Je dois regarder vers le bas ou vers le bas pour voir les hologrammes**. Tout d’abord, décalez l’arrière de l'arceau un peu plus bas sur votre tête. Ensuite, placez vos pouces sous les branches de l’appareil, et vos index sur le haut du bandeau. Pressez légèrement avec vos pouces pour faire pivoter le viseur de manière à bien visualiser le cadre holographique.
+- **Si vous devez regarder vers le haut pour voir les hologrammes**. Tout d’abord, déplacez l’arrière de l’arceau un peu plus haut sur votre tête. Ensuite, utilisez une main pour maintenir l’arceau en place et l’autre main pour faire pivoter légèrement la visière de manière à bien visualiser le cadre holographique.
+- **Si vous devez regarder vers le bas pour voir les hologrammes**. Tout d’abord, déplacez l’arrière de l’arceau un peu plus bas sur votre tête. Ensuite, placez vos pouces sous les branches de l’appareil, et vos index sur le haut de l’arceau. Pressez légèrement avec vos pouces pour faire pivoter la visière de manière à bien visualiser le cadre holographique.
 
-## La luminosité ou la couleur de l’image d’hologramme n’est pas correcte
+## <a name="hologram-image-color-or-brightness-does-not-look-right"></a>La luminosité ou la couleur de l’image de l’hologramme n’est pas correcte
 
-Consultez les [étapes de dépannage de l’affichage](hololens2-display.md) HoloLens 2.
+Consultez la [résolution des problèmes liés à l’affichage de l’HoloLens 2](hololens2-display.md).
 
-## L’appareil glisse lorsque je l’utilise ou je dois serrer le bandeau excessivement pour le maintenir en place
+## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>L’appareil glisse lorsque je l’utilise ou je dois serrer l’arceau excessivement pour le maintenir en place
 
-Le serre-tête facilite le maintien de l’HoloLens sur votre tête, particulièrement lorsque vous vous déplacez beaucoup. Il vous permet également de desserrer un peu le bandeau. [Découvrez comment l’utiliser.](hololens2-setup.md#adjust-fit).
+Le serre-tête facilite le maintien de l’HoloLens sur votre tête, particulièrement lorsque vous vous déplacez beaucoup. Il vous permet également de desserrer un peu l’arceau. [Découvrez comment vous en servir](hololens2-setup.md#adjust-fit).
 
-Faites des essais avec le positionnement du bandeau : selon la taille et la forme de votre tête, vous devrez peut-être le faire glisser vers le haut ou vers le bas pour le repositionner sur votre front.
+Faites des essais avec le positionnement de l’arceau. Selon la taille et la forme de votre tête, vous devrez peut-être le faire glisser vers le haut ou vers le bas pour le repositionner sur votre front.
 
-## Comment puis-je régler l’HoloLens pour le port de mes lunettes ?
+## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>Comment puis-je régler l’HoloLens pour le port de mes lunettes ?
 
-Vous pouvez incliner la visière afin d'ajuster les lunettes.
+Vous pouvez incliner la visière pour faciliter le port de lunettes.
 
-## Mon bras se fatigue lorsque j’utilise les mouvements. Que puis-je faire ?
+## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>Mon bras se fatigue lorsque j’utilise les mouvements. Que puis-je faire ?
 
-Lorsque vous utilisez les mouvements, inutile d’étendre votre bras loin de votre corps. Gardez-le plus près du corps pour plus de confort et moins de fatigue. Vous pouvez également utiliser des rayons émanant de la main pour interagir avec des hologrammes sans lever les bras [En savoir plus sur les gestes et les rayons émanant de la main](hololens2-basic-usage.md#the-hand-tracking-frame).
+Quand vous utilisez les mouvements, il est inutile d’étendre votre bras loin de votre corps. Gardez-le plus près du corps pour plus de confort et moins de fatigue. Vous pouvez également utiliser des rayons émanant de la main pour interagir avec des hologrammes sans lever les bras. [Découvrez-en plus sur les mouvements et les rayons émanant de la main](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-Et veillez à tester les [commandes vocales](hololens-cortana.md).
+Et n’oubliez pas d’essayer les [commandes vocales](hololens-cortana.md).

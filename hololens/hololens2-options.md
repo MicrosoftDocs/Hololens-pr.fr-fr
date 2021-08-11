@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 4ba759dfa491725011977c39d6e51ed583a21919ea271f0c3d6482c0847938fb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658929"
 ---
 # <a name="compare-hololens-2-options"></a>Comparer les options de l’HoloLens 2
 
@@ -37,8 +37,8 @@ Que vous soyez un [professionnel de l’informatique](https://www.microsoft.com/
 | **Environnements UL de classe I, division 2, groupes A, B, C et D HAZLOC**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | **Casque intégré (conforme aux normes sur l’équipement de protection individuelle dans plus de 40 pays)** |            |                               |                               |                                                  |               ✔️              |                                |
 | **Sortie audio de réduction du bruit**                        |            |                               |                               |                                                  |               ✔️              |                                |
-| **Droits des développeurs<sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
-| **Programme de remplacement rapide<sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Droits des développeurs <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **Programme de remplacement rapide <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | **Droits d’utilisation commerciale**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**Garantie**](hololens2-hardware.md#warranty-information)                                             |   1 an   |             1 an            |             2 ans            |                      2 ans                      |            1 an <sup>3</sup>            |             1 an             |
 | **Limite d’achat d’appareils**                                |    None    |              None             |              None             |                       None                       |             None             |       Un par transaction      |
@@ -47,17 +47,6 @@ Que vous soyez un [professionnel de l’informatique](https://www.microsoft.com/
 - <sup>2</sup> : recevoir un appareil de remplacement du jour au lendemain ou en expédition accélérée (la plus rapide des options disponibles) avant l’arrivée de l’appareil défectueux chez Microsoft.
 - <sup>3</sup> : pour toute question concernant la garantie, le support et la certification du Trimble XR10 avec HoloLens 2 Edition, [contactez Trimble](https://fieldtech.trimble.com/en/contact-support).
 
-## <a name="countries-where-hololens-2-is-available"></a>Pays où HoloLens 2 est disponible
-
-<br>
-
-| HoloLens 2 Edition                  | Marchés pris en charge               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | États-Unis, Canada, Allemagne, France, Royaume-Uni, Irlande, Chine, Japon, Australie, Italie, Nouvelle-Zélande, Pays-Bas, Suisse, Espagne, Autriche, Suède, Finlande, Norvège, Danemark, Belgique, Portugal, Pologne, Singapour, Hong Kong, Taiwan et Corée du Sud |
-| HoloLens 2 avec Remote Assist | Australie, Japon, Canada, États-Unis, Autriche, Belgique, Danemark, Finlande, France, Allemagne, Italie, Pays-Bas, Norvège, Espagne, Suède, Suisse, Royaume-Uni et Irlande <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(lors du lancement)* | États-Unis, Canada, Allemagne, France, Royaume-Uni, Irlande, Chine, Japon, Australie, Italie, Nouvelle-Zélande, Pays-Bas, Suisse, Espagne, Autriche, Suède, Finlande, Norvège, Danemark, Belgique, Portugal, Pologne, Singapour, Hong Kong, Taiwan et Corée du Sud |
-| HoloLens 2 Development Edition | Canada, Allemagne, France, Royaume-Uni, Irlande, Japon, Australie, Italie, Suisse et Nouvelle-Zélande |
-- <sup>1</sup> Cette liste est dynamique, vérifiez les mises à jour
 
 ## <a name="options-overview"></a>Vue d’ensemble des options
 

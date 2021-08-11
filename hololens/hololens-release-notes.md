@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1c0beed39fa6b4642a581da6baac44c732642e74d8b2c41ebca1b6d3f24b127d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bbbe01723cab70fa802b5a5db44bc812ce71cb2be2e3f283af698f161084f256
+ms.sourcegitcommit: cb77de303607ef1340effeababf603d05d1a8048
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663495"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "116975493"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -33,6 +33,7 @@ pour vous assurer que vous disposez d’une expérience productive avec vos appa
 > en raison d’un [problème connu maintenant résolu dans notre build 21H1 qui affectait les utilisateurs de l’assistance à distance](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), nous avons suspendu temporairement l’offre de Windows des mises à jour 21H1 holographiques. nous avions également modifié la version par défaut de l’ARC de récupération avancée (ARC) dans la [mise à jour Windows holographique, version 20H2-juin 2021](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). La build ARC reprend à présent le ciblage de la build 21H1.
 
 ## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows Holographique, version 21H1-mise à jour de juillet 2021
+
 - Build 20348,1010
 
 Améliorations et correctifs de la mise à jour :
@@ -41,18 +42,20 @@ Améliorations et correctifs de la mise à jour :
 - Le chargement, le téléchargement, le changement de nom et la suppression de fichiers sont désormais résolus lors de l’utilisation de https dans tous les navigateurs pris en charge.
 - correction du problème où le proxy Wi-Fi ne peut pas être enregistré lorsque Wi-Fi interface utilisateur des propriétés est lancée à partir des propriétés Paramètres de & d’état > Internet > de **> réseau**.
 - Nous avons résolu un problème lors de la suppression des certificats eSIM sur les mises à jour du système d’exploitation. Ce correctif garantit que les certificats eSIM et les composants associés sont supprimés lors de la mise à jour vers la version 21H1.
-- Correction d’un problème affectant les applications préinstallées sur les réinitialisations du système d’exploitation. 
-- Performances de charge de la batterie réglées pour augmenter le runtime lors de la facturation avec augmentation du chargement de l’UC.
+- Correction d’un problème affectant les applications préinstallées sur les réinitialisations du système d’exploitation.
+- Performances de charge de la batterie réglées pour augmenter le runtime lors de la facturation avec augmentation du chargement de l’UC. lors de la facturation des appareils HoloLens 2, si l’appareil est détecté comme étant chaud, la batterie interne est facturée plus lentement pour réduire la chaleur. Le compromis positif est qu’un appareil est moins susceptible de se fermer en raison de problèmes de température, avec l’impact que l’appareil s’exécute plus longtemps. Si l’appareil est en cours d’exécution froid, le taux de facturation n’est pas affecté.
 
 ## <a name="windows-holographic-version-20h2--july-2021-update"></a>Windows Holographique, version 20H2-mise à jour de juillet 2021
+
 - Build 19041,1157
 
 Améliorations et correctifs de la mise à jour :
 
-- Le portail des appareils offre des méthodes améliorées pour avertir le client lorsque l’Explorateur de fichiers rencontre des problèmes lors de l’ouverture de fichiers verrouillés. 
+- Le portail des appareils offre des méthodes améliorées pour avertir le client lorsque l’Explorateur de fichiers rencontre des problèmes lors de l’ouverture de fichiers verrouillés.
 - Le chargement, le téléchargement, le changement de nom et la suppression de fichiers sont désormais résolus lors de l’utilisation de https dans tous les navigateurs pris en charge.
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holographique, version 21H1-mise à jour de juin 2021
+
 - Build 20348,1007
 
 ### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive pour le chargement par progression de l’appareil photo professionnel ou scolaire
@@ -77,9 +80,11 @@ nous avons ajouté une nouvelle fonctionnalité à l’application HoloLens 2 Pa
 - Cette fonctionnalité doit être activée pour chaque compte d’utilisateur sur l’appareil, et elle peut uniquement charger activement des fichiers pour l’utilisateur actuellement connecté à l’appareil.
 - si vous prenez des photos ou des vidéos tout en regardant le nombre de téléchargements sur la page Paramètres en temps réel, notez que le nombre de fichiers en attente peut ne pas changer tant que le téléchargement du fichier actuel n’est pas terminé.
 - Télécharger s’interrompt si votre appareil est en veille ou hors tension. pour vous assurer que vos téléchargements en attente sont terminés, utilisez activement l’appareil jusqu’à ce que la page Paramètres lise « OneDrive soit à jour » ou ajustez les paramètres de veille de l' **& d’alimentation** .
+
 ### <a name="added-support-for-some-telemetry-policies"></a>Ajout de la prise en charge de certaines stratégies de télémétrie
 
 Les stratégies de télémétrie suivantes sont désormais prises en charge sur le HoloLens 2 :
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
@@ -88,16 +93,19 @@ Les stratégies de télémétrie suivantes sont désormais prises en charge sur 
 System\AllowTelemetry et System\ConfigureTelemetryOptInSettingsUx doivent être utilisés ensemble pour avoir un contrôle total sur la télémétrie et le comportement dans l’application Paramètres.
 
 Améliorations et correctifs de la mise à jour :
+
 - Corrige une corruption vidéo importante avec l’étalonnage des couleurs.
 - Résout un problème où le texte peut être tronqué dans le menu de l’alimentation.
 - Active la prise en charge de la stratégie RequirePrivateStoreOnly.
 
 ## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows Holographique, version 20H2-mise à jour de juin 2021
+
 - Build 19041,1154
 
 ### <a name="added-support-for-some-telemetry-policies"></a>Ajout de la prise en charge de certaines stratégies de télémétrie
 
 Les stratégies de télémétrie suivantes sont désormais prises en charge sur le HoloLens 2 :
+
 - ConfigureTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
@@ -108,9 +116,11 @@ System\AllowTelemetry et System\ConfigureTelemetryOptInSettingsUx doivent être 
 nous vous encourageons à essayer notre build la plus récente, Windows holographique, version 21H1.
 
 ## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows Holographique, version 1903-mise à jour du 2021 du 1er juin
+
 - Build 18362,1116
 
 Améliorations et correctifs de la mise à jour :
+
 - cette mise à jour de qualité mensuelle ne contient pas de modifications notables, nous vous encourageons à essayer notre build la plus récente, Windows holographique, version 21H1.
 
 >[!IMPORTANT]
@@ -127,14 +137,14 @@ Cette mise à jour contient des fonctionnalités pour deux audiences cibles ; f
 >aujourd’hui, Microsoft HoloLens 2 prend en charge les mises à jour de maintenance mensuelles (bogues et correctifs de sécurité) pour les versions suivantes :
 >- Windows Holographique, version 20H2 (Build 19041.1128 +)
 >- Windows Holographique, version 2004 (Build 19041.1103 +)
->- Windows Holographique, version 1903 (Build 18362 +) 
+>- Windows Holographique, version 1903 (Build 18362 +)
 >
-> avec l’introduction de Windows version holographique 21H1, **nous continuons de mettre à jour les mises à jour de maintenance mensuelles pour Windows version 1903 holographique**. Cela nous permet de nous concentrer sur les versions plus récentes et de continuer à fournir des améliorations importantes. 
+> avec l’introduction de Windows version holographique 21H1, **nous continuons de mettre à jour les mises à jour de maintenance mensuelles pour Windows version 1903 holographique**. Cela nous permet de nous concentrer sur les versions plus récentes et de continuer à fournir des améliorations importantes.
 
 
 | Nom de la fonctionnalité                                              | Description courte                                                                      | Public visé | 
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [Nouvelle Microsoft Edge](#introducing-the-new-microsoft-edge)  | le nouveau Microsoft Edge basé sur Chromium est désormais disponible pour HoloLens 2. | Utilisateur final | 
+| [Nouveau Microsoft Edge](#introducing-the-new-microsoft-edge)  | le nouveau Microsoft Edge basé sur Chromium est désormais disponible pour HoloLens 2. | Utilisateur final | 
 [Visionneuse WebXR et 360](#webxr-and-360-viewer) | Essayez des expériences Web immersifs et une lecture vidéo de 360. | Utilisateur final | 
 [Nouvelle application Paramètres](#new-settings-app) | l’application de Paramètres héritée est remplacée par une version mise à jour avec de nouvelles fonctionnalités et paramètres. | Utilisateur final |
 [Étalonnage des couleurs d’affichage](#display-color-calibration) | Sélectionnez un autre profil de couleurs pour votre affichage HoloLens 2. | Utilisateur final |
