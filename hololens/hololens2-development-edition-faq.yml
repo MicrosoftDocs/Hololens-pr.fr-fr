@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639690"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115659766"
 title: Questions fréquentes (FAQ) sur HoloLens 2 Development Edition
 summary: ''
 sections:
@@ -73,7 +73,7 @@ sections:
       toutes les ventes sont finales et aucun remboursement n’est disponible sur HoloLens 2 édition Development.
   - question: >
       Developer Edition a-t-il des configurations matérielles différentes qui diffèrent de la HoloLens 2 ?
-    answer: "Non, cet appareil est identique du point de vue de la configuration matérielle requise. L’édition Development est autorisée à être déployée dans le but de faciliter le développement et/ou le test d’applications dans le cadre d’un paramètre commercial. \n"
+    answer: "Non, cet appareil est identique du point de vue de la configuration matérielle requise. Nous autorisons le déploiement de l'édition Development Edition dans le cadre du développement et/ou du test d'applications dans un contexte commercial. \n"
   - question: >
       comment puis-je utiliser la réalité mixte Shared Computer Toolkit – unity pour le développement sur mon HoloLens 2 édition Development ?
     answer: >
@@ -121,7 +121,7 @@ sections:
       Instructions d’échange
 
 
-      1. Visitez id.unity.com
+      1. Rendez-vous sur le site id.unity.com.
 
       2. Connectez-vous avec votre ID Unity ou créez un compte
 
@@ -154,7 +154,7 @@ sections:
       Instructions d’échange
 
 
-      1. Visitez id.unity.com
+      1. Rendez-vous sur le site id.unity.com.
 
       2. Connectez-vous avec votre Pixyz ou créez un compte
 
