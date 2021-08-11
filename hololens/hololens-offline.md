@@ -1,6 +1,6 @@
 ---
-title: Gérer les points de terminaison de connexion de HoloLens
-description: Découvrez comment configurer un HoloLens sur un réseau Wi-Fi lors de la gestion et de la configuration des points de terminaison de connexion.
+title: Gérer les points de terminaison de connexion pour HoloLens
+description: Découvrez comment configurer un appareil HoloLens sur un réseau Wi-Fi lors de la gestion et de la configuration de points de terminaison de connexion.
 keywords: hololens, hors connexion, OOBE
 audience: ITPro
 ms.date: 07/01/2019
@@ -18,151 +18,152 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2208291aea5bfa9cbedd09d40fbbb83b1faa627b
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662938"
 ---
-# Gérer les points de terminaison de connexion de HoloLens
+# <a name="manage-connection-endpoints-for-hololens"></a>Gérer les points de terminaison de connexion pour HoloLens
 
-Certains composants, applications et services connexes HoloLens transfèrent des données aux points de terminaison du réseau Microsoft. Cet article répertorie plusieurs points de terminaison et URL que vous devez autoriser dans la configuration de votre réseau (par exemple, proxy ou pare-feu) pour que ces composants soient fonctionnels.    
+Certains composants, applications et services associés à HoloLens transfèrent des données aux points de terminaison du réseau Microsoft. Cet article liste différents points de terminaison et URL que vous devez autoriser dans la configuration de votre réseau (par exemple le proxy ou le pare-feu) pour que ces composants soient fonctionnels.    
 
-## Configuration quasiment hors connexion
+## <a name="near-offline-setup"></a>Configuration quasiment hors connexion
 
-HoloLens prend en charge un nombre limité d’expériences hors connexion pour les clients soumis à des restrictions d’environnement réseau. Toutefois, HoloLens nécessite une connexion réseau pour passer par la configuration initiale de l’appareil. En outre, vous devez activer les URL suivantes :
+HoloLens prend en charge un nombre limité d’expériences hors connexion pour les clients soumis à des restrictions d’environnement réseau. Cependant, HoloLens nécessite une connexion réseau pour la configuration initiale de l’appareil. En outre, vous devez activer les URL suivantes :
 
 | Objectif | URL |
 |------|------|
 | IDPS | https://sdx.microsoft.com/frx/idps |
-| [NCSI](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
+| [NCSI](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
-| Repère AAD | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
+| AAD Pin | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
 | MSA | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
-| Repère MSA | https://account.live.com/msangc?fl=enroll |
+| MSA Pin | https://account.live.com/msangc?fl=enroll |
 
-## Configuration du point de terminaison
+## <a name="endpoint-configuration"></a>Configuration du point de terminaison
 
 En plus de la liste ci-dessus, vous devez activer les points de terminaison suivants dans la configuration de votre réseau pour tirer pleinement parti des fonctionnalités HoloLens.
 
 
 | Objectif | URL |
 |------|------|
-| Azure                                               | wd-prod-fe.cloudapp.azure.com                                       |   |   |   
-|                                                     | ris-prod-atm.trafficmanager.net                                     |   |   |   |
-|                                                     | validation-v2.sls.trafficmanager.net                                |   |   |   |
-| Azure AD Multi-Factor Authentication                | https://secure.aadcdn.microsoftonline-p.com                         |   |   |   |
-| Configurations Intune et MDM                       | activation-v2.sls.microsoft.com/*                                   |   |   |   |
-|                                                     | cdn.onenote.net                                                     |   |   |   |
-|                                                     | client.wns.windows.com                                              |   |   |   |
-|                                                     | crl.microsoft.com/pki/crl/*                                         |   |   |   |
-|                                                     | ctldl.windowsupdate.com                                             |   |   |   |
-|                                                     | *displaycatalog.mp.microsoft.com                                    |   |   |   |
-|                                                     | dm3p.wns.windows.com                                                |   |   |   |
-|                                                     | *microsoft.com/pkiops/*                                             |   |   |   |
-|                                                     | ocsp.digicert.com/*                                                 |   |   |   |
-|                                                     | r.manage.microsoft.com                                              |   |   |   |
-|                                                     | tile-service.weather.microsoft.com                                  |   |   |   |
-|                                                     | settings-win.data.microsoft.com                                     |   |   |   |
-| Certificats                                        | activation-v2.sls.microsoft.com/*                                   |   |   |   |
-|                                                     | crl.microsoft.com/pki/crl/*                                         |   |   |   |
-|                                                     | ocsp.digicert.com/*                                                 |   |   |   |
-|                                                     | https://www.microsoft.com/pkiops/*                                          |   |   |   |
-| Cortana et recherche                                  | store-images.*microsoft.com                                         |   |   |   |
-|                                                     | www.bing.com/client                                                 |   |   |   |
-|                                                     | www.bing.com                                                        |   |   |   |
-|                                                     | www.bing.com/proactive                                              |   |   |   |
-|                                                     | www.bing.com/threshold/xls.aspx                                     |   |   |   |
-|                                                     | exo-ring.msedge.net                                                 |   |   |   |
-|                                                     | fp.msedge.net                                                       |   |   |   |
-|                                                     | fp-vp.azureedge.net                                                 |   |   |   |
-|                                                     | odinvzc.azureedge.net                                               |   |   |   |
-|                                                     | spo-ring.msedge.net                                                 |   |   |   |
-| Authentification de l’appareil                               | login.live.com*                                                     |   |   |   |
-| Métadonnées d’appareil                                     | dmd.metaservices.microsoft.com                                      |   |   |   |
-| Location                                            | Inference.Location.Live.NET                                         |   |   |   |
-|                                                     | location-inference-westus.cloudapp.net                              |   |   |   |
-| Données de diagnostic                                     | v10.events.data.microsoft.com                                       |   |   |   |
-|                                                     | v10.vortex-win.data.microsoft.com/collect/v1                        |   |   |   |
-|                                                     | https://www.microsoft.com                                                   |   |   |   |
-|                                                     | co4.telecommand.telemetry.microsoft.com                             |   |   |   |
-|                                                     | cs11.wpc.v0cdn.net                                                  |   |   |   |
-|                                                     | cs1137.wpc.gammacdn.net                                             |   |   |   |
-|                                                     | modern.watson.data.microsoft.com *                                   |   |   |   |
-|                                                     | watson.telemetry.microsoft.com                                      |   |   |   |
-| Licences                                           | licensing.mp.microsoft.com                                          |   |   |   |
-| Compte Microsoft                                   | login.msa.akadns6.net                                               |   |   |   |
-|                                                     | us.configsvc1.Live.com.akadns.NET                                   |   |   |   |
-| Microsoft Edge                                      | iecvlist.microsoft.com                                              |   |   |   |
-| Service de redirection de liaison montante Microsoft (FWLink) | go.microsoft.com                                                    |   |   |   |
-| Microsoft Store                                     | *.wns.windows.com                                                   |   |   |   |
-|                                                     | storecatalogrevocation.storequality.microsoft.com                   |   |   |   |
-|                                                     | img-prod-cms-rt-microsoft-com*                                      |   |   |   |
-|                                                     | store-images.microsoft.com                                          |   |   |   |
-|                                                     | . md.mp.microsoft.com                                                |   |   |
-|                                                     | * displaycatalog.mp.microsoft.com                                    |   |   |   |
-|                                                     | pti.store.microsoft.com                                             |   |   |   |
-|                                                     | storeedgefd.dsx.mp.microsoft.com                                    |   |   |   |
-|                                                     | markets.books.microsoft.com                                         |   |   |   |
-|                                                     | share.microsoft.com                                                 |   |   |   |
-| Indicateur d’état de la connexion réseau (NCSI)          | www.msftconnecttest.com *                                            |   |   |   |
-| Office                                              | *.c-msedge.net                                                      |   |   |   |
-|                                                     | *.e-msedge.net                                                      |   |   |   |
-|                                                     | *.s-msedge.net                                                      |   |   |   |
-|                                                     | nexusrules.officeapps.Live.com                                      |   |   |   |
-|                                                     | ocos-office365-s2s.msedge.net                                       |   |   |   |
-|                                                     | officeclient.Microsoft.com                                          |   |   |   |
-|                                                     | outlook.office365.com                                               |   |   |   |
-|                                                     | client-office365-tas.msedge.net                                     |   |   |   |
-|                                                     | https://www.office.com                                                      |   |   |   |
-|                                                     | onecollector. cloudapp. Aria                                          |   |   |   |
-|                                                     | v10.events.data.microsoft.com/onecollector/1.0/                     |   |   |   |
-|                                                     | self.events.data.microsoft.com                                      |   |   |   |
-|                                                     | pour do.microsoft.com                                                 |   |   |   |
-| OneDrive                                            | g.live.com/1rewlive5skydrive/*                                      |   |   |   |
-|                                                     | msagfx.live.com                                                     |   |   |   |
-|                                                     | oneclient.sfx.ms                                                    |   |   |   |
-| Application Photos                                          | evoke-windowsservices-tas.msedge.net                                |   |   |   |
-| Paramètres                                            | cy2.settings.data.microsoft.com.akadns.net                          |   |   |   |
-|                                                     | settings.data.microsoft.com                                         |   |   |   |
-|                                                     | settings-win.data.microsoft.com                                     |   |   |   |
-| Windows Defender                                    | wdcp.microsoft.com                                                  |   |   |   |
-|                                                     | definitionupdates.microsoft.com                                     |   |   |   |
-|                                                     | go.microsoft.com                                                    |   |   |   |
-|                                                     | * smartscreen.microsoft.com                                          |   |   |   |
-|                                                     | SmartScreen-sn3p.smartscreen.microsoft.com                          |   |   |   |
-|                                                     | unitedstates.SmartScreen-prod.microsoft.com                         |   |   |   |
-| Windows à la une                                   | *.search.msn.com                                                    |   |   |   |
-|                                                     | arc.msn.com                                                         |   |   |   |
-|                                                     | g.msn.com*                                                          |   |   |   |
-|                                                     | query.prod.cms.rt.microsoft.com                                     |   |   |   |
-|                                                     | ris.api.iris.microsoft.com                                          |   |   |   |
-| Windows Update                                      | *.prod.do.dsp.mp.microsoft.com                                      |   |   |   |
-|                                                     | cs9.wac.phicdn.net                                                  |   |   |   |
-|                                                     | emdl.ws.microsoft.com                                               |   |   |   |
-|                                                     | *.dl.delivery.mp.microsoft.com                                      |   |   |   |
-|                                                     | *.windowsupdate.com                                                 |   |   |   |
-|                                                     | *.delivery.mp.microsoft.com                                         |   |   |   |
-|                                                     | *.update.microsoft.com                                              |   |   |   |
+| Azure                                               | wd-prod-fe.cloudapp.azure.com                                       |
+|                                                     | ris-prod-atm.trafficmanager.net                                     |
+|                                                     | validation-v2.sls.trafficmanager.net                                |
+| Authentification multifacteur Azure AD                | https://secure.aadcdn.microsoftonline-p.com                         |
+| Configurations Intune et MDM                       | activation-v2.sls.microsoft.com/*                                   |
+|                                                     | cdn.onenote.net                                                     |
+|                                                     | client.wns.windows.com                                              |
+|                                                     | crl.microsoft.com/pki/crl/*                                         |
+|                                                     | ctldl.windowsupdate.com                                             |
+|                                                     | *displaycatalog.mp.microsoft.com                                    |
+|                                                     | dm3p.wns.windows.com                                                |
+|                                                     | *microsoft.com/pkiops/*                                             |
+|                                                     | ocsp.digicert.com/*                                                 |
+|                                                     | r.manage.microsoft.com                                              |
+|                                                     | tile-service.weather.microsoft.com                                  |
+|                                                     | settings-win.data.microsoft.com                                     |
+| Certificats                                        | activation-v2.sls.microsoft.com/*                                   |
+|                                                     | crl.microsoft.com/pki/crl/*                                         |
+|                                                     | ocsp.digicert.com/*                                                 |
+|                                                     | https://www.microsoft.com/pkiops/*                                          |
+| Cortana et recherche                                  | store-images.*microsoft.com                                         |
+|                                                     | www.bing.com/client                                                 |
+|                                                     | www.bing.com                                                        |
+|                                                     | www.bing.com/proactive                                              |
+|                                                     | www.bing.com/threshold/xls.aspx                                     |
+|                                                     | exo-ring.msedge.net                                                 |
+|                                                     | fp.msedge.net                                                       |
+|                                                     | fp-vp.azureedge.net                                                 |
+|                                                     | odinvzc.azureedge.net                                               |
+|                                                     | spo-ring.msedge.net                                                 |
+| Authentification d'appareil                               | login.live.com*                                                     |
+| Métadonnées de l’appareil                                     | dmd.metaservices.microsoft.com                                      |
+| Emplacement                                            | inference.location.live.net                                         |
+|                                                     | location-inference-westus.cloudapp.net                              |
+| Données de diagnostic                                     | v10.events.data.microsoft.com                                       |
+|                                                     | v10.vortex-win.data.microsoft.com/collect/v1                        |
+|                                                     | https://www.microsoft.com                                                   |
+|                                                     | co4.telecommand.telemetry.microsoft.com                             |
+|                                                     | cs11.wpc.v0cdn.net                                                  |
+|                                                     | cs1137.wpc.gammacdn.net                                             |
+|                                                     | modern.watson.data.microsoft.com*                                   |
+|                                                     | watson.telemetry.microsoft.com                                      |
+| Licences                                           | licensing.mp.microsoft.com                                          |
+| Compte Microsoft                                   | login.msa.akadns6.net                                               |
+|                                                     | us.configsvc1.live.com.akadns.net                                   |
+| Microsoft Edge                                      | iecvlist.microsoft.com                                              |
+| Service de redirection de liaison montante Microsoft (FWLink) | go.microsoft.com                                                    |
+| Microsoft Store                                     | *.wns.windows.com                                                   |
+|                                                     | storecatalogrevocation.storequality.microsoft.com                   |
+|                                                     | img-prod-cms-rt-microsoft-com*                                      |
+|                                                     | store-images.microsoft.com                                          |
+|                                                     | .md.mp.microsoft.com                                                |
+|                                                     | *displaycatalog.mp.microsoft.com                                    |
+|                                                     | pti.store.microsoft.com                                             |
+|                                                     | storeedgefd.dsx.mp.microsoft.com                                    |
+|                                                     | markets.books.microsoft.com                                         |
+|                                                     | share.microsoft.com                                                 |
+| Indicateur d’état de la connexion réseau (NCSI)          | www.msftconnecttest.com*                                            |
+| Office                                              | *.c-msedge.net                                                      |
+|                                                     | *.e-msedge.net                                                      |
+|                                                     | *.s-msedge.net                                                      |
+|                                                     | nexusrules.officeapps.live.com                                      |
+|                                                     | ocos-office365-s2s.msedge.net                                       |
+|                                                     | officeclient.microsoft.com                                          |
+|                                                     | outlook.office365.com                                               |
+|                                                     | client-office365-tas.msedge.net                                     |
+|                                                     | https://www.office.com                                                      |
+|                                                     | onecollector.cloudapp.aria                                          |
+|                                                     | v10.events.data.microsoft.com/onecollector/1.0/                     |
+|                                                     | self.events.data.microsoft.com                                      |
+|                                                     | to-do.microsoft.com                                                 |
+| OneDrive                                            | g.live.com/1rewlive5skydrive/*                                      |
+|                                                     | msagfx.live.com                                                     |
+|                                                     | oneclient.sfx.ms                                                    |
+| Application Photos                                          | evoke-windowsservices-tas.msedge.net                                |
+| Paramètres                                            | cy2.settings.data.microsoft.com.akadns.net                          |
+|                                                     | settings.data.microsoft.com                                         |
+|                                                     | settings-win.data.microsoft.com                                     |
+| Windows Defender                                    | wdcp.microsoft.com                                                  |
+|                                                     | definitionupdates.microsoft.com                                     |
+|                                                     | go.microsoft.com                                                    |
+|                                                     | *smartscreen.microsoft.com                                          |
+|                                                     | smartscreen-sn3p.smartscreen.microsoft.com                          |
+|                                                     | unitedstates.smartscreen-prod.microsoft.com                         |
+| Windows à la une                                   | *.search.msn.com                                                    |
+|                                                     | arc.msn.com                                                         |
+|                                                     | g.msn.com*                                                          |
+|                                                     | query.prod.cms.rt.microsoft.com                                     |
+|                                                     | ris.api.iris.microsoft.com                                          |
+| Windows Update                                      | *.prod.do.dsp.mp.microsoft.com                                      |
+|                                                     | cs9.wac.phicdn.net                                                  |
+|                                                     | emdl.ws.microsoft.com                                               |
+|                                                     | *.dl.delivery.mp.microsoft.com                                      |
+|                                                     | *.windowsupdate.com                                                 |
+|                                                     | *.delivery.mp.microsoft.com                                         |
+|                                                     | *.update.microsoft.com                                              |
 
 
 
-## Références
+## <a name="references"></a>Références
 
 > [!NOTE]
-> Si vous déployez D365 Remote Assist, vous devrez activer les points de terminaison sur cette [liste](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) 
-- [Configurer les données de diagnostic Windows dans votre organisation](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
-- [Gérer les points de terminaison de connexion pour Windows 10 entreprise, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)
-- [Gérer les connexions des composants du système d’exploitation Windows 10 aux services Microsoft](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Gérer les connexions des composants du système d’exploitation Windows 10 aux services Microsoft à l’aide du serveur GPM Microsoft Intune](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
-- [Configuration réseau requise et bande passante pour Intune](https://docs.microsoft.com/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
-- [Points de terminaison réseau pour Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/intune-endpoints)
-- [URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-- [Conditions préalables pour Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
+> Si vous déployez D365 Remote Assist, vous devez activer les points de terminaison listés pour SharePoint Online et OneDrive Entreprise dans [URL et plages d’adresses IP pour Office 365](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
+
+- [Configurer les données de diagnostic Windows dans votre organisation](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
+- [Gérer les points de terminaison de connexion pour Windows 10 Entreprise, version 1903](/windows/privacy/manage-windows-1903-endpoints)
+- [Gérer les connexions des composants du système d’exploitation Windows 10 aux services Microsoft](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Gérer les connexions des composants du système d’exploitation Windows 10 aux services Microsoft en utilisant le serveur MDM Microsoft Intune](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Configuration requise pour le réseau Intune et bande passante](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
+- [Points de terminaison réseau pour Microsoft Intune](/intune/fundamentals/intune-endpoints)
+- [URL et plages d’adresses IP Office 365](/office365/enterprise/urls-and-ip-address-ranges)
+- [Conditions préalables pour Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
 
-## Limites de HoloLens
+## <a name="hololens-limitations"></a>Limitations d’HoloLens
 
-Une fois votre HoloLens configuré, vous pouvez l’utiliser sans connexion Wi-Fi. Cependant, les applications qui utilisent des connexions internet offriront des fonctionnalités limitées lorsque vous utiliserez HoloLens hors connexion.
+Une fois votre appareil HoloLens configuré, vous pouvez l’utiliser sans connexion Wi-Fi. Cependant, les applications qui utilisent des connexions Internet auront des fonctionnalités limitées quand vous utilisez HoloLens hors connexion.

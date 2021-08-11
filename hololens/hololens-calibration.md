@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: étalonnage, confort, visuels, qualité, écart pupillaire, HoloLens, Windows Mixed Reality, casques VR
-ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664654"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Améliorer la qualité visuelle et le confort
 
@@ -60,7 +60,7 @@ Plusieurs utilisateurs peuvent partager un appareil HoloLens 2, sans que chacun
 
 ### <a name="manually-starting-the-calibration-process"></a>Démarrage manuel du processus d'étalonnage
 
-1. Utilisez le mouvement associé au [**menu** Démarrer](hololens2-basic-usage.md#start-gesture) pour l'ouvrir.
+1. Utilisez le geste de démarrage pour ouvrir le [**menu Démarrer**](hololens2-basic-usage.md#start-gesture).
 1. Si l'application Paramètres n'est pas épinglée au menu **Démarrer**, sélectionnez **Toutes les applications**.
 1. Sélectionnez **Paramètres**, puis **Système** > **Étalonnage** > **Étalonnage des yeux** > **Exécuter l'étalonnage des yeux**.
 
@@ -92,7 +92,7 @@ Avec la fonctionnalité Position automatique des yeux, la boîte de dialogue de 
 1.  La boîte de dialogue de l'invite d'étalonnage du suivi oculaire explique à l'utilisateur pourquoi le suivi oculaire est nécessaire.
 2.  Offre à l'utilisateur la possibilité de décliner l'étalonnage de ses yeux.
 
-Si l'utilisateur choisit de lancer l'étalonnage du suivi oculaire, le focus doit revenir à l'application d'origine une fois l'étalonnage terminé. 
+Si l’utilisateur choisit de lancer l’étalonnage du suivi oculaire, le focus doit revenir à l’application d’origine une fois l’étalonnage terminé. 
 
 ### <a name="calibration-data-and-security"></a>Données d'étalonnage et sécurité
 
@@ -109,8 +109,11 @@ Vous pouvez également désactiver l'invite d'étalonnage en procédant comme su
 1. Sélectionnez **Paramètres** > **Système** > **Étalonnage**.
 1. Désactivez **Lorsqu'une nouvelle personne utilise cet HoloLens, lui demander automatiquement d'exécuter l'étalonnage des yeux**.
 
-> [!IMPORTANT]
-> Ce paramètre peut nuire à la qualité et au confort d'affichage des hologrammes.  Lorsque vous le désactivez, les fonctionnalités qui dépendent du suivi oculaire (par exemple, le défilement du texte) ne fonctionnent plus dans les applications immersives.
+   > [!IMPORTANT]
+   > Ce paramètre peut nuire à la qualité et au confort d'affichage des hologrammes.  Lorsque vous le désactivez, les fonctionnalités qui dépendent du suivi oculaire (par exemple, le défilement du texte) ne fonctionnent plus dans les applications immersives.
+
+> [!NOTE]
+> Le commutateur Paramètres a été supprimé depuis Windows Holographique, version 20H2, avec le lancement de [la prise en charge de la position automatique des yeux](hololens-release-notes.md#auto-eye-position-support). L’invite d’étalonnage apparaît automatiquement seulement si un utilisateur non étalonné utilise une application activée pour le suivi oculaire.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>Technologie de suivi oculaire de l'HoloLens 2
 
@@ -140,9 +143,9 @@ Pour exécuter l'application Étalonnage à l'aide du menu **Démarrer**, procé
 1. Pour afficher toutes les applications, sélectionnez **+** .
 1. Sélectionnez **Étalonnage**.
 
-![Accès à l'application Étalonnage à partir du shell](./images/calibration-shell.png)
+   ![Accès à l'application Étalonnage à partir du shell](./images/calibration-shell.png)
 
-![Application Étalonnage affichée sous la forme d'un cube dynamique après son lancement](./images/calibration-livecube-200px.png)
+   ![Application Étalonnage affichée sous la forme d'un cube dynamique après son lancement](./images/calibration-livecube-200px.png)
 
 Pour exécuter l'application Étalonnage à l'aide de l'application Paramètres, procédez comme suit :
 
@@ -151,7 +154,7 @@ Pour exécuter l'application Étalonnage à l'aide de l'application Paramètres,
 1. Sélectionnez **Paramètres**.
 1. Sélectionnez **Système** > **Utilitaires** > **Ouvrir l'étalonnage**.
 
-![Lancement de l'application Étalonnage à partir de l'application Paramètres](./images/calibration-settings-500px.jpg)
+   ![Lancement de l'application Étalonnage à partir de l'application Paramètres](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Casques immersifs
 

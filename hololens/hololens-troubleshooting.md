@@ -13,19 +13,19 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: b07514e73e43d267aa856c0fb9a256448e565000
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662847"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
 cet article explique comment résoudre plusieurs problèmes courants liés au HoloLens.
 
 >[!IMPORTANT]
-> Avant de commencer une procédure de résolution des problèmes, assurez-vous que votre appareil est facturé à **20 à 40%** de la capacité de la batterie, si possible. Les [voyants](hololens2-setup.md#lights-that-indicate-the-battery-level) de la batterie situés sous le bouton d’alimentation constituent un moyen rapide de vérifier la capacité de la batterie sans se connecter à l’appareil.
+> Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au minimum entre **20 et 40 %** , si possible. Les [témoins](hololens2-setup.md#lights-that-indicate-the-battery-level) situés sous le bouton d'alimentation permettent de vérifier rapidement la capacité de la batterie sans se connecter à l'appareil.
 
 <a id="list"></a>
 
@@ -39,7 +39,7 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 - [Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive ne charge pas automatiquement les images](#onedrive-doesnt-automatically-upload-pictures)
 
-**Général**
+**Généralités**
 - [HoloLens ne répond pas ou ne démarre pas](#hololens-is-unresponsive-or-wont-start)
 - [Erreur « espace disque insuffisant »](#low-disk-space-error)
 - [Échec de l’étalonnage](#calibration-fails)
@@ -307,12 +307,12 @@ si votre visière présente des empreintes digitales ou des taches, utilisez le 
 
 ## <a name="cant-connect-to-wi-fi"></a>Impossible de se connecter à Wi-Fi
 
-voici quelques points à essayer si vous ne pouvez pas connecter votre HoloLens à un réseau Wi-Fi :
+Si vous ne parvenez pas à connecter votre HoloLens à un réseau Wi-Fi, vous pouvez essayer ce qui suit :
 
-- Assurez-vous que Wi-Fi est activé. pour vérifier, utilisez le mouvement démarrer, puis sélectionnez **Paramètres**  >  **réseau &amp; Internet**  >  **Wi-Fi**. Si Wi-Fi est activé, essayez de le mettre hors tension puis de nouveau sous tension.
-- Rapprochez-vous du routeur ou du point d’accès.
+- Vérifiez que le Wi-Fi est activé. pour vérifier, utilisez le mouvement démarrer, puis sélectionnez **Paramètres**  >  **réseau &amp; Internet**  >  **Wi-Fi**. Si le Wi-Fi est activé, essayez de le désactiver puis de le réactiver.
+- Rapprochez-vous du routeur ou du point d'accès.
 - Redémarrez votre routeur Wi-Fi, puis [redémarrez HoloLens](hololens-recovery.md). Réessayez de vous connecter.
-- Si aucun de ces éléments ne fonctionne, assurez-vous que votre routeur utilise le microprogramme le plus récent. Vous pouvez trouver ces informations sur le site Web du fabricant.
+- Si le problème persiste, vérifiez que votre routeur utilise le microprogramme le plus récent. Cette information est disponible sur le site web du fabricant.
 
 [Retour à la liste](#list)
 

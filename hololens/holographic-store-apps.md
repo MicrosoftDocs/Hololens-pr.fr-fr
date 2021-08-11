@@ -1,6 +1,6 @@
 ---
 title: Rechercher, installer et désinstaller des applications
-description: Le Microsoft Store constitue votre source d’applications et de jeux compatibles avec HoloLens.  En savoir plus sur la recherche, l’installation et la désinstallation d’applications holographiques.
+description: Le Microsoft Store constitue votre source d’applications et de jeux compatibles avec HoloLens.  Découvrez-en plus sur la recherche, l’installation et la désinstallation d’applications holographiques.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
 ms.date: 10/27/2020
@@ -15,87 +15,107 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 44c79a41d7864cd6000ffed1bdd32dab8ffabc39
-ms.sourcegitcommit: b437c738f101ac870a29bbdb7fd642eda3d67f00
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "11406266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664786"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Rechercher, installer et désinstaller des applications à partir du Microsoft Store
 
-Le Microsoft Store constitue votre source d’accès aux applications et de jeux compatibles avec HoloLens. Lorsque vous accédez au Store sur votre HoloLens, toutes les applications que vous voyez y sont exécutées.
+Le Microsoft Store vous permet d'accéder aux applications et aux jeux compatibles avec l'HoloLens. Quand vous accédez au Store sur votre HoloLens, toutes les applications que vous voyez y sont exécutées.
 
-Les applications sur HoloLens utilisent l’affichage 2D ou l’affichage holographique. Les applications qui utilisent l’affichage 2D ressemblent à des fenêtres et peuvent être positionnées partout autour de vous. Les applications qui utilisent l’affichage holographique vous entourent et deviennent la seule application que vous voyez.
+Les applications sur HoloLens utilisent l’affichage 2D ou l’affichage holographique. Les applications qui utilisent l’affichage 2D ressemblent à des fenêtres et peuvent être positionnées partout autour de vous. Les applications qui utilisent l’affichage holographique vous entourent et deviennent la seule application que vous voyez.
 
-HoloLens prend en charge de nombreuses applications existantes à partir du Microsoft Store et les nouvelles applications conçues spécifiquement pour HoloLens.  Cet article décrit les applications holographiques du Microsoft Store.
+HoloLens prend en charge de nombreuses applications existantes à partir du Microsoft Store ainsi que les nouvelles applications conçues spécifiquement pour HoloLens.  Cet article décrit les applications holographiques du Microsoft Store.
 
-Pour en savoir plus sur l’installation et l’exécution des applications personnalisées, consultez [Applications holographiques personnalisées](holographic-custom-apps.md).
+Pour en savoir plus sur l’installation et l’exécution d’applications personnalisées, consultez [Applications holographiques personnalisées](holographic-custom-apps.md).
 
 ## <a name="find-apps"></a>Rechercher des applications
 
-Ouvrez le Microsoft Store à partir du menu **Démarrer**. Recherchez ensuite applications et jeux. Vous pouvez utiliser des [commandes vocales](hololens-cortana.md) pour effectuer des recherches en prononçant « Rechercher ». Une fois la fenêtre de recherche ouverte, dites « Démarrer la dictée », puis lorsque vous y êtes invité, commencez à énoncer vos critères de recherche.
+Ouvrez le Microsoft Store à partir du menu **Démarrer**. Recherchez ensuite les applications et les jeux. Vous pouvez utiliser des [commandes vocales](hololens-cortana.md) pour effectuer des recherches en prononçant « Rechercher ». Une fois la fenêtre de recherche ouverte, dites « Démarrer la dictée », puis lorsque vous y êtes invité, commencez à énoncer vos critères de recherche.
 
 > [!NOTE]
-> La configuration requise pour les appareils HoloLens dépend de l’architecture de la build de l’application. Si une build d’application pour HoloLens (1ère génération) n’a pas été mise à jour avec une nouvelle UWP dans le Windows Store afin d’inclure le package d’architecture ARM, elle ne sera pas disponible pour les appareils HoloLens 2. De même, si une application HoloLens 2 n’inclut pas le package d’architecture x86, elle ne sera pas disponible pour les appareils HoloLens (1ère génération). Architectures de périphériques HoloLens :
-> - x86 = HoloLens (1ère génération)
-> - ARM = HoloLens 2
+> La configuration requise pour les appareils HoloLens dépend de l’architecture de la build de l’application. Si une build d’application pour HoloLens (1re génération) n’a pas été mise à jour avec une nouvelle UWP dans le Windows Store afin d’inclure le package d’architecture ARM, elle ne sera pas disponible pour les appareils HoloLens 2. De même, si une application HoloLens 2 n’inclut pas le package d’architecture x86, elle ne sera pas disponible pour les appareils HoloLens (1re génération). Architectures des appareils HoloLens :
+> - x86 = HoloLens (1re génération)
+> - ARM = HoloLens 2
 
 > [!NOTE]
-> Le 12 janvier 2021, nous ne prendrons plus en charge les applications suivantes sur les appareils HoloLens. Nous vous encourageons à utiliser le lien suivant sur votre appareil pour bénéficier de la version web de l’application.
+> Le 12 janvier 2021, nous ne prendrons plus en charge les applications suivantes sur les appareils HoloLens. Nous vous encourageons à utiliser le lien suivant sur votre appareil pour bénéficier de la version web de l’application.
 
-| Application        | Link                                          |
+| Application        | Lien                                          |
 |------------|-----------------------------------------------|
-| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
-| Word Mobile       | https://office.live.com/start/Word.aspx       |
-| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
-## <a name="install-apps"></a>Installation d’applications
+## <a name="install-apps"></a>Installer des applications
 
 Pour télécharger des applications, vous devez être connecté avec un compte Microsoft. Certaines applications sont gratuites et peuvent être téléchargées immédiatement. Pour les applications qui nécessitent un achat, vous devez être inscrit au Windows Store avec votre compte Microsoft et avoir un mode de paiement valide.
+
 > [!NOTE]
 > Il n’est pas nécessaire que le compte que vous utilisez dans le Microsoft Store soit identique au compte avec lequel vous vous êtes connecté. Si vous utilisez un compte professionnel ou scolaire sur votre HoloLens, vous devrez peut-être vous connecter à l’aide de votre compte personnel dans l’application Store pour effectuer l’achat.
 
 > [!TIP]
-> Pour configurer un mode de paiement, accédez à [account.microsoft.com](https://account.microsoft.com/), puis sélectionnez **Paiement et facturation** > **Option de paiement** > **Ajouter une option de paiement**.
+> Pour configurer un mode de paiement, accédez à [account.microsoft.com](https://account.microsoft.com/) et sélectionnez **Paiement et facturation** > **Options de paiement** > **Ajouter une option de paiement**.
 
-1. Pour ouvrir le [menu **Démarrer**](holographic-home.md), effectuez le [mouvement associé au menu Démarrer](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) ou un [écartement des doigts paume vers le haut](hololens1-basic-usage.md) sur HoloLens (1ère génération).
-1. Sélectionnez l’application Microsoft Store. Après l’ouverture de l’application du Store :
+1. Pour ouvrir le [menu **Démarrer**](holographic-home.md), effectuez un [mouvement associé au menu Démarrer](/hololens/hololens2-basic-usage#start-gesture) ou un [écartement des doigts paume vers le haut](hololens1-basic-usage.md) sur HoloLens (1re génération).
+
+1. Sélectionnez l’application Microsoft Store. Après l’ouverture de l’application du Store :
    1. Utilisez la barre de recherche pour rechercher des applications. 
-   1. Sélectionnez les applications essentielles ou les applications spécialement conçues pour HoloLens dans l'une des catégories proposées.
-   1. Dans la partie supérieure droite de l’application Store, sélectionnez le bouton **« ... »**, puis sélectionnez **Ma bibliothèque** pour afficher les applications précédemment achetées.
-1. Sélectionnez **Télécharger** ou **Installer** sur la page de l’application (un achat peut être nécessaire).
+   1. Sélectionnez les applications essentielles ou les applications spécialement conçues pour HoloLens dans l’une des catégories proposées.
+   1. Dans la partie supérieure droite de l’application Store, sélectionnez le bouton **« ... »** , puis sélectionnez **Ma bibliothèque** pour afficher les applications précédemment achetées.
 
-## <a name="update-apps"></a>Mettre à jour les applications
+1. Sélectionnez **Obtenir** ou **Installer** dans la page de l’application (un achat peut être nécessaire).
+
+## <a name="update-apps"></a>Mettre à jour des applications
+
 Pour mettre à jour une application que vous avez installée à partir du Microsoft Store, vous pouvez mettre à jour l’application à partir de l’application du Microsoft Store. Pour les applications installées pour le Microsoft Store pour Entreprises, vous pouvez également les mettre à jour à partir du Microsoft Store pour Entreprises. 
-1. Pour ouvrir le [menu **Démarrer**](holographic-home.md), effectuez le [mouvement associé au menu Démarrer](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) ou un [écartement des doigts paume vers le haut](hololens1-basic-usage.md) sur HoloLens (1ère génération).
+
+1. Pour ouvrir le [menu **Démarrer**](holographic-home.md), effectuez un [mouvement associé au menu Démarrer](/hololens/hololens2-basic-usage#start-gesture) ou un [écartement des doigts paume vers le haut](hololens1-basic-usage.md) sur HoloLens (1re génération).
+
 1. Sélectionnez l’application du Store.
+
 1. Regardez dans la partie supérieure droite de l’application Store. 
-1. Sélectionnez le bouton **« ... »** ou « Voir plus ».
+
+1. Sélectionnez le bouton **« ... »** ou « Voir plus ».
 
    > [!div class="mx-imgBorder"]
-   > ![Capture d’écran de l’application Microsoft Store.](images/store-update-1.png)
+   > ![Capture d’écran de l’application Microsoft Store.](images/store-update-1.png)
 
 1. Sélectionnez **Téléchargements et mises à jour**.
     1. Si votre appareil a précédemment identifié des mises à jour, il peut y avoir une flèche vers le bas et un nombre représentant les mises à jour en attente.
+
 1. Sélectionnez **Obtenir les mises à jour**. Votre appareil va maintenant rechercher les mises à jour et les préparer au téléchargement et l’installation. 
  
    > [!div class="mx-imgBorder"]
    > ![Capture d’écran de l’application Microsoft Store montrant la récupération de mises à jour.](images/store-update-2.png.jpg)
 
 > [!NOTE]
-> Si les applications sur votre appareil ont été distribuées par votre organisation, elles peuvent être mises à jour via les mêmes méthodes de gestion des applications commerciales. Si cela s’applique à votre situation, consultez pour plus d’informations notre [vue d’ensemble du déploiement d’applications commerciales.](app-deploy-overview.md)
+> Si les applications sur votre appareil ont été distribuées par votre organisation, elles peuvent être mises à jour au moyen des mêmes méthodes de gestion des applications commerciales. Si cela s’applique à votre situation, consultez notre [vue d’ensemble du déploiement d’applications commerciales](app-deploy-overview.md).
 >
-> Si vous voulez mettre à jour une application personnalisée en version test ou déployée, vous devez utiliser la même méthode avec la version mise à jour de votre application. Pour en savoir plus sur l’installation et l’exécution des applications personnalisées, consultez la rubrique [Applications holographiques personnalisées](holographic-custom-apps.md).
+> Si vous voulez mettre à jour une application personnalisée en version test ou déployée, vous devez utiliser la même méthode avec la version mise à jour de votre application. Pour en savoir plus sur l’installation et l’exécution d’applications personnalisées, consultez [Applications holographiques personnalisées](holographic-custom-apps.md).
 
-## <a name="uninstall-apps"></a>Désinstaller les applications
+## <a name="uninstall-apps"></a>Désinstallation d’applications
 
-Vous pouvez désinstaller les applications de deux manières.  Vous pouvez désinstaller les applications par le biais du Microsoft Store ou du menu Démarrer.
+Vous pouvez désinstaller les applications de trois manières. Vous pouvez désinstaller les applications par le biais du Microsoft Store, du menu Démarrer ou des Paramètres. 
+
+> [!WARNING]
+> Vous ne pouvez pas désinstaller une application système ou le Microsoft Store.
+
+> [!IMPORTANT]
+> Si votre HoloLens 2 est partagé par plusieurs utilisateurs, l’utilisateur qui a installé l’application doit se connecter pour la désinstaller. 
+
+### <a name="uninstall-from-the-microsoft-store"></a>Désinstaller à partir du Microsoft Store
+
+Ouvrez le Microsoft Store à partir du menu **Démarrer**, puis recherchez l’application que vous souhaitez désinstaller.  Dans la page Store, chaque application installée a un bouton **Désinstaller**.
 
 ### <a name="uninstall-from-the-start-menu"></a>Désinstaller à partir du menu Démarrer
 
-Dans le menu **Démarrer** ou dans la liste **Toutes les applications**, accédez à l’application. Sélectionnez et maintenez jusqu'à ce que le menu apparaisse, puis sélectionnez **Désinstaller**.
+Dans le menu **Démarrer** ou dans la liste **Toutes les applications**, accédez à l’application. Sélectionnez-la en maintenant l’appui jusqu’à ce que le menu s’affiche, puis sélectionnez **Désinstaller**.
 
-### <a name="uninstall-from-the-microsoft-store"></a>Désinstaller à partir du Microsoft Store
+### <a name="uninstall-from-settings"></a>Désinstaller à partir des paramètres
+Dans le menu **Démarrer**, sélectionnez **Paramètres > Applications**. Recherchez l’application dans la liste, sélectionnez-la et cliquez sur **Désinstaller**.
 
-Ouvrez le Microsoft Store à partir du menu **Démarrer,** puis recherchez l’application que vous souhaitez désinstaller.  Dans la page Store, chaque application installée dispose d’un bouton **Désinstaller.**
+Si vous ne parvenez pas à désinstaller une application, veuillez [envoyer un commentaire](/hololens/hololens-feedback) à l’aide du Hub de commentaires.

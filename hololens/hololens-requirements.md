@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662904"
 ---
 # <a name="common-deployment-scenarios"></a>Scénarios courants de déploiement
 
@@ -29,7 +29,7 @@ Vous souhaitez déployer des solutions à grande échelle. Nous souhaitons vous 
 
 vous êtes peut-être un décideur d’entreprise, un professionnel de l’informatique ou une équipe d’innovation souhaitant adopter HoloLens au sein de votre organisation. au fur et à mesure que vous partez de la preuve de concept à un déploiement mis à l’échelle, nos guides de déploiement ont un sens de HoloLens au sein de votre infrastructure informatique, quelle que soit la taille ou la taille. Les scénarios de déploiement suivants sont les plus courants :
 
-| Scénario |Usage | Points clés |
+| Scénario |Utilisation | Points clés |
 |---------|---------|---------|
 | [Scénario A : appareils connectés au Cloud](hololens2-cloud-connected-overview.md) | Lorsque vous commencez votre déploiement pour la première fois, vous pouvez commencer petit et déployer un seul appareil connecté au Cloud juste pour voir le processus de base. | Les appareils sont connectés aux services Cloud et à Internet public. Cela est particulièrement adapté aux cas d’utilisation client, aux services de champ et à la preuve de concept.|
 | [Scénario B : réseau de l’Organisation](hololens2-corp-connected-overview.md) | Lorsque vous déployez en production à grande échelle, vous devrez peut-être intégrer le réseau de votre propre organisation. | Les appareils sont connectés à un réseau Wi-Fi « d’entreprise ». Cela est particulièrement adapté aux utilisateurs internes, ou à l’utilisation au sein de l’environnement d’entreprise.|

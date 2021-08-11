@@ -16,12 +16,12 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637263"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115662652"
 title: Questions de sécurité fréquemment posées sur HoloLens (1re génération)
 summary: ''
 sections:
@@ -76,7 +76,7 @@ sections:
   - question: >
       L’appareil peut-il utiliser l’infrastructure en tant que client ?
     answer: >
-      * Oui
+      * Yes
   - question: >
       Quel protocole est utilisé ?
     answer: >
@@ -100,11 +100,11 @@ sections:
   - question: >
       Existe-t-il une fonctionnalité de démarrage sécurisé pour le HoloLens ?
     answer: >
-      * Oui
+      * Yes
   - question: >
       Est-il possible de désactiver ou de déconnecter la prise en charge des périphériques de l’appareil ?
     answer: >
-      * Oui
+      * Yes
   - question: >
       Existe-t-il une capacité de contrôle ou de désactivation de l’utilisation de ports sur l’appareil ?
     answer: >
@@ -122,7 +122,7 @@ sections:
   - question: >
       Microsoft inclut-il des portes back ou un accès à des services qui permet à Microsoft de se connecter à l’appareil pour le partage d’écran ou le support à distance ?
     answer: >
-      * Non
+      * No
   - question: >
       Quand un certificat d’infrastructure à clé publique est généré pour la communication approuvée, nous voulons que le certificat soit généré sur l’appareil afin que nous sachions qu’il se trouve uniquement sur cet appareil, propre à cet appareil, et qu’il ne peut pas être exporté ou utilisé pour emprunter l’identité de l’appareil. Est-ce vrai sur HoloLens ? Si ce n’est pas le cas, existe-t-il une atténuation potentielle ?
     answer: >-

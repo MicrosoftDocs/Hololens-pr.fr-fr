@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7f712c571df1170badf3bfc832e43881278eec90
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663670"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>configurer des HoloLens à l’aide d’un package d’approvisionnement
 
@@ -239,7 +239,7 @@ dans Windows concepteur de Configuration, lorsque vous créez un package d’app
 
 | Paramètre | Description |
 | --- | --- |
-| **Certificats** | Déployer un certificat pour HoloLens.  |
+| **Certificates** | Déployer un certificat pour HoloLens.  |
 | **ConnectivityProfiles** | Déployer un profil Wi-Fi pour HoloLens.   |
 | **EditionUpgrade** | [Effectuez une mise à niveau vers Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Stratégies** | Autoriser ou interdire le mode développeur sur HoloLens. [Stratégies prises en charge par Windows Holographic for Business](/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |

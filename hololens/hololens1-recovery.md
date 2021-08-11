@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661808"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>redémarrage, réinitialisation ou récupération HoloLens (1re génération)
 
@@ -91,15 +91,15 @@ pour revenir à une version précédente de HoloLens 1, procédez comme suit :
 
 1. assurez-vous que vous n’avez aucun téléphone ou Windows appareils branchés sur votre PC.
 1. sur votre PC, téléchargez l' [outil Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379).
-1. téléchargez le [package de récupération de mise à jour anniversaire HoloLens](https://aka.ms/hololensrecovery).
+1. Téléchargez le [package de récupération HoloLens Anniversary Update](https://aka.ms/hololensrecovery).
 1. Une fois les téléchargements terminés, ouvrez l' **Explorateur de fichiers**  >  . Cliquez avec le bouton droit sur le dossier compressé que vous venez de télécharger, puis sélectionnez **extraire tout**  >  **extraire** pour le décompresser.
 1. Connecter votre HoloLens sur votre ordinateur à l’aide du câble micro-USB avec lequel il a été fourni. (même si vous avez utilisé d’autres câbles pour connecter votre HoloLens, celui-ci fonctionne mieux.)
-1. Le WDRT détectera automatiquement votre HoloLens. sélectionnez la vignette **Microsoft HoloLens** .
+1. Le WDRT détectera automatiquement votre HoloLens. Sélectionnez la vignette **Microsoft HoloLens**.
 1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages** et choisissez le fichier d’installation contenu dans le dossier que vous avez décompressé à l’étape 4. (Recherchez un fichier avec l’extension. FFU.)
 1. Sélectionnez **installer le logiciel** et suivez les instructions.
 
 > [!NOTE]
-> si le WDRT ne détecte pas votre HoloLens, essayez de redémarrer votre ordinateur. si cela ne fonctionne pas, sélectionnez **mon appareil n’a pas été détecté**, sélectionnez **Microsoft HoloLens**, puis suivez les instructions.
+> si le WDRT ne détecte pas votre HoloLens, essayez de redémarrer votre ordinateur. Si le problème persiste, sélectionnez **Mon appareil n'a pas été détecté**, choisissez **Microsoft HoloLens**, puis suivez les instructions.
 
 ## <a name="reset-to-factory-settings"></a>Rétablir les paramètres d’usine
 

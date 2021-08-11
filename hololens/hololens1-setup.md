@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: f5b16e579eca725158ed99ef7a912b72a7cab7ab
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662282"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Préparer votre HoloLens 2 (1re génération) pour l’utilisation
 
@@ -29,16 +29,16 @@ pour facturer votre HoloLens, connectez l’alimentation au port de chargement �
 
 ![Image qui montre comment attacher le câble micro USB au HoloLens](./images/hololens-charging.png)
 
-lorsque votre HoloLens est activé, l’indicateur de la batterie indique le niveau de la batterie par incréments. Quand une seule des cinq lumières est activée, le niveau de la batterie est inférieur à 20 pour cent. Si le niveau de batterie est trop faible et que vous essayez d’allumer l’appareil, un voyant clignote brièvement, puis s’affiche.
+lorsque votre HoloLens est activé, l’indicateur de la batterie indique le niveau de la batterie par incréments. Lorsqu’un seul des cinq voyants est allumé, le niveau de la batterie est inférieur à 20 %. Si le niveau de la batterie est extrêmement faible et que vous essayez d’allumer l’appareil, un voyant clignote brièvement, puis s’éteint.
 
 > [!TIP]
 > pour obtenir une estimation de votre niveau de batterie actuel, dites-le « bonjour Cortana, quelle est la batterie restante ? »
 
 l’alimentation et le câble USB fournis avec l’appareil constituent la meilleure façon de charger votre HoloLens (1re génération).  Le bloc d’alimentation fournit des 18W d’alimentation (9V 2A).
 
-La vitesse de chargement et la vitesse peuvent varier en fonction de l’environnement d’exécution de l’appareil.
+Le taux et la vitesse de charge peuvent varier en fonction de l'environnement dans lequel l'appareil est utilisé.
 
-## <a name="adjust-fit"></a>Ajuster la taille
+## <a name="adjust-fit"></a>Ajuster le positionnement sur la tête
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
@@ -85,7 +85,7 @@ Les boutons luminosité et volume se trouvent au-dessus du volume des bras d’a
 
 ![Image qui affiche les voyants des indicateurs de HoloLens](./images/hololens-lights.png)
 
-vous ne savez pas exactement ce que signifient les voyants de votre HoloLens ? Voici une aide.
+Vous ignorez ce qu'indiquent les voyants de votre HoloLens ? Voici une aide.
 
 |Quand les lumières le font |Cela signifie que |
 |---|---|
@@ -103,9 +103,9 @@ vous ne savez pas exactement ce que signifient les voyants de votre HoloLens ? 
 
 utilisez votre HoloLens dans un espace sécurisé exempt d’obstruction et de risques de déclenchement. Ne l’utilisez pas lorsque vous avez besoin d’un champ clair de vue et de votre attention, par exemple lorsque vous utilisez un véhicule ou effectuez d’autres activités potentiellement dangereuses.
 
-### <a name="stay-comfortable"></a>Restez à l’aise
+### <a name="stay-comfortable"></a>Sentez-vous à l'aise
 
-conservez vos premières sessions avec HoloLens court et veillez à prendre des pauses. Si vous rencontrez des difficultés, arrêtez et restez jusqu’à ce que vous soyez mieux. Il peut s’agir d’un sentiment temporaire de incrédulité, de la maladie, du dizziness, de la désorientation, des maux de tête, de la fatigue, du stress oculaire ou des yeux secs.
+Faites en sorte que vos premières séances avec l'HoloLens soient brèves et faites des pauses. Si vous ressentez une gêne, arrêtez-vous et reposez-vous jusqu'à ce que vous vous sentiez mieux. Les troubles ressentis peuvent être des nausées, le mal des transports, des étourdissements, des maux de tête, une sensation de fatigue, une fatigue visuelle ou des yeux secs.
 
 > [!div class="nextstepaction"]
 > [démarrez et configurez votre HoloLens (1re génération)](hololens1-start.md)

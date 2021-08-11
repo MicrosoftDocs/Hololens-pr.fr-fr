@@ -1,6 +1,6 @@
 ---
-title: Scénarios courants – sécurité en mode hors connexion, HoloLens 2
-description: Découvrez comment configurer un déploiement sécurisé hors connexion et un scénario de déploiement d’applications avec l’approvisionnement pour les appareils HoloLens.
+title: Scénarios courants – HoloLens 2 sécurisés hors connexion
+description: découvrez comment configurer un déploiement sécurisé hors connexion et un scénario de déploiement d’applications avec l’approvisionnement pour des appareils HoloLens.
 keywords: HoloLens, gestion, hors connexion, sécurité hors connexion
 ms.date: 9/25/2020
 manager: yannisle
@@ -14,18 +14,18 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8828444a69d7e5d46293340ff771f97eb5eb01e6
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664517"
 ---
-# <a name="common-scenarios--offline-secure-hololens-2"></a>Scénarios courants – sécurité en mode hors connexion, HoloLens 2
+# <a name="common-scenarios--offline-secure-hololens-2"></a>Scénarios courants – HoloLens 2 sécurisés hors connexion
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Ce guide fournit des conseils pour l’application d’un exemple de package de provisionnement qui verrouille un HoloLens 2 pour une utilisation dans des environnements sécurisés avec les restrictions suivantes :
+ce guide fournit des conseils pour l’application d’un exemple de Package de provisionnement qui verrouille une HoloLens 2 pour une utilisation dans des environnements sécurisés avec les restrictions suivantes :
 
 -   Désactivez le Wi-Fi.
 -   Désactivez BlueTooth.
@@ -37,11 +37,11 @@ Ce guide fournit des conseils pour l’application d’un exemple de package de 
 
 ## <a name="prepare"></a>Préparation
 
-Installation du PC Windows 10
-1. [Téléchargez le dernier fichier de système d’exploitation HoloLens 2](https://aka.ms/hololens2download) directement sur un PC. 
+Windows 10 Configuration du PC
+1. [téléchargez le dernier fichier de système d’exploitation HoloLens 2](https://aka.ms/hololens2download) directement sur un PC. 
    1. La prise en charge de cette configuration est incluse dans les versions 19041,1117 et ultérieures.
-1. Télécharger/installer l’outil de récupération avancée (ARC) [à partir du Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) sur votre PC
-1. Téléchargez/installez le dernier outil [Windows configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) à partir du Microsoft Store sur votre PC.
+1. télécharger/installer l’outil de récupération avancée (ARC) [à partir du Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) sur votre PC
+1. téléchargez et installez la dernière version de l’outil [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) à partir du Microsoft Store sur votre PC.
 1. [Téléchargez le dossier OfflineSecureHL2_Sample avec les fichiers projet](https://aka.ms/HoloLensDocs-SecureOfflineSample) pour générer le PPKG.
 1. Préparez votre [application métier hors connexion pour le déploiement de PPKG](app-deploy-provisioning-package.md). 
 
@@ -63,11 +63,11 @@ Créer un package d’approvisionnement de configuration sécurisé
    |     Élément                                                |     Paramètre                       |     Description                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     Comptes/utilisateurs                                    |     Nom d’utilisateur local & mot de passe    |     Pour ces périphériques hors connexion, un nom d’utilisateur et un mot de passe uniques devront être définis et partagés par tous les utilisateurs de l’appareil.          |
-   |     Première expérience/HoloLens/SkipCalibration       |     Vrai                          |     Ignore l’étalonnage lors de l’installation initiale de l’appareil uniquement                                                                             |
-   |     Première expérience/HoloLens/SkipTraining          |     Vrai                          |     Ignore la formation des appareils lors de la configuration initiale de l’appareil                                                                              |
-   |     Première expérience/HoloLens/WiFi                  |     Vrai                          |     Ignore la configuration de Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
+   |     première expérience/HoloLens/SkipCalibration       |     True                          |     Ignore l’étalonnage lors de l’installation initiale de l’appareil uniquement                                                                             |
+   |     première expérience/HoloLens/SkipTraining          |     True                          |     Ignore la formation des appareils lors de la configuration initiale de l’appareil                                                                              |
+   |     première expérience/HoloLens/WiFi                  |     True                          |     Ignore la configuration de Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
    |     Stratégies/connectivité/AllowBluetooth                |     No                            |     Désactive Bluetooth                                                                                                             |
-   |     Stratégies/expérience/AllowCortana                    |     No                            |     Désactive Cortana (pour éliminer les problèmes potentiels puisque les microphones sont désactivés)                                          |
+   |     Stratégies/expérience/AllowCortana                    |     No                            |     désactive Cortana (pour éliminer les problèmes potentiels, car les microphones sont désactivés)                                          |
    |     Stratégies/MixedReality/MicrophoneDisabled            |     Yes                           |     Désactive le microphone                                                                                                            |
    |     Stratégies/confidentialité/LetAppsAccessLocation              |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux données d’emplacement (afin d’éliminer les problèmes potentiels puisque le suivi d’emplacement est désactivé)    |
    |     Stratégies/confidentialité/LetAppsAccessMicrophone            |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux micros (pour éliminer les problèmes potentiels puisque les microphones sont désactivés)           |
@@ -76,7 +76,7 @@ Créer un package d’approvisionnement de configuration sécurisé
    |     Stratégies/système/AllowLocation                       |     No                            |     Empêche l’appareil d’essayer d’effectuer le suivi des données d’emplacement.                                                                        |
    |     Stratégies/WiFi/AllowWiFi                             |     No                            |     Désactive Wi-Fi                                                                                                                 |
 
-1. Sous paramètres d’exécution, sélectionnez **comptes/utilisateurs/nom d’utilisateur : Holo/mot de passe**.
+1. sous Paramètres d’exécution, sélectionnez **comptes/utilisateurs/nom d’utilisateur : Holo/mot de passe**.
 
    Notez le mot de passe et réinitialisez-le si vous le souhaitez.
 
@@ -92,27 +92,27 @@ Créer un package d’approvisionnement de configuration sécurisé
 
 ## <a name="deploy"></a>Déployer
 
-1. Connectez le HL2 à votre PC Windows 10 via un câble USB.
-1. Lancez l’outil ARC et sélectionnez **HoloLens 2** .
+1. Connecter le HL2 à votre Windows 10 PC via un câble USB.
+1. Lancez l’outil ARC et sélectionnez **HoloLens 2**
 
-   ![Écran de réinitialisation du nettoyage HoloLens 2](images/ARC2.png)
+   ![Écran initial de réinitialisation d’HoloLens 2](images/ARC2.png)
 
 1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages**.
 
-   ![Écran d’informations d’ARC HoloLens 2](images/arc_device_info.png)
+   ![HoloLens 2 Écran d’informations sur l’ARC](images/arc_device_info.png)
 
 1. Accédez au fichier. FFU téléchargé précédemment, puis sélectionnez **ouvrir**.
 1. Sur la page d’avertissement, sélectionnez **Continuer**.
 
-   ![Écran d’avertissement de l’ARC HoloLens 2](images/arc_warning.png)
+   ![HoloLens 2 Écran d’avertissement de l’ARC](images/arc_warning.png)
 
-1. Attendez que l’outil ARC termine l’installation du système d’exploitation HoloLens 2.
+1. attendez que l’outil ARC termine l’installation du système d’exploitation HoloLens 2.
 1. Une fois que l’appareil a effectué l’installation et le redémarrage, à partir de votre PC, accédez à l’Explorateur de fichiers et copiez le fichier PPKG précédemment enregistré sur le dossier de l’appareil.
 
    > [!div class="mx-imgBorder"]
    > ![Fichier PPKG sur le PC dans la fenêtre de l’Explorateur de fichiers.](images/offline-secure-file-explorer.png)
 
-1. Sur HoloLens 2, appuyez sur la combinaison de boutons suivante pour exécuter le package d’approvisionnement : Appuyez sur le bouton de mise en **baisse du volume** et sur le **bouton d’alimentation** en même temps.
+1. sur la HoloLens 2, appuyez sur la combinaison de boutons suivante pour exécuter le Package d’approvisionnement : appuyez sur le bouton de mise en **baisse du Volume** et sur le **bouton d’alimentation** en même temps.
 1. Vous serez invité à appliquer le package d’approvisionnement, à sélectionner **confirmer** .
 1. Une fois le package d’approvisionnement terminé, sélectionnez **OK**.
 1. Vous devez ensuite être invité à vous connecter à l’appareil avec le compte local partagé et le mot de passe.

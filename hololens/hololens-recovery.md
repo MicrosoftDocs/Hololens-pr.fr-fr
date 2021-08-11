@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 7d8f2f8bf6aaaeb7f6f0ddbd339d428dad9335faeb99bfca48a19e68929921ed
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662987"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Redémarrer, réinitialiser ou récupérer HoloLens 2
 
@@ -72,6 +72,7 @@ Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la pr
 2. Maintenez les boutons **baisser le volume** + **alimentation** enfoncés pendant 15 secondes. L’appareil redémarre automatiquement.
 
 4. Connectez l’appareil à l’ordinateur hôte.
+
 
 5. Ouvrez le Gestionnaire de périphériques (pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X** et sélectionnez , puis sélectionnez **Gestionnaire de périphériques**). Assurez-vous que l’appareil est répertorié correctement en tant que *Microsoft HoloLens* comme le montre l’image suivante :
 
@@ -133,7 +134,13 @@ Si HoloLens 2 ne démarre pas correctement ou si Advanced Recovery Companion ne
 
 2. Vérifiez que votre appareil est déverrouillé.
 
-3. Si Advanced Recovery Companion ne détecte pas votre appareil, assurez-vous que vous pouvez vous connecter à celui-ci via l’Explorateur de fichiers sur votre ordinateur. Dans le cas contraire,
+1. Vérifiez que votre appareil est relié directement au PC hôte, et non à un concentrateur.
+
+1. Si votre appareil n’apparaît pas dans la liste des appareils HoloLens/HoloLens Recovery sous Pilotes USB, vérifiez s’il figure sous :
+    1. **Ports**, en tant qu’appareil Qualcomm HS-USB
+    1.   **Autres appareils**, en tant qu’appareil QUSB_BULK. Votre PC hôte ne dispose pas des pilotes nécessaires pour détecter votre HoloLens. Cliquez avec le bouton droit, sélectionnez Mettre à jour le pilote, puis recherchez les pilotes en ligne ou [activez les mises à jour facultatives dans vos paramètres Windows Update](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). Une fois le pilote téléchargé, ARC doit pouvoir le détecter.
+ 
+1. Si Advanced Recovery Companion ne détecte pas votre appareil, assurez-vous que vous pouvez vous connecter à celui-ci via l’Explorateur de fichiers sur votre ordinateur. Dans le cas contraire,
 
     1.  Il est possible que votre appareil présente des stratégies USB qui désactivent cette connexion. Si tel est le cas, essayez le [mode de réinitialisation manuelle](hololens-recovery.md#manual-procedure).
     2.  En l’absence de stratégies, essayez un autre câble USB.

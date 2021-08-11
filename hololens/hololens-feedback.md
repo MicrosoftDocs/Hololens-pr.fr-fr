@@ -1,6 +1,6 @@
 ---
 title: Envoyer vos commentaires
-description: Créez des commentaires actionnables pour les développeurs HoloLens et Windows Mixed Reality à l’aide du Hub de commentaires.
+description: créez des commentaires exploitables pour les développeurs de HoloLens et Windows Mixed Reality à l’aide du Hub de commentaires.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -17,30 +17,30 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 1f59c76fa760710d1b1333e1318784f5a488851b640c1cbd4ed6f673ae60029a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664199"
 ---
 # <a name="feedback-for-hololens"></a>Commentaires pour HoloLens
 
 Utilisez le hub de commentaires pour nous indiquer les fonctionnalités que vous aimez, les fonctionnalités que vous pourriez faire sans, et la façon dont une solution pourrait être améliorée. L’équipe d’ingénierie utilise le même mécanisme en interne pour suivre et corriger les bogues. par conséquent, utilisez le hub de commentaires pour signaler les bogues que vous voyez. Nous sommes à l’écoute !
 
-Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingénierie des bogues et de s’assurer que les futures mises à jour seront plus saines et plus cohérentes en termes de bogues. Toutefois, le hub de commentaires ne fournit pas de réponse. Si vous avez besoin d’une aide immédiate, veuillez nous faire part de vos commentaires, notez le résumé que vous avez fourni pour vos commentaires, puis suivez la [prise en charge de HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -utilisez la fonctionnalité **partager** dans Feedback Hub pour partager un lien direct vers l’URL. Le hub de commentaires reçoit un grand nombre de données quotidiennement : l’URL nous aide à identifier vos commentaires rapidement.
+Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingénierie des bogues et de s’assurer que les futures mises à jour seront plus saines et plus cohérentes en termes de bogues. Toutefois, le hub de commentaires ne fournit pas de réponse. si vous avez besoin d’une aide immédiate, veuillez nous faire part de vos commentaires, notez le résumé que vous avez fourni pour vos commentaires, puis suivez le [support HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -utilisez la fonctionnalité **partager** du Hub de commentaires pour partager un lien direct vers l’URL. Le hub de commentaires reçoit un grand nombre de données quotidiennement : l’URL nous aide à identifier vos commentaires rapidement.
 
 > [!NOTE]  
 >  
-> - Assurez-vous que vous disposez de la version actuelle du Hub de commentaires. Pour ce faire, sélectionnez **Démarrer**  >  **Microsoft Store**, puis sélectionnez les points de suspension (**...**). Ensuite, sélectionnez **téléchargements et mises à jour**  >  **récupérer les mises à jour**.  
+> - Assurez-vous que vous disposez de la version actuelle du Hub de commentaires. pour ce faire, sélectionnez **démarrer**  >  **Microsoft Store**, puis sélectionnez les points de suspension (**...**). Ensuite, sélectionnez **téléchargements et mises à jour**  >  **récupérer les mises à jour**.  
 >  
-> - Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous recommandons vivement de définir la télémétrie de votre appareil sur **facultatif**. Vous pouvez définir cette valeur pendant l’expérience OOBE (out-of-Box-Experience) ou à l’aide de l’application paramètres. Pour ce faire, à l’aide des paramètres, sélectionnez  >  **paramètres**  >  de démarrage **confidentialité**  >  de l'**application Diagnostics**  >  **sur**.
+> - Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous recommandons vivement de définir la télémétrie de votre appareil sur **facultatif**. vous pouvez définir cette valeur pendant l’expérience OOBE (Out-of-box-experience) ou à l’aide de l’application Paramètres. pour ce faire, à l’aide de Paramètres, sélectionnez **Start**  >  **Paramètres**  >  **Privacy**  >  **App diagnostics**  >  **sur**.
 
 ## <a name="use-the-feedback-hub"></a>Utiliser le hub de commentaires
 
 1. Utilisez le geste **Démarrer** pour ouvrir le menu **Démarrer** , puis sélectionnez **Hub de commentaires**. L’application s’ouvre dans votre environnement.
 
-   ![Application de commentaires sur le menu Démarrer HoloLens](./images/hololens2-feedbackhub-tile.png)
+   ![application de commentaires sur HoloLens menu Démarrer](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Si vous ne voyez pas **Hub de commentaires**, sélectionnez **toutes les applications** pour afficher la liste complète des applications sur l’appareil.
 
@@ -52,10 +52,10 @@ Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingé
 
 1. Dans **résumer vos commentaires**, entrez un bref résumé de vos commentaires. Ajoutez ensuite les détails dans la zone **expliquer plus en détail** . Plus vous fournissez de détails, tels que la façon de reproduire ce problème et son impact, plus vos commentaires sont utiles. Quand vous avez terminé, cliquez sur **Suivant**.
 
-1. Sélectionnez une rubrique dans **choisir une catégorie**, puis sélectionnez une sous-catégorie dans **Sélectionner une** sous-catégorie. Le tableau suivant décrit les catégories qui sont disponibles dans la catégorie Windows holographique.
+1. Sélectionnez une rubrique dans **choisir une catégorie**, puis sélectionnez une sous-catégorie dans **Sélectionner une** sous-catégorie. le tableau suivant décrit les catégories disponibles dans la catégorie holographique Windows.
 
    > [!NOTE]  
-   > **Clients commerciaux**: pour signaler un bogue lié à MDM, approvisionnement ou tout autre aspect de la gestion des périphériques, sélectionnez la catégorie **gestion** de l’entreprise et la sous-catégorie de l' **appareil** .
+   > **clients commerciaux**: pour signaler un bogue lié à MDM, à la configuration ou à tout autre aspect de la gestion des périphériques, sélectionnez la catégorie de **gestion Enterprise** et la sous-catégorie d' **appareil** .
 
    |Category |Description |
    | --- | --- |
@@ -63,8 +63,8 @@ Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingé
    |Précision, stabilité et fiabilité des hologrammes |Commentaires sur l’apparence des hologrammes dans l’espace. |
    |Lancement, placement, ajustement et sortie d’applications |Commentaires sur le démarrage ou l’arrêt des applications 2D ou 3D. |
    |Miracast |Commentaires sur Miracast. |
-   |Espaces et persistance |Commentaires sur la façon dont HoloLens reconnaît les espaces et conserve les hologrammes dans l’espace. |
-   |Liste menu Démarrer et toutes les applications |Commentaires sur le menu **Démarrer** et la liste de toutes les applications. |
+   |Espaces et persistance |commentaires sur la façon dont HoloLens reconnaît les espaces et conserve les hologrammes dans l’espace. |
+   |liste menu Démarrer et toutes les applications |Commentaires sur le menu **Démarrer** et la liste de toutes les applications. |
    |Placage de surface |Commentaires sur le mappage des surfaces. |
    |Capture d’images et de vidéos |Commentaires sur les captures de réalité mixte. |
    |Lecture d’hologramme vidéo |Commentaires sur la lecture d’hologramme vidéo. |

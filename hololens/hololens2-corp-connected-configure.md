@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660190"
 ---
 # <a name="configure---corporate-connected-guide"></a>Configurer-Guide connecté à l’entreprise
 
@@ -57,10 +57,10 @@ pour déployer des certificats et des profils par le biais de Microsoft Endpoint
     > [!CAUTION]
     > Les **profils de certificat sans date d’expiration ne seront pas déployés**.
 
-2. Créez un profil pour chaque certificat SCEP ou PKCS (voir [créer un profil de certificat SCEP ou créer un profil de certificat PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)). chacun de ces profils doit avoir une description qui comprend une date d’expiration au format jj/mm/aaaa.
+2. Créez un profil pour chaque certificat SCEP ou PKCS (voir [Créer un profil de certificat SCEP ou Créer un profil de certificat PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)). Chacun de ces profils doit comporter une description qui inclut une date d'expiration au format AAAA/MM/JJ.
 
     > [!CAUTION]
-    > **Les profils de certificat sans date d’expiration ne seront pas déployés.**
+    > **Les profils de certificat sans date d'expiration ne seront pas déployés.**
 
     > [!Note]
     > étant donné que la HoloLens 2 est considérée comme un appareil partagé, par exemple, plusieurs utilisateurs par appareil, il est recommandé de déployer des certificats d’appareil plutôt que des certificats utilisateur pour l’authentification Wi-Fi si possible.
@@ -75,10 +75,10 @@ pour déployer des certificats et des profils par le biais de Microsoft Endpoint
     Pour plus d’informations sur les fichiers PAC, consultez [Fichier de configuration automatique de proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (ouvre un site non-Microsoft).
  
     > [!Note]
-    > Il est recommandé que le profil de Wi-Fi soit affecté aux groupes d’appareils plutôt qu’aux groupes d’utilisateurs dans la mesure du possible.
+    > Dans la mesure du possible, nous vous recommandons d'attribuer le profil Wi-Fi à des groupes d'appareils plutôt qu'à des groupes d'utilisateurs.
      
     > [!Tip]
-    > vous pouvez également exporter un profil de Wi-Fi de travail à partir d’un Windows 10 PC sur votre réseau d’entreprise. Cette exportation crée un fichier XML avec tous les paramètres actuels. ensuite, importez ce fichier dans Intune et utilisez-le en tant que profil de Wi-Fi pour vos appareils HoloLens 2. Consultez [Exporter et importer des paramètres Wi-Fi pour appareils Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > Vous pouvez également exporter un profil Wi-Fi fonctionnel à partir d'un PC Windows 10 sur votre réseau d'entreprise. Cette exportation crée un fichier XML contenant tous les paramètres actuels. Importez ensuite ce fichier dans Intune et utilisez-le comme profil Wi-Fi pour vos appareils HoloLens 2. Consultez [Exporter et importer des paramètres Wi-Fi pour appareils Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 1.  [affectez](/mem/intune/configuration/device-profile-assign) les profils d’appareil au groupe d’appareils HoloLens.
 
@@ -125,7 +125,7 @@ Si vous préférez utiliser votre propre application ou si vous êtes intéress�
 
 8. Sous requis, ajoutez notre groupe créé précédemment pour rendre cette application obligatoire pour le groupe. L’application sera alors automatiquement téléchargée sur les appareils inscrits dans le groupe. Sélectionnez **Suivant**.
 
-9. Sélectionnez **Create** (Créer).
+9. Sélectionnez **Créer**.
 
 En savoir plus : [affecter des applications à des groupes dans Microsoft Intune](/mem/intune/apps/apps-deploy#assign-an-app)
 

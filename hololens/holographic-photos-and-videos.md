@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 54e9959c03b69db39ff2738e5d4f41f9740ae562b38e8d85998521a4733edad7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664857"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Créer des photos et des vidéos de réalité mixte
 
@@ -175,14 +175,14 @@ En raison des commentaires des clients, nous avons augmenté la durée d’enreg
 
 ### <a name="default-photo-format-and-resolution"></a>Format et résolution de photos par défaut
 
-|  Périphérique  |  Format  |  Extension  |  Résolution  |
+|  Appareil  |  Format  |  Extension  |  Résolution  |
 |----------|----------|----------|----------|
 | HoloLens 2 | [GIF](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
 | HoloLens (1ère génération) | [GIF](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
 ### <a name="recorded-video-format-and-resolution"></a>Format et résolution vidéo enregistrés
 
-| Périphérique | Format | Extension | Résolution | Vitesse | Audio |
+| Appareil | Format | Extension | Résolution | Vitesse | Audio |
 |----------|----------|----------|----------|----------|----------|
 | HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | Stéréo 48 kHz |
 | HoloLens (1ère génération) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | Stéréo 48 kHz |

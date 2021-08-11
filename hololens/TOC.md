@@ -25,6 +25,8 @@
 #### [Utiliser votre voix pour faire fonctionner HoloLens](hololens-cortana.md)
 #### [Rechercher, ouvrir et enregistrer des fichiers sur HoloLens](holographic-data.md)
 #### [Créer des photos et des vidéos de réalité mixte](holographic-photos-and-videos.md)
+#### [Nouvelle application Paramètres](hololens-new-settings.md)
+#### [Nouveau Microsoft Edge](hololens-new-edge.md)
 ### Gérer des applications
 #### [Rechercher, installer et désinstaller des applications](holographic-store-apps.md)
 #### [Gérer les applications personnalisées pour HoloLens 2](hololens2-holographic-custom-apps.md)
