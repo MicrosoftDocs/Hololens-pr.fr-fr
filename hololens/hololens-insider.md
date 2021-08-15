@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364283"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -40,7 +40,8 @@ nous sommes ravis de commencer à utiliser de nouvelles fonctionnalités pour Wi
 | [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
 | [Utiliser uniquement des applications de magasin privé pour Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configurer l’application du Windows Store pour afficher uniquement les applications de l’Organisation | IT Admin | 20348,1408 |
 | [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | IT Admin | 20348,1412 |
-| [Correctifs et améliorations](hololens-insider.md#fixes-and-improvements) | Correctifs et améliorations pour HoloLens. | Tous | 20348,1411 |
+| [Déplacement du mode de plateforme](#moving-platform-mode) | introduit la version bêta du Mode de plateforme mobile, qui, lorsqu’elle est configurée, permet l’utilisation de HoloLens 2 sur les grands navires marins ayant un mouvement faiblement dynamique. | Tous | 20348,1411 |
+| [Correctifs et améliorations](#fixes-and-improvements) | Correctifs et améliorations pour HoloLens. | Tous | 20348,1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>modifications du CSP pour la création de rapports HoloLens détails
 
@@ -135,11 +136,18 @@ En savoir plus sur [ApplicationManagement/RequirePrivateStoreOnly](http://window
 
 Dans les scénarios où un appareil semble manquer d’espace disque lors de la collecte des journaux de diagnostic, un rapport supplémentaire nommé **StorageDiagnostics.zip** est créé. le seuil de stockage faible est déterminé automatiquement par Windows [sens du stockage](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
+### <a name="moving-platform-mode"></a>Déplacement du mode de plateforme
+
+À partir de la **Build Insider 20348,1411** , nous avons ajouté la prise en charge de la version bêta pour le suivi sur les plateformes de déplacement à faible dynamique sur HoloLens 2. après l’installation de la build et l’activation du Mode de plateforme mobile, vous serez en mesure d’utiliser votre HoloLens 2 dans les environnements précédemment inaccessibles, tels que les grands navires et les grands navires marins. Actuellement, la fonctionnalité est destinée à l’activation de ces plateformes mobiles spécifiques uniquement. Bien que rien ne vous empêche de tenter d’utiliser la fonctionnalité dans d’autres environnements, la fonctionnalité est axée sur l’ajout d’une prise en charge pour ces environnements en premier.
+
+Pour en savoir plus sur ce qui est pris en charge et sur l’activation de cette nouvelle fonctionnalité, [consultez la page déplacement de la plateforme.](hololens2-moving-platform.md)
+
 ### <a name="fixes-and-improvements"></a>Correctifs et améliorations
 
 - Correction d’un [problème connu pour le portail des appareils où aucune invite n’a été téléchargée pour le téléchargement des fichiers verrouillés.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Correction d’un [problème connu pour le portail des appareils avec délais de chargement et de téléchargement de fichiers.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - résout les problèmes liés à la création de rapports sur les propriétés de conformité des appareils HoloLens ; un redémarrage peut être nécessaire pour que les rapports corrects soient déclenchés sur les builds Insider.  
+- activation d’une [API d’accès affectée](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) afin que les applications puissent désormais déterminer si une HoloLens s’exécute en mode plein écran pour l’utilisateur connecté à la HoloLens.
 - Mise à jour de la version intégrée de l’assistance à distance qui est installée sur des clignotements actualisés.
 
 ## <a name="start-receiving-insider-builds"></a>Commencer à recevoir des builds Insider

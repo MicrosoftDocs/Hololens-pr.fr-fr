@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 06/17/2021
+ms.date: 08/10/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbbe01723cab70fa802b5a5db44bc812ce71cb2be2e3f283af698f161084f256
-ms.sourcegitcommit: cb77de303607ef1340effeababf603d05d1a8048
+ms.openlocfilehash: ca821c5229ba9d6d8fff0f1ed22a7df139120ab99e64c2bb3502effac7049f31
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "116975493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364300"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -31,6 +31,23 @@ pour vous assurer que vous disposez d’une expérience productive avec vos appa
 
 > [!IMPORTANT]
 > en raison d’un [problème connu maintenant résolu dans notre build 21H1 qui affectait les utilisateurs de l’assistance à distance](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), nous avons suspendu temporairement l’offre de Windows des mises à jour 21H1 holographiques. nous avions également modifié la version par défaut de l’ARC de récupération avancée (ARC) dans la [mise à jour Windows holographique, version 20H2-juin 2021](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). La build ARC reprend à présent le ciblage de la build 21H1.
+
+## <a name="windows-holographic-version-21h1---august-2021-update"></a>Windows Holographique, version 21H1-mise à jour 2021 d’août
+
+- Build 20348,1014
+
+Améliorations et correctifs de la mise à jour :
+
+- Correction d’un problème qui empêchait les contrôleurs Xbox de fonctionner dans des applications immersifs avec prise en charge du contrôleur.
+- Diagnostics améliorés pour les échecs de mise à jour d’appareil.
+
+## <a name="windows-holographic-version-20h2---august-2021-update"></a>Windows Holographique, version 20H2-mise à jour 2021 d’août
+
+- Build 19041,1161
+
+Améliorations et correctifs de la mise à jour :
+
+- cette mise à jour de qualité mensuelle ne contient pas de modifications notables, nous vous encourageons à essayer notre build la plus récente, Windows holographique, version 21H1.
 
 ## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows Holographique, version 21H1-mise à jour de juillet 2021
 
@@ -1005,7 +1022,7 @@ plus haut en cas de défaillances lors de l’application du mode plein écran, 
 
 de nouvelles stratégies de réalité mixte ont été créées pour HoloLens 2 appareils sur Windows version holographique 20H2. Les nouveaux paramètres contrôlables incluent : définition de la luminosité, définition du volume, désactivation de l’enregistrement audio dans les captures de réalité mixte, définition du moment où les diagnostics peuvent être collectés et mise en cache de l’appartenance au groupe AAD.  
 
-| nouvelle stratégie de HoloLens                                | Description                                                                               | Notes                                                                |
+| nouvelle stratégie de HoloLens                                | Description                                                                               | Remarques                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | Permet de désactiver les boutons de luminosité afin que le fait de cliquer dessus ne change pas de luminosité.       | 1 Oui, 0 non (par défaut)                                                |
 | MixedReality\VolumeButtonDisabled                  | Permet de désactiver les boutons de volume afin que le fait d’appuyer sur le volume ne change pas.               | 1 Oui, 0 non (par défaut)                                                |
@@ -1056,7 +1073,7 @@ Ces deux nouvelles stratégies pour AllowAddProvisioningPackage et AllowRemovePr
 
 Ces stratégies permettent aux administrateurs de contrôler les États d’alimentation, tels que le délai d’inactivité. Pour en savoir plus sur chaque stratégie individuelle, cliquez sur le lien correspondant à cette stratégie.
 
-|     Lien vers la documentation sur les stratégies                |     Notes                                                                                                                                       |
+|     Lien vers la documentation sur les stratégies                |     Remarques                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 |     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     exemple de valeur à utiliser dans Windows concepteur de Configuration, c.-à-d.,`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
 |     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     exemple de valeur à utiliser dans Windows concepteur de Configuration, c.-à-d.,`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |

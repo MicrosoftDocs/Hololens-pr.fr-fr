@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ceb2416ec96db1bdd363e9164ec39eed9247fe37095a52e7f02bafc74416e4f2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c19f01fc502a32c7f40a9296f0ddd9651d92284f3550908b1a5b7bbbef7b639a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364266"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gérer les identités et les connexions des utilisateurs pour HoloLens
 
@@ -37,8 +37,8 @@ HoloLens prend en charge plusieurs types d’identités utilisateur. Vous pouvez
 | Type d'identité | Comptes par appareil | Options d’authentification |
 | --- | --- | --- |
 | [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Fournisseur d’informations d’identification Web Azure</li><li>application Azure Authenticator</li><li>biométrique (Iris) &ndash; HoloLens 2 uniquement<sup>2</sup> </li><li>Clé de sécurité FIDO2</li><li>PIN &ndash; facultatif pour HoloLens (1er génération), requis pour HoloLens 2</li><li>Mot de passe</li></ul> |
-| [Compte Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>biométrique (Iris) &ndash; HoloLens 2 uniquement</li><li>PIN &ndash; facultatif pour HoloLens (1er génération), requis pour HoloLens 2</li><li>Mot de passe</li></ul> |
-| [Compte local](/windows/security/identity-protection/access-control/local-accounts) | 1 | Mot de passe |
+| [Compte Microsoft](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>biométrique (Iris) &ndash; HoloLens 2 uniquement</li><li>PIN &ndash; facultatif pour HoloLens (1er génération), requis pour HoloLens 2</li><li>Mot de passe</li></ul> |
+| [Compte local](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | Mot de passe |
 
 Les comptes connectés au Cloud (Azure AD et MSA) offrent davantage de fonctionnalités, car ils peuvent utiliser les services Azure.  
 > [!IMPORTANT]
@@ -47,13 +47,16 @@ Les comptes connectés au Cloud (Azure AD et MSA) offrent davantage de fonctionn
 > [!NOTE]
 > 2-même si un appareil HoloLens 2 peut prendre en charge jusqu’à 64 comptes Azure AD, seuls 31 de ces comptes peuvent s’inscrire à l’authentification Iris. cela est aligné avec d’autres [options d’authentification biométrique pour Windows Hello pour l’entreprise](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
+> [!IMPORTANT]
+> 3-un compte local ne peut être configuré que sur un appareil [via un package d’approvisionnement au cours d’OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup). il ne peut pas être ajouté ultérieurement dans l’application paramètres. Si vous souhaitez utiliser un compte local sur un appareil qui est déjà configuré, vous devez refaire [clignoter ou réinitialiser l’appareil.](hololens-recovery.md)
+
 ## <a name="setting-up-users"></a>Configuration des utilisateurs
 
 Il existe deux façons de configurer un nouvel utilisateur sur le HoloLens. la méthode la plus courante est la HoloLens OOBE (out-of-box experience). si vous utilisez Azure Active Directory, [les autres utilisateurs peuvent se connecter](#setting-up-multi-user-support-azure-ad-only) après OOBE à l’aide de leurs informations d’identification Azure AD. les appareils HoloLens qui sont initialement configurés avec un compte MSA ou un compte local pendant OOBE ne prennent pas en charge plusieurs utilisateurs. consultez configuration de votre [HoloLens (1re génération)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
 
 si vous utilisez un compte d’entreprise ou professionnel pour vous connecter à HoloLens, HoloLens s’inscrit dans l’infrastructure informatique de l’organisation. Cette inscription permet à votre administrateur informatique de configurer la gestion des appareils mobiles (MDM) pour envoyer des stratégies de groupe à votre HoloLens.
 
-comme Windows sur d’autres appareils, la connexion lors de l’installation crée un profil utilisateur sur l’appareil. Le profil utilisateur stocke les applications et les données. le même compte fournit également l’authentification unique pour les applications, telles que Edge ou le Microsoft Store, à l’aide des api du gestionnaire de comptes Windows. 
+comme Windows sur d’autres appareils, la connexion lors de l’installation crée un profil utilisateur sur l’appareil. Le profil utilisateur stocke les applications et les données. le même compte fournit également l’authentification unique pour les applications, telles que Edge ou le Microsoft Store, à l’aide des api du gestionnaire de comptes Windows.
 
 par défaut, comme pour les autres appareils Windows 10, vous devez vous reconnecter lorsque HoloLens redémarre ou reprend à partir de la mise en veille. vous pouvez utiliser l’application Paramètres pour modifier ce comportement, ou le comportement peut être contrôlé par la stratégie de groupe.
 
@@ -156,7 +159,7 @@ Si vous appliquez des stratégies pour la connexion, la stratégie est toujours 
 > [!NOTE]
 > Les minuteurs d’inactivité ne sont actuellement pas pris en charge, ce qui signifie que la stratégie **AllowIdleReturnWithoutPassword** n’est respectée que lorsque l’appareil passe en mode veille.
 
-## <a name="additional-resources"></a>Ressources supplémentaires
+## <a name="additional-resources"></a>Ressources complémentaires
 
 en savoir plus sur la protection des identités des utilisateurs et l’authentification dans [la documentation relative à la sécurité et à l’identité de Windows 10](/windows/security/identity-protection/).
 
