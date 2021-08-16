@@ -34,6 +34,7 @@
 #### [Améliorer la qualité visuelle et le confort](hololens-calibration.md)
 #### [Mapper des espaces physiques avec HoloLens](hololens-spaces.md)
 #### [Considérations liées à l’environnement HoloLens](hololens-environment-considerations.md)
+#### [Déplacement de plateformes](hololens2-moving-platform.md)
 ### Connecter votre HoloLens 2
 #### [Connecter HoloLens à un réseau](hololens-network.md)
 #### [Se connecter à des appareils Bluetooth et USB-C](hololens-connect-devices.md)
