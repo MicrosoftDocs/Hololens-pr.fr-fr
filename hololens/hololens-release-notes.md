@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ca821c5229ba9d6d8fff0f1ed22a7df139120ab99e64c2bb3502effac7049f31
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: a8d1f9b8d04324236cb610b6018880891bdabdd1
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120364300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858670"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -823,7 +823,7 @@ Cette dernière version est une mise à jour mensuelle de la version 2004, mais 
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>nouveautés de Windows holographique, version 20H2  
 
-| Fonctionnalité                                              | Description                                                                                                                                     |
+| Caractéristique                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Prise en charge de la fonctionnalité Position automatique des yeux](hololens-release-notes.md#auto-eye-position-support) | Calcule activement les positions oculaires sans que les utilisateurs passent par l’étalonnage du suivi oculaire.   |
 | [Gestionnaire de certificats](hololens-release-notes.md#certificate-manager)   | permet de nouvelles méthodes plus simples pour installer et supprimer des certificats de l’application Paramètres.     |
@@ -1022,7 +1022,7 @@ plus haut en cas de défaillances lors de l’application du mode plein écran, 
 
 de nouvelles stratégies de réalité mixte ont été créées pour HoloLens 2 appareils sur Windows version holographique 20H2. Les nouveaux paramètres contrôlables incluent : définition de la luminosité, définition du volume, désactivation de l’enregistrement audio dans les captures de réalité mixte, définition du moment où les diagnostics peuvent être collectés et mise en cache de l’appartenance au groupe AAD.  
 
-| nouvelle stratégie de HoloLens                                | Description                                                                               | Remarques                                                                |
+| nouvelle stratégie de HoloLens                                | Description                                                                               | Notes                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | Permet de désactiver les boutons de luminosité afin que le fait de cliquer dessus ne change pas de luminosité.       | 1 Oui, 0 non (par défaut)                                                |
 | MixedReality\VolumeButtonDisabled                  | Permet de désactiver les boutons de volume afin que le fait d’appuyer sur le volume ne change pas.               | 1 Oui, 0 non (par défaut)                                                |
@@ -1073,7 +1073,7 @@ Ces deux nouvelles stratégies pour AllowAddProvisioningPackage et AllowRemovePr
 
 Ces stratégies permettent aux administrateurs de contrôler les États d’alimentation, tels que le délai d’inactivité. Pour en savoir plus sur chaque stratégie individuelle, cliquez sur le lien correspondant à cette stratégie.
 
-|     Lien vers la documentation sur les stratégies                |     Remarques                                                                                                                                       |
+|     Lien vers la documentation sur les stratégies                |     Notes                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 |     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     exemple de valeur à utiliser dans Windows concepteur de Configuration, c.-à-d.,`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
 |     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     exemple de valeur à utiliser dans Windows concepteur de Configuration, c.-à-d.,`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
@@ -1255,7 +1255,7 @@ Améliorations et correctifs de la mise à jour :
 
 la mise à jour logicielle de mai 2020 pour HoloLens 2, *Windows holographique, version 2004* , offre un grand nombre de nouvelles fonctionnalités passionnantes, telles que la prise en charge de Windows autopilot, le mode sombre de l’application, la prise en charge USB Ethernet pour les points d’accès 5 5g/LTE, et bien plus encore. pour effectuer une mise à jour vers la dernière version, ouvrez l’application **Paramètres**   , accédez à  **update & Security**, puis sélectionnez le bouton  **rechercher les mises à jour**   . 
 
-|             Fonctionnalité                              |          Description                                                                                              |
+|             Caractéristique                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide d’Windows autopilot                 |
 |       Support « Rex 2 »                             |          Prise en charge des clés de sécurité FIDO2 pour activer l’authentification rapide et sécurisée pour les appareils partagés            |

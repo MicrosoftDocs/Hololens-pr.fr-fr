@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120364283"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858580"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -31,11 +31,13 @@ Bienvenue dans les dernières versions préliminaires d’Insider pour HoloLens�
 
 nous sommes ravis de commencer à utiliser de nouvelles fonctionnalités pour Windows insider. Les nouvelles builds feront l’d’un vol vers les canaux dev et bêta pour les dernières mises à jour. nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos Windows builds insider. Soyez enthousiaste et prêt à mélanger ces mises à jour dans votre réalité.
 
-| Fonctionnalité                 | Description                | Utilisateur ou scénario | Build introduite |
+| Caractéristique                 | Description                | Utilisateur ou scénario | Build introduite |
 |-------------------------|----------------------------|--------------|------------------|
 | [modifications du CSP pour la création de rapports HoloLens détails](#csp-changes-for-reporting-hololens-details) | Nouveaux fournisseurs de services de chiffrement pour l’interrogation des données | Administrateurs informatiques    | 20348,1403                 |
 | [Stratégie de connexion automatique contrôlée par CSP](#auto-login-policy-controlled-by-csp) | Utilisé pour se connecter automatiquement à un compte | Administrateurs informatiques | 20348,1405 |
+| [Détection et notifications de redémarrage des mises à jour améliorées](#improved-update-restart-detection-and-notifications) | Nouvelles stratégies activées et expérience utilisateur pour les mises à jour. | Administrateurs informatiques | 20348,1405 |
 | [Prise en charge des fichiers PFX pour le gestionnaire de certificats](#pfx-file-support-for-certificate-manager) | ajouter des certificats PFX via l’interface utilisateur Paramètres | Utilisateur final | 20348,1405 |
+| [Nouvelle tentative intelligente pour les mises à jour d’application](#smart-retry-for-app-updates) | Permet aux administrateurs informatiques de planifier les nouvelles tentatives de mise à jour des applications. | Administrateurs informatiques | 20348,1405 |
 | [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage | 20348,1405 |
 | [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
 | [Utiliser uniquement des applications de magasin privé pour Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configurer l’application du Windows Store pour afficher uniquement les applications de l’Organisation | IT Admin | 20348,1408 |
@@ -95,13 +97,34 @@ OMA-URI de la nouvelle valeur de chaîne de stratégie `./Device/Vendor/MSFT/Pol
 Sur un appareil sur lequel cette stratégie est configurée, l’utilisateur spécifié dans la stratégie doit se connecter au moins une fois. Les redémarrages ultérieurs de l’appareil après la première ouverture de session permettront à l’utilisateur spécifié d’ouvrir une session automatiquement. Un seul utilisateur de connexion automatique est pris en charge. Une fois activé, l’utilisateur connecté automatiquement n’est pas en mesure de se déconnecter manuellement. Pour ouvrir une session en tant qu’utilisateur différent, vous devez d’abord désactiver la stratégie.
 
 > [!NOTE]
-> - Certains événements, tels que les mises à jour majeures du système d’exploitation, peuvent obliger l’utilisateur spécifié à se reconnecter à l’appareil pour reprendre le comportement de connexion automatique. 
+>
+> - Certains événements, tels que les mises à jour majeures du système d’exploitation, peuvent obliger l’utilisateur spécifié à se reconnecter à l’appareil pour reprendre le comportement de connexion automatique.
 > - L’ouverture de session automatique est uniquement prise en charge pour les utilisateurs MSA et AAD.
+
+### <a name="improved-update-restart-detection-and-notifications"></a>Détection et notifications de redémarrage des mises à jour améliorées
+
+entre les heures actives et les stratégies d’installation, il est possible d’éviter le redémarrage de HoloLens appareils lorsqu’ils sont en cours d’utilisation. Toutefois, cela retarderait également l’adoption des mises à jour si le redémarrage n’a pas lieu pour terminer l’installation d’une mise à jour requise. Nous avons maintenant ajouté des stratégies pour lui permettre d’appliquer des échéances et des redémarrages obligatoires, et de vérifier que l’installation d’une mise à jour est effectuée en temps voulu. Les utilisateurs peuvent être avertis avant l’initiation du redémarrage et ils peuvent retarder le redémarrage conformément à la stratégie informatique.
+
+Les stratégies de mise à jour suivantes ont été ajoutées :
+
+- [Mettre à jour/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Mettre à jour/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Mettre à jour/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Mettre à jour/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Mettre à jour/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Mettre à jour/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>Prise en charge des fichiers PFX pour le gestionnaire de certificats
 
 introduit dans Windows insider build 20348,1405. Nous avons ajouté la prise en charge du [Gestionnaire de certificats](certificate-manager.md) pour utiliser les certificats. pfx. lorsque les utilisateurs accèdent à **Paramètres**  >  **mettre à jour &**  >  les **certificats** de sécurité, puis sélectionnez **installer un certificat** , le fichier de certificat. pfx est pris en charge par l’interface utilisateur.
 Les utilisateurs peuvent importer le certificat. pfx, avec la clé privée, dans le magasin de l’utilisateur ou le magasin de l’ordinateur.
+
+### <a name="smart-retry-for-app-updates"></a>Nouvelle tentative intelligente pour les mises à jour d’application
+
+à présent activé pour HoloLens est une nouvelle stratégie qui permet aux administrateurs informatiques de définir une date récurrente ou ponctuelle pour redémarrer les applications dont la mise à jour a échoué parce que l’application est en cours d’utilisation, ce qui permet d’appliquer la mise à jour. Elles peuvent être définies en fonction de différents déclencheurs, tels qu’une heure planifiée ou une connexion. Pour en savoir plus sur l’utilisation de cette stratégie, consultez [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens
 
@@ -119,7 +142,7 @@ Il s’agit d’une mise à jour pour une fonctionnalité existante appelée [Di
 ![Toast pour la collecte des journaux.](./images/logcollection1.jpg)
 
 ![Toast lorsque la collecte des journaux est terminée.](./images/logcollection2.jpg)
- 
+
 Étant donné que les utilisateurs utilisent souvent les diagnostics hors connexion en tant que mécanisme de collecte de journaux de secours lorsqu’ils n’ont pas accès à un affichage, ne peuvent pas se connecter ou se trouvent toujours dans OOBE. un signal audio est également lu lors de la collecte des journaux. Ce son sera lu en plus de la notification Toast.
 
 Cette nouvelle fonctionnalité est activée lorsque votre appareil est mis à jour et n’a pas besoin d’être activé ou géré. Dans tous les cas où ces nouveaux commentaires ne peuvent pas être affichés ou audibles, les diagnostics hors connexion seront toujours générés.
@@ -154,7 +177,8 @@ Pour en savoir plus sur ce qui est pris en charge et sur l’activation de cette
 
 > [!NOTE]
 > Si vous n’avez pas récemment mis à jour votre appareil, redémarrez-le pour mettre à jour l’État et vous procurer la build la plus récente.
-> - La commande vocale « reboot Device » fonctionne bien. 
+>
+> - La commande vocale « reboot Device » fonctionne bien.
 > - vous pouvez également choisir le bouton redémarrer dans Paramètres/Windows programme insider.
 >
 > Nous avons rencontré un bogue sur le serveur principal que vous avez pu rencontrer, ce qui vous permettra de revenir en arrière.
@@ -175,9 +199,9 @@ Si vous rencontrez une erreur de mise à jour 0x80070490 lors de la mise à jour
 
 #### <a name="stage-one---release-preview"></a>Version préliminaire de l’étape 1
 
-1.  Paramètres, mettez à jour & Security, Windows programme insider, sélectionnez **version preview Channel**.
+1. Paramètres, mettez à jour & Security, Windows programme insider, sélectionnez **version preview Channel**.
 
-2.  Paramètres, mettez à jour & Security, Windows Update, **recherchez les mises à jour**. Après la mise à jour, passez à l’étape 2.
+2. Paramètres, mettez à jour & Security, Windows Update, **recherchez les mises à jour**. Après la mise à jour, passez à l’étape 2.
 
 #### <a name="stage-two---dev-channel"></a>Deuxième étape-canal de développement
 
@@ -191,9 +215,9 @@ Pour effectuer un test avec un FFU signé par un vol, vous devez d’abord déve
 
 1. Sur PC :
     1. Téléchargez FFU sur votre ordinateur à partir de [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
-    
+
     1. Installez ARC (complément de récupération avancé) à partir du Microsoft Store : [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
-    
+
 1. sur HoloLens-Flight Unlock : ouvrez **Paramètres**  >  **mettre à jour & sécurité**  >  **Windows programme d’insider** , puis inscrivez-vous et redémarrez l’appareil.
 
 1. Flash FFU : vous pouvez désormais faire clignoter le FFU de vol signé à l’aide d’ARC.

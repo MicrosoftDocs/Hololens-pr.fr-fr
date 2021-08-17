@@ -13,19 +13,19 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c634b90b03468073887397b59f072258ad7a3ccc
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662847"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858558"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
 cet article explique comment résoudre plusieurs problèmes courants liés au HoloLens.
 
 >[!IMPORTANT]
-> Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au minimum entre **20 et 40 %** , si possible. Les [témoins](hololens2-setup.md#lights-that-indicate-the-battery-level) situés sous le bouton d'alimentation permettent de vérifier rapidement la capacité de la batterie sans se connecter à l'appareil.
+> Avant d'entamer une procédure de résolution des problèmes, assurez-vous que la batterie de votre appareil est, si possible, chargée à **20 ou 40 %** de sa capacité. Les [témoins](hololens2-setup.md#lights-that-indicate-the-battery-level) situés sous le bouton d'alimentation permettent de vérifier rapidement la capacité de la batterie sans se connecter à l'appareil.
 
 <a id="list"></a>
 
@@ -39,7 +39,7 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 - [Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive ne charge pas automatiquement les images](#onedrive-doesnt-automatically-upload-pictures)
 
-**Généralités**
+**Général**
 - [HoloLens ne répond pas ou ne démarre pas](#hololens-is-unresponsive-or-wont-start)
 - [Erreur « espace disque insuffisant »](#low-disk-space-error)
 - [Échec de l’étalonnage](#calibration-fails)
@@ -119,13 +119,15 @@ Il n’existe aucune solution de contournement connue, car nous n’avons pas pu
 Il y a un problème au cours de l’OOBE, où une fois que l’utilisateur a choisi un compte professionnel ou scolaire et qu’il entre son mot de passe, en tentant de basculer vers les caractères spéciaux du clavier en appuyant sur le bouton &123 ne devient pas un caractère spécial. Il s’agit d’un **problème connu**.
 
 Solution de contournement :
--   Fermez le clavier et rouvrez-le en appuyant sur le champ de texte.
--   Entrez votre mot de passe de manière incorrecte. La prochaine fois que le clavier est relancé, il fonctionnera comme prévu.
+
+- Fermez le clavier et rouvrez-le en appuyant sur le champ de texte.
+- Entrez votre mot de passe de manière incorrecte. La prochaine fois que le clavier est relancé, il fonctionnera comme prévu.
 - Authentification Web, fermez le clavier et sélectionnez **se connecter à partir d’un autre appareil**.
--   Si vous entrez uniquement des chiffres, un utilisateur peut appuyer sur certaines touches et les maintenir enfoncé pour ouvrir un menu développé.
--   À l’aide d’un clavier USB.
+- Si vous entrez uniquement des chiffres, un utilisateur peut appuyer sur certaines touches et les maintenir enfoncé pour ouvrir un menu développé.
+- À l’aide d’un clavier USB.
 
 Cela n’affecte pas les éléments suivants :
+
 - Utilisateurs qui choisissent d’utiliser un compte personnel.
 
 [Retour à la liste](#list)
@@ -133,7 +135,7 @@ Cela n’affecte pas les éléments suivants :
 ## <a name="downloading-locked-files-doesnt-error"></a>Le téléchargement des fichiers verrouillés n’est pas une erreur
 
 > [!NOTE]
-> il s’agit d’un **problème connu** qui est résolu dans Windows build insider, version 20348,1403.
+> il s’agit d’un **problème connu** qui a été résolu dans [Windows holographique, version 21H1-mise à jour 2021 de juillet](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
 
 dans les versions précédentes de Windows holographique, lorsque vous tentez de télécharger un fichier verrouillé, le résultat est une page d’erreur HTTP. dans la Windows holographique, version 21H1 update, si vous tentez de télécharger un fichier verrouillé, rien n’est visible : le fichier n’est pas téléchargé et il n’y a pas d’erreur.
 
@@ -141,10 +143,9 @@ dans les versions précédentes de Windows holographique, lorsque vous tentez de
 
 ## <a name="device-portal-file-uploaddownload-times-out"></a>Délai de chargement/téléchargement du fichier du portail de l’appareil
 > [!NOTE]
-> il s’agit d’un **problème connu** qui est résolu dans Windows build insider, version 20348,1403. Si vous avez précédemment désactivé la connexion SSL dans le cadre de la solution de contournement, nous vous recommandons vivement de la réactiver.
+> il s’agit d’un **problème connu** qui a été résolu dans [Windows holographique, version 21H1-mise à jour 2021 de juillet](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). Si vous avez précédemment désactivé la connexion SSL dans le cadre de la solution de contournement, nous vous recommandons vivement de la réactiver.
 
-
-Certains clients ont trouvé, lors de la tentative de chargement ou de téléchargement de fichiers, l’opération peut sembler bloquée, puis expirer ou ne jamais se terminer. cela est indépendant du[problème connu « fichier verrouillé »](#downloading-locked-files-doesnt-error) , ce qui affecte Windows les versions 2004, 20H2 et 21H1 de la version commercialisée. Le problème est dû à un bogue dans la gestion par le portail de l’appareil de certaines demandes et est le plus souvent utilisé lors de l’utilisation du protocole HTTPS, qui est la valeur par défaut. 
+Certains clients ont trouvé, lors de la tentative de chargement ou de téléchargement de fichiers, l’opération peut sembler bloquée, puis expirer ou ne jamais se terminer. cela est indépendant du[problème connu « fichier verrouillé »](#downloading-locked-files-doesnt-error) , ce qui affecte Windows les versions 2004, 20H2 et 21H1 de la version commercialisée. Le problème est dû à un bogue dans la gestion par le portail de l’appareil de certaines demandes et est le plus souvent utilisé lors de l’utilisation du protocole HTTPS, qui est la valeur par défaut.
 
 ### <a name="workaround"></a>Solution de contournement
 

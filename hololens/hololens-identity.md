@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c19f01fc502a32c7f40a9296f0ddd9651d92284f3550908b1a5b7bbbef7b639a
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: 11a5680ea2b27a277bc4eb5b1dc0e62a2c602312
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120364266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858441"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gérer les identités et les connexions des utilisateurs pour HoloLens
 
@@ -159,7 +159,7 @@ Si vous appliquez des stratégies pour la connexion, la stratégie est toujours 
 > [!NOTE]
 > Les minuteurs d’inactivité ne sont actuellement pas pris en charge, ce qui signifie que la stratégie **AllowIdleReturnWithoutPassword** n’est respectée que lorsque l’appareil passe en mode veille.
 
-## <a name="additional-resources"></a>Ressources complémentaires
+## <a name="additional-resources"></a>Ressources supplémentaires
 
 en savoir plus sur la protection des identités des utilisateurs et l’authentification dans [la documentation relative à la sécurité et à l’identité de Windows 10](/windows/security/identity-protection/).
 
