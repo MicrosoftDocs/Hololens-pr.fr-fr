@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 04/01/2021
+ms.date: 08/19/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 3ccb9d0f7175a358262c39c76d364aee464c5469
+ms.sourcegitcommit: e2a3e85882b7c594d73d08fbd7ae85856d22f8c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858580"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "122213908"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
