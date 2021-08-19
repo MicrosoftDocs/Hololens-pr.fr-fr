@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/19/2021
+ms.date: 08/16/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3ccb9d0f7175a358262c39c76d364aee464c5469
-ms.sourcegitcommit: e2a3e85882b7c594d73d08fbd7ae85856d22f8c5
+ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
+ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "122213908"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122277152"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -31,19 +31,67 @@ Bienvenue dans les dernières versions préliminaires d’Insider pour HoloLens�
 
 nous sommes ravis de commencer à utiliser de nouvelles fonctionnalités pour Windows insider. Les nouvelles builds feront l’d’un vol vers les canaux dev et bêta pour les dernières mises à jour. nous continuerons à mettre à jour cette page à mesure que nous ajouterons des fonctionnalités et des mises à jour à nos Windows builds insider. Soyez enthousiaste et prêt à mélanger ces mises à jour dans votre réalité.
 
-| Caractéristique                 | Description                | Utilisateur ou scénario | Build introduite |
+Il s’agit là d’une amélioration des rapports de dépannage et d’appareils, de bogues résolus dans le mode plein écran et l’observateur de certificats, de la surface de gérabilité étendue et de la fiabilité accrue des mises à jour. une nouvelle fonctionnalité phare de cette mise à jour de fonctionnalité venant à HoloLens est notre Mode de plateforme mobile. Découvrez toutes les nouvelles fonctionnalités intéressantes pour HoloLens 2 !
+
+| Fonctionnalité                 | Description                | Utilisateur ou scénario | Build introduite |
 |-------------------------|----------------------------|--------------|------------------|
+| [Déplacement du mode de plateforme](#moving-platform-mode) | introduit la version bêta du Mode de plateforme mobile, qui, lorsqu’elle est configurée, permet l’utilisation de HoloLens 2 sur les grands navires marins ayant un mouvement faiblement dynamique. | Tous | 20348,1411 |
+| [Prise en charge des fichiers PFX pour le gestionnaire de certificats](#pfx-file-support-for-certificate-manager) | ajouter des certificats PFX via l’interface utilisateur Paramètres | Utilisateur final | 20348,1405 |
+| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage | 20348,1405 |
+| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
+| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Dépannage | 20348,1412 |
 | [modifications du CSP pour la création de rapports HoloLens détails](#csp-changes-for-reporting-hololens-details) | Nouveaux fournisseurs de services de chiffrement pour l’interrogation des données | Administrateurs informatiques    | 20348,1403                 |
 | [Stratégie de connexion automatique contrôlée par CSP](#auto-login-policy-controlled-by-csp) | Utilisé pour se connecter automatiquement à un compte | Administrateurs informatiques | 20348,1405 |
 | [Détection et notifications de redémarrage des mises à jour améliorées](#improved-update-restart-detection-and-notifications) | Nouvelles stratégies activées et expérience utilisateur pour les mises à jour. | Administrateurs informatiques | 20348,1405 |
-| [Prise en charge des fichiers PFX pour le gestionnaire de certificats](#pfx-file-support-for-certificate-manager) | ajouter des certificats PFX via l’interface utilisateur Paramètres | Utilisateur final | 20348,1405 |
 | [Nouvelle tentative intelligente pour les mises à jour d’application](#smart-retry-for-app-updates) | Permet aux administrateurs informatiques de planifier les nouvelles tentatives de mise à jour des applications. | Administrateurs informatiques | 20348,1405 |
-| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage | 20348,1405 |
-| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
 | [Utiliser uniquement des applications de magasin privé pour Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configurer l’application du Windows Store pour afficher uniquement les applications de l’Organisation | IT Admin | 20348,1408 |
-| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | IT Admin | 20348,1412 |
-| [Déplacement du mode de plateforme](#moving-platform-mode) | introduit la version bêta du Mode de plateforme mobile, qui, lorsqu’elle est configurée, permet l’utilisation de HoloLens 2 sur les grands navires marins ayant un mouvement faiblement dynamique. | Tous | 20348,1411 |
 | [Correctifs et améliorations](#fixes-and-improvements) | Correctifs et améliorations pour HoloLens. | Tous | 20348,1411 |
+
+### <a name="it-admin-insider-feature-checklist"></a>Liste de vérification des fonctionnalités Insider de l’administrateur informatique
+
+✔️ Si vous souhaitez définir un compte Azure AD unique pour la connexion automatique, [configurez ce nouveau CSP.](#auto-login-policy-controlled-by-csp) <br>
+✔️ Si vous souhaitez configurer vos applications pour qu’elles tentent automatiquement une mise à jour après l’échec de la mise à jour, [configurez ce nouveau CSP pour une nouvelle tentative intelligente.](#smart-retry-for-app-updates) <br>
+✔️ Si vous souhaitez avoir davantage de contrôle sur les mises à jour du système d’exploitation, consultez ces [stratégies de mise à jour récemment activées.](#improved-update-restart-detection-and-notifications) <br>
+✔️ si vous avez besoin de rendre les applications de votre organisation disponibles dans le magasin de l’entreprise par le biais du Microsoft Store, mais que vous souhaitez uniquement autoriser l’accès aux applications de votre organisation et non au magasin complet, [définissez cette stratégie.](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ si vous souhaitez connaître l’espace de stockage disponible, le SSID ou le BSSID de vos appareils HoloLens consultez ces [fournisseurs de services de rapports.](#csp-changes-for-reporting-hololens-details)
+
+### <a name="moving-platform-mode"></a>Déplacement du mode de plateforme
+
+À partir de la **Build Insider 20348,1411** , nous avons ajouté la prise en charge de la version bêta pour le suivi sur les plateformes de déplacement à faible dynamique sur HoloLens 2. après l’installation de la build et l’activation du Mode de plateforme mobile, vous serez en mesure d’utiliser votre HoloLens 2 dans les environnements précédemment inaccessibles, tels que les grands navires et les grands navires marins. Actuellement, la fonctionnalité est destinée à l’activation de ces plateformes mobiles spécifiques uniquement. Bien que rien ne vous empêche de tenter d’utiliser la fonctionnalité dans d’autres environnements, la fonctionnalité est axée sur l’ajout d’une prise en charge pour ces environnements en premier.
+
+Pour en savoir plus sur ce qui est pris en charge et sur l’activation de cette nouvelle fonctionnalité, [consultez la page déplacement de la plateforme.](hololens2-moving-platform.md)
+
+### <a name="pfx-file-support-for-certificate-manager"></a>Prise en charge des fichiers PFX pour le gestionnaire de certificats
+
+introduit dans Windows insider build 20348,1405. Nous avons ajouté la prise en charge du [Gestionnaire de certificats](certificate-manager.md) pour utiliser les certificats. pfx. lorsque les utilisateurs accèdent à **Paramètres**  >  **mettre à jour &**  >  les **certificats** de sécurité, puis sélectionnez **installer un certificat** , le fichier de certificat. pfx est pris en charge par l’interface utilisateur.
+Les utilisateurs peuvent importer le certificat. pfx, avec la clé privée, dans le magasin de l’utilisateur ou le magasin de l’ordinateur.
+
+### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens
+
+Pour les appareils gérés lors de la résolution du problème, il est important de vérifier qu’une configuration de stratégie attendue est appliquée. auparavant, cette nouvelle fonctionnalité devait être désactivée via MDM ou proche de l’appareil après l’exportation des journaux de diagnostic MDM collectés via des comptes d' **Paramètres**  ->    >  **accéder à l’entreprise ou à l’école**, puis sélectionner **exporter les journaux de gestion** et les afficher sur un PC proche.
+
+Les diagnostics MDM peuvent maintenant être affichés sur l’appareil à l’aide du navigateur Edge. Pour afficher plus facilement le rapport de diagnostic MDM, accédez à la page accès professionnel ou scolaire, puis sélectionnez **afficher le rapport de diagnostic avancé**. Cette opération génère et ouvre le rapport dans une nouvelle fenêtre de bord.
+
+![affichez le rapport de diagnostic avancé dans Paramètres application.](./images/view-advanced-diagnostic-report.jpg)
+
+### <a name="offline-diagnostics-notifications"></a>Notifications de diagnostics hors connexion
+
+Il s’agit d’une mise à jour pour une fonctionnalité existante appelée [Diagnostics hors connexion](hololens-diagnostic-logs.md#offline-diagnostics). Auparavant, il n’existait pas d’indicateur clair pour les utilisateurs qu’ils avaient déclenché la collecte de diagnostics ou qu’ils se sont terminés.
+à présent ajouté dans Windows builds insider, il existe deux formes de commentaires audiovisuels pour les diagnostics hors connexion. Les notifications de toasts s’affichent pour les deux moment où le regroupement démarre et se termine. Celles-ci s’affichent lorsque l’utilisateur est connecté et dispose d’éléments visuels.
+
+![Toast pour la collecte des journaux.](./images/logcollection1.jpg)
+
+![Toast lorsque la collecte des journaux est terminée.](./images/logcollection2.jpg)
+
+Étant donné que les utilisateurs utilisent souvent les diagnostics hors connexion en tant que mécanisme de collecte de journaux de secours lorsqu’ils n’ont pas accès à un affichage, ne peuvent pas se connecter ou se trouvent toujours dans OOBE. un signal audio est également lu lors de la collecte des journaux. Ce son sera lu en plus de la notification Toast.
+
+Cette nouvelle fonctionnalité est activée lorsque votre appareil est mis à jour et n’a pas besoin d’être activé ou géré. Dans tous les cas où ces nouveaux commentaires ne peuvent pas être affichés ou audibles, les diagnostics hors connexion seront toujours générés.
+
+Nous espérons que ce nouvel ajout de commentaires audiovisuels est plus facile à recueillir des données de diagnostic et plus rapidement à résoudre vos problèmes.
+
+### <a name="low-storage-log-collection-improvements"></a>Améliorations de la collecte des journaux de faible capacité de stockage
+
+Dans les scénarios où un appareil semble manquer d’espace disque lors de la collecte des journaux de diagnostic, un rapport supplémentaire nommé **StorageDiagnostics.zip** est créé. le seuil de stockage faible est déterminé automatiquement par Windows [sens du stockage](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>modifications du CSP pour la création de rapports HoloLens détails
 
@@ -117,53 +165,15 @@ Les stratégies de mise à jour suivantes ont été ajoutées :
 - [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Mettre à jour/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
-### <a name="pfx-file-support-for-certificate-manager"></a>Prise en charge des fichiers PFX pour le gestionnaire de certificats
-
-introduit dans Windows insider build 20348,1405. Nous avons ajouté la prise en charge du [Gestionnaire de certificats](certificate-manager.md) pour utiliser les certificats. pfx. lorsque les utilisateurs accèdent à **Paramètres**  >  **mettre à jour &**  >  les **certificats** de sécurité, puis sélectionnez **installer un certificat** , le fichier de certificat. pfx est pris en charge par l’interface utilisateur.
-Les utilisateurs peuvent importer le certificat. pfx, avec la clé privée, dans le magasin de l’utilisateur ou le magasin de l’ordinateur.
-
 ### <a name="smart-retry-for-app-updates"></a>Nouvelle tentative intelligente pour les mises à jour d’application
 
 à présent activé pour HoloLens est une nouvelle stratégie qui permet aux administrateurs informatiques de définir une date récurrente ou ponctuelle pour redémarrer les applications dont la mise à jour a échoué parce que l’application est en cours d’utilisation, ce qui permet d’appliquer la mise à jour. Elles peuvent être définies en fonction de différents déclencheurs, tels qu’une heure planifiée ou une connexion. Pour en savoir plus sur l’utilisation de cette stratégie, consultez [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
-
-### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens
-
-Pour les appareils gérés lors de la résolution du problème, il est important de vérifier qu’une configuration de stratégie attendue est appliquée. auparavant, cette nouvelle fonctionnalité devait être désactivée via MDM ou proche de l’appareil après l’exportation des journaux de diagnostic MDM collectés via des comptes d' **Paramètres**  ->    >  **accéder à l’entreprise ou à l’école**, puis sélectionner **exporter les journaux de gestion** et les afficher sur un PC proche.
-
-Les diagnostics MDM peuvent maintenant être affichés sur l’appareil à l’aide du navigateur Edge. Pour afficher plus facilement le rapport de diagnostic MDM, accédez à la page accès professionnel ou scolaire, puis sélectionnez **afficher le rapport de diagnostic avancé**. Cette opération génère et ouvre le rapport dans une nouvelle fenêtre de bord.
-
-![affichez le rapport de diagnostic avancé dans Paramètres application.](./images/view-advanced-diagnostic-report.jpg)
-
-### <a name="offline-diagnostics-notifications"></a>Notifications de diagnostics hors connexion
-
-Il s’agit d’une mise à jour pour une fonctionnalité existante appelée [Diagnostics hors connexion](hololens-diagnostic-logs.md#offline-diagnostics). Auparavant, il n’existait pas d’indicateur clair pour les utilisateurs qu’ils avaient déclenché la collecte de diagnostics ou qu’ils se sont terminés.
-à présent ajouté dans Windows builds insider, il existe deux formes de commentaires audiovisuels pour les diagnostics hors connexion. Les notifications de toasts s’affichent pour les deux moment où le regroupement démarre et se termine. Celles-ci s’affichent lorsque l’utilisateur est connecté et dispose d’éléments visuels.
-
-![Toast pour la collecte des journaux.](./images/logcollection1.jpg)
-
-![Toast lorsque la collecte des journaux est terminée.](./images/logcollection2.jpg)
-
-Étant donné que les utilisateurs utilisent souvent les diagnostics hors connexion en tant que mécanisme de collecte de journaux de secours lorsqu’ils n’ont pas accès à un affichage, ne peuvent pas se connecter ou se trouvent toujours dans OOBE. un signal audio est également lu lors de la collecte des journaux. Ce son sera lu en plus de la notification Toast.
-
-Cette nouvelle fonctionnalité est activée lorsque votre appareil est mis à jour et n’a pas besoin d’être activé ou géré. Dans tous les cas où ces nouveaux commentaires ne peuvent pas être affichés ou audibles, les diagnostics hors connexion seront toujours générés.
-
-Nous espérons que ce nouvel ajout de commentaires audiovisuels est plus facile à recueillir des données de diagnostic et plus rapidement à résoudre vos problèmes.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Utiliser uniquement des applications de magasin privé pour Microsoft Store
 
 La stratégie RequirePrivateStoreOnly a été activée pour HoloLens. cette stratégie permet à l’application Microsoft Store d’être configurée pour afficher uniquement la banque privée configurée pour votre organisation. Limiter l’accès aux seules applications que vous avez mises à disposition.
 
 En savoir plus sur [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
-
-### <a name="low-storage-log-collection-improvements"></a>Améliorations de la collecte des journaux de faible capacité de stockage
-
-Dans les scénarios où un appareil semble manquer d’espace disque lors de la collecte des journaux de diagnostic, un rapport supplémentaire nommé **StorageDiagnostics.zip** est créé. le seuil de stockage faible est déterminé automatiquement par Windows [sens du stockage](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
-
-### <a name="moving-platform-mode"></a>Déplacement du mode de plateforme
-
-À partir de la **Build Insider 20348,1411** , nous avons ajouté la prise en charge de la version bêta pour le suivi sur les plateformes de déplacement à faible dynamique sur HoloLens 2. après l’installation de la build et l’activation du Mode de plateforme mobile, vous serez en mesure d’utiliser votre HoloLens 2 dans les environnements précédemment inaccessibles, tels que les grands navires et les grands navires marins. Actuellement, la fonctionnalité est destinée à l’activation de ces plateformes mobiles spécifiques uniquement. Bien que rien ne vous empêche de tenter d’utiliser la fonctionnalité dans d’autres environnements, la fonctionnalité est axée sur l’ajout d’une prise en charge pour ces environnements en premier.
-
-Pour en savoir plus sur ce qui est pris en charge et sur l’activation de cette nouvelle fonctionnalité, [consultez la page déplacement de la plateforme.](hololens2-moving-platform.md)
 
 ### <a name="fixes-and-improvements"></a>Correctifs et améliorations
 
