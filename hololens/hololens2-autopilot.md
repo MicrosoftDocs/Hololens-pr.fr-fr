@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 7438b147a31ff38233412a4213a568286fb2e3b8982bc4fd6af3f9dde842fd1a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
+ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662500"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122620809"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot pour HoloLens 2
 
@@ -250,7 +250,12 @@ Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens 2 acc
        >
        > Pour les appareils utilisant des adaptateurs Ethernet, vous devez connecter l’appareil au réseau avant le démarrage d’OOBE. L’appareil détermine s’il est configuré en tant qu’appareil Autopilot lorsqu’il est sur le premier écran d’OOBE. Si l’appareil ne parvient pas à se connecter au réseau, ou si vous décidez de ne pas configurer l’appareil en tant qu’appareil Autopilot, vous ne pourrez pas utiliser l’approvisionnement Autopilot ultérieurement. Vous devrez alors recommencer cette procédure pour configurer l’appareil en tant qu’appareil Autopilot.
 
-1. L’appareil doit automatiquement démarrer OOBE. N’interagissez pas avec OOBE. Patientez tranquillement. Laissez HoloLens 2 détecter la connectivité réseau et permettez-lui d’exécuter automatiquement OOBE. Il est possible que l’appareil redémarre pendant le processus OOBE. Les écrans OOBE doivent se présenter comme suit.
+1. L’appareil doit automatiquement démarrer OOBE. N’interagissez pas avec OOBE.
+
+    > [!IMPORTANT]
+    > Veuillez ne pas interagir avec OOBE ni appuyer sur le bouton d’alimentation pour mettre le système en veille/arrêt pendant qu’Autopilot est en cours. Cela peut entraîner l’arrêt du flux Autopilot.
+
+   Laissez HoloLens 2 détecter la connectivité réseau et permettez-lui d’exécuter automatiquement OOBE. Il est possible que l’appareil redémarre pendant le processus OOBE. Les écrans OOBE doivent se présenter comme suit.
 
    ![OOBE - Étape 1](./images/autopilot-welcome.jpg)
    ![OOBE - Étape 2](./images/autopilot-step-complete.jpg)

@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2c0e6e285b2eb86342450e8f05876e0cc3bccfe8
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
+ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858667"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122610122"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Mode plateforme mobile (MPM) sur les plateformes mobiles à mouvements dynamiques faibles
 
 Dans **Insider build 20348.1411**, nous avons ajouté le support de la version bêta pour le suivi sur les plateformes mobiles à mouvements dynamiques faibles sur HoloLens 2. Après avoir installé la version et activé le mode MPM, vous pouvez utiliser votre HoloLens 2 dans des environnements auparavant inaccessibles, tels que les grands navires. Actuellement, cette fonctionnalité ne vise qu’à activer ces plateformes mobiles spécifiques. Bien que rien ne vous empêche d’essayer d’utiliser la fonctionnalité dans d’autres environnements, celle-ci prend en charge ces environnements avant tout.
 
 > [!NOTE]
-> Cette fonctionnalité est actuellement disponible uniquement par le biais de Windows [Insiders](hololens-insider.md).
+> Cette fonctionnalité est actuellement disponible via [Windows Insiders](hololens-insider.md) uniquement.
 
 Cet article couvre les points suivants :
 
@@ -35,7 +35,7 @@ Cet article couvre les points suivants :
 
 ## <a name="why-moving-platform-mode-is-necessary"></a>Pourquoi le mode MPM est-il nécessaire ?
 
-L’HoloLens doit être capable de suivre la position de votre tête avec [6 degrés de liberté](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (translation X, Y, Z et rotation en roulis, tangage et lacet) afin d’afficher des hologrammes stables. Pour ce faire, HoloLens effectue le suivi de deux éléments similaires d’informations provenant de deux sources distinctes :
+HoloLens doit être capable de suivre la position de votre tête avec [6 degrés de liberté](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (translation X, Y, Z, et rotation en roulis, tangage et lacet) afin d’afficher des hologrammes stables. Pour ce faire, HoloLens effectue le suivi de deux éléments similaires d’informations provenant de deux sources distinctes :
 
 1. Caméras à lumière visible – qui suivent l’activité de l’environnement, par exemple la pièce dans laquelle vous utilisez l’HoloLens.
 1. Unité de mesure d’inertie (IMU) – qui se compose d’un accéléromètre, d’un gyroscope et d’un magnétomètre qui effectue le suivi des mouvements et de l’orientation de votre tête par rapport à la terre
@@ -54,14 +54,17 @@ Le mode MPM a été mis au point pour traiter intelligemment les conflits entre 
 
 - Les seuls environnements pris en charge dans le mode de plateforme mobile (MPM) sont les grands navires à tangage et roulis faibles. En d’autres termes, de nombreux environnements/situations courants ne sont **pas** encore pris en charge, car ils subissent des mouvements de grande amplitudes, de fortes accélérations ou des [secousses](https://en.wikipedia.org/wiki/Jerk_(physics)). Exemple : avions, trains, voitures, vélos, bus, petits bateaux, ascenseurs, etc.
 - Les hologrammes peuvent osciller légèrement lorsque la fonction MPM est activée, notamment sur des eaux agitées.
-- Rien n’empêche les utilisateurs de tenter d’utiliser le mode MPM dans des environnements non pris en charge. Toutefois, les utilisateurs peuvent observer des effets secondaires indésirables si l’appareil est en mesure de maintenir le suivi dans l’espace non pris en charge. Par exemple, avec MPM, les utilisateurs peuvent constater qu’il est possible d’utiliser un ascenseur tout en changeant d’étage, alors que cela était impossible auparavant. Malheureusement, bien que le mode MPM permette à l’appareil de conserver le suivi, il ne gère pas la gestion des cartes pour le moment. Ainsi, les utilisateurs constateront qu’en changeant d’étage avec un ascenseur, l’appareil confond les étages supérieurs et inférieurs et dégrade la qualité de la carte.
+- Rien n’empêche les utilisateurs de tenter d’utiliser le mode MPM dans des environnements non pris en charge. Toutefois, les utilisateurs peuvent observer des effets secondaires indésirables si l’appareil est en mesure de maintenir le suivi dans l’espace non pris en charge. Par exemple, avec MPM, les utilisateurs peuvent constater qu’il est possible d’utiliser un ascenseur tout en changeant d’étage, alors que cela était impossible avant. Malheureusement, bien que le mode MPM permette à l’appareil de conserver le suivi, il ne gère pas la gestion des cartes pour le moment. Les utilisateurs constateront qu’en changeant d’étage avec un ascenseur, l’appareil confond les étages supérieurs et inférieurs et dégrade la qualité de la carte.
 
 ## <a name="prerequisites"></a>Prérequis
 
 La prise en charge de la version bêta du mode Plateforme mobile ne nécessite que quelques conditions préalables :
 
 1. Installez la build 20348.1411 ou une version plus récente [en flashant la build d’Insider la plus récente via ARC](hololens-insider.md#ffu-download-and-flash-directions) ou [en inscrivant votre appareil et en le mettant à jour ensuite](hololens-insider.md#start-receiving-insider-builds).
-   - Remarque : cette build est actuellement disponible uniquement sur le [Canal développeurs Windows Insider](hololens-insider.md#start-receiving-insider-builds).
+
+   > [!NOTE]
+   > Cette build est actuellement disponible sur la [chaîne Insider Dev](hololens-insider.md#start-receiving-insider-builds) uniquement.
+
 2. Activer [le mode développeur et le Portail d'appareil](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
 ## <a name="enabling-moving-platform-mode"></a>Activation du mode MPM
@@ -69,16 +72,28 @@ La prise en charge de la version bêta du mode Plateforme mobile ne nécessite q
 Pour activer le mode MPM mobile, commencez par [activer le Portail d’appareil](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Sélectionnez l’accordéon **Système** dans le menu de gauche.
+
+   ![Première image](.\images\moving-platform-1w.png)
+
 2. Sélectionnez la page **Moving Platform Mode** et cochez la case **Moving Platform Mode**.
 
-![Première image](.\images\moving-platform-1.png) ![Deuxième image](.\images\moving-platform-2.png)
+    ![Deuxième image](.\images\moving-platform-2z.png)
 
 3. Lorsque vous y êtes invité, sélectionnez **OK**.
 
-![Troisième image](.\images\moving-platform-3.png)
+   ![Troisième image](.\images\moving-platform-3w.png)
 
 4. Redémarrez votre appareil. Pour ce faire, sélectionnez le menu **Power** (Allumer) dans le Portail d’appareil en haut à droite ou dites la commande &quot;Redémarrer l’appareil&quot; à haute voix et sélectionnez &quot;Oui&quot;.
 
-![Quatrième image](.\images\moving-platform-4.png)
+   ![Quatrième image](.\images\moving-platform-4z.png)
 
 Si vous ne parvenez pas à voir l’option Moving Platform Mode dans le Portail d’appareil, cela signifie probablement que vous ne travaillez pas encore avec la build appropriée. Consultez la section [Conditions préalables](#prerequisites).
+
+## <a name="reporting-issues"></a>Problèmes liés aux rapports
+
+Comme indiqué ci-dessus, cette fonctionnalité est une fonctionnalité bêta disponible uniquement en mode développeur, ce qui signifie que vous pouvez rencontrer des problèmes. Si cela se produit, nous pouvons investiguer et améliorer le produit.
+
+1. Signalez le problème via le [Hub de commentaires](hololens-feedback.md) sous la catégorie **Précision, stabilité et fiabilité des hologrammes**, et incluez :
+    1. Description du problème, notamment le comportement attendu et le comportement obtenu
+    1. Une [capture vidéo](holographic-photos-and-videos.md#capture-a-mixed-reality-video) Mixed Reality du problème
+2.  Ouvrez un dossier de support sur [https://aka.ms/hlsupport](https://aka.ms/hlsupport) et partagez l’URL du Hub de commentaires afin que nous puissions vous contacter en cas de questions.
