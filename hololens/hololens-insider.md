@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
-ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
+ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "122277152"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859015"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -45,19 +45,21 @@ Il s’agit là d’une amélioration des rapports de dépannage et d’appareil
 | [Détection et notifications de redémarrage des mises à jour améliorées](#improved-update-restart-detection-and-notifications) | Nouvelles stratégies activées et expérience utilisateur pour les mises à jour. | Administrateurs informatiques | 20348,1405 |
 | [Nouvelle tentative intelligente pour les mises à jour d’application](#smart-retry-for-app-updates) | Permet aux administrateurs informatiques de planifier les nouvelles tentatives de mise à jour des applications. | Administrateurs informatiques | 20348,1405 |
 | [Utiliser uniquement des applications de magasin privé pour Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configurer l’application du Windows Store pour afficher uniquement les applications de l’Organisation | IT Admin | 20348,1408 |
+| [Utiliser des applications WDAC et métier](#use-wdac-and-lob-apps) | Permet aux administrateurs informatiques d’utiliser leurs propres applications tout en continuant à utiliser WDAC pour bloquer d’autres applications. | Administrateurs informatiques | 20348,1405 |
 | [Correctifs et améliorations](#fixes-and-improvements) | Correctifs et améliorations pour HoloLens. | Tous | 20348,1411 |
 
 ### <a name="it-admin-insider-feature-checklist"></a>Liste de vérification des fonctionnalités Insider de l’administrateur informatique
 
-✔️ Si vous souhaitez définir un compte Azure AD unique pour la connexion automatique, [configurez ce nouveau CSP.](#auto-login-policy-controlled-by-csp) <br>
+✔️ Si vous souhaitez définir un compte Azure AD unique pour qu’il se connecte automatiquement, [configurez ce nouveau CSP.](#auto-login-policy-controlled-by-csp) <br>
 ✔️ Si vous souhaitez configurer vos applications pour qu’elles tentent automatiquement une mise à jour après l’échec de la mise à jour, [configurez ce nouveau CSP pour une nouvelle tentative intelligente.](#smart-retry-for-app-updates) <br>
 ✔️ Si vous souhaitez avoir davantage de contrôle sur les mises à jour du système d’exploitation, consultez ces [stratégies de mise à jour récemment activées.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ si vous avez besoin de rendre les applications de votre organisation disponibles dans le magasin de l’entreprise par le biais du Microsoft Store, mais que vous souhaitez uniquement autoriser l’accès aux applications de votre organisation et non au magasin complet, [définissez cette stratégie.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ si vous souhaitez connaître l’espace de stockage disponible, le SSID ou le BSSID de vos appareils HoloLens consultez ces [fournisseurs de services de rapports.](#csp-changes-for-reporting-hololens-details)
+✔️ si vous souhaitez connaître l’espace de stockage disponible, le SSID ou le BSSID de vos appareils HoloLens consultez ces [fournisseurs de services de rapports.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ Si vous souhaitez utiliser WDAC pour empêcher le lancement d’applications ou de processus, mais que vous devez également utiliser votre propre ligne d’applications bushiness, vous pouvez désormais [autoriser LOB dans votre stratégie WDac](#use-wdac-and-lob-apps).
 
 ### <a name="moving-platform-mode"></a>Déplacement du mode de plateforme
 
-À partir de la **Build Insider 20348,1411** , nous avons ajouté la prise en charge de la version bêta pour le suivi sur les plateformes de déplacement à faible dynamique sur HoloLens 2. après l’installation de la build et l’activation du Mode de plateforme mobile, vous serez en mesure d’utiliser votre HoloLens 2 dans les environnements précédemment inaccessibles, tels que les grands navires et les grands navires marins. Actuellement, la fonctionnalité est destinée à l’activation de ces plateformes mobiles spécifiques uniquement. Bien que rien ne vous empêche de tenter d’utiliser la fonctionnalité dans d’autres environnements, la fonctionnalité est axée sur l’ajout d’une prise en charge pour ces environnements en premier.
+À partir de la **Build Insider 20348,1411** , nous avons ajouté la prise en charge de la version bêta pour le suivi sur les plateformes de déplacement à faible dynamique sur HoloLens 2. après l’installation de la build et l’activation du Mode de plateforme mobile, vous serez en mesure d’utiliser votre HoloLens 2 dans les environnements précédemment inaccessibles, tels que les grands navires et les grands navires marins. Actuellement, cette fonctionnalité ne vise qu’à activer ces plateformes mobiles spécifiques. Bien que rien ne vous empêche d’essayer d’utiliser la fonctionnalité dans d’autres environnements, celle-ci prend en charge ces environnements avant tout.
 
 Pour en savoir plus sur ce qui est pris en charge et sur l’activation de cette nouvelle fonctionnalité, [consultez la page déplacement de la plateforme.](hololens2-moving-platform.md)
 
@@ -68,7 +70,7 @@ Les utilisateurs peuvent importer le certificat. pfx, avec la clé privée, dans
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens
 
-Pour les appareils gérés lors de la résolution du problème, il est important de vérifier qu’une configuration de stratégie attendue est appliquée. auparavant, cette nouvelle fonctionnalité devait être désactivée via MDM ou proche de l’appareil après l’exportation des journaux de diagnostic MDM collectés via des comptes d' **Paramètres**  ->    >  **accéder à l’entreprise ou à l’école**, puis sélectionner **exporter les journaux de gestion** et les afficher sur un PC proche.
+Pour les appareils gérés lors de la résolution du problème, il est important de vérifier qu’une configuration de stratégie attendue est appliquée. avant cette nouvelle fonctionnalité, l’affichage de ces informations devait être effectué hors de l’appareil via mdm ou près de l’appareil après l’exportation des journaux de diagnostic MDM collectés via des comptes **Paramètres**  ->    >  **accéder à l’entreprise ou** à l’école, puis sélectionnez **exporter les journaux de gestion** et les afficher sur un PC proche.
 
 Les diagnostics MDM peuvent maintenant être affichés sur l’appareil à l’aide du navigateur Edge. Pour afficher plus facilement le rapport de diagnostic MDM, accédez à la page accès professionnel ou scolaire, puis sélectionnez **afficher le rapport de diagnostic avancé**. Cette opération génère et ouvre le rapport dans une nouvelle fenêtre de bord.
 
@@ -151,7 +153,7 @@ Sur un appareil sur lequel cette stratégie est configurée, l’utilisateur sp�
 
 ### <a name="improved-update-restart-detection-and-notifications"></a>Détection et notifications de redémarrage des mises à jour améliorées
 
-entre les heures actives et les stratégies d’installation, il est possible d’éviter le redémarrage de HoloLens appareils lorsqu’ils sont en cours d’utilisation. Toutefois, cela retarderait également l’adoption des mises à jour si le redémarrage n’a pas lieu pour terminer l’installation d’une mise à jour requise. Nous avons maintenant ajouté des stratégies pour lui permettre d’appliquer des échéances et des redémarrages obligatoires, et de vérifier que l’installation d’une mise à jour est effectuée en temps voulu. Les utilisateurs peuvent être avertis avant l’initiation du redémarrage et ils peuvent retarder le redémarrage conformément à la stratégie informatique.
+entre les heures actives et les stratégies d’installation, il est possible d’éviter le redémarrage de HoloLens appareils lorsqu’ils sont en cours d’utilisation. Toutefois, cela retarderait également l’adoption des mises à jour si le redémarrage n’a pas lieu pour terminer l’installation d’une mise à jour requise. Nous avons maintenant ajouté des stratégies pour lui permettre d’appliquer des échéances et des redémarrages obligatoires, et de vérifier que l’installation d’une mise à jour est effectuée en temps voulu. Les utilisateurs peuvent être avertis avant l’initiation du redémarrage et ils peuvent retarder le redémarrage conformément à la stratégie de l’informatique.
 
 Les stratégies de mise à jour suivantes ont été ajoutées :
 
@@ -167,13 +169,17 @@ Les stratégies de mise à jour suivantes ont été ajoutées :
 
 ### <a name="smart-retry-for-app-updates"></a>Nouvelle tentative intelligente pour les mises à jour d’application
 
-à présent activé pour HoloLens est une nouvelle stratégie qui permet aux administrateurs informatiques de définir une date récurrente ou ponctuelle pour redémarrer les applications dont la mise à jour a échoué parce que l’application est en cours d’utilisation, ce qui permet d’appliquer la mise à jour. Elles peuvent être définies en fonction de différents déclencheurs, tels qu’une heure planifiée ou une connexion. Pour en savoir plus sur l’utilisation de cette stratégie, consultez [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
+à présent activé pour HoloLens est une nouvelle stratégie qui permet aux administrateurs informatiques de définir une date récurrente ou ponctuelle pour redémarrer les applications dont la mise à jour a échoué parce que l’application est en cours d’utilisation, ce qui permet d’appliquer la mise à jour. Elles peuvent être définies en fonction de différents déclencheurs, tels qu’une heure planifiée ou une connexion. Pour en savoir plus sur l’utilisation de cet affichage de stratégie [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Utiliser uniquement des applications de magasin privé pour Microsoft Store
 
 La stratégie RequirePrivateStoreOnly a été activée pour HoloLens. cette stratégie permet à l’application Microsoft Store d’être configurée pour afficher uniquement la banque privée configurée pour votre organisation. Limiter l’accès aux seules applications que vous avez mises à disposition.
 
 En savoir plus sur [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+### <a name="use-wdac-and-lob-apps"></a>Utiliser des applications WDAC et métier
+
+Vous pouvez maintenant utiliser WDAC pour empêcher le lancement d’applications ou de processus et continuer à utiliser votre propre ligne d’applications bushiness. vous pouvez maintenant les autoriser dans votre stratégie WDAC. L’utilisation de cette stratégie implique l’exécution d’une ligne de code supplémentaire dans PowerShell lors de la création de votre stratégie WDAC. [Passez en revue les étapes ci-dessous.](/mem/intune/configuration/custom-profile-hololens)
 
 ### <a name="fixes-and-improvements"></a>Correctifs et améliorations
 
@@ -205,7 +211,7 @@ Sélectionnez **confirmer > redémarrer maintenant** pour terminer. après avoir
 
 ### <a name="update-error-0x80070490-work-around"></a>Mettre à jour l’erreur de contournement 0x80070490
 
-Si vous rencontrez une erreur de mise à jour 0x80070490 lors de la mise à jour sur le canal dev ou bêta, essayez le contournement à terme suivant. Il implique le déplacement de votre canal Insider, la sélection de la mise à jour, puis le déplacement de votre canal Insider.
+Si vous rencontrez une erreur de mise à jour 0x80070490 lors de la mise à jour sur le canal dev ou bêta, essayez la solution de contournement à la une suivante. Il implique le déplacement de votre canal Insider, la sélection de la mise à jour, puis le déplacement de votre canal Insider.
 
 #### <a name="stage-one---release-preview"></a>Version préliminaire de l’étape 1
 

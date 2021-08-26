@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 999e16f117e4f0838c4a0cb6d6bafcbbf72e1d5a
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663670"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859032"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>configurer des HoloLens à l’aide d’un package d’approvisionnement
 
@@ -34,7 +34,7 @@ voici quelques-unes des configurations HoloLens que vous pouvez appliquer dans u
 - Configuration d'une connexion Wi-Fi
 - Appliquer des certificats à l’appareil
 - Activer le mode développeur
-- Configurez le mode plein écran en suivant les [instructions détaillées](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
+- Configurez le mode plein écran en suivant les [instructions détaillées](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 ## <a name="provisioning-package-hololens-wizard"></a>assistant HoloLens du package d’approvisionnement
 
@@ -50,7 +50,7 @@ l’assistant HoloLens vous aide à configurer les paramètres suivants dans un 
 - inscrire l’appareil dans Azure Active Directory ou créer un compte local
 - Ajout de certificats
 - Activer le mode développeur
-- Configurez le mode plein écran en suivant les [instructions détaillées](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
+- Configurez le mode plein écran en suivant les [instructions détaillées](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens).
 
 > [!WARNING]
 > vous devez exécuter Windows concepteur de Configuration sur Windows 10 pour configurer l’inscription Azure Active Directory à l’aide de l’un des assistants.
@@ -123,7 +123,7 @@ Sélectionnez **Créer** quand vous avez terminé. Cela ne prend que quelques se
 
     > [!IMPORTANT]
     > Lorsque vous générez un package d’approvisionnement, vous pouvez inclure des informations sensibles dans les fichiers du projet et dans le fichier du package d’approvisionnement (.ppkg). Bien que vous ayez la possibilité de chiffrer le fichier .ppkg, les fichiers du projet ne sont pas chiffrés. Vous devez stocker les fichiers de projet dans un emplacement sécurisé et supprimer les fichiers du projet lorsqu’ils ne sont plus nécessaires.
-    
+
 9. Sélectionnez **Exporter** le  >  **package de provisionnement**.
 
 10. Changez le **propriétaire** en **administrateur informatique**. Cela permet de définir la priorité de ce package d’approvisionnement à une valeur supérieure à celle des packages d’approvisionnement appliqués à cet appareil à partir d’autres sources. Sélectionnez **Suivant**.
@@ -160,11 +160,11 @@ HoloLens 2 appareils sur [Windows version holographique 20H2](hololens-release-n
 - [Confirmer automatiquement les packages de provisionnement dans OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 - [Approvisionnement automatique sans interface utilisateur](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
-1. utilisez le câble usb pour connecter l’appareil à un PC (ou un lecteur USB pour HoloLens 2 comme indiqué ci-dessus), puis démarrez l’appareil. Ne continuez pas au-delà de la première page du moment de l' **interaction** de OOBE.   
-    - sur HoloLens (1re génération), cette page contient une zone bleue. 
+1. utilisez le câble usb pour connecter l’appareil à un PC (ou un lecteur USB pour HoloLens 2 comme indiqué ci-dessus), puis démarrez l’appareil. Ne continuez pas au-delà de la première page du moment de l' **interaction** de OOBE.
+    - sur HoloLens (1re génération), cette page contient une zone bleue.
     - sur HoloLens 2, cette page contient hummingbird.
 
-2. Appuyez brièvement sur les boutons **Baisser le volume** et **Alimentation** en même temps, puis relâchez-les. 
+2. Appuyez brièvement sur les boutons **Baisser le volume** et **Alimentation** en même temps, puis relâchez-les.
 
 3. HoloLens apparaît comme un appareil dans l’explorateur de fichiers sur le PC.
 
@@ -183,10 +183,10 @@ HoloLens 2 appareils sur [Windows version holographique 20H2](hololens-release-n
 
 - Processus automatisés permettant une utilisation moins importante de l’utilisateur quand des lecteurs USB avec des packages d’approvisionnement sont utilisés pendant l’OOBE.
 
-Avant cette version, les utilisateurs devaient lancer l’écran d’approvisionnement manuellement lors de l’approvisionnement à l’aide d’une combinaison de boutons. Désormais, les utilisateurs peuvent ignorer la combinaison de boutons à l’aide d’un package d’approvisionnement sur un lecteur de stockage USB. 
+Avant cette version, les utilisateurs devaient lancer l’écran d’approvisionnement manuellement lors de l’approvisionnement à l’aide d’une combinaison de boutons. Désormais, les utilisateurs peuvent ignorer la combinaison de boutons à l’aide d’un package d’approvisionnement sur un lecteur de stockage USB.
 
 1. Brancher le lecteur USB avec le package d’approvisionnement pendant la première heure d’interaction d’OOBE
-1. Lorsque l’appareil est prêt à être approvisionné, il ouvre automatiquement l’invite avec la page de configuration. 
+1. Lorsque l’appareil est prêt à être approvisionné, il ouvre automatiquement l’invite avec la page de configuration.
 
 Remarque : si un lecteur USB reste branché pendant le démarrage de l’appareil, OOBE énumère les dispositifs de stockage USB existants, ainsi que des éléments supplémentaires qui sont connectés.
 
@@ -239,7 +239,7 @@ dans Windows concepteur de Configuration, lorsque vous créez un package d’app
 
 | Paramètre | Description |
 | --- | --- |
-| **Certificates** | Déployer un certificat pour HoloLens.  |
+| **Certificats** | Déployer un certificat pour HoloLens.  |
 | **ConnectivityProfiles** | Déployer un profil Wi-Fi pour HoloLens.   |
 | **EditionUpgrade** | [Effectuez une mise à niveau vers Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Stratégies** | Autoriser ou interdire le mode développeur sur HoloLens. [Stratégies prises en charge par Windows Holographic for Business](/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |

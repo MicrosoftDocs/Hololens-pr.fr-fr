@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a8d1f9b8d04324236cb610b6018880891bdabdd1
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 4aa0ea03850277e528b134c9686633a140c64721
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858670"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859440"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -551,7 +551,7 @@ Lorsque vous modifiez une borne pour inclure les nouvelles applications, nous vo
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Modifications du comportement du mode plein écran pour la gestion des défaillances
 
-Dans les versions plus anciennes, si un appareil avait une configuration de kiosque, qui est une combinaison de l’accès attribué global et de l’accès affecté au membre du groupe AAD, si la détermination de l’appartenance au groupe AAD a échoué, l’utilisateur voit le menu «[rien ne s’affiche dans](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)le menu Démarrer ».
+Dans les versions plus anciennes, si un appareil avait une configuration de kiosque, qui est une combinaison de l’accès attribué global et de l’accès affecté au membre du groupe AAD, si la détermination de l’appartenance au groupe AAD a échoué, l’utilisateur voit le menu «[rien ne s’affiche dans](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)le menu Démarrer ».
 
 à partir de cette version de Windows, l’expérience de la borne sera de secours à la configuration globale des kiosques (le cas échéant) en cas de défaillances pendant le mode plein écran du groupe AAD.
 
@@ -823,7 +823,7 @@ Cette dernière version est une mise à jour mensuelle de la version 2004, mais 
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>nouveautés de Windows holographique, version 20H2  
 
-| Caractéristique                                              | Description                                                                                                                                     |
+| Fonctionnalité                                              | Description                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Prise en charge de la fonctionnalité Position automatique des yeux](hololens-release-notes.md#auto-eye-position-support) | Calcule activement les positions oculaires sans que les utilisateurs passent par l’étalonnage du suivi oculaire.   |
 | [Gestionnaire de certificats](hololens-release-notes.md#certificate-manager)   | permet de nouvelles méthodes plus simples pour installer et supprimer des certificats de l’application Paramètres.     |
@@ -980,14 +980,14 @@ Vérifiez que la configuration de l’appareil a été appliquée dans le portai
    > [!div class="mx-imgBorder"]
    > ![Capture d’écran de la définition de RequireNetworkInOOBE sur false via OMA URI dans Intune](images/hololens-tenant-lockdown-false.png)
 
-1. Créez un groupe et attribuez le profil de configuration d’appareil à ce groupe d’appareils. 
+1. Créez un groupe et attribuez le profil de configuration d’appareil à ce groupe d’appareils.
 
 1. Faites de l’appareil HoloLens 2 un membre du groupe créé à l’étape précédente et déclenchez la synchronisation.
 
-Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois la configuration de l’appareil HoloLens 2 appliquée, les effets de TenantLockdown sont inactifs. 
+Vérifiez que la configuration de l’appareil a été appliquée dans le portail Intune. Une fois la configuration de l’appareil HoloLens 2 appliquée, les effets de TenantLockdown sont inactifs.
 
 #### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>Que se passe-t-il lors du processus OOBE, si le profil Autopilot n’est pas affecté sur un HoloLens après la définition de TenantLockdown sur true ? 
-OOBE attend indéfiniment le téléchargement du profil Autopilot et la boîte de dialogue suivante s’affiche. Afin de supprimer les effets de TenantLockdown, l’appareil doit d’abord être inscrit auprès de son client d’origine à l’aide d’Autopilot uniquement et RequireNetworkInOOBE doit être annulé comme décrit à l’étape précédente avant que les restrictions introduites par le fournisseur de solutions Cloud TenantLockdown ne soient supprimées. 
+OOBE attend indéfiniment le téléchargement du profil Autopilot et la boîte de dialogue suivante s’affiche. Afin de supprimer les effets de TenantLockdown, l’appareil doit d’abord être inscrit auprès de son client d’origine à l’aide d’Autopilot uniquement et RequireNetworkInOOBE doit être annulé comme décrit à l’étape précédente avant que les restrictions introduites par le fournisseur de solutions Cloud TenantLockdown ne soient supprimées.
 
 ![Vue de l’appareil lorsque la stratégie est appliquée.](images/hololens-autopilot-lockdown.png)
 
@@ -996,14 +996,14 @@ Vous pouvez désormais trouver ces informations en même temps que le reste du p
 ### <a name="global-assigned-access--kiosk-mode"></a>Accès global affecté – mode plein écran
 - Réduction de la gestion des identités pour les bornes, en activant la nouvelle méthode Kiosk qui applique le mode plein écran au niveau du système.
 
-cette nouvelle fonctionnalité permet à un administrateur informatique de configurer un appareil HoloLens 2 pour le mode plein écran de plusieurs applications, applicable au niveau du système, n’a aucune affinité avec l’identité du système et s’applique à tous les utilisateurs qui se connectent à l’appareil. en savoir plus sur cette nouvelle fonctionnalité en détail dans la [HoloLens borne d’accès assignée globale](hololens-global-assigned-access-kiosk.md).
+cette nouvelle fonctionnalité permet à un administrateur informatique de configurer un appareil HoloLens 2 pour le mode plein écran de plusieurs applications, applicable au niveau du système, n’a aucune affinité avec l’identité du système et s’applique à tous les utilisateurs qui se connectent à l’appareil. en savoir plus sur cette nouvelle fonctionnalité en détail dans le [HoloLens mode plein écran](hololens-kiosk.md).
 
 ### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Lancement automatique d’une application en mode plein écran à plusieurs applications 
 - Expérience ciblée avec le lancement automatique d’applications, ce qui améliore davantage l’interface utilisateur et les sélections d’applications choisies pour les expériences en mode plein écran.
 
-S’applique uniquement au mode plein écran à plusieurs applications et seule une application peut être désignée pour être lancée automatiquement à l’aide de l’attribut en surbrillance ci-dessous dans la configuration d’accès affectée. 
+S’applique uniquement au mode plein écran à plusieurs applications et seule une application peut être désignée pour être lancée automatiquement à l’aide de l’attribut en surbrillance ci-dessous dans la configuration d’accès affectée.
 
-L’application est automatiquement lancée lorsque l’utilisateur se connecte. 
+L’application est automatiquement lancée lorsque l’utilisateur se connecte.
 
 ```xml
 <AllowedApps>                     
@@ -1013,11 +1013,12 @@ L’application est automatiquement lancée lorsque l’utilisateur se connecte.
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Modifications du comportement du mode plein écran pour la gestion des défaillances
 - Mode plein écran sécurisé en éliminant les applications disponibles en cas de défaillance du mode plein écran. 
 
-plus haut en cas de défaillances lors de l’application du mode plein écran, HoloLens utilisé pour afficher toutes les applications dans le menu démarrer. maintenant, dans Windows holographique version 20H2 en cas d’échec, aucune application ne sera affichée dans le menu démarrer comme suit : 
+plus haut en cas de défaillances lors de l’application du mode plein écran, HoloLens utilisé pour afficher toutes les applications dans le menu démarrer. maintenant, dans Windows holographique version 20H2 en cas d’échec, aucune application ne sera affichée dans le menu démarrer comme suit :
 
 ![Image du mode plein écran à présent en cas d’échec.](images/hololens-kiosk-failure-behavior.png )
 
 ### <a name="hololens-policies"></a>HoloLens Directives
+
 - options de gestion des appareils spécifiques à HoloLens créées pour la gestion de l’appareil. 
 
 de nouvelles stratégies de réalité mixte ont été créées pour HoloLens 2 appareils sur Windows version holographique 20H2. Les nouveaux paramètres contrôlables incluent : définition de la luminosité, définition du volume, désactivation de l’enregistrement audio dans les captures de réalité mixte, définition du moment où les diagnostics peuvent être collectés et mise en cache de l’appartenance au groupe AAD.  
@@ -1255,7 +1256,7 @@ Améliorations et correctifs de la mise à jour :
 
 la mise à jour logicielle de mai 2020 pour HoloLens 2, *Windows holographique, version 2004* , offre un grand nombre de nouvelles fonctionnalités passionnantes, telles que la prise en charge de Windows autopilot, le mode sombre de l’application, la prise en charge USB Ethernet pour les points d’accès 5 5g/LTE, et bien plus encore. pour effectuer une mise à jour vers la dernière version, ouvrez l’application **Paramètres**   , accédez à  **update & Security**, puis sélectionnez le bouton  **rechercher les mises à jour**   . 
 
-|             Caractéristique                              |          Description                                                                                              |
+|             Fonctionnalité                              |          Description                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          préconfigurer et configurer en toute transparence de nouveaux appareils pour la production à l’aide d’Windows autopilot                 |
 |       Support « Rex 2 »                             |          Prise en charge des clés de sécurité FIDO2 pour activer l’authentification rapide et sécurisée pour les appareils partagés            |
@@ -1355,7 +1356,7 @@ Ces applications « intégrées » prennent en charge le mode sombre :
 
 - Paramètres 
 - Microsoft Store 
-- Mail 
+- Messagerie 
 - Calendrier 
 - Explorateur de fichiers 
 - Hub de commentaires 
@@ -1411,7 +1412,7 @@ de nombreuses applications Windows prennent en charge les modes dark et light. H
 Ces applications « intégrées » prennent en charge le mode sombre :
 - Paramètres
 - Microsoft Store
-- Mail
+- Messagerie
 - Calendrier
 - Explorateur de fichiers
 - Hub de commentaires

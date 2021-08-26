@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3c17ad2397d87660cb2013604029864f9c36abdbf520710c4fe5952e3440e3a5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5ded375d88740b9367eec87e4e902c423f131689
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664236"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122858981"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscrire HoloLens dans GPM
 
@@ -31,17 +31,17 @@ vous pouvez gérer plusieurs appareils Microsoft HoloLens simultanément à l’
 ## <a name="requirements"></a>Configuration requise
 
  votre organisation doit configurer la gestion des appareils mobiles (MDM) pour gérer les appareils HoloLens. Votre fournisseur GPM peut être Microsoft Intune ou un fournisseur tiers qui utilise les API GPM de Microsoft.
- 
+
 ## <a name="different-ways-to-enroll"></a>Différentes façons d’inscrire
 
 Selon le type d' [identité](hololens-identity.md) choisi pendant l’OOBE ou la publication, il existe différentes méthodes d’inscription.
 
 - si l’identité est Azure AD, alors lors de l’utilisation d’OOBE ou **Paramètres**  ->  Connecter bouton d'**accès professionnel ou scolaire**  ->   .
     - Par Azure AD, l' [inscription automatique à MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) se produit uniquement si Azure ad a été configuré avec des URL d’inscription.
-     
+
 - Si l’identité est Azure AD et que l’appareil a été préalablement inscrit auprès du serveur MDM Intune avec un profil de configuration spécifique affecté, le AD-Join Azure et l' [inscription automatique à MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) se produiront au cours d’OOBE.
     - Également appelé le [déroulement AutoPilot](hololens2-autopilot.md) disponible dans [19041.1103 + builds](hololens-release-notes.md#windows-holographic-version-2004).
-    
+
 
 - si l’identité est MSA, utilisez **Paramètres** bouton Connecter d’accès à l’application ou à l'  ->  **école**  ->   .
     - Également appelé Flow AWA (ajouter un compte professionnel).
@@ -65,3 +65,7 @@ Selon la méthode d’inscription, l’annulation de l’inscription de votre ap
 Si votre appareil a été inscrit avec un compte Azure AD ou AutoPilot, il ne peut pas être désinscrit d’Intune. si vous souhaitez annuler la jointure HoloLens de Azure AD ou le rejoindre à un locataire différent pour Azure AD, vous devez [réinitialiser/](hololens-recovery.md#reset-the-device) recommencer l’appareil.
 
 Si votre appareil a été inscrit auprès d’un compte MSA qui a ajouté un compte professionnel ou à partir d’un compte local inscrit uniquement dans la gestion des appareils, vous pouvez annuler l’inscription de l’appareil. ouvrez le menu Démarrer, puis sélectionnez **Paramètres**  ->  bouton de déconnexion YourAccount d'**accès à l’application ou scolaire**  ->    ->   .
+
+## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>s’assurer que l’inscription MDM n’est pas bloquée pour les appareils Windows
+
+pour que l’autopilote aboutisse, vous devez vous assurer que vos appareils HoloLens peuvent s’inscrire. étant donné que HoloLens est considéré comme un appareil Windows, aucune restriction d’inscription ne peut bloquer votre déploiement. [Passez en revue cette liste de restrictions](/mem/intune/enrollment/enrollment-restrictions-set) et assurez-vous de pouvoir inscrire vos appareils.
