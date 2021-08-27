@@ -53,7 +53,7 @@
 #### [Configurer](hololens2-cloud-connected-configure.md)
 #### [Déployer](hololens2-cloud-connected-deploy.md)
 #### [Maintenance](hololens2-cloud-connected-maintain.md)
-#### [Guide de déploiement d’un environnement (clients externes) connecté au cloud](hololens2-deployment-guide.md)
+#### [Clients externes](hololens2-deployment-guide.md)
 ### Guide de déploiement d’un réseau d’entreprise
 #### [Vue d'ensemble](hololens2-corp-connected-overview.md)
 #### [Préparation](hololens2-corp-connected-prepare.md)
@@ -93,7 +93,7 @@
 ### [Configurer HoloLens à l’aide de packages de provisionnement](hololens-provisioning.md)
 ### [Restrictions d’appareil courantes](hololens-common-device-restrictions.md)
 ### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)
-### [Accès global affecté - Kiosque](hololens-global-assigned-access-kiosk.md)
+### [Informations de référence sur le kiosque HoloLens](hololens-kiosk-reference.md)
 ### [Contrôle d’application Windows Defender - WDAC](windows-defender-application-control-wdac.md)
 ### [CSP des paramètres de page et URI pour HoloLens](settings-uri-list.md)
 ## Réseau et connectivité

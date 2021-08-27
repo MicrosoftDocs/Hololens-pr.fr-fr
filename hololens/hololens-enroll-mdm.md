@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5ded375d88740b9367eec87e4e902c423f131689
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122858981"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979353"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscrire HoloLens dans GPM
 
@@ -68,4 +68,4 @@ Si votre appareil a été inscrit auprès d’un compte MSA qui a ajouté un com
 
 ## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>s’assurer que l’inscription MDM n’est pas bloquée pour les appareils Windows
 
-pour que l’autopilote aboutisse, vous devez vous assurer que vos appareils HoloLens peuvent s’inscrire. étant donné que HoloLens est considéré comme un appareil Windows, aucune restriction d’inscription ne peut bloquer votre déploiement. [Passez en revue cette liste de restrictions](/mem/intune/enrollment/enrollment-restrictions-set) et assurez-vous de pouvoir inscrire vos appareils.
+pour que l’inscription aboutisse, vous devez vous assurer que vos appareils HoloLens peuvent s’inscrire. étant donné que HoloLens est considéré comme un appareil Windows, aucune restriction d’inscription ne peut bloquer votre déploiement. [Passez en revue cette liste de restrictions](/mem/intune/enrollment/enrollment-restrictions-set) et assurez-vous de pouvoir inscrire vos appareils.

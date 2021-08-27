@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daab30a8ea5200ca145b6b0234b8bd060b8cec5f
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 28c431397385c06fb94de410a0763e24e18e4509
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859105"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979370"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurer HoloLens en tant que kiosque
 
@@ -44,11 +44,11 @@ Le tableau suivant répertorie les fonctionnalités des fonctionnalités dans le
 |Borne pour une seule application |Désactivé |Désactivé |Désactivé |Désactivé   |Désactivé |Désactivé |
 |Kiosque multi-application |activé |Désactivé  |Téléchargé  |Téléchargé |Téléchargé   |Désactivé  |
 
-pour plus d’informations sur la façon d’activer les fonctionnalités désactivées, ou sur la façon dont les commandes vocales interagissent avec les fonctionnalités désactivées et Cortana consultez [HoloLens AUMIDs pour les applications](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
+\*pour plus d’informations sur la façon d’activer les fonctionnalités désactivées, ou sur la façon dont les commandes vocales interagissent avec les fonctionnalités désactivées et Cortana consultez [HoloLens AUMIDs pour les applications](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>Considérations générales à prendre en compte avant de configurer le mode plein écran
 
-1. déterminez le type de compte d’utilisateur qui se connecte à Hololens dans votre environnement-HoloLens prend en charge les comptes Azure Active Directory (AAD), les comptes Microsoft (MSA) et les comptes locaux. En outre, les comptes créés temporairement, appelés invités/visiteurs, sont également pris en charge (uniquement pour les appareils de jonction AAD). [Pour plus d’informations, consultez gérer l’identité des utilisateurs et connexion pour HoloLens](hololens-identity.md).
+1. déterminez le type de compte d’utilisateur qui se connecte à HoloLens dans votre environnement : HoloLens prend en charge les comptes Azure Active Directory (AAD), les comptes Microsoft (MSA) et les comptes locaux. En outre, les comptes créés temporairement, appelés invités/visiteurs, sont également pris en charge (uniquement pour les appareils de jonction AAD). [Pour plus d’informations, consultez gérer l’identité des utilisateurs et connexion pour HoloLens](hololens-identity.md).
 2. Déterminez les cibles de l’expérience en mode plein écran, qu’il s’agisse de tout le monde, d’un seul utilisateur, de certains utilisateurs ou d’utilisateurs membres du groupe AAD, etc.
 3. Pour le mode plein écran de l’application, déterminez la ou les applications à afficher dans le menu Démarrer. Pour chaque application, son [ID de modèle d’utilisateur d’application (identifiant aumid)](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) est nécessaire.
 4. déterminez si le mode plein écran sera appliqué à HoloLens via des packages d’approvisionnement d’exécution ou un serveur de gestion des appareils mobiles (MDM).
@@ -71,6 +71,8 @@ S’applique uniquement si vous envisagez d’utiliser des packages de provision
 
 ## <a name="supported-scenarios-for-kiosk-mode-based-on-identity-type"></a>Scénarios pris en charge pour le mode plein écran basé sur le type d’identité
 
+Consultez les [liens de référence](hololens-kiosk-reference.md#kiosk-xml-code-samples) pour obtenir des exemples basés sur votre scénario et les mettre à jour en fonction des besoins avant de copier-coller.
+
 > [!NOTE]
 > Utilisez XML uniquement si vous n’utilisez pas l’interface utilisateur d’Intune pour créer une configuration de kiosque.
 
@@ -89,7 +91,7 @@ S’applique uniquement si vous envisagez d’utiliser des packages de provision
 | Chaque utilisateur qui se connecte obtient l’expérience plein écran, à l’exception de certains utilisateurs. | [Configurez plusieurs profils d’accès affectés globaux de l’application en excluant certains utilisateurs (qui doivent être des propriétaires de périphériques)](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners). | • [Microsoft Intune modèle personnalisé](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Approvisionnement du runtime-applications multiples](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | L’accès global affecté requiert [20H2 et les builds plus récentes](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Chaque utilisateur AAD obtient une expérience plein écran spécifique pour cet utilisateur. | [Configurez la configuration d’accès affectée pour chaque utilisateur en spécifiant son nom de compte AAD.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune modèle personnalisé](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Approvisionnement du runtime-applications multiples](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
 | Les utilisateurs de différents groupes AAD ont l’expérience du mode plein écran uniquement pour leur groupe. | [Configurez la configuration d’accès affectée pour chaque groupe AAD souhaité.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune modèle personnalisé](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Approvisionnement du runtime-applications multiples](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • lorsqu’un utilisateur se connecte et que HoloLens est connecté à Internet, si cet utilisateur est membre du groupe aad pour lequel la configuration de kiosque existe, l’utilisateur peut se connecter à un kiosque pour ce groupe aad. <br> • [si aucun internet n’est disponible lorsque l’utilisateur se connecte, alors l’utilisateur rencontrera HoloLens comportement du mode de défaillance.](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • Si la disponibilité Internet n’est pas garantie lorsque l’utilisateur se connecte et que le kiosque basé sur un groupe AAD doit être utilisé, [envisagez d’utiliser AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
-| les utilisateurs qui doivent utiliser HoloLens à des fins temporaires bénéficient d’une expérience plein écran. | [Configurer la configuration d’accès affectée pour les visiteurs](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune modèle personnalisé](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Approvisionnement du runtime-application unique](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • un compte d’utilisateur temporaire est créé automatiquement par HoloLens lors de la connexion et est supprimé lorsque l’utilisateur temporaire se déconnecte. <br> • Envisagez d’activer la [stratégie de connexion automatique des visiteurs](#how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience). |
+| les utilisateurs qui doivent utiliser HoloLens à des fins temporaires bénéficient d’une expérience plein écran. | [Configurer la configuration d’accès affectée pour les visiteurs](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune modèle personnalisé](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Approvisionnement du runtime-application unique](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • un compte d’utilisateur temporaire est créé automatiquement par HoloLens lors de la connexion et est supprimé lorsque l’utilisateur temporaire se déconnecte. <br> • Envisagez d’activer la [stratégie de connexion automatique des visiteurs](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience). |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>Étapes de la configuration du mode plein écran pour HoloLens
 
@@ -108,9 +110,9 @@ Voici les méthodes suivantes pour configurer, sélectionnez l’onglet correspo
 
 [!INCLUDE[](includes/kiosk-configure-steps.md)]
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions (FAQ)
 
-### <a name="how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience"></a>Comment faire en sorte que les comptes des visiteurs se connectent automatiquement à Kiosk ?
+### <a name="how-can-visitor-accounts-automatically-logon-to-kiosk-experience"></a>Comment les comptes des visiteurs peuvent-ils se connecter automatiquement à l’expérience plein écran ?
 
 sur les builds [Windows holographique, version 21H1 et versions](hololens-release-notes.md#windows-holographic-version-21h1) ultérieures :
 
@@ -118,7 +120,7 @@ sur les builds [Windows holographique, version 21H1 et versions](hololens-releas
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
-### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>L’expérience Kiosk est-elle prise en charge sur Hololens (1ère génération) ?
+### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>l’expérience des kiosques est-elle prise en charge sur HoloLens (1ère génération) ?
 
 Le mode plein écran est disponible uniquement si l’appareil a Windows Holographic for Business. tous les appareils HoloLens 2 sont livrés avec Windows Holographic for Business et il n’existe aucune autre édition. chaque HoloLens 2 appareil est en mesure d’exécuter le mode plein écran.
 
@@ -133,9 +135,9 @@ configurez l' [appareil HoloLens pour utiliser le portail d’appareils Windows]
 
 Le mode plein écran peut être défini via l’API REST du portail de l’appareil en procédant à une publication sur/API/Holographic/KioskMode/Settings avec un paramètre de chaîne de requête obligatoire (« kioskModeEnabled » avec la valeur « true » ou « false ») et un paramètre facultatif (« startupApp » avec une valeur de nom de package). N’oubliez pas que le portail des appareils est destiné aux développeurs uniquement et qu’il ne doit pas être activé sur des appareils non-développeur. L’API REST est susceptible de changer dans les futures mises à jour/versions.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
-### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problème-aucune application n’est affichée dans le menu démarrer en mode plein écran ?
+### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problème-aucune application n’est affichée dans le menu démarrer en mode plein écran
 
 **Symptômes**
 
