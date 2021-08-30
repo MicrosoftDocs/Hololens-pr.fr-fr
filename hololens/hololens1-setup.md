@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662282"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189254"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Préparer votre HoloLens 2 (1re génération) pour l’utilisation
 
@@ -27,9 +27,9 @@ suivez la procédure pour configurer une HoloLens (1re génération) pour la pre
 
 pour facturer votre HoloLens, connectez l’alimentation au port de chargement à l’aide du câble Micro USB inclus. Branchez ensuite le bloc d’alimentation dans une prise d’alimentation. Lorsque l’appareil est en cours de chargement, l’indicateur de la batterie s’illumine dans un modèle d’onde.
 
-![Image qui montre comment attacher le câble micro USB au HoloLens](./images/hololens-charging.png)
+![Image qui montre comment attacher le câble micro USB au HoloLens.](./images/hololens-charging.png)
 
-lorsque votre HoloLens est activé, l’indicateur de la batterie indique le niveau de la batterie par incréments. Lorsqu’un seul des cinq voyants est allumé, le niveau de la batterie est inférieur à 20 %. Si le niveau de la batterie est extrêmement faible et que vous essayez d’allumer l’appareil, un voyant clignote brièvement, puis s’éteint.
+lorsque votre HoloLens est activé, l’indicateur de la batterie indique le niveau de la batterie par incréments. Lorsqu'un seul des cinq voyants est allumé, le niveau de la batterie est inférieur à 20 %. Si le niveau de la batterie est très faible et que vous essayez d'allumer l'appareil, un voyant clignote brièvement, puis s'éteint.
 
 > [!TIP]
 > pour obtenir une estimation de votre niveau de batterie actuel, dites-le « bonjour Cortana, quelle est la batterie restante ? »
@@ -44,17 +44,17 @@ Le taux et la vitesse de charge peuvent varier en fonction de l'environnement da
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. faites pivoter le headband d’environ 20-30 degrés.|![Étape 1, faire pivoter le headband](./images/FitGuideStep1.png)|
-|2. Effectuez un push du headband. Ne le tirez pas ou manipulez la bande derrière la charnière, car dans le temps, cela peut rompre la bande.|![Étape 2, repousser le headband](./images/FitGuideStep2.png)|
-|3. Tournez la roue d’ajustement pour étendre le headband tout le long de la procédure. |![Étape 3, utiliser la roue d’ajustement pour étendre le headband](./images/FitGuideStep3.png)|
-|4. Tenez l’appareil à l’aide des bras de l’appareil et placez-le sur votre tête. Assurez-vous que le headband se trouve en haut de votre stress, puis serrez le volant de réglage.|![Étape 4, placement sur l’appareil et réglage du headband](./images/FitGuideStep4.png)|
-|5. faites glisser la visière vers l’arrière, puis vérifiez la taille de l’appareil. Le headband doit se trouver au sommet du stress, juste en dessous de la fin de la file, avec les haut-parleurs au-dessus de vos oreilles. Les lentilles doivent être centrées sur vos yeux.|![Étape 5, faire glisser la visière vers l’arrière et vérifier la taille](./images/FitGuideSetep5.png)|
+|1. faites pivoter le headband d’environ 20-30 degrés.|![Étape 1, faire pivoter le headband.](./images/FitGuideStep1.png)|
+|2. Effectuez un push du headband. Ne le tirez pas ou manipulez la bande derrière la charnière, car dans le temps, cela peut rompre la bande.|![Étape 2, repoussez le headband.](./images/FitGuideStep2.png)|
+|3. Tournez la roue d’ajustement pour étendre le headband tout le long de la procédure. |![À l’étape 3, utilisez la roue d’ajustement pour étendre le headband.](./images/FitGuideStep3.png)|
+|4. Tenez l’appareil à l’aide des bras de l’appareil et placez-le sur votre tête. Assurez-vous que le headband se trouve en haut de votre stress, puis serrez le volant de réglage.|![Étape 4, placez sur l’appareil et ajustez le headband.](./images/FitGuideStep4.png)|
+|5. faites glisser la visière vers l’arrière, puis vérifiez la taille de l’appareil. Le headband doit se trouver au sommet du stress, juste en dessous de la fin de la file, avec les haut-parleurs au-dessus de vos oreilles. Les lentilles doivent être centrées sur vos yeux.|![Étape 5, faites glisser la visière vers l’arrière et vérifiez l’adéquation.](./images/FitGuideSetep5.png)|
 
 ## <a name="turn-on-your-hololens"></a>Activez votre HoloLens
 
 utilisez le bouton marche/arrêt pour activer ou désactiver l’HoloLens ou le mettre en mode veille.
 
-![Image qui affiche le bouton d’alimentation HoloLens](./images/hololens-power.png)
+![Image qui affiche le bouton d’alimentation HoloLens.](./images/hololens-power.png)
 
 Si votre appareil ne répond pas ou ne démarre pas, consultez [redémarrage, réinitialisation ou récupération de HoloLens](hololens-restart-recover.md).
 
@@ -79,15 +79,15 @@ HoloLens s’arrête automatiquement lorsque le niveau de la batterie passe à u
 
 Les boutons luminosité et volume se trouvent au-dessus du volume des bras d’appareil &mdash; à votre droite et à la luminosité de votre gauche.
 
-![Image qui affiche les boutons HoloLens](./images/hololens-buttons.jpg)
+![Image qui affiche les boutons HoloLens.](./images/hololens-buttons.jpg)
 
 ## <a name="hololens-indicator-lights"></a>lumières des indicateurs de HoloLens
 
-![Image qui affiche les voyants des indicateurs de HoloLens](./images/hololens-lights.png)
+![Image qui affiche les voyants des indicateurs de HoloLens.](./images/hololens-lights.png)
 
 Vous ignorez ce qu'indiquent les voyants de votre HoloLens ? Voici une aide.
 
-|Quand les lumières le font |Cela signifie que |
+|Quand les lumières le font |Signification |
 |---|---|
 |Faites défiler le centre vers l’extérieur. |HoloLens démarre. |
 |Restez allumé (tout ou partie). |HoloLens est activé et prêt à l’emploi. La durée de vie de la batterie est indiquée par incréments de 20%. |

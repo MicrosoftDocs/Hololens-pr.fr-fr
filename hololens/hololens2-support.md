@@ -7,12 +7,12 @@ description: Options de prise en charge de la réalité mixte pour les petites e
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658778"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190444"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quelles sont les options d’aide et de prise en charge de la réalité mixte ?
 
@@ -124,18 +124,18 @@ Pour ouvrir un ticket de support technique sur le Portail Azure pour les ancres 
 
 1. Ouvrez le [portail Microsoft Azure](https://azure.microsoft.com/account/), et cliquez sur l’icône d’aide figurant dans la barre de menus supérieure, puis cliquez sur le bouton **Aide + Support**.
 
-   ![Aide et support du portail Microsoft Azure](../hololens/images/azure-help-support.png)
+   ![Aide et support Portail Azure.](../hololens/images/azure-help-support.png)
 
 2. Ouvrez la page Aide + Support, sélectionnez **+ Nouvelle demande de support**.
 
-   ![Nouvelle demande de support sur le Portail Microsoft Azure](../hololens/images/azure-help-support2.png)
+   ![Portail Azure nouvelle demande de support.](../hololens/images/azure-help-support2.png)
 
 3. Remplissez les champs d’un ticket de support comme suit :
 
     + Type de problème : technique
     + Service : ancres spatiales Azure, rendu distant Azure ou ancres d’objets Azure
 
-    ![Champs d’un ticket de support sur le portail Microsoft Azure](../hololens/images/azure-help-support3.png)
+    ![Portail Azure les champs de ticket de support.](../hololens/images/azure-help-support3.png)
 
     1. Cliquez sur **suivant : solutions** en bas de la page pour ajouter des détails supplémentaires pour en savoir plus sur le problème.
 

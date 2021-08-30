@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662734"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189934"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>Chiffrement BitLocker HoloLens (1re génération)
 
@@ -51,7 +51,7 @@ les packages de provisionnement sont des fichiers créés par l’outil concepte
 1. [Créez un package d’approvisionnement pour HoloLens.](hololens-provisioning.md)
 1. Accédez à **paramètres d’exécution**  >  **stratégies**  >  **sécurité**, puis sélectionnez **RequireDeviceEncryption**.
 
-    ![Exiger le paramètre de chiffrement de l’appareil configuré sur Oui](images/device-encryption.png)
+    ![Exiger le paramètre de chiffrement de l’appareil configuré sur Oui.](images/device-encryption.png)
 
 1. Recherchez le fichier de licence XML fourni lorsque vous avez acheté la suite commerciale.
 
@@ -101,4 +101,4 @@ Le chiffrement est en mode silencieux sur HoloLens. Pour vérifier l’état du 
 
 - sur HoloLens, accédez à **Paramètres**  >  **système**  >  **à propos** de. **BitLocker** est **activé** si l’appareil est chiffré. 
 
-    ![À propos de l’écran indiquant que BitLocker est activé](images/about-encryption.png)
+    ![À propos de l’écran indiquant que BitLocker est activé.](images/about-encryption.png)

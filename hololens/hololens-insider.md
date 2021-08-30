@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: b865f9f9a9a734ef6a6c6419fc523049e925d5f8
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859015"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189475"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -37,9 +37,9 @@ Il s’agit là d’une amélioration des rapports de dépannage et d’appareil
 |-------------------------|----------------------------|--------------|------------------|
 | [Déplacement du mode de plateforme](#moving-platform-mode) | introduit la version bêta du Mode de plateforme mobile, qui, lorsqu’elle est configurée, permet l’utilisation de HoloLens 2 sur les grands navires marins ayant un mouvement faiblement dynamique. | Tous | 20348,1411 |
 | [Prise en charge des fichiers PFX pour le gestionnaire de certificats](#pfx-file-support-for-certificate-manager) | ajouter des certificats PFX via l’interface utilisateur Paramètres | Utilisateur final | 20348,1405 |
-| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage | 20348,1405 |
-| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
-| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Dépannage | 20348,1412 |
+| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Résolution des problèmes | 20348,1405 |
+| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Résolution des problèmes | 20348,1405 |
+| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Résolution des problèmes | 20348,1412 |
 | [modifications du CSP pour la création de rapports HoloLens détails](#csp-changes-for-reporting-hololens-details) | Nouveaux fournisseurs de services de chiffrement pour l’interrogation des données | Administrateurs informatiques    | 20348,1403                 |
 | [Stratégie de connexion automatique contrôlée par CSP](#auto-login-policy-controlled-by-csp) | Utilisé pour se connecter automatiquement à un compte | Administrateurs informatiques | 20348,1405 |
 | [Détection et notifications de redémarrage des mises à jour améliorées](#improved-update-restart-detection-and-notifications) | Nouvelles stratégies activées et expérience utilisateur pour les mises à jour. | Administrateurs informatiques | 20348,1405 |
@@ -203,7 +203,7 @@ sur un appareil HoloLens 2, accédez à **Paramètres**  >  **mettre à jour & S
 
 Windows insider se déplace désormais vers les canaux. La sonnerie **rapide** deviendra le **canal de développement**, l’anneau **lent** deviendra le **canal bêta** et l’anneau de **version** préliminaire deviendra le **canal de version** préliminaire. Voici à quoi ressemble ce mappage :
 
-![Windows Explication des canaux Insider](images/WindowsInsiderChannels.png)
+![Windows Explication des canaux Insider.](images/WindowsInsiderChannels.png)
 
 pour plus d’informations, consultez [présentation des canaux Windows insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) sur Windows Blogs.
 ensuite, sélectionnez **développement actif de Windows**, indiquez si vous souhaitez recevoir des builds du canal de **développement** ou du **canal bêta** et passez en revue les termes du programme.

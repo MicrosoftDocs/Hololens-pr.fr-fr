@@ -13,12 +13,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6e98918c89da7e74157d8fc003e6997f1e44b8538e9006a835707e85c5fd3307
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 98ec5795974fa242225bb1048ead41892d8296e4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662661"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189951"
 ---
 # <a name="use-the-hololens-1st-gen-clicker"></a>Utiliser le dispositif de clic HoloLens (1re génération)
 
@@ -30,7 +30,7 @@ Utilisez-le à la place des gestes à la main pour sélectionner, faire défiler
 
 le HoloLens (1er génération) a une boucle finger pour faciliter sa conservation et un voyant lumineux.
 
-![clic de l’HoloLens](images/use-hololens-clicker-1.png)
+![cliquez sur le HoloLens.](images/use-hololens-clicker-1.png)
 
 ### <a name="clicker-indicator-lights"></a>Lumières des indicateurs de clic
 
@@ -58,7 +58,7 @@ Lorsque la batterie du clic est faible, l’indicateur de la batterie clignote e
 
 Pour placer le pointeur sur l’un des clickers, faites glisser la boucle sur l’anneau ou le doigt du milieu, afin que le port micro USB s’oriente vers votre poignet. Placez votre curseur dans la mise en retrait.
 
-![Comment maintenir le clic](images/use-hololens-clicker-2.png)
+![Comment conserver le clic.](images/use-hololens-clicker-2.png)
 
 ### <a name="clicker-gestures"></a>Mouvements de l’utilisateur
 

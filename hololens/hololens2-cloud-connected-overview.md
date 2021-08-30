@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660312"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189645"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guide de déploiement – Cloud connected HoloLens 2 avec l’assistance à distance – vue d’ensemble
 
@@ -38,7 +38,7 @@ Il s’agit d’une configuration similaire au [scénario a : déploiement sur 
 - Les utilisateurs se connectent avec leur propre compte d’entreprise (Azure AD)
     - Un ou plusieurs utilisateurs par appareil sont pris en charge.
 
-:::image type="content" alt-text="Scénario connecté au Cloud" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+:::image type="content" alt-text="Scénario connecté au Cloud." source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## <a name="learn-about-remote-assist"></a>En savoir plus sur l’assistance à distance
@@ -49,20 +49,20 @@ L’assistance à distance permet la maintenance et la réparation collaborative
 
 ### <a name="remote-assist-licensing-and-requirements"></a>Licences et exigences de l’assistance à distance
 
-- Compte Azure AD (requis pour l’achat de l’abonnement et l’attribution de licences)
-- [Abonnement à distance Assist](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (ou [essai d’assistance à distance](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- Compte Azure AD (nécessaire pour l’achat de l’abonnement et l’attribution de licences)
+- [Abonnement Remote Assist](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (ou [Essai Remote Assist](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
-#### <a name="dynamics-365-remote-assist-user"></a>utilisateur Dynamics 365 Remote Assist
+#### <a name="dynamics-365-remote-assist-user"></a>Utilisateur Remote Assist Dynamics 365
 
-- Licence d’assistance à distance
+- Licence Remote Assist
 - Connectivité réseau
 
-#### <a name="microsoft-teams-user"></a>utilisateur Microsoft Teams
+#### <a name="microsoft-teams-user"></a>Utilisateur Microsoft Teams
 
 - Microsoft Teams ou [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Connectivité réseau
 
-Si vous envisagez d’implémenter ce [scénario inter-clients](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), vous aurez peut-être besoin d’une licence de barrières d’information. pour déterminer si une licence de barrière des informations est requise, consultez [fournisseurs et clients utiliser les fonctionnalités de Dynamics 365 Remote Assist complètes](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation).
+Si vous prévoyez d’implémenter ce [scénario multilocataire](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), vous pouvez avoir besoin d’une licence Cloisonnement de l’information. pour déterminer si une licence de barrière des informations est requise, consultez [fournisseurs et clients utiliser les fonctionnalités de Dynamics 365 Remote Assist complètes](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation).
 
 ## <a name="in-this-guide-you-will"></a>Dans ce guide, vous allez :
 

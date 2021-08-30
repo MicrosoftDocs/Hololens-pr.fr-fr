@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660208"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189679"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Deploy-Guide connecté à l’entreprise
 
@@ -49,14 +49,14 @@ Si votre appareil n’est pas actuellement dans un état des paramètres d’usi
 
 7. Prenez note de ce nom.
 
-    ![écran de Paramètres HoloLens 2](./images/hololens2-settings-about.jpg)
+    ![HoloLens 2 écran de Paramètres.](./images/hololens2-settings-about.jpg)
 
 8. Vérifiez que votre appareil est correctement joint à Azure AD. Il existe deux façons de procéder :
 
     1.  application Paramètres. dans **Paramètres** sélectionnez **comptes**  ->  **accéder à l’entreprise ou à l’école**. À partir de cet écran, vous pouvez vérifier que vous êtes correctement inscrit en vous &quot; connectant à nameofAAD&#39;s Azure ad. Connecté par *yourusername@nameofAAD.onmicrosoft.com* . Cela permet de vérifier que votre appareil est joint à votre organisation&#39;s Azure AD.
 
     1. Le [portail Azure](https://portal.azure.com/#home). accédez à **Azure Active Directory**  ->  **appareils**  ->  **tous les appareils**, puis recherchez le nom de l’appareil. Sous type de jointure, il s’affiche comme étant « Azure AD jointe ».
-        ![Vérifier le type de jointure dans Azure AD](./images/hololens2-devices-all-devices.png)
+        ![Vérifiez le type de jointure dans Azure AD.](./images/hololens2-devices-all-devices.png)
 
 9. Vérifiez que votre appareil est inscrit auprès de MDM. Il existe deux façons de procéder :
 
@@ -64,7 +64,7 @@ Si votre appareil n’est pas actuellement dans un état des paramètres d’usi
 
     1. [Microsoft Endpoint Manager le centre d’administration](https://endpoint.microsoft.com/#home). Connectez-vous et sélectionnez  **appareils**  , puis  **tous les appareils**. à partir de là, vous pouvez rechercher le nom de votre appareil HoloLens&#39;s. vous devriez être en mesure de voir votre HoloLens listé sur Intune.
 
-        ![Vérifier géré par Intune dans Azure AD](./images/hololens2-devices-all-devices2.png)
+        ![Vérifiez géré par Intune dans Azure AD.](./images/hololens2-devices-all-devices2.png)
 
 
 ## <a name="wi-fi-certificate-validation"></a>Validation de certificat Wi-Fi

@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 11a5680ea2b27a277bc4eb5b1dc0e62a2c602312
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: e4c68ad6535293f916cc92c42204954110edc4fe
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858441"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189543"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gérer les identités et les connexions des utilisateurs pour HoloLens
 
@@ -88,11 +88,11 @@ présenté dans [Windows holographique, version 21H1](hololens-release-notes.md#
 
 Quand vous êtes dans le menu autres utilisateurs, le bouton autres utilisateurs affiche le dernier utilisateur connecté à l’appareil. Sélectionnez ce bouton pour revenir à l’écran de connexion de cet utilisateur.
 
-![Valeur par défaut de l’écran de connexion](./images/multiusers1.jpg)
+![Écran de connexion par défaut.](./images/multiusers1.jpg)
 
 <br>
 
-![Écran de connexion d’autres utilisateurs](./images/multiusers2.jpg)
+![Écran de connexion d’autres utilisateurs.](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>Suppression des utilisateurs
 
@@ -140,7 +140,7 @@ les informations biométriques de l’Iris sont stockées localement sur chaque 
 ### <a name="do-i-have-to-use-iris-authentication"></a>Dois-je utiliser l’authentification IRIS ?
 Non, vous pouvez ignorer cette étape lors de l’installation. 
 
-![Configurer IRIS](./images/setup-iris.png)
+![Configurer IRIS.](./images/setup-iris.png)
 
 HoloLens 2 fournit de nombreuses options pour l’authentification, notamment les clés de sécurité FIDO2.
 

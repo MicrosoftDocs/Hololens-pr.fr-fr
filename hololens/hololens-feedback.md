@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1f59c76fa760710d1b1333e1318784f5a488851b640c1cbd4ed6f673ae60029a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664199"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189424"
 ---
 # <a name="feedback-for-hololens"></a>Commentaires pour HoloLens
 
@@ -40,7 +40,7 @@ Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingé
 
 1. Utilisez le geste **Démarrer** pour ouvrir le menu **Démarrer** , puis sélectionnez **Hub de commentaires**. L’application s’ouvre dans votre environnement.
 
-   ![application de commentaires sur HoloLens menu Démarrer](./images/hololens2-feedbackhub-tile.png)
+   ![application de commentaires sur HoloLens menu Démarrer.](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Si vous ne voyez pas **Hub de commentaires**, sélectionnez **toutes les applications** pour afficher la liste complète des applications sur l’appareil.
 
@@ -48,7 +48,7 @@ Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingé
 1. Si vous trouvez des commentaires similaires, sélectionnez-les, ajoutez toutes les informations dont vous disposez dans la zone **écrire un commentaire** , puis sélectionnez **vote**.
 1. Si vous ne trouvez pas de commentaires similaires, sélectionnez **ajouter de nouveaux commentaires**.
 
-   ![Ajouter un commentaire](./images/hololens-feedback-1.png)
+   ![Ajoutez de nouveaux commentaires.](./images/hololens-feedback-1.png)
 
 1. Dans **résumer vos commentaires**, entrez un bref résumé de vos commentaires. Ajoutez ensuite les détails dans la zone **expliquer plus en détail** . Plus vous fournissez de détails, tels que la façon de reproduire ce problème et son impact, plus vos commentaires sont utiles. Quand vous avez terminé, cliquez sur **Suivant**.
 

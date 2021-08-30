@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660103"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190172"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Guide de déploiement-connexion d’entreprise HoloLens 2 avec Dynamics 365 Guides-vue d’ensemble
 
@@ -50,15 +50,15 @@ L’infrastructure suivante doit déjà être en place :
 - abonnement Dynamics 365 Guides
     - Microsoft Dataverse (inclus)
     - Power Apps (inclus)
-- Power BI Desktop
+- Power BI Desktop
 - Connectivité réseau
 
-[![Diagramme du réseau connecté à l’entreprise, étape 1 ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![Diagramme du réseau connecté à l’entreprise, étape 1. ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![Diagramme du réseau connecté à l’entreprise, étape 2 ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![Diagramme du réseau connecté à l’entreprise, étape 2. ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ## <a name="in-this-guide-you-will"></a>Dans ce guide, vous allez :
-### <a name="prepare"></a>Préparation
+### <a name="prepare"></a>Préparer
 > [!div class="checklist"]
 >- [en savoir plus sur les notions fondamentales de l’infrastructure pour les appareils HoloLens 2.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [En savoir plus sur les Azure AD et en configurer une si vous n’en avez pas.](hololens2-corp-connected-prepare.md#azure-active-directory)

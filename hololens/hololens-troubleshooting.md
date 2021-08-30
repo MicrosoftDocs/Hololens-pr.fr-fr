@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: c634b90b03468073887397b59f072258ad7a3ccc
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858558"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190019"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
@@ -332,7 +332,7 @@ Sachez que certains microtéléphones USB-C se signalent incorrectement comme un
 
 dans **Paramètres**  ->    ->  **son** système, définissez explicitement les haut-parleurs intégrés **(pilote Audio de fonctionnalité analogique)** comme **périphérique par défaut**. HoloLens mémoriser ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
 
-![Résolution des problèmes de microphones USB-C](images/usbc-mic-4.png)
+![Résolution des problèmes de microtéléphones USB-C.](images/usbc-mic-4.png)
 
 ## <a name="devices-listed-as-available-in-settings-dont-work"></a>les appareils listés comme disponibles dans Paramètres ne fonctionnent pas
 

@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 999e16f117e4f0838c4a0cb6d6bafcbbf72e1d5a
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 9474774b47858003cc11363a5f325f589b0732ab
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859032"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188999"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>configurer des HoloLens à l’aide d’un package d’approvisionnement
 
@@ -76,7 +76,7 @@ utilisez l’outil concepteur de Configuration Windows pour créer un package d�
 
 2. sélectionnez **approvisionner les appareils HoloLens**.
 
-   ![Options de démarrage d’ICD](images/icd-create-options-1703.png)
+   ![Options de démarrage d’ICD.](images/icd-create-options-1703.png)
 
 3. Nommez votre projet, puis sélectionnez **Terminer**.
 
@@ -235,7 +235,7 @@ Les packages d’approvisionnement utilisent des fournisseurs de services de con
 
 dans Windows concepteur de Configuration, lorsque vous créez un package d’approvisionnement pour Windows holographique, les paramètres des **personnalisations disponibles** sont basés sur des [fournisseurs de services de chiffrement pris en charge dans Windows holographique](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices). Le tableau suivant décrit les paramètres que vous pouvez souhaiter configurer pour HoloLens.
 
-![Paramètres d’exécution courants pour HoloLens](images/icd-settings.png)
+![Paramètres d’exécution courants pour HoloLens.](images/icd-settings.png)
 
 | Paramètre | Description |
 | --- | --- |

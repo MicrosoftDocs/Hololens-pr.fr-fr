@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401131"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190325"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>déployer un HoloLens 2 connecté au cloud à des clients externes
 
@@ -114,7 +114,7 @@ La deuxième option consiste à créer un locataire distinct qui héberge des cl
 
 **Image 1,1**
 
-![Image du locataire du service](./images/hololens-service-tenant-image.png)
+![Image du locataire du service.](./images/hololens-service-tenant-image.png)
 
 ### <a name="hidden-or-restricted-apps"></a>Applications masquées ou restreintes
 

@@ -13,22 +13,22 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662119"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189900"
 ---
 # <a name="hololens-1st-gen-hardware"></a>Matériel HoloLens (1re génération)
 
-![Microsoft HoloLens (1re génération)](images/see-through-400px.jpg)
+![Microsoft HoloLens (1re génération).](images/see-through-400px.jpg)
 
 Microsoft HoloLens (1re génération) est le premier ordinateur holographique entièrement non attaché au monde. HoloLens redéfinit l’informatique personnelle via des expériences holographiques pour vous permettre de nouvelles façons. HoloLens fusionne des optiques et des capteurs de pointe pour fournir des hologrammes 3d épinglés au monde réel autour de vous.
 
 ## <a name="hololens-components"></a>Composants de l'HoloLens
 
-![Image qui affiche le contenu de la zone](images/hololens-box-contents.png)
+![Image qui affiche le contenu de la zone.](images/hololens-box-contents.png)
 
 votre HoloLens comprend les fonctionnalités suivantes :
 
@@ -65,7 +65,7 @@ Afin de maintenir/d'augmenter le pourcentage de charge de la batterie interne lo
 
 ### <a name="display"></a>Affichage
 
-![HoloLens a des objectifs holographiques voir-via](images/displays-400px.jpg)
+![HoloLens a des objectifs holographiques voir-via.](images/displays-400px.jpg)
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -76,7 +76,7 @@ Afin de maintenir/d'augmenter le pourcentage de charge de la batterie interne lo
 
 ### <a name="sensors"></a>Capteurs
 
-![HoloLens a des capteurs pour comprendre ses actions de l’environnement et de l’utilisateur](images/sensor-bar-400px.jpg)
+![HoloLens dispose de capteurs pour comprendre son environnement et ses actions utilisateur.](images/sensor-bar-400px.jpg)
 
 - 1 unité de mesure d’inertie (IMU)
 - 4 environnement compréhension des appareils photo
@@ -108,7 +108,7 @@ Afin de maintenir/d'augmenter le pourcentage de charge de la batterie interne lo
 
 ### <a name="processors"></a>Processeurs
 
-![Carte mère pour Microsoft HoloLens](images/motherboard-400px.jpg)
+![Carte mère de Microsoft HoloLens.](images/motherboard-400px.jpg)
 
 - Architecture Intel 32 bits avec prise en charge TPM 2,0
 - Unité de traitement holographique Microsoft personnalisée (HPU 1,0)
@@ -166,7 +166,7 @@ Pour nettoyer le visière, retirez toute poussière à l’aide d’un pinceau �
 
 Pour nettoyer le reste du périphérique, y compris les headband et les bras de l’appareil, utilisez un chiffon non pelucheux humidifié avec le savon et l’eau doux. laissez votre HoloLens sécher complètement avant de l’utiliser à nouveau.
 
-![Image qui montre comment nettoyer le visière](images/hololens-cleaning-visor.png)
+![Image qui montre comment nettoyer le visière.](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>Accès au numéro de série
 

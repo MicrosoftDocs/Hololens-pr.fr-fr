@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662804"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190070"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Savoir maîtriser HoloLens (1re génération)
 
@@ -45,7 +45,7 @@ Nous vous guiderons dans les bases de la première utilisation de votre HoloLens
 
 HoloLens est muni de capteurs qui peuvent voir à quelques centimètres autour de vous. Lorsque vous utilisez les mains, vous devez les conserver à l’intérieur de ce cadre, à défaut de quoi HoloLens ne les verra pas. Lorsque vous vous déplacez, le frame se déplace avec vous.  
 
-![Image illustrant le cadre de suivi de la main HoloLens](./images/hololens-2-gesture-frame.png)
+![Image qui montre le frame de suivi de la main HoloLens.](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>ouvrir le menu Démarrer avec des fleurs
 
@@ -53,16 +53,16 @@ Pour ouvrir le menu **Démarrer** :
 
 1. Maintenez votre main devant vous dans le cadre du geste.
 1. Fleur : Mettez tous vos doigts en ensemble, puis ouvrez votre main.
-  ![Animation qui montre le mouvement de floraison](./images/hololens-bloom.gif)
+  ![Animation qui montre le mouvement de floraison.](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Sélectionner des hologrammes avec le robinet et le toucher à l’air
 
-Pour sélectionner une application ou un autre hologramme, appuyez sur celle-ci tout en regardant directement l’hologramme que vous sélectionnez. Pour cela, procédez comme suit :
+Pour sélectionner une application ou un autre hologramme, appuyez sur celle-ci tout en regardant directement l’hologramme que vous sélectionnez. Pour ce faire, procédez comme suit :
 
 1. Pointez avec le regard de l’hologramme que vous souhaitez sélectionner.
 1. Pointez l’index vers le haut en direction du plafond.
 1. TAP Air : Abaissez votre doigt, puis augmentez-le rapidement.
-   ![Animation du clic aérien](./images/hololens-air-tap.gif)
+   ![Animation de mouvement d’appui sur l’air.](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>Sélectionner un hologramme à l’aide de votre voix
 

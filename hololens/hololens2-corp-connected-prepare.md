@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660082"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190206"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Préparer-Guide connecté à l’entreprise
 ## <a name="infrastructure-essentials"></a>Notions fondamentales de l’infrastructure
@@ -69,11 +69,11 @@ Les services suivants sont requis pour le déploiement de SCEP, à l’exception
 
 - [Autorité de certification](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj125375(v=ws.11))
 - [Rôle serveur NDES](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
-- [Connecteur Microsoft Intune](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
+- [Microsoft Intune MS](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
 
 Vous devez également publier votre URL NDES externe à votre réseau d’entreprise à l’aide de [Azure ad proxy d’application ou d’accès Web proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application). Vous pouvez également utiliser un autre proxy inverse de votre choix.
 
-![Workflow de données SCEP](./images/hololens2-scep-info-flow.png)
+![Le workflow de données SCEP.](./images/hololens2-scep-info-flow.png)
 
 Si votre réseau ne prend pas encore en charge SCEP, ou si vous ne savez pas si votre réseau est correctement configuré pour SCEP avec Intune, référencez  [configurer l’infrastructure pour prendre en charge SCEP avec Intune](/mem/intune/protect/certificates-scep-configure).
 

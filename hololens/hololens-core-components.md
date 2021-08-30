@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664337"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188897"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planification du déploiement de HoloLens 2 dans un environnement commercial
 
@@ -32,17 +32,17 @@ les étapes et la vidéo suivantes peuvent vous guider tout au long du processus
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Étape 1](images/1green.png)| <br/> **[scénarios de déploiement courants](hololens-requirements.md)**: comprenez les scénarios de déploiement et explorez les principaux composants nécessaires au déploiement de HoloLens 2 appareils. |
-| ![Étape 2](images/2green.png)| <br/> **[Préparer](#prepare)**: Familiarisez-vous avec les principes fondamentaux de l’infrastructure nécessaires à la HoloLens 2. |
-| ![Étape 3 :](images/3green.png) | <br/> **[Configurer](#configure)**: Découvrez comment configurer vos composants essentiels pour un déploiement basé sur le Cloud. |
-| ![Étape 4](images/4green.png) | <br/> **[Déploiement](#deploy)**: Découvrez comment déployer vos appareils et distribuer vos applications de manière sécurisée et efficace. |
-| ![Étape 5](images/5green.png) | <br/> **[tenir à jour](#maintain)**: découvrez ce qui est nécessaire pour maintenir correctement l’état de vos appareils HoloLens 2 et garantir la conformité avec la stratégie d’entreprise. |
+| ![Étape 1.](images/1green.png)| <br/> **[scénarios de déploiement courants](hololens-requirements.md)**: comprenez les scénarios de déploiement et explorez les principaux composants nécessaires au déploiement de HoloLens 2 appareils. |
+| ![Étape 2.](images/2green.png)| <br/> **[Préparer](#prepare)**: Familiarisez-vous avec les principes fondamentaux de l’infrastructure nécessaires à la HoloLens 2. |
+| ![Étape 3.](images/3green.png) | <br/> **[Configurer](#configure)**: Découvrez comment configurer vos composants essentiels pour un déploiement basé sur le Cloud. |
+| ![Étape 4.](images/4green.png) | <br/> **[Déploiement](#deploy)**: Découvrez comment déployer vos appareils et distribuer vos applications de manière sécurisée et efficace. |
+| ![Étape 5.](images/5green.png) | <br/> **[tenir à jour](#maintain)**: découvrez ce qui est nécessaire pour maintenir correctement l’état de vos appareils HoloLens 2 et garantir la conformité avec la stratégie d’entreprise. |
 
 <br/>
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
-## <a name="prepare"></a>Préparation
+## <a name="prepare"></a>Préparer
 
 découvrez les services d’infrastructure essentiels requis pour prendre en charge l’ensemble complet des fonctionnalités de HoloLens 2.
 
@@ -79,4 +79,4 @@ utilisez Windows Update pour l’entreprise avec votre système MDM ou le Micros
 | Composant | Description |
 |-----------|------------|
 | [Mettre à jour HoloLens 2](hololens-updates.md) | configurer les mises à jour en fonction des besoins par le biais des mises à jour Windows pour l’entreprise |
-| [Mise à jour des applications](app-deploy-overview.md) | Configurez votre système MDM ou le Microsoft Store
+| [Mettre à jour des applications](app-deploy-overview.md) | Configurez votre système MDM ou le Microsoft Store

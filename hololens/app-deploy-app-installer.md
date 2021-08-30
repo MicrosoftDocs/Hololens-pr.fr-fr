@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0b0de9039ce4d0c1eeab968b0f7c2f5eee8cdc34739391b6022b409325955350
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665265"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188914"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>installer des applications sur HoloLens 2 via le programme d’installation d’application
 
@@ -73,7 +73,7 @@ Les applications qui sont installées par le biais de cette méthode doivent êt
 
 L’application installée sera automatiquement lancée à la fin de l’installation de.
 
-![Installation d’exemples MRTK via le programme d’installation d’application](images/hololens-app-installer-picture.jpg)
+![Installation d’exemples MRTK via le programme d’installation de l’application.](images/hololens-app-installer-picture.jpg)
 
 ### <a name="troubleshooting-installs"></a>Résolution des problèmes d’installation
 

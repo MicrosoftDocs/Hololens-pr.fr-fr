@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9e09ba1a022428b098392464e5cd2abf84911bd6a86d8e699036b8fc4f91470a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661863"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189866"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>Configurer votre HoloLens (1re génération)
 
@@ -67,7 +67,7 @@ HoloLens (1re génération) utilise la distance entre vos élèves (la distance 
 
 pendant l’étalonnage, HoloLens vous demande d’aligner votre doigt sur une série de six cibles par œil. HoloLens utilise ce processus pour définir la bonne IPD pour vos yeux. Si l’étalonnage doit être mis à jour ou ajusté pour un nouvel utilisateur, le nouvel utilisateur peut exécuter l’application d’étalonnage en dehors du programme d’installation.
 
-![Écran d'alignement du doigt pour définir l'écart pupillaire lors de la deuxième étape](./images/ipd-finger-alignment-300px.jpg)
+![Écran d’alignement de doigt IPD à la deuxième étape.](./images/ipd-finger-alignment-300px.jpg)
 
 *Écran d'alignement du doigt pour définir l'écart pupillaire lors de la deuxième étape*
 

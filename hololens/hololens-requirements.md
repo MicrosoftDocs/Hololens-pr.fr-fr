@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662904"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189237"
 ---
 # <a name="common-deployment-scenarios"></a>Scénarios courants de déploiement
 
@@ -39,7 +39,7 @@ vous êtes peut-être un décideur d’entreprise, un professionnel de l’infor
 
 Ce scénario est comparable au déploiement d’appareils mobiles gérés au sein d’une entreprise. HoloLens 2 est déployée pour une utilisation principalement dans des environnements externes à un réseau d’entreprise. Les ressources d’entreprise ne sont pas accessibles ou peuvent être limitées par le biais du VPN.
 
-[![Diagramme de scénario](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+[![Scénario d’un diagramme.](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ### <a name="when-to-use"></a>Quand l’utiliser
 
@@ -75,9 +75,9 @@ Utilisez le guide clients externes pour déployer des appareils sur un site dist
 
 ce scénario est identique à un déploiement classique pour la plupart des ordinateurs Windows 10. HoloLens 2 est déployée pour être utilisée principalement sur le réseau d’entreprise avec un accès aux ressources d’entreprise internes. Internet et les services de Cloud Computing peuvent être limités. 
 
-[![Diagramme du scénario B1](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![Diagramme du scénario B1.](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![Diagramme du scénario B2](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![Diagramme du scénario B2.](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ### <a name="when-to-use"></a>Quand l’utiliser
 
@@ -111,7 +111,7 @@ le guide connecté à l’entreprise correspondant indique comment inscrire Holo
 
 Il s’agit d’un déploiement classique pour des emplacements hautement sécurisés ou confidentiels. HoloLens 2 est déployée pour être utilisée principalement hors connexion sans réseau ou accès internet.
 
-[![Diagramme sécurisé hors connexion 1](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Diagramme sécurisé en mode hors connexion 1.](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ### <a name="when-to-use"></a>Quand l’utiliser
 

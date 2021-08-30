@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4aa0ea03850277e528b134c9686633a140c64721
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: be2fde329293b89698c0f6dd5d92df1c6260f1be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859440"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190223"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -189,18 +189,18 @@ Consultez les notes de publication associées :
 
 ### <a name="introducing-the-new-microsoft-edge"></a>Présentation du nouveau Microsoft Edge
 
-![Animation du logo de l’ancienne version de Microsoft Edge vers le nouveau Microsoft Edge](images/new-edge.gif)
+![Animation du logo de Microsoft Edge hérité sur le nouveau logo de Microsoft Edge.](images/new-edge.gif)
 
 Le nouveau Microsoft Edge [adopte le projet open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) afin de créer une meilleure compatibilité pour les clients et de réduire la fragmentation du web pour les développeurs web.
 
 > [!IMPORTANT]
 > Ce nouveau Microsoft Edge remplace automatiquement l’ancien Microsoft Edge, qui n’est [plus pris en charge](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) dans les nouvelles versions.
 
-![Capture d’écran du nouveau Microsoft Edge](images/new-edge-ui.png)
+![capture d’écran nouvelle Microsoft Edge.](images/new-edge-ui.png)
 
 #### <a name="launching-the-new-microsoft-edge"></a>Lancement du nouveau Microsoft Edge
 
-Le nouveau Microsoft Edge ![Icône du nouveau Microsoft Edge](images/new_edge_logo.png) (représenté par une icône de tourbillon verte et bleue) est épinglé au menu Démarrer et s’ouvre automatiquement lorsque vous activez un lien web.
+Le nouveau Microsoft Edge ![icône de nouvelle Microsoft Edge.](images/new_edge_logo.png) (représenté par une icône de tourbillon verte et bleue) est épinglé au menu Démarrer et s’ouvre automatiquement lorsque vous activez un lien web.
 
 > [!NOTE]
 > Lorsque vous lancez le nouveau Microsoft Edge sur HoloLens 2 pour la première fois, vos paramètres et données sont importés à partir de l’ancienne version de Microsoft Edge. si vous continuez à utiliser les Microsoft Edge héritées après avoir lancé le nouveau Microsoft Edge, ces nouvelles données ne seront pas synchronisées à partir des Microsoft Edge héritées vers le nouveau Microsoft Edge.
@@ -309,7 +309,7 @@ L’extension de visionneuse 360 est basée sur WebXR et s’installe automatiqu
 1. Accédez à un site web avec prise en charge de WebXR.
 1. Sélectionnez le bouton **Accéder à VR** sur le site web. L’emplacement et la représentation visuelle de ce bouton peuvent varier en fonction du site web, mais se présentent globalement comme suit :
 
-    ![Exemple de bouton Accéder à VR](images/75px-enter-vr.png)
+    ![Entrez l’exemple de bouton VR.](images/75px-enter-vr.png)
 
 1. La première fois que vous essayez de lancer une expérience WebXR sur un domaine spécifique, le navigateur vous demande de consentir à accéder à une vue immersive. Sélectionnez **Autoriser**.
 1. Utilisez les [mouvements HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame) pour manipuler l’expérience.
@@ -326,7 +326,7 @@ L’extension de visionneuse 360 est basée sur WebXR et s’installe automatiqu
 1. Accédez à une vidéo à 360 degrés sur YouTube.
 1. Dans l’image vidéo, sélectionnez le bouton de casque de réalité mixte :
 
-    ![Bouton permettant d’activer la visionneuse 360](images/enter-360-viewer.jpg)
+    ![Pour activer la visionneuse 360.](images/enter-360-viewer.jpg)
 
 1. La première fois que vous essayez de lancer la visionneuse 360 sur un domaine spécifique, le navigateur vous demande de consentir à accéder à une vue immersive. Sélectionnez **Autoriser**.
 1. Effectuez un [clic aérien](hololens2-basic-usage.md#select-using-air-tap) pour afficher les contrôles de lecture. Utilisez les [rayons manuels et le clic aérien](hololens2-basic-usage.md#select-using-air-tap) pour ce qui suit : lecture/pause, avance/retour rapide, activation/désactivation des sous-titres, arrêt de l’expérience (ce qui a pour effet de quitter la vue immersive). Les contrôles de lecture disparaissent après quelques secondes d’inactivité.
@@ -347,7 +347,7 @@ avec cette version, nous allons introduire une nouvelle version de l’applicati
 > [!NOTE]
 > Comme la nouvelle application Paramètres est distincte de l'ancienne, toutes les fenêtres Paramètres précédemment placées dans votre environnement seront supprimées lors de la mise à jour.
 
-![Nouvelle page d'accueil de l'application Paramètres](images/new-settings-app.png)
+![nouvelle page d’accueil de l’application Paramètres.](images/new-settings-app.png)
 
 **Nouvelles fonctionnalités et nouveaux paramètres**
 - Recherche de paramètres : recherchez des paramètres à partir de la page d'accueil de l'application Paramètres en utilisant des mots-clés ou le nom du paramètre.
@@ -392,7 +392,7 @@ avec ce nouveau paramètre, vous pouvez sélectionner un autre profil de couleur
     > Si nécessaire, vous pouvez ajuster manuellement le niveau de luminosité de l'HoloLens 2 à l'aide des boutons de réglage de la luminosité situés sur le côté gauche de l'appareil.
 1. Sélectionnez les boutons 1 à 6 pour essayer instantanément chaque profil de couleurs et trouver celui qui vous convient le mieux (il s'agit généralement du profil qui propose la scène la plus neutre, avec la gamme de gris et les tons chair attendus).
 
-    ![Étalonnage des couleurs d'affichage](images/color-cal-ui.png)
+    ![Affiche la scène d’étalonnage des couleurs.](images/color-cal-ui.png)
     
 1. Lorsque le profil sélectionné vous convient, cliquez sur le bouton **Enregistrer et quitter**.
 1. Si vous préférez n'apporter aucune modification, cliquez sur le bouton **Annuler et quitter** et vos modifications seront annulées.
@@ -472,11 +472,11 @@ dans cette Windows build, lors de la sélection d’un **autre utilisateur** sit
 
 Quand vous êtes dans le menu autres utilisateurs, le bouton autres utilisateurs affiche le dernier utilisateur connecté à l’appareil. Sélectionnez ce bouton pour revenir à l’écran de connexion de cet utilisateur.
 
-![Valeur par défaut de l’écran de connexion](./images/multiusers1.jpg)
+![Écran de connexion par défaut.](./images/multiusers1.jpg)
 
 <br>
 
-![Écran de connexion d’autres utilisateurs](./images/multiusers2.jpg)
+![Écran de connexion d’autres utilisateurs.](./images/multiusers2.jpg)
 
 ### <a name="usb-c-external-microphone-support"></a>Prise en charge du microphone externe USB-C
 
@@ -487,7 +487,7 @@ Les utilisateurs peuvent sélectionner des microphones externes connectés par U
 
 Ouvrez l’application **Paramètres** et sélectionnez **Système** > **Son**.
 
-![Paramètres audio](images/usbc-mic-1.jpg)
+![Paramètres audio.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > Pour utiliser des microphones externes avec **Remote Assist**, les utilisateurs doivent cliquer sur le lien hypertexte « Gérer les périphériques audio ».
@@ -496,11 +496,11 @@ Ouvrez l’application **Paramètres** et sélectionnez **Système** > **Son**.
 >
 > **Communications par défaut** signifie que le microphone externe sera utilisé avec Remote Assist et autres applications de communications, mais que le réseau de microphones HoloLens restera disponible pour d’autres tâches.
 
-![Gérer les périphériques audio](images/usbc-mic-2.png)
+![Gérer les périphériques audio.](images/usbc-mic-2.png)
 
 <br>
 
-![Définir le microphone par défaut](images/usbc-mic-3.jpg)
+![Définir la valeur par défaut du microphone.](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>Prise en charge des microphones Bluetooth
 
@@ -512,7 +512,7 @@ Sachez que certains microtéléphones USB-C se signalent incorrectement comme un
 
 dans **Paramètres**  ->    ->  **son** système, définissez explicitement les haut-parleurs intégrés **(pilote Audio de fonctionnalité analogique)** comme **périphérique par défaut**. HoloLens mémoriser ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
 
-![Résolution des problèmes de microphones USB-C](images/usbc-mic-4.png)
+![Résolution des problèmes de microtéléphones USB-C.](images/usbc-mic-4.png)
 
 ### <a name="visitor-auto-logon-for-kiosks"></a>Ouverture de session automatique visiteur pour les bornes
 
@@ -799,7 +799,7 @@ vous trouverez des exemples d’applications sur [Windows GitHub exemples univer
 
 en savoir plus sur le processus complet d' [installation d’applications sur HoloLens 2 à l’aide du programme d’installation de l’application](app-deploy-app-installer.md).  
 
-![Installation d’exemples MRTK via le programme d’installation d’application](images/hololens-app-installer-picture.jpg)
+![Installation d’exemples MRTK via le programme d’installation de l’application.](images/hololens-app-installer-picture.jpg)
 
 ### <a name="improvements-and-fixes-in-the-update"></a>Améliorations et correctifs de la mise à jour :
 
@@ -899,9 +899,9 @@ Le certificat doit maintenant être installé sur l’appareil.
 1. Cliquez sur **supprimer**
 1. Lorsque vous êtes invité à confirmer l’opération, sélectionnez **Oui**.
 
-![visionneuse de certificats dans l’application Paramètres](images/certificate-viewer-device.jpg)
+![visionneuse de certificats dans l’application Paramètres.](images/certificate-viewer-device.jpg)
 
-![Image illustrant l’utilisation de l’interface utilisateur de certificat pour installer un certificat](images/certificate-device-install.jpg)
+![Image illustrant l’utilisation de l’interface utilisateur de certificat pour installer un certificat.](images/certificate-device-install.jpg)
 
 Ces informations peuvent être recherchées ultérieurement [dans une nouvelle page du gestionnaire de certificats](certificate-manager.md).
 
@@ -964,7 +964,7 @@ Une fois le nœud RequireNetworkInOOBE du fournisseur de solutions Cloud TenantL
 La valeur OMA-URI doit être ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Définition du verrouillage du client via OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Définition du verrouillage utilisateurs locataires via OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Créez un groupe et attribuez le profil de configuration d’appareil à ce groupe d’appareils. 
 
@@ -978,7 +978,7 @@ Vérifiez que la configuration de l’appareil a été appliquée dans le portai
 1. Créez un profil de configuration d’appareil basé sur OMA URI personnalisé et spécifiez false pour RequireNetworkInOOBE comme indiqué ci-dessous. La valeur OMA-URI doit être ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Capture d’écran de la définition de RequireNetworkInOOBE sur false via OMA URI dans Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Capture d’écran de la définition de RequireNetworkInOOBE sur false via un URI OMA dans Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Créez un groupe et attribuez le profil de configuration d’appareil à ce groupe d’appareils.
 
@@ -1108,7 +1108,7 @@ nous avons maintenant activé une stratégie qui permet aux administrateurs info
 
 pour connaître les paramètres de page que vous pouvez personnaliser sur HoloLens 2, consultez la [page Paramètres uri](settings-uri-list.md). 
  
-![Capture d’écran d’heures actives modifiées dans l’application Paramètres](images/hololens-page-visibility-list.jpg)
+![capture d’écran des heures actives modifiées dans l’application Paramètres.](images/hololens-page-visibility-list.jpg)
 
 ### <a name="research-mode"></a>Mode de recherche
 en Mode de recherche, le HoloLens 2 devient un outil puissant pour la recherche de vision par ordinateur. par rapport aux éditions précédentes, le Mode de recherche pour HoloLens 2 présente les avantages suivants :
@@ -1365,7 +1365,7 @@ Ces applications « intégrées » prennent en charge le mode sombre :
 - Visionneuse 3D 
 - Films et TV 
 
-![Fenêtres en mode sombre en mosaïque](images/DarkMode.jpg)
+![Fenêtres en mode sombre en mosaïque.](images/DarkMode.jpg)
 
 ### <a name="system-voice-commands"></a>Commandes vocales du système
 

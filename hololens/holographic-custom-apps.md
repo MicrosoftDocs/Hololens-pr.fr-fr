@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664952"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188846"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>gérer les applications personnalisées pour les HoloLens (1ère génération)
 
@@ -55,7 +55,7 @@ vous pouvez installer vos propres applications sur HoloLens à l’aide du porta
 1. Sélectionnez **Go**.
 
    > [!div class="mx-imgBorder"]
-   > ![installer le formulaire d’application dans Windows portail des appareils sur Microsoft HoloLens](images/deviceportal-appmanager.jpg)
+   > ![installez le formulaire d’application dans Windows portail des appareils sur Microsoft HoloLens.](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>déploiement à partir de Microsoft Visual Studio 2015
 
@@ -73,7 +73,7 @@ vous pouvez installer vos propres applications sur HoloLens à l’aide du porta
 
 1. pour déployer l’application à partir de votre PC de développement vers votre HoloLens, sélectionnez **Machine distante**. si vous disposez déjà d’une build dans le HoloLens, sélectionnez **oui** pour installer cette version plus récente.  
 
-   ![déploiement d’ordinateurs distants pour les applications à Microsoft HoloLens dans Visual Studio](images/vs2015-remotedeployment.jpg)  
+   ![déploiement d’ordinateurs distants pour les applications à Microsoft HoloLens dans Visual Studio.](images/vs2015-remotedeployment.jpg)  
    
 1. L’application s’installe et se lance automatiquement sur votre HoloLens.
 

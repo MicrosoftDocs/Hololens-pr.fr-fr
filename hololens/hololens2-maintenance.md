@@ -1,6 +1,6 @@
 ---
-title: FAQ sur le nettoyage de HoloLens 2
-description: Recevez des réponses à jour pour toutes vos questions fréquemment posées sur le nettoyage et la maintenance de votre appareil HoloLens 2.
+title: Questions fréquentes (FAQ) sur le nettoyage de HoloLens 2
+description: recevez des réponses à jour pour toutes vos questions fréquemment posées sur le nettoyage et la maintenance de votre appareil HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308673"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189441"
 ---
-# <a name="hololens-2-cleaning-faq"></a>FAQ sur le nettoyage de HoloLens 2
+# <a name="hololens-2-cleaning-faq"></a>Questions fréquentes (FAQ) sur le nettoyage de HoloLens 2
 
 > [!IMPORTANT]  
 > Microsoft ne peut pas déterminer l’efficacité d’un produit désinfectant donné pour combattre les agents pathogènes tels que COVID-19. Reportez-vous à l’aide de votre autorité de santé publique locale pour savoir comment vous protéger contre les infections potentielles.  
 
-## <a name="hololens-2-use-and-care"></a>HoloLens 2 utilisation et prudence
+## <a name="hololens-2-use-and-care"></a>HoloLens 2 Utilisation et prudence
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
@@ -37,7 +37,7 @@ ms.locfileid: "108308673"
 
 1. Enlevez les poussières à l’aide d’un chiffon Microfiber sec et exempt de peluche pour essuyer doucement la surface de l’appareil.
 
-   ![Nettoyer en maintenant le bloc de navigateur](images/hl2-cleaning.png)
+   ![Nettoyez tout en maintenant le bloc de navigateur.](images/hl2-cleaning.png)
 
 2. Humidifiez légèrement l’chiffon à l’aide de la « 70% » d’alcool isopropylique, puis utilisez le chiffon humidifié pour essuyer doucement la surface de l’appareil.
 
@@ -48,7 +48,7 @@ ms.locfileid: "108308673"
 1. Utilisez de l’eau et un SOAP doux, antibiotique pour humecter un chiffon, puis utilisez l’chiffon humecté pour effacer le panneau de navigateur.
 1. Laissez le pavé de navigateur sécher entièrement.
 
-## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>Puis-je utiliser n’importe quel nettoyeur de lentille pour nettoyer le Visor HoloLens ?
+## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>puis-je utiliser n’importe quel nettoyeur d’objectif pour nettoyer le visière de HoloLens ?
 
 Non. Les nettoyants pour lentilles peuvent être abrasifs pour les revêtements sur le visière. Pour nettoyer le visière, procédez comme suit :  
 
@@ -58,10 +58,10 @@ Non. Les nettoyants pour lentilles peuvent être abrasifs pour les revêtements 
 
 ## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Puis-je utiliser la désinfection pour nettoyer l’appareil ?
 
-Oui, si les effaces ne contiennent pas de blanchiment. Vous pouvez utiliser des réinitialisations de désinfection sans blanchiment pour [nettoyer en douceur les surfaces HoloLens](#hololens-2-use-and-care).  
+Oui, si les effaces ne contiennent pas de blanchiment. vous pouvez utiliser des réinitialisations de désinfection sans blanchiment pour [nettoyer en douceur les surfaces de HoloLens](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
-> Évitez d’utiliser des réinitialisations de désinfection qui contiennent des blanchiments pour nettoyer les surfaces HoloLens. Il est acceptable d’utiliser des réinitialisations de blanchiment dans les situations critiques, lorsque rien d’autre n’est disponible. Toutefois, le blanchiment peut endommager le Visor HoloLens ou d’autres surfaces.
+> évitez d’utiliser des réinitialisations de désinfection qui contiennent des blanchiments pour nettoyer les surfaces de HoloLens. Il est acceptable d’utiliser des réinitialisations de blanchiment dans les situations critiques, lorsque rien d’autre n’est disponible. toutefois, le blanchiment peut endommager le visière de HoloLens ou d’autres surfaces.
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>Puis-je utiliser de l’alcool pour nettoyer l’appareil ?
 
@@ -71,7 +71,7 @@ Oui. Vous pouvez utiliser une solution de « 70% » d’alcool isopropylique e
 
 Oui. Le panneau navigateur est attaché de façon magnétique à l’appareil. Pour le détacher, tirez-le doucement de l’headband. Pour le remplacer, Réintégrez-le.
 
-![Supprimer ou remplacer le bloc de navigateur](images/hololens2-remove-browpad.png)
+![Supprimez ou remplacez le bloc de navigateur.](images/hololens2-remove-browpad.png)
 
 ## <a name="how-can-i-clean-the-brow-pad"></a>Comment puis-je nettoyer le bloc de navigateur ?
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664517"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189118"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Scénarios courants – HoloLens 2 sécurisés hors connexion
 
@@ -33,9 +33,9 @@ ce guide fournit des conseils pour l’application d’un exemple de Package de 
 -   Empêche l’ajout ou la suppression de packages de provisionnement.
 -   Aucun utilisateur ne peut activer les composants restreints ci-dessus.
 
-[![Scénario ](./images/deployment-guides-revised-scenario-c-01.png) de sécurité hors connexion](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Scénario de sécurité hors connexion. ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
-## <a name="prepare"></a>Préparation
+## <a name="prepare"></a>Préparer
 
 Windows 10 Configuration du PC
 1. [téléchargez le dernier fichier de système d’exploitation HoloLens 2](https://aka.ms/hololens2download) directement sur un PC. 
@@ -56,19 +56,19 @@ Créer un package d’approvisionnement de configuration sécurisé
 1. Le projet doit s’ouvrir et vous devez maintenant avoir une liste des personnalisations disponibles :
 
    > [!div class="mx-imgBorder"]
-   > ![Capture d’écran du package de configuration ouvert dans WCD](images/offline-secure-sample-wcd.png)
+   > ![Capture d’écran du package de configuration ouvert dans WCD.](images/offline-secure-sample-wcd.png)
 
    Configurations définies dans ce package d’approvisionnement :
    
    |     Élément                                                |     Paramètre                       |     Description                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     Comptes/utilisateurs                                    |     Nom d’utilisateur local & mot de passe    |     Pour ces périphériques hors connexion, un nom d’utilisateur et un mot de passe uniques devront être définis et partagés par tous les utilisateurs de l’appareil.          |
-   |     première expérience/HoloLens/SkipCalibration       |     True                          |     Ignore l’étalonnage lors de l’installation initiale de l’appareil uniquement                                                                             |
-   |     première expérience/HoloLens/SkipTraining          |     True                          |     Ignore la formation des appareils lors de la configuration initiale de l’appareil                                                                              |
-   |     première expérience/HoloLens/WiFi                  |     True                          |     Ignore la configuration de Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
+   |     première expérience/HoloLens/SkipCalibration       |     Vrai                          |     Ignore l’étalonnage lors de l’installation initiale de l’appareil uniquement                                                                             |
+   |     première expérience/HoloLens/SkipTraining          |     Vrai                          |     Ignore la formation des appareils lors de la configuration initiale de l’appareil                                                                              |
+   |     première expérience/HoloLens/WiFi                  |     Vrai                          |     Ignore la configuration de Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
    |     Stratégies/connectivité/AllowBluetooth                |     No                            |     Désactive Bluetooth                                                                                                             |
    |     Stratégies/expérience/AllowCortana                    |     No                            |     désactive Cortana (pour éliminer les problèmes potentiels, car les microphones sont désactivés)                                          |
-   |     Stratégies/MixedReality/MicrophoneDisabled            |     Yes                           |     Désactive le microphone                                                                                                            |
+   |     Stratégies/MixedReality/MicrophoneDisabled            |     Oui                           |     Désactive le microphone                                                                                                            |
    |     Stratégies/confidentialité/LetAppsAccessLocation              |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux données d’emplacement (afin d’éliminer les problèmes potentiels puisque le suivi d’emplacement est désactivé)    |
    |     Stratégies/confidentialité/LetAppsAccessMicrophone            |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux micros (pour éliminer les problèmes potentiels puisque les microphones sont désactivés)           |
    |     Stratégies/sécurité/AllowAddProvisioningPackage       |     No                            |     Empêche quiconque d’ajouter des packages de configuration qui peuvent tenter de remplacer les stratégies verrouillées.                         |
@@ -95,16 +95,16 @@ Créer un package d’approvisionnement de configuration sécurisé
 1. Connecter le HL2 à votre Windows 10 PC via un câble USB.
 1. Lancez l’outil ARC et sélectionnez **HoloLens 2**
 
-   ![Écran initial de réinitialisation d’HoloLens 2](images/ARC2.png)
+   ![HoloLens 2 écran de réinitialisation du nettoyage.](images/ARC2.png)
 
 1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages**.
 
-   ![HoloLens 2 Écran d’informations sur l’ARC](images/arc_device_info.png)
+   ![HoloLens 2 Écran d’informations sur l’ARC.](images/arc_device_info.png)
 
 1. Accédez au fichier. FFU téléchargé précédemment, puis sélectionnez **ouvrir**.
 1. Sur la page d’avertissement, sélectionnez **Continuer**.
 
-   ![HoloLens 2 Écran d’avertissement de l’ARC](images/arc_warning.png)
+   ![HoloLens 2 Écran d’avertissement de l’ARC.](images/arc_warning.png)
 
 1. attendez que l’outil ARC termine l’installation du système d’exploitation HoloLens 2.
 1. Une fois que l’appareil a effectué l’installation et le redémarrage, à partir de votre PC, accédez à l’Explorateur de fichiers et copiez le fichier PPKG précédemment enregistré sur le dossier de l’appareil.

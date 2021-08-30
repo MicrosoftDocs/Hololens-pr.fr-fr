@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665028"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188982"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>contribution à la documentation HoloLens
 
@@ -147,7 +147,7 @@ utilisez le flux de travail suivant pour *créer de nouveaux articles* dans la d
 
 9. Sélectionnez **nouvelle demande de tirage (pull Request** ) et fusionnez la branche _principale_ de votre fourche dans le _maître_ MicrosoftDocs/de la réalité mixte (Assurez-vous que la flèche pointe vers la destination correcte).
 
-   ![Créer une requête de tirage (pull request) à partir de votre fourche dans MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
+   ![Créez une requête de tirage (pull request) à partir de votre fourche dans MicrosoftDocs/Mixed-Reality.](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Les bases de Markdown
 
@@ -199,7 +199,7 @@ si vous préférez ne pas traiter ces problèmes, utilisez un client de bureau c
 
 Pour les raisons mentionnées [ci-dessus](#editing-in-the-browser-vs-editing-with-a-desktop-client), vous préférerez peut-être utiliser un client de bureau pour modifier la documentation au lieu d’un navigateur Web. Nous vous recommandons d’utiliser [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Installation
+### <a name="setup"></a>Programme d’installation
 
 procédez comme suit pour configurer Visual Studio Code pour qu’il fonctionne avec ce référentiel :
 
@@ -226,11 +226,11 @@ Utilisez le flux de travail suivant pour apporter des modifications à la docume
 
    1. Dans un navigateur Web, créez une requête de tirage pour synchroniser les modifications récentes des autres contributeurs dans la branche par défaut de MicrosoftDocs/Mixed-Reality, _Master_, sur votre fourche (Assurez-vous que la flèche pointe vers la destination appropriée).
       
-      ![Synchroniser les modifications de MicrosoftDocs/Mixed-Reality avec votre fourche](images/sync-repos.png)
+      ![Synchronisez les modifications de MicrosoftDocs/Mixed-Reality avec votre fourche.](images/sync-repos.png)
       
    2. dans Visual Studio Code, sélectionnez le bouton synchroniser pour synchroniser votre branche fraîchement mise à jour sur le clone local.
       
-      ![Cliquer sur l’image du bouton de synchronisation](images/sync-clone.png)
+      ![Cliquez sur l’image du bouton synchroniser.](images/sync-clone.png)
       
 2. Créez ou modifiez des articles dans votre référentiel cloné à l’aide de Visual Studio Code.
 
@@ -250,7 +250,7 @@ Utilisez le flux de travail suivant pour apporter des modifications à la docume
       
 3. Dans un navigateur Web, créez une requête de tirage pour synchroniser les modifications apportées à votre fourche avec MicrosoftDocs/Mixed-Real- _Master_ (Assurez-vous que la flèche pointe vers la destination correcte).
 
-   ![Créer une requête de tirage (pull request) à partir de votre fourche dans MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
+   ![Créez une requête de tirage (pull request) à partir de votre fourche dans MicrosoftDocs/Mixed-Reality.](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>Extensions utiles
 

@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661887"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189186"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Déverrouiller les fonctionnalités de Windows Holographic for Business
 
@@ -48,7 +48,7 @@ les packages de provisionnement sont des fichiers créés par l’outil concepte
 1. [Créez un package d’approvisionnement pour HoloLens.](hololens-provisioning.md)
 1. Accédez à **paramètres d’exécution**  >  **EditionUpgrade**, puis sélectionnez **EditionUpgradeWithLicense**.
 
-    ![Mettez à jour l'édition avec le paramètre de licence sélectionné](images/icd1.png)
+    ![Version de mise à niveau avec le paramètre de licence sélectionné.](images/icd1.png)
 
 1. Recherchez le fichier de licence XML fourni lorsque vous avez acheté la suite commerciale.
 
