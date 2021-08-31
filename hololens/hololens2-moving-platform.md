@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
-ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
+ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122610122"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989196"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Mode plateforme mobile (MPM) sur les plateformes mobiles à mouvements dynamiques faibles
 
@@ -27,6 +27,8 @@ Dans **Insider build 20348.1411**, nous avons ajouté le support de la version 
 
 > [!NOTE]
 > Cette fonctionnalité est actuellement disponible via [Windows Insiders](hololens-insider.md) uniquement.
+
+![Exemple de plateforme mobile.](./images/mpm-compare.gif)
 
 Cet article couvre les points suivants :
 
