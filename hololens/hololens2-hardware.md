@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660042"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190376"
 ---
 # <a name="about-hololens-2"></a>À propos de HoloLens 2
 
-![Vue latérale de l'HoloLens 2](images/hololens2-breakdown.png)
+![Vue latérale de l’appareil HoloLens 2.](images/hololens2-breakdown.png)
 
 Le Microsoft HoloLens 2 est un ordinateur holographique sans fil.  Il succède à l'HoloLens (1ère génération) sur la voie de l'informatique holographique en offrant une expérience plus confortable et immersive, associée à davantage d'options de collaboration en réalité mixte. L'HoloLens 2 s'exécute sur le [système d'exploitation Windows Holographic](hololens-release-notes.md), qui repose sur une « saveur » de Windows 10 et fournit aux utilisateurs, aux administrateurs et aux développeurs une plateforme robuste, performante et sécurisée. 
 
@@ -75,7 +75,7 @@ Afin de maintenir/d'augmenter le pourcentage de charge de la batterie interne lo
 | **Centrale inertielle** | Accéléromètre, gyroscope, magnétomètre |
 | **Appareil photo** | Photos 8 MP, vidéos 1080p30 |
 
-![Capteurs de l'HoloLens 2](images/hololens2-front-view.png)
+![Capteurs de l’appareil HoloLens 2.](images/hololens2-front-view.png)
 
 > [!NOTE]
 > Ne couvrez aucun des capteurs signalés sur l'image. Les caméras de suivi de la tête ont un champ de vision très large. Outre le fait qu'elles ne doivent pas être couvertes, rien ne doit se trouver autour d'elles.

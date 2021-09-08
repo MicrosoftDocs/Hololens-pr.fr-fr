@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122858998"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189067"
 ---
 # <a name="configure-your-network-for-hololens"></a>Configurer votre réseau pour HoloLens
 
@@ -97,7 +97,7 @@ Si vous devez affecter des licences, suivez ces [instructions](/azure/active-dir
 
     1. **Option 2 :** Accordez à des utilisateurs/groupes sélectionnés l’autorisation de joindre des appareils à Azure AD **Connectez-vous au portail Azure en tant qu’administrateur** > **Azure Active Directory** > **Appareils** > **Paramètres d’appareil** >
 **Définissez Les utilisateurs peuvent joindre des appareils à Azure AD sur *Sélectionné***
-![ Image montrant la configuration des appareils joints à Azure AD](images/azure-ad-image.png)
+![Image montrant la configuration des appareils joints à Azure AD](images/azure-ad-image.png).
 
     1. **Option 3 :** Vous pouvez empêcher tous les utilisateurs de joindre leurs appareils au domaine. Cela signifie que tous les appareils doivent être enregistrés manuellement.
 
@@ -178,7 +178,7 @@ Vous trouverez des instructions sur la mise à niveau vers la suite commerciale 
 > [!NOTE]
 > Vous pouvez configurer les utilisateurs pour qu’ils aient accès à différentes expériences du mode Kiosque en utilisant « Azure AD » comme « Type d’ouverture de session utilisateur ». Cette option n’est cependant disponible qu’en mode Kiosque multi-application. Le mode Kiosque multi-application fonctionne avec une seule application ou avec plusieurs applications.
 
-![Image montrant la configuration du mode Kiosque dans Intune](images/aad-kioskmode.png)
+![Image montrant la configuration du mode kiosque dans Intune.](images/aad-kioskmode.png)
 
 Pour d’autres services MDM, consultez la documentation de votre fournisseur pour obtenir des instructions. Si vous devez utiliser un paramètre personnalisé et une configuration XML complète pour configurer un kiosque dans votre service MDM, consultez les instructions de [Kiosque HoloLens](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens).
 

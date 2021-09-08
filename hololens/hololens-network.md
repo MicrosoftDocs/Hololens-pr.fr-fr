@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663096"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189101"
 ---
 # <a name="connect-hololens-to-a-network"></a>Connecter HoloLens à un réseau
 
@@ -39,7 +39,7 @@ Sur les appareils HoloLens 2, un utilisateur peut également [utiliser un adapt
 1. Sélectionnez un réseau, puis **Se connecter**.
 1. Si vous êtes invité à entrer un mot de passe réseau, tapez-le, puis sélectionnez **Suivant**.
 
-![Paramètres Wi-Fi HoloLens](./images/hololens-2-wifi-settings.jpg)
+![Paramètres Wi-Fi HoloLens.](./images/hololens-2-wifi-settings.jpg)
 
 Pour vérifier que vous êtes connecté à un réseau Wi-Fi, consultez l’état Wi-Fi dans le menu **Démarrer** :
 
@@ -211,7 +211,7 @@ Le VPN n’est pas activé par défaut. Vous pouvez l’activer manuellement en 
 1. Ajoutez éventuellement le nom d’utilisateur et le mot de passe.
 1. Appliquez les paramètres VPN. 
 
-![Paramètres du VPN HoloLens](./images/vpn-settings-ui.jpg)
+![Paramètres VPN HoloLens.](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>VPN défini via le package de configuration
 
@@ -354,7 +354,7 @@ Exemple de VPN IKEv2 natif :
 1. Sélectionnez **Réseau et Internet**.
 1. Faites défiler vers le bas jusqu’à la liste de réseaux Wi-Fi disponibles et sélectionnez **Propriétés matérielles**.
 
-    ![Propriétés matérielles dans les paramètres Wi-Fi](./images/wifi-hololens-hwdetails.jpg)
+    ![Propriétés matérielles dans les paramètres Wi-Fi.](./images/wifi-hololens-hwdetails.jpg)
 
    L’adresse IP apparaît en regard de **Adresse IPv4**.
 

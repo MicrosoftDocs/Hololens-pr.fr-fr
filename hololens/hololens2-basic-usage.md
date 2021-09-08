@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661952"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189883"
 ---
 # <a name="getting-around-hololens-2"></a>Explorer HoloLens 2
 
@@ -47,7 +47,7 @@ Lorsque vous maîtriserez ces interactions de base, la navigation sur HoloLens d
 
 HoloLens est muni de capteurs qui peuvent voir à quelques centimètres autour de vous. Lorsque vous utilisez les mains, vous devez les conserver à l’intérieur de ce cadre, à défaut de quoi HoloLens ne les verra pas. Notez toutefois que le cadre se déplace lorsque vous-même, vous vous déplacez.  
 
-![Image illustrant le cadre de suivi de la main HoloLens](./images/hololens-2-gesture-frame.png)
+![Image montrant le cadre de suivi de la main HoloLens.](./images/hololens-2-gesture-frame.png)
 
 ## <a name="touch-holograms-near-you"></a>Interaction tactile avec des hologrammes à proximité
 
@@ -74,7 +74,7 @@ Pour sélectionner un objet à l’aide d’un **rayon émanant de la main**, pr
 1. Pointez l’index vers le haut en direction du plafond.
 1. Pour effectuer un **clic aérien**, resserrez le pouce et l’index, puis desserrez-les rapidement.
 
-   ![Animation du clic aérien](./images/hololens-air-tap.gif)
+   ![Animation du clic aérien.](./images/hololens-air-tap.gif)
 
 ### <a name="grab-using-air-tap-and-hold"></a>Saisir en cliquant longuement dans l’air
 
@@ -101,7 +101,7 @@ Le mouvement associé au menu Démarrer ouvre le **menu Démarrer**.  Pour effec
 > - Si vous rencontrez des difficultés pour lire le texte plus petit du menu Démarrer, rapprochez-vous du menu lorsqu’il est ouvert.
 > - Si votre main est légèrement en-dehors du côté du cadre, vous pouvez malgré tout afficher le menu Démarrer en appuyant sur l’intérieur de votre poignet, même si vous ne voyez pas l’icône.
 
-![Image illustrant l’icône Démarrer et le mouvement associé au menu Démarrer](./images/hololens-2-start-gesture.png)
+![Image montrant l’icône Démarrer et le mouvement associé au menu Démarrer.](./images/hololens-2-start-gesture.png)
 
 Pour **fermer** le menu Démarrer, effectuez le mouvement associé au menu Démarrer lorsque le menu Démarrer est ouvert.  Vous pouvez également regarder le menu Démarrer et dire « Fermer ».
 
@@ -115,7 +115,7 @@ Pour **fermer** le menu Démarrer, effectuez le mouvement associé au menu Déma
 
 Vous pouvez également effectuer le mouvement associé au menu Démarrer d’une seule main. Pour cela, tendez votre main avec la paume vers vous et regardez l’**icône Démarrer** sur l’intérieur de votre poignet. **Sans quitter l’icône des yeux**, resserrez le pouce et l’index.
 
-![Image illustrant l’icône Démarrer et le mouvement d’une main associé au menu Démarrer](./images/hololens-2-start-alternative.png)
+![Image montrant l’icône Démarrer et le mouvement d’une main associé au menu Démarrer.](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>Menu Démarrer, accueil réalité mixte et applications
 

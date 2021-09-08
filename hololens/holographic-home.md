@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c510738595e234b30395aafa309d42bd33affb7889a3174f2e708ba1aac56626
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664896"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189169"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Utiliser le menu Démarrer et l’accueil réalité mixte
 
@@ -91,7 +91,7 @@ Si une application immersive est défectueuse et que vous devez la redémarrer, 
 
 Avec [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), lorsque vous activez un lien hypertexte ou ouvrez un type de fichier pris en charge par plusieurs applications installées, une nouvelle fenêtre s'ouvre pour vous inviter à sélectionner l'application à utiliser pour gérer le type de fichier ou de lien. Dans cette fenêtre, vous pouvez également choisir d'utiliser l'application sélectionnée « Une seule fois » ou « Toujours » afin de gérer le type de fichier ou de lien.
 
-![Fenêtre du sélecteur d'application](images/default-app-picker.png)
+![Fenêtre du sélecteur d’application.](images/default-app-picker.png)
 
 Si vous choisissez « Toujours » et que vous souhaitez ultérieurement utiliser une autre application pour gérer un type de fichier ou de lien particulier, vous pouvez réinitialiser les valeurs par défaut enregistrées en sélectionnant **Paramètres > Applications**. Faites défiler de la page vers le bas et sélectionnez le bouton **Effacer** sous « Applications par défaut pour les types de fichiers » et/ou « Applications par défaut pour les types de liens ». Contrairement au paramètre similaire des ordinateurs de bureau, vous ne pouvez pas réinitialiser les valeurs par défaut des types de fichiers individuels.
 

@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
-ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
+ms.openlocfilehash: 4782b5d4d3c51038f7810c57d2144758ce0dc1ac
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122782805"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190189"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot pour HoloLens 2
 
@@ -191,7 +191,7 @@ Il existe deux façons de récupérer le hachage matériel.
    Une liste comprenant **HoloLens** doit s’afficher. Si cette option n’est pas disponible, utilisez l’une des options [Commentaires](hololens2-autopilot.md#feedback-and-support-for-autopilot) pour nous contacter.
 
    > [!div class="mx-imgBorder"]
-   > ![Ajoutez le nom et la description du profil](./images/hololens-ap-profile-name.png)
+   > ![Ajoutez le nom et la description du profil.](./images/hololens-ap-profile-name.png)
 
 1. Dans la page **OOBE (Out-of-box experience)** , la plupart des paramètres sont préconfigurés pour simplifier OOBE dans cette évaluation. Vous pouvez configurer les paramètres suivants :  
 
@@ -202,7 +202,7 @@ Il existe deux façons de récupérer le hachage matériel.
      > Si vous utilisez un modèle de nom d’appareil, le processus OOBE redémarre l’appareil après l’application du nom d’appareil et avant qu’il ne joigne l’appareil à Azure AD. Ce redémarrage permet l’application du nouveau nom.  
 
    > [!div class="mx-imgBorder"]
-   > ![Configurer les paramètres OOBE](./images/hololens-ap-profile-oobe.png)
+   > ![Configurer les paramètres OOBE.](./images/hololens-ap-profile-oobe.png)
 
 1. Après avoir configuré les paramètres, sélectionnez **Suivant**.
 1. Sur la page **Balises d’étendue**, ajoutez les balises d’étendue que vous souhaitez appliquer à ce profil (facultatif). Pour plus d’informations sur les balises d’étendue, voir [Utiliser le contrôle d’accès en fonction du rôle et les balises d’étendue pour l’informatique distribuée](/mem/intune/fundamentals/scope-tags.md). Quand vous avez terminé, sélectionnez **Suivant**.
@@ -218,14 +218,14 @@ Il existe deux façons de récupérer le hachage matériel.
 1. Sur la page **Vérifier et créer**, vérifiez les paramètres, puis sélectionnez **Créer** pour créer le profil.  
 
    > [!div class="mx-imgBorder"]
-   > ![Vérifier + créer](./images/hololens-ap-profile-summ.png)
+   > ![Examiner + créer](./images/hololens-ap-profile-summ.png).
 
 ### <a name="7-verify-the-esp-configuration"></a>7. Vérifier la configuration de la page d’état d’inscription
 
 La page d’état d’inscription (ESP) affiche l’état du processus de configuration d’un appareil complet qui s’exécute lorsqu’un utilisateur géré par GPM se connecte à un appareil pour la première fois. Assurez-vous que votre configuration ESP se présente comme suit et vérifiez que les affectations sont correctes.  
 
 > [!div class="mx-imgBorder"]
-> ![Configuration ESP](./images/hololens-ap-profile-settings.png)
+> ![Configuration ESP.](./images/hololens-ap-profile-settings.png)
 
 ### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. Vérifier l’état du profil des appareils HoloLens
 
@@ -263,9 +263,9 @@ Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens 2 acc
 
    Laissez HoloLens 2 détecter la connectivité réseau et permettez-lui d’exécuter automatiquement OOBE. Il est possible que l’appareil redémarre pendant le processus OOBE. Les écrans OOBE doivent se présenter comme suit.
 
-   ![OOBE - Étape 1](./images/autopilot-welcome.jpg)
-   ![OOBE - Étape 2](./images/autopilot-step-complete.jpg)
-   ![OOBE - Étape 3](./images/autopilot-device-setup.jpg)
+   ![Étape 1 OOBE.](./images/autopilot-welcome.jpg)
+   ![Étape 2 OOBE](./images/autopilot-step-complete.jpg)
+   ![Étape 3 OOBE.](./images/autopilot-device-setup.jpg)
 
 1. Au terme du processus OOBE, vous pouvez vous connecter à l’appareil à l’aide de votre nom d’utilisateur et de votre mot de passe.
 
@@ -290,7 +290,7 @@ Une fois le nœud RequireNetworkInOOBE du fournisseur de solutions Cloud TenantL
 La valeur OMA-URI doit être ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Définition du verrouillage du client via OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Définition du verrouillage du client via OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Créez un groupe et attribuez le profil de configuration d’appareil à ce groupe d’appareils.
 
@@ -306,7 +306,7 @@ Vérifiez que la configuration de l’appareil a été appliquée dans le portai
 La valeur OMA-URI doit être ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Capture d’écran de la définition de RequireNetworkInOOBE sur false via OMA URI dans Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Capture d’écran de la définition de RequireNetworkInOOBE sur false via OMA-URI dans Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Créez un groupe et attribuez le profil de configuration d’appareil à ce groupe d’appareils. 
 

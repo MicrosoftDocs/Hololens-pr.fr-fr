@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659955"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190359"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>Résolution des problèmes liés à l'affichage de l'HoloLens 2
 
@@ -46,7 +46,7 @@ Procédez comme suit pour garantir une qualité visuelle optimale des hologramme
     > Si nécessaire, vous pouvez ajuster manuellement le niveau de luminosité de l'HoloLens 2 à l'aide des boutons de réglage de la luminosité situés sur le côté gauche de l'appareil.
 1. Sélectionnez les boutons 1 à 6 pour essayer instantanément chaque profil de couleurs et trouver celui qui vous convient le mieux (il s'agit généralement du profil qui propose la scène la plus neutre, avec la gamme de gris et les tons chair attendus).
 
-    ![Étalonnage des couleurs d'affichage](images/color-cal-ui.png)
+    ![Étalonnage des couleurs d’affichage.](images/color-cal-ui.png)
     
 6. Lorsque le profil sélectionné vous convient, cliquez sur le bouton **Enregistrer et quitter**.
 1. Si vous préférez n'apporter aucune modification, cliquez sur le bouton **Annuler et quitter** et vos modifications seront annulées.
@@ -79,7 +79,7 @@ Si le profil de couleurs personnalisé enregistré sur votre HoloLens 2 ne vous
 
 De temps en temps, votre HoloLens 2 affichera différents motifs dans les coins inférieurs gauche et droit de l'affichage. Des exemples sont présentés ci-dessous (GIF animés). Ceci fait partie du fonctionnement normal de votre appareil HoloLens 2 afin d'étalonner l'affichage pour une expérience optimale.
 
-![Motif biphase](./images/DAT-Biphase-Fiducial.gif) ![Motif GEO](./images/DAT-GEO-Fiducial.gif)
+![Motif biphase.](./images/DAT-Biphase-Fiducial.gif) ![Motif GEO](./images/DAT-GEO-Fiducial.gif)
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>Pourquoi est-ce que je ne parviens pas à prendre une photo correcte de l'affichage de mon HoloLens 2 ?
 

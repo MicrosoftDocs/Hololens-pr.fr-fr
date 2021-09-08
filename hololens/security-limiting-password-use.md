@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 074fffc8350dd6deb876a19320397674bcac3e46
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 24cd9b81d0d99afaa0479787b846b423310c6739
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639299"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190461"
 ---
 # <a name="limiting-password-use"></a>Limitation de l’utilisation d’un mot de passe
 
@@ -52,7 +52,7 @@ Quand des informations d’identification Windows Hello sont créées, elles é
 
 Pour plus d’informations, consultez l’infographie suivante :
 
-  ![Connexion via Windows Hello](images/security-hello-sign-in.png)
+  ![Connexion via Windows Hello.](images/security-hello-sign-in.png)
   
 Dans le graphique présenté ci-dessus, notez que « nonce » signifie « number once » (un nombre une seule fois), et qu’il s’agit d’un nombre généré de façon aléatoire ou semi-aléatoire. Une fois que les informations d’identification biométrique ou le code PIN de Windows Hello sont configurés, elles ne quittent jamais l’appareil sur lequel elles sont configurées. Même si le code PIN Windows Hello de l’utilisateur est volé, par exemple via une attaque par hameçonnage, il est [inutilisable sans l’appareil physique de l’utilisateur](/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password).
 
@@ -68,7 +68,7 @@ Une fois qu’une identité a été ajoutée via une application, elle peut, ave
 
 Pour plus d’informations sur l’implémentation des API du gestionnaire de comptes web, consultez [Implémentation des API du gestionnaire de comptes web](/windows/uwp/security/web-account-manager).
 
-  ![API de sécurité](images/security-api-img.png)
+  ![API de sécurité.](images/security-api-img.png)
   
 Pour les suites d’applications avec des exigences d’authentification spécialisées, l’infrastructure du gestionnaire de comptes web est extensible aux fournisseurs d’identité personnalisés. Les utilisateurs peuvent télécharger le fournisseur d’identité personnalisé, qui se présente en package sous la forme d’une application de plateforme Windows universelle (UWP) provenant du Microsoft Store, pour activer l’authentification unique sur d’autres applications intégrées avec ce fournisseur d’identité.
 
@@ -91,7 +91,7 @@ Les deux options offrent une authentification à deux facteurs en une seule éta
 
 ### <a name="strong-authentication-with-fido2-security-key"></a>Authentification forte avec la clé de sécurité FIDO2
 
-  ![Image FIDO](images/security-fido2-whfb-smaller.png)
+  ![Image FIDO.](images/security-fido2-whfb-smaller.png)
 
 1. L’utilisateur insère la clé de sécurité FIDO2 dans HoloLens 2
 1. Windows détecte la clé de sécurité FIDO2

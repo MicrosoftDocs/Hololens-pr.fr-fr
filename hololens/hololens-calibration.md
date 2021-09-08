@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: étalonnage, confort, visuels, qualité, écart pupillaire, HoloLens, Windows Mixed Reality, casques VR
-ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635974"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189203"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Améliorer la qualité visuelle et le confort
 
@@ -64,7 +64,7 @@ Plusieurs utilisateurs peuvent partager un appareil HoloLens 2, sans que chacun
 1. Si l'application Paramètres n'est pas épinglée au menu **Démarrer**, sélectionnez **Toutes les applications**.
 1. Sélectionnez **Paramètres**, puis **Système** > **Étalonnage** > **Étalonnage des yeux** > **Exécuter l'étalonnage des yeux**.
 
-   ![Application Paramètres, avec l'option Exécuter l'étalonnage des yeux](./images/C-Settings.Calibration.png)
+   ![Application Paramètres, avec l’option d’étalonnage oculaire.](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>Prise en charge de la fonctionnalité Position automatique des yeux
 
@@ -131,7 +131,7 @@ Lorsque vous configurez votre appareil HoloLens (1ère génération), vous êtes
 
 Pendant le processus d'étalonnage, l'HoloLens vous demande d'aligner votre doigt sur une série de six cibles par œil. L'HoloLens utilise ce processus pour définir l'écart pupillaire de vos yeux.
 
-![Écran d'alignement du doigt pour définir l'écart pupillaire lors de la deuxième étape](./images/ipd-finger-alignment-300px.jpg)
+![Écran d’alignement du doigt pour définir l’écart pupillaire lors de la deuxième étape.](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>Démarrer manuellement le processus d'étalonnage
 
@@ -143,9 +143,9 @@ Pour exécuter l'application Étalonnage à l'aide du menu **Démarrer**, procé
 1. Pour afficher toutes les applications, sélectionnez **+** .
 1. Sélectionnez **Étalonnage**.
 
-   ![Accès à l'application Étalonnage à partir du shell](./images/calibration-shell.png)
+   ![Accès à l’application Étalonnage à partir du shell.](./images/calibration-shell.png)
 
-   ![Application Étalonnage affichée sous la forme d'un cube dynamique après son lancement](./images/calibration-livecube-200px.png)
+   ![Application Étalonnage affichée sous la forme d’un cube dynamique après son lancement.](./images/calibration-livecube-200px.png)
 
 Pour exécuter l'application Étalonnage à l'aide de l'application Paramètres, procédez comme suit :
 
@@ -154,7 +154,7 @@ Pour exécuter l'application Étalonnage à l'aide de l'application Paramètres,
 1. Sélectionnez **Paramètres**.
 1. Sélectionnez **Système** > **Utilitaires** > **Ouvrir l'étalonnage**.
 
-   ![Lancement de l'application Étalonnage à partir de l'application Paramètres](./images/calibration-settings-500px.jpg)
+   ![Lancement de l’application Étalonnage à partir de l’application Paramètres.](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Casques immersifs
 

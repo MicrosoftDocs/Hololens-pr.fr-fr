@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639231"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190427"
 ---
 # <a name="page-settings-visibility"></a>Visibilité des paramètres de la page
 
@@ -74,7 +74,7 @@ Pour plus d’informations sur la création et l’application d’un package de
 
 Quelle que soit la méthode choisie, votre appareil doit maintenant recevoir les modifications et les utilisateurs se voir présenter l’application Paramètres suivante.
 
-![Capture d’écran d’heures actives modifiées dans l’application Paramètres](images/hololens-page-visibility-list.jpg)
+![Capture d’écran d’heures actives modifiées dans l’application Paramètres.](images/hololens-page-visibility-list.jpg)
 
 Pour configurer les pages de l’application Paramètres afin d’afficher ou de masquer votre propre sélection de pages, consultez les URL de paramètres disponibles sur HoloLens.
 

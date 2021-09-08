@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664292"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189084"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Se connecter à des appareils Bluetooth et USB-C
 
@@ -93,7 +93,7 @@ Les utilisateurs peuvent sélectionner des microphones externes connectés par U
 
 Ouvrez l’application **Paramètres** et sélectionnez **Système** > **Son**.
 
-![Paramètres audio](images/usbc-mic-1.jpg)
+![Paramètres audio.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > Pour utiliser des microphones externes avec **Remote Assist**, les utilisateurs doivent cliquer sur le lien hypertexte « Gérer les périphériques audio ».
@@ -102,11 +102,11 @@ Ouvrez l’application **Paramètres** et sélectionnez **Système** > **Son**.
 >
 > **Communications par défaut** signifie que le microphone externe sera utilisé avec Remote Assist et autres applications de communications, mais que le réseau de microphones HoloLens restera disponible pour d’autres tâches.
 
-![Gérer les périphériques audio](images/usbc-mic-2.png)
+![Gérer les périphériques audio.](images/usbc-mic-2.png)
 
 <br>
 
-![Définir le microphone par défaut](images/usbc-mic-3.jpg)
+![Définir le microphone par défaut.](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>Prise en charge des microphones Bluetooth
 

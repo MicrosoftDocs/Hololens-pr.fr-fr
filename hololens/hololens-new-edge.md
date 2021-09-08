@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663235"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189696"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Présentation du nouveau Microsoft Edge
 
-![Animation du logo de l’ancienne version de Microsoft Edge vers le nouveau Microsoft Edge](images/new-edge.gif)
+![Animation du logo de l’ancienne version de Microsoft Edge vers le nouveau Microsoft Edge.](images/new-edge.gif)
 
 Le nouveau Microsoft Edge [adopte le projet open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) afin de créer une meilleure compatibilité pour les clients et de réduire la fragmentation du web pour les développeurs web.
 
@@ -27,11 +27,11 @@ Avec [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holog
 > [!IMPORTANT]
 > Ce nouveau Microsoft Edge remplace automatiquement l’ancien Microsoft Edge, qui n’est [plus pris en charge](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) dans les nouvelles versions.
 
-![Capture d’écran du nouveau Microsoft Edge](images/new-edge-ui.png)
+![Capture d’écran du nouveau Microsoft Edge.](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>Lancement du nouveau Microsoft Edge
 
-Le nouveau Microsoft Edge ![Icône du nouveau Microsoft Edge](images/new_edge_logo.png) (représenté par une icône de tourbillon verte et bleue) est épinglé au menu Démarrer et s’ouvre automatiquement lorsque vous activez un lien web.
+Le nouveau Microsoft Edge ![Nouvelle icône Microsoft Edge.](images/new_edge_logo.png) (représenté par une icône de tourbillon verte et bleue) est épinglé au menu Démarrer et s’ouvre automatiquement lorsque vous activez un lien web.
 
 > [!NOTE]
 > Lorsque vous lancez le nouveau Microsoft Edge sur HoloLens 2 pour la première fois, vos paramètres et données sont importés à partir de l’ancienne version de Microsoft Edge.
@@ -139,7 +139,7 @@ L’extension de visionneuse 360 est basée sur WebXR et s’installe automatiqu
 1. Accédez à un site web avec prise en charge de WebXR.
 1. Sélectionnez le bouton **Accéder à VR** sur le site web. L’emplacement et la représentation visuelle de ce bouton peuvent varier en fonction du site web, mais se présentent globalement comme suit :
 
-    ![Exemple de bouton Accéder à VR](images/75px-enter-vr.png)
+    ![Exemple de bouton Accéder à VR.](images/75px-enter-vr.png)
 
 1. La première fois que vous essayez de lancer une expérience WebXR sur un domaine spécifique, le navigateur vous demande de consentir à accéder à une vue immersive. Sélectionnez **Autoriser**.
 1. Utilisez les [mouvements HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame) pour manipuler l’expérience.
@@ -156,7 +156,7 @@ L’extension de visionneuse 360 est basée sur WebXR et s’installe automatiqu
 1. Accédez à une vidéo à 360 degrés sur YouTube.
 1. Dans l’image vidéo, sélectionnez le bouton de casque de réalité mixte :
 
-    ![Bouton permettant d’activer la visionneuse 360](images/enter-360-viewer.jpg)
+    ![Bouton permettant d’activer la visionneuse 360.](images/enter-360-viewer.jpg)
 
 1. La première fois que vous essayez de lancer la visionneuse 360 sur un domaine spécifique, le navigateur vous demande de consentir à accéder à une vue immersive. Sélectionnez **Autoriser**.
 1. Effectuez un [clic aérien](hololens2-basic-usage.md#select-using-air-tap) pour afficher les contrôles de lecture. Utilisez les [rayons manuels et le clic aérien](hololens2-basic-usage.md#select-using-air-tap) pour ce qui suit : lecture/pause, avance/retour rapide, activation/désactivation des sous-titres, arrêt de l’expérience (ce qui a pour effet de quitter la vue immersive). Les contrôles de lecture disparaissent après quelques secondes d’inactivité.

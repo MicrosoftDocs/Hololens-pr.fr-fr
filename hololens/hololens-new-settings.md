@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 4187ae99a25fc6dd3f407410da27568d4b2b6865934b0c615680f295ec7977be
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bcde697b5887573826a3a1a61e8c3707b4d0337a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663036"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189662"
 ---
 # <a name="new-settings-app"></a>Nouvelle application Paramètres
 
@@ -23,7 +23,7 @@ Une nouvelle version de l'application Paramètres est introduite avec [Windows H
 > [!NOTE]
 > Comme la nouvelle application Paramètres est distincte de l'ancienne, toutes les fenêtres Paramètres précédemment placées dans votre environnement seront supprimées lors de la mise à jour.
 
-![Nouvelle page d'accueil de l'application Paramètres](images/new-settings-app.png)
+![Nouvelle page d’accueil de l’application Paramètres.](images/new-settings-app.png)
 
 **Nouvelles fonctionnalités et nouveaux paramètres**
 - Recherche de paramètres : recherchez des paramètres à partir de la page d'accueil de l'application Paramètres en utilisant des mots-clés ou le nom du paramètre.

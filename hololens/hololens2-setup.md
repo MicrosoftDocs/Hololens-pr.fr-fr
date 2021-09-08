@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658973"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190410"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Préparer votre HoloLens 2 pour l’utiliser
 
@@ -42,7 +42,7 @@ Placez l'HoloLens 2 sur votre tête. Si vous portez des lunettes, gardez-les.  
 
 Si nécessaire, élargissez l'arceau en tournant la molette de réglage, puis desserrez le serre-tête.
 
-![Ajuster et régler l'HoloLens 2](images/hololens2-fit.png)
+![Ajuster et régler HoloLens 2.](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>Fixer et retirer le serre-tête
 
@@ -52,7 +52,7 @@ Pour retirer la partie avant du serre-tête, décrochez-la et faites-la glisser 
 
 Pour retirer la partie arrière du serre-tête, appuyez sur le bouton situé sous chaque languette, puis tirez doucement. Pour la remettre en place, repoussez les languettes dans les encoches jusqu'à ce qu'elles s'enclenchent.
 
-![Fixer ou retirer le serre-tête de l'HoloLens 2](images/hololens2-headstrap.png)
+![Fixer ou retirer le serre-tête de l’appareil HoloLens 2.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>Allumer l'HoloLens 2
 

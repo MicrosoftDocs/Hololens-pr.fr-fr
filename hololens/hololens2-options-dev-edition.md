@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658871"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190342"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -38,7 +38,7 @@ HoloLens 2 Development Edition inclut un appareil HoloLens 2, 500 dollars (US
 |  [Plug-in Pixyz pour Unity](https://www.pixyz-software.com/plugin/) | Passerelle permettant de relier le monde de l'ingénierie CAO &amp; à celui du développement.   |
 | [500 dollars (USD) de crédits Azure pour les services Azure](https://azure.microsoft.com/resources/) | Les crédits Azure offerts avec HoloLens 2 Development Edition permettent de commencer rapidement à créer et tester des applications de réalité mixte sur Azure. |
 
-![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
+![HoloLens 2 Development Edition.](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>Profitez de vos crédits
 
