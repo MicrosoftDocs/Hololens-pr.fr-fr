@@ -14,37 +14,37 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cb497d850ff7ba2de66f69e8ec53e6dd36b773cc13d01b038def8d539e3b0c1
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
+ms.sourcegitcommit: f480d3cc8d549fa356e05df6ce15e9517f5b978a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665214"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "123610987"
 ---
 # <a name="provisioning-package"></a>Package de provisionnement
 
 Les packages de configuration peuvent être utilisés pour préparer et configurer des appareils dans un environnement sans accès à la gestion des points de terminaison. Ils peuvent également être déployés sur un appareil, quelle que soit l’identité de l’utilisateur, l’état de l’inscription, pendant l’expérience OOBE (out of Box Experience) ou l' [application d’un package de configuration pendant l’installation](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
-## <a name="provisioning-packages-considerations"></a>Considérations sur les packages d’approvisionnement :
+## <a name="provisioning-packages-considerations"></a>Considérations sur les packages d’approvisionnement
 
 * Applications non publiques
 * Chargement côté USB uniquement
 * Aucune mise à jour automatique (nécessite des mises à jour manuelles via PPKGs)
 
-Les applications installées à l’aide d’un package d’approvisionnement doivent être signées par un certificat dans le magasin de l’ordinateur local. Les packages d’approvisionnement peuvent uniquement installer des certificats sur le magasin de l’appareil (ordinateur local). par conséquent, une application et un certificat peuvent être installés par le biais du même package de configuration. Si vous déployez votre certificat à partir de MDM ou que vous installez via le [Gestionnaire de certificats](certificate-manager.md), veillez à déployer le certificat dans le magasin de l’ordinateur local pour signer les applications installées de cette manière.
+Les applications installées à l’aide d’un package d’approvisionnement doivent être signées par un certificat dans le magasin de l’ordinateur local. Les packages d’approvisionnement peuvent uniquement installer des certificats sur le magasin de l’appareil (ordinateur local). Par conséquent, une application et un certificat peuvent être installés par le biais du même package de configuration. Si vous déployez votre certificat à partir de MDM ou que vous installez via le [Gestionnaire de certificats](certificate-manager.md), veillez à déployer le certificat dans le magasin de l’ordinateur local pour signer les applications installées de cette manière.
 
 pour découvrir les principes de base de la création d’un Package d’approvisionnement pour HoloLens appareils, consultez [configuration HoloLens](/hololens/hololens-provisioning). Pour déployer une application, vous devez commencer par l’approvisionnement avancé.
 
 > [!NOTE]
 > HoloLens (1re génération) a limité la prise en charge de l’installation d’applications (**UniversalAppInstall**) à l’aide d’un package d’approvisionnement. les appareils HoloLens (1er génération) prennent uniquement en charge l’installation d’une application via PPKG uniquement au cours de l’installation OOBE et uniquement avec les installations de contexte utilisateur.
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
-dans [Windows concepteur de Configuration](https://www.microsoft.com/store/productId/9NBLGGH4TX22) , effectuez les quatre étapes suivantes.
+dans [Windows concepteur de Configuration,](https://www.microsoft.com/store/productId/9NBLGGH4TX22) suivez les quatre étapes suivantes.
 
 1. Définissez ApplicationManagement/AllowAllTrustedApps sur « Oui ». Voir : [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 
-2. Accédez à **UniversalAppInstall**  >  **UserContextAppLicense** entrez le **PackageFamilyName**. Consultez [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall). Voir aussi : [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+2. Accédez à **UniversalAppInstall**  >  **UserContextApp** entrez le **PackageFamilyName**. Consultez [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall).
 
    Vous pouvez utiliser le portail des appareils sur un appareil sur lequel vous avez déjà installé votre application. Accédez à la page applications, puis examinez la ligne PackageRelativeID, toutes les informations avant le «  ! » Est votre **PackageFamilyName**.
 
@@ -52,7 +52,8 @@ dans [Windows concepteur de Configuration](https://www.microsoft.com/store/produ
 
 4. Selon que vous avez acheté votre application ou créé votre propre application métier, vous devez télécharger le fichier de licence ou le certificat de sécurité.
 
-    - Pour le fichier de licence : accédez à **UniversalAppInstall**  >  **UserContextAppLicence** et accédez à l’emplacement de votre licence et chargez-le.
+    - Pour le fichier de licence : accédez à **UniversalAppInstall**  >  **UserContextAppLicence** et entrez votre ID de produit de licence. Une nouvelle section <b>LicenseProductID :</b><i>yourlicenseproductid</i> sera créée, sélectionnez cette nouvelle section et accédez à l’emplacement de votre licence et chargez-la.
+        - Consultez [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
     - Pour le fichier de sécurité, accédez à **certificats** , puis sélectionnez votre certificat à installer en même temps que votre bundle. Appx.
 
 Veillez à enregistrer votre projet dans un emplacement sécurisé. Ensuite, **exportez** -le en tant que **package d’approvisionnement**.  
