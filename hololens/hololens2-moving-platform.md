@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190393"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428692"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Mode plateforme mobile (MPM) sur les plateformes mobiles à mouvements dynamiques faibles
 
@@ -75,19 +75,19 @@ Pour activer le mode MPM mobile, commencez par [activer le Portail d’appareil]
 
 1. Sélectionnez l’accordéon **Système** dans le menu de gauche.
 
-   ![Première image.](.\images\moving-platform-1w.png)
+   ![Première image.](.\images\mpm-01.png)
 
 2. Sélectionnez la page **Moving Platform Mode** et cochez la case **Moving Platform Mode**.
 
-    ![Deuxième image.](.\images\moving-platform-2z.png)
+    ![Deuxième image.](.\images\mpm-02.png)
 
 3. Lorsque vous y êtes invité, sélectionnez **OK**.
 
-   ![Troisième image.](.\images\moving-platform-3w.png)
+   ![Troisième image.](.\images\mpm-03.png)
 
 4. Redémarrez votre appareil. Pour ce faire, sélectionnez le menu **Power** (Allumer) dans le Portail d’appareil en haut à droite ou dites la commande &quot;Redémarrer l’appareil&quot; à haute voix et sélectionnez &quot;Oui&quot;.
 
-   ![Quatrième image.](.\images\moving-platform-4z.png)
+   ![Quatrième image.](.\images\mpm-04.png)
 
 Si vous ne parvenez pas à voir l’option Moving Platform Mode dans le Portail d’appareil, cela signifie probablement que vous ne travaillez pas encore avec la build appropriée. Consultez la section [Conditions préalables](#prerequisites).
 

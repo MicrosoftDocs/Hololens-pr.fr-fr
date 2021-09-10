@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 037f9325555244314518c81d7814bf983c345af6
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639333"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428441"
 ---
 # <a name="hardware-backed-integrity-and-runtime-attestation"></a>Attestation d’intégrité et de runtime assurée par le matériel
 

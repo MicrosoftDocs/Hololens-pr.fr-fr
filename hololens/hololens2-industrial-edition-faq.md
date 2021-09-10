@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 0ac7228e4af807d709d218942c50a9b110a419c1
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189492"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428889"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>Questions fréquentes (FAQ) sur HoloLens 2 - Industrial Edition
 
