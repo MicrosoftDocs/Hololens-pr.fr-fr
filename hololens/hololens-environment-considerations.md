@@ -10,12 +10,12 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
 keywords: cadre holographique, champ de vision, étalonnage, espaces, environnement, procédure, HoloLens, réalité mixte, casques de réalité mixte
-ms.openlocfilehash: bf70641958d6f29735512182fdf33ae48f40b956f3335643faeb5edb8a26f79f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664162"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427841"
 ---
 # <a name="hololens-environment-considerations"></a>Considérations liées à l’environnement HoloLens
 

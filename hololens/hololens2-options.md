@@ -15,11 +15,11 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659027"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428900"
 ---
 # <a name="compare-hololens-2-options"></a>Comparer les options de l’HoloLens 2
 
@@ -37,8 +37,8 @@ Que vous soyez un [professionnel de l’informatique](https://www.microsoft.com/
 | **Environnements UL de classe I, division 2, groupes A, B, C et D HAZLOC**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | **Casque intégré (conforme aux normes sur l’équipement de protection individuelle dans plus de 40 pays)** |            |                               |                               |                                                  |               ✔️              |                                |
 | **Sortie audio de réduction du bruit**                        |            |                               |                               |                                                  |               ✔️              |                                |
-| **Droits des développeurs<sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
-| **Programme de remplacement rapide<sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Droits des développeurs <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **Programme de remplacement rapide <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | **Droits d’utilisation commerciale**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**Garantie**](hololens2-hardware.md#warranty-information)                                             |   1 an   |             1 an            |             2 ans            |                      2 ans                      |            1 an <sup>3</sup>            |             1 an             |
 | **Limite d’achat d’appareils**                                |    None    |              None             |              None             |                       None                       |             None             |       Un par transaction      |
