@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032444"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Scénarios courants – HoloLens 2 sécurisés hors connexion
 
@@ -35,7 +35,7 @@ ce guide fournit des conseils pour l’application d’un exemple de Package de 
 
 [![Scénario de sécurité hors connexion. ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
-## <a name="prepare"></a>Préparer
+## <a name="prepare"></a>Préparation
 
 Windows 10 Configuration du PC
 1. [téléchargez le dernier fichier de système d’exploitation HoloLens 2](https://aka.ms/hololens2download) directement sur un PC. 
@@ -63,18 +63,18 @@ Créer un package d’approvisionnement de configuration sécurisé
    |     Élément                                                |     Paramètre                       |     Description                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     Comptes/utilisateurs                                    |     Nom d’utilisateur local & mot de passe    |     Pour ces périphériques hors connexion, un nom d’utilisateur et un mot de passe uniques devront être définis et partagés par tous les utilisateurs de l’appareil.          |
-   |     première expérience/HoloLens/SkipCalibration       |     Vrai                          |     Ignore l’étalonnage lors de l’installation initiale de l’appareil uniquement                                                                             |
-   |     première expérience/HoloLens/SkipTraining          |     Vrai                          |     Ignore la formation des appareils lors de la configuration initiale de l’appareil                                                                              |
-   |     première expérience/HoloLens/WiFi                  |     Vrai                          |     Ignore la configuration de Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
-   |     Stratégies/connectivité/AllowBluetooth                |     No                            |     Désactive Bluetooth                                                                                                             |
-   |     Stratégies/expérience/AllowCortana                    |     No                            |     désactive Cortana (pour éliminer les problèmes potentiels, car les microphones sont désactivés)                                          |
+   |     première expérience/HoloLens/SkipCalibration       |     True                          |     Ignore l’étalonnage lors de l’installation initiale de l’appareil uniquement                                                                             |
+   |     première expérience/HoloLens/SkipTraining          |     True                          |     Ignore la formation des appareils lors de la configuration initiale de l’appareil                                                                              |
+   |     première expérience/HoloLens/WiFi                  |     True                          |     Ignore la configuration de Wi-Fi lors de la configuration initiale de l’appareil                                                                                 |
+   |     Stratégies/connectivité/AllowBluetooth                |     Non                            |     Désactive Bluetooth                                                                                                             |
+   |     Stratégies/expérience/AllowCortana                    |     Non                            |     désactive Cortana (pour éliminer les problèmes potentiels, car les microphones sont désactivés)                                          |
    |     Stratégies/MixedReality/MicrophoneDisabled            |     Oui                           |     Désactive le microphone                                                                                                            |
    |     Stratégies/confidentialité/LetAppsAccessLocation              |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux données d’emplacement (afin d’éliminer les problèmes potentiels puisque le suivi d’emplacement est désactivé)    |
    |     Stratégies/confidentialité/LetAppsAccessMicrophone            |     Forcer le refus                    |     Empêche les applications d’essayer d’accéder aux micros (pour éliminer les problèmes potentiels puisque les microphones sont désactivés)           |
-   |     Stratégies/sécurité/AllowAddProvisioningPackage       |     No                            |     Empêche quiconque d’ajouter des packages de configuration qui peuvent tenter de remplacer les stratégies verrouillées.                         |
-   |     Stratégies/sécurité/AllowRemoveProvisioningPackage    |     No                            |     Empêche quiconque de supprimer ce package d’approvisionnement verrouillé.                                                           |
-   |     Stratégies/système/AllowLocation                       |     No                            |     Empêche l’appareil d’essayer d’effectuer le suivi des données d’emplacement.                                                                        |
-   |     Stratégies/WiFi/AllowWiFi                             |     No                            |     Désactive Wi-Fi                                                                                                                 |
+   |     Stratégies/sécurité/AllowAddProvisioningPackage       |     Non                            |     Empêche quiconque d’ajouter des packages de configuration qui peuvent tenter de remplacer les stratégies verrouillées.                         |
+   |     Stratégies/sécurité/AllowRemoveProvisioningPackage    |     Non                            |     Empêche quiconque de supprimer ce package d’approvisionnement verrouillé.                                                           |
+   |     Stratégies/système/AllowLocation                       |     Non                            |     Empêche l’appareil d’essayer d’effectuer le suivi des données d’emplacement.                                                                        |
+   |     Stratégies/WiFi/AllowWiFi                             |     Non                            |     Désactive Wi-Fi                                                                                                                 |
 
 1. sous Paramètres d’exécution, sélectionnez **comptes/utilisateurs/nom d’utilisateur : Holo/mot de passe**.
 
@@ -95,7 +95,7 @@ Créer un package d’approvisionnement de configuration sécurisé
 1. Connecter le HL2 à votre Windows 10 PC via un câble USB.
 1. Lancez l’outil ARC et sélectionnez **HoloLens 2**
 
-   ![HoloLens 2 écran de réinitialisation du nettoyage.](images/ARC2.png)
+   ![Écran initial de la réinitialisation d’HoloLens 2.](images/ARC2.png)
 
 1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages**.
 

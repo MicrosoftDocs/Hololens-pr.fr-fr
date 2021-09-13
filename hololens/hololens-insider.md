@@ -3,25 +3,25 @@ title: Insider Preview pour Microsoft HoloLens
 description: Découvrez comment prendre en main les builds Insider et fournir des commentaires précieux pour la prochaine mise à jour du système d’exploitation pour HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b865f9f9a9a734ef6a6c6419fc523049e925d5f8
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032604"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -37,9 +37,9 @@ Il s’agit là d’une amélioration des rapports de dépannage et d’appareil
 |-------------------------|----------------------------|--------------|------------------|
 | [Déplacement du mode de plateforme](#moving-platform-mode) | introduit la version bêta du Mode de plateforme mobile, qui, lorsqu’elle est configurée, permet l’utilisation de HoloLens 2 sur les grands navires marins ayant un mouvement faiblement dynamique. | Tous | 20348,1411 |
 | [Prise en charge des fichiers PFX pour le gestionnaire de certificats](#pfx-file-support-for-certificate-manager) | ajouter des certificats PFX via l’interface utilisateur Paramètres | Utilisateur final | 20348,1405 |
-| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Résolution des problèmes | 20348,1405 |
-| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Résolution des problèmes | 20348,1405 |
-| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Résolution des problèmes | 20348,1412 |
+| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage | 20348,1405 |
+| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
+| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Dépannage | 20348,1412 |
 | [modifications du CSP pour la création de rapports HoloLens détails](#csp-changes-for-reporting-hololens-details) | Nouveaux fournisseurs de services de chiffrement pour l’interrogation des données | Administrateurs informatiques    | 20348,1403                 |
 | [Stratégie de connexion automatique contrôlée par CSP](#auto-login-policy-controlled-by-csp) | Utilisé pour se connecter automatiquement à un compte | Administrateurs informatiques | 20348,1405 |
 | [Détection et notifications de redémarrage des mises à jour améliorées](#improved-update-restart-detection-and-notifications) | Nouvelles stratégies activées et expérience utilisateur pour les mises à jour. | Administrateurs informatiques | 20348,1405 |
@@ -186,8 +186,11 @@ Vous pouvez maintenant utiliser WDAC pour empêcher le lancement d’application
 - Correction d’un [problème connu pour le portail des appareils où aucune invite n’a été téléchargée pour le téléchargement des fichiers verrouillés.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Correction d’un [problème connu pour le portail des appareils avec délais de chargement et de téléchargement de fichiers.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - résout les problèmes liés à la création de rapports sur les propriétés de conformité des appareils HoloLens ; un redémarrage peut être nécessaire pour que les rapports corrects soient déclenchés sur les builds Insider.  
-- activation d’une [API d’accès affectée](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) afin que les applications puissent désormais déterminer si une HoloLens s’exécute en mode plein écran pour l’utilisateur connecté à la HoloLens.
+- activation d’une [API d’accès affectée](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) afin que les applications puissent désormais déterminer si une HoloLens s’exécute en mode plein écran pour l’utilisateur connecté à la HoloLens.
 - Mise à jour de la version intégrée de l’assistance à distance qui est installée sur des clignotements actualisés.
+- Le traitement du manette des applications 2D a été désactivé dans les builds Insider. En le supprimant, les applications sont désormais libres d’utiliser directement les API de manette de jeu et d’avoir accès à l’ensemble des contrôles et à tout ce qu’ils souhaitent. Les développeurs doivent utiliser les API de boîtier de manette pour consommer l’entrée du boîtier. Voici un exemple de [classe de manette (Windows. Gaming. Input)-Windows des applications UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Correction d’un problème où, après la première connexion de l’utilisateur, OOBE était arrêté dans les scénarios où des configurations de kiosque basées sur des groupes AAD étaient utilisées.
+- Correction d’un problème d’affichage des notifications de mise à jour et des invites de dialogue de redémarrage du périphérique.
 
 ## <a name="start-receiving-insider-builds"></a>Commencer à recevoir des builds Insider
 

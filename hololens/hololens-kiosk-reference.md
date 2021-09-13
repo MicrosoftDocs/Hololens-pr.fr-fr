@@ -14,13 +14,13 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122863937"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032564"
 ---
-# <a name="hololens-kiosk-reference-information"></a>HoloLens Informations de référence sur le kiosque
+# <a name="hololens-kiosk-reference-information"></a>Informations de référence sur le kiosque HoloLens
 
 cette page contient des informations utiles sur la configuration du mode plein écran de votre appareil HoloLens. Ces références incluent AUMIDs pour les applications de boîte de réception et recherchent les vôtres, ainsi que plusieurs exemples XML pour le mode plein écran, qui ne sont que quelques modifications qui ne peuvent pas être prêtes à être utilisées dans différents scénarios. Pour plus d’informations sur la configuration d’une borne, consultez la [page Configurer une borne.](hololens-kiosk.md)
 

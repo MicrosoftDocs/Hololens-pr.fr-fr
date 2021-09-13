@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: e332794baf20fbab8278a138ceeafb651c6fa2a06f3f41a66038e544f7a6e46b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661837"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032784"
 ---
 # <a name="hololens-1st-gen-release-notes"></a>notes de publication de la HoloLens 1re (gen)
 

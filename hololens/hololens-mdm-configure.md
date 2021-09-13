@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032554"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>utilisation de Microsoft Endpoint Manager Intune pour gérer les appareils HoloLens
 

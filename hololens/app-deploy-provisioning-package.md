@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
-ms.sourcegitcommit: f480d3cc8d549fa356e05df6ce15e9517f5b978a
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "123610987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032492"
 ---
 # <a name="provisioning-package"></a>Package de provisionnement
 

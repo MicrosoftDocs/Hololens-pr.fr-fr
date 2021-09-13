@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e856ac74e959743e8d05ea6acf583700a6450373
-ms.sourcegitcommit: 37611ac0a4efaf69816a734e16b763c810655f1a
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123411342"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032563"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurer HoloLens en tant que kiosque
 
@@ -135,7 +135,7 @@ configurez l' [appareil HoloLens pour utiliser le portail d’appareils Windows]
 
 Le mode plein écran peut être défini via l’API REST du portail de l’appareil en procédant à une publication sur/API/Holographic/KioskMode/Settings avec un paramètre de chaîne de requête obligatoire (« kioskModeEnabled » avec la valeur « true » ou « false ») et un paramètre facultatif (« startupApp » avec une valeur de nom de package). N’oubliez pas que le portail des appareils est destiné aux développeurs uniquement et qu’il ne doit pas être activé sur des appareils non-développeur. L’API REST est susceptible de changer dans les futures mises à jour/versions.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 ### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problème-aucune application n’est affichée dans le menu démarrer en mode plein écran
 

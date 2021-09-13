@@ -7,11 +7,11 @@ ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188982"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032436"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>contribution à la documentation HoloLens
 
@@ -81,9 +81,9 @@ utilisez le flux de travail suivant pour mettre à jour *un article existant* vi
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>Attribution d’un nouveau nom ou suppression d’un article existant
 
-Si votre modification renomme ou supprime un article existant, veillez à ajouter une redirection. De cette façon, toute personne disposant d’un lien vers l’article existant continuera de se retrouver au bon endroit. Les redirections sont gérées par l' .openpublishing.redirection.jssur le fichier à la racine du référentiel.
+Si votre modification renomme ou supprime un article existant, veillez à ajouter une redirection. De cette façon, toute personne disposant d’un lien vers l’article existant continuera de se retrouver au bon endroit. Les redirections sont gérées par le fichier. openpublishing. redirection. JSON à la racine du référentiel.
 
-Pour ajouter une redirection à .openpublishing.redirection.jssur, ajoutez une entrée au `redirections` tableau :
+Pour ajouter une redirection à. openpublishing. redirection. JSON, ajoutez une entrée au `redirections` tableau :
 
 ```json
 {
@@ -181,7 +181,7 @@ Vous devez charger vos images dans le dossier « Mixed-Real-docs/images » dan
 pendant la modification de GitHub via un navigateur web, vous pouvez sélectionner l’onglet d' **aperçu** près du haut de la page pour afficher un aperçu de votre travail avant de le valider. 
 
 >[!NOTE]
->L’aperçu de vos modifications sur review.docs.microsoft.com est uniquement disponible pour les employés de Microsoft
+>L’aperçu de vos modifications sur review.docs.microsoft.com n’est disponible que pour les employés de Microsoft
 
 Employés de Microsoft : lorsque vos contributions ont été fusionnées dans la branche par défaut, _maître_, vous pouvez passer en revue le contenu avant qu’il ne soit public sur </hololens ? Branch = Master>. Recherchez votre article à l’aide de la table des matières dans la colonne de gauche.
 

@@ -1,5 +1,5 @@
 ---
-title: Contrôle d’application Windows Defender - WDAC
+title: Contrôle d’application Windows Defender (WDAC)
 description: vue d’ensemble de ce que Windows Defender le contrôle d’Application et comment l’utiliser pour gérer des appareils de réalité mixte HoloLens.
 ms.prod: hololens
 ms.sitesec: library
@@ -7,26 +7,28 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/26/2020
+ms.date: 9/3/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032925"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Contrôle d’application Windows Defender - WDAC
 
-WDAC permet à un administrateur informatique de configurer ses appareils pour bloquer le lancement d’applications sur les appareils. Cela diffère des méthodes de restriction de l’appareil, telles que le mode plein écran, où l’utilisateur voit une interface utilisateur qui masque les applications sur l’appareil, mais qui peut toujours être lancée. Si WDAC est implémenté, les applications sont toujours visibles dans la liste toutes les applications, mais WDAC arrête l’exécution de ces applications et processus par l’utilisateur de l’appareil.
+## <a name="overview"></a>Vue d’ensemble
 
-Plusieurs stratégies WDAC peuvent être attribuées à un appareil. Si plusieurs stratégies WDAC sont définies sur un système, les plus restrictives prennent effet. 
+WDAC vous permet de configurer HoloLens pour bloquer le lancement d’applications. Il est différent du mode plein écran, où l’interface utilisateur masque les applications, mais elles peuvent toujours être lancées. Avec WDAC, vous pouvez voir les applications, mais elles ne peuvent pas être lancées.
 
 > [!NOTE]
-> lorsque les utilisateurs finaux tentent de lancer une application qui est bloquée par WDAC, sur HoloLens ils ne recevront pas de notification sur l’impossibilité de lancer cette application.
+> lorsque les utilisateurs finaux tentent de lancer une application qui est bloquée par WDAC sur HoloLens, ils ne sont pas avertis de l’impossibilité de lancer l’application.
+
+Plusieurs stratégies WDAC peuvent être attribuées à un appareil. Si plusieurs stratégies WDAC sont définies sur un système, les plus restrictives prennent effet. 
 
 voici un guide permettant aux utilisateurs d’apprendre à [utiliser WDAC et Windows PowerShell pour autoriser ou bloquer des applications sur des appareils HoloLens 2 avec Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
@@ -38,7 +40,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 Si vous ne connaissez pas le nom complet du package, vous devrez peut-être exécuter plusieurs fois’AppxPackage-name \* YourBestGuess \* 'pour le trouver. Ensuite, une fois que vous avez le nom « $package 1 = Get-AppxPackage-Name actual. PackageName »
 
-par exemple, l’exécution de la commande suivante pour Microsoft Edge renverra plusieurs résultats, mais à partir de cette liste, vous pouvez identifier que le nom complet dont vous avez besoin est Microsoft. MicrosoftEdge.
+par exemple, l’exécution du code suivant pour Microsoft Edge renverra plusieurs résultats, mais à partir de cette liste, vous pouvez identifier que le nom complet dont vous avez besoin est Microsoft. MicrosoftEdge.
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -61,7 +63,7 @@ voici une liste d’applications couramment utilisées et In-Box pour les appare
 | Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe      |
 | Hub de commentaires               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe         |
 | Explorateur de fichiers              | c5e2524a-ea46-4F67-841f-6a9465d9d515_cw5n1h2txyewy |
-| Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
+| Messagerie                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | Films et TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
@@ -81,6 +83,5 @@ si une application ne figure pas dans cette liste, cela signifie qu’un utilisa
 1. Une fois que le portail de l’appareil est connecté, accédez à **vues** , puis **applications**. 
 1. Dans le panneau applications installées, utilisez la liste déroulante pour sélectionner l’application installée. 
 1. Recherchez PackageRelativeID. 
-1. Copier les caractères de l’application avant le !, ces caractères sont PackageFamilyName.
-
+1. Copier les caractères de l’application avant le `!` , ces caractères sont PackageFamilyName.
 

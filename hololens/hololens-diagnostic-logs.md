@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 96fe9492da035747a22123ee1cd0c1481cd821a4f2e549b6414a21810ec268d6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665299"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032428"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Collecter et utiliser des informations de diagnostic sur des appareils HoloLens
 
@@ -77,7 +77,7 @@ Le hub de commentaires fournit deux emplacements permettant à l’utilisateur d
 
 ## <a name="settings-troubleshooter"></a>Paramètres Résolution des problèmes
 
-un utilisateur HoloLens peut utiliser l’application **Paramètres** sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour cela, procédez comme suit :
+un utilisateur HoloLens peut utiliser l’application **Paramètres** sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour ce faire, procédez comme suit :
 
 1. ouvrez l’application Paramètres et sélectionnez **mettre à jour &**  >  page **résolution des problèmes** de sécurité.
 1. Sélectionnez la zone appropriée, puis cliquez sur **Démarrer**.

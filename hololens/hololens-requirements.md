@@ -13,11 +13,11 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032871"
 ---
 # <a name="common-deployment-scenarios"></a>Scénarios courants de déploiement
 
@@ -29,7 +29,7 @@ Vous souhaitez déployer des solutions à grande échelle. Nous souhaitons vous 
 
 vous êtes peut-être un décideur d’entreprise, un professionnel de l’informatique ou une équipe d’innovation souhaitant adopter HoloLens au sein de votre organisation. au fur et à mesure que vous partez de la preuve de concept à un déploiement mis à l’échelle, nos guides de déploiement ont un sens de HoloLens au sein de votre infrastructure informatique, quelle que soit la taille ou la taille. Les scénarios de déploiement suivants sont les plus courants :
 
-| Scénario |Utilisation | Points clés |
+| Scénario |Usage | Points clés |
 |---------|---------|---------|
 | [Scénario A : appareils connectés au Cloud](hololens2-cloud-connected-overview.md) | Lorsque vous commencez votre déploiement pour la première fois, vous pouvez commencer petit et déployer un seul appareil connecté au Cloud juste pour voir le processus de base. | Les appareils sont connectés aux services Cloud et à Internet public. Cela est particulièrement adapté aux cas d’utilisation client, aux services de champ et à la preuve de concept.|
 | [Scénario B : réseau de l’Organisation](hololens2-corp-connected-overview.md) | Lorsque vous déployez en production à grande échelle, vous devrez peut-être intégrer le réseau de votre propre organisation. | Les appareils sont connectés à un réseau Wi-Fi « d’entreprise ». Cela est particulièrement adapté aux utilisateurs internes, ou à l’utilisation au sein de l’environnement d’entreprise.|

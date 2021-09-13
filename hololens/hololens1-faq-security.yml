@@ -16,12 +16,12 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115662652"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126032808"
 title: Questions de sécurité fréquemment posées sur HoloLens (1re génération)
 summary: ''
 sections:
@@ -76,7 +76,7 @@ sections:
   - question: >
       L’appareil peut-il utiliser l’infrastructure en tant que client ?
     answer: >
-      * Yes
+      * Oui
   - question: >
       Quel protocole est utilisé ?
     answer: >
@@ -100,11 +100,11 @@ sections:
   - question: >
       Existe-t-il une fonctionnalité de démarrage sécurisé pour le HoloLens ?
     answer: >
-      * Yes
+      * Oui
   - question: >
       Est-il possible de désactiver ou de déconnecter la prise en charge des périphériques de l’appareil ?
     answer: >
-      * Yes
+      * Oui
   - question: >
       Existe-t-il une capacité de contrôle ou de désactivation de l’utilisation de ports sur l’appareil ?
     answer: >
@@ -116,13 +116,13 @@ sections:
 
       * il est possible d’autoriser les applications à l’aide de Microsoft Enterprise Store, où vous pouvez choisir uniquement les applications spécifiques qui peuvent être téléchargées. En outre, grâce à MDM, vous pouvez verrouiller les applications spécifiques qui peuvent être exécutées ou même affichées sur l’appareil.
   - question: >
-      Pouvons-nous mettre l’appareil en quarantaine à partir du réseau de production jusqu’à ce que nous ayons mis à jour l’appareil s’il est hors connexion pendant une période prolongée ?  Exemple : L’appareil est assis dans un tiroir qui n’a pas été mis sous tension pendant une période (six mois) et n’a reçu aucune mise à jour, aucun correctif, etc.  En cas de tentative de mise sur le réseau, pouvons-nous le marquer et indiquer que vous devez mettre à jour sur un autre réseau avant d’être interrogé pour rejoindre le réseau.
+      Pouvons-nous mettre l’appareil en quarantaine à partir du réseau de production jusqu’à ce que nous ayons mis à jour l’appareil s’il est hors connexion pendant une période prolongée ?  Ex. L’appareil est assis dans un tiroir qui n’a pas été mis sous tension pendant une période (six mois) et n’a reçu aucune mise à jour, aucun correctif, etc.  En cas de tentative de mise sur le réseau, pouvons-nous le marquer et indiquer que vous devez mettre à jour sur un autre réseau avant d’être interrogé pour rejoindre le réseau.
     answer: >
       * Il s’agit d’une opération qui peut être gérée au niveau de l’infrastructure par le biais d’un serveur MDM ou local. L’appareil peut être marqué comme non conforme s’il ne correspond pas à une version de mise à jour spécifiée.
   - question: >
       Microsoft inclut-il des portes back ou un accès à des services qui permet à Microsoft de se connecter à l’appareil pour le partage d’écran ou le support à distance ?
     answer: >
-      * No
+      * Non
   - question: >
       Quand un certificat d’infrastructure à clé publique est généré pour la communication approuvée, nous voulons que le certificat soit généré sur l’appareil afin que nous sachions qu’il se trouve uniquement sur cet appareil, propre à cet appareil, et qu’il ne peut pas être exporté ou utilisé pour emprunter l’identité de l’appareil. Est-ce vrai sur HoloLens ? Si ce n’est pas le cas, existe-t-il une atténuation potentielle ?
     answer: >-

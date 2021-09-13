@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: HoloLens 2 FAQ sur l’édition Development
+  title: Questions fréquentes (FAQ) sur HoloLens 2 Development Edition
   description: restez à jour avec les questions les plus fréquemment posées sur l’appareil de réalité mixte HoloLens 2 Development Edition.
   keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
   author: evmill
@@ -16,11 +16,11 @@ metadata:
   appliesto:
   - HoloLens 2
   ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
-  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/20/2021
-  ms.locfileid: "122610248"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126032679"
 title: Questions fréquentes (FAQ) sur HoloLens 2 Development Edition
 summary: ''
 sections:

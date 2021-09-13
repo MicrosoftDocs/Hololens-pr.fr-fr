@@ -13,11 +13,11 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032776"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Déverrouiller les fonctionnalités de Windows Holographic for Business
 
@@ -55,7 +55,7 @@ les packages de provisionnement sont des fichiers créés par l’outil concepte
     > [!NOTE]
     > Vous pouvez configurer [des paramètres supplémentaires dans le package d’approvisionnement](hololens-provisioning.md).
 
-1. Dans le menu **Fichier**, sélectionnez **Enregistrer**. 
+1. Dans le menu **File** (Fichier), sélectionnez **Save** (Enregistrer). 
 
 1. Lisez l’avertissement indiquant que les fichiers projet peuvent contenir des informations sensibles, puis cliquez sur **OK**.
 

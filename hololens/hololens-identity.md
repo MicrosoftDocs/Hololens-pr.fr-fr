@@ -1,11 +1,11 @@
 ---
-title: Gérer les identités et les connexions des utilisateurs pour HoloLens
-description: apprenez à gérer l’identité des utilisateurs, la prise en charge multi-utilisateur, la sécurité, l’authentification d’entreprise et la connexion à HoloLens appareils.
+title: Gérer l’identité et la connexion des utilisateurs pour HoloLens
+description: découvrez comment gérer l’identité des utilisateurs, la prise en charge multi-utilisateur, la sécurité, l’authentification d’entreprise et la connexion à des appareils HoloLens.
 keywords: HoloLens, utilisateur, compte, AAD, Azure AD, adfs, compte microsoft, msa, informations d’identification, référence
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
-author: scooley
-ms.author: scooley
-ms.date: 10/6/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 8/13/2021
 ms.prod: hololens
 ms.custom:
 - CI 111456
@@ -14,25 +14,27 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: jarrettr
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e4c68ad6535293f916cc92c42204954110edc4fe
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: c2fd7c8ee82fbf70b9eaa2b5eee1d73e1235d8b5
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032594"
 ---
-# <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gérer les identités et les connexions des utilisateurs pour HoloLens
+# <a name="manage-user-identity-and-login-for-hololens"></a>Gérer l’identité et la connexion des utilisateurs pour HoloLens
 
 > [!NOTE]
 > Cet article est une référence technique pour les professionnels de l’informatique et les passionnés de technologies. si vous recherchez des instructions de configuration de HoloLens, consultez «[configuration de votre HoloLens (1er génération)](hololens1-start.md)» ou «[configuration de votre HoloLens 2](hololens2-start.md)».
 
-comme les autres appareils Windows, HoloLens fonctionne toujours dans un contexte utilisateur. Il y a toujours une identité d’utilisateur. HoloLens traite l’identité de la même façon que les autres Windows appareils. cet article est une référence approfondie de l’identité sur HoloLens, et se concentre sur la façon dont HoloLens diffère des autres appareils Windows.
+## <a name="lets-talk-about-setting-up-user-identity-for-hololens-2"></a>Parlons de la configuration de l’identité de l’utilisateur pour HoloLens 2
 
-HoloLens prend en charge plusieurs types d’identités utilisateur. Vous pouvez utiliser un ou plusieurs comptes d’utilisateur pour vous connecter. Voici une vue d’ensemble des types d’identité et des options d’authentification sur HoloLens :
+comme les autres appareils Windows, HoloLens fonctionne toujours dans un contexte utilisateur. Il y a toujours une identité d’utilisateur. HoloLens traite l’identité de la même manière qu’un appareil Windows 10. la connexion au cours de l’installation crée un profil utilisateur sur HoloLens qui stocke les applications et les données. le même compte fournit également l’authentification unique pour les applications, telles que Edge ou Dynamics 365 Remote Assist, à l’aide des api du gestionnaire de comptes Windows. 
+
+HoloLens prend en charge plusieurs types d’identités utilisateur. Vous pouvez choisir l’un de ces trois types de comptes, mais nous vous recommandons vivement Azure AD, car il est préférable de gérer les appareils. Seuls les comptes de Azure AD prennent en charge plusieurs utilisateurs. 
 
 | Type d'identité | Comptes par appareil | Options d’authentification |
 | --- | --- | --- |
@@ -52,7 +54,7 @@ Les comptes connectés au Cloud (Azure AD et MSA) offrent davantage de fonctionn
 
 ## <a name="setting-up-users"></a>Configuration des utilisateurs
 
-Il existe deux façons de configurer un nouvel utilisateur sur le HoloLens. la méthode la plus courante est la HoloLens OOBE (out-of-box experience). si vous utilisez Azure Active Directory, [les autres utilisateurs peuvent se connecter](#setting-up-multi-user-support-azure-ad-only) après OOBE à l’aide de leurs informations d’identification Azure AD. les appareils HoloLens qui sont initialement configurés avec un compte MSA ou un compte local pendant OOBE ne prennent pas en charge plusieurs utilisateurs. consultez configuration de votre [HoloLens (1re génération)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
+Il existe deux façons de configurer un nouvel utilisateur sur le HoloLens. la méthode la plus courante est la HoloLens OOBE (out-of-box experience). si vous utilisez Azure Active Directory, [les autres utilisateurs peuvent se connecter](#setting-up-multi-user-support-azure-ad-only) après OOBE à l’aide de leurs informations d’identification Azure AD. les appareils HoloLens qui sont initialement configurés avec un compte MSA ou un compte local au cours d’OOBE ne prennent pas en charge plusieurs utilisateurs. consultez configuration de votre [HoloLens (1re génération)](hololens1-start.md) ou [HoloLens 2](hololens2-start.md).
 
 si vous utilisez un compte d’entreprise ou professionnel pour vous connecter à HoloLens, HoloLens s’inscrit dans l’infrastructure informatique de l’organisation. Cette inscription permet à votre administrateur informatique de configurer la gestion des appareils mobiles (MDM) pour envoyer des stratégies de groupe à votre HoloLens.
 
@@ -62,7 +64,7 @@ par défaut, comme pour les autres appareils Windows 10, vous devez vous reconne
 
 ### <a name="linked-accounts"></a>Comptes liés
 
-comme dans la version de bureau de Windows, vous pouvez lier des informations d’identification de compte web supplémentaires à votre compte HoloLens. Cette liaison facilite l’accès aux ressources dans ou dans les applications (telles que le magasin) ou pour combiner l’accès aux ressources personnelles et professionnelles. Une fois que vous avez connecté un compte à l’appareil, vous pouvez accorder l’autorisation d’utiliser l’appareil aux applications afin de ne pas avoir à vous connecter individuellement à chaque application.
+comme dans la version de bureau de Windows, vous pouvez lier d’autres informations d’identification de compte web à votre compte HoloLens. Cette liaison facilite l’accès aux ressources dans ou dans les applications (telles que le magasin) ou pour combiner l’accès aux ressources personnelles et professionnelles. Une fois que vous avez connecté un compte à l’appareil, vous pouvez accorder l’autorisation d’utiliser l’appareil aux applications afin de ne pas avoir à vous connecter individuellement à chaque application.
 
 La liaison de comptes ne sépare pas les données utilisateur créées sur l’appareil, telles que les images ou les téléchargements.  
 
@@ -80,13 +82,13 @@ Les appareils configurés avec des comptes de Azure AD ne permettent pas de se c
 > [!NOTE]
 > **HoloLens (1ère génération)** a commencé à prendre en charge plusieurs utilisateurs Azure AD dans la [Windows 10 mise à jour 2018 d’avril](/windows/mixed-reality/release-notes-april-2018) dans le cadre de [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
-### <a name="multiple-users-listed-on-sign-in-screen"></a>Plusieurs utilisateurs sont listés sur l’écran de connexion
+### <a name="multiple-users-are-listed-on-sign-in-screen"></a>Plusieurs utilisateurs sont répertoriés dans l’écran de connexion
 
-Auparavant, l’écran de connexion affichait uniquement l’utilisateur connecté le plus récemment, ainsi que le point d’entrée « autre utilisateur ». Nous avons reçu des commentaires des clients qui ne suffisent pas si plusieurs utilisateurs se sont connectés à l’appareil. Ils devaient encore retaper leur nom d’utilisateur, etc.
+Auparavant, l’écran de connexion affichait uniquement l’utilisateur connecté le plus récemment et le point d’entrée « autre utilisateur ». Nous avons reçu des commentaires des clients qui ne suffisent pas si plusieurs utilisateurs se sont connectés à l’appareil. Ils devaient encore retaper leur nom d’utilisateur, etc.
 
-présenté dans [Windows holographique, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), lors de la sélection d’un **autre utilisateur** situé à droite du champ d’entrée du code confidentiel, l’écran de connexion affiche plusieurs utilisateurs ayant déjà été connectés à l’appareil. cela permet aux utilisateurs de sélectionner leur profil utilisateur, puis de se connecter à l’aide de leurs informations d’identification de Windows Hello. Un nouvel utilisateur peut également être ajouté à l’appareil à partir de la page autres utilisateurs via le bouton **Ajouter un compte** .
+présenté dans [Windows holographique, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1), lors de la sélection d’un **autre utilisateur** situé à droite du champ d’entrée de code confidentiel, l’écran de connexion affiche plusieurs utilisateurs ayant déjà été connectés à l’appareil. cela permet aux utilisateurs de sélectionner leur profil utilisateur, puis de se connecter à l’aide de leurs informations d’identification de Windows Hello. Un nouvel utilisateur peut également être ajouté à l’appareil à partir de la page **autres utilisateurs** via le bouton **Ajouter un compte** .
 
-Quand vous êtes dans le menu autres utilisateurs, le bouton autres utilisateurs affiche le dernier utilisateur connecté à l’appareil. Sélectionnez ce bouton pour revenir à l’écran de connexion de cet utilisateur.
+Quand vous êtes dans le menu **autres utilisateurs** , le bouton **autres utilisateurs** affiche le dernier utilisateur connecté à l’appareil. Sélectionnez ce bouton pour revenir à l’écran de connexion de cet utilisateur.
 
 ![Écran de connexion par défaut.](./images/multiusers1.jpg)
 
@@ -108,7 +110,7 @@ Si votre application nécessite un type de compte spécifique qui n’a pas ét�
 
 ## <a name="enterprise-and-other-authentication"></a>Enterprise et d’autres authentifications
 
-si votre application utilise d’autres types d’authentification, tels que NTLM, de base ou Kerberos, vous pouvez utiliser [Windows interface utilisateur des informations d’identification](/uwp/api/Windows.Security.Credentials.UI) pour collecter, traiter et stocker les informations d’identification de l’utilisateur. L’expérience utilisateur pour la collecte de ces informations d’identification est très similaire à celle des autres interruptions de compte Cloud, et apparaît en tant qu’application enfant sur votre application 2D ou interrompt brièvement une application Unity pour afficher l’interface utilisateur.
+si votre application utilise d’autres types d’authentification, tels que NTLM, de base ou Kerberos, vous pouvez utiliser [Windows interface utilisateur des informations d’identification](/uwp/api/Windows.Security.Credentials.UI) pour collecter, traiter et stocker les informations d’identification de l’utilisateur. L’expérience utilisateur pour la collecte de ces informations d’identification est similaire à celle des autres interruptions de compte pilotées par le Cloud, et apparaît en tant qu’application enfant sur votre application 2D ou interrompt brièvement une application Unity pour afficher l’interface utilisateur.
 
 ## <a name="deprecated-apis"></a>API déconseillées
 
@@ -118,7 +120,7 @@ l’une des façons dont le développement pour HoloLens diffère du développem
 
 ### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>est-Windows Hello pour les entreprises prises en charge sur HoloLens (1ère génération) ?
 
-Windows Hello pour les entreprises (qui prend en charge l’utilisation d’un code confidentiel pour la connexion) est pris en charge pour les HoloLens (1er génération). pour autoriser la connexion du code confidentiel Windows Hello pour l’entreprise sur HoloLens :
+Windows Hello pour les entreprises (qui prend en charge l’utilisation d’un code confidentiel pour la connexion) est pris en charge pour les HoloLens (1er génération). pour autoriser la connexion du code confidentiel Windows Hello pour entreprise sur HoloLens :
 
 1. l’appareil HoloLens doit être [géré par MDM](hololens-enroll-mdm.md).
 1. vous devez activer Windows Hello pour l’appareil. ([Voir les instructions pour Microsoft Intune.](/intune/windows-hello))

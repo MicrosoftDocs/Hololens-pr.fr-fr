@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189441"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032654"
 ---
 # <a name="hololens-2-cleaning-faq"></a>Questions fréquentes (FAQ) sur le nettoyage de HoloLens 2
 
@@ -79,7 +79,7 @@ Pour nettoyer le panneau de navigateur, réinitialisez-le à l’aide d’un chi
 
 ## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Puis-je utiliser de la lumière ultraviolette (UV) pour assainir l’appareil ?
 
-L’irradiance UVC à l’aide de la del UVC, qui opère au niveau d’intensité de 0,5-0,6 mW/cm<sup>2</sup>et n’émet pas d’ozone, peut être utilisé pour assainir HoloLens2. Veuillez suivre les spécifications du fabricant sur la gestion et le temps d’exposition.
+UVC irradiisation à l’aide de UVC LED ou d’une lumière UVC fluorescente filtrée, qui fonctionne au niveau d’intensité de 0,5-0,6 mW/cm2 et qui n’émet pas d’ozone, peut être utilisée pour assainir HoloLens 2. Veuillez suivre les spécifications du fabricant sur la gestion et le temps d’exposition.
 
 > [!CAUTION]  
 > Les niveaux élevés d’exposition UV-A et UV-B peuvent nuire à la qualité d’affichage de l’appareil et endommager le revêtement du visière. La surexposition aux radiations UV-A et UV-B a les effets suivants, en ordre de la durée et de l’intensité de l’exposition :

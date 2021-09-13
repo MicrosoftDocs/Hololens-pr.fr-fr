@@ -17,18 +17,18 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665248"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032483"
 ---
 # <a name="intune--company-portal"></a>Intune et le portail d’entreprise
 
 avec la gestion des appareils mobiles (MDM), vous pouvez utiliser vos propres applications personnalisées par le biais de [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) pour les déployer directement sur vos appareils HoloLens. Microsoft Intune est un service cloud qui se concentre sur la gestion des appareils mobiles (MDM) et la gestion des applications mobiles (GAM). Intune est inclus dans la suite [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) de Microsoft, et permet aux utilisateurs d’être productifs tout en protégeant les données de votre organisation. Pour en savoir plus sur Intune, consultez [qu’est-ce qu’Intune](/mem/intune/fundamentals/what-is-intune).
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
 1. Télécharger une application à une activité ou téléchargez une application personnalisée sur votre locataire Intune. voir aussi : [Enterprise la gestion des applications](/windows/client-management/mdm/enterprise-app-management).
 

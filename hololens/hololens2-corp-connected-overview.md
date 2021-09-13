@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190172"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032688"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Guide de déploiement-connexion d’entreprise HoloLens 2 avec Dynamics 365 Guides-vue d’ensemble
 
@@ -58,7 +58,7 @@ L’infrastructure suivante doit déjà être en place :
 [![Diagramme du réseau connecté à l’entreprise, étape 2. ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ## <a name="in-this-guide-you-will"></a>Dans ce guide, vous allez :
-### <a name="prepare"></a>Préparer
+### <a name="prepare"></a>Préparation
 > [!div class="checklist"]
 >- [en savoir plus sur les notions fondamentales de l’infrastructure pour les appareils HoloLens 2.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [En savoir plus sur les Azure AD et en configurer une si vous n’en avez pas.](hololens2-corp-connected-prepare.md#azure-active-directory)

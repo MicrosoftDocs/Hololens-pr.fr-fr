@@ -14,11 +14,11 @@ ms.custom:
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
 ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032863"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
@@ -39,7 +39,7 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 - [Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive ne charge pas automatiquement les images](#onedrive-doesnt-automatically-upload-pictures)
 
-**Général**
+**Généralités**
 - [HoloLens ne répond pas ou ne démarre pas](#hololens-is-unresponsive-or-wont-start)
 - [Erreur « espace disque insuffisant »](#low-disk-space-error)
 - [Échec de l’étalonnage](#calibration-fails)

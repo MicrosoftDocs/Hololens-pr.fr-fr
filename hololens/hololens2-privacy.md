@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 Confidentialité et protection des données
+title: Confidentialité et protection des données HoloLens 2
 description: Documentation sur la confidentialité
 keywords: HoloLens, rgpd, confidentialité, PII, protection des données
 author: golish
@@ -15,13 +15,13 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 74f74645a3fc1282f48cb7ce0f6f722979c91b04
-ms.sourcegitcommit: 548550f309010fa95f674a7ff688166a31cf1963
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122336736"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032623"
 ---
-# <a name="hololens-2-privacy-and-data-protection"></a>HoloLens 2 Confidentialité et protection des données
+# <a name="hololens-2-privacy-and-data-protection"></a>Confidentialité et protection des données HoloLens 2
 
 L’un des principaux éléments du RGPD est « protection des données par conception ». ce concept s’applique particulièrement aux périphériques mobiles, comme le HoloLens 2, en raison de leur portabilité, de connexions internet illimitées et de canaux de communication ouverts. par conséquent, la [sécurité](/hololens/security-architecture) de l’HoloLens 2 a été repensée pour fournir une protection avancée et innovante de la sécurité et de la confidentialité, de bout en bout, incorporant à la fois l’approche de Microsoft en [matière de confidentialité et de rgpd](https://privacy.microsoft.com/).
 

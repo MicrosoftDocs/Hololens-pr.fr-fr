@@ -3,26 +3,33 @@ title: partager votre HoloLens avec plusieurs personnes
 description: vous pouvez configurer HoloLens pour qu’il soit partagé par plusieurs comptes Azure Active Directory ou par plusieurs utilisateurs qui utilisent un seul compte.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/16/2019
+ms.date: 9/3/2021
 ms.reviewer: ''
-manager: laurawi
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 821ef2d17531226177e508b1428af82012c16406e9fbce3ed1a5617c767adfe8
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e3acd2665e93e44bce2c5dad467c825dc768bfed
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663076"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032911"
 ---
 # <a name="share-your-hololens-with-multiple-people"></a>partager votre HoloLens avec plusieurs personnes
 
-il est courant de partager un HoloLens avec de nombreuses personnes ou de nombreuses personnes partagent un ensemble d’appareils HoloLens.  Cet article décrit les différentes façons dont vous pouvez partager un appareil.
+## <a name="overview"></a>Vue d’ensemble
+les entreprises investissent souvent dans de nombreux appareils HoloLens partagés. la façon dont vous utilisez HoloLens est flexible dans le tableau, en fonction de vos besoins spécifiques. Voici un exemple d’expériences multi-utilisateurs : 
+
+- les appareils qui sont facturés et qui ont Dynamics 365 Guides et permettent à vos employés d’ouvrir l’application Paramètres pour apporter des ajustements aux Wi-Fi nécessaires, mais la stratégie de visibilité des Paramètres de Page est activée pour limiter la quantité de pages disponibles dans l’application Paramètres.
+- Appareils destinés à l’assistance à distance et à votre application métier qui sont loués à d’autres sociétés. Ces appareils ont des bornes qui incluent uniquement votre application et l’assistance à distance. WDAC est utilisé pour empêcher le lancement de l’application Paramètres et Microsoft Edge. La location est un pack de batterie USB-C qui permet de maintenir les appareils à pleine charge sur plusieurs équipes.
+- Tous vos appareils sont configurés pour AutoPilot et téléchargent toutes les applications de votre entreprise. Vous avez configuré plusieurs profils kiosque, ciblant différents groupes de Azure AD. chaque utilisateur se connecte au HoloLens à l’aide de clés FIDO2 et se connecte à son propre compte Azure AD, et est présenté avec une expérience personnalisée.
+
+
 
 ## <a name="share-with-multiple-people-each-using-their-own-account"></a>Partager avec plusieurs personnes, chacune utilisant son propre compte
 
@@ -40,7 +47,7 @@ pour vous assurer que plusieurs personnes peuvent utiliser leurs propres comptes
 
 pour utiliser HoloLens, chaque utilisateur suit les étapes suivantes :
 
-1. Si un autre utilisateur a utilisé l’appareil, effectuez l’une des opérations suivantes :
+1. Si un autre utilisateur utilise l’appareil, choisissez l’une des options suivantes :
    - Appuyez une fois sur le bouton d’alimentation pour accéder à la mise en veille, puis appuyez de nouveau sur le bouton d’alimentation pour revenir à l’écran de verrouillage
    - HoloLens 2 utilisateurs peuvent sélectionner la vignette de l’utilisateur dans la menu Démarrer pour déconnecter l’utilisateur actuel.
 

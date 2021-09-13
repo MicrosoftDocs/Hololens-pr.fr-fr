@@ -13,11 +13,11 @@ ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188897"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032443"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planification du déploiement de HoloLens 2 dans un environnement commercial
 
@@ -42,7 +42,7 @@ les étapes et la vidéo suivantes peuvent vous guider tout au long du processus
 
 > [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
 
-## <a name="prepare"></a>Préparer
+## <a name="prepare"></a>Préparation
 
 découvrez les services d’infrastructure essentiels requis pour prendre en charge l’ensemble complet des fonctionnalités de HoloLens 2.
 

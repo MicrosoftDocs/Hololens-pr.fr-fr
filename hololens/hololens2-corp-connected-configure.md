@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032727"
 ---
 # <a name="configure---corporate-connected-guide"></a>Configurer-Guide connecté à l’entreprise
 
@@ -102,7 +102,7 @@ Si vous développez encore vos applications ou si vous n’en avez pas encore, v
 Si vous préférez utiliser votre propre application ou si vous êtes intéressé par le développement d’applications pour la réalité mixte, n’hésitez pas à consulter notre [documentation de développeur de réalité mixte](/windows/mixed-reality/design/design).
 
 > [!NOTE]
-> la configuration système requise pour HoloLens périphériques est basée sur l’architecture de la build de l’application. les appareils HoloLens 2 utilisent l’architecture ARM. lorsque vous créez vos applications dans Visual Studio, assurez-vous que vous avez sélectionné l’architecture appropriée pour l’appareil et incluez les dépendances nécessaires.
+> La configuration requise pour les appareils HoloLens dépend de l’architecture de la build de l’application. les appareils HoloLens 2 utilisent l’architecture ARM. lorsque vous créez vos applications dans Visual Studio, assurez-vous que vous avez sélectionné l’architecture appropriée pour l’appareil et incluez les dépendances nécessaires.
 
 > [!IMPORTANT]
 > Lors du déploiement d’applications métier, il est important de charger également le certificat sur Intune et de l’affecter au même groupe que celui qui est destiné à utiliser l’application, sinon il ne s’installera pas correctement.
@@ -125,7 +125,7 @@ Si vous préférez utiliser votre propre application ou si vous êtes intéress�
 
 8. Sous requis, ajoutez notre groupe créé précédemment pour rendre cette application obligatoire pour le groupe. L’application sera alors automatiquement téléchargée sur les appareils inscrits dans le groupe. Sélectionnez **Suivant**.
 
-9. Sélectionnez **Créer**.
+9. Sélectionnez **Create** (Créer).
 
 En savoir plus : [affecter des applications à des groupes dans Microsoft Intune](/mem/intune/apps/apps-deploy#assign-an-app)
 

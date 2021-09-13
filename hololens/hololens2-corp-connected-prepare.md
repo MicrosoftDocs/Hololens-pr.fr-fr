@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190206"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032687"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Préparer-Guide connecté à l’entreprise
 ## <a name="infrastructure-essentials"></a>Notions fondamentales de l’infrastructure
