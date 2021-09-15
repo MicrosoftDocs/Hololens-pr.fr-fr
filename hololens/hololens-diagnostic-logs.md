@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032428"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817274"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Collecter et utiliser des informations de diagnostic sur des appareils HoloLens
 
@@ -57,6 +57,7 @@ un utilisateur HoloLens peut utiliser l’application de bureau Microsoft Feedba
 
 >[!IMPORTANT]
 > Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous recommandons vivement de définir la télémétrie de votre appareil sur **facultatif**. vous pouvez définir cette valeur pendant l’expérience OOBE (Out-of-box-experience) ou à l’aide de l’application **Paramètres** . pour ce faire, à l’aide de Paramètres, sélectionnez **Start > Paramètres > Privacy > application diagnostics > sur**.
+
 ### <a name="prerequisites"></a>Prérequis
 
 - L’appareil est connecté à un réseau.
@@ -91,6 +92,7 @@ un utilisateur peut également configurer le comportement des diagnostics de sec
 ### <a name="os-update-troubleshooter"></a>Dépannage des mises à jour du système d’exploitation
 sur les builds [Windows holographique, version 21H1 et versions](hololens-release-notes.md#windows-holographic-version-21h1) ultérieures :
 - en plus des dépannages précédents au sein de l’application Paramètres, un nouvel utilitaire de résolution des problèmes a été ajouté avec l’ajout de la nouvelle application Paramètres pour les mises à jour du système d’exploitation. accédez à **Paramètres-> Update & Security-> Troubleshoot-> Windows Update** et sélectionnez **Start**. Cela vous permet de collecter des traces tout en reproduisant votre problème avec les mises à jour du système d’exploitation afin d’améliorer la résolution des problèmes avec votre service informatique ou votre support technique.
+
 ### <a name="prerequisites"></a>Prérequis
 
 - l’application **Paramètres** est installée sur l’appareil et est disponible pour l’utilisateur.
@@ -107,6 +109,10 @@ Les informations de diagnostic sont stockées sur l’appareil. Si l’appareil 
 > dans ce chemin d’accès et ce nom de fichier, \<*HoloLens device name*> représente le nom du HoloLens périphérique et \<*ddmmyyhhmmss*> représente la date et l’heure de création du fichier.
 
 Les informations de diagnostic sont conservées dans ces emplacements jusqu’à ce que l’utilisateur les supprime.
+
+### <a name="view-diagnostic-report"></a>Afficher le rapport de diagnostic
+
+pour afficher les diagnostics MDM sur HoloLens 2, sélectionnez votre icône WiFi, accédez à **Paramètres**  ->  **comptes**  >  **accès professionnel ou scolaire** , puis sélectionnez **exporter les journaux de gestion**. HoloLens envoie les fichiers journaux à votre compte et affiche leur emplacement sur votre ordinateur de bureau.
 
 ## <a name="diagnosticlog-csp"></a>Fournisseur CSP DiagnosticLog
 
@@ -153,13 +159,20 @@ Regardez cette vidéo pour en savoir plus.
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 Pour collecter les Diagnostics, procédez comme suit :
+
 1.  Connecter l’appareil à l’aide d’un câble USB sur votre PC.
+
 2.  dans l’explorateur de fichiers sur votre pc, accédez à **« This PC \<hololens-device> \Internal Stockage »**.
+
 3.  si le dossier **interne Stockage** n’apparaît pas, l’appareil attend qu’un utilisateur se connecte. Connectez-vous ou mettez hors tension l’appareil en maintenant enfoncé le bouton d’alimentation pendant 10 secondes.
+
 4.  Appuyez sur le bouton **d’alimentation** et relâchez-le immédiatement.
+
 5.  Attendez une minute que l’appareil prépare les archives zip. (Un fichier temporaire nommé HololensDiagnostics. Temp peut devenir visible pendant que l’appareil génère les archives zip. N’accédez pas à ce fichier ou ne l’enregistrez pas. Une fois le processus terminé, il est remplacé par les archives zip.)
+
 6.  Actualisez l’Explorateur de fichiers et accédez au dossier **« \Documents »** .
+
 7.  Copiez les fichiers ZIP de diagnostics et partagez-les avec l’équipe du support technique Microsoft.
 
-> [!NOTE]
-> Certains fichiers ZIP de diagnostic peuvent contenir des PII.
+    > [!NOTE]
+    > Certains fichiers ZIP de diagnostic peuvent contenir des PII.
