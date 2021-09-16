@@ -76,8 +76,6 @@
 ### [Sécurité du réseau](security-network-security.md)
 ### [Ingénierie de sécurité](security-engineering.md)
 ### [Confidentialité et protection des données HoloLens 2](hololens2-privacy.md)
-## Gestion des appareils
-### [Utilisation de GPM pour gérer les appareils HoloLens](hololens-mdm-configure.md)
 ## Inscription d’appareil
 ### [Inscrire HoloLens dans GPM](hololens-enroll-mdm.md)
 ### [Windows Autopilot pour HoloLens 2](hololens2-autopilot.md) 
@@ -90,6 +88,7 @@
 ### [Programme d’installation d’application](app-deploy-app-installer.md)
 ## Politiques (CSP)
 ### [Vue d’ensemble de la configuration des fournisseurs CSP et de la gestion des appareils](hololens-csp-policy-overview.md)
+### [Utilisation de GPM pour gérer les appareils HoloLens](hololens-mdm-configure.md)
 ### [Configurer HoloLens à l’aide de packages de provisionnement](hololens-provisioning.md)
 ### [Restrictions d’appareil courantes](hololens-common-device-restrictions.md)
 ### [Configurer HoloLens en tant que kiosque](hololens-kiosk.md)

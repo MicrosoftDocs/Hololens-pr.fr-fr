@@ -8,19 +8,19 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/8/2021
+ms.date: 9/16/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f27a469e76df1ccf29a2823b48f3640bdf414050
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 80b23e1cc851081179e6deee2e5fd13d374946f1
+ms.sourcegitcommit: f1c50b39430026fd5e3c92ac1a09f07b69733325
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032872"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127862474"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -31,6 +31,22 @@ pour vous assurer que vous disposez d’une expérience productive avec vos appa
 
 > [!IMPORTANT]
 > en raison d’un [problème connu maintenant résolu dans notre build 21H1 qui affectait les utilisateurs de l’assistance à distance](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), nous avons suspendu temporairement l’offre de Windows des mises à jour 21H1 holographiques. nous avions également modifié la version par défaut de l’ARC de récupération avancée (ARC) dans la [mise à jour Windows holographique, version 20H2-juin 2021](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). La build ARC reprend à présent le ciblage de la build 21H1.
+
+## <a name="windows-holographic-version-21h1---september-2021-update"></a>Windows Holographique, version 21H1-mise à jour de septembre 2021
+
+- Build 20348,1018
+
+Améliorations et correctifs de la mise à jour :
+
+- Correctifs pour résoudre le problème où l’heure système peut sauter de manière inattendue.
+
+## <a name="windows-holographic-version-20h2---september-2021-update"></a>Windows Holographique, version 20H2-mise à jour de septembre 2021
+
+- Build 19041,1165
+
+Améliorations et correctifs de la mise à jour :
+
+- Correctifs pour résoudre le problème où l’heure système peut sauter de manière inattendue.
 
 ## <a name="windows-holographic-version-21h1---august-2021-update"></a>Windows Holographique, version 21H1-mise à jour 2021 d’août
 
