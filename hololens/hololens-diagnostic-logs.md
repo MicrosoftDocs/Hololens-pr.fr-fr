@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
-ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
+ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "127817274"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833520"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Collecter et utiliser des informations de diagnostic sur des appareils HoloLens
 
@@ -90,6 +90,7 @@ un utilisateur peut également configurer le comportement des diagnostics de sec
 > Si une stratégie MDM est configurée pour l’appareil, l’utilisateur ne sera pas en mesure de remplacer ce comportement.
 
 ### <a name="os-update-troubleshooter"></a>Dépannage des mises à jour du système d’exploitation
+
 sur les builds [Windows holographique, version 21H1 et versions](hololens-release-notes.md#windows-holographic-version-21h1) ultérieures :
 - en plus des dépannages précédents au sein de l’application Paramètres, un nouvel utilitaire de résolution des problèmes a été ajouté avec l’ajout de la nouvelle application Paramètres pour les mises à jour du système d’exploitation. accédez à **Paramètres-> Update & Security-> Troubleshoot-> Windows Update** et sélectionnez **Start**. Cela vous permet de collecter des traces tout en reproduisant votre problème avec les mises à jour du système d’exploitation afin d’améliorer la résolution des problèmes avec votre service informatique ou votre support technique.
 
@@ -138,6 +139,7 @@ L’administrateur informatique utilise le CSP DiagnosticLog pour configurer les
 - Autorisations qui contrôlent l’accès aux informations de diagnostic.
 
 ## <a name="offline-diagnostics"></a>Diagnostics hors connexion
+
 dans les situations où l’appareil n’est pas en mesure de collecter des diagnostics via le Hub de commentaires ou l’utilitaire de résolution des problèmes de Paramètres, vous pouvez collecter les diagnostics manuellement. Cela est nécessaire lorsque l’appareil ne peut pas se connecter à Wi-Fi ou que vous ne pouvez pas accéder à d’autres méthodes mentionnées ci-dessus. Les diagnostics collectent les vidages sur incident et les journaux de l’appareil qui aident un ingénieur du support technique Microsoft à isoler les problèmes.
 
 Cela fonctionne lorsque l’appareil s’affiche dans l’Explorateur de fichiers après l’avoir connecté à un PC via un câble USB.
