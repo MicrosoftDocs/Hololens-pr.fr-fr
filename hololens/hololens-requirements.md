@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 4b8975d8eb362212eaf91966f4efa0bc22236327
+ms.sourcegitcommit: 3f21b692be2f1b7f9c382f2b735b4c10339d4a78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032871"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127934066"
 ---
 # <a name="common-deployment-scenarios"></a>Scénarios courants de déploiement
 
@@ -25,11 +25,11 @@ ms.locfileid: "126032871"
 
 Il peut être difficile de savoir comment déployer un nouvel appareil lorsque vous l’essayez pour la première fois. ici, nous partageons différentes façons de déployer et de gérer des appareils Microsoft HoloLens 2 au sein de l’organisation.
 
-Vous souhaitez déployer des solutions à grande échelle. Nous souhaitons vous y aider. Commençons par parler des étapes de déploiement des appareils, par conséquent des hologrammes, afin d’obtenir une valeur pour votre scénario de réalité mixte cible, que vous utilisiez D365 Remote Assist, guides ou une application Azure Mixed Reality Service activée que vous avez créée.
+Vous souhaitez déployer des solutions à grande échelle. Nous souhaitons vous y aider. Commençons par parler des étapes de déploiement des appareils, par conséquent des hologrammes, afin d’obtenir une valeur pour votre scénario de réalité mixte cible. Que vous utilisiez D365 Remote Assist, guides ou une application Azure Mixed Reality Service activée que vous avez créée, nos scénarios de déploiement courants vous guideront.
 
 vous êtes peut-être un décideur d’entreprise, un professionnel de l’informatique ou une équipe d’innovation souhaitant adopter HoloLens au sein de votre organisation. au fur et à mesure que vous partez de la preuve de concept à un déploiement mis à l’échelle, nos guides de déploiement ont un sens de HoloLens au sein de votre infrastructure informatique, quelle que soit la taille ou la taille. Les scénarios de déploiement suivants sont les plus courants :
 
-| Scénario |Usage | Points clés |
+| Scénario |Utilisation | Points clés |
 |---------|---------|---------|
 | [Scénario A : appareils connectés au Cloud](hololens2-cloud-connected-overview.md) | Lorsque vous commencez votre déploiement pour la première fois, vous pouvez commencer petit et déployer un seul appareil connecté au Cloud juste pour voir le processus de base. | Les appareils sont connectés aux services Cloud et à Internet public. Cela est particulièrement adapté aux cas d’utilisation client, aux services de champ et à la preuve de concept.|
 | [Scénario B : réseau de l’Organisation](hololens2-corp-connected-overview.md) | Lorsque vous déployez en production à grande échelle, vous devrez peut-être intégrer le réseau de votre propre organisation. | Les appareils sont connectés à un réseau Wi-Fi « d’entreprise ». Cela est particulièrement adapté aux utilisateurs internes, ou à l’utilisation au sein de l’environnement d’entreprise.|
