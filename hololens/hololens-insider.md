@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e3b067987fb339bc070fcb64ed01c28dee21ec35
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: bdfdcda8cc890691f6112e7798d402ca9e7f4c6d
+ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833537"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "127904308"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -37,9 +37,9 @@ Il s’agit là d’une amélioration des rapports de dépannage et d’appareil
 |-------------------------|----------------------------|--------------|------------------|
 | [Déplacement du mode de plateforme](#moving-platform-mode) | introduit la version bêta du Mode de plateforme mobile, qui, lorsqu’elle est configurée, permet l’utilisation de HoloLens 2 sur les grands navires marins ayant un mouvement faiblement dynamique. | Tous | 20348,1411 |
 | [Prise en charge des fichiers PFX pour le gestionnaire de certificats](#pfx-file-support-for-certificate-manager) | ajouter des certificats PFX via l’interface utilisateur Paramètres | Utilisateur final | 20348,1405 |
-| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage | 20348,1405 |
-| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage | 20348,1405 |
-| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Dépannage | 20348,1412 |
+| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Résolution des problèmes | 20348,1405 |
+| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Résolution des problèmes | 20348,1405 |
+| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Résolution des problèmes | 20348,1412 |
 | [modifications du CSP pour la création de rapports HoloLens détails](#csp-changes-for-reporting-hololens-details) | Nouveaux fournisseurs de services de chiffrement pour l’interrogation des données | Administrateurs informatiques    | 20348,1403                 |
 | [Stratégie de connexion automatique contrôlée par CSP](#auto-login-policy-controlled-by-csp) | Utilisé pour se connecter automatiquement à un compte | Administrateurs informatiques | 20348,1405 |
 | [Détection et notifications de redémarrage des mises à jour améliorées](#improved-update-restart-detection-and-notifications) | Nouvelles stratégies activées et expérience utilisateur pour les mises à jour. | Administrateurs informatiques | 20348,1405 |
@@ -65,7 +65,7 @@ Pour en savoir plus sur ce qui est pris en charge et sur l’activation de cette
 
 #### <a name="overview-to-try-out-moving-platform-mode"></a>Vue d’ensemble pour essayer le mode de plateforme mobile
 
-1. [Activez le mode développeur et le portail des appareils](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+1. [Activez le mode développeur et le portail des appareils](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 1. [Activez le mode de plateforme mobile via le portail de périphérique](hololens2-moving-platform.md#enabling-moving-platform-mode).
 1. Transformez votre appareil à votre grande plateforme mobile et observez la stabilité des hologrammes.
 

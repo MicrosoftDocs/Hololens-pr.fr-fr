@@ -4,22 +4,22 @@ description: découvrez comment inscrire HoloLens dans la gestion des appareils 
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/06/2019
+ms.date: 9/15/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: b6206f7121d1ba78908d96f71c5c809ec97b06d5
+ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032420"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "127904342"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscrire HoloLens dans GPM
 
@@ -66,6 +66,12 @@ Si votre appareil a été inscrit avec un compte Azure AD ou AutoPilot, il ne pe
 
 Si votre appareil a été inscrit auprès d’un compte MSA qui a ajouté un compte professionnel ou à partir d’un compte local inscrit uniquement dans la gestion des appareils, vous pouvez annuler l’inscription de l’appareil. ouvrez le menu Démarrer, puis sélectionnez **Paramètres**  ->  bouton de déconnexion YourAccount d'**accès à l’application ou scolaire**  ->    ->   .
 
-## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>s’assurer que l’inscription MDM n’est pas bloquée pour les appareils Windows
+## <a name="enrollment-troubleshooting"></a>Résolution des problèmes d’inscription
+
+### <a name="ensure-valid-license-is-assigned-to-the-user"></a>Garantir que la licence valide est affectée à l’utilisateur
+
+pour plus d’informations sur la [résolution des problèmes d’inscription Microsoft Intune d’appareils Windows](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors) , consultez les sections suivantes, par exemple [vérifier les restrictions de type d’appareil](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#check-device-type-restrictions) et [attribuer une licence valide à l’utilisateur.](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#assign-a-valid-license-to-the-user)
+
+### <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>s’assurer que l’inscription MDM n’est pas bloquée pour les appareils Windows
 
 pour que l’inscription aboutisse, vous devez vous assurer que vos appareils HoloLens peuvent s’inscrire. Étant donné que HoloLens est considéré comme un appareil Windows, aucune restriction d’inscription ne doit bloquer votre déploiement. [Passez en revue cette liste de restrictions](/mem/intune/enrollment/enrollment-restrictions-set) pour vérifier que vos appareils pourront être inscrits.
