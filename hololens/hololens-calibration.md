@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: étalonnage, confort, visuels, qualité, écart pupillaire, HoloLens, Windows Mixed Reality, casques VR
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034100"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833554"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Améliorer la qualité visuelle et le confort
 
@@ -37,8 +37,7 @@ L'utilisateur est invité à étalonner l'HoloLens 2 dans les cas suivants :
 - L'utilisateur a précédemment refusé le processus d'étalonnage.
 - Le processus d'étalonnage n'a pas abouti la dernière fois que l'utilisateur s'est servi de l'appareil.
 - L'utilisateur a supprimé ses profils d'étalonnage.
-- L'utilisateur a éteint puis rallumé l'appareil, et l'une des circonstances ci-dessus s'applique. 
-
+- L’utilisateur a éteint puis rallumé l’appareil, et l’une des circonstances ci-dessus s’applique. 
 
 ![Invite d'étalonnage pour l'adaptation aux yeux.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -87,7 +86,7 @@ Pour les expériences qui nécessitent des données sur le regard ou un position
 
 #### <a name="deferred-calibration-prompt"></a>Invite d'étalonnage différé
 
-Avec la fonctionnalité Position automatique des yeux, la boîte de dialogue de l'invite d'étalonnage du suivi oculaire est différée jusqu'à ce qu'une application demande des données sur le regard. Ainsi, aucune invite n'est présentée à l'utilisateur lorsque l'application active ne requiert pas de données sur le regard. Si l'application requiert des données sur le regard et que l'utilisateur actuel n'a pas suivi le processus d'étalonnage, une invite d'étalonnage s'affiche sur son système. Ce comportement peut être utilisé pour afficher une invite d'étalonnage du suivi oculaire à un moment approprié pour l'expérience. Cette méthode est recommandée pour les raisons suivantes :
+Avec la fonctionnalité Position automatique des yeux, la boîte de dialogue de l'invite d'étalonnage du suivi oculaire est différée jusqu'à ce qu'une application demande des données sur le regard. Ainsi, aucune invite n'est présentée à l'utilisateur lorsque l'application active ne requiert pas de données sur le regard. Si l'application requiert des données sur le regard et que l'utilisateur actuel n'a pas suivi le processus d'étalonnage, une invite d'étalonnage s'affiche sur son système. Ce comportement peut être utilisé pour afficher une invite d’étalonnage du suivi oculaire à un moment approprié pour l’expérience. Cette méthode est recommandée pour les raisons suivantes :
 
 1.  La boîte de dialogue de l'invite d'étalonnage du suivi oculaire explique à l'utilisateur pourquoi le suivi oculaire est nécessaire.
 2.  Offre à l'utilisateur la possibilité de décliner l'étalonnage de ses yeux.
@@ -96,7 +95,7 @@ Si l’utilisateur choisit de lancer l’étalonnage du suivi oculaire, le focus
 
 ### <a name="calibration-data-and-security"></a>Données d'étalonnage et sécurité
 
-Les informations d'étalonnage sont stockées localement sur l'appareil et ne sont associées à aucune information de compte. Aucun enregistrement n'indique qui a utilisé l'appareil sans étalonnage. Par conséquent, les nouveaux utilisateurs doivent, sur invite, étalonner les visuels à la première utilisation de l'appareil, tout comme les utilisateurs ayant précédemment choisi de ne pas réaliser l'étalonnage ou ayant rencontré un échec d'étalonnage.
+Les informations d'étalonnage sont stockées localement sur l'appareil et ne sont associées à aucune information de compte. Aucun enregistrement n'indique qui a utilisé l'appareil sans étalonnage. Les nouveaux utilisateurs doivent donc, sur invite, étalonner les visuels à la première utilisation de l’appareil, tout comme les utilisateurs ayant précédemment choisi de ne pas réaliser l’étalonnage ou ayant rencontré un échec d’étalonnage.
 
 L'appareil peut stocker localement jusqu'à 50 profils d'étalonnage. Une fois ce nombre atteint, l'appareil supprime automatiquement le profil inutilisé le plus ancien.
 
@@ -104,16 +103,23 @@ Les informations d'étalonnage peuvent toujours être supprimées de l'appareil 
 
 ### <a name="disable-calibration"></a>Désactiver l'étalonnage
 
-Vous pouvez également désactiver l'invite d'étalonnage en procédant comme suit :
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>Comportement de l’étalonnage oculaire sur HoloLens 2 build 20H2 ou ultérieure
+
+Depuis le lancement de la [prise en charge de la position automatique des yeux](hololens-release-notes.md#auto-eye-position-support) dans Windows Holographique version 20H2, vous n’avez pas besoin de désactiver l’étalonnage. L’invite d’étalonnage n’apparaît automatiquement que si vous utilisez une application avec suivi oculaire.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>Désactivation de l’étalonnage oculaire sur les builds HoloLens 2 plus anciennes
+
+Vous pouvez actionner un bouton Paramètres sur le casque pour désactiver l’étalonnage, mais l’état de ce bouton peut être difficile à évaluer. Il a été supprimé et remplacé par la [prise en charge de la position automatique des yeux](hololens-release-notes.md#auto-eye-position-support), qui diffère l’étalonnage tout en assurant la correction des couleurs et le positionnement des hologrammes.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>Désactivation de l’étalonnage oculaire sur HoloLens (1re génération)
+
+Pour [l’étalonnage d’HoloLens (1re génération)](#calibrating-your-hololens-1st-gen), vous pouvez désactiver l’invite d’étalonnage oculaire en effectuant les étapes suivantes :
 
 1. Sélectionnez **Paramètres** > **Système** > **Étalonnage**.
 1. Désactivez **Lorsqu'une nouvelle personne utilise cet HoloLens, lui demander automatiquement d'exécuter l'étalonnage des yeux**.
 
    > [!IMPORTANT]
    > Ce paramètre peut nuire à la qualité et au confort d'affichage des hologrammes.  Lorsque vous le désactivez, les fonctionnalités qui dépendent du suivi oculaire (par exemple, le défilement du texte) ne fonctionnent plus dans les applications immersives.
-
-> [!NOTE]
-> Le commutateur Paramètres a été supprimé depuis Windows Holographique, version 20H2, avec le lancement de [la prise en charge de la position automatique des yeux](hololens-release-notes.md#auto-eye-position-support). L’invite d’étalonnage apparaît automatiquement seulement si un utilisateur non étalonné utilise une application activée pour le suivi oculaire.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>Technologie de suivi oculaire de l'HoloLens 2
 
