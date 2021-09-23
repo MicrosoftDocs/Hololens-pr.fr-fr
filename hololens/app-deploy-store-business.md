@@ -4,23 +4,23 @@ description: apprenez à utiliser le Microsoft Store pour Entreprises pour publi
 keywords: Microsoft Store pour Entreprises, msfb, déploiement d’applications, Store
 author: evmill
 ms.author: v-evmill
-ms.date: 6/22/2020
+ms.date: 9/22/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: b60795d7a5a4f9fab980ee16a23250faa6025bb5
+ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032476"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128306146"
 ---
 # <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
 
-le Microsoft Store pour Entreprises est principalement conçu pour les décideurs informatiques et les administrateurs dans les entreprises ou les organisations disposant d’un moyen flexible de rechercher, d’acquérir, de gérer et de distribuer des applications gratuites et payantes dans select markets pour Windows 10 appareils en volume. 
+le [Microsoft Store pour Entreprises](/microsoft-store/microsoft-store-for-business-overview) est principalement conçu pour les décideurs informatiques et les administrateurs dans les entreprises ou les organisations disposant d’un moyen flexible de rechercher, d’acquérir, de gérer et de distribuer des applications gratuites et payantes dans select markets pour Windows 10 appareils en volume. 
 
 vous pouvez gérer des applications Microsoft Store et des applications métier privées dans un même inventaire, et attribuer et réutiliser des licences en fonction des besoins. vous pouvez également choisir la meilleure méthode de distribution pour votre organisation : attribuer directement des applications à des personnes et des équipes, publier des applications sur des pages privées dans Microsoft Store ou vous connecter à des solutions de gestion pour obtenir davantage d’options.
 
