@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 22d635fd3fc32b8aedc36bcb19d900128cdcb718
-ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
+ms.openlocfilehash: 68485fd0ad7f050748a412da3d57eb8f59e9a685
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/23/2021
-ms.locfileid: "128306163"
+ms.locfileid: "128346742"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -248,14 +248,20 @@ Vous pouvez maintenant utiliser WDAC pour empêcher le lancement d’application
 
 ### <a name="fixes-and-improvements"></a>Correctifs et améliorations
 
+#### <a name="for-developers"></a>Pour les développeurs
+
 - Correction d’un [problème connu pour le portail des appareils où aucune invite n’a été téléchargée pour le téléchargement des fichiers verrouillés](hololens-troubleshooting.md#downloading-locked-files-doesnt-error).
 - Correction d’un [problème connu pour le portail des appareils avec délais de chargement et de téléchargement de fichiers](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out).
-- résout les problèmes liés à la création de rapports sur les propriétés de conformité des appareils HoloLens ; un redémarrage peut être nécessaire pour que les rapports corrects soient déclenchés sur les builds Insider.  
+- Le traitement du manette des applications 2D a été désactivé dans les builds Insider. En le supprimant, les applications sont désormais libres d’utiliser directement les API de manette de jeu et ont accès à l’ensemble des contrôles et peuvent être développées à l’esprit pour en faire plus. Les développeurs doivent utiliser les API de boîtier de manette pour consommer l’entrée du boîtier. Voici un exemple de [classe de manette (Windows. Gaming. Input)-Windows des applications UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - activation d’une [API d’accès affectée](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) afin que les applications puissent désormais déterminer si une HoloLens s’exécute en mode plein écran pour l’utilisateur connecté à la HoloLens.
+
+#### <a name="for-enterprise"></a>Pour Enterprise
+
+- résout les problèmes liés à la création de rapports sur les propriétés de conformité des appareils HoloLens ; un redémarrage peut être nécessaire pour que les rapports corrects soient déclenchés sur les builds Insider.  
 - Mise à jour de la version intégrée de l’assistance à distance qui est installée sur des clignotements actualisés.
-- Le traitement du manette des applications 2D a été désactivé dans les builds Insider. En le supprimant, les applications sont désormais libres d’utiliser directement les API de manette de jeu et d’avoir accès à l’ensemble des contrôles et à tout ce qu’ils souhaitent. Les développeurs doivent utiliser les API de boîtier de manette pour consommer l’entrée du boîtier. Voici un exemple de [classe de manette (Windows. Gaming. Input)-Windows des applications UWP](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true).
 - Correction d’un problème où, après la première connexion de l’utilisateur, OOBE était arrêté dans les scénarios où des configurations de kiosque basées sur des groupes AAD étaient utilisées.
 - Correction d’un problème d’affichage des notifications de mise à jour et des invites de dialogue de redémarrage du périphérique.
+- correction d’un problème où, après le redémarrage de l’appareil, les contrôleurs Xbox et les autres périphériques Bluetooth LE sont nécessaires pour se connecter.
 
 ## <a name="start-receiving-insider-builds"></a>Commencer à recevoir des builds Insider
 
