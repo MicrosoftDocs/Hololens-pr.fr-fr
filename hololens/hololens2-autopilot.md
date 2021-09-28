@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: sekerawa
-ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833571"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128346772"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot pour HoloLens 2
 
@@ -244,7 +244,7 @@ Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens 2 acc
 
 1. L’interface Autopilot nécessite un accès à Internet. Utilisez l’une des options suivantes pour fournir un accès à Internet :
 
-    - Connectez votre appareil à un réseau Wi-Fi dans OOBE, puis laissez-le détecter automatiquement l’expérience Autopilot. C’est le seul moment où vous devrez interagir avec OOBE, et ce jusqu’à ce que l’expérience Autopilot se termine d’elle-même. Par défaut, HoloLens 2 attend 10 secondes avant de détecter Autopilot après avoir détecté Internet. Si aucun profil Autopilot n’est détecté dans un délai de 10 secondes, OOBE affiche le CLUF. Si vous rencontrez ce problème, redémarrez votre appareil pour tenter à nouveau de détecter Autopilot. Notez également que l’OOBE ne peut attendre Autopilot indéfiniment que si la stratégie TenantLockdown a été définie sur l’appareil.
+    - Connectez votre appareil à un réseau Wi-Fi dans OOBE, puis laissez-le détecter automatiquement l’expérience Autopilot. C’est le seul moment où vous devrez interagir avec OOBE, et ce jusqu’à ce que l’expérience Autopilot se termine d’elle-même.
 
     - Connectez votre appareil à Ethernet à l’aide d’adaptateurs « USB-C vers Ethernet » pour une connexion Internet filaire et laissez HoloLens 2 compléter automatiquement l’expérience Autopilot.
 
@@ -268,7 +268,7 @@ Une fois les instructions ci-dessus terminées, vos utilisateurs HoloLens 2 acc
 
 1. Au terme du processus OOBE, vous pouvez vous connecter à l’appareil à l’aide de votre nom d’utilisateur et de votre mot de passe.
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## <a name="tenant-lockdown-csp-and-autopilot"></a>CSP TenantLockdown et Autopilot
 
@@ -318,7 +318,13 @@ OOBE attend indéfiniment le téléchargement du profil Autopilot et la boîte d
 
 ![Vue de l’appareil lorsque la stratégie est appliquée.](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>Limitations et problèmes connus
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Pourquoi l’expérience Autopilot ne s’affiche-t-elle pas, même si le profil Autopilot est attribué dans Intune ?
+
+Par défaut, HoloLens 2 attend 15 secondes avant de détecter Autopilot après avoir détecté Internet. Si aucun profil Autopilot n’est détecté dans les 15 secondes, cela signifie qu’Autopilot n’a pas été découvert correctement. La page du CLUF s’affiche alors.
+
+Redémarrez votre appareil et réessayez. Pour plus d’informations, consultez [Problèmes connus et limitations](hololens2-autopilot.md#known-issues-and-limitations) ou [Résolution des problèmes](hololens2-autopilot.md#troubleshooting).
+
+## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 
 - Nous travaillons à la résolution d’un problème dans lequel l’installation de l’application basée sur l’appareil configurée dans MEM ne s’applique pas à l’HoloLens. [Apprenez-en davantage sur les installations de contexte des appareils et des utilisateurs.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - Lors de la configuration d’Autopilot sur un réseau Wi-Fi, il est possible que le profil Autopilot ne soit pas téléchargé durant la première connexion à Internet. Dans ce cas, le Contrat de Licence Utilisateur Final (CLUF) s’affiche et l’utilisateur peut procéder à l’installation sans Autopilot. Pour réessayer la configuration avec Autopilot, mettez l’appareil en veille, puis rallumez-le, ou redémarrez l’appareil et laissez-le réessayer.
