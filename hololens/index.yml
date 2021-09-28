@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+  ms.openlocfilehash: 2d0d57406c0d8b1759c53bf5847d8369f98a865e
+  ms.sourcegitcommit: 2b541bacb32279ccec0d7b7caef216626634a2ad
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126031897"
+  ms.lasthandoff: 09/28/2021
+  ms.locfileid: "129145928"
 landingContent:
 - title: Découvrir HoloLens 2
   linkLists:
@@ -68,6 +68,22 @@ landingContent:
       url: hololens2-corp-connected-overview.md
     - text: Guide de déploiement - Sécurisé hors connexion
       url: hololens-common-scenarios-offline-secure.md
+- title: Ressources du partenaire Mixed Reality
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Ressources du partenaire Mixed Reality
+      url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+    - text: Forum du partenaire Mixed Reality
+      url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+    - text: Blog du partenaire Mixed Reality
+      url: https://aka.ms/MRPartnerBlog
+    - text: Commencer à concevoir et à créer des prototypes
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+    - text: Mode de plateforme mobile
+      url: /hololens/hololens2-moving-platform
+    - text: Observations à caractère environnemental
+      url: /hololens/hololens-environment-considerations
 - title: Dépannage
   linkLists:
   - linkListType: how-to-guide
