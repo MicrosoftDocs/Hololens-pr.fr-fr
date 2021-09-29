@@ -2,9 +2,9 @@
 title: Envoyer vos commentaires
 description: créez des commentaires exploitables pour les développeurs de HoloLens et Windows Mixed Reality à l’aide du Hub de commentaires.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/17/2020
+author: evmill
+ms.author: v-evmill
+ms.date: 9/28/2021
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -12,17 +12,17 @@ audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: Commentaires, bogue, problème, erreur, dépannage, aide
-manager: jarrettr
+manager: ranjibb
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 40619e6d891ddd56d26be227df11aae758f880ae
+ms.sourcegitcommit: 0b42c241c44c98e94dc9043bd5891d26776bc745
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032603"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129191207"
 ---
 # <a name="feedback-for-hololens"></a>Commentaires pour HoloLens
 
@@ -30,11 +30,13 @@ Utilisez le hub de commentaires pour nous indiquer les fonctionnalités que vous
 
 Le hub de commentaires est un excellent moyen d’informer l’équipe d’ingénierie des bogues et de s’assurer que les futures mises à jour seront plus saines et plus cohérentes en termes de bogues. Toutefois, le hub de commentaires ne fournit pas de réponse. si vous avez besoin d’une aide immédiate, veuillez nous faire part de vos commentaires, notez le résumé que vous avez fourni pour vos commentaires, puis suivez le [support HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -utilisez la fonctionnalité **partager** du Hub de commentaires pour partager un lien direct vers l’URL. Le hub de commentaires reçoit un grand nombre de données quotidiennement : l’URL nous aide à identifier vos commentaires rapidement.
 
-> [!NOTE]  
->  
-> - Assurez-vous que vous disposez de la version actuelle du Hub de commentaires. pour ce faire, sélectionnez **démarrer**  >  **Microsoft Store**, puis sélectionnez les points de suspension (**...**). Ensuite, sélectionnez **téléchargements et mises à jour**  >  **récupérer les mises à jour**.  
->  
-> - Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous recommandons vivement de définir la télémétrie de votre appareil sur **facultatif**. vous pouvez définir cette valeur pendant l’expérience OOBE (Out-of-box-experience) ou à l’aide de l’application Paramètres. pour ce faire, à l’aide de Paramètres, sélectionnez **Start**  >  **Paramètres**  >  **Privacy**  >  **App diagnostics**  >  **sur**.
+> [!NOTE]
+> Assurez-vous que vous disposez de la version actuelle du Hub de commentaires. pour ce faire, sélectionnez **démarrer**  >  **Microsoft Store**, puis sélectionnez les points de suspension (**...**). Ensuite, sélectionnez **téléchargements et mises à jour**  >  **récupérer les mises à jour**. En savoir plus sur [la mise à jour des applications](holographic-store-apps.md#update-apps)du Windows Store.
+
+> [!IMPORTANT]
+> Pour fournir les meilleures données possibles pour la résolution des problèmes, nous vous recommandons vivement de définir la télémétrie de votre appareil sur **facultatif**. L’échec de cette télémétrie supplémentaire pourrait rendre votre bogue ou vos commentaires inexploitables.
+>
+> vous pouvez définir cette valeur pendant l’expérience OOBE (Out-of-box-experience) ou à l’aide de l’application Paramètres. pour ce faire, à l’aide de Paramètres, sélectionnez **démarrer**  >  **Paramètres**  >  **Privacy**  >  **diagnostics & commentaires**  >  sur les **données de diagnostic facultatives**  >  **sur**.
 
 ## <a name="use-the-feedback-hub"></a>Utiliser le hub de commentaires
 
