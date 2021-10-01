@@ -3,7 +3,7 @@ title: HoloLens Dépannage des appareils
 description: restez à jour sur les solutions les plus courantes pour HoloLens les problèmes des appareils et les techniques de dépannage.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 12/02/2019
+ms.date: 9/30/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032863"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364628"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
@@ -30,6 +30,7 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 <a id="list"></a>
 
 **Problèmes connus**
+- [Chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [La vidéo assistance à distance se fige après 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [La connexion automatique demande une connexion](#auto-login-asks-for-log-in)
 - [Microsoft Edge ne parvient pas à démarrer](#microsoft-edge-fails-to-launch)
@@ -39,7 +40,7 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 - [Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive ne charge pas automatiquement les images](#onedrive-doesnt-automatically-upload-pictures)
 
-**Généralités**
+**Général**
 - [HoloLens ne répond pas ou ne démarre pas](#hololens-is-unresponsive-or-wont-start)
 - [Erreur « espace disque insuffisant »](#low-disk-space-error)
 - [Échec de l’étalonnage](#calibration-fails)
@@ -59,6 +60,16 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 - [les appareils Bluetooth ne sont pas couplés](#bluetooth-devices-arent-pairing)
 - [Le microphone USB-C ne fonctionne pas](#usb-c-microphone-isnt-working)
 - [les appareils listés comme disponibles dans Paramètres ne fonctionnent pas](#devices-listed-as-available-in-settings-dont-work)
+
+## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>Chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement
+
+Il existe un problème connu connu où, lorsque l’appareil atteint 18% de la batterie, il s’arrête de manière inattendue. Il s’agit d’un problème logiciel, et non d’un problème de matériel ou de batterie. n’échangez donc pas les appareils. Si vous ne savez pas si votre problème correspond à ce bogue, procédez comme suit :
+
+1. Vérifiez que les diagnostics facultatifs sont activés sur vos appareils
+1. Reproduire le problème
+1. Soumettre un problème de [Hub de commentaires](hololens-feedback.md)
+1. Partager l’URL du problème de commentaires
+1. [Contacter le support technique](https://aka.ms/hololenssupport)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>La vidéo assistance à distance se fige après 20 minutes
 
@@ -160,21 +171,23 @@ L’utilisateur doit ensuite accéder à http://, et non https://(adresse IP) et
 il s’agit d’un problème affectant les utilisateurs qui se trouvaient sur une version d’évaluation d’insider, de rééclairer leurs HoloLens 2 avec une nouvelle build insider preview, puis désinscrit du programme insider. Il s’agit d’un **problème connu**.
 
 Cela n’affecte pas les éléments suivants :
-- utilisateurs qui ne sont pas inscrits à Windows insider 
+
+- utilisateurs qui ne sont pas inscrits à Windows insider
 - Insiders
     - Si un appareil a été inscrit depuis la version des builds Insider 18362. x
     - S’ils ont flashé une build 19041. x signée à l’intérieur et restent inscrits dans le programme d’Insider
 
-Solution de contournement : 
-- Éviter le problème 
+Solution de contournement :
+
+- Éviter le problème
     - Flashez une génération non Insider. L’une des mises à jour mensuelles régulières.
     - Restez sur la version préliminaire d’Insider
 - Refaire clignoter l’appareil
 
     1. mettez manuellement le [HoloLens 2 en mode clignotant](hololens-recovery.md) en l’arrêtant tout en étant connecté. Puis, tout en maintenant le volume enfoncé, appuyez sur le bouton d’alimentation.
-    
+
     1. Connecter au PC et ouvrez le guide de récupération avancée.
-    
+
     1. flashez le HoloLens 2 à la build par défaut.
 
 [Retour à la liste](#list)
@@ -295,6 +308,7 @@ si votre HoloLens 2 ne répond pas à votre voix, vérifiez que la reconnaissanc
 ## <a name="hand-input-isnt-working"></a>L’entrée manuelle ne fonctionne pas
 
 pour vous assurer que HoloLens pouvez voir vos mains, vous devez les conserver dans le cadre de mouvement.  La page d’hébergement de la réalité mixte fournit des commentaires qui vous permettent de savoir quand vos mains sont suivies.  Les commentaires sont différents sur les différentes versions de HoloLens :
+
 - sur HoloLens (1re génération), le curseur en regard passe d’un point à un anneau
 - sur HoloLens 2, un curseur à main s’affiche lorsque la main est proche d’un ardoise, et un rayon de la main apparaît lorsque les ardoises sont éloignées
 
@@ -328,6 +342,7 @@ si vous rencontrez des problèmes pour [associer un appareil Bluetooth](hololens
 [Retour à la liste](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>Le microphone USB-C ne fonctionne pas
+
 Sachez que certains microtéléphones USB-C se signalent incorrectement comme un microphone *et* un orateur. Il s’agit d’un problème avec le microphone et pas avec HoloLens. lors du branchement de l’un de ces microphones dans HoloLens, le son peut être perdu. Heureusement, il existe un correctif simple.  
 
 dans **Paramètres**  ->    ->  **son** système, définissez explicitement les haut-parleurs intégrés **(pilote Audio de fonctionnalité analogique)** comme **périphérique par défaut**. HoloLens mémoriser ce paramètre même si le microphone est supprimé et reconnecté ultérieurement.
