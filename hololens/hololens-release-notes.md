@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f9d012540cf29b7ed7ffd4033681c58767d78db
-ms.sourcegitcommit: e8a4714c7b16720819c7aaebefb7cfd21fc29c56
+ms.openlocfilehash: 8ad76f1c0cc16101b10fb0576c1b3763caac450d
+ms.sourcegitcommit: db573910a0c81fdf6edaca8cb8ef3d0be5e25603
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127985641"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129432026"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -28,9 +28,6 @@ pour vous assurer que vous disposez d’une expérience productive avec vos appa
 
 > [!NOTE]
 > La récente annonce de l'arrivée de Windows 11 se concentrait sur la version PC de Windows. En mai 2021, nous avons lancé une [mise à jour importante du système d'exploitation](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) pour HoloLens 2, et nous préparons une version qui tiendra compte des commentaires de nos clients et dont la sortie est prévue pour cet automne.
-
-> [!IMPORTANT]
-> en raison d’un [problème connu maintenant résolu dans notre build 21H1 qui affectait les utilisateurs de l’assistance à distance](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes), nous avons suspendu temporairement l’offre de Windows des mises à jour 21H1 holographiques. nous avions également modifié la version par défaut de l’ARC de récupération avancée (ARC) dans la [mise à jour Windows holographique, version 20H2-juin 2021](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). La build ARC reprend à présent le ciblage de la build 21H1.
 
 ## <a name="windows-holographic-version-21h1---september-2021-update"></a>Windows Holographique, version 21H1-mise à jour de septembre 2021
 
@@ -1025,7 +1022,7 @@ Vérifiez que la configuration de l’appareil a été appliquée dans le portai
 
 1. Supprimez HoloLens 2 du groupe d’appareils auquel la configuration d’appareil créée ci-dessus a été précédemment affectée.
 
-1. Créez un profil de configuration d’appareil basé sur un URI OMA personnalisé et spécifiez false pour RequireNetworkInOOBE comme indiqué ci-dessous.
+1. Créez un profil de configuration d’appareil basé sur OMA URI personnalisé et spécifiez false pour RequireNetworkInOOBE comme indiqué ci-dessous.
 La valeur OMA-URI doit être ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
