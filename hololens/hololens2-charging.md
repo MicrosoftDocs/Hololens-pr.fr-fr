@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a0ae0ccade01d7df520cd6cb142a9b51e63a2b05
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034173"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163979"
 ---
 # <a name="hololens-2-battery-and-charging"></a>Batterie et charge de l’HoloLens 2
 
@@ -45,7 +45,7 @@ Si l’appareil est correctement initialisé et en cours d’exécution, trois m
 
 ## <a name="alternative-charging-specifications"></a>Autres spécifications de charge
 
-HoloLens 2 peut être chargé via des sources de [distribution d’alimentation USB](https://www.usb.org/usb-charger-pd) jusqu’à 27 watts. Si la source est en mesure de fournir au moins 10 watts, l’autonomie de l’HoloLens peut être étendue (parfois indéfiniment pour certaines charges de travail). 
+HoloLens 2 peut être chargé via des sources de [distribution d’alimentation USB](https://www.usb.org/usb-charger-pd) jusqu’à 27 watts. Si la source peut fournir au moins 10 watts, l’autonomie de l’HoloLens peut être étendue (parfois indéfiniment pour certaines charges de travail). 
 
 > [!NOTE]
 > L’utilisation d’un câble de charge USB-A vers USB-C limite la charge à 7,5 watts. L’autonomie reste étendue mais moindre par rapport à USB-C vers C.
