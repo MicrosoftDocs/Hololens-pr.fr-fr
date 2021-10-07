@@ -2,24 +2,24 @@
 title: Savoir maîtriser HoloLens (1re génération)
 description: commencez par une brève présentation de l’interface HoloLens (1re génération), des fonctionnalités de suivi de main et de l’utilisation d’applications holographiques.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
-ms.date: 9/16/2019
-ms.reviewer: jarrettr
-manager: jarrettr
+ms.date: 8/9/2021
+ms.reviewer: sean-kerawala
+manager: sean-kerawala
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
-ms.author: v-miegge
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3723a30499c0237f19d85b48109b40ca643c6bdb
+ms.sourcegitcommit: be1393d24a98381e37bd1f56183c1f381f87cbd4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032856"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129600744"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Savoir maîtriser HoloLens (1re génération)
 
@@ -57,7 +57,7 @@ Pour ouvrir le menu **Démarrer** :
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Sélectionner des hologrammes avec le robinet et le toucher à l’air
 
-Pour sélectionner une application ou un autre hologramme, appuyez sur celle-ci tout en regardant directement l’hologramme que vous sélectionnez. Pour ce faire, procédez comme suit :
+Pour sélectionner une application ou un autre hologramme, appuyez sur celle-ci tout en regardant directement l’hologramme que vous sélectionnez. Procédez comme suit :
 
 1. Pointez avec le regard de l’hologramme que vous souhaitez sélectionner.
 1. Pointez l’index vers le haut en direction du plafond.
@@ -118,6 +118,35 @@ Pointez avec le regard de l’application, puis appuyez et maintenez les deux ma
 ### <a name="scroll-content-in-an-app-window"></a>Faire défiler le contenu dans une fenêtre d’application
 
 Pointez avec le regard du contenu de la fenêtre d’application. Appuyez et maintenez, puis déplacez votre main légèrement vers le haut ou vers le bas pour faire défiler le contenu.
+
+## <a name="share-your-hololens-with-multiple-people"></a>partager votre HoloLens avec plusieurs personnes
+
+il est courant de partager un HoloLens avec de nombreuses personnes ou de nombreuses personnes partagent un ensemble d’appareils HoloLens.  
+
+### <a name="share-with-multiple-people-each-using-their-own-account"></a>Partager avec plusieurs personnes, chacune utilisant son propre compte
+
+**condition préalable**: HoloLens (1re génération) doit être [mis à niveau vers Windows Holographic for Business](hololens-upgrade-enterprise.md).
+
+lorsqu’ils utilisent leurs propres comptes de Azure Active Directory (Azure AD), plusieurs utilisateurs peuvent conserver leurs propres paramètres utilisateur et données utilisateur sur l’appareil.
+
+pour vous assurer que plusieurs personnes peuvent utiliser leurs propres comptes sur votre HoloLens, procédez comme suit :
+
+1. Quand vous configurez l’appareil, sélectionnez **mon entreprise ou école en est propriétaire** et connectez-vous à l’aide d’un compte Azure ad.
+1. une fois l’installation terminée, vérifiez que les paramètres de compte(  >  **comptes** Paramètres) incluent d' **autres utilisateurs**.
+
+pour utiliser HoloLens, chaque utilisateur doit suivre les étapes suivantes :
+
+1. Si un autre utilisateur a utilisé l’appareil, appuyez une fois sur le bouton d’alimentation pour accéder à la mise en veille. Appuyez de nouveau sur le bouton d’alimentation pour revenir à l’écran de verrouillage.
+
+1. Utilisez les informations d’identification de votre compte Azure AD pour vous connecter à l’appareil. s’il s’agit de la première fois que vous utilisez l’appareil, vous devez [étalonner](hololens-calibration.md) le HoloLens à vos propres yeux.
+
+pour afficher la liste des utilisateurs d’appareils ou pour supprimer un utilisateur de l’appareil, accédez à **Paramètres**  >  **comptes**  >  **autres utilisateurs**.
+
+### <a name="share-with-multiple-people-all-using-the-same-account"></a>Partager avec plusieurs personnes, toutes utilisant le même compte
+
+plusieurs utilisateurs peuvent également partager un appareil HoloLens lors de l’utilisation d’un compte d’utilisateur unique.
+
+les utilisateurs qui partagent un même compte devront réétalonner les HoloLens dans **Paramètres**.  En savoir plus sur l' [étalonnage](hololens-calibration.md).
 
 ## <a name="meet-the-hololens-1st-gen-clicker"></a>rencontrez le HoloLens (1re génération) de l’utilisateur
 
