@@ -1,24 +1,24 @@
 ---
 title: HoloLens Dépannage des appareils
 description: restez à jour sur les solutions les plus courantes pour HoloLens les problèmes des appareils et les techniques de dépannage.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 9/30/2021
+author: evmill
+ms.author: v-evmill
+ms.date: 10/7/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
-ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
+ms.openlocfilehash: ceb6f2670b15f46d17a0cb36f6602ae3d4e3ec1d
+ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129364628"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129800536"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
@@ -31,6 +31,7 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 
 **Problèmes connus**
 - [Chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [OneDrive l’application UWP ne fonctionne pas pour les utilisateurs Azure AD](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [La vidéo assistance à distance se fige après 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [La connexion automatique demande une connexion](#auto-login-asks-for-log-in)
 - [Microsoft Edge ne parvient pas à démarrer](#microsoft-edge-fails-to-launch)
@@ -40,7 +41,7 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 - [Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive ne charge pas automatiquement les images](#onedrive-doesnt-automatically-upload-pictures)
 
-**Général**
+**Généralités**
 - [HoloLens ne répond pas ou ne démarre pas](#hololens-is-unresponsive-or-wont-start)
 - [Erreur « espace disque insuffisant »](#low-disk-space-error)
 - [Échec de l’étalonnage](#calibration-fails)
@@ -70,6 +71,23 @@ Il existe un problème connu connu où, lorsque l’appareil atteint 18% de la b
 1. Soumettre un problème de [Hub de commentaires](hololens-feedback.md)
 1. Partager l’URL du problème de commentaires
 1. [Contacter le support technique](https://aka.ms/hololenssupport)
+
+[Retour à la liste](#list)
+
+## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDrive l’application UWP ne fonctionne pas pour les utilisateurs Azure AD
+
+si vous utilisez OneDrive pour l’entreprise à l’aide de votre compte Azure AD, vous avez peut-être rencontré une erreur lors de la connexion à votre application de boîte de réception OneDrive. le fait de ne pas pouvoir se connecter à l’application OneDrive n’affecte pas les chargements automatiques d’images et de vidéos capturés par l’application d’appareil photo. vos fichiers peuvent toujours être enregistrés et accessibles à partir du stockage cloud OneDrive Entreprise. les équipes OneDrive et HoloLens travaillent sur le problème.
+
+### <a name="workarounds"></a>Solutions de contournement
+
+condition préalable : les clients peuvent utiliser Microsoft Edge et le système d’exploitation de l’appareil est mis à jour vers une Windows holographique, 21H1 build ou une version plus récente.
+
+Si vous rencontrez ce problème, essayez l’une des opérations suivantes :
+
+- les utilisateurs peuvent accéder directement à OneDrive For Business à partir de Microsoft Edge et interagir avec leurs fichiers sur le site web à partir de leur navigateur.
+- les utilisateurs peuvent installer l’application OneDrive PWA pour HoloLens en la téléchargeant à partir de Microsoft Edge. Cela permettra aux utilisateurs de visualiser et de gérer à nouveau les fichiers sur l’appareil. lisez et suivez ces [instructions pour l’installation de l’application OneDrive PWA sur votre HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+
+[Retour à la liste](#list)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>La vidéo assistance à distance se fige après 20 minutes
 
