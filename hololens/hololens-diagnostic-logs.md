@@ -3,7 +3,7 @@ title: Collecter et utiliser des informations de diagnostic sur des appareils Ho
 description: découvrez comment collecter, utiliser et conserver des informations de diagnostic à partir d’appareils HoloLens.
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 10/15/2020
+ms.date: 9/12/2021
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 4f62a70430d78087157b3adcdf76af53183db708
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833520"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924413"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Collecter et utiliser des informations de diagnostic sur des appareils HoloLens
 
@@ -39,7 +39,7 @@ HoloLens les utilisateurs et les administrateurs peuvent choisir parmi quatre m�
 
 Le tableau suivant compare différentes méthodes de collection. Les noms de méthode sont liés à des informations plus détaillées dans les sections qui suivent le tableau.
 
-|Méthode |Prérequis |Emplacements des données |Accès aux données et utilisation |Conservation des données |
+|Méthode |Prérequis |Emplacements des données |Accès aux données et utilisation |Rétention de données |
 | --- | --- | --- | --- | --- |
 |[Hub de commentaires](#feedback-hub) |Connexion réseau et Internet<br /><br />Application Hub de commentaires<br /><br />Autorisation de charger des fichiers dans le Cloud Microsoft |Cloud Microsoft<br /><br />appareil HoloLens (facultatif) |L’utilisateur demande de l’aide, accepte les conditions d’utilisation et charge les données<br /><br />Les employés de Microsoft affichent les données en fonction des conditions d’utilisation. |Les données dans le Cloud sont conservées pendant la période définie par la confidentialité de nouvelle génération (NGP). Ensuite, les données sont automatiquement supprimées.<br /><br />Les données de l’appareil peuvent être supprimées à tout moment par un utilisateur disposant des autorisations d' **administrateur** ou de propriétaire de l' **appareil** . |
 |[Paramètres Résolution des problèmes](#settings-troubleshooter) |Application Paramètres |Appareil HoloLens<br /><br />Ordinateur connecté (facultatif) |L’utilisateur stocke les données, et seul l’utilisateur accède aux données (sauf si l’utilisateur partage spécifiquement les données avec un autre utilisateur). |Les données sont conservées sur l’appareil jusqu’à ce que l’utilisateur les supprime. * |
@@ -78,7 +78,7 @@ Le hub de commentaires fournit deux emplacements permettant à l’utilisateur d
 
 ## <a name="settings-troubleshooter"></a>Paramètres Résolution des problèmes
 
-un utilisateur HoloLens peut utiliser l’application **Paramètres** sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour ce faire, procédez comme suit :
+un utilisateur HoloLens peut utiliser l’application **Paramètres** sur l’appareil pour résoudre les problèmes et collecter des informations de diagnostic. Pour cela, procédez comme suit :
 
 1. ouvrez l’application Paramètres et sélectionnez **mettre à jour &**  >  page **résolution des problèmes** de sécurité.
 1. Sélectionnez la zone appropriée, puis cliquez sur **Démarrer**.
@@ -176,5 +176,38 @@ Pour collecter les Diagnostics, procédez comme suit :
 
 7.  Copiez les fichiers ZIP de diagnostics et partagez-les avec l’équipe du support technique Microsoft.
 
-    > [!NOTE]
-    > Certains fichiers ZIP de diagnostic peuvent contenir des PII.
+> [!NOTE]
+> Certains fichiers ZIP de diagnostic peuvent contenir des PII.
+
+### <a name="offline-diagnostics-notifications"></a>Notifications de diagnostics hors connexion
+
+- introduit dans [Windows holographique, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+Il s’agit d’une mise à jour pour une fonctionnalité existante appelée [Diagnostics hors connexion](hololens-diagnostic-logs.md#offline-diagnostics). Auparavant, il n’existait pas d’indicateur clair pour les utilisateurs qu’ils avaient déclenché la collecte de diagnostics ou qu’ils se sont terminés.
+à présent ajouté dans Windows builds insider, il existe deux formes de commentaires audiovisuels pour les diagnostics hors connexion. Les notifications de toasts s’affichent pour les deux moment où le regroupement démarre et se termine. Celles-ci s’affichent lorsque l’utilisateur est connecté et dispose d’éléments visuels.
+
+![Toast pour la collecte des journaux.](./images/logcollection1.jpg)
+
+![Toast lorsque la collecte des journaux est terminée.](./images/logcollection2.jpg)
+
+Étant donné que les utilisateurs utilisent souvent les diagnostics hors connexion en tant que mécanisme de collecte de journaux de secours lorsqu’ils n’ont pas accès à un affichage, ne peuvent pas se connecter ou se trouvent toujours dans OOBE. un signal audio est également lu lors de la collecte des journaux. Ce son sera lu en plus de la notification Toast.
+
+Cette nouvelle fonctionnalité est activée lorsque votre appareil est mis à jour et n’a pas besoin d’être activé ou géré. Dans tous les cas où ces nouveaux commentaires ne peuvent pas être affichés ou audibles, les diagnostics hors connexion seront toujours générés.
+
+Nous espérons que ce nouvel ajout de commentaires audiovisuels est plus facile à recueillir des données de diagnostic et plus rapidement à résoudre vos problèmes.
+
+### <a name="low-storage-log-collection-improvements"></a>Améliorations de la collecte des journaux de faible capacité de stockage
+
+- introduit dans [Windows holographique, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+Dans les scénarios où un appareil semble manquer d’espace disque lors de la collecte des journaux de diagnostic, un rapport supplémentaire nommé **StorageDiagnostics.zip** est créé. le seuil de stockage faible est déterminé automatiquement par Windows [sens du stockage](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+
+## <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens
+
+- introduit dans [Windows holographique, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+Pour les appareils gérés lors de la résolution du problème, il est important de vérifier qu’une configuration de stratégie attendue est appliquée. auparavant, cette nouvelle fonctionnalité devait être désactivée via MDM ou proche de l’appareil après l’exportation des journaux de diagnostic MDM collectés via des comptes d' **Paramètres**  ->    >  **accéder à l’entreprise ou à l’école**, puis sélectionner **exporter les journaux de gestion** et les afficher sur un PC proche.
+
+Les diagnostics MDM peuvent maintenant être affichés sur l’appareil à l’aide du navigateur Edge. Pour afficher plus facilement le rapport de diagnostic MDM, accédez à la page accès professionnel ou scolaire, puis sélectionnez **afficher le rapport de diagnostic avancé**. Cette opération génère et ouvre le rapport dans une nouvelle fenêtre de bord.
+
+![affichez le rapport de diagnostic avancé dans Paramètres application.](./images/view-advanced-diagnostic-report.jpg)

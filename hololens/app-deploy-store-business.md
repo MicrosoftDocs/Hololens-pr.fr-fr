@@ -4,19 +4,19 @@ description: apprenez à utiliser le Microsoft Store pour Entreprises pour publi
 keywords: Microsoft Store pour Entreprises, msfb, déploiement d’applications, Store
 author: evmill
 ms.author: v-evmill
-ms.date: 9/22/2021
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: b60795d7a5a4f9fab980ee16a23250faa6025bb5
-ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
+ms.openlocfilehash: 5bc719539aaa254b8aacb05e24554152231f7e5a
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128306146"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924316"
 ---
 # <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
 
@@ -26,7 +26,7 @@ vous pouvez gérer des applications Microsoft Store et des applications métier 
 
 lorsque Microsoft Store pour Entreprises est utilisé par un utilisateur final, il lance l’application Microsoft Store. Une fois lancé, l’utilisateur est en mesure de sélectionner l’onglet avec le nom de son organisation. les applications qui lui sont disponibles ou ce périphérique sont alors présentées.
 
-> [!Note] 
+> [!Note]
 > Microsoft Store pour Entreprises ne télécharge pas automatiquement les applications (push) sur les appareils. toutefois, les applications du Microsoft Store pour Entreprises peuvent être associées à votre serveur de gestion des appareils (MDM) pour cibler et synchroniser des applications sur des appareils.
 
 visitez les pages suivantes pour en savoir plus sur l’utilisation de l’Microsoft Store pour Entreprises :
@@ -39,3 +39,17 @@ pour associer votre Microsoft Store pour Entreprises, consultez [associer votre 
 
 > [!Tip]
 > en savoir plus sur la [distribution d’applications hors connexion](/microsoft-store/distribute-offline-apps) lors de l’utilisation d’applications telles que le compagnon de récupération avancé (ARC) et le concepteur de Configuration Windows (WCD).
+
+## <a name="use-only-private-store-apps-for-microsoft-store"></a>Utiliser uniquement des applications de magasin privé pour Microsoft Store
+
+- introduit dans [Windows holographique, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+La stratégie RequirePrivateStoreOnly a été activée pour HoloLens. cette stratégie permet à l’application Microsoft Store d’être configurée pour afficher uniquement la banque privée configurée pour votre organisation. Limiter l’accès aux seules applications que vous avez mises à disposition.
+
+En savoir plus sur [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+## <a name="smart-retry-for-app-updates"></a>Nouvelle tentative intelligente pour les mises à jour d’application
+
+- introduit dans [Windows holographique, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+à présent activé pour HoloLens est une nouvelle stratégie qui permet aux administrateurs informatiques de définir une date récurrente ou ponctuelle pour redémarrer les applications dont la mise à jour a échoué parce que l’application est en cours d’utilisation, ce qui permet d’appliquer la mise à jour. Elles peuvent être définies en fonction de différents déclencheurs, tels qu’une heure planifiée ou une connexion. Pour en savoir plus sur l’utilisation de cette stratégie, consultez [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
