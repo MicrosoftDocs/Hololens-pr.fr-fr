@@ -3,7 +3,7 @@ title: HoloLens Dépannage des appareils
 description: restez à jour sur les solutions les plus courantes pour HoloLens les problèmes des appareils et les techniques de dépannage.
 author: evmill
 ms.author: v-evmill
-ms.date: 10/7/2021
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: afbbc1ab0e018f668381137849738ec7d274fe37
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924367"
+ms.locfileid: "129964562"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
@@ -33,12 +33,14 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 - [Chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDrive l’application UWP ne fonctionne pas pour les utilisateurs Azure AD](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [Pourquoi est-ce que je vois 0x80180014 pendant AutoPilot ?](#why-do-i-see-0x80180014-during-autopilot)
-- [La vidéo assistance à distance se fige après 20 minutes](#remote-assist-video-freezes-after-20-minutes)
+- [code d’erreur Microsoft Store 0x80131500](#microsoft-store-error-code-0x80131500)
+- [Microsoft Edge ne parvient pas à démarrer le microphone](#microsoft-edge-fails-to-start-the-microphone)
+- [**Résolution** des vidéos d’assistance à distance fixes après 20 minutes](#remote-assist-video-freezes-after-20-minutes)
 - [La connexion automatique demande une connexion](#auto-login-asks-for-log-in)
 - [Microsoft Edge ne parvient pas à démarrer](#microsoft-edge-fails-to-launch)
 - [Le clavier ne bascule pas vers les caractères spéciaux](#keyboard-doesnt-switch-to-special-characters)
-- [Le téléchargement des fichiers verrouillés n’affiche pas d’erreur](#downloading-locked-files-doesnt-error)
-- [Délai de chargement/téléchargement du fichier du portail de l’appareil](#device-portal-file-uploaddownload-times-out)
+- [**Fixed** -le téléchargement des fichiers verrouillés n’affiche pas d’erreur](#downloading-locked-files-doesnt-error)
+- [**Fixe** -délai de chargement/téléchargement du fichier du portail de l’appareil](#device-portal-file-uploaddownload-times-out)
 - [Écran bleu après annulation de l’inscription de la version préliminaire d’Insider sur un appareil flashé avec une build Insider](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive ne charge pas automatiquement les images](#onedrive-doesnt-automatically-upload-pictures)
 
@@ -95,6 +97,32 @@ Si vous rencontrez ce problème, essayez l’une des opérations suivantes :
 cette erreur se produit généralement lors de la réinitialisation de l’appareil et des flux de réutilisation dans lesquels un appareil HoloLens est passé par autopilot au moins une fois. pour résoudre ce problème, [supprimez l’appareil du Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) et réinitialisez-le pour terminer le déroulement automatique du pilote.
 
 Pour plus d’informations, consultez [les étapes de dépannage sur la page AutoPilot.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+
+## <a name="microsoft-store-error-code-0x80131500"></a>code d’erreur Microsoft Store 0x80131500
+
+certains utilisateurs peuvent rencontrer le Microsoft Store ne fonctionnent pas comme prévu et voir le code d’erreur 0x80131500. ce problème est dû au fait que la région définie sur la HoloLens pas disponible dans l’application Microsoft Store sur HoloLens. Si vous rencontrez le code d’erreur 0x80131500, pour résoudre ce problème, procédez comme suit :
+
+1. définissez Paramètres > heure & langue > région > pays ou région dans l’un des éléments suivants :
+    - États-Unis, le Japon, la Chine, l’Allemagne, le Canada, le Royaume-Uni, l’Irlande, la France, l’Australie, la Nouvelle-Zélande.
+1. Redémarrez l’application du Windows Store.
+1. Pour que l’appareil entier reflète la modification, l’appareil doit être redémarré.
+
+l’équipe HoloLens travaille sur l’ajout de la prise en charge de régions supplémentaires.
+
+Pour connaître [les pays à acheter HoloLens 2,](hololens2-purchase.md) cliquez ici.
+
+## <a name="microsoft-edge-fails-to-start-the-microphone"></a>Microsoft Edge ne parvient pas à démarrer le microphone
+
+lorsque les utilisateurs qui utilisent Microsoft Edge le microphone peuvent ne pas démarrer, ce qui ne peut donc pas être utilisé pour interagir avec Edge dans HoloLens. ce problème connu est lié à la version de l’application Microsoft Edge, veuillez ne pas relancer votre appareil vers une version antérieure, car cela ne résoudra pas ce problème.
+
+### <a name="who-is-affected"></a>Le Qui est-il affecté ?
+
+utilisateurs ayant Microsoft Edge version 93, 94 ou 95.
+vous pouvez vérifier quelle version de Microsoft Edge vous avez à l’aide de l’application Microsoft Store, puis sélectionner le bouton « voir plus » représenté par le **...** puis sélectionnez **téléchargements et mises à jour**.
+
+### <a name="work-around"></a>Solution de contournement
+
+le correctif actuel se trouve dans la version 96, qui est disponible pour les utilisateurs inscrits auprès de Microsoft Edge insider. cela est différent de l’inscription de votre appareil en tant que Windows insider. Lisez ces instructions pour plus d’informations sur [la façon de s’inscrire au programme Insider d’Edge.](hololens-new-edge.md#microsoft-edge-insider-channels)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>La vidéo assistance à distance se fige après 20 minutes
 
