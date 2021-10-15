@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c45a9a05cc7911bc9866df5e4313bc27a205d333
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 3f5e5f3e38c24805935fc69dfacd5eac93ddd017
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924475"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034278"
 ---
 # <a name="hololens-2-release-notes"></a>Notes de publication de HoloLens 2
 
@@ -35,15 +35,17 @@ pour vous assurer que vous disposez d’une expérience productive avec vos appa
 
 Windows holographique, version 21H2 est désormais disponible et offre un ensemble de nouvelles fonctionnalités pour HoloLens 2 les utilisateurs et les professionnels de l’informatique. Il s’agit là d’une amélioration des rapports de dépannage et d’appareils, de bogues résolus dans le mode plein écran et l’observateur de certificats, de la surface de gérabilité étendue et de la fiabilité accrue des mises à jour. une nouvelle fonctionnalité phare de cette mise à jour de fonctionnalité venant à HoloLens est notre Mode de plateforme mobile. Découvrez toutes les nouvelles fonctionnalités intéressantes pour HoloLens 2 !
 
-Cette dernière version est une mise à jour mensuelle de la version 21H1, mais cette fois, nous incluons de nouvelles fonctionnalités. le numéro de version majeure reste le même et Windows Update indique une version mensuelle de la version 21H1 (build 20348). vous pouvez consulter votre numéro de build dans votre Paramètres > à propos de l’écran pour confirmer que vous êtes sur la dernière version disponible 20348.1432 +. pour effectuer une mise à jour vers la dernière version, ouvrez l’application Paramètres, accédez à update & Security, puis appuyez sur rechercher les mises à jour. pour plus d’informations sur la gestion des mises à jour de HoloLens, consultez gérer les mises à jour [HoloLens.](hololens-updates.md)
+cette dernière version est une mise à jour mensuelle de la version 21H1, mais cette fois, nous incluons de nouvelles fonctionnalités, car le numéro de version principal restera le même et Windows Update indiquera une version mensuelle de la version 21H1 (build 20348). HoloLens 2 paramètres affichent toujours les 21H1, même si nous faisons référence à cette version en tant que 21H2. Pour vous assurer que vous avez reçu 21H2, vérifiez que le numéro de version est 20348,1432 ou une version ultérieure. vous pouvez consulter votre numéro de build dans votre Paramètres > à propos de l’écran pour confirmer que vous êtes sur la dernière version disponible 20348.1432 +.
+
+pour effectuer une mise à jour vers la dernière version, ouvrez l’application Paramètres, accédez à update & Security, puis appuyez sur rechercher les mises à jour. pour plus d’informations sur la gestion des mises à jour de HoloLens, consultez gérer les mises à jour [HoloLens.](hololens-updates.md)
 
 | Fonctionnalité                 | Description                | Utilisateur ou scénario |
 |-------------------------|----------------------------|--------------|
 | [Mode de plateforme mobile](#moving-platform-mode) | introduit la version bêta du Mode de plateforme mobile, qui, lorsqu’elle est configurée, permet l’utilisation de HoloLens 2 sur les grands navires marins ayant un mouvement faiblement dynamique. | Tous |
 | [Prise en charge des fichiers PFX pour le gestionnaire de certificats](#pfx-file-support-for-certificate-manager) | ajouter des certificats PFX via l’interface utilisateur Paramètres | Utilisateur final |
-| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Dépannage |
-| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Dépannage |
-| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Dépannage |
+| [affichez le rapport de diagnostic avancé dans Paramètres sur HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Afficher les journaux de diagnostic MDM sur l’appareil | Résolution des problèmes |
+| [Notifications de diagnostics hors connexion](#offline-diagnostics-notifications) | Commentaires audiovisuels pour la collecte de journaux | Résolution des problèmes |
+| [Améliorations de la collecte des journaux de faible capacité de stockage](#low-storage-log-collection-improvements) | Améliorations apportées aux scénarios de collecte des journaux dans des situations de faible stockage. | Résolution des problèmes |
 | [modifications du CSP pour la création de rapports HoloLens détails](#csp-changes-for-reporting-hololens-details) | Nouveaux fournisseurs de services de chiffrement pour interroger les données | Administrateurs informatiques    |
 | [Stratégie de connexion automatique contrôlée par CSP](#auto-login-policy-controlled-by-csp) | Utilisé pour se connecter automatiquement à un compte | Administrateurs informatiques |
 | [Détection et notifications de redémarrage des mises à jour améliorées](#improved-update-restart-detection-and-notifications) | Nouvelles stratégies activées et expérience utilisateur pour les mises à jour. | Administrateurs informatiques |

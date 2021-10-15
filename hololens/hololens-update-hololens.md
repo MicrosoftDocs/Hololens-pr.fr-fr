@@ -5,29 +5,29 @@ keywords: comment, mettre à jour, restaurer, HoloLens, vérifier la build, num�
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: v-beehanson
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/3/2021
+ms.date: 10/11/2021
 audience: ITPro
 ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f39fc2c6c0aaf16f304f38216a424c3811eb439d
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032864"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034261"
 ---
 # <a name="update-hololens-2"></a>Mettre à jour HoloLens 2
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Nous travaillons toujours sur de nouvelles fonctionnalités, des correctifs de bogues et des mises à jour de sécurité. Vous serez averti lorsque ces mises à jour seront prêtes.
 
-selon vos préférences, votre HoloLens télécharge et installe automatiquement les mises à jour système chaque fois qu’elle est connectée à power, connectée à Internet et même en veille.
+selon vos préférences, votre HoloLens télécharge et installe automatiquement les mises à jour système chaque fois qu’il est branché à l’alimentation, connecté à Internet et même en veille.
 
 pour vous assurer que votre HoloLens est toujours mis à jour, laissez-le branché avec le chargeur fourni avec lui. vous souhaitez également que vos HoloLens connectés à internet. De cette façon, il télécharge et installe automatiquement les mises à jour du système. 
 
@@ -35,7 +35,7 @@ avec Windows Update service, vous pouvez contrôler plusieurs aspects du process
 
 ## <a name="types-of-updates"></a>Types de mise à jour
 
-par HoloLens, vous pouvez gérer automatiquement deux types de mises à jour. 
+par HoloLens, vous pouvez gérer automatiquement deux types de mises à jour.
 
 - Mises à jour des fonctionnalités : publiées deux fois par an.
 - Mises à jour qualité : incluez des mises à jour de sécurité critiques. Elles sont publiées tous les mois ou selon les besoins.
@@ -46,7 +46,7 @@ Utilisez **Update** / **AllowAutoUpdate** pour gérer l’analyse, le téléchar
 
 Vous pouvez également définir une planification de mise à jour. Il peut s’agir d’un jour particulier, ou tous les jours, à un moment donné. Par exemple, à 17 h 00 ou en dehors des heures d’activité.
 
-Enfin, quelques mots sur la planification de votre stratégie de mise à jour. Nous prenons en charge les reports de mise à jour. Vous pouvez donc décider du délai d’attente après la publication par Microsoft d’une mise à jour pour installer cette mise à jour sur les appareils.
+Enfin, quelques mots sur la planification de votre stratégie de mise à jour. Nous prenons en charge les retards de mise à jour. vous pouvez donc décider du délai d’attente après la publication par Microsoft d’une mise à jour pour installer cette mise à jour sur les appareils.
 
 Parfois, une entreprise souhaite essayer toutes les nouvelles fonctionnalités tout d’abord pour s’assurer que tout fonctionne, et les nouvelles mises à jour sont familières afin que l’équipe de support soit préparée. Une fois qu’ils ont confirmé que tout est correct, ils déployent les mises à jour de l’ensemble de l’entreprise. En associant des sous-ensembles de vos appareils à des stratégies de report différentes, appelées sonneries de mise à jour, vous pouvez coordonner une stratégie de déploiement des mises à jour pour votre organisation.
 
@@ -83,21 +83,10 @@ dans certains cas, vous souhaiterez peut-être revenir à une version précéden
 
 1. Contactez le support technique pour voir s’ils peuvent résoudre votre problème.
     1. Assurez-vous que les données de télémétrie **facultatives** ou **complètes** sont activées. cela rend votre bogue plus exploitable et plus facile pour les ingénieurs à diagnostiquer.
-    1. [Commentaires de fichier](hololens-feedback.md) aussi descriptifs que possible. Prenez note du titre ou utilisez la fonctionnalité partager pour pouvoir partager votre bogue avec la prise en charge.
+    1. Dans les commentaires sur les [fichiers](hololens-feedback.md) sont aussi descriptifs que possible. Prenez note du titre ou utilisez la fonctionnalité partager pour pouvoir partager votre bogue avec la prise en charge.
     1. Contactez le [support technique](https://aka.ms/hlsupport). S’il s’agit d’un problème qui doit être résolu en revenant à une version antérieure, il peut vous fournir le FFU pour flasher votre appareil.
 
-1. si cela ne fonctionne pas, [réinitialisez ou redémarrez votre HoloLens 2 avec le compagnon de récupération avancé](hololens-recovery.md).
-    1. Sur votre PC, téléchargez l' [Assistant de récupération avancée](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) à partir du Microsoft Store.
-    1. assurez-vous que vous n’avez aucun téléphone ou Windows appareils branchés sur votre PC.
-    1. Choisissez la version à utiliser pour le flash :
-        1. vous pouvez télécharger la dernière [version de HoloLens 2](https://aka.ms/hololens2download).
-        1. Vous pouvez utiliser la build par défaut qu’ARC héberge. (Si vous choisissez cette option, ignorez l’étape suivante.)
-        1. Vous pouvez utiliser une prise en charge de build fournie avec.
-    1. Une fois ces téléchargements terminés, ouvrez l' **Explorateur de fichiers**  >  **téléchargements**. Cliquez avec le bouton droit sur le dossier compressé que vous avez téléchargé, puis sélectionnez **extraire tout**  >  **extraire** pour le décompresser.
-    1. Connecter votre HoloLens sur votre ordinateur à l’aide d’un câble usb-a à usb-C. (même si vous avez utilisé d’autres câbles pour connecter votre HoloLens, celui-ci fonctionne mieux.)
-    1. L’Assistant de récupération avancée détecte automatiquement votre HoloLens. Sélectionnez la vignette **Microsoft HoloLens**.
-    1. Dans l’écran suivant, sélectionnez **sélection manuelle des packages** , puis sélectionnez le fichier d’installation contenu dans le dossier que vous avez décompressé à l’étape 4. (Recherchez un fichier avec l' `.ffu` extension.)
-    1. Sélectionnez **installer le logiciel** et suivez les instructions.
+1. si cela ne fonctionne pas, [reflashez votre HoloLens 2 avec le compagnon de récupération avancé](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
 > En revenons à une version antérieure, vous supprimez vos fichiers et paramètres personnels.

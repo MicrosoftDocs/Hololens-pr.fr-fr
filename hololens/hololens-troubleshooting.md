@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964562"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034193"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
@@ -163,7 +163,7 @@ Cela ne doit pas se produire pendant :
 Contourner les méthodes :
 
 - Méthodes de connexion telles que PIN, mot de passe, IRIS, authentification Web ou clés FIDO2.
-- Si le code PIN de l’appareil ne peut pas être mémorisé et que d’autres méthodes d’authentification ne sont pas disponibles, un utilisateur peut utiliser le mode de reverrouillage [Manuel](hololens-recovery.md#manual-procedure).
+- Si le code PIN de l’appareil ne peut pas être mémorisé et que d’autres méthodes d’authentification ne sont pas disponibles, un utilisateur peut utiliser le mode de reverrouillage [Manuel](hololens-recovery.md#manual-flashing-mode-procedure).
 
 [Retour à la liste](#list)
 
@@ -262,7 +262,7 @@ Solutions de contournement :
 si votre HoloLens ne démarre pas :
 
 - Si les voyants situés à côté du bouton d’alimentation ne s’allument pas, ou si un seul LED clignote brièvement, vous devrez peut-être [charger votre HoloLens.](hololens2-charging.md#charging-the-device)
-- Si les voyants s’allument lorsque vous appuyez sur le bouton d’alimentation mais que vous ne voyez rien dans les affichages, [effectuez une réinitialisation matérielle de l’appareil](hololens-recovery.md#hard-reset-procedure).
+- Si les voyants s’allument lorsque vous appuyez sur le bouton d’alimentation mais que vous ne voyez rien dans les affichages, [effectuez une réinitialisation matérielle de l’appareil](hololens-recovery.md#hard-restart-procedure).
 
 si votre HoloLens devient figé ou ne répond pas :
 
