@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034372"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034222"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Redémarrer, réinitialiser ou récupérer HoloLens 2
 
@@ -45,13 +45,19 @@ Si l’appareil est correctement initialisé et en cours d’exécution, trois m
 
    ![Un écran Propriétés HoloLens 2 affiche le niveau de charge de la batterie.](images/ResetRecovery2.png)
 
-Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](hololens-troubleshooting.md). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une [procédure de réinitialisation matérielle](hololens-recovery.md#hard-reset-procedure) avec l’appareil connecté à l’alimentation, et non à votre PC hôte. Patientez au moins une heure pour le chargement de l’appareil.
+Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](hololens-troubleshooting.md). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une [procédure de réinitialisation matérielle](hololens-recovery.md#hard-restart-procedure) avec l’appareil connecté à l’alimentation, et non à votre PC hôte. Patientez au moins une heure pour le chargement de l’appareil.
 
-## <a name="reset-the-device"></a>Réinitialisation de l’appareil
+> [!NOTE]
+> Commençons par définir des termes.\
+> « Redémarrer » signifie simplement éteindre, puis rallumer l’appareil.\
+> « Réinitialiser » signifie restaurer l’appareil aux paramètres par défaut via l’interface utilisateur Paramètres pour réinstaller l’image actuelle.\
+> « Reflasher » signifie que l’appareil est connecté à un PC et qu’une nouvelle image (éventuellement différente) doit être installée.
 
-Vous pouvez être amené à réinitialiser manuellement l’appareil sans utiliser l’interface utilisateur du logiciel.
+## <a name="restart-the-device"></a>Redémarrer l’appareil
 
-### <a name="standard-procedure"></a>Procédure standard
+Dans certaines circonstances, vous pouvez être amené à redémarrer manuellement l’appareil sans utiliser l’interface utilisateur du logiciel. Ceci peut vous aider à résoudre un problème que vous rencontrez sans devoir réinitialiser/reflasher votre appareil.
+
+### <a name="standard-restart-procedure"></a>Procédure de redémarrage standard
 
 1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
 
@@ -63,7 +69,7 @@ Vous pouvez être amené à réinitialiser manuellement l’appareil sans utilis
 
    ![Gestionnaire des appareils HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>Procédure de réinitialisation matérielle
+### <a name="hard-restart-procedure"></a>Procédure de redémarrage matériel
 
 Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la procédure de réinitialisation matérielle :
 
@@ -92,13 +98,13 @@ Il existe deux méthodes pour réinitialiser un appareil HoloLens 2. Pour ces d
 >[!WARNING]
 >Si vous réinitialisez votre appareil, toutes vos données, applications et paramètres personnels seront supprimés, y compris les informations de réinitialisation du TPM.
 
-Par défaut, Advanced Recovery Companion est configuré pour télécharger la version la plus récente des fonctionnalités. Pour plus d’informations sur les dernières fonctionnalités publiées, consultez [Notes de publication HoloLens 2](hololens-release-notes.md). Pour obtenir la dernière version du package de mise à jour FFU HoloLens 2 dans le but de réinitialiser votre appareil via Advanced Recovery Companion, téléchargez la dernière image mensuelle HoloLens 2 : [https://aka.ms/hololens2download](https://aka.ms/hololens2download). Cette version correspond à la build le plus récente disponible.
+Par défaut, Advanced Recovery Companion est configuré pour télécharger la version la plus récente des fonctionnalités. Pour plus d’informations sur les dernières versions des fonctionnalités, consultez [Notes de publication d’HoloLens 2](hololens-release-notes.md). Pour obtenir la dernière version du package de mise à jour FFU HoloLens 2 dans le but de réinitialiser votre appareil via Advanced Recovery Companion, téléchargez la dernière image mensuelle HoloLens 2 : [https://aka.ms/hololens2download](https://aka.ms/hololens2download). Cette version correspond à la build le plus récente disponible.
 
 Avant de commencer la procédure de réinitialisation, assurez-vous que l’application est installée, en cours d’exécution sur votre PC Windows 10 et prête à détecter l’appareil. Assurez-vous également que votre HoloLens est chargé à un minimum de 40 %.
 
 ![Capture d’écran de la réinitialisation d’HoloLens 2.](images/ARC1.png)
 
-### <a name="normal-procedure"></a>Procédure normale
+### <a name="normal-flashing-procedure"></a>Procédure de flashage normale
 
 1. Lorsque l’appareil HoloLens est en marche, connectez-le au PC Windows 10 sur lequel vous avez déjà ouvert l’application Advanced Recovery Companion.
 
@@ -108,7 +114,7 @@ Avant de commencer la procédure de réinitialisation, assurez-vous que l’appl
 
 1. Sélectionnez l’appareil HoloLens 2 dans l’interface utilisateur de l’application Advanced Recovery Companion et suivez les instructions pour effectuer la réinitialisation.
 
-### <a name="manual-procedure"></a>Procédure manuelle
+### <a name="manual-flashing-mode-procedure"></a>Procédure du mode de flashage manuel
 
 Vous devrez peut-être mettre l’appareil en mode de récupération si :
 
@@ -146,7 +152,7 @@ Vous devrez peut-être mettre l’appareil en mode de récupération si :
 
 1. Si Advanced Recovery Companion ne détecte pas votre appareil, assurez-vous que vous pouvez vous connecter à celui-ci via l’Explorateur de fichiers sur votre ordinateur. Dans le cas contraire,
 
-    1. Il est possible que votre appareil présente des stratégies USB qui désactivent cette connexion. Si tel est le cas, essayez le [mode de réinitialisation manuelle](hololens-recovery.md#manual-procedure).
+    1. Il est possible que votre appareil présente des stratégies USB qui désactivent cette connexion. Si tel est le cas, essayez le [mode de réinitialisation manuelle](hololens-recovery.md#manual-flashing-mode-procedure).
     2. En l’absence de stratégies, essayez un autre câble USB.
 
 1. Vérifiez que votre appareil n’affiche pas un [modèle LED 1-3-5](hololens2-setup.md#lights-to-indicate-problems).

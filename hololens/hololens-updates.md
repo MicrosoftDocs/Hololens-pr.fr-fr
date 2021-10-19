@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/13/2020
+ms.date: 10/12/2021
 ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 854e867238de6c87732970fba75abdc8e1fb2c64
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034366"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924345"
 ---
 # <a name="manage-hololens-updates"></a>Gérer les mises à jour de HoloLens
 
@@ -101,6 +101,24 @@ Vous pouvez utiliser les stratégies de mise à jour suivantes pour configurer l
 - [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 - [Update/UpdateServiceUrl](/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+#### <a name="improved-update-restart-detection-and-notifications"></a>Amélioration de la détection et des notifications concernant le redémarrage après mise à jour
+
+- Introduit dans [Windows Holographique, version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+Entre les heures actives et les stratégies d’heure d’installation, il est possible d’éviter le redémarrage des appareils HoloLens quand ils sont en cours d’utilisation. Cependant, cela retarderait également l’adoption des mises à jour si les redémarrages n’ont pas lieu pour terminer l’installation d’une mise à jour nécessaire. Nous avons maintenant ajouté des stratégies pour permettre au service informatique d’appliquer des échéances et des redémarrages obligatoires, et de garantir que l’installation d’une mise à jour est effectuée en temps voulu. Les utilisateurs peuvent être avertis avant le lancement du redémarrage et peuvent le retarder conformément à la stratégie du service informatique.
+
+Les stratégies de mise à jour suivantes ont été ajoutées :
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>Planifier et configurer les déploiements de mises à jour pour HoloLens 2
 
