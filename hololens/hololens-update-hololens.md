@@ -14,16 +14,16 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034261"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151695"
 ---
 # <a name="update-hololens-2"></a>Mettre à jour HoloLens 2
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Nous travaillons toujours sur de nouvelles fonctionnalités, des correctifs de bogues et des mises à jour de sécurité. Vous serez averti lorsque ces mises à jour seront prêtes.
 
@@ -86,7 +86,11 @@ dans certains cas, vous souhaiterez peut-être revenir à une version précéden
     1. Dans les commentaires sur les [fichiers](hololens-feedback.md) sont aussi descriptifs que possible. Prenez note du titre ou utilisez la fonctionnalité partager pour pouvoir partager votre bogue avec la prise en charge.
     1. Contactez le [support technique](https://aka.ms/hlsupport). S’il s’agit d’un problème qui doit être résolu en revenant à une version antérieure, il peut vous fournir le FFU pour flasher votre appareil.
 
-1. si cela ne fonctionne pas, [reflashez votre HoloLens 2 avec le compagnon de récupération avancé](hololens-recovery.md#clean-reflash-the-device).
+1. vous pouvez également [reflasher votre HoloLens 2 avec le compagnon de récupération avancé](hololens-recovery.md#clean-reflash-the-device).
+    1.  Choisissez la version à utiliser pour le flash : 
+        1.  vous pouvez télécharger la dernière [version de HoloLens 2](https://aka.ms/hololens2download).
+        1.  Vous pouvez utiliser la build par défaut qu’ARC héberge.
+        1.  Vous pouvez utiliser une prise en charge de build fournie avec.
 
 > [!NOTE]
 > En revenons à une version antérieure, vous supprimez vos fichiers et paramètres personnels.
