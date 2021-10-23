@@ -14,12 +14,12 @@ manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fa114633afe70a11a180c67fedbd40eb423ece99
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f466abe45a1a9ad676f8dd6a94244473c084be7
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034176"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202877"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscrire HoloLens dans GPM
 
@@ -28,7 +28,7 @@ vous pouvez gérer plusieurs appareils Microsoft HoloLens simultanément à l’
 > [!NOTE]
 > La gestion des appareils mobiles (MDM), y compris les fonctionnalités VPN, BitLocker et en mode plein écran, est disponible uniquement lorsque vous [effectuez une mise à niveau vers Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
  votre organisation doit configurer la gestion des appareils mobiles (MDM) pour gérer les appareils HoloLens. Votre fournisseur GPM peut être Microsoft Intune ou un fournisseur tiers qui utilise les API GPM de Microsoft.
 
@@ -52,7 +52,7 @@ une fois que l’appareil est inscrit auprès de votre serveur MDM, l’applicat
 
 ## <a name="auto-enrollment-in-mdm"></a>Inscription automatique dans GPM
 
-si votre organisation dispose d’un [abonnement Azure Premium](https://azure.microsoft.com/overview/), utilise Azure Active Directory (Azure AD) et une solution de gestion des appareils mobiles qui accepte un jeton Azure AD pour l’authentification (actuellement pris en charge uniquement dans Microsoft Intune et la surveillance), votre administrateur informatique peut configurer Azure AD d’autoriser automatiquement l’inscription MDM une fois que l’utilisateur se connecte avec son compte Azure AD. [Découvrez comment configurer l’inscription Azure AD.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+si votre organisation dispose d’un [abonnement Azure Premium](https://azure.microsoft.com/overview/), utilise Azure Active Directory (Azure AD) et une solution de gestion des appareils mobiles qui accepte un jeton Azure AD pour l’authentification (actuellement pris en charge uniquement dans Microsoft Intune et la surveillance), votre administrateur informatique peut configurer Azure AD d’autoriser automatiquement l’inscription MDM une fois que l’utilisateur se connecte avec son compte Azure AD. [découvrez comment configurer l’inscription Azure AD et l'](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) [intégration d’Azure active directory avec MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) pour obtenir des informations générales.
 
 Lorsque l’inscription automatique est activée, aucune inscription manuelle supplémentaire n’est nécessaire. Lorsque l’utilisateur se connecte avec un compte Azure AD, l’appareil est inscrit dans GPM lors de sa première utilisation.
 
@@ -67,6 +67,14 @@ si votre appareil a été inscrit avec un compte Azure AD ou autopilot, il ne pe
 Si votre appareil a été inscrit auprès d’un compte MSA qui a ajouté un compte professionnel ou à partir d’un compte local inscrit uniquement dans la gestion des appareils, vous pouvez annuler l’inscription de l’appareil. ouvrez le menu Démarrer, puis sélectionnez **Paramètres**  ->  bouton de déconnexion YourAccount d'**accès à l’application ou scolaire**  ->    ->   .
 
 ## <a name="enrollment-troubleshooting"></a>Résolution des problèmes d’inscription
+
+### <a name="ensure-device-is-successfully-connected-to-internet-before-attempting-enrollment-post-oobe"></a>Vérifier que l’appareil est correctement connecté à Internet avant d’effectuer l’inscription poster OOBE
+
+Une fois que l’utilisateur s’est connecté, assurez-vous de la connexion Internet en accédant à un site Web accessible sur Internet sur l’appareil.
+
+### <a name="ensure-that-azure-active-directory-aad-join-is-not-disabled-in-your-aad-tenant"></a>assurez-vous que la jointure Azure Active Directory (AAD) n’est pas désactivée dans votre client AAD
+
+Reportez-vous à [configurer les paramètres de votre appareil](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) pour plus d’informations sur les options disponibles dans portail Azure.
 
 ### <a name="ensure-valid-license-is-assigned-to-the-user"></a>Garantir que la licence valide est affectée à l’utilisateur
 
