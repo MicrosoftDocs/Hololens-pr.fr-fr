@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034106"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151677"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Préparer des certificats et des profils réseau pour HoloLens 2
 
@@ -27,7 +27,7 @@ L'authentification basée sur les certificats est une exigence courante pour les
 Comme les appareils HoloLens 2 sont généralement joints à Azure Active Directory (Azure AD) et gérés par Intune ou un autre fournisseur GPM, vous devrez déployer ces certificats via une infrastructure de certificats SCEP (Simple Certificate Enrollment Protocol) ou PKCS (Public Key Cryptography Standard) intégrée à votre solution GPM. 
 
 >[!NOTE]
-> Si vous n'avez pas de fournisseur GPM, vous pouvez toujours déployer des certificats via un [package de configuration](hololens-provisioning.md#steps-for-creating-provisioning-packages) dans le [Concepteur de configuration Windows](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab), ou via le [Gestionnaire de certificats](certificate-manager.md) en accédant à **Paramètres > Mise à jour et sécurité > Gestionnaire de certificats**.
+> Si vous n'avez pas de fournisseur GPM, vous pouvez toujours déployer des certificats via un [package de configuration](hololens-provisioning.md#create-the-provisioning-package) dans le [Concepteur de configuration Windows](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab), ou via le [Gestionnaire de certificats](certificate-manager.md) en accédant à **Paramètres > Mise à jour et sécurité > Gestionnaire de certificats**.
 
 ## <a name="certificate-requirements"></a>Configuration requise des certificats
 Les certificats racine sont nécessaires pour déployer des certificats via une infrastructure SCEP ou PKCS. Les certificats racine peuvent également être exigés pour déployer d'autres applications et services de votre organisation sur vos appareils HoloLens 2. 

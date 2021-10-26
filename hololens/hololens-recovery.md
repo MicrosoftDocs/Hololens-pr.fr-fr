@@ -6,8 +6,8 @@ keywords: procédure de réinitialisation, de réinitialisation, de récupérati
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034222"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151640"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Redémarrer, réinitialiser ou récupérer HoloLens 2
 
@@ -45,7 +45,7 @@ Si l’appareil est correctement initialisé et en cours d’exécution, trois m
 
    ![Un écran Propriétés HoloLens 2 affiche le niveau de charge de la batterie.](images/ResetRecovery2.png)
 
-Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](hololens-troubleshooting.md). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une [procédure de réinitialisation matérielle](hololens-recovery.md#hard-restart-procedure) avec l’appareil connecté à l’alimentation, et non à votre PC hôte. Patientez au moins une heure pour le chargement de l’appareil.
+Si l’appareil ne parvient pas à démarrer à partir du menu Démarrer, observez l’apparence des voyants et l’énumération d’appareils sur l’ordinateur hôte. Suivez ensuite le [Guide de résolution des problèmes](hololens-troubleshooting.md). Si l’état de l’appareil ne correspond à aucun des états indiqués dans le Guide de résolution des problèmes, démarrez une [procédure de redémarrage matériel](hololens-recovery.md#hard-restart-procedure) avec l’appareil connecté à l’alimentation, et non à votre PC hôte. Patientez au moins une heure pour le chargement de l’appareil.
 
 > [!NOTE]
 > Commençons par définir des termes.\
@@ -71,7 +71,7 @@ Dans certaines circonstances, vous pouvez être amené à redémarrer manuelleme
 
 ### <a name="hard-restart-procedure"></a>Procédure de redémarrage matériel
 
-Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la procédure de réinitialisation matérielle :
+Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la procédure de redémarrage matériel :
 
 1. Déconnectez l’appareil de l’alimentation ou de l’ordinateur hôte en débranchant le câble de type C.
 
@@ -81,7 +81,15 @@ Si la procédure de réinitialisation standard ne fonctionne pas, utilisez la pr
 
 1. Ouvrez le Gestionnaire de périphériques (pour Windows 10, appuyez sur la touche **Windows**, puis sur la touche **X** et sélectionnez , puis sélectionnez **Gestionnaire de périphériques**). Assurez-vous que l’appareil est répertorié correctement en tant que *Microsoft HoloLens* comme le montre l’image suivante :
 
-   ![Gestionnaire des appareils HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Gestionnaire des appareils HoloLens 2 MicrosoftHoloLensRecovery 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>Réinitialisation de l’appareil
+
+Vous pouvez réinitialiser votre appareil directement à partir de votre casque. Sélectionnez **Paramètres**, puis **Mise à jour et sécurité > Réinitialisation et récupération > Réinitialiser cet appareil**.
+
+   ![Réinitialisation du casque HoloLens.](images/headset-reset-recovery.png)
+
+Quand vous réinitialisez l’appareil de cette manière, tous les comptes d’utilisateur sont supprimés et toutes les données sont effacées.
 
 ## <a name="clean-reflash-the-device"></a>Réinitialiser l’appareil
 

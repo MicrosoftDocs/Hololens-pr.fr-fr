@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: sekerawa
-ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: b343e4dc6e217319574efa068cd72c5f5a8675a8
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964579"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202911"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot pour HoloLens 2
 
@@ -320,12 +320,6 @@ OOBE attend indéfiniment le téléchargement du profil Autopilot et la boîte d
 
 ![Vue de l’appareil lorsque la stratégie est appliquée.](images/hololens-autopilot-lockdown.png)
 
-#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Pourquoi l’expérience Autopilot ne s’affiche-t-elle pas, même si le profil Autopilot est attribué dans Intune ?
-
-Par défaut, HoloLens 2 attend 15 secondes avant de détecter Autopilot après avoir détecté Internet. Si aucun profil Autopilot n’est détecté dans les 15 secondes, cela signifie qu’Autopilot n’a pas été découvert correctement. La page du CLUF s’affiche alors.
-
-Redémarrez votre appareil et réessayez. Pour plus d’informations, consultez [Problèmes connus et limitations](hololens2-autopilot.md#known-issues-and-limitations) ou [Résolution des problèmes](hololens2-autopilot.md#troubleshooting).
-
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 
 ### <a name="why-do-i-see-0x80180014-during-autopilot"></a>Pourquoi est-ce que je vois 0x80180014 pendant Autopilot ?
@@ -355,6 +349,12 @@ Les articles suivants vous permettront d’en savoir plus et de résoudre les pr
 - [Windows AutoPilot : problèmes connus](/mem/autopilot/known-issues)
 - [Résolution des problèmes d’inscription d’appareils Windows dans Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot : conflits de stratégie](/mem/autopilot/policy-conflicts)
+
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Pourquoi l’expérience Autopilot ne s’affiche-t-elle pas, même si le profil Autopilot est attribué dans Intune ?
+
+Par défaut, HoloLens 2 attend 15 secondes avant de détecter Autopilot après avoir détecté Internet. Si aucun profil Autopilot n’est détecté dans les 15 secondes, cela signifie qu’Autopilot n’a pas été découvert correctement. La page du CLUF s’affiche alors.
+
+Redémarrez votre appareil et réessayez. Pour plus d’informations, consultez [Problèmes connus et limitations](hololens2-autopilot.md#known-issues-and-limitations).
 
 ## <a name="feedback-and-support-for-autopilot"></a>Commentaires et support pour Autopilot
 
