@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 080eb5949bc80d1ce922d57f099c375668f5633f
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 382c979138068ab1d9682ee4e84831accc9e4553
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924355"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351647"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview pour Microsoft HoloLens
 
@@ -29,7 +29,26 @@ Bienvenue dans les dernières versions préliminaires d’Insider pour HoloLens�
 
 ## <a name="windows-insider-release-notes"></a>Windows Notes de publication d’Insider
 
-Nous sommes ravis que toutes nos fonctionnalités récentes ont été rendues publiques ! Si vous souhaitez en savoir plus à ce sujet, consultez la [page notes de publication](hololens-release-notes.md)
+Quelles sont les nouveautés et l’horizon de HoloLens ? Découvrez ces nouvelles mises à jour arrivant à HoloLens !
+
+### <a name="colorblind-mode"></a>Mode daltonien
+
+Ajouté à la version d’Insider 20348,1463
+
+le mode daltonien est une fonctionnalité intéressante qui rend HoloLens plus accessible. le nouveau mode daltonien est disponible dans l’application Paramètres sous **Paramètres**  ->  filtres **de couleur d’ergonomie**  ->  . Plusieurs nouveaux filtres sont disponibles. Voici un exemple visuel de certains filtres disponibles.
+
+| Désactivé | Nuances | Tritanopia |
+|-----|-----------|------------|
+| ![Filtre de couleur désactivé](images/colorblind-off.png)   | ![Nuances de gris du filtre de couleurs](images/colorblind-greyscale.png)         | ![Filtre de couleurs tritanopia](images/colorblind-tritanopia.png)          |
+
+### <a name="fixes-and-improvements"></a>Correctifs et améliorations
+
+- Résolution d’un problème connu où [chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically).
+- Améliorations du mode de déplacement de la plateforme lors de la détection de la direction vers le bas.
+- Correction d’un problème concernant les boîtes de dialogue de mise à jour.
+- boîte de réception mise à jour Microsoft Edge version du navigateur.
+- Correction d’un problème où le basculement des données de diagnostic facultatives n’a pas rendu persistant le paramètre choisi dans la page des paramètres de télémétrie après un redémarrage.
+- Résolu et problème où les codes QR n’étaient pas reconnus lorsqu’ils étaient pivotés à un angle de 45 degrés par rapport à l’appareil.
 
 ## <a name="start-receiving-insider-builds"></a>Commencer à recevoir des builds Insider
 

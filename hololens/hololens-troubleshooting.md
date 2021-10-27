@@ -13,26 +13,26 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problèmes, bogues, dépannage, correction, aide, support, HoloLens, émulateur
-ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: deed0d14b2567ae0a1fb2cde8ad1fbe3dbb20bb3
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034193"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351763"
 ---
 # <a name="device-troubleshooting"></a>Dépannage des appareils
 
 cet article explique comment résoudre plusieurs problèmes courants liés au HoloLens.
 
 >[!IMPORTANT]
-> Avant d'entamer une procédure de résolution des problèmes, assurez-vous que la batterie de votre appareil est, si possible, chargée à **20 ou 40 %** de sa capacité. Les [témoins](hololens2-setup.md#lights-that-indicate-the-battery-level) situés sous le bouton d'alimentation permettent de vérifier rapidement la capacité de la batterie sans se connecter à l'appareil.
+> Avant de commencer une procédure de dépannage, assurez-vous que la batterie de votre appareil est au minimum entre **20 et 40 %** , si possible. Les [témoins](hololens2-setup.md#lights-that-indicate-the-battery-level) situés sous le bouton d'alimentation permettent de vérifier rapidement la capacité de la batterie sans se connecter à l'appareil.
 
 <a id="list"></a>
 
 **Problèmes connus**
-- [Chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [Résolution d’Insider : chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDrive l’application UWP ne fonctionne pas pour les utilisateurs Azure AD](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
-- [Pourquoi est-ce que je vois 0x80180014 pendant AutoPilot ?](#why-do-i-see-0x80180014-during-autopilot)
+- [Pourquoi est-ce que je vois 0x80180014 pendant Autopilot ?](#why-do-i-see-0x80180014-during-autopilot)
 - [code d’erreur Microsoft Store 0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge ne parvient pas à démarrer le microphone](#microsoft-edge-fails-to-start-the-microphone)
 - [**Résolution** des vidéos d’assistance à distance fixes après 20 minutes](#remote-assist-video-freezes-after-20-minutes)
@@ -67,6 +67,9 @@ cet article explique comment résoudre plusieurs problèmes courants liés au Ho
 
 ## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>Chaque fois que la puissance passe à 18%, l’appareil s’arrête soudainement automatiquement
 
+> [!NOTE]
+> un correctif est disponible pour ce problème dans [Windows insiders.](hololens-insider.md)
+
 Il existe un problème connu connu où, lorsque l’appareil atteint 18% de la batterie, il s’arrête de manière inattendue. Il s’agit d’un problème logiciel, et non d’un problème de matériel ou de batterie. n’échangez donc pas les appareils. Si vous ne savez pas si votre problème correspond à ce bogue, procédez comme suit :
 
 1. Vérifiez que les diagnostics facultatifs sont activés sur vos appareils
@@ -92,11 +95,11 @@ Si vous rencontrez ce problème, essayez l’une des opérations suivantes :
 
 [Retour à la liste](#list)
 
-## <a name="why-do-i-see-0x80180014-during-autopilot"></a>Pourquoi est-ce que je vois 0x80180014 pendant AutoPilot ?
+## <a name="why-do-i-see-0x80180014-during-autopilot"></a>Pourquoi est-ce que je vois 0x80180014 pendant Autopilot ?
 
 cette erreur se produit généralement lors de la réinitialisation de l’appareil et des flux de réutilisation dans lesquels un appareil HoloLens est passé par autopilot au moins une fois. pour résoudre ce problème, [supprimez l’appareil du Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) et réinitialisez-le pour terminer le déroulement automatique du pilote.
 
-Pour plus d’informations, consultez [les étapes de dépannage sur la page AutoPilot.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+Pour plus d’informations, consultez [les étapes de dépannage sur la page AutoPilot.](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)
 
 ## <a name="microsoft-store-error-code-0x80131500"></a>code d’erreur Microsoft Store 0x80131500
 
